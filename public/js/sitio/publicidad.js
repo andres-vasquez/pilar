@@ -26,17 +26,17 @@ $(document).ready(function ()
                 dataType: "json",
                 success: function(result)
                 {
-                    console.log(JSON.stringify(result));
                     if(parseInt(result.intCodigo)==1)
                     {
                         idInsertada=result.resultado.id;
-                        alert(idInsertada);
 
                         mensaje("ok");
                         $("#btnEnviar").removeAttr('disabled');
-                        $("#collapsePublicidad").trigger("click");
-                        window.location.href="#";
-                        limpiarCampos();
+                        $('.id_publicidad').val(idInsertada);
+
+                        //$("#collapsePublicidad").trigger("click");
+                        window.location.href="#divImagenes";
+                        //limpiarCampos();
                     }
                     else
                     {
@@ -55,7 +55,6 @@ $(document).ready(function ()
         else {
             event.preventDefault();
             var url = "../ws/publicidad_imagenes";
-
             var formData = new FormData($(this)[0]);
 
             $.ajax({
@@ -64,8 +63,17 @@ $(document).ready(function ()
                 data: formData,
                 processData: false,
                 contentType: false,
-                success: function (result) {
+                success: function (result)
+                {
+                    result=JSON.parse(result);
                     console.log(JSON.stringify(result));
+                    if(parseInt(result.intCodigo)==1)
+                    {
+                        var ruta=result.resultado.carga.ruta;
+                        var imagen=result.resultado.carga.id;
+                        console.log("URI imagen:"+imagen);
+                        $("#"+imagen).attr("src",ruta);
+                    }
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     $("#divNoticias").html("");
@@ -92,21 +100,21 @@ $(document).ready(function ()
             $("#mensaje").removeClass("alert-danger");
             $("#mensaje").addClass("alert-success");
             html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
-            html+='<strong>¡Noticia agregada!</strong>';
+            html+='<strong>¡Anuncio agregado!</strong>';
         }
         else if(tipo=="editada")
         {
             $("#mensaje").removeClass("alert-danger");
             $("#mensaje").addClass("alert-success");
             html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
-            html+='<strong>¡Noticia editada!</strong>';
+            html+='<strong>¡Anuncio editado!</strong>';
         }
         else if(tipo=="eliminada")
         {
             $("#mensaje").removeClass("alert-danger");
             $("#mensaje").addClass("alert-success");
             html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
-            html+='<strong>¡Noticia eliminada!</strong>';
+            html+='<strong>¡Anuncio eliminado!</strong>';
         }
         else
         {

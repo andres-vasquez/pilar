@@ -30,7 +30,7 @@
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-tag"></span> Nuevo anuncio
             </div>
             <div class="panel-body">
-                <ul>
+                <ul id="ulFormulario">
                     <li class="left clearfix">
                         <div class="col-md-9">
                             <% Form::open(array('url' => '/ws/publicidad', 'id' => 'formNuevoAnuncio', 'class' => 'form-horizontal')) %>
@@ -88,7 +88,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="panel-footer">
+            <div id="divImagenes" class="panel-footer">
                 <div class="panel-heading"><span class="glyphicon glyphicon-picture"></span> Imágenes adjuntas
                 </div>
 
@@ -108,12 +108,13 @@
                         <div class="row">
                             <div class="col-sm-6" style="padding: 20px">
                                 <h5 class="text-center">240 x 48</h5>
-                                <img src="http://placehold.it/320x47&text=publicidad"
+                                <img id="android_240x48" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
-                                <form id="android_240x48" enctype="multipart/form-data">
+                                <form enctype="multipart/form-data">
                                     <div class="form-group form-inline">
+                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="240"/>
                                         <input type="hidden" name="sizey" value="48"/>
@@ -125,10 +126,63 @@
                             </div>
                             <div class="col-sm-6" style="padding: 20px">
                                 <h5 class="text-center">320 x 71</h5>
-                                <img src="http://placehold.it/320x47&text=publicidad"
+                                <img id="android_320x71" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="320"/>
+                                        <input type="hidden" name="sizey" value="71"/>
+                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-sm-6" style="padding: 20px">
+                                <h5 class="text-center">720 x 144</h5>
+                                <img id="android_720x144" src="http://placehold.it/320x47&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="720"/>
+                                        <input type="hidden" name="sizey" value="144"/>
+                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="col-sm-6" style="padding: 20px">
+                                <h5 class="text-center">1440 x 288</h5>
+                                <img id="android_1440x288" src="http://placehold.it/320x47&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="1440"/>
+                                        <input type="hidden" name="sizey" value="288"/>
+                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -147,7 +201,7 @@
 
 @stop
 @section('contenido2')
-    <div class="col-lg-12">
+    <div class="col-lg-12 hidden">
         <div class="panel panel-default">
             <div class="panel-heading">Anuncios existentes</div>
             <div class="panel-body">

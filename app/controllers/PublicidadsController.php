@@ -104,4 +104,179 @@ class PublicidadsController extends \BaseController {
 		}
 	}
 
+
+    public function apitodas($app)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema))->get();
+            if(sizeof($publicidades_query)>0)
+            {
+                $publicidad=array();
+                foreach($publicidades_query as $publicidades_q)
+                {
+                    $aux=array();
+                    $aux["id"]=$publicidades_q["id"];
+                    $aux["nombre"]=$publicidades_q["nombre"];
+                    $aux["descripcion"]=$publicidades_q["descripcion"];
+                    $aux["link"]=$publicidades_q["link"];
+                    $aux["prioridad"]=$publicidades_q["prioridad"];
+                    $aux["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
+
+                    $aux["imagenes"]=array();
+                    $imagenes_query= PublicidadImagen::whereRaw('estado=1 AND baja_logica=1 AND publicidad_id=?',array($publicidades_q["id"]))->get();
+                    if(sizeof($imagenes_query)>0)
+                    {
+                        foreach($imagenes_query as $imagenes_q)
+                        {
+                            $aux_img=array();
+                            $aux_img["id"]=$imagenes_q["id"];
+                            $aux_img["tipo"]=$imagenes_q["tipo"];
+                            $aux_img["sizex"]=$imagenes_q["sizex"];
+                            $aux_img["sizey"]=$imagenes_q["sizey"];
+                            $aux_img["ruta"]=$imagenes_q["ruta"];
+                            $aux_img["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
+
+                            array_push($aux["imagenes"],$aux_img);
+                        }
+
+                    }
+
+                    array_push($publicidad,$aux);
+                }
+
+                return View::make('ws.json', array("resultado"=>compact('publicidad')));
+            }
+            else
+            {
+                $errores="Error al obtener registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+
+        }
+        else
+        {
+            $errores="Error al obtener registros";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function apitipotamano($app,$tipo,$sizex,$sizey)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema))->get();
+            if(sizeof($publicidades_query)>0)
+            {
+                $publicidad=array();
+                foreach($publicidades_query as $publicidades_q)
+                {
+                    $aux=array();
+                    $aux["id"]=$publicidades_q["id"];
+                    $aux["nombre"]=$publicidades_q["nombre"];
+                    $aux["descripcion"]=$publicidades_q["descripcion"];
+                    $aux["link"]=$publicidades_q["link"];
+                    $aux["prioridad"]=$publicidades_q["prioridad"];
+                    $aux["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
+
+                    $aux["imagenes"]=array();
+                    $imagenes_query= PublicidadImagen::whereRaw('estado=1 AND baja_logica=1 AND publicidad_id=? AND tipo=? AND sizex=? AND sizey=?',array($publicidades_q["id"],$tipo,$sizex,$sizey))->get();
+                    if(sizeof($imagenes_query)>0)
+                    {
+                        foreach($imagenes_query as $imagenes_q)
+                        {
+                            $aux_img=array();
+                            $aux_img["id"]=$imagenes_q["id"];
+                            $aux_img["tipo"]=$imagenes_q["tipo"];
+                            $aux_img["sizex"]=$imagenes_q["sizex"];
+                            $aux_img["sizey"]=$imagenes_q["sizey"];
+                            $aux_img["ruta"]=$imagenes_q["ruta"];
+                            $aux_img["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
+
+                            array_push($aux["imagenes"],$aux_img);
+                        }
+                        array_push($publicidad,$aux);
+                    }
+                }
+
+                return View::make('ws.json', array("resultado"=>compact('publicidad')));
+            }
+            else
+            {
+                $errores="Error al obtener registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+
+        }
+        else
+        {
+            $errores="Error al obtener registros";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function apitipotamanoq($app,$tipo,$sizex,$sizey,$cantidad)
+    {
+        $contador=0;
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? ORDER BY prioridad DESC',array($id_sistema))->get();
+            if(sizeof($publicidades_query)>0)
+            {
+                $publicidad=array();
+                foreach($publicidades_query as $publicidades_q)
+                {
+                    $aux=array();
+                    $aux["id"]=$publicidades_q["id"];
+                    $aux["nombre"]=$publicidades_q["nombre"];
+                    $aux["descripcion"]=$publicidades_q["descripcion"];
+                    $aux["link"]=$publicidades_q["link"];
+                    $aux["prioridad"]=$publicidades_q["prioridad"];
+                    $aux["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
+
+                    $aux["imagenes"]=array();
+                    $imagenes_query= PublicidadImagen::whereRaw('estado=1 AND baja_logica=1 AND publicidad_id=? AND tipo=? AND sizex=? AND sizey=?',array($publicidades_q["id"],$tipo,$sizex,$sizey))->get();
+                    if(sizeof($imagenes_query)>0)
+                    {
+                        foreach($imagenes_query as $imagenes_q)
+                        {
+                            $aux_img=array();
+                            $aux_img["id"]=$imagenes_q["id"];
+                            $aux_img["tipo"]=$imagenes_q["tipo"];
+                            $aux_img["sizex"]=$imagenes_q["sizex"];
+                            $aux_img["sizey"]=$imagenes_q["sizey"];
+                            $aux_img["ruta"]=$imagenes_q["ruta"];
+                            $aux_img["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
+
+                            array_push($aux["imagenes"],$aux_img);
+                        }
+                        array_push($publicidad,$aux);
+                        $contador++;
+
+                        if($contador>=$cantidad)
+                            break;
+                    }
+                }
+
+                return View::make('ws.json', array("resultado"=>compact('publicidad')));
+            }
+            else
+            {
+                $errores="Error al obtener registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+
+        }
+        else
+        {
+            $errores="Error al obtener registros";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
 }

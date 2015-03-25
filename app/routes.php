@@ -170,11 +170,22 @@ Route::post('/ws/publicidad', 'PublicidadsController@store');
 Route::post('/ws/publicidad/{id}',  array('as' => 'show', 'uses' =>'PublicidadsController@update'));
 Route::post('/ws/publicidad/eliminar/{id}',  array('as' => 'show', 'uses' =>'PublicidadsController@destroy'));
 
+//REST Api publicidad
+Route::group(array('prefix' => 'api/v1/publicidad'), function()
+{
+    Route::get('/{sistema}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitodas')); // Todas
+    Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitipotamano'));
+    Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}/{cantidad}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitipotamanoq'));
+});
+
 //WS Publicidad Imagenes
 Route::get('/ws/publicidad_imagenes/{id}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@show'));
 Route::post('/ws/publicidad_imagenes', 'PublicidadImagensController@store');
 Route::post('/ws/publicidad_imagenes/{id}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@update'));
 Route::post('/ws/publicidad_imagenes/eliminar/{id}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@destroy'));
+//TODO: Hacer ruta feicobol dinamica
+Route::get('feicobol/public/uploads/feicobol/{archivo}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@mostrarImagen'));
+
 
 //WS Mapas
 Route::get('/ws/mapa', 'MapasController@index');

@@ -22,39 +22,45 @@ class PublicidadImagensController extends \BaseController {
 	 */
 	public function store()
 	{
+        $app=Session::get('credencial');
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+
+
         $imagen=Input::file('imagen');
         $nombre_imagen=time().$imagen->getClientOriginalName();
-        $upload=$imagen->move('public/uploads',$nombre_imagen);
+        $upload=$imagen->move('public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen);
         if($upload)
         {
-            $mensaje="ok";
-            return View::make('ws.json', array("resultado"=>compact('mensaje')));
+            $data = Input::all();
+            $data["ruta"]='public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            $data["aud_usuario_id"]=Session::get('id_usuario');
+
+            $validator = Validator::make($data, Publicidadimagen::$rules);
+            if ($validator->fails())
+            {
+                $errores=$validator->messages()->first();
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+
+            if(Publicidadimagen::create($data))
+            {
+                $carga=array();
+                $carga["ruta"]=$data["ruta"];
+                $carga["id"]=$data["tipo"].'_'.$data["sizex"].'x'.$data["sizey"];
+
+                return View::make('ws.json', array("resultado"=>compact('carga')));
+            }
+            else
+            {
+                $errores="Error al crear registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
         }
         else
         {
             $errores="Error al subir imagen";
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
-
-        $data = Input::all();
-        return "ok";
-        /*
-		$validator = Validator::make($data = Input::all(), Publicidadimagen::$rules);
-		if ($validator->fails())
-		{
-			$errores=$validator->messages()->first();
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
-
-		if(Publicidadimagen::create($data))
-		{
-			return View::make('ws.json', array("resultado"=>compact('Publicidadimagen')));
-		}
-		else
-		{
-			$errores="Error al crear registro";
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}*/
 	}
 
 	/**
@@ -116,5 +122,15 @@ class PublicidadImagensController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 	}
+
+    public function mostrarImagen($nombre_archivo)
+    {
+        $file="public/uploads/feicobol/".$nombre_archivo;
+
+        $response = Response::make(File::get($file));
+        $response->header('Content-Type', 'image/jpeg');
+        $response->header('Content-Type', 'image/png');
+        return $response;
+    }
 
 }
