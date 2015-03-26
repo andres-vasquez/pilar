@@ -1,6 +1,6 @@
 <?php
 
-class SistemasDesarrollados extends \Eloquent {
+class Sistemasdesarrollados extends \Eloquent {
 
 	protected $table="sistemas_desarrollados";
 
