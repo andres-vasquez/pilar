@@ -34,9 +34,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
                                 class="glyphicon glyphicon-user"></span> Usuario <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Opciones</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
+                        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Opciones</a></li>-->
+                        <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
                     </ul>
                 </li>
             </ul>
