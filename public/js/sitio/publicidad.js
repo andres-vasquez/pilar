@@ -5,6 +5,26 @@ $(document).ready(function ()
 {
     var idInsertada=0;
 
+    $(".imagen").change(function(e){
+
+        var tamano=this.files[0].size;
+
+        if(parseInt(tamano)>2000000) //2 MB
+        {
+            alert("Tamaño máximo permitido de 2MB reduzca su imagen por favor");
+            $(this).val("");
+        }
+        else
+        {
+            var fileExtension = ['jpeg', 'jpg','png'];
+            if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+                alert("Formato incorrecto. Las imágenes deben estar en formato jpeg o png.");
+                $(this).val("");
+            }
+        }
+    });
+
+
     $("form").submit(function (event) {
         var id = $(this).attr("id");
         if (id == "formNuevoAnuncio") {
@@ -35,6 +55,8 @@ $(document).ready(function ()
                         $('.id_publicidad').val(idInsertada);
 
                         //$("#collapsePublicidad").trigger("click");
+                        bloquearCampos();
+                        $("#divImagenes").removeClass("hidden");
                         window.location.href="#divImagenes";
                         //limpiarCampos();
                     }
@@ -52,8 +74,12 @@ $(document).ready(function ()
             });
 
         }
-        else {
+        else
+        {
             event.preventDefault();
+            var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+
+
             var url = "../ws/publicidad_imagenes";
             var formData = new FormData($(this)[0]);
 
@@ -83,6 +109,15 @@ $(document).ready(function ()
         }
     });
 
+
+    bloquearCampos=function(){
+        $("#txtNombre").addClass("disabled");
+        $("#txtDescripcion").addClass("disabled");
+        $("#txtUrlAnuncio").addClass("disabled");
+        $("#cmbPrioridad").addClass("disabled");
+        $("#btnEnviar").addClass("disabled");
+        $("#btnCancelar").addClass("disabled");
+    };
 
     limpiarCampos=function(){
         $("#txtNombre").val("");

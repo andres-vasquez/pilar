@@ -81,14 +81,18 @@
                                     Guardar
                                 </button>
                                 &nbsp;&nbsp;
-                                <button type="reset" class="btn btn-danger btn-md">Cancelar</button>
+                                <button type="reset" class="btn btn-danger btn-md" id="btnCancelar">Cancelar</button>
                             </div>
                             <% Form::close() %>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div id="divImagenes" class="panel-footer">
+            <div id="divImagenes" class="panel-footer hidden">
+                <div class="alert alert-success">
+                    <h4>Adjunte el arte de la publicidad según cada resolución específica</h4>
+                </div>
+
                 <div class="panel-heading"><span class="glyphicon glyphicon-picture"></span> Imágenes adjuntas
                 </div>
 
@@ -114,11 +118,11 @@
 
                                 <form enctype="multipart/form-data">
                                     <div class="form-group form-inline">
-                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="240"/>
                                         <input type="hidden" name="sizey" value="48"/>
-                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <input type="file"  name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
                                 </form>
@@ -132,11 +136,11 @@
 
                                 <form enctype="multipart/form-data">
                                     <div class="form-group form-inline">
-                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="320"/>
                                         <input type="hidden" name="sizey" value="71"/>
-                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
                                 </form>
@@ -153,11 +157,11 @@
 
                                 <form enctype="multipart/form-data">
                                     <div class="form-group form-inline">
-                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="720"/>
                                         <input type="hidden" name="sizey" value="144"/>
-                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
                                 </form>
@@ -171,11 +175,11 @@
 
                                 <form enctype="multipart/form-data">
                                     <div class="form-group form-inline">
-                                        <input type="hidden"  class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="1440"/>
                                         <input type="hidden" name="sizey" value="288"/>
-                                        <input type="file" name="imagen" class="form-control" required/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
                                 </form>
@@ -187,16 +191,79 @@
                     </div>
 
                     <div class="col-sm-10 col-sm-offset-1">
-                        <h4><i class="fa fa-apple"></i> Imágenes iOs</h4>
+                        <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
                     </div>
 
                     <div class="col-sm-10 col-sm-offset-1">
+                        <!--
+                            1x con 320x180
+                            2x con 640x360
+                            3x con 960x540
+                        -->
+                    <div class="row">
+                        <div class="col-sm-6" style="padding: 20px">
+                            <h5 class="text-center">320 x 180</h5>
+                            <img id="android_240x48" src="http://placehold.it/320x180&text=publicidad"
+                                 class="img-responsive center-block"/>
+                            <br/>
 
+                            <form enctype="multipart/form-data">
+                                <div class="form-group form-inline">
+                                    <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                    <input type="hidden" name="tipo" value="ios"/>
+                                    <input type="hidden" name="sizex" value="320"/>
+                                    <input type="hidden" name="sizey" value="180"/>
+                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="col-sm-6" style="padding: 20px">
+                            <h5 class="text-center">640 x 360</h5>
+                            <img id="android_320x71" src="http://placehold.it/320x180&text=publicidad"
+                                 class="img-responsive center-block"/>
+                            <br/>
+
+                            <form enctype="multipart/form-data">
+                                <div class="form-group form-inline">
+                                    <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                    <input type="hidden" name="tipo" value="ios"/>
+                                    <input type="hidden" name="sizex" value="640"/>
+                                    <input type="hidden" name="sizey" value="360"/>
+                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
-                </div>
 
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3" style="padding: 20px">
+                            <h5 class="text-center">960 x 540</h5>
+                            <img id="android_240x48" src="http://placehold.it/320x180&text=publicidad"
+                                 class="img-responsive center-block"/>
+                            <br/>
+
+                            <form enctype="multipart/form-data">
+                                <div class="form-group form-inline">
+                                    <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                    <input type="hidden" name="tipo" value="ios"/>
+                                    <input type="hidden" name="sizex" value="960"/>
+                                    <input type="hidden" name="sizey" value="540"/>
+                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
 
 @stop
