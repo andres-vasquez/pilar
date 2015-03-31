@@ -106,14 +106,14 @@ class PublicidadImagensController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$publicidadimagen = Publicidadimagen::findOrFail($id);
+		$publicidadimagen = PublicidadImagen::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($publicidadimagen->update($data))
 		{
-			$publicidadimagen = Publicidadimagen::findOrFail($id);
+			$publicidadimagen = PublicidadImagen::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('publicidadimagen')));
 		}
 		else

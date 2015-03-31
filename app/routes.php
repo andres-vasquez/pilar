@@ -98,6 +98,11 @@ Route::group(array('before'=>'session'),function()
         return View::make('sitio.feicobol.publicidad')->with('data', $data);
     });
 
+    Route::get('/feicobol/expositores', function(){
+        $data = array('sistemas'  => Session::get('sistemas'),'menus'   => Session::get('menus'));
+        return View::make('sitio.feicobol.expositores')->with('data', $data);
+    });
+
 
     Route::get('/logout', function(){
         Session::forget('accesos');
@@ -178,11 +183,28 @@ Route::group(array('prefix' => 'api/v1/publicidad'), function()
     Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}/{cantidad}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitipotamanoq'));
 });
 
+//WS Expositores
+Route::get('/ws/expositores', 'ExpositoresController@index');
+Route::get('/ws/expositores/{id}',  array('as' => 'show', 'uses' =>'ExpositoresController@show'));
+Route::post('/ws/expositores/importar', 'ExpositoresController@importar');
+Route::post('/ws/expositores', 'ExpositoresController@store');
+Route::post('/ws/expositores/{id}',  array('as' => 'show', 'uses' =>'ExpositoresController@update'));
+Route::post('/ws/expositores/eliminar/{id}',  array('as' => 'show', 'uses' =>'ExpositoresController@destroy'));
+
+//REST Api publicidad
+Route::group(array('prefix' => 'api/v1/expositores'), function()
+{
+    Route::get('/{sistema}',  array('as' => 'show', 'uses' =>'ExpositoresController@apitodas')); // Todas
+});
+
+
+
 //WS Publicidad Imagenes
 Route::get('/ws/publicidad_imagenes/{id}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@show'));
 Route::post('/ws/publicidad_imagenes', 'PublicidadImagensController@store');
 Route::post('/ws/publicidad_imagenes/{id}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@update'));
 Route::post('/ws/publicidad_imagenes/eliminar/{id}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@destroy'));
+
 //TODO: Hacer ruta feicobol dinamica
 Route::get('feicobol/public/uploads/feicobol/{archivo}',  array('as' => 'show', 'uses' =>'PublicidadImagensController@mostrarImagen'));
 
@@ -201,6 +223,8 @@ Route::get('/ws/mapa_tags/{id}',  array('as' => 'show', 'uses' =>'MapaTagsContro
 Route::post('/ws/mapa_tags', 'MapaTagsController@store');
 Route::post('/ws/mapa_tags/{id}',  array('as' => 'show', 'uses' =>'MapaTagsController@update'));
 Route::post('/ws/mapa_tags/eliminar/{id}',  array('as' => 'show', 'uses' =>'MapaTagsController@destroy'));
+
+
 
 
 

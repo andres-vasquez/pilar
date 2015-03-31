@@ -203,7 +203,7 @@
                     <div class="row">
                         <div class="col-sm-6" style="padding: 20px">
                             <h5 class="text-center">320 x 180</h5>
-                            <img id="android_240x48" src="http://placehold.it/320x180&text=publicidad"
+                            <img id="ios_320x180" src="http://placehold.it/320x180&text=publicidad"
                                  class="img-responsive center-block"/>
                             <br/>
 
@@ -221,7 +221,7 @@
                         </div>
                         <div class="col-sm-6" style="padding: 20px">
                             <h5 class="text-center">640 x 360</h5>
-                            <img id="android_320x71" src="http://placehold.it/320x180&text=publicidad"
+                            <img id="ios_640x360" src="http://placehold.it/320x180&text=publicidad"
                                  class="img-responsive center-block"/>
                             <br/>
 
@@ -242,7 +242,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3" style="padding: 20px">
                             <h5 class="text-center">960 x 540</h5>
-                            <img id="android_240x48" src="http://placehold.it/320x180&text=publicidad"
+                            <img id="ios_960x540" src="http://placehold.it/320x180&text=publicidad"
                                  class="img-responsive center-block"/>
                             <br/>
 
