@@ -103,6 +103,11 @@ Route::group(array('before'=>'session'),function()
         return View::make('sitio.feicobol.expositores')->with('data', $data);
     });
 
+    Route::get('/feicobol/restapi', function(){
+        $data = array('sistemas'  => Session::get('sistemas'),'menus'   => Session::get('menus'));
+        return View::make('sitio.feicobol.restapi')->with('data', $data);
+    });
+
 
     Route::get('/logout', function(){
         Session::forget('accesos');
@@ -169,7 +174,6 @@ Route::group(array('prefix' => 'api/v1/noticias'), function()
 
 //WS Publicidad
 Route::get('/ws/publicidad', 'PublicidadsController@index');
-//TODO: Publicidad por sistema
 Route::get('/ws/publicidad/{id}',  array('as' => 'show', 'uses' =>'PublicidadsController@show'));
 Route::post('/ws/publicidad', 'PublicidadsController@store');
 Route::post('/ws/publicidad/{id}',  array('as' => 'show', 'uses' =>'PublicidadsController@update'));
@@ -178,6 +182,7 @@ Route::post('/ws/publicidad/eliminar/{id}',  array('as' => 'show', 'uses' =>'Pub
 //REST Api publicidad
 Route::group(array('prefix' => 'api/v1/publicidad'), function()
 {
+    Route::get('/{sistema}/sinformato',  array('as' => 'show', 'uses' =>'PublicidadsController@apitodassinformato')); //
     Route::get('/{sistema}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitodas')); // Todas
     Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitipotamano'));
     Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}/{cantidad}',  array('as' => 'show', 'uses' =>'PublicidadsController@apitipotamanoq'));
@@ -195,6 +200,7 @@ Route::post('/ws/expositores/eliminar/{id}',  array('as' => 'show', 'uses' =>'Ex
 Route::group(array('prefix' => 'api/v1/expositores'), function()
 {
     Route::get('/{sistema}',  array('as' => 'show', 'uses' =>'ExpositoresController@apitodas')); // Todas
+    Route::get('/{sistema}/sinformato',  array('as' => 'show', 'uses' =>'ExpositoresController@apitodassinformato')); // Todas
 });
 
 

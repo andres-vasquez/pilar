@@ -105,6 +105,32 @@ class PublicidadsController extends \BaseController {
 	}
 
 
+    public function apitodassinformato($app)
+    {
+        $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
+        if (sizeof($sistemas) > 0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            if (sizeof($publicidades_query) > 0) {
+                $publicidad = array();
+                foreach ($publicidades_query as $publicidades_q) {
+                    $aux = array();
+                    $aux["id"] = $publicidades_q["id"];
+                    $aux["nombre"] = $publicidades_q["nombre"];
+                    $aux["descripcion"] = $publicidades_q["descripcion"];
+                    $aux["link"] = $publicidades_q["link"];
+                    $aux["prioridad"] = $publicidades_q["prioridad"];
+                    $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
+                    array_push($publicidad,$aux);
+                }
+                return json_encode($publicidad);
+            }
+        }
+    }
+
+
+
     public function apitodas($app)
     {
         $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();

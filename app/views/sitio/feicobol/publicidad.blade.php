@@ -25,7 +25,7 @@
                     anuncio</b></button>
         </span>
 
-        <div id="divNuevoAnuncio" class="panel panel-collapse chat collapse in">
+        <div id="divNuevoAnuncio" class="panel panel-collapse chat collapse">
 
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-tag"></span> Nuevo anuncio
             </div>
@@ -268,19 +268,21 @@
 
 @stop
 @section('contenido2')
-    <div class="col-lg-12 hidden">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">Anuncios existentes</div>
             <div class="panel-body">
-                <table data-toggle="table" data-url="" data-show-refresh="true" data-search="true"
+                <table data-toggle="table" data-url="<% '../api/v1/publicidad/'.Session::get("credencial").'/sinformato' %>" data-show-refresh="true" data-search="true"
                        data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
                        data-sort-name="name" data-sort-order="desc">
                     <thead>
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
-                        <th data-field="name" data-sortable="true">Nombre anuncio</th>
-                        <th data-field="price" data-sortable="true">Vistas</th>
-                        <th data-field="price" data-sortable="true">ver detalle</th>
+                        <th data-field="nombre" data-sortable="true">Nombre anuncio</th>
+                        <th data-field="link" data-sortable="true">Link</th>
+                        <th data-field="prioridad" data-halign="center" data-sortable="true">Prioridad</th>
+                        <th data-field="fecha_creacion" data-sortable="true">Fecha</th>
+                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter" data-events="operateEvents">Acciones</th>
                     </tr>
                     </thead>
                 </table>

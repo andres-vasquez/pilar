@@ -1,4 +1,5 @@
 /bootstrap/compiled.php
+/upoloads/feicobol
 composer.phar
 composer.lock
 .env.*.php

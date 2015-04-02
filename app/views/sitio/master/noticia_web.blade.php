@@ -15,15 +15,13 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#"><span>PILAR - </span> LECTOR DE NOTICIAS</a>
         </div>
     </div>
-    <!-- /.container-fluid -->
-</nav>
-
+</nav>-->
 <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
     <div class="row">
         <div class="col-lg-12">

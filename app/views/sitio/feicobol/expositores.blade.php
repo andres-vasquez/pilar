@@ -24,7 +24,7 @@
                     data-target="#divImportarExpositores"><b>+ Cargar CSV</b></button>
         </span>
 
-        <div id="divImportarExpositores" class="panel panel-collapse chat collapse in">
+        <div id="divImportarExpositores" class="panel panel-collapse chat collapse">
 
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-user"></span> Importar
                 expositores
@@ -66,17 +66,18 @@
         <div class="panel panel-default">
             <div class="panel-heading">Expositores existentes</div>
             <div class="panel-body">
-                <table data-toggle="table" data-url="" data-show-refresh="true" data-search="true"
+                <table id="tblExpositores" data-toggle="table" data-url="<% '../api/v1/expositores/'.Session::get("credencial").'/sinformato'%>" data-show-refresh="true" data-search="true"
                        data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
                        data-sort-name="name" data-sort-order="desc">
                     <thead>
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
-                        <th data-field="name" data-sortable="true">Nombre</th>
-                        <th data-field="price" data-sortable="true">Dirección</th>
-                        <th data-field="price" data-sortable="true">Pabellón</th>
-                        <th data-field="price" data-sortable="true">Website</th>
-                        <th data-field="price" data-sortable="true">facebook</th>
+                        <th data-field="nombre" data-sortable="true">Nombre</th>
+                        <th data-field="direccion" data-sortable="true">Dirección</th>
+                        <th data-field="pabellon" data-sortable="true">Pabellón</th>
+                        <th data-field="stand" data-sortable="true">Stand</th>
+                        <!--<th data-field="website" data-sortable="true">Website</th>-->
+                        <th data-field="fanpage" data-sortable="true">fanpage</th>
                     </tr>
                     </thead>
                 </table>

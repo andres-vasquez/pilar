@@ -25,6 +25,10 @@ $(document).ready(function () {
                     mensaje("ok");
                     $("#fileCsv").val("");
                     $("#collapseImportar").trigger("click");
+
+                    $table = $('#tblExpositores').bootstrapTable('refresh', {
+                        url: '../api/v1/expositores/'+$("#credencial").val()+'/sinformato'
+                    });
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {

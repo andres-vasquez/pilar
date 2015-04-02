@@ -161,3 +161,26 @@ $(document).ready(function ()
         $("#mensaje").html(html);
     };
 });
+
+function operateFormatter(value, row, index) {
+    return [
+        '<a class="edit ml10" href="javascript:void(0)" title="Editar">',
+        '<i class="glyphicon glyphicon-pencil"></i>',
+        '</a> ',
+        '<a class="remove ml10" href="javascript:void(0)" title="Eliminar">',
+        '<i class="glyphicon glyphicon-remove"></i>',
+        '</a>'
+    ].join('');
+}
+
+window.operateEvents = {
+    'click .edit': function (e, value, row, index)
+    {
+        var id=row.id;
+        alert("editar"+id);
+    },
+    'click .remove': function (e, value, row, index) {
+        var id=row.id;
+        alert("elim"+id);
+    }
+};

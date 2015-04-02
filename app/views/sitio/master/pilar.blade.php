@@ -36,7 +36,8 @@
                     <ul class="dropdown-menu" role="menu">
                         <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Usuario</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Opciones</a></li>-->
-                        <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
+                        <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar
+                                sesión</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,7 +50,8 @@
                     <ul class="dropdown-menu" role="menu">
                         @foreach ($data["sistemas"] as $sistema)
                             <li>
-                                <a href="<% url('/'.$sistema) %>"><span class="glyphicon glyphicon-home"></span> <% $sistema %></a>
+                                <a href="<% url('/'.$sistema) %>"><span
+                                            class="glyphicon glyphicon-home"></span> <% $sistema %></a>
                             </li>
                         @endforeach
                     </ul>
@@ -66,18 +68,24 @@
         <li role="presentation" class="divider"></li>
         @if (count($data["menus"])>0)
             @for ($i = 0; $i < count($data["menus"]); $i++)
-                @if('/'.Request::path()==$data["menus"][$i]["menus"]["link"])
-                    <li class="active">
-                @else
-                    <li>
-                        @endif
-                        <a href="<% url($data["menus"][$i]["menus"]["link"]) %>"><span class="glyphicon <% $data["menus"][$i]["menus"]["icono"]%>"></span> <% $data["menus"][$i]["menus"]["titulo"] %></a>
-                    </li>
+                @if($data["menus"][$i]["menus"]["estado"]=="1" && $data["menus"][$i]["menus"]["baja_logica"]!="0")
+                    @if('/'.Request::path()==$data["menus"][$i]["menus"]["link"])
+                        <li class="active">
+                    @else
+                        <li>
+                            @endif
+                            <a href="<% url($data["menus"][$i]["menus"]["link"]) %>"><span
+                                        class="glyphicon <% $data["menus"][$i]["menus"]["icono"]%>"></span> <% $data["menus"][$i]["menus"]["titulo"] %>
+                            </a>
+                        </li>
+                    @endif
                     @endfor
                 @endif
 
+
                 <li role="presentation" class="divider"></li>
-                <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a></li>
+                <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a>
+                </li>
     </ul>
     <div class="attribution"><a href="#">PILAR</a><br/> Plataforma Integral Líder en Administración REST</div>
 </div>
@@ -122,6 +130,7 @@
 <% HTML::script('public/js/bootstrap.min.js'); %>
 <% HTML::script('public/js/easypiechart.js'); %>
 <% HTML::script('public/js/bootstrap-datepicker.js'); %>
+<% HTML::script('public/js/bootstrap-table.js'); %>
 @yield('pie')
 <script>
     $('#calendar').datepicker({});
