@@ -106,7 +106,7 @@ class ExpositoresController extends \BaseController
         $upload = $archivo->move('public/uploads/' . $sistemas[0]["nombre"] . '/', $nombre_archivo);
         if ($upload) {
             $file = "public/uploads/" . $sistemas[0]["nombre"] . "/" . $nombre_archivo;
-            $columnas = array("nombre", "direccion", "pabellon", "stand", "website", "fanpage");
+            $columnas = array("id_csv","nombre", "stand", "telefono", "fax","direccion","pabellon", "website", "fanpage","","");
             $cantidadColumnas = count($columnas);
             $objResultado = array();
             $contadorFinal = 0;
@@ -117,7 +117,7 @@ class ExpositoresController extends \BaseController
             {
                 while (!feof($handle))
                 {
-                    while (($csv_row = fgetcsv($handle, 3000, ';')) !== false)
+                    while (($csv_row = fgetcsv($handle, 3000, '|')) !== false)
                     {
                         Expositore::truncate();
                         $contadorFilas = 0;
@@ -135,7 +135,7 @@ class ExpositoresController extends \BaseController
                                     $validator = Validator::make($data = $obj, Expositore::$rules);
                                     if ($validator->fails()) {
                                         $errores = $validator->messages()->first();
-                                        return View::make('ws.json_errores', array("errores" => compact('errores')));
+                                        //return View::make('ws.json_errores', array("errores" => compact('errores')));
                                     }
 
                                     if (Expositore::create($data)) {
@@ -196,7 +196,7 @@ class ExpositoresController extends \BaseController
                 $expositores = array();
                 foreach ($expositores_query as $expositor) {
                     $aux = array();
-                    $aux["id"] = $expositor["id"];
+                    $aux["id"] = $expositor["id_csv"];
                     $aux["nombre"] = $expositor["nombre"];
                     $aux["direccion"] = $expositor["direccion"];
                     $aux["pabellon"] = $expositor["pabellon"];
