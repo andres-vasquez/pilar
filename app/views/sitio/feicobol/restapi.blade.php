@@ -92,8 +92,18 @@
                     <div class="tab-pane fade" id="tab3">
                         <h3>Expositores</h3>
                         <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
+
+                        <p>La API de expositores despliega información en formato JSON referente a los expositores</p>
+                        <br/>
+                        <h4>URL base</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/expositores</code>
+
                         <br/><br/>
-                        <p>Próximanente.... en desarrollo</p>
+                        <h4>Obtener todos los expositores</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/expositores/credencial</code>
+                        <br/>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o</a></small>
+                        <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab4">
                         <h3>Mapas</h3>
