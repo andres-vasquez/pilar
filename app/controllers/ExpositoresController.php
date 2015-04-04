@@ -117,7 +117,7 @@ class ExpositoresController extends \BaseController
             {
                 while (!feof($handle))
                 {
-                    while (($csv_row = fgetcsv($handle, 3000, '|')) !== false)
+                    while (($csv_row = fgetcsv($handle, 3000000, '|')) !== false)
                     {
                         Expositore::truncate();
                         $contadorFilas = 0;
@@ -134,10 +134,9 @@ class ExpositoresController extends \BaseController
 
                                     $validator = Validator::make($data = $obj, Expositore::$rules);
                                     if ($validator->fails()) {
-                                        $errores = $validator->messages()->first();
-                                        //return View::make('ws.json_errores', array("errores" => compact('errores')));
+                                        $contadorFinal++;
                                     }
-
+                                    else
                                     if (Expositore::create($data)) {
                                         $contadorFinal++;
                                     }
