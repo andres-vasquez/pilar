@@ -21,13 +21,14 @@ $(document).ready(function () {
             success: function (result) {
                 result = JSON.parse(result);
                 console.log(JSON.stringify(result));
-                if (parseInt(result.intCodigo) == 1) {
+                if (parseInt(result.intCodigo) == 1)
+                {
                     mensaje("ok");
                     $("#fileCsv").val("");
                     $("#collapseImportar").trigger("click");
 
                     $table = $('#tblExpositores').bootstrapTable('refresh', {
-                        url: '../api/v1/expositores/'+$("#credencial").val()+'/sinformato'
+                        url: '../api/v1/publicidad/'+$("#credencial").val()+'/sinformato'
                     });
                 }
             },

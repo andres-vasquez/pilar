@@ -230,7 +230,20 @@ Route::post('/ws/mapa_tags', 'MapaTagsController@store');
 Route::post('/ws/mapa_tags/{id}',  array('as' => 'show', 'uses' =>'MapaTagsController@update'));
 Route::post('/ws/mapa_tags/eliminar/{id}',  array('as' => 'show', 'uses' =>'MapaTagsController@destroy'));
 
+//WS Likes
+Route::get('/ws/likesExpositores', 'LikesExpositoresController@index');
+Route::get('/ws/likesExpositores/{id}',  array('as' => 'show', 'uses' =>'LikesExpositoresController@show'));
+Route::post('/ws/likesExpositores', 'LikesExpositoresController@store');
+Route::post('/ws/likesExpositores/{id}',  array('as' => 'show', 'uses' =>'LikesExpositoresController@update'));
+Route::post('/ws/likesExpositores/eliminar/{id}',  array('as' => 'show', 'uses' =>'LikesExpositoresController@destroy'));
 
+//REST Api likes
+Route::group(array('prefix' => 'api/v1/expositoreslikes'), function()
+{
+    Route::post('/{sistema}', 'LikesExpositoresController@store');
+    Route::get('/{sistema}/reporte',  array('as' => 'show', 'uses' =>'LikesExpositoresController@apitodas')); // Todas
+    Route::get('/{sistema}/conteo',  array('as' => 'show', 'uses' =>'LikesExpositoresController@apiconteo'));
+});
 
 
 

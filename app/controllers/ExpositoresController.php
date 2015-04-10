@@ -98,6 +98,7 @@ class ExpositoresController extends \BaseController
      */
     public function importar()
     {
+        $primeraFila = true;
         $app = Session::get('credencial');
         $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
 
@@ -106,7 +107,7 @@ class ExpositoresController extends \BaseController
         $upload = $archivo->move('public/uploads/' . $sistemas[0]["nombre"] . '/', $nombre_archivo);
         if ($upload) {
             $file = "public/uploads/" . $sistemas[0]["nombre"] . "/" . $nombre_archivo;
-            $columnas = array("id_csv","nombre", "stand", "telefono", "fax","direccion","pabellon", "website", "fanpage","","");
+            $columnas = array("id_csv", "nombre", "stand", "telefono", "fax", "direccion", "pabellon", "website", "fanpage");
             $cantidadColumnas = count($columnas);
             $objResultado = array();
             $contadorFinal = 0;
@@ -117,36 +118,44 @@ class ExpositoresController extends \BaseController
             {
                 while (!feof($handle))
                 {
+                    $carga = array();
                     while (($csv_row = fgetcsv($handle, 3000000, '|')) !== false)
                     {
                         Expositore::truncate();
                         $contadorFilas = 0;
-                        foreach ($csv_row as &$row) {
-                            $variasFilas = explode("\r", $row);
-                            for ($i = 0; $i < count($variasFilas); $i++) {
+                        foreach ($csv_row as &$row)
+                        {
+
+                            $variasFilas = explode("\r\n", $row);
+                            for ($i = 0; $i < count($variasFilas); $i++)
+                            {
                                 $obj[$columnas[$contadorFilas]] = $variasFilas[$i];
                                 $contadorFilas++;
-                                if ($contadorFilas == $cantidadColumnas) {
-                                    $contadorFilas = 0;
 
+                                if ($contadorFilas == $cantidadColumnas)
+                                {
                                     $obj["aud_usuario_id"] = Session::get('id_usuario');
                                     $obj["sistema_id"] = Session::get('id_sistema');
 
-                                    $validator = Validator::make($data = $obj, Expositore::$rules);
-                                    if ($validator->fails()) {
-                                        $contadorFinal++;
-                                    }
+                                    //if($primeraFila==false) {
+                                        $validator = Validator::make($data = $obj, Expositore::$rules);
+                                        if ($validator->fails()) {
+                                        } else if (Expositore::create($obj)) {
+                                            $contadorFinal++;
+                                        }
+                                    /*}
                                     else
-                                    if (Expositore::create($data)) {
-                                        $contadorFinal++;
-                                    }
+                                        $primeraFila=false;*/
+
+                                    $contadorFilas = 0;
                                     $obj = array();
                                 }
                             }
                         }
 
-                        $carga = array();
-                        $carga["cantidad"] = $contadorFinal;
+                        //$carga = array();
+                        //$carga["cantidad"] = $contadorFinal;
+                        $carga["cantidad"]=$contadorFilas;
                         return View::make('ws.json', array("resultado" => compact('carga')));
                     }
 
@@ -206,9 +215,9 @@ class ExpositoresController extends \BaseController
                     $aux["website"] = $expositor["website"];
                     $aux["fanpage"] = $expositor["fanpage"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
-                    array_push($expositores,$aux);
+                    array_push($expositores, $aux);
                 }
-                return View::make('ws.json', array("resultado"=>compact('expositores')));
+                return View::make('ws.json', array("resultado" => compact('expositores')));
             }
         }
 
@@ -236,10 +245,10 @@ class ExpositoresController extends \BaseController
                     $aux["website"] = $expositor["website"];
                     $aux["fanpage"] = $expositor["fanpage"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
-                    array_push($expositores,$aux);
+                    array_push($expositores, $aux);
                 }
                 return json_encode($expositores);
-                return View::make('ws.json', array("resultado"=>compact('expositores')));
+                return View::make('ws.json', array("resultado" => compact('expositores')));
             }
         }
 

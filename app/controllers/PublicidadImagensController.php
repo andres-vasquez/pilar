@@ -84,18 +84,39 @@ class PublicidadImagensController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$publicidadimagen = Publicidadimagen::findOrFail($id);
-		$data = Input::all();
+        $app=Session::get('credencial');
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
 
-		if($publicidadimagen->update($data))
-		{
-			return View::make('ws.json', array("resultado"=>compact('publicidadimagen')));
-		}
-		else
-		{
-			$errores="Error al actualizar registro";
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
+        $imagen=Input::file('imagen');
+        $nombre_imagen=time().$imagen->getClientOriginalName();
+        $upload=$imagen->move('public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen);
+        if($upload)
+        {
+            $publicidadimagen = Publicidadimagen::findOrFail($id);
+            $data = Input::all();
+            $data["ruta"]='public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            $data["aud_usuario_mod_id"]=Session::get('id_usuario');
+
+            if($publicidadimagen->update($data))
+            {
+                $carga=array();
+                $carga["ruta"]=$data["ruta"];
+                $carga["id"]=$data["tipo"].'_'.$data["sizex"].'x'.$data["sizey"];
+
+                return View::make('ws.json', array("resultado"=>compact('carga')));
+            }
+            else
+            {
+                $errores="Error al actualizar registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Error al subir imagen";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+
 	}
 
 	/**
