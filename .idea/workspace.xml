@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/LikesExpositore.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ExpositoresController.php" afterPath="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadsController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/expositores.js" afterPath="$PROJECT_DIR$/public/js/sitio/expositores.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/publicidad.js" afterPath="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -49,8 +41,8 @@
       <file leaf-file-name="publicidad.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="7200" max-vertical-offset="8775">
-              <caret line="493" column="89" selection-start-line="493" selection-start-column="76" selection-end-line="493" selection-end-column="89" />
+            <state vertical-scroll-proportion="-5.0" vertical-offset="5610" max-vertical-offset="8775">
+              <caret line="382" column="119" selection-start-line="382" selection-start-column="77" selection-end-line="382" selection-end-column="119" />
               <folding>
                 <element signature="e#5051#5072#0#HTML" expanded="true" />
                 <element signature="e#6287#6308#0#HTML" expanded="true" />
@@ -74,8 +66,8 @@
       <file leaf-file-name="publicidad.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6551724" vertical-offset="921" max-vertical-offset="5385">
-              <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.56650245" vertical-offset="4155" max-vertical-offset="5445">
+              <caret line="300" column="84" selection-start-line="300" selection-start-column="84" selection-end-line="300" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -439,24 +431,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -604,7 +578,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428126182096</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Publicidad add + likes primera parte">
+      <created>1428643466098</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1428643466098</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -676,7 +656,8 @@
     <MESSAGE value="Expositores Pipe y restapi 1.1" />
     <MESSAGE value="Expositores Pipe y restapi 1.2" />
     <MESSAGE value="Expositores Pipe y restapi 1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expositores Pipe y restapi 1.3" />
+    <MESSAGE value="Publicidad add + likes primera parte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Publicidad add + likes primera parte" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1072,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="7200" max-vertical-offset="8775">
-          <caret line="493" column="89" selection-start-line="493" selection-start-column="76" selection-end-line="493" selection-end-column="89" />
+        <state vertical-scroll-proportion="-5.0" vertical-offset="5610" max-vertical-offset="8775">
+          <caret line="382" column="119" selection-start-line="382" selection-start-column="77" selection-end-line="382" selection-end-column="119" />
           <folding>
             <element signature="e#5051#5072#0#HTML" expanded="true" />
             <element signature="e#6287#6308#0#HTML" expanded="true" />
@@ -1095,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6551724" vertical-offset="921" max-vertical-offset="5385">
-          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.56650245" vertical-offset="4155" max-vertical-offset="5445">
+          <caret line="300" column="84" selection-start-line="300" selection-start-column="84" selection-end-line="300" selection-end-column="84" />
           <folding />
         </state>
       </provider>

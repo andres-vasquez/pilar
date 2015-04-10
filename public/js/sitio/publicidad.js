@@ -298,6 +298,8 @@ window.operateEvents = {
                     $('#cmbPrioridad_editar option[value="' + objPublicidad.prioridad + '"]').attr("selected", "selected");
                     $(".id_publicidad").val(objPublicidad.id);
 
+                    $("img").attr("src", "http://placehold.it/320x47&text=publicidad");
+
                     var objListaImagenes = objPublicidad.imagenes;
                     lstImagenesEdit = objListaImagenes;
                     for (var i = 0; i < objListaImagenes.length; i++) {
@@ -306,6 +308,8 @@ window.operateEvents = {
                         var ruta = obj.ruta;
                         $("#" + id_imagen_dinamico).attr("src", ruta);
                     }
+
+
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
