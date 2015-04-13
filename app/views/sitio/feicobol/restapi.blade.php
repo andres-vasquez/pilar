@@ -35,9 +35,11 @@
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
                         <h3>Noticias</h3>
+
                         <p>#Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
 
-                        <p>La API de noticias despliega información en formato JSON de noticias a dispositivos móviles</p>
+                        <p>La API de noticias despliega información en formato JSON de noticias a dispositivos
+                            móviles</p>
                         <br/>
                         <h4>URL base</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias</code>
@@ -46,26 +48,36 @@
                         <h4>Obtener todas las noticias</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/credencial</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o</a></small>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o</a>
+                        </small>
 
                         <br/><br/>
                         <h4>Obtener noticias en un rango: Inicio - Fin</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/credencial/inicio/fin</code>
                         <br/>
-                        <small>Ej Las 5 primeras noticias: <a href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5</a></small>
+                        <small>Ej Las 5 primeras noticias: <a
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5</a>
+                        </small>
 
                         <br/><br/>
                         <h4>Obtener noticias en un rango: Inicio - Fin con orden (ASC o DESC)</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/credencial/inicio/fin/orden</code>
                         <br/>
-                        <small>Ej Las 5 primeras noticias la más antigua adelante: <a href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5/ASC" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5/ASC</a></small>
+                        <small>Ej Las 5 primeras noticias la más antigua adelante: <a
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5/ASC"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5/ASC</a>
+                        </small>
                         <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab2">
                         <h3>Publicidad</h3>
+
                         <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
 
-                        <p>La API de publicidad despliega información en formato JSON referente a anuncios y banners hacia dispositivos móviles</p>
+                        <p>La API de publicidad despliega información en formato JSON referente a anuncios y banners
+                            hacia dispositivos móviles</p>
                         <br/>
                         <h4>URL base</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad</code>
@@ -74,23 +86,32 @@
                         <h4>Obtener todos los anuncios</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o</a></small>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o</a>
+                        </small>
 
                         <br/><br/>
                         <h4>Obtener anuncios específicos para dispositivo. SO - Tamaño x - Tamaño y</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo/sizex/sizey</code>
                         <br/>
-                        <small>Ej anuncios para android con tamaño 240x48: <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48</a></small>
+                        <small>Ej anuncios para android con tamaño 240x48: <a
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48</a>
+                        </small>
 
                         <br/><br/>
                         <h4>Obtener anuncios específicos para dispositivo. SO - Tamaño x - Tamaño y - Cantidad</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo/sizex/sizey/cantidad</code>
                         <br/>
-                        <small>Ej 3 anuncios para android con tamaño 240x48 (son obtenidos según la variable prioridad): <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48/3" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48/3</a></small>
+                        <small>Ej 3 anuncios para android con tamaño 240x48 (son obtenidos según la variable prioridad):
+                            <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48/3"
+                               target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48/3</a>
+                        </small>
                         <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <h3>Expositores</h3>
+
                         <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
 
                         <p>La API de expositores despliega información en formato JSON referente a los expositores</p>
@@ -102,20 +123,51 @@
                         <h4>Obtener todos los expositores</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/expositores/credencial</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o" target="_blank">http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o</a></small>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o</a>
+                        </small>
                         <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab4">
                         <h3>Mapas</h3>
+
                         <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
                         <br/><br/>
+
                         <p>Próximanente.... en desarrollo</p>
                     </div>
                     <div class="tab-pane fade" id="tab5">
                         <h3>Likes</h3>
+
                         <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
                         <br/><br/>
-                        <p>Próximanente.... en desarrollo</p>
+
+                        <p>La API de LIKE ingresa datos para votación de Expositores</p>
+                        <br/>
+                        <h4>URL base</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/expositoreslikes</code>
+
+                        <br/><br/>
+                        <h4>Enviar voto</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/expositoreslikes</code>
+
+                        <p>Método: <span class="text-success"><b>POST</b></span></p>
+                        <p>Paramétro: <span class="text-warning"><b>sistema</b></span></p>
+                        <p>Paramétro: <span class="text-warning"><b>expositor_id</b></span></p>
+                        <p>Parámetro: <span class="text-warning"><b>imei</b></span></p>
+
+                        <small>Ej de uso:
+                            <ul>
+                                <li>sistema : <b><% Session::get('credencial')%></b></li>
+                                <li>expositor_id : <b>273</b></li>
+                                <li>imei : <b>12315123</b></li>
+                            </ul>
+                        </small>
+                        <br/>
+                        <small>Resultado:
+                            {"intCodigo":"1","resultado":{"id":#id Insertado}}
+                            </small>
+
                     </div>
                 </div>
             </div>

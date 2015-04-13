@@ -107,7 +107,7 @@ class ExpositoresController extends \BaseController
         $upload = $archivo->move('public/uploads/' . $sistemas[0]["nombre"] . '/', $nombre_archivo);
         if ($upload) {
             $file = "public/uploads/" . $sistemas[0]["nombre"] . "/" . $nombre_archivo;
-            $columnas = array("id_csv", "nombre", "stand", "telefono", "fax", "direccion", "pabellon", "website", "fanpage");
+            $columnas = array("id_csv", "nombre", "stand", "telefono", "fax", "direccion", "pabellon", "website", "fanpage","expositores");
             $cantidadColumnas = count($columnas);
             $objResultado = array();
             $contadorFinal = 0;

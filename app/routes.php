@@ -240,7 +240,7 @@ Route::post('/ws/likesExpositores/eliminar/{id}',  array('as' => 'show', 'uses' 
 //REST Api likes
 Route::group(array('prefix' => 'api/v1/expositoreslikes'), function()
 {
-    Route::post('/{sistema}', 'LikesExpositoresController@store');
+    Route::post('/', 'LikesExpositoresController@store');
     Route::get('/{sistema}/reporte',  array('as' => 'show', 'uses' =>'LikesExpositoresController@apitodas')); // Todas
     Route::get('/{sistema}/conteo',  array('as' => 'show', 'uses' =>'LikesExpositoresController@apiconteo'));
 });

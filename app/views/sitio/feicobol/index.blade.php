@@ -36,7 +36,7 @@
                     <em class="glyphicon glyphicon-comment glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large" id="numNoticias" >0</div>
+                    <div class="large" id="numNoticias">0</div>
                     <div class="text-muted">Noticias</div>
                 </div>
             </div>
@@ -75,7 +75,36 @@
             <div class="panel-heading">Concurso de Likes entre expositores</div>
             <div class="panel-body">
 
-                Aca tabla y graficos de concurso de likes
+                <div class="row">
+                    <div class="col-lg-6">
+                        <table id="tblPublicidad" data-toggle="table"
+                               data-url="<% 'api/v1/expositoreslikes/'.Session::get("credencial").'/conteo' %>"
+                               data-pagination="true"
+                               data-sort-name="name"
+                               data-sort-order="desc">
+                            <thead>
+                            <tr>
+                                <th data-field="expositor_id" data-sortable="true">ID</th>
+                                <th data-field="expositor_nombre" data-sortable="true">Expositor</th>
+                                <th data-field="conteo" data-sortable="true" class="text-right">Votos</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">Estadísticas</div>
+                        <div class="panel-body">
+                            <div class="canvas-wrapper">
+                                <canvas class="chart" id="pie-chart" ></canvas>
+                            </div>
+                        </div>
+                            <div class="panel-footer text-center">
+                               Se mostrarán los 10 Expositores con más Likes
+                            </div>
+                    </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -83,4 +112,7 @@
 @stop
 @section('pie')
     <% HTML::script('public/js/sitio/dashboard.js'); %>
+    <% HTML::script('public/js/chart.min.js'); %>
+    <% HTML::script('public/js/easypiechart.js'); %>
+    <% HTML::script('public/js/easypiechart-data.js'); %>
 @stop
