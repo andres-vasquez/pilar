@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ExpositoresController.php" afterPath="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" afterPath="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -31,24 +32,9 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.708333" vertical-offset="3256" max-vertical-offset="3690">
-              <caret line="240" column="55" selection-start-line="240" selection-start-column="39" selection-end-line="240" selection-end-column="55" />
+            <state vertical-scroll-proportion="-12.458333" vertical-offset="3256" max-vertical-offset="3690">
+              <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LikesExpositoresController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9583335" vertical-offset="346" max-vertical-offset="2805">
-              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-              <folding>
-                <marker date="1428887190000" expanded="true" signature="3499:3706" placeholder="SELECT id, n..expositores..." />
-                <marker date="1428887190000" expanded="true" signature="3519:3607" placeholder="SELECT COUNT..LikesExpositores..." />
-                <marker date="1428887190000" expanded="true" signature="4879:5086" placeholder="SELECT id, n..expositores..." />
-                <marker date="1428887190000" expanded="true" signature="4899:4987" placeholder="SELECT COUNT..LikesExpositores..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -58,26 +44,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpositoresController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79262674" vertical-offset="2896" max-vertical-offset="3945">
-              <caret line="216" column="31" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="765" max-vertical-offset="2115">
-              <caret line="65" column="14" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -126,8 +92,43 @@
       <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="3075">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="3075">
+              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/MapasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="41.875" vertical-offset="1005" max-vertical-offset="1650">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LikesExpositoresController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.083333" vertical-offset="256" max-vertical-offset="2805">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <folding>
+                <marker date="1428891537000" expanded="true" signature="3476:3683" placeholder="SELECT id, n..expositores..." />
+                <marker date="1428891537000" expanded="true" signature="3496:3584" placeholder="SELECT COUNT..LikesExpositores..." />
+                <marker date="1428891537000" expanded="true" signature="4856:5063" placeholder="SELECT id, n..expositores..." />
+                <marker date="1428891537000" expanded="true" signature="4876:4964" placeholder="SELECT COUNT..LikesExpositores..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restapi.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24193548" vertical-offset="2205" max-vertical-offset="2865">
+              <caret line="154" column="39" selection-start-line="154" selection-start-column="39" selection-end-line="154" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -184,11 +185,11 @@
         <option value="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/feicobol/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" />
       </list>
     </option>
   </component>
@@ -637,7 +638,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428887207282</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Likes 1.3&#10;">
+      <created>1428888590618</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1428888590618</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -714,7 +721,8 @@
     <MESSAGE value="Likes" />
     <MESSAGE value="Likes 1.1&#10;" />
     <MESSAGE value="Likes 1.2&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Likes 1.2&#10;" />
+    <MESSAGE value="Likes 1.3&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Likes 1.3&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -926,14 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MapasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.315668" vertical-offset="1005" max-vertical-offset="1650">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LikesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
@@ -990,14 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333" vertical-offset="3256" max-vertical-offset="3690">
-          <caret line="240" column="55" selection-start-line="240" selection-start-column="39" selection-end-line="240" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75" vertical-offset="765" max-vertical-offset="2115">
@@ -1029,14 +1021,6 @@
           <folding>
             <element signature="e#0#47#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0046084" vertical-offset="1605" max-vertical-offset="2850">
-          <caret line="165" column="29" selection-start-line="165" selection-start-column="29" selection-end-line="165" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,14 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="3075">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.3333335" vertical-offset="1876" max-vertical-offset="2400">
@@ -1104,16 +1080,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9583335" vertical-offset="346" max-vertical-offset="2805">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
-          <folding>
-            <marker date="1428887190000" expanded="true" signature="3499:3706" placeholder="SELECT id, n..expositores..." />
-            <marker date="1428887190000" expanded="true" signature="3519:3607" placeholder="SELECT COUNT..LikesExpositores..." />
-            <marker date="1428887190000" expanded="true" signature="4879:5086" placeholder="SELECT id, n..expositores..." />
-            <marker date="1428887190000" expanded="true" signature="4899:4987" placeholder="SELECT COUNT..LikesExpositores..." />
-          </folding>
+        <state vertical-scroll-proportion="5.907834" vertical-offset="676" max-vertical-offset="3945">
+          <caret line="216" column="31" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,10 +1096,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79262674" vertical-offset="2896" max-vertical-offset="3945">
-          <caret line="216" column="31" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+        <state vertical-scroll-proportion="-12.458333" vertical-offset="3256" max-vertical-offset="3690">
+          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="3075">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/MapasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="41.875" vertical-offset="1005" max-vertical-offset="1650">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.083333" vertical-offset="256" max-vertical-offset="2805">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <marker date="1428891537000" expanded="true" signature="3476:3683" placeholder="SELECT id, n..expositores..." />
+            <marker date="1428891537000" expanded="true" signature="3496:3584" placeholder="SELECT COUNT..LikesExpositores..." />
+            <marker date="1428891537000" expanded="true" signature="4856:5063" placeholder="SELECT id, n..expositores..." />
+            <marker date="1428891537000" expanded="true" signature="4876:4964" placeholder="SELECT COUNT..LikesExpositores..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24193548" vertical-offset="2205" max-vertical-offset="2865">
+          <caret line="154" column="39" selection-start-line="154" selection-start-column="39" selection-end-line="154" selection-end-column="39" />
           <folding />
         </state>
       </provider>

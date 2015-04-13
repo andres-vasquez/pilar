@@ -28,7 +28,7 @@ class LikesExpositoresController extends \BaseController {
             $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
             if (sizeof($sistemas) > 0) {
                 $data["sistema_id"] = $sistemas[0]["id"];
-                $data["aud_usuario_id"] = Session::get('id_usuario');
+                $data["aud_usuario_id"] = "1";
                 $validator = Validator::make($data, LikesExpositore::$rules);
 
                 if ($validator->fails()) {

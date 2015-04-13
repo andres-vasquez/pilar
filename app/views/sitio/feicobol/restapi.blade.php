@@ -152,6 +152,7 @@
                         <code>http://pilar.cloudapp.net/pilar/api/v1/expositoreslikes</code>
 
                         <p>Método: <span class="text-success"><b>POST</b></span></p>
+                        <p>Content-type: <span class="text-success"><b>application/json</b></span></p>
                         <p>Paramétro: <span class="text-warning"><b>sistema</b></span></p>
                         <p>Paramétro: <span class="text-warning"><b>expositor_id</b></span></p>
                         <p>Parámetro: <span class="text-warning"><b>imei</b></span></p>
