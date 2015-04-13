@@ -29,14 +29,14 @@ class LikesExpositoresController extends \BaseController {
             if (sizeof($sistemas) > 0) {
                 $data["sistema_id"] = $sistemas[0]["id"];
                 $data["aud_usuario_id"] = Session::get('id_usuario');
-                $validator = Validator::make($data, Likesexpositore::$rules);
+                $validator = Validator::make($data, LikesExpositore::$rules);
 
                 if ($validator->fails()) {
                     $errores = $validator->messages()->first();
                     return View::make('ws.json_errores', array("errores" => compact('errores')));
                 }
 
-                if ($insert=Likesexpositore::create($data)) {
+                if ($insert=LikesExpositore::create($data)) {
                     $id = $insert->id;
                     return View::make('ws.json', array("resultado" => compact('id')));
                 } else {
