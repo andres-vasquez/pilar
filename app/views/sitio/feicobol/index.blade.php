@@ -93,7 +93,6 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="panel panel-default">
-                        <div class="panel-heading">Estadísticas</div>
                         <div class="panel-body">
                             <div class="canvas-wrapper">
                                 <canvas class="chart" id="pie-chart" ></canvas>
