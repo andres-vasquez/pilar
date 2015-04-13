@@ -214,6 +214,7 @@ class ExpositoresController extends \BaseController
                     $aux["stand"] = $expositor["stand"];
                     $aux["website"] = $expositor["website"];
                     $aux["fanpage"] = $expositor["fanpage"];
+                    $aux["email"] = $expositor["email"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
                     array_push($expositores, $aux);
                 }

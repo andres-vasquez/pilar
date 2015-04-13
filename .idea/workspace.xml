@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" afterPath="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ExpositoresController.php" afterPath="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -38,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LikesExpositoresController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LikesExpositoresController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27419356" vertical-offset="346" max-vertical-offset="2805">
+            <state vertical-scroll-proportion="-4.9583335" vertical-offset="346" max-vertical-offset="2805">
               <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding>
                 <marker date="1428887190000" expanded="true" signature="3499:3706" placeholder="SELECT id, n..expositores..." />
@@ -49,6 +49,26 @@
                 <marker date="1428887190000" expanded="true" signature="4879:5086" placeholder="SELECT id, n..expositores..." />
                 <marker date="1428887190000" expanded="true" signature="4899:4987" placeholder="SELECT COUNT..LikesExpositores..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpositoresController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.79262674" vertical-offset="2896" max-vertical-offset="3945">
+              <caret line="216" column="31" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,13 +182,13 @@
         <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
-        <option value="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/feicobol/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/LikesExpositoresController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
       </list>
     </option>
   </component>
@@ -611,7 +631,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428884481682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Likes 1.2&#10;">
+      <created>1428887207282</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1428887207282</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -687,20 +713,14 @@
     <MESSAGE value="Publicidad add + likes primera parte 1.1" />
     <MESSAGE value="Likes" />
     <MESSAGE value="Likes 1.1&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Likes 1.1&#10;" />
+    <MESSAGE value="Likes 1.2&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Likes 1.2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/wysihtml5x/dist/wysihtml5x.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="65114" max-vertical-offset="197400">
-          <caret line="4361" column="59" selection-start-line="4361" selection-start-column="55" selection-end-line="4361" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/bower_components/wysihtml5x/dist/wysihtml5x.min.map">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="876">
@@ -962,14 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="51.916668" vertical-offset="2896" max-vertical-offset="3930">
-          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.470588" vertical-offset="1845" max-vertical-offset="4605">
@@ -1094,7 +1106,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27419356" vertical-offset="346" max-vertical-offset="2805">
+        <state vertical-scroll-proportion="-4.9583335" vertical-offset="346" max-vertical-offset="2805">
           <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
             <marker date="1428887190000" expanded="true" signature="3499:3706" placeholder="SELECT id, n..expositores..." />
@@ -1102,6 +1114,22 @@
             <marker date="1428887190000" expanded="true" signature="4879:5086" placeholder="SELECT id, n..expositores..." />
             <marker date="1428887190000" expanded="true" signature="4899:4987" placeholder="SELECT COUNT..LikesExpositores..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="458">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79262674" vertical-offset="2896" max-vertical-offset="3945">
+          <caret line="216" column="31" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
