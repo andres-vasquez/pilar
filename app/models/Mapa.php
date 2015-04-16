@@ -14,5 +14,5 @@ class Mapa extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array('estado','baja_logica');
+	protected $fillable = array('sistema_id','nombre','tipo','color','atributo1','atributo2','atributo3','json','estado','baja_logica');
 }

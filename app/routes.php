@@ -245,5 +245,10 @@ Route::group(array('prefix' => 'api/v1/expositoreslikes'), function()
     Route::get('/{sistema}/conteo',  array('as' => 'show', 'uses' =>'LikesExpositoresController@apiconteo'));
 });
 
+//MAPA Api
+Route::group(array('prefix' => 'api/v1/mapas'), function()
+{
+    Route::get('/{sistema}',  array('as' => 'show', 'uses' =>'MapasController@apitodas')); // Todas
+});
 
 

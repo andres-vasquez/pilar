@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feicobol - Dashboard</title>
+    <title>Feicobol - PILAR</title>
 
     <% HTML::style('public/css/bootstrap.min.css'); %>
     <% HTML::style('public/css/datepicker3.css'); %>

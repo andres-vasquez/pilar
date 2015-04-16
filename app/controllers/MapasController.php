@@ -22,6 +22,33 @@ class MapasController extends \BaseController {
 	 */
 	public function store()
 	{
+        $data=Input::all();
+        $contador=0;
+        for($i=0;$i<count($data);$i++)
+        {
+            $datos=$data[$i];
+            $validator = Validator::make($datos, Mapa::$rules);
+            if ($validator->fails())
+            {
+                $errores=$validator->messages()->first();
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+
+            $datos["aud_usuario_id"] = Session::get('id_usuario');
+            $datos["sistema_id"] = Session::get('id_sistema');
+            if(Mapa::create($datos))
+            {
+                $contador++;
+            }
+            else
+            {
+                $errores="Error al crear registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+
+        return View::make('ws.json', array("resultado"=>compact('contador')));
+        /*
 		$validator = Validator::make($data = Input::all(), Mapa::$rules);
 
 		if ($validator->fails())
@@ -38,7 +65,7 @@ class MapasController extends \BaseController {
 		{
 			$errores="Error al crear registro";
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
+		}*/
 	}
 
 	/**
@@ -100,5 +127,65 @@ class MapasController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 	}
+
+    public function apitodas($app)
+    {
+        $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
+        if (sizeof($sistemas) > 0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $mapas_query = Mapa::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            if (sizeof($mapas_query) > 0)
+            {
+                $mapas = array();
+                foreach ($mapas_query as $mapa)
+                {
+                    $aux = array();
+                    if($mapa["tipo"]=="marker")
+                    {
+                        $aux["id"] = $mapa["id"];
+                        $aux["tipo"] = $mapa["tipo"];
+                        $aux["nombre"] = $mapa["nombre"];
+                        $aux["icono"] = $mapa["icono"];
+                        $aux["punto"] = $mapa["json"];
+                    }
+                    else if($mapa["tipo"]=="circulo")
+                    {
+                        $aux["id"] = $mapa["id"];
+                        $aux["tipo"] = $mapa["tipo"];
+                        $aux["nombre"] = $mapa["nombre"];
+                        $aux["color"] = $mapa["color"];
+                        $aux["radio"] = $mapa["atributo2"];
+                        $aux["centro"] = json_decode($mapa["atributo1"]);
+                    }
+                    else if($mapa["tipo"]=="poligono")
+                    {
+                        $aux["id"] = $mapa["id"];
+                        $aux["tipo"] = $mapa["tipo"];
+                        $aux["nombre"] = $mapa["nombre"];
+                        $aux["color"] = $mapa["color"];
+                        $aux["punto"] = json_decode($mapa["json"]);
+                    }
+                    else if($mapa["tipo"]=="rectangulo")
+                    {
+                        $aux["id"] = $mapa["id"];
+                        $aux["tipo"] = $mapa["tipo"];
+                        $aux["nombre"] = $mapa["nombre"];
+                        $aux["color"] = $mapa["color"];
+                        $aux["noreste"] = json_decode($mapa["atributo1"]);
+                        $aux["sudoeste"] = json_decode($mapa["atributo2"]);
+                    }
+                    array_push($mapas, $aux);
+                }
+                return json_encode($mapas);
+                return View::make('ws.json', array("resultado" => compact('expositores')));
+            }
+            else
+            {
+                $errores="No hay datos";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+    }
 
 }

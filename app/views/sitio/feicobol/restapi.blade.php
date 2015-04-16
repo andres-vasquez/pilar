@@ -134,7 +134,31 @@
                         <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
                         <br/><br/>
 
-                        <p>Próximanente.... en desarrollo</p>
+                        <p>La API de Mapa despliega las capas mostradas en la interfaz web</p>
+                        <br/>
+                        <h4>URL base</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/mapas/credencial</code>
+
+                        <br/>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/mapas/o0wXYg03Y8KEM7o"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/mapas/o0wXYg03Y8KEM7o</a>
+                        </small>
+
+                        <small>
+                            <br/><br/><br/>
+                            Datos de respuesta:
+                            <br/><br/>
+                            <ul>
+                                <li>Marcador: coordenada lat y lon</li>
+                                <li>Círculo: coordenada lat y lon del centro y un dato para radio</li>
+                                <li>Polígono: coordenadas lat y lon de todos los vertices del polígono</li>
+                                <li>Rectángulo: coordenadas lat y lon del punto Noreste y punto Sudoeste</li>
+                            </ul>
+                            <br/>
+                            Adicionalmente despliega atributos de color de línea e ícono si corresponde.
+                        </small>
+
+                        <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab5">
                         <h3>Likes</h3>
