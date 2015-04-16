@@ -134,17 +134,21 @@ class MapasController extends \BaseController {
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $mapas_query = Mapa::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            $mapas_query = Mapa::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? GROUP BY tipo', array($id_sistema))->get();
             if (sizeof($mapas_query) > 0)
             {
                 $mapas = array();
                 foreach ($mapas_query as $mapa)
                 {
+                    $categoria=array();
+                    $categoria["tipo"]=$mapa["tipo"];
+                    $categoria["capa"]=array();
+
                     $aux = array();
                     if($mapa["tipo"]=="marker")
                     {
                         $aux["id"] = $mapa["id"];
-                        $aux["tipo"] = $mapa["tipo"];
+                        //$aux["tipo"] = $mapa["tipo"];
                         $aux["nombre"] = $mapa["nombre"];
                         $aux["icono"] = $mapa["icono"];
                         $aux["punto"] = $mapa["json"];
@@ -152,7 +156,7 @@ class MapasController extends \BaseController {
                     else if($mapa["tipo"]=="circulo")
                     {
                         $aux["id"] = $mapa["id"];
-                        $aux["tipo"] = $mapa["tipo"];
+                        //$aux["tipo"] = $mapa["tipo"];
                         $aux["nombre"] = $mapa["nombre"];
                         $aux["color"] = $mapa["color"];
                         $aux["radio"] = $mapa["atributo2"];
@@ -161,7 +165,7 @@ class MapasController extends \BaseController {
                     else if($mapa["tipo"]=="poligono")
                     {
                         $aux["id"] = $mapa["id"];
-                        $aux["tipo"] = $mapa["tipo"];
+                        //$aux["tipo"] = $mapa["tipo"];
                         $aux["nombre"] = $mapa["nombre"];
                         $aux["color"] = $mapa["color"];
                         $aux["punto"] = json_decode($mapa["json"]);
@@ -169,13 +173,14 @@ class MapasController extends \BaseController {
                     else if($mapa["tipo"]=="rectangulo")
                     {
                         $aux["id"] = $mapa["id"];
-                        $aux["tipo"] = $mapa["tipo"];
+                        //$aux["tipo"] = $mapa["tipo"];
                         $aux["nombre"] = $mapa["nombre"];
                         $aux["color"] = $mapa["color"];
                         $aux["noreste"] = json_decode($mapa["atributo1"]);
                         $aux["sudoeste"] = json_decode($mapa["atributo2"]);
                     }
-                    array_push($mapas, $aux);
+                    array_push($categoria["capa"], $aux);
+                    array_push($mapas, $categoria);
                 }
                 return json_encode($mapas);
                 return View::make('ws.json', array("resultado" => compact('expositores')));
