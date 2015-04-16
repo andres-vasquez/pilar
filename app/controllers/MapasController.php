@@ -182,8 +182,8 @@ class MapasController extends \BaseController {
                     array_push($categoria["capa"], $aux);
                     array_push($mapas, $categoria);
                 }
-                return json_encode($mapas);
-                return View::make('ws.json', array("resultado" => compact('expositores')));
+                //return json_encode($mapas);
+                return View::make('ws.json', array("resultado" => compact('mapas')));
             }
             else
             {
