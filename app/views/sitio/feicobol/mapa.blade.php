@@ -19,16 +19,16 @@
     <div class="col-lg-12">
         <div id="mensaje"></div>
         <div class="row">
-            <table class="col-lg-5">
+            <table class="col-lg-6 text-center">
                 <tr>
-                    <td>Color:</td>
+                    <td class="text-right">Color:</td>
                     <td><input class="colorPicker evo-cp0" id="txtColorPicker" size="8" maxlength="8"/></td>
-                    <td>&nbsp;&nbsp;Nombre del Layout:</td>
-                    <td>&nbsp;&nbsp;<input id="txtNombre" size="20" maxlength="20"/></td>
+                    <td class="text-right">Nombre del Layout:</td>
+                    <td><input id="txtNombre" size="20" maxlength="20"/></td>
                 </tr>
             </table>
 
-            <div class="col-lg-7 text-right">
+            <div class="col-lg-6 text-right">
                 <div id="btnGuardarCambios" class="btn btn-info btn-sm disabled"><i id="loagingGuardarCambios" class="fa fa-spinner fa-spin hidden"></i> Guardar cambios</div>
 
                 <div class="btn-group">
