@@ -150,7 +150,7 @@ class MapasController extends \BaseController {
                         $aux["id"] = $mapa["id"];
                         //$aux["tipo"] = $mapa["tipo"];
                         $aux["nombre"] = $mapa["nombre"];
-                        $aux["icono"] = $mapa["icono"];
+                        $aux["icono"] = $mapa["atributo1"];
                         $aux["punto"] = $mapa["json"];
                     }
                     else if($mapa["tipo"]=="circulo")
