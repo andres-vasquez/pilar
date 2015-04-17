@@ -39,7 +39,7 @@ $(document).ready(function () {
     icons.push({'iconFilePath': $("#hdnRuta").val()+'/Puerta.png', 'iconValue':'Puerta'});
     icons.push({'iconFilePath': $("#hdnRuta").val()+'/SalonEventos.png', 'iconValue':'SalonEventos'});
     icons.push({'iconFilePath': $("#hdnRuta").val()+'/SectorGanadero.png', 'iconValue':'SectorGanadero'});
-    icons.push({'iconFilePath': $("#hdnRuta").val()+'/TeatroAlAireLibre.png', 'iconValue':'TeatroAlAireLibre'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/Teatro.png', 'iconValue':'TeatroAlAireLibre'});
 
     iconSelect.refresh(icons);
 
