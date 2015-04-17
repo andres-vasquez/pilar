@@ -294,7 +294,7 @@ $("#btnGuardarCambios").click(function(){
         var obj = {
             "nombre": lstRectangulos[i].nombre,
             "tipo": "rectangulo",
-            "color": JSON.stringify(lstRectangulos[i].color),
+            "color": lstRectangulos[i].color,
             "atributo1": JSON.stringify(lstRectangulos[i].noreste),
             "atributo2": JSON.stringify(lstRectangulos[i].sudoeste),
             "atributo3": "",
