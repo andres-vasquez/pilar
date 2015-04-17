@@ -134,7 +134,7 @@ class MapasController extends \BaseController {
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $mapas_query = Mapa::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? GROUP BY tipo', array($id_sistema))->get();
+            $mapas_query = Mapa::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
             if (sizeof($mapas_query) > 0)
             {
                 $mapas = array();
