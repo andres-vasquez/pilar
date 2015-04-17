@@ -1,6 +1,7 @@
 /**
  * Created by andresvasquez on 3/19/15.
  */
+
 var map;
 var id=0;
 var drawingManager;
@@ -9,7 +10,38 @@ var lstCirculos = [];
 var lstPoligonos = [];
 var lstRectangulos = [];
 
+var icons = [];
+var iconSelect;
+var selectedText;
+
 $(document).ready(function () {
+
+    selectedText = document.getElementById('selected-text');
+
+    document.getElementById('my-icon-select').addEventListener('changed', function(e){
+        selectedText.value = iconSelect.getSelectedValue();
+    });
+
+    iconSelect = new IconSelect("my-icon-select");
+
+
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/AreaDeJuegos.png', 'iconValue':'AreaDeJuegos'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/Auditorio.png', 'iconValue':'Auditorio'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/Banio.png', 'iconValue':'Banio'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/Cadepia.png', 'iconValue':'Cadepia'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/CentroInternacionaldeNegocios.png', 'iconValue':'CentroInternacionaldeNegocios'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/PabellonAmericano.png', 'iconValue':'PabellonAmericano'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/PabellonBicentenario.png', 'iconValue':'PabellonBicentenario'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/PabellonInternacional.png', 'iconValue':'PabellonInternacional'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/PabellonUnionEuropea.png', 'iconValue':'PabellonUnionEuropea'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/Parqueo.png', 'iconValue':'Parqueo'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/PlazaDeComidas.png', 'iconValue':'PlazaDeComidas'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/Puerta.png', 'iconValue':'Puerta'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/SalonEventos.png', 'iconValue':'SalonEventos'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/SectorGanadero.png', 'iconValue':'SectorGanadero'});
+    icons.push({'iconFilePath': $("#hdnRuta").val()+'/TeatroAlAireLibre.png', 'iconValue':'TeatroAlAireLibre'});
+
+    iconSelect.refresh(icons);
 
     $("#txtColorPicker").colorpicker();
 
@@ -40,7 +72,7 @@ $(document).ready(function () {
             draggable: false,
             clickable: false,
             animation: google.maps.Animation.DROP,
-            icon: ''
+            icon: BuscarIcono($("#selected-text").val())
         },
         circleOptions: {
             fillColor: color,
@@ -84,7 +116,17 @@ $(document).ready(function () {
                 alert("Ingrese un nombre para la capa");
                 event.overlay.setMap(null);
             }
-            else {
+            else
+            {
+                var image = {
+                    url: BuscarIcono($("#selected-text").val()),
+                    size: new google.maps.Size(196, 196),
+                    origin: new google.maps.Point(0,0),
+                    anchor: new google.maps.Point(0, 32),
+                    scaledSize: new google.maps.Size(48, 48)
+                };
+                event.overlay.icon=image;
+
                 var coordenadas = [];
                 var punto = event.overlay.getPosition();
                 coordenadas.push(punto.lat(), punto.lng());
@@ -93,7 +135,7 @@ $(document).ready(function () {
                 var marcador = {
                     "id":id,
                     "nombre": $("#txtNombre").val(),
-                    "icono": '',
+                    "icono": $("#selected-text").val(),
                     "coordenadas": coordenadas
                 };
                 llenarCapas("marker", marcador);
@@ -184,6 +226,13 @@ $(document).ready(function () {
     llenarDrawing();
     drawingManager.setMap(map);
 });
+
+BuscarIcono=function(value)
+{
+    for(var i=0;i<icons.length;i++)
+     if(icons[i].iconValue==value)
+       return icons[i].iconFilePath;
+};
 
 $("#txtColorPicker").change(function () {
     llenarDrawing();

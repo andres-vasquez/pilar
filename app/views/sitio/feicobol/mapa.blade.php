@@ -5,6 +5,7 @@
     <% HTML::style('http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-lightness/jquery-ui.css'); %>
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
     <% HTML::style('public/css/evol.colorpicker.min.css'); %>
+    <% HTML::style('public/css/iconselect.css'); %>
 @stop
 
 @section('barra_navegacion')
@@ -18,6 +19,8 @@
 @section('contenido1')
     <div class="col-lg-12">
         <div id="mensaje"></div>
+        <input type="hidden" id="hdnRuta" value="<% asset('public/img/tags') %>"/>
+
         <div class="row">
             <table class="col-lg-6 text-center">
                 <tr>
@@ -25,11 +28,16 @@
                     <td><input class="colorPicker evo-cp0" id="txtColorPicker" size="8" maxlength="8"/></td>
                     <td class="text-right">Nombre del Layout:</td>
                     <td><input id="txtNombre" size="20" maxlength="20"/></td>
+                    <td><div id="my-icon-select" style="width: 40px;"></div></td>
+                    <td><input placeholder="icono" type="text" id="selected-text" name="selected-text" disabled/></td>
                 </tr>
             </table>
 
             <div class="col-lg-6 text-right">
-                <div id="btnGuardarCambios" class="btn btn-info btn-sm disabled"><i id="loagingGuardarCambios" class="fa fa-spinner fa-spin hidden"></i> Guardar cambios</div>
+                <div id="btnGuardarCambios" class="btn btn-info btn-sm disabled"><i id="loagingGuardarCambios"
+                                                                                    class="fa fa-spinner fa-spin hidden"></i>
+                    Guardar cambios
+                </div>
 
                 <div class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle"
@@ -56,5 +64,7 @@
     <% HTML::script('https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=drawing'); %>
     <% HTML::script('https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js'); %>
     <% HTML::script('public/js/evol.colorpicker.min.js'); %>
+    <% HTML::script('public/js/iconselect.js'); %>
+    <% HTML::script('public/js/iscroll.js'); %>
     <% HTML::script('public/js/sitio/mapa.js'); %>
 @stop
