@@ -24,6 +24,7 @@ class MapasController extends \BaseController {
 	{
         $data=Input::all();
         $contador=0;
+        Mapa::truncate();
         for($i=0;$i<count($data);$i++)
         {
             $datos=$data[$i];

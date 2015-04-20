@@ -10,6 +10,7 @@
 
 @section('barra_navegacion')
     <li class="active">Mapa</li>
+    <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>
 @stop
 
 @section('titulo')
@@ -22,18 +23,18 @@
         <input type="hidden" id="hdnRuta" value="<% asset('public/img/tags') %>"/>
 
         <div class="row">
-            <table class="col-lg-6 text-center">
+            <table class="col-lg-8 text-center">
                 <tr>
                     <td class="text-right">Color:</td>
                     <td><input class="colorPicker evo-cp0" id="txtColorPicker" size="8" maxlength="8"/></td>
                     <td class="text-right">Nombre del Layout:</td>
-                    <td><input id="txtNombre" size="20" maxlength="20"/></td>
+                    <td><input id="txtNombre" size="30" maxlength="30"/></td>
                     <td><div id="my-icon-select" style="width: 40px;"></div></td>
                     <td><input placeholder="icono" type="text" id="selected-text" name="selected-text" disabled/></td>
                 </tr>
             </table>
 
-            <div class="col-lg-6 text-right">
+            <div class="col-lg-4 text-right">
                 <div id="btnGuardarCambios" class="btn btn-info btn-sm disabled"><i id="loagingGuardarCambios"
                                                                                     class="fa fa-spinner fa-spin hidden"></i>
                     Guardar cambios
