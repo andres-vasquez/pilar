@@ -74,7 +74,16 @@ Route::group(array('before'=>'session'),function()
             return Redirect::to('/login');
     });
 
+    //************** ADMIN **********************
+    //REST Api consultas
+    Route::group(array('prefix' => 'admin'), function()
+    {
+        Route::get('/', function(){return View::make('sitio.admin.index')->with('data', array('sistemas'  => Session::get('sistemas'),'menus'   => Session::get('menus')));});
+        Route::get('/perfiles', function(){return View::make('sitio.admin.perfiles')->with('data', array('sistemas'  => Session::get('sistemas'),'menus'   => Session::get('menus')));});
+        Route::get('/usuarios',  function(){return View::make('sitio.admin.pefiles')->with('data', array('sistemas'  => Session::get('sistemas'),'menus'   => Session::get('menus')));});
+    });
 
+//************** Feicobol **********************
 
     Route::get('/feicobol', function()
     {
@@ -108,6 +117,7 @@ Route::group(array('before'=>'session'),function()
         return View::make('sitio.feicobol.restapi')->with('data', $data);
     });
 
+    //*************** GENERAL *******************
 
     Route::get('/logout', function(){
         Session::forget('accesos');

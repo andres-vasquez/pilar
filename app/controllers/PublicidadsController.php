@@ -129,7 +129,7 @@ class PublicidadsController extends \BaseController
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? ORDER BY prioridad', array($id_sistema))->get();
             if (sizeof($publicidades_query) > 0) {
                 $publicidad = array();
                 foreach ($publicidades_query as $publicidades_q) {
@@ -154,7 +154,7 @@ class PublicidadsController extends \BaseController
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? ORDER BY prioridad', array($id_sistema))->get();
             if (sizeof($publicidades_query) > 0) {
                 $publicidad = array();
                 foreach ($publicidades_query as $publicidades_q) {
@@ -204,7 +204,7 @@ class PublicidadsController extends \BaseController
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? ORDER BY prioridad', array($id_sistema))->get();
             if (sizeof($publicidades_query) > 0) {
                 $publicidad = array();
                 foreach ($publicidades_query as $publicidades_q) {
