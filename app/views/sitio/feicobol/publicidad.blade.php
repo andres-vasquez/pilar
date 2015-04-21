@@ -338,7 +338,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="cmbPrioridad_editar" class="col-sm-4 control-label">Prioridad</label>
+                        <label for="cmbPrioridad_editar" class="col-sm-4 control-label">Orden</label>
 
                         <div class="col-sm-8">
                             <select id="cmbPrioridad_editar" class="form-control">

@@ -51,8 +51,8 @@
       <file leaf-file-name="publicidad.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7309417" vertical-offset="5044" max-vertical-offset="9075">
-              <caret line="358" column="75" selection-start-line="358" selection-start-column="75" selection-end-line="358" selection-end-column="75" />
+            <state vertical-scroll-proportion="1.470852" vertical-offset="4444" max-vertical-offset="9075">
+              <caret line="340" column="93" selection-start-line="340" selection-start-column="93" selection-end-line="340" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -789,7 +789,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429640136751</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Mapa fin ofuscado. Orden Publicidad">
+      <created>1429640480096</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1429640480096</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -824,7 +830,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.292437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.292437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22550544" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22550544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1263,8 +1269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7309417" vertical-offset="5044" max-vertical-offset="9075">
-          <caret line="358" column="75" selection-start-line="358" selection-start-column="75" selection-end-line="358" selection-end-column="75" />
+        <state vertical-scroll-proportion="1.470852" vertical-offset="4444" max-vertical-offset="9075">
+          <caret line="340" column="93" selection-start-line="340" selection-start-column="93" selection-end-line="340" selection-end-column="93" />
           <folding />
         </state>
       </provider>
