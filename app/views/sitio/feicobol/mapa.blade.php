@@ -67,5 +67,5 @@
     <% HTML::script('public/js/evol.colorpicker.min.js'); %>
     <% HTML::script('public/js/iconselect.js'); %>
     <% HTML::script('public/js/iscroll.js'); %>
-    <% HTML::script('public/js/sitio/mapa.js'); %>
+    <% HTML::script('public/js/sitio/mapa_normal.js'); %>
 @stop

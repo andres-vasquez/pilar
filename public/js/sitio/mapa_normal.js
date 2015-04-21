@@ -276,11 +276,13 @@ LlenarOverlay = function () {
             success: function (result) {
                 if (parseInt(result.intCodigo) == 1) {
                     var lstMapas = result.resultado.mapas;
-
-                    for (var i = 0; i < lstMapas.length; i++) {
+                    console.log(JSON.stringify(lstMapas));
+                    for (var i = 0; i < lstMapas.length; i++)
+                    {
                         var objCapa = lstMapas[i].capa;
                         //Llenar Markers
-                        if (lstMapas[i].tipo == "marker") {
+                        if (lstMapas[i].tipo == "marker")
+                        {
                             var image =
                             {
                                 url: BuscarIcono(objCapa[0].icono),
@@ -320,7 +322,8 @@ LlenarOverlay = function () {
                             lstMarkers.push(marcador);
                         }
                         //Llenar Circulos
-                        else if (lstMapas[i].tipo == "circulo") {
+                        else if (lstMapas[i].tipo == "circulo")
+                        {
                             var objCentro = objCapa[0].centro;
                             var myLatLng = new google.maps.LatLng(objCentro["k"], objCentro["D"]);
                             var circleOptions = {
@@ -350,13 +353,16 @@ LlenarOverlay = function () {
                             lstCirculos.push(circulo);
                         }
                         //Llenar Poligonos
-                        else if (lstMapas[i].tipo == "poligono") {
-                            var coords = [];
-                            var coordenadas = objCapa[0].punto;
-                            var i = 0;
-                            while (i < coordenadas.length) {
-                                coords.push(new google.maps.LatLng(parseFloat(coordenadas[i]), parseFloat(coordenadas[i + 1])));
-                                i = i + 2;
+                        else if (lstMapas[i].tipo == "poligono")
+                        {
+                            var coords1 = [];
+
+                            var coordenadas1 = objCapa[0].punto;//(objCapa[0].punto.replace("[", "").replace("]", "")).split(",");
+                            var k = 0;
+
+                            while (k < coordenadas1.length) {
+                                coords1.push(new google.maps.LatLng(parseFloat(coordenadas1[k]), parseFloat(coordenadas1[k + 1])));
+                                k = k + 2;
                             }
 
 
@@ -369,7 +375,7 @@ LlenarOverlay = function () {
                                 editable: false,
                                 draggable: true,
                                 zIndex: 1,
-                                paths: coords
+                                paths: coords1
                             };
                             var overlay = new google.maps.Polygon(polygonOptions);
 
@@ -390,10 +396,10 @@ LlenarOverlay = function () {
                             };
                             llenarCapas("poligono", poligono);
                             lstPoligonos.push(poligono);
-
                         }
                         //Llenar Recangulos
-                        else if (lstMapas[i].tipo == "rectangulo") {
+                        else if (lstMapas[i].tipo == "rectangulo")
+                        {
                             var coords = new google.maps.LatLngBounds(
                                 new google.maps.LatLng(parseFloat(objCapa[0].sudoeste["k"]), parseFloat(objCapa[0].sudoeste["D"])),
                                 new google.maps.LatLng(parseFloat(objCapa[0].noreste["k"]), parseFloat(objCapa[0].noreste["D"]))
@@ -476,6 +482,7 @@ $("#btnGuardarCambios").click(function () {
                 data.push(obj);
             }
         }
+
 
         //Poligonos
         for (var i = 0; i < lstPoligonos.length; i++) {
