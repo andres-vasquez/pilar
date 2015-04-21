@@ -61,15 +61,25 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="cmbPrioridad" class="col-sm-4 control-label">Prioridad</label>
+                                <label for="cmbPrioridad" class="col-sm-4 control-label">Orden</label>
 
                                 <div class="col-sm-8">
                                     <select id="cmbPrioridad" class="form-control">
-                                        <option value="1">1 - Prioridad muy baja</option>
-                                        <option value="2">2 - Prioridad baja</option>
-                                        <option value="3" selected>3 - Prioridad media (recomendado)</option>
-                                        <option value="4">4 - Prioridad alta</option>
-                                        <option value="5">5 - Prioridad muy alta</option>
+                                        <option value="1">1 - Primero en mostrar</option>
+                                        <option value="2">2 - Segundo en mostrar</option>
+                                        <option value="3">3 - Tercero en mostrar</option>
+                                        <option value="4">4 - Cuarto en mostrar</option>
+                                        <option value="5">5 - Quinto en mostrar</option>
+                                        <option value="6">6 - en mostrar</option>
+                                        <option value="7">7 - en mostrar</option>
+                                        <option value="8">8 - en mostrar</option>
+                                        <option value="9">9 - en mostrar</option>
+                                        <option value="10">10 - en mostrar</option>
+                                        <option value="11">11 - en mostrar</option>
+                                        <option value="12">12 - en mostrar</option>
+                                        <option value="13">13 - en mostrar</option>
+                                        <option value="14">14 - en mostrar</option>
+                                        <option value="15">15 - en mostrar</option>
                                     </select>
                                 </div>
                             </div>
@@ -332,11 +342,21 @@
 
                         <div class="col-sm-8">
                             <select id="cmbPrioridad_editar" class="form-control">
-                                <option value="1">1 - Prioridad muy baja</option>
-                                <option value="2">2 - Prioridad baja</option>
-                                <option value="3" selected>3 - Prioridad media (recomendado)</option>
-                                <option value="4">4 - Prioridad alta</option>
-                                <option value="5">5 - Prioridad muy alta</option>
+                                <option value="1">1 - Primero en mostrar</option>
+                                <option value="2">2 - Segundo en mostrar</option>
+                                <option value="3">3 - Tercero en mostrar</option>
+                                <option value="4">4 - Cuarto en mostrar</option>
+                                <option value="5">5 - Quinto en mostrar</option>
+                                <option value="6">6 - en mostrar</option>
+                                <option value="7">7 - en mostrar</option>
+                                <option value="8">8 - en mostrar</option>
+                                <option value="9">9 - en mostrar</option>
+                                <option value="10">10 - en mostrar</option>
+                                <option value="11">11 - en mostrar</option>
+                                <option value="12">12 - en mostrar</option>
+                                <option value="13">13 - en mostrar</option>
+                                <option value="14">14 - en mostrar</option>
+                                <option value="15">15 - en mostrar</option>
                             </select>
                         </div>
                     </div>
