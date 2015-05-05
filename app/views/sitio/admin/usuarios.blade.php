@@ -8,6 +8,10 @@
     <% HTML::style('public/css/iconselect.css'); %>
 @stop
 
+@section('titulo_plataforma')
+    ADMINISTRADOR
+@stop
+
 @section('barra_navegacion')
     <li class="active">Usuarios</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>

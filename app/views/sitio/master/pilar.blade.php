@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Feicobol - PILAR</title>
+    <title>Panel de Adminitración</title>
 
     <% HTML::style('public/css/bootstrap.min.css'); %>
     <% HTML::style('public/css/datepicker3.css'); %>
@@ -27,7 +27,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span>PILAR - </span> FEICOBOL</a>
+
+            <a class="navbar-brand" href="#"><span>PILAR - </span>
+                @section('titulo_plataforma')
+                @show
+            </a>
+
 
             <ul class="user-menu">
                 <li class="dropdown pull-right">
@@ -50,7 +55,7 @@
                     <ul class="dropdown-menu" role="menu">
                         @foreach ($data["sistemas"] as $sistema)
                             <li>
-                                <a href="<% url('/'.$sistema) %>"><span
+                                <a href="<% url('/rutarelativa/'.$sistema) %>"><span
                                             class="glyphicon glyphicon-home"></span> <% $sistema %></a>
                             </li>
                         @endforeach
@@ -68,24 +73,22 @@
         <li role="presentation" class="divider"></li>
         @if (count($data["menus"])>0)
             @for ($i = 0; $i < count($data["menus"]); $i++)
-                @if($data["menus"][$i]["menus"]["estado"]=="1" && $data["menus"][$i]["menus"]["baja_logica"]!="0")
-                    @if('/'.Request::path()==$data["menus"][$i]["menus"]["link"])
+                @if($data["menus"][$i]["estado"]=="1" && $data["menus"][$i]["baja_logica"]!="0")
+                    @if('/'.Request::path()==$data["menus"][$i]["link"])
                         <li class="active">
                     @else
                         <li>
                             @endif
-                            <a href="<% url($data["menus"][$i]["menus"]["link"]) %>"><span
-                                        class="glyphicon <% $data["menus"][$i]["menus"]["icono"]%>"></span> <% $data["menus"][$i]["menus"]["titulo"] %>
+                            <a href="<% url($data["menus"][$i]["link"]) %>"><span
+                                        class="glyphicon <% $data["menus"][$i]["icono"]%>"></span> <% $data["menus"][$i]["titulo"] %>
                             </a>
                         </li>
                     @endif
                     @endfor
                 @endif
-
-
-                <li role="presentation" class="divider"></li>
-                <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a>
-                </li>
+        <li role="presentation" class="divider"></li>
+        <li><a href="<% url('/logout') %>"><span class="glyphicon glyphicon-log-out"></span> Cerrar sesión</a>
+        </li>
     </ul>
     <div class="attribution"><a href="#">PILAR</a><br/> Plataforma Integral Líder en Administración REST</div>
 </div>

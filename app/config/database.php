@@ -62,11 +62,20 @@ return array(
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
         ),
-
         'Pilar' => array(
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'database'  => 'pilar',
+            'username'  => 'root',
+            'password'  => 'Adnap0211**',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ),
+        'Sms' => array(
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'sms',
             'username'  => 'root',
             'password'  => 'Adnap0211**',
             'charset'   => 'utf8',

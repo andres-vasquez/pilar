@@ -105,7 +105,7 @@ class AsignacionMenusController extends \BaseController {
     {
         $datos=array();
             $aux=array();
-            $lstMenusAsignados=AsignacionMenu::whereRaw('perfil_id=? AND estado=1 AND baja_logica!=0', array($id_perfil))->get();
+            $lstMenusAsignados=AsignacionMenu::whereRaw('perfil_id=? AND estado=1 AND baja_logica!=0 ORDER BY orden', array($id_perfil))->get();
             foreach($lstMenusAsignados as $Menu)
             {
                 //Obtenemos el nombre del sistema

@@ -96,4 +96,68 @@ class AutenticacionController extends \BaseController
 
 		return View::make('ws.json', array("resultado"=>compact('datos')));
 	}
+
+    public function enlace($sistema)
+    {
+        $sistemas_query = SistemasDesarrollados::whereRaw('nombre=?', array($sistema))->get();
+        if (sizeof($sistemas_query) > 0)
+        {
+            foreach ($sistemas_query as $sistemas)
+            {
+                $id_sistema = $sistemas["id"];
+                Session::put('id_sistema', $id_sistema); //Obtiene el ID del sistema
+                Session::put('credencial',$sistemas["app"]);//Obtiene la credencial
+
+                //Obtiene el arbol de accesos
+                $jsonAccesos = Session::get('accesos');
+                if($jsonAccesos["intCodigo"]=="1") // Si tiene accesos
+                {
+                    $jsonDatos = $jsonAccesos["resultado"]["datos"];
+                    if (count($jsonDatos) > 0) {
+                        $sistemas = array();
+                        for ($i = 0; $i < count($jsonDatos); $i++) // Carga los datos de sistemas
+                        {
+                            if($jsonDatos[$i]["perfile"]["sistema_id"]==$id_sistema)
+                            {
+                                //Definicion de permisos en la capa administrador -> CRUD = 1111
+                                if($jsonDatos[$i]["perfile"]["id"]=="1")
+                                    Session::put("permisos","1111");
+                                else
+                                    Session::put("permisos","0000"); //TODO definir permisos dinamicamente por perfil
+
+                                $perfile = $jsonDatos[$i]["perfile"]; //Obtiene los perfiles y carga el ultimo
+                                $request = Request::create('/ws/menus/perfil/'.$perfile["id"], 'GET', array());
+                                $resultado_menus=json_decode(Route::dispatch($request)->getContent(),true);
+                                if($resultado_menus["intCodigo"]=="1")
+                                {
+                                    $menus=array();
+                                    $jsonMenus=$resultado_menus["resultado"]["datos"];
+                                    for($j=0;$j<count($jsonMenus);$j++)
+                                    {
+                                        array_push($menus,$jsonMenus[$j]["menus"]);
+                                    }
+
+                                    //Carga los menus en la variable de sesion
+                                    Session::put('menus',$menus);
+                                    return Redirect::to('/' . $sistema);
+                                }
+                                else
+                                    return Redirect::to('/login');//Si no tiene acceso al modulo
+                                break;
+                            }
+                        }
+                    }
+                    else
+                        return Redirect::to('/login'); //Si no tiene perfiles
+                }
+                else
+                    return Redirect::to('/login'); // Si no tiene accesos
+            }
+            return Redirect::to('/login');
+        }
+        else
+        {
+            return Redirect::to('/login');
+        }
+    }
 }

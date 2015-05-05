@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/pilar/app/views/mapa_tags/edit.blade.php

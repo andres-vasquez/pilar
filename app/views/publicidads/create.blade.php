@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/pilar/app/views/publicidads/create.blade.php

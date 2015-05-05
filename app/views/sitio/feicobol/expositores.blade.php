@@ -6,6 +6,10 @@
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
 @stop
 
+@section('titulo_plataforma')
+    FEICOBOL
+@stop
+
 @section('barra_navegacion')
     <li class="active">Expositores</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>

@@ -99,9 +99,9 @@ Route::filter('session', function()
 });
 
 //Filtro para administrativos
-Route::filter('admin', function()
+Route::filter('permisos', function()
 {
-    if (!Session::has('admin'))
+    if (!Session::has('permisos'))
     {
         return Redirect::to('/login');
     }
@@ -114,5 +114,25 @@ Route::filter('pilar', function()
     if (!Session::has('pilar'))
     {
         return Redirect::to('/login');
+    }
+});
+
+//Credencial
+Route::filter('credencial', function()
+{
+    $data = Input::all();
+    if (!isset($data["credencial"]))
+    {
+        $errores="El acceso al sistema es por credencial";
+        return View::make('ws.json_errores', array("errores"=>compact('errores')));
+    }
+    else
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($data["credencial"]))->get();
+        if(sizeof($sistemas)==0)
+        {
+            $errores="Acceso no autorizado al sistema";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
     }
 });

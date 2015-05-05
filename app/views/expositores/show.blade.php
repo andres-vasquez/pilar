@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/pilar/app/views/expositores/show.blade.php

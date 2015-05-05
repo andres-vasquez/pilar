@@ -8,6 +8,10 @@
     <% HTML::style('public/css/iconselect.css'); %>
 @stop
 
+@section('titulo_plataforma')
+    FEICOBOL
+@stop
+
 @section('barra_navegacion')
     <li class="active">Mapa</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>

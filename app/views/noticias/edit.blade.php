@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/pilar/app/views/noticias/edit.blade.php
