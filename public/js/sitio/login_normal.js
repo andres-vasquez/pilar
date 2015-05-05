@@ -10,6 +10,8 @@ $(document).ready(function(){
            "password":encriptar($("#password").val())
        };
 
+       console.log(encriptar($("#password").val()));
+
        $("#btnEnviar").attr('disabled', 'disabled');
        $.ajax({
            type: "POST",

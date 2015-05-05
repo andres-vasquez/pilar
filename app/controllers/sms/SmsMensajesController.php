@@ -195,7 +195,7 @@ class SmsMensajesController extends \BaseController
     public function graficoDashboard($mes)
     {
         $resultado = array();
-        $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad, DATE(fecha) as fecha FROM SmsMensaje WHERE MONTH(fecha)=? GROUP BY fecha', array($mes));
+        $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad, DATE(fecha) as fecha FROM SmsMensaje WHERE MONTH(fecha)=? GROUP BY DATE(fecha)', array($mes));
         if (sizeof($query) > 0) {
             foreach ($query as $dato)
             {
