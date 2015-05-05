@@ -10,7 +10,7 @@ class SmsUsuariosController extends \BaseController
      */
     public function index()
     {
-        $smsusuarios = Smsusuario::all();
+        $smsusuarios = SmsUsuario::all();
 
         return View::make('ws.json', array("resultado" => compact('smsusuarios')));
     }
@@ -23,14 +23,14 @@ class SmsUsuariosController extends \BaseController
      */
     public function store()
     {
-        $validator = Validator::make($data = Input::all(), Smsusuario::$rules);
+        $validator = Validator::make($data = Input::all(), SmsUsuario::$rules);
 
         if ($validator->fails()) {
             $errores = $validator->messages()->first();
             return View::make('ws.json_errores', array("errores" => compact('errores')));
         }
 
-        if (Smsusuario::create($data)) {
+        if (SmsUsuario::create($data)) {
             return View::make('ws.json', array("resultado" => compact('Smsusuario')));
         } else {
             $errores = "Error al crear registro";
@@ -46,7 +46,7 @@ class SmsUsuariosController extends \BaseController
      */
     public function show($id)
     {
-        $smsusuario = Smsusuario::findOrFail($id);
+        $smsusuario = SmsUsuario::findOrFail($id);
         return View::make('ws.json', array("resultado" => compact('smsusuario')));
     }
 
@@ -59,7 +59,7 @@ class SmsUsuariosController extends \BaseController
      */
     public function update($id)
     {
-        $smsusuario = Smsusuario::findOrFail($id);
+        $smsusuario = SmsUsuario::findOrFail($id);
         $data = Input::all();
 
         if ($smsusuario->update($data)) {
@@ -78,7 +78,7 @@ class SmsUsuariosController extends \BaseController
      */
     public function destroy($id)
     {
-        $smsusuario = Smsusuario::findOrFail($id);
+        $smsusuario = SmsUsuario::findOrFail($id);
         $data = array();
 
         $data["baja_logica"] = "0";
@@ -102,7 +102,7 @@ class SmsUsuariosController extends \BaseController
 
     public function sinformato()
     {
-        $smsusuarios = Smsusuario::all();
+        $smsusuarios = SmsUsuario::all();
         $resultado = array();
         foreach ($smsusuarios as $usuario)
         {

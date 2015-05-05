@@ -10,7 +10,7 @@ class SmsMensajesController extends \BaseController
      */
     public function index()
     {
-        $smsmensajes = Smsmensaje::all();
+        $smsmensajes = SmsMensaje::all();
 
         return View::make('ws.json', array("resultado" => compact('smsmensajes')));
     }
@@ -73,10 +73,10 @@ class SmsMensajesController extends \BaseController
 
                 foreach ($carga as $objCarga)
                 {
-                    $query = Smsmensaje::whereRaw('estado=1 AND baja_logica=1 AND numero=? AND fecha=?',array($objCarga["numero"],$objCarga["fecha"]))->get();
+                    $query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 AND numero=? AND fecha=?',array($objCarga["numero"],$objCarga["fecha"]))->get();
                     if(sizeof($query)==0)
                     {
-                        if($insert=Smsmensaje::create($objCarga)) {
+                        if($insert=SmsMensaje::create($objCarga)) {
                             $id = $insert->id;
                             if($id>0)
                                 $contadorInsert++;
@@ -131,7 +131,7 @@ class SmsMensajesController extends \BaseController
      */
     public function show($id)
     {
-        $smsmensaje = Smsmensaje::findOrFail($id);
+        $smsmensaje = SmsMensaje::findOrFail($id);
         return View::make('ws.json', array("resultado" => compact('smsmensaje')));
     }
 
@@ -144,7 +144,7 @@ class SmsMensajesController extends \BaseController
      */
     public function update($id)
     {
-        $smsmensaje = Smsmensaje::findOrFail($id);
+        $smsmensaje = SmsMensaje::findOrFail($id);
         $data = Input::all();
 
         if ($smsmensaje->update($data)) {
@@ -163,13 +163,13 @@ class SmsMensajesController extends \BaseController
      */
     public function destroy($id)
     {
-        $smsmensaje = Smsmensaje::findOrFail($id);
+        $smsmensaje = SmsMensaje::findOrFail($id);
         $data = array();
 
         $data["baja_logica"] = "0";
         $data["estado"] = "0";
         if ($smsmensaje->update($data)) {
-            $smsmensaje = Smsmensaje::findOrFail($id);
+            $smsmensaje = SmsMensaje::findOrFail($id);
             return View::make('ws.json', array("resultado" => compact('smsmensaje')));
         } else {
             $errores = "Error al eliminar registro";
@@ -181,12 +181,12 @@ class SmsMensajesController extends \BaseController
     public function cantidad($todos)
     {
         if ($todos != "0") {
-            $query = Smsmensaje::whereRaw('estado=1 AND baja_logica=1')->get();
+            $query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1')->get();
             $total = sizeof($query);
             return View::make('ws.json', array("resultado" => compact('total')));
         } else {
             $mes = date('m');
-            $query = Smsmensaje::whereRaw('estado=1 AND baja_logica=1 AND MONTH(fecha)=?', array($mes))->get();
+            $query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 AND MONTH(fecha)=?', array($mes))->get();
             $total = sizeof($query);
             return View::make('ws.json', array("resultado" => compact('total')));
         }

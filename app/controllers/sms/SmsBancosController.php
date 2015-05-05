@@ -9,7 +9,7 @@ class SmsBancosController extends \BaseController {
 	 */
 	public function index()
 	{
-		$smsbancos = Smsbanco::all();
+		$smsbancos = SmsBanco::all();
 
 		return View::make('ws.json', array("resultado"=>compact('smsbancos')));
 	}
@@ -22,7 +22,7 @@ class SmsBancosController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Smsbanco::$rules);
+		$validator = Validator::make($data = Input::all(), SmsBanco::$rules);
 
 		if ($validator->fails())
 		{
@@ -30,7 +30,7 @@ class SmsBancosController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 
-		if(Smsbanco::create($data))
+		if(SmsBanco::create($data))
 		{
 			return View::make('ws.json', array("resultado"=>compact('Smsbanco')));
 		}
@@ -49,7 +49,7 @@ class SmsBancosController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$smsbanco = Smsbanco::findOrFail($id);
+		$smsbanco = SmsBanco::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('smsbanco')));
 	}
 
@@ -62,7 +62,7 @@ class SmsBancosController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$smsbanco = Smsbanco::findOrFail($id);
+		$smsbanco = SmsBanco::findOrFail($id);
 		$data = Input::all();
 
 		if($smsbanco->update($data))
@@ -84,14 +84,14 @@ class SmsBancosController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$smsbanco = Smsbanco::findOrFail($id);
+		$smsbanco = SmsBanco::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($smsbanco->update($data))
 		{
-			$smsbanco = Smsbanco::findOrFail($id);
+			$smsbanco = SmsBanco::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('smsbanco')));
 		}
 		else
@@ -104,7 +104,7 @@ class SmsBancosController extends \BaseController {
 
     public function sinformato()
     {
-        $smsbancos = Smsbanco::all();
+        $smsbancos = SmsBanco::all();
         $resultado = array();
         foreach ($smsbancos as $banco)
         {

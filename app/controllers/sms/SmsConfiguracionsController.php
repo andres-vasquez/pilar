@@ -10,13 +10,13 @@ class SmsConfiguracionsController extends \BaseController {
 	public function index()
 	{
         $config=array();
-        $querySms = Smsmensaje::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
+        $querySms = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
         foreach($querySms as $sms)
         {
             $config["ultimo_mensaje"]=date('d-m-Y H:i:s',strtotime($sms["fecha"]));
         }
 
-        $query = Smsconfiguracion::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
+        $query = SmsConfiguracion::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
         foreach($query as $objConfig)
         {
             $config["ganancia"]=$objConfig["ganancia"];
@@ -41,7 +41,7 @@ class SmsConfiguracionsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Smsconfiguracion::$rules);
+		$validator = Validator::make($data = Input::all(), SmsConfiguracion::$rules);
 
 		if ($validator->fails())
 		{
@@ -49,7 +49,7 @@ class SmsConfiguracionsController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 
-		if(Smsconfiguracion::create($data))
+		if(SmsConfiguracion::create($data))
 		{
 			return View::make('ws.json', array("resultado"=>compact('Smsconfiguracion')));
 		}
@@ -68,7 +68,7 @@ class SmsConfiguracionsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$smsconfiguracion = Smsconfiguracion::findOrFail($id);
+		$smsconfiguracion = SmsConfiguracion::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('smsconfiguracion')));
 	}
 
@@ -81,7 +81,7 @@ class SmsConfiguracionsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$smsconfiguracion = Smsconfiguracion::findOrFail($id);
+		$smsconfiguracion = SmsConfiguracion::findOrFail($id);
 		$data = Input::all();
 
 		if($smsconfiguracion->update($data))
@@ -103,14 +103,14 @@ class SmsConfiguracionsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$smsconfiguracion = Smsconfiguracion::findOrFail($id);
+		$smsconfiguracion = SmsConfiguracion::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($smsconfiguracion->update($data))
 		{
-			$smsconfiguracion = Smsconfiguracion::findOrFail($id);
+			$smsconfiguracion = SmsConfiguracion::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('smsconfiguracion')));
 		}
 		else
@@ -124,7 +124,7 @@ class SmsConfiguracionsController extends \BaseController {
     public function editar()
     {
         $config=array();
-        $query = Smsconfiguracion::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
+        $query = SmsConfiguracion::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
         foreach($query as $objConfig)
         {
             $config["ganancia"]=$objConfig["ganancia"];
@@ -150,7 +150,7 @@ class SmsConfiguracionsController extends \BaseController {
             $config["ffn_mensaje"]=date('Y-m-d H:i:s',strtotime($data["fecha_fin"]));
         }
 
-        if(Smsconfiguracion::create($config))
+        if(SmsConfiguracion::create($config))
         {
             return View::make('ws.json', array("resultado"=>compact('Smsconfiguracion')));
         }
