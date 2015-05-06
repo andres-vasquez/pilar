@@ -73,10 +73,9 @@ class SmsMensajesController extends \BaseController
 
                 foreach ($carga as $objCarga)
                 {
-                    $query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 AND numero=? AND fecha=?',array($objCarga["numero"],$objCarga["fecha"]))->get();
-                    if(sizeof($query)==0)
-                    {
-                        if($insert=SmsMensaje::create($objCarga)) {
+                     $objCarga["fecha"]=date('Y-m-d H:i:s',strtotime($objCarga["fecha"]));   
+
+                     if($insert=SmsMensaje::create($objCarga)) {
                             $id = $insert->id;
                             if($id>0)
                                 $contadorInsert++;
@@ -84,11 +83,13 @@ class SmsMensajesController extends \BaseController
                                 $contadorError++;
                         }
                         else
-                            $contadorError++;
-
-                    }
+                            $contadorError++;    
+                    /*$query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 AND numero=? AND fecha=?',array($objCarga["numero"],$objCarga["fecha"]))->get();
+                    if(sizeof($query)==0)
+                    {*/
+                    /*}
                     else
-                        $contadorExistentes++;
+                        $contadorExistentes++;*/
                 }
 
                 $objResultado["insertados"]=$contadorInsert;
