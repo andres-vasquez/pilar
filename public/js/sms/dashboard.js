@@ -11,6 +11,7 @@ $(document).ready(function()
 
     llenarGrafico=function(mes)
     {
+
         var url="../pilar/ws/SmsMensaje/dashboard/"+mes;
         $.ajax({
             type: "GET",
@@ -160,5 +161,5 @@ $(document).ready(function()
 
     var d = new Date();
     var mes = d.getMonth();
-    llenarGrafico(mes);
+    llenarGrafico(mes+1);
 });
