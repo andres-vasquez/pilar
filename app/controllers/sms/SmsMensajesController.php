@@ -182,14 +182,18 @@ class SmsMensajesController extends \BaseController
     public function cantidad($todos)
     {
         if ($todos != "0") {
-            $query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1')->get();
-            $total = sizeof($query);
-            return View::make('ws.json', array("resultado" => compact('total')));
+            $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad FROM SmsMensaje WHERE estado=1 AND baja_logica=1');
+            foreach ($query as $dato) {
+                $total = $dato->cantidad;
+                return View::make('ws.json', array("resultado" => compact('total')));
+            }
         } else {
             $mes = date('m');
-            $query = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 AND MONTH(fecha)=?', array($mes))->get();
-            $total = sizeof($query);
-            return View::make('ws.json', array("resultado" => compact('total')));
+            $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad FROM SmsMensaje WHERE estado=1 AND baja_logica=1 AND MONTH(fecha)=?',array($mes));
+            foreach ($query as $dato) {
+                $total = $dato->cantidad;
+                return View::make('ws.json', array("resultado" => compact('total')));
+            }
         }
     }
 
