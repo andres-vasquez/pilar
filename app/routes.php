@@ -259,9 +259,13 @@ Route::group(array('prefix' => 'api/v1'), function () {
 Route::get('/ws/SmsMensaje', 'SmsMensajesController@index');
 Route::post('/ws/SmsMensaje', 'SmsMensajesController@store');
 Route::get('/ws/SmsMensaje/{usuario_id}', array('as' => 'show', 'uses' => 'SmsMensajesController@show'));
-Route::get('/ws/SmsMensaje/cantidad/{todos}', array('as' => 'show', 'uses' => 'SmsMensajesController@cantidad'));
 
-Route::get('/ws/SmsMensaje/dashboard/{mes}', array('as' => 'show', 'uses' => 'SmsMensajesController@graficoDashboard'));
+//0: Muestra todos los mensajes 1: mes actual
+Route::get('/ws/SmsMensaje/cantidad/{todos}', array('as' => 'show', 'uses' => 'SmsMensajesController@cantidad'));
+//Muestra los mensajes de un usuario
+Route::get('/ws/SmsMensaje/cantidad/{ano}/{mes}/{numero}', array('as' => 'show', 'uses' => 'SmsMensajesController@cantidadusuario'));
+//Muestra los mensajes del mes/anio actual
+Route::get('/ws/SmsMensaje/dashboard/{ano}/{mes}', array('as' => 'show', 'uses' => 'SmsMensajesController@graficoDashboard'));
 
 //WS Bancos
 Route::get('/ws/SmsBanco', 'SmsBancosController@index');
@@ -273,10 +277,11 @@ Route::post('/ws/SmsBanco/eliminar/{id}', array('as' => 'show', 'uses' => 'SmsBa
 
 //WS Config
 Route::get('/ws/SmsConfiguracion', 'SmsConfiguracionsController@index');
+Route::get('/ws/SmsConfiguracion/{ano}/{mes}',  array('as' => 'show', 'uses' => 'SmsConfiguracionsController@mostrarpormes'));
 Route::post('/ws/SmsConfiguracion/editar', 'SmsConfiguracionsController@editar');
 
 
-//WS Usuarioss
+//WS Usuarios
 Route::get('/ws/SmsUsuarios', 'SmsUsuariosController@index');
 Route::get('/ws/SmsUsuarios_sinformato', 'SmsUsuariosController@sinformato');
 Route::get('/ws/SmsUsuarios/{id}', array('as' => 'show', 'uses' => 'SmsUsuariosController@show'))->where(array('id' => '[0-9]+'));

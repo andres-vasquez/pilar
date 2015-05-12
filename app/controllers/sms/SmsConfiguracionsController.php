@@ -10,7 +10,15 @@ class SmsConfiguracionsController extends \BaseController {
 	public function index()
 	{
         $config=array();
-        $querySms = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 ORDER BY created_at DESC LIMIT 1')->get();
+        $rangos = DB::connection('Sms')->select('SELECT MAX(MONTH(fecha)) as maximo, MAX(YEAR(fecha)) as amaximo, MIN(MONTH(fecha)) as minimo,MIN(YEAR (fecha)) as aminimo  FROM SmsMensaje');
+        foreach ($rangos as $minmax) {
+            $config["mes_max"] = $minmax->maximo;
+            $config["mes_min"] = $minmax->minimo;
+            $config["ano_max"] = $minmax->amaximo;
+            $config["ano_min"] = $minmax->aminimo;
+        }
+
+        $querySms = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 ORDER BY fecha DESC LIMIT 1')->get();
         foreach($querySms as $sms)
         {
             $config["ultimo_mensaje"]=date('d-m-Y H:i:s',strtotime($sms["fecha"]));
@@ -33,6 +41,41 @@ class SmsConfiguracionsController extends \BaseController {
 		return View::make('ws.json', array("resultado"=>compact('config')));
 	}
 
+    public function mostrarpormes($ano,$mes)
+    {
+        $config=array();
+        $rangos = DB::connection('Sms')->select('SELECT MAX(MONTH(fecha)) as maximo, MAX(YEAR(fecha)) as amaximo, MIN(MONTH(fecha)) as minimo,MIN(YEAR (fecha)) as aminimo  FROM SmsMensaje');
+        foreach ($rangos as $minmax) {
+            $config["mes_max"] = $minmax->maximo;
+            $config["mes_min"] = $minmax->minimo;
+            $config["ano_max"] = $minmax->amaximo;
+            $config["ano_min"] = $minmax->aminimo;
+        }
+
+        $querySms = SmsMensaje::whereRaw('estado=1 AND baja_logica=1 ORDER BY fecha DESC LIMIT 1')->get();
+        foreach($querySms as $sms)
+        {
+            $config["ultimo_mensaje"]=date('d-m-Y H:i:s',strtotime($sms["fecha"]));
+        }
+
+        $fecha=date('Y-m-d H:i:s',strtotime($ano."-".$mes."-"."01"));
+        $config["fecha"]=$fecha;
+        $query = SmsConfiguracion::whereRaw('estado=1 AND baja_logica=1 AND fecha_inicio <= ? ORDER BY id DESC LIMIT 1',array($fecha))->get();
+        foreach($query as $objConfig)
+        {
+            $config["ganancia"]=$objConfig["ganancia"];
+            $config["mensaje_pago"]=$objConfig["mensaje_pago"];
+            $config["fecha_inicio"]=date('d-m-Y',strtotime($objConfig["fecha_inicio"]));
+
+            if($objConfig["ffn_mensaje"]!="0000-00-00 00:00:00")
+                $config["valido_mensaje"]=date('d-m-Y',strtotime($objConfig["ffn_mensaje"]));
+            else
+                $config["valido_mensaje"]="Indefinido";
+
+            $config["ganancia"]=$objConfig["ganancia"];
+        }
+        return View::make('ws.json', array("resultado"=>compact('config')));
+    }
 
 	/**
 	 * Creara un registro con los datos ingresados

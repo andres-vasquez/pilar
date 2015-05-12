@@ -189,7 +189,8 @@ class SmsMensajesController extends \BaseController
             }
         } else {
             $mes = date('m');
-            $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad FROM SmsMensaje WHERE estado=1 AND baja_logica=1 AND MONTH(fecha)=?',array($mes));
+            $ano = date('Y');
+            $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad FROM SmsMensaje WHERE estado=1 AND baja_logica=1 AND MONTH(fecha)=? AND YEAR(fecha)=?',array($mes,$ano));
             foreach ($query as $dato) {
                 $total = $dato->cantidad;
                 return View::make('ws.json', array("resultado" => compact('total')));
@@ -197,10 +198,10 @@ class SmsMensajesController extends \BaseController
         }
     }
 
-    public function graficoDashboard($mes)
+    public function graficoDashboard($ano,$mes)
     {
         $resultado = array();
-        $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad, DATE(fecha) as fecha FROM SmsMensaje WHERE MONTH(fecha)=? GROUP BY DATE(fecha)', array($mes));
+        $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad, DATE(fecha) as fecha FROM SmsMensaje WHERE MONTH(fecha)=? AND YEAR(fecha)=? GROUP BY DATE(fecha)', array($mes,$ano));
         if (sizeof($query) > 0) {
             foreach ($query as $dato)
             {
@@ -213,5 +214,25 @@ class SmsMensajesController extends \BaseController
             return json_encode($resultado);
         }
         return json_encode($resultado);
+    }
+
+    public function cantidadusuario($ano,$mes,$numero)
+    {
+        if ($mes == "0" && $ano=="0")
+        {
+            $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad FROM SmsMensaje WHERE estado=1 AND baja_logica=1 AND numero=?',array($numero));
+            foreach ($query as $dato) {
+                $total = $dato->cantidad;
+                return View::make('ws.json', array("resultado" => compact('total')));
+            }
+        }
+        else
+        {
+            $query = DB::connection('Sms')->select('SELECT count(1) AS cantidad FROM SmsMensaje WHERE estado=1 AND baja_logica=1 AND MONTH(fecha)=? AND YEAR(fecha)=? AND numero=?',array($mes,$ano,$numero));
+            foreach ($query as $dato) {
+                $total = $dato->cantidad;
+                return View::make('ws.json', array("resultado" => compact('total')));
+            }
+        }
     }
 }

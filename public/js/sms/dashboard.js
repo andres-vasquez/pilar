@@ -9,10 +9,9 @@ $(document).ready(function()
     var totalBalance;
     var totalSmsTotal;
 
-    llenarGrafico=function(mes)
+    llenarGrafico=function(ano,mes)
     {
-
-        var url="../pilar/ws/SmsMensaje/dashboard/"+mes;
+        var url="../pilar/ws/SmsMensaje/dashboard/"+ano+"/"+mes;
         $.ajax({
             type: "GET",
             url: url,
@@ -161,5 +160,6 @@ $(document).ready(function()
 
     var d = new Date();
     var mes = d.getMonth();
-    llenarGrafico(mes+1);
+    var ano = d.getFullYear();
+    llenarGrafico(ano,mes+1);
 });
