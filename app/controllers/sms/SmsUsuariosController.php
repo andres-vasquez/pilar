@@ -261,10 +261,8 @@ class SmsUsuariosController extends \BaseController
         $data = Input::All();
         if (isset($data["credencial"])) {
             $sistemas = SistemasDesarrollados::whereRaw('app=?', array($data["credencial"]))->get();
-            if (sizeof($sistemas) > 0)
-            {
-                if (isset($data["email"]) && isset($data["username"]))
-                {
+            if (sizeof($sistemas) > 0) {
+                if (isset($data["email"]) && isset($data["username"])) {
                     $usuarioGral = SmsUsuario::whereRaw('username=? AND email=? AND estado=1 AND baja_logica=1', array($data["username"], $data["email"]))->get();
                     if (sizeof($usuarioGral)) {
                         $datos = array();
@@ -291,21 +289,40 @@ class SmsUsuariosController extends \BaseController
                             $usuario["id"] = $cuenta["id"];
                             $usuario["username"] = $cuenta["username"];
                             $usuario["digitos_celular"] = $cuenta["digitos_celular"];
-                            $usuario["celular"] = $cuenta["celular"];
+
+                            $celular = $cuenta["celular"];
+
+                            if ($celular == "")
+                            {
+                                $contador = 0;
+                                $query = DB::connection('Sms')->select("SELECT DISTINCT numero FROM SmsMensaje WHERE numero LIKE CONCAT( '%', ? ) AND numero NOT IN ( SELECT DISTINCT celular FROM SmsUsuario)", array($cuenta["digitos_celular"]));
+                                foreach ($query as $dato)
+                                {
+                                    if ($contador == 0)
+                                    {
+                                        $smsusuario = SmsUsuario::findOrFail($cuenta["id"]);
+                                        $dataActualizar = array();
+                                        $dataActualizar["celular"] = $dato->numero;
+
+                                        if ($smsusuario->update($dataActualizar))
+                                            $celular = $dato->numero;
+                                    }
+                                    $contador++;
+                                }
+                            }
+                            $usuario["celular"] = $celular;
+
 
                             //$usuario["url"] = 'ws/SmsMensaje/cantidad/' . $ano . '/' . $mes . '/' . $cuenta["celular"];
 
-                            $qmensajes=0;
+                            $qmensajes = 0;
                             $usuario["mensajes"] = array();
-                            try
-                            {
-                                $request = Request::create('ws/SmsMensaje/cantidad/' . $ano . '/' . $mes . '/' . $cuenta["celular"], 'GET', array());
+                            try {
+                                $request = Request::create('ws/SmsMensaje/cantidad/' . $ano . '/' . $mes . '/' . $celular, 'GET', array());
                                 $mensajes = json_decode(Route::dispatch($request)->getContent(), true);
-                                $qmensajes=$mensajes["resultado"]["total"];
-                            }
-                            catch(Exception $e)
-                            {
-                                $qmensajes=0;
+                                $qmensajes = $mensajes["resultado"]["total"];
+                            } catch (Exception $e) {
+                                $qmensajes = 0;
                             }
                             array_push($usuario["mensajes"], $qmensajes);
 
