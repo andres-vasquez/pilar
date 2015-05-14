@@ -18,7 +18,7 @@ $(document).ready(function () {
             $("#mensaje").removeClass("alert-danger");
             $("#mensaje").addClass("alert-success");
             html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-            html += '<strong>¡Expositor editado!</strong>';
+            html += '<strong>¡Usuario editado!</strong>';
         }
         else if (tipo == "eliminada") {
             $("#mensaje").removeClass("alert-danger");
@@ -49,46 +49,34 @@ function operateFormatter(value, row, index) {
 
 window.operateEvents = {
     'click .edit': function (e, value, row, index) {
-        /*var id = row.id;
+        var id = row.id;
         idEditando = id;
-        $('#editarModal').modal('show');
-        var url = "../ws/publicidad/" + id;
+        //$('#editarModal').modal('show');
+
+        var email=prompt("Introduzca el email","");
+        var data={"email":email};
+        var url = "../ws/SmsUsuarios/" + idEditando;
         $.ajax({
-            type: "GET",
+            type: "POST",
             url: url,
+            data:JSON.stringify(data),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function (result) {
-                if (parseInt(result.intCodigo) == 1) {
-                    var objPublicidad = result.resultado.publicidad[0];
-                    $("#txtNombre_editar").val(objPublicidad.nombre);
-                    $("#txtDescripcion_editar").val(objPublicidad.descripcion);
-                    $("#txtUrlAnuncio_editar").val(objPublicidad.link);
-                    $('#cmbPrioridad_editar option[value="' + objPublicidad.prioridad + '"]').attr("selected", "selected");
-                    $(".id_publicidad").val(objPublicidad.id);
-
-                    $("img").attr("src", "http://placehold.it/320x47&text=publicidad");
-
-                    var objListaImagenes = objPublicidad.imagenes;
-                    lstImagenesEdit = objListaImagenes;
-                    for (var i = 0; i < objListaImagenes.length; i++) {
-                        var obj = objListaImagenes[i];
-                        var id_imagen_dinamico = obj.tipo + "_" + obj.sizex + "x" + obj.sizey + "_editar";
-                        var ruta = obj.ruta;
-                        $("#" + id_imagen_dinamico).attr("src", ruta);
-                    }
-
-
+            success: function (result)
+            {
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    mensaje("editada");
+                    $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                        url: '../ws/SmsUsuarios_sinformato'
+                    });
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                $('#eliminarModal').modal('hide');
-                $("#btnEliminarPublicidad").removeAttr('disabled');
                 console.log(XMLHttpRequest + " " + textStatus);
-                $('#editarModal').modal('hide');
+                mensaje("error");
             }
-        });*/
-
+        });
     },
     'click .remove': function (e, value, row, index) {
         /*var id = row.id;
