@@ -261,7 +261,8 @@ class SmsUsuariosController extends \BaseController
         $data = Input::All();
         if (isset($data["credencial"])) {
             $sistemas = SistemasDesarrollados::whereRaw('app=?', array($data["credencial"]))->get();
-            if (sizeof($sistemas) > 0) {
+            if (sizeof($sistemas) > 0)
+            {
                 if (isset($data["email"]) && isset($data["username"])) {
                     $usuarioGral = SmsUsuario::whereRaw('username=? AND email=? AND estado=1 AND baja_logica=1', array($data["username"], $data["email"]))->get();
                     if (sizeof($usuarioGral)) {
@@ -281,6 +282,18 @@ class SmsUsuariosController extends \BaseController
                             $ano = $data["ano"];
                         else
                             $ano = date('Y');
+
+
+                        if(isset($data["origen"]))
+                            $origen=$data["origen"];
+                        else
+                            $origen="android";
+
+                        try {
+                            $request1 = Request::create('ws/SmsAcceso/1/'.$data["username"].'/'.$origen, 'GET', array());
+                            $acceso = json_decode(Route::dispatch($request1)->getContent(), true);
+                        } catch (Exception $e){}
+
 
                         $datos["cuentas"] = array();
                         $cuentarPorMail = SmsUsuario::whereRaw('email=? AND estado=1 AND baja_logica=1', array($data["email"]))->get();

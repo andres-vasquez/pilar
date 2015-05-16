@@ -14,5 +14,5 @@ class SmsAcceso extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array('usuario_id','imei','aud_usuario_id','aud_usuario_mod_id','estado','baja_logica');
+	protected $fillable = array('identificador','usuario_id','tipo');
 }

@@ -291,9 +291,7 @@ Route::post('/ws/SmsUsuarios/eliminar/{id}', array('as' => 'show', 'uses' => 'Sm
 Route::get('/ws/SmsUsuarios/cantidad', 'SmsUsuariosController@cantidad');
 
 //WS Accesos
-Route::get('/ws/SmsAcceso', 'SmsAccesoController@index');
-Route::get('/ws/SmsAcceso/{usuario_id}', array('as' => 'show', 'uses' => 'SmsAccesoController@show'));
-Route::post('/ws/SmsAcceso', 'SmsAccesoController@store');
+Route::get('/ws/SmsAcceso/{usuario_id}/{identificador}/{tipo}', array('as' => 'show', 'uses' => 'SmsAccesosController@store'));
 
 
 //*********************** REST API SMS *********************************

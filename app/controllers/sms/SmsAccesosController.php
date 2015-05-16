@@ -9,8 +9,7 @@ class SmsAccesosController extends \BaseController {
 	 */
 	public function index()
 	{
-		$smsaccesos = Smsacceso::all();
-
+		$smsaccesos = SmsAcceso::all();
 		return View::make('ws.json', array("resultado"=>compact('smsaccesos')));
 	}
 
@@ -20,9 +19,14 @@ class SmsAccesosController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store($usuario_id,$identificador,$tipo)
 	{
-		$validator = Validator::make($data = Input::all(), Smsacceso::$rules);
+        $data=array();
+        $data["usuario_id"]=$usuario_id;
+        $data["identificador"]=$identificador;
+        $data["tipo"]=$tipo;
+
+		$validator = Validator::make($data, SmsAcceso::$rules);
 
 		if ($validator->fails())
 		{
