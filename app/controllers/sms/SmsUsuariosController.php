@@ -228,7 +228,7 @@ class SmsUsuariosController extends \BaseController
 
     public function sinformato()
     {
-        $smsusuarios = SmsUsuario::all();
+        $smsusuarios = SmsUsuario::whereRaw('estado=1 AND baja_logica=1')->get();
         $resultado = array();
         foreach ($smsusuarios as $usuario) {
             $aux = array();
@@ -249,6 +249,14 @@ class SmsUsuariosController extends \BaseController
                 $aux["ultimo_mensaje"] = date('d-m-Y', strtotime($usuario["ultimo_mensaje"]));
             else
                 $aux["ultimo_mensaje"] = "-";
+
+            $aux["ultimo_acceso"]="";
+            $acceso = DB::connection('Sms')->select('SELECT tipo  FROM SmsAcceso WHERE identificador=? LIMIT 1',array($usuario["username"]));
+            foreach ($acceso as $tipo) {
+                $aux["ultimo_acceso"]=$tipo->tipo;
+            }
+            if($aux["ultimo_acceso"]=="")
+                $aux["ultimo_acceso"]="-";
 
             array_push($resultado, $aux);
         }

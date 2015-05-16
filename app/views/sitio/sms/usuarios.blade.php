@@ -38,6 +38,7 @@
                         <th data-field="username" data-sortable="true">Username</th>
                         <th data-field="celular" data-sortable="true">Celular</th>
                         <th data-field="email" data-sortable="true">Email</th>
+                        <th data-field="ultimo_acceso" data-halign="center"  data-sortable="true">Último acceso</th>
                         <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
                             data-events="operateEvents">Acciones
                         </th>
