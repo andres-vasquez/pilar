@@ -271,8 +271,10 @@ class SmsUsuariosController extends \BaseController
             $sistemas = SistemasDesarrollados::whereRaw('app=?', array($data["credencial"]))->get();
             if (sizeof($sistemas) > 0)
             {
-                if (isset($data["email"]) && isset($data["username"])) {
-                    $usuarioGral = SmsUsuario::whereRaw('username=? AND email=? AND estado=1 AND baja_logica=1', array($data["username"], $data["email"]))->get();
+                if (isset($data["email"]) && isset($data["username"]))
+                {
+                    //$usuarioGral = SmsUsuario::whereRaw('username=? AND email=? AND estado=1 AND baja_logica=1', array($data["username"], $data["email"]))->get();
+                    $usuarioGral = SmsUsuario::whereRaw('username=? AND estado=1 AND baja_logica=1', array($data["username"]))->get();
                     if (sizeof($usuarioGral)) {
                         $datos = array();
                         $datos["email"] = $usuarioGral[0]["email"];
@@ -304,7 +306,8 @@ class SmsUsuariosController extends \BaseController
 
 
                         $datos["cuentas"] = array();
-                        $cuentarPorMail = SmsUsuario::whereRaw('email=? AND estado=1 AND baja_logica=1', array($data["email"]))->get();
+                        //$cuentarPorMail = SmsUsuario::whereRaw('email=? AND estado=1 AND baja_logica=1', array($data["email"]))->get();
+                        $cuentarPorMail = SmsUsuario::whereRaw('username=? AND estado=1 AND baja_logica=1', array($data["username"]))->get();
                         foreach ($cuentarPorMail as $cuenta) {
                             $usuario = array();
                             $usuario["id"] = $cuenta["id"];
