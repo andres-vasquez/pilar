@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sms/dashboard.js" afterPath="$PROJECT_DIR$/public/js/sms/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -87,21 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61440676" vertical-offset="0" max-vertical-offset="2520">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="2550">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.708333" vertical-offset="1003" max-vertical-offset="1770">
-              <caret line="84" column="42" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.3640351" vertical-offset="1086" max-vertical-offset="1785">
+              <caret line="89" column="63" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -176,7 +177,6 @@
         <option value="$PROJECT_DIR$/public/js/sms/config.js" />
         <option value="$PROJECT_DIR$/public/js/sms/reportes.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/sms/reportes.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsBancosController.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/login_normal.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
@@ -190,6 +190,7 @@
         <option value="$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php" />
         <option value="$PROJECT_DIR$/public/js/sms/dashboard.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" />
       </list>
     </option>
   </component>
@@ -929,7 +930,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431905013029</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Autenticacion e ingreso.. Dashboar meses">
+      <created>1431907961973</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1431907961973</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -994,7 +1001,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Likes 1.3&#10;" />
     <MESSAGE value="Likes 1.4&#10;" />
     <MESSAGE value="Mapas alpha" />
     <MESSAGE value="Mapas alpha 0.1" />
@@ -1019,7 +1025,8 @@
     <MESSAGE value="Autenticacion e ingreso editar usuario emial acceso log" />
     <MESSAGE value="Autenticacion e ingreso editar usuario emial acceso log1." />
     <MESSAGE value="Autenticacion e ingreso.. Solo CODIGO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autenticacion e ingreso.. Solo CODIGO" />
+    <MESSAGE value="Autenticacion e ingreso.. Dashboar meses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autenticacion e ingreso.. Dashboar meses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1395,18 +1402,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.708333" vertical-offset="1003" max-vertical-offset="1770">
-          <caret line="84" column="42" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="2550">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61440676" vertical-offset="0" max-vertical-offset="2520">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.3640351" vertical-offset="1086" max-vertical-offset="1785">
+          <caret line="89" column="63" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
           <folding />
         </state>
       </provider>
