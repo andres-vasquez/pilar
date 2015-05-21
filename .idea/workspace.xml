@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sms/dashboard.js" afterPath="$PROJECT_DIR$/public/js/sms/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" />
+    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="Autenticacion e ingreso.. Dashboar meses">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sms/usuarios.js" afterPath="$PROJECT_DIR$/public/js/sms/usuarios.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -32,8 +32,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4127" max-vertical-offset="4980">
-              <caret line="293" column="107" selection-start-line="293" selection-start-column="107" selection-end-line="293" selection-end-column="107" />
+            <state vertical-scroll-proportion="-12.375" vertical-offset="4008" max-vertical-offset="4980">
+              <caret line="287" column="28" selection-start-line="287" selection-start-column="17" selection-end-line="287" selection-end-column="28" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
               </folding>
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuarios.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="usuarios.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/sms/usuarios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="669" max-vertical-offset="1815">
-              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.8682635" vertical-offset="3120" max-vertical-offset="4245">
+              <caret line="237" column="40" selection-start-line="237" selection-start-column="40" selection-end-line="237" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -54,8 +54,18 @@
       <file leaf-file-name="usuarios.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="930">
-              <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
+            <state vertical-scroll-proportion="27.125" vertical-offset="2676" max-vertical-offset="3270">
+              <caret line="135" column="12" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticias_normal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="5655">
+              <caret line="85" column="11" selection-start-line="47" selection-start-column="8" selection-end-line="85" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -74,7 +84,7 @@
       <file leaf-file-name="SmsUsuariosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625" vertical-offset="4080" max-vertical-offset="5790">
+            <state vertical-scroll-proportion="-151.875" vertical-offset="690" max-vertical-offset="5790">
               <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
               <folding>
                 <marker date="1431904823000" expanded="true" signature="3515:3636" placeholder="UPDATE SmsUs..." />
@@ -83,50 +93,6 @@
                 <marker date="1431904823000" expanded="true" signature="12266:12331" placeholder="SELECT DISTI..SmsMensaje..." />
                 <marker date="1431904823000" expanded="true" signature="12266:12400" placeholder="SELECT count..SmsMensaje..." />
                 <marker date="1431904823000" expanded="true" signature="12360:12399" placeholder="SELECT DISTI..SmsUsuario..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="207" max-vertical-offset="2550">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3640351" vertical-offset="1086" max-vertical-offset="1785">
-              <caret line="89" column="63" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmsUsuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/SmsUsuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
-              <caret line="16" column="139" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SmsConfiguracionsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsConfiguracionsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3180">
-              <caret line="48" column="49" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="49" />
-              <folding>
-                <marker date="1431277054000" expanded="true" signature="237:375" placeholder="SELECT MAX(M..SmsMensaje..." />
-                <marker date="1431277054000" expanded="true" signature="1750:1787" placeholder="SELECT MAX(M..SmsMensaje..." />
-                <marker date="1431277054000" expanded="true" signature="1750:1888" placeholder="SELECT MAX(M..SmsMensaje..." />
               </folding>
             </state>
           </provider>
@@ -183,14 +149,14 @@
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php" />
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsConfiguracionsController.php" />
         <option value="$PROJECT_DIR$/app/models/SmsUsuario.php" />
-        <option value="$PROJECT_DIR$/public/js/sms/usuarios.js" />
         <option value="$PROJECT_DIR$/app/models/SmsAcceso.php" />
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsAccesosController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php" />
         <option value="$PROJECT_DIR$/public/js/sms/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/sms/usuarios.js" />
       </list>
     </option>
   </component>
@@ -199,10 +165,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1680" />
-    <option name="y" value="7" />
-    <option name="width" value="1637" />
-    <option name="height" value="942" />
+    <option name="x" value="-1" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -243,46 +209,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,24 +443,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sitio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -936,7 +844,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431907961973</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Autenticacion e ingreso.. Dashboar meses">
+      <created>1431909391174</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1431909391174</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -960,7 +874,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1680" y="7" width="1637" height="942" extended-state="6" />
+    <frame x="-1" y="23" width="1280" height="735" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -970,9 +884,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21630093" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786753" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26655897" sideWeight="0.50094163" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13411765" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22550544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1033,13 +947,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Mapa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09394572" vertical-offset="0" max-vertical-offset="479">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/scaffolding/model.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50739956" vertical-offset="0" max-vertical-offset="473">
@@ -1099,24 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0480167" vertical-offset="1852" max-vertical-offset="9135">
-          <caret line="125" column="41" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa_normal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="11.153082" vertical-offset="0" max-vertical-offset="11415">
           <caret line="374" column="48" selection-start-line="374" selection-start-column="48" selection-end-line="374" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="5655">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1190,13 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82107353" vertical-offset="2002" max-vertical-offset="3075">
           <caret line="161" column="11" selection-start-line="140" selection-start-column="8" selection-end-line="161" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/noticias.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51361865" vertical-offset="2454" max-vertical-offset="3225">
-          <caret line="190" column="94" selection-start-line="190" selection-start-column="94" selection-end-line="190" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -1326,56 +1212,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sms/usuarios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="669" max-vertical-offset="1815">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SmsAcceso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50104386" vertical-offset="0" max-vertical-offset="479">
           <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4127" max-vertical-offset="4980">
-          <caret line="293" column="107" selection-start-line="293" selection-start-column="107" selection-end-line="293" selection-end-column="107" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsConfiguracionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3180">
-          <caret line="48" column="49" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="49" />
-          <folding>
-            <marker date="1431277054000" expanded="true" signature="237:375" placeholder="SELECT MAX(M..SmsMensaje..." />
-            <marker date="1431277054000" expanded="true" signature="1750:1787" placeholder="SELECT MAX(M..SmsMensaje..." />
-            <marker date="1431277054000" expanded="true" signature="1750:1888" placeholder="SELECT MAX(M..SmsMensaje..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SmsUsuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
-          <caret line="16" column="139" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="930">
-          <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,21 +1224,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1710">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="4080" max-vertical-offset="5790">
-          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
-          <folding>
-            <marker date="1431904823000" expanded="true" signature="3515:3636" placeholder="UPDATE SmsUs..." />
-            <marker date="1431904823000" expanded="true" signature="3706:3833" placeholder="UPDATE SmsUs..." />
-            <marker date="1431904823000" expanded="true" signature="8994:9051" placeholder="SELECT tipo ..SmsAcceso..." />
-            <marker date="1431904823000" expanded="true" signature="12266:12331" placeholder="SELECT DISTI..SmsMensaje..." />
-            <marker date="1431904823000" expanded="true" signature="12266:12400" placeholder="SELECT count..SmsMensaje..." />
-            <marker date="1431904823000" expanded="true" signature="12360:12399" placeholder="SELECT DISTI..SmsUsuario..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1412,8 +1237,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3640351" vertical-offset="1086" max-vertical-offset="1785">
-          <caret line="89" column="63" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
+        <state vertical-scroll-proportion="-61.25" vertical-offset="0" max-vertical-offset="1785">
+          <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsConfiguracionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3144654" vertical-offset="525" max-vertical-offset="3180">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <marker date="1431277054000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(M..SmsMensaje..." />
+            <marker date="1431277054000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(M..SmsMensaje..." />
+            <marker date="1431277054000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(M..SmsMensaje..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/SmsUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5031447" vertical-offset="0" max-vertical-offset="477">
+          <caret line="16" column="139" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.163522" vertical-offset="5433" max-vertical-offset="9135">
+          <caret line="39" column="136" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/noticias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5597484" vertical-offset="2688" max-vertical-offset="3225">
+          <caret line="197" column="10" selection-start-line="143" selection-start-column="3" selection-end-line="197" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="5655">
+          <caret line="85" column="11" selection-start-line="47" selection-start-column="8" selection-end-line="85" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-151.875" vertical-offset="690" max-vertical-offset="5790">
+          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
+          <folding>
+            <marker date="1431904823000" expanded="true" signature="3515:3636" placeholder="UPDATE SmsUs..." />
+            <marker date="1431904823000" expanded="true" signature="3706:3833" placeholder="UPDATE SmsUs..." />
+            <marker date="1431904823000" expanded="true" signature="8994:9051" placeholder="SELECT tipo ..SmsAcceso..." />
+            <marker date="1431904823000" expanded="true" signature="12266:12331" placeholder="SELECT DISTI..SmsMensaje..." />
+            <marker date="1431904823000" expanded="true" signature="12266:12400" placeholder="SELECT count..SmsMensaje..." />
+            <marker date="1431904823000" expanded="true" signature="12360:12399" placeholder="SELECT DISTI..SmsUsuario..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.375" vertical-offset="4008" max-vertical-offset="4980">
+          <caret line="287" column="28" selection-start-line="287" selection-start-column="17" selection-end-line="287" selection-end-column="28" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.125" vertical-offset="2676" max-vertical-offset="3270">
+          <caret line="135" column="12" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sms/usuarios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8682635" vertical-offset="3120" max-vertical-offset="4245">
+          <caret line="237" column="40" selection-start-line="237" selection-start-column="40" selection-end-line="237" selection-end-column="40" />
           <folding />
         </state>
       </provider>
