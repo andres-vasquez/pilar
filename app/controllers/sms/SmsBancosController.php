@@ -10,7 +10,6 @@ class SmsBancosController extends \BaseController {
 	public function index()
 	{
 		$smsbancos = SmsBanco::all();
-
 		return View::make('ws.json', array("resultado"=>compact('smsbancos')));
 	}
 

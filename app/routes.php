@@ -50,6 +50,23 @@ Route::group(array('before' => 'session'), function () {
             return Redirect::to('/login');
     });
 
+
+    //Output
+    Route::group(array('before' => 'output'), function () {
+        Route::get('/output/excel', function () {
+            $nombreReporte="Reporte_".date('YmdHis');
+            Excel::create($nombreReporte, function($excel) {
+                $excel->setTitle('Reporte del sistema SMS');
+                $excel->setCreator('Bolivia onTouch Robot')->setCompany('Bolivia onTouch');
+                $excel->setDescription('A demonstration to change the file properties');
+
+                $excel->sheet('Hoja 1', function($sheet) {
+                    $sheet->loadView("sitio.master.excel");
+                });
+            })->download('xls');
+        });
+    });
+
     //************** ADMIN **********************
     Route::group(array('before' => 'permisos'), function () {
         //REST Api consultas
@@ -292,6 +309,10 @@ Route::get('/ws/SmsUsuarios/cantidad', 'SmsUsuariosController@cantidad');
 
 //WS Accesos
 Route::get('/ws/SmsAcceso/{usuario_id}/{identificador}/{tipo}', array('as' => 'show', 'uses' => 'SmsAccesosController@store'));
+
+//WS Reportes
+Route::get('/ws/SmsReportes/listado/{tipo}', array('as' => 'show', 'uses' => 'SmsReportesController@listados'));
+Route::post('/ws/SmsReportes/reporte', 'SmsReportesController@reporte');
 
 
 //*********************** REST API SMS *********************************

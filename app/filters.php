@@ -117,6 +117,14 @@ Route::filter('pilar', function()
     }
 });
 
+Route::filter('output', function()
+{
+    if (!Session::has('output'))
+    {
+        return Redirect::to('/login');
+    }
+});
+
 //Credencial
 Route::filter('credencial', function()
 {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Panel de Adminitración</title>
+    <title>Panel de Administración</title>
 
     <% HTML::style('public/css/bootstrap.min.css'); %>
     <% HTML::style('public/css/datepicker3.css'); %>
