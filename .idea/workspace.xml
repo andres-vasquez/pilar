@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/js/funciones.js" afterPath="$PROJECT_DIR$/smsfb/js/funciones.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/js/funciones_normal.js" afterPath="$PROJECT_DIR$/smsfb/js/funciones_normal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/index.php" afterPath="$PROJECT_DIR$/smsfb/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,11 +36,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smsfb/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50223213" vertical-offset="2295" max-vertical-offset="3480">
-              <caret line="168" column="64" selection-start-line="168" selection-start-column="64" selection-end-line="168" selection-end-column="64" />
+            <state vertical-scroll-proportion="-6.2083335" vertical-offset="1021" max-vertical-offset="3480">
+              <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/smsfb/js/funciones.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="472">
+              <caret line="0" column="17356" selection-start-line="0" selection-start-column="17356" selection-end-line="0" selection-end-column="17356" />
               <folding />
             </state>
           </provider>
@@ -47,8 +62,8 @@
       <file leaf-file-name="funciones_normal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smsfb/js/funciones_normal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="5085">
-              <caret line="137" column="52" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="5130">
+              <caret line="187" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/js/sitio/noticias.js" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" />
         <option value="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
@@ -113,6 +127,7 @@
         <option value="$PROJECT_DIR$/sms/index.php" />
         <option value="$PROJECT_DIR$/smsfb/js/funciones_normal.js" />
         <option value="$PROJECT_DIR$/smsfb/index.php" />
+        <option value="$PROJECT_DIR$/smsfb/js/funciones.js" />
       </list>
     </option>
   </component>
@@ -313,12 +328,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Expositores Pipe y restapi">
-      <created>1428081629531</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1428081629531</updated>
     </task>
     <task id="LOCAL-00006" summary="Expositores Pipe y restapi 1.1">
       <created>1428082086988</created>
@@ -608,7 +617,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435209572331</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Reporte sms Web 1.5&#10;">
+      <created>1435210044620</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1435210044620</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -673,7 +688,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Mapas alpha 1 iconos" />
     <MESSAGE value="Mapas alpha 1.1 iconos" />
     <MESSAGE value="Mapa fin ofuscado" />
     <MESSAGE value="Mapa fin ofuscado. Orden Publicidad" />
@@ -698,20 +712,14 @@
     <MESSAGE value="Reporte sms Web 1.1&#10;" />
     <MESSAGE value="Reporte sms Web 1.3&#10;" />
     <MESSAGE value="Reporte sms Web 1.4&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reporte sms Web 1.4&#10;" />
+    <MESSAGE value="Reporte sms Web 1.5&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reporte sms Web 1.5&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="435">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4473161" vertical-offset="0" max-vertical-offset="1200">
@@ -1066,18 +1074,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/smsfb/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2083335" vertical-offset="1021" max-vertical-offset="3480">
+          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/smsfb/js/funciones_normal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="5085">
-          <caret line="137" column="52" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="5130">
+          <caret line="187" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smsfb/index.php">
+    <entry file="file://$PROJECT_DIR$/smsfb/js/funciones.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50223213" vertical-offset="2295" max-vertical-offset="3480">
-          <caret line="168" column="64" selection-start-line="168" selection-start-column="64" selection-end-line="168" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="472">
+          <caret line="0" column="17356" selection-start-line="0" selection-start-column="17356" selection-end-line="0" selection-end-column="17356" />
           <folding />
         </state>
       </provider>

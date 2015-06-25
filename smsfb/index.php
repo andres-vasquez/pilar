@@ -160,7 +160,7 @@
                                 <strong class="pull-left">Información cuenta</strong>
                                 <div class="clearfix left">
                                     <br/><br/>
-                                    <table class="col-lg-12">
+                                    <table class="col-xs-12">
                                         <tr>
                                             <td class="text-left">Mensajes enviados:</td>
                                             <td class="text-left" style="padding-left:15px;"><b id="txtCantidadMensajes"></b></td>

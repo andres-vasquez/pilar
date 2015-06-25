@@ -91,6 +91,7 @@ $(document).ready(function ()
 
     obtenerDatos=function(txtCodigo,mes,ano)
     {
+        $("#btnRegistro,#btnSaldo").addClass("hidden");
         var url = getUrlBase() + "/apisms/v1/usuarios/auth";
         if(mes!=0 && ano!=0)
         {
@@ -183,6 +184,8 @@ $(document).ready(function ()
 
         $("#txtCodigo").val("");
         $("#divPanelDatos").addClass("hidden");
+
+        $("#btnRegistro,#btnSaldo").removeClass("hidden");
     });
 
     $("#txtDigitos,#txtClabe").keydown(function (e) {
