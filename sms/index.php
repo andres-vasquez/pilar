@@ -126,7 +126,7 @@
 
 
         <div id="divAcceso" class="row conteiner">
-            <form id="formAcceso" role="form" class="col-lg-6 col-lg-offset-3 text-left">
+            <form id="formAcceso" role="form" class="col-md-6 col-md-offset-3 text-left">
                 <div class="form-group">
                     <label for="txtCodigo">Código</label>
                     <input type="text" class="form-control text-uppercase" id="txtCodigo"
@@ -142,7 +142,7 @@
                 <br/>
 
                 <div id="divPanelDatos" class="row hidden">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="panel panel-success">
                             <div class="panel-heading clearfix">
                                 <h4 class="panel-title pull-left">Datos de cuenta</h4>
@@ -181,12 +181,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-6">
                         <div class="panel panel-info">
                             <div class="panel-heading"><strong>Avisos</strong></div>
                             <div class="panel-body">
                                 <p class="pull-left">
-                                    <small id="txtAvisos">Lalsdlas</small>
+                                    <small id="txtAvisos" style="font-size:14px">Lalsdlas</small>
                                 </p>
                             </div>
                         </div>
