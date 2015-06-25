@@ -85,7 +85,7 @@
         </div>
 
         <div id="divRegistro" class="row conteiner hidden">
-            <form role="form" id="formRegistro" class="col-lg-8 col-lg-offset-2 text-left">
+            <form role="form" id="formRegistro" class="col-xs-8 col-xs-offset-2 text-left">
                 <div class="form-group">
                     <label for="txtNombre">Nombre Completo</label>
                     <input type="text" class="form-control" id="txtNombre"
@@ -126,7 +126,7 @@
 
 
         <div id="divAcceso" class="row conteiner">
-            <form id="formAcceso" role="form" class="col-md-6 col-md-offset-3 text-left">
+            <form id="formAcceso" role="form" class="col-xs-6 col-xs-offset-3 text-left">
                 <div class="form-group">
                     <label for="txtCodigo">Código</label>
                     <input type="text" class="form-control text-uppercase" id="txtCodigo"
@@ -134,7 +134,7 @@
                 </div>
                 <button type="submit" class="btn btn-success pull-right">Consultar</button>
             </form>
-            <div class="col-lg-12 col-md-12">
+            <div class="col-xs-12 col-xs-12">
                 <br/>
                 <div id="loading" class="hidden">
                     <h4><i class="fa fa-cog fa-spin fa-2x"></i>&nbsp; Cargando...</h4>
@@ -142,8 +142,8 @@
                 <br/>
 
                 <div id="divPanelDatos" class="row hidden">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="panel panel-success">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="panel panel-success" style="margin-left: 10px">
                             <div class="panel-heading clearfix">
                                 <h4 class="panel-title pull-left">Datos de cuenta</h4>
 
@@ -181,8 +181,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="panel panel-info">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="panel panel-info" style="margin-right: 10px">
                             <div class="panel-heading"><strong>Avisos</strong></div>
                             <div class="panel-body">
                                 <p class="pull-left">
