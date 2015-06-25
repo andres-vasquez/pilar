@@ -162,11 +162,11 @@
                                     <br/><br/>
                                     <table class="col-lg-12">
                                         <tr>
-                                            <td class="text-right">Mensajes enviados:</td>
+                                            <td class="text-left">Mensajes enviados:</td>
                                             <td class="text-left" style="padding-left:15px;"><b id="txtCantidadMensajes"></b></td>
                                         </tr>
                                         <tr>
-                                            <td class="text-right">Monto a depositar:</td>
+                                            <td class="text-left">Monto a depositar:</td>
                                             <td class="text-left" style="padding-left:15px;"><b id="txtMonto"></b></td>
                                         </tr>
                                     </table>

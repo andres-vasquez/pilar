@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/img/logo_sms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/css/estilos.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/js/funciones.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/js/funciones_normal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/js/jquery-1.11.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/bootstrap-3.3.5-dist/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/sms.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/font-awesome-4.3.0/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smsfb/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/index.php" afterPath="$PROJECT_DIR$/smsfb/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -97,8 +37,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smsfb/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.234375" vertical-offset="2505" max-vertical-offset="3480">
-              <caret line="174" column="66" selection-start-line="174" selection-start-column="66" selection-end-line="174" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.50223213" vertical-offset="2295" max-vertical-offset="3480">
+              <caret line="168" column="64" selection-start-line="168" selection-start-column="64" selection-end-line="168" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -373,12 +313,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Expositores Pipe">
-      <created>1428080767255</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1428080767255</updated>
     </task>
     <task id="LOCAL-00005" summary="Expositores Pipe y restapi">
       <created>1428081629531</created>
@@ -668,7 +602,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435209286623</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Reporte sms Web 1.4&#10;">
+      <created>1435209572331</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1435209572331</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -733,7 +673,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Mapas alpha 0.5" />
     <MESSAGE value="Mapas alpha 1 iconos" />
     <MESSAGE value="Mapas alpha 1.1 iconos" />
     <MESSAGE value="Mapa fin ofuscado" />
@@ -758,7 +697,8 @@
     <MESSAGE value="Reporte sms Web 1.0" />
     <MESSAGE value="Reporte sms Web 1.1&#10;" />
     <MESSAGE value="Reporte sms Web 1.3&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reporte sms Web 1.3&#10;" />
+    <MESSAGE value="Reporte sms Web 1.4&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reporte sms Web 1.4&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1136,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smsfb/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.234375" vertical-offset="2505" max-vertical-offset="3480">
-          <caret line="174" column="66" selection-start-line="174" selection-start-column="66" selection-end-line="174" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.50223213" vertical-offset="2295" max-vertical-offset="3480">
+          <caret line="168" column="64" selection-start-line="168" selection-start-column="64" selection-end-line="168" selection-end-column="64" />
           <folding />
         </state>
       </provider>
