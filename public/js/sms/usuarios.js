@@ -210,6 +210,7 @@ window.operateEvents = {
                 "nombre": $("#txtNombre_editar").val(),
                 "nombre_deposito": $("#txtNombreDeposito_editar").val(),
                 "digitos_celular": $("#txtDigitos_editar").val(),
+                "celular": $("#txtCelular_editar").val(),
                 "email": $("#txtEmail_editar").val(),
                 "clabe": clabe
             };
