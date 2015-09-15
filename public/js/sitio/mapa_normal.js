@@ -72,11 +72,24 @@ $(document).ready(function () {
 
 
     $("#txtColorPicker").colorpicker();
+    var mapOptions=null;
 
-    var mapOptions = {
-        zoom: 17,
-        center: new google.maps.LatLng(-17.418905, -66.129765)
-    };
+    //Feicobol
+    if($("#nombre_sistema").val()=="feicobol")
+    {
+        mapOptions = {
+            zoom: 17,
+            center: new google.maps.LatLng(-17.418905, -66.129765)
+        };
+    }
+    else
+    {
+        mapOptions = {
+            zoom: 17,
+            center: new google.maps.LatLng(-16.537579, -68.096478)
+        };
+    }
+
     map = new google.maps.Map(document.getElementById('mapa'),
         mapOptions);
 

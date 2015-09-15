@@ -15,6 +15,7 @@
 @section('barra_navegacion')
     <li class="active">Mapa</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>
+    <input type="hidden" id="nombre_sistema" value="<% Session::get("nombre_sistema")%>"/>
 @stop
 
 @section('titulo')

@@ -1,677 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/1x1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/images/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen-sprite@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/img/dark_wood.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/img/slide-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/img/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/images/underscore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/.jshintignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.mailmap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/AUTHORS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/CNAME" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Tipossistemas.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/absolute.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/add_subtract.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/arrays.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/atom+xml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/badcall.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/badjson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/benchmarker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/benchmarker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/body.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/bodyBackground.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/boxSizing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/bs-BA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/callbacks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/core/cc_on.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/chaining.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.proto.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/cleanScript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/closest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/collections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/concat-lang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/cs-CZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/csp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/csp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/da-DK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/dashboard.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_feicobol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_feicobol_normal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/day.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/days_in_month.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/de-AT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/de-DE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/delegatetest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/dimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/dimensions/documentLarge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/dimensions/documentSmall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/duration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/echoData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/echoQuery.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/el-GR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/ender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/errorWithJSON.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/errorWithText.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-MX.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/etag.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/evalScript.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event-alias.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/eventos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/events-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/events.json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/exports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/exports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/fi-FI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/filter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/find.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/fixed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/focusElem.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/fr-FR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/getters_setters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/grunt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/headers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/history.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/hovertest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/hr-HR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/selector/html5_selector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/if_modified_since.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/manipulation/iframe-denied.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/iframe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/index-bs3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_after.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_before.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_same.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_valid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/it-IT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ja-JP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/jquery-basis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery-migrate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery-migrate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/jslitmus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/json.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/json_obj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/jsonp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ko-KR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/lang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/langs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/langs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/leapyear.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/localfile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/longLoadScript.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/manipulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/mapa_feicobol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/mapa_feicobol_normal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/minify-lang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/minify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/modal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/month-day.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/month.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/mutable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/name.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/name.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/networkerror.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/nl-NL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/no-NO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/nocontent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/noticias.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/noticias.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/tecnobit/noticias.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/objects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/params_html.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/pl-PL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/preparse_postformat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/promiseReady.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/qunit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/qunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/readywait.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/readywaitasset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/readywaitloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/relative.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/build/release-notes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/build/release.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ro-RO.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ru-RU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/runner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/script.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/serialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/shrinkWrapBlocks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle-jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/selector/sizzle_cache.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/sl-SL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/slice.vs.concat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/sod_eod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/speed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/static.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/statusText.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/sv-SE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/syncReady.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/table.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/testElementCrash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/testinit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/testrunner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/testsuite.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/text.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/tr-TR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/traversing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/tzm-la.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/tzm-la.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/tzm-la.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/ua.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/underscore.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/underscore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/ajax/unreleasedXHR.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/utc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/utility.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/web.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/week-days.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/week.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/weeks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/with_fries.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/with_fries_over_jsonp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/wrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/xhtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/year-month.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/year.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/zone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/zones.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/load.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/parseJSON.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/parseXML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/var/nonce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/var/rquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/attr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/classes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/val.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/access.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/parseHTML.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/ready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/addGetHookIf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/curCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/defaultDisplay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/swap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/cssExpand.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/getStyles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/isHidden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/rmargin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/Data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/accepts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/var/data_priv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/var/data_user.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects/Tween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects/animatedSelector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event/alias.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/exports/amd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/exports/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/queue/delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/selector-native.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/selector-sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle/dist/sizzle.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing/findFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/class2type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/concat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/hasOwn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/indexOf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/pnum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/push.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/rnotwhite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/slice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/strundefined.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/toString.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/extending.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/usage.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Normalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Iconv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Intl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Mbstring.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Normalizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Xml.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.big5.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp037.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp1006.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp1026.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp424.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp437.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp500.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp737.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp775.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp850.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp852.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp855.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp856.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp857.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp860.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp861.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp862.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp863.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp864.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp865.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp866.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp869.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp874.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp875.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp932.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp936.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp949.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp950.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.gsm0338.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-1.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-10.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-11.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-13.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-14.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-15.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-16.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-2.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-3.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-4.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-5.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-6.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-7.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-8.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-9.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.koi8-r.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.koi8-u.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.mazovia.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.nextstep.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.stdenc.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.symbol.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.turkish.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.us-ascii-quotes.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.us-ascii.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1250.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1251.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1252.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1253.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1254.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1255.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1256.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1257.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1258.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-ce.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-cyrillic.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-greek.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-icelandic.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-roman.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.zdingbat.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.gsm0338.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.mazovia.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.stdenc.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.symbol.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.zdingbat.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/translit.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/canonicalComposition.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/canonicalDecomposition.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/combiningClass.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/compatibilityDecomposition.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/lowerCase.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/upperCase.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/TurkishUtf8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/BestFit.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/iconv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/intl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/mbstring.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/utf8_encode.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/WindowsStreamWrapper.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/caseFolding_full.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1250.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1251.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1252.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1253.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1254.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1255.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1256.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1257.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1258.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit874.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit932.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit936.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit949.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit950.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/translit_extra.ser" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/expositores.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/mapa.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/noticias.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/.travis.yml" afterPath="$PROJECT_DIR$/vendor/patchwork/utf8/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/AbstractEventDispatcherTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/AbstractEventDispatcherTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AutenticacionController.php" afterPath="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/patchwork/utf8/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Filesystem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTestCase.php" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/MIT-LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/PHPConsoleHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/PHPConsoleHandlerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/README.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/README.mdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Processor/TagProcessorTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Processor/TagProcessorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/TestHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/TestHandlerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/composer.json" afterPath="$PROJECT_DIR$/vendor/patchwork/utf8/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/dashboard.js" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event.js" />
+    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="Backend Tecnobit primer paso y Fipaz: Noticias, expositores, eventos primera parte &#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/expositores.js" afterPath="$PROJECT_DIR$/public/js/sitio/expositores.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/jsonp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/outro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/sockets.md" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/doc/sockets.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sms/usuarios.js" afterPath="$PROJECT_DIR$/public/js/sms/usuarios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/css/whoops.base.css" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/css/whoops.base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" afterPath="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/wrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/xhr.js" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -705,8 +39,8 @@
       <file leaf-file-name="expositores.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2625">
-              <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+            <state vertical-scroll-proportion="-10.666667" vertical-offset="914" max-vertical-offset="2655">
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -715,54 +49,18 @@
       <file leaf-file-name="expositores.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6367521" vertical-offset="903" max-vertical-offset="1650">
-              <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.1923077" vertical-offset="120" max-vertical-offset="2310">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticias.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-41.25" vertical-offset="270" max-vertical-offset="3225">
-              <caret line="84" column="18" selection-start-line="78" selection-start-column="11" selection-end-line="84" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noticias.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5388" max-vertical-offset="7440">
-              <caret line="396" column="6" selection-start-line="372" selection-start-column="3" selection-end-line="396" selection-end-column="6" />
-              <folding>
-                <marker date="1441236910000" expanded="true" signature="15195:15206" placeholder="..." />
-                <marker date="1441236910000" expanded="true" signature="15282:15301" placeholder="..." />
-                <marker date="1441236910000" expanded="true" signature="15450:15461" placeholder="..." />
-                <marker date="1441236910000" expanded="true" signature="15547:15566" placeholder="..." />
-                <marker date="1441236910000" expanded="true" signature="17876:17887" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.333333" vertical-offset="130" max-vertical-offset="3450">
-              <caret line="22" column="55" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calendar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.444445" vertical-offset="3735" max-vertical-offset="7800">
-              <caret line="266" column="3" selection-start-line="266" selection-start-column="3" selection-end-line="266" selection-end-column="3" />
+            <state vertical-scroll-proportion="-16.875" vertical-offset="2925" max-vertical-offset="5820">
+              <caret line="231" column="28" selection-start-line="231" selection-start-column="17" selection-end-line="231" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -776,8 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sitio/sms/reportes.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/sms/SmsReportesController.php" />
         <option value="$PROJECT_DIR$/public/js/sms/reportes.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/sms/index.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sms/dashboard.js" />
@@ -815,18 +111,20 @@
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
         <option value="$PROJECT_DIR$/public/lib/bower_components/underscore/underscore-min.js" />
         <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js" />
         <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.js" />
         <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css" />
         <option value="$PROJECT_DIR$/public/js/sitio/eventos.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/expositores.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" />
       </list>
     </option>
   </component>
@@ -1068,7 +366,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
+              <option name="myItemId" value="ws" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1086,7 +384,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1190,18 +492,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Expositores Pipe y restapi 1.3">
-      <created>1428126182096</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1428126182096</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Publicidad add + likes primera parte">
-      <created>1428643466098</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1428643466098</updated>
     </task>
     <task id="LOCAL-00010" summary="Publicidad add + likes primera parte 1.1">
       <created>1428643780471</created>
@@ -1485,7 +775,19 @@
       <option name="project" value="LOCAL" />
       <updated>1436127144833</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Backend Tecnobit primer paso y Fipaz: Noticias, expositores, eventos primera parte &#10;">
+      <created>1442332439324</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1442332439326</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Eventos funcional">
+      <created>1442345115055</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1442345115056</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1512,6 +814,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1527,7 +830,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1573,8 +875,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Mapa fin ofuscado. Orden Publicidad" />
-    <MESSAGE value="Mapa fin ofuscado. Orden Publicidad 1.1" />
     <MESSAGE value="Mapa fin ofuscado. Orden Publicidad 1.2" />
     <MESSAGE value="Sms y estructura" />
     <MESSAGE value="Sms y estructura 2intento" />
@@ -1598,45 +898,20 @@
     <MESSAGE value="Reporte sms Web 1.5&#10;" />
     <MESSAGE value="Reporte sms Web 1.6&#10;" />
     <MESSAGE value="Usuarios Bug... editar&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Usuarios Bug... editar&#10;" />
+    <MESSAGE value="Backend Tecnobit primer paso y Fipaz: Noticias, expositores, eventos primera parte &#10;" />
+    <MESSAGE value="Eventos funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eventos funcional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Paises.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Catalogo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="540">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="3270">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50735295" vertical-offset="0" max-vertical-offset="3810">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5514706" vertical-offset="0" max-vertical-offset="1950">
           <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1666,6 +941,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.2132354" vertical-offset="0" max-vertical-offset="3045">
           <caret line="191" column="53" selection-start-line="191" selection-start-column="53" selection-end-line="191" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1791,14 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.1176472" vertical-offset="750" max-vertical-offset="9135">
           <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-53.125" vertical-offset="525" max-vertical-offset="5820">
-          <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1951,14 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875" vertical-offset="90" max-vertical-offset="1305">
-          <caret line="41" column="63" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.333333" vertical-offset="130" max-vertical-offset="3450">
@@ -1972,7 +1232,7 @@
         <state vertical-scroll-proportion="-21.375" vertical-offset="1557" max-vertical-offset="2430">
           <caret line="138" column="41" selection-start-line="136" selection-start-column="32" selection-end-line="138" selection-end-column="41" />
           <folding>
-            <element signature="e#2451#2472#0#HTML" expanded="true" />
+            <element signature="e#2451#2472#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1990,27 +1250,75 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="5388" max-vertical-offset="7440">
           <caret line="396" column="6" selection-start-line="372" selection-start-column="3" selection-end-line="396" selection-end-column="6" />
           <folding>
-            <marker date="1441236910000" expanded="true" signature="15195:15206" placeholder="..." />
-            <marker date="1441236910000" expanded="true" signature="15282:15301" placeholder="..." />
-            <marker date="1441236910000" expanded="true" signature="15450:15461" placeholder="..." />
-            <marker date="1441236910000" expanded="true" signature="15547:15566" placeholder="..." />
-            <marker date="1441236910000" expanded="true" signature="17876:17887" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875" vertical-offset="2925" max-vertical-offset="5820">
+          <caret line="231" column="28" selection-start-line="231" selection-start-column="17" selection-end-line="231" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="75" max-vertical-offset="4005">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2625">
-          <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+        <state vertical-scroll-proportion="-10.666667" vertical-offset="914" max-vertical-offset="2655">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5598291" vertical-offset="0" max-vertical-offset="11610">
+          <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6367521" vertical-offset="903" max-vertical-offset="1650">
-          <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.1923077" vertical-offset="120" max-vertical-offset="2310">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding />
         </state>
       </provider>
