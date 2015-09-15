@@ -72,6 +72,7 @@
 
 
         <div id="divNuevoExpositor" class="panel panel-collapse chat collapse">
+            <% Form::open(array('url' => '/ws/expositores', 'id' => 'formNuevoExpositor', 'class' => 'form-horizontal')) %>
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-user"></span> Agregar
                 expositor
             </div>
@@ -79,50 +80,50 @@
                 <ul id="ulFormulario">
                     <li class="left clearfix">
                         <div class="row">
-
                             <br/>
                             <div class="col-md-5 form-group">
                                 <label>Nombre</label>
-                                <input type="text" id="txtNombre" class="form-control" required/>
+                                <input type="text" id="txtNombre" name="nombre" class="form-control" required/>
                             </div>
 
                             <div class="col-md-5 col-lg-offset-1 form-group">
                                 <label>Dirección</label>
-                                <input type="text" id="txtDireccion" class="form-control" required/>
+                                <input type="text" id="txtDireccion" name="direccion" class="form-control" required/>
                             </div>
 
                             <div class="col-md-5 form-group">
                                 <label>Área</label>
-                                <select class="form-control" id="cmbArea">
+                                <select class="form-control" name="pabellon" id="cmbArea">
                                 </select>
                             </div>
                             <div class="col-md-5 col-lg-offset-1 form-group">
                                 <label>Stand</label>
-                                <input type="text" id="txtStand" size="5" class="form-control" required/>
+                                <input type="text" id="txtStand" name="stand" size="5" class="form-control" required/>
                             </div>
 
                             <div class="col-md-5 form-group">
                                 <label>Página web</label>
-                                <input type="text" id="txtWebsite" class="form-control" required/>
+                                <input type="text" id="txtWebsite" name="website" class="form-control" required/>
                             </div>
                             <div class="col-md-5 col-lg-offset-1 form-group">
                                 <label>Fanpage (facebook)</label>
-                                <input type="text" id="txtFacebook" class="form-control" required/>
+                                <input type="text" id="txtFacebook" name="fanpage" class="form-control" required/>
                             </div>
 
                             <div class="col-md-5 form-group">
                                 <label>Teléfono</label>
-                                <input type="text" id="txtTelefono" class="form-control" required/>
+                                <input type="text" id="txtTelefono" name="telefono" class="form-control" required/>
                             </div>
                             <div class="col-md-5 col-lg-offset-1 form-group">
                                 <label>Fax</label>
-                                <input type="text" id="txtFax" class="form-control" required/>
+                                <input type="text" id="txtFax" name="fax" class="form-control" required/>
                             </div>
 
                             <div class="col-md-5 form-group">
                                 <label>Email</label>
-                                <input type="text" id="txtEmail" class="form-control" required/>
+                                <input type="text" id="txtEmail" name="email" class="form-control" required/>
                             </div>
+
                         </div>
                     </li>
                 </ul>
@@ -134,6 +135,7 @@
                     <button type="reset" class="btn btn-danger btn-md">Cancelar</button>
                 </div>
             </div>
+            <% Form::close() %>
         </div>
 
     </div>

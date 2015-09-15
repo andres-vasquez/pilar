@@ -186,7 +186,7 @@ Route::post('/ws/perfiles', 'PerfilesController@store');
 Route::post('/ws/perfil/{id}', array('as' => 'show', 'uses' => 'PerfilesController@update'));
 Route::post('/ws/perfil/eliminar/{id}', array('as' => 'show', 'uses' => 'PerfilesController@destroy'));
 
-//WS eventos
+//WS arbol perfiles
 Route::get('/ws/perfiles/arbol', 'PerfilesController@ArbolPerfiles');
 Route::get('/ws/perfiles/{id_sistema}', array('as' => 'show', 'uses' => 'PerfilesController@PerfilesPorSistema'));
 

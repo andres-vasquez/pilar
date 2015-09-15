@@ -23,7 +23,11 @@ class ExpositoresController extends \BaseController
      */
     public function store()
     {
-        $validator = Validator::make($data = Input::all(), Expositore::$rules);
+        $data = Input::all();
+        $data["aud_usuario_id"] = Session::get('id_usuario');
+        $data["sistema_id"] = Session::get('id_sistema');
+
+        $validator = Validator::make($data, Expositore::$rules);
 
         if ($validator->fails()) {
             $errores = $validator->messages()->first();
