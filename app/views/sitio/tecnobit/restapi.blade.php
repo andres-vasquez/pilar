@@ -16,7 +16,6 @@
 
 @section('titulo')
     <h1 class="page-header">REST API v1.0</h1>
-    <h3 class="alert-danger"><li class="glyphicon glyphicon-music"></li> Hi Andrew</h3>
 @stop
 
 @section('contenido1')

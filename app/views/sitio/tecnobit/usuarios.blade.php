@@ -85,7 +85,7 @@
                     <% Form::close() %>
                     <br/>
                 </div>
-                <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/SmsUsuarios_sinformato'%>"
+                <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/SmsUsuarios_sinformato1'%>"
                        data-show-refresh="true" data-search="true"
                        data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
                        data-sort-name="name" data-sort-order="desc">

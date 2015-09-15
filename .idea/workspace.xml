@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="Backend Tecnobit primer paso y Fipaz: Noticias, expositores, eventos primera parte &#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/expositores.js" afterPath="$PROJECT_DIR$/public/js/sitio/expositores.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" afterPath="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" />
+    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -46,11 +49,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expositores.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="expositores.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1923077" vertical-offset="120" max-vertical-offset="2310">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="2310">
               <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restapi.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.625" vertical-offset="1875" max-vertical-offset="3345">
+              <caret line="150" column="31" selection-start-line="150" selection-start-column="31" selection-end-line="150" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuarios.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.0" vertical-offset="897" max-vertical-offset="3270">
+              <caret line="87" column="103" selection-start-line="87" selection-start-column="103" selection-end-line="87" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portada.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="9135">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imagenes.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="9135">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatalogosController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.7083335" vertical-offset="130" max-vertical-offset="3450">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -85,15 +148,10 @@
         <option value="$PROJECT_DIR$/public/js/md5.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
-        <option value="$PROJECT_DIR$/app/models/Catalogo.php" />
         <option value="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" />
         <option value="$PROJECT_DIR$/public/css/noticias.css" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/noticias.blade.php" />
@@ -109,7 +167,6 @@
         <option value="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
@@ -125,6 +182,12 @@
         <option value="$PROJECT_DIR$/public/js/sitio/expositores.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/Catalogo.php" />
       </list>
     </option>
   </component>
@@ -207,6 +270,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chosen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,6 +476,68 @@
               <option name="myItemId" value="sitio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tecnobit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -492,12 +639,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Publicidad add + likes primera parte 1.1">
-      <created>1428643780471</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1428643780471</updated>
     </task>
     <task id="LOCAL-00011" summary="Likes">
       <created>1428884293992</created>
@@ -787,7 +928,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442345115056</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Backend mapa y expo">
+      <created>1442345844943</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1442345844943</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -875,7 +1022,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Mapa fin ofuscado. Orden Publicidad 1.2" />
     <MESSAGE value="Sms y estructura" />
     <MESSAGE value="Sms y estructura 2intento" />
     <MESSAGE value="Sms y estructura 3intento" />
@@ -900,43 +1046,14 @@
     <MESSAGE value="Usuarios Bug... editar&#10;" />
     <MESSAGE value="Backend Tecnobit primer paso y Fipaz: Noticias, expositores, eventos primera parte &#10;" />
     <MESSAGE value="Eventos funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eventos funcional" />
+    <MESSAGE value="Backend mapa y expo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend mapa y expo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5514706" vertical-offset="0" max-vertical-offset="1950">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="17824" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5655">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13970588" vertical-offset="205" max-vertical-offset="885">
-          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.2132354" vertical-offset="0" max-vertical-offset="3045">
@@ -1023,14 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24264705" vertical-offset="0" max-vertical-offset="3285">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LikesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68235296" vertical-offset="946" max-vertical-offset="1650">
@@ -1043,22 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1985294" vertical-offset="0" max-vertical-offset="9135">
           <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9044118" vertical-offset="2790" max-vertical-offset="9135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.235294" vertical-offset="8455" max-vertical-offset="9135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1219,14 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.333333" vertical-offset="130" max-vertical-offset="3450">
-          <caret line="22" column="55" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.375" vertical-offset="1557" max-vertical-offset="2430">
@@ -1317,8 +1402,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1923077" vertical-offset="120" max-vertical-offset="2310">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="2310">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7083335" vertical-offset="130" max-vertical-offset="3450">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3761062" vertical-offset="0" max-vertical-offset="3795">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625" vertical-offset="1875" max-vertical-offset="3345">
+          <caret line="150" column="31" selection-start-line="150" selection-start-column="31" selection-end-line="150" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0" vertical-offset="897" max-vertical-offset="3270">
+          <caret line="87" column="103" selection-start-line="87" selection-start-column="103" selection-end-line="87" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="9135">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="9135">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Catalogo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.088495575" vertical-offset="0" max-vertical-offset="678">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

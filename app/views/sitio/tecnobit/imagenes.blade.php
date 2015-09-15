@@ -16,7 +16,7 @@
 @stop
 
 @section('titulo')
-    <h1 class="page-header">Anuncios in-App</h1>
+    <h1 class="page-header">Slide de Imágenes</h1>
 @stop
 
 @section('contenido1')
