@@ -74,7 +74,7 @@
     </div>
 @stop
 @section('contenido2')
-    <div class="col-lg-12">
+    <!--<div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">Concurso de Likes entre expositores</div>
             <div class="panel-body">
@@ -111,7 +111,7 @@
 
             </div>
         </div>
-    </div>
+    </div>-->
 @stop
 @section('pie')
     <% HTML::script('public/js/sitio/dashboard.js'); %>
