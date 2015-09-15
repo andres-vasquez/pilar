@@ -1,0 +1,13 @@
+.bloque-noticias
+{
+    text-align: center;
+    cursor: pointer;
+    color:#ffffff;
+    height: 85px;
+    line-height: 80px;
+}
+
+.thumbnail
+{
+    font-size: small;
+}

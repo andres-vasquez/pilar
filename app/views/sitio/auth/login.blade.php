@@ -51,7 +51,7 @@
 
 <% HTML::script('public/js/jquery-1.11.1.min.js'); %>
 <% HTML::script('public/js/bootstrap.min.js'); %>
-<% HTML::script('http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js'); %>
+<% HTML::script('public/js/md5.js'); %>
 <% HTML::script('public/js/sitio/login.js'); %>
 <script>
     !function ($) {

@@ -2,10 +2,676 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/js/funciones.js" afterPath="$PROJECT_DIR$/smsfb/js/funciones.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/js/funciones_normal.js" afterPath="$PROJECT_DIR$/smsfb/js/funciones_normal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsfb/index.php" afterPath="$PROJECT_DIR$/smsfb/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/1x1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/images/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen-sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/img/dark_wood.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/img/slide-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/img/tick.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/images/underscore.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/.jshintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.mailmap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Tipossistemas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/absolute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/add_subtract.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/arrays.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/atom+xml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/attributes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/badcall.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/badjson.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/benchmark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/benchmarker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/benchmarker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/body.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/bodyBackground.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/boxSizing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/bs-BA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/core/cc_on.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/chaining.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chosen/chosen.proto.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/cleanScript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/closest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/collections.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/concat-lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/create.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/cs-CZ.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/csp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/csp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/css.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/cv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/cv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/cv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/da-DK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/dashboard.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_feicobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_feicobol_normal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/day.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/days_in_month.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/de-AT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/de-DE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/delegatetest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/dimensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/docco.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/dimensions/documentLarge.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/dimensions/documentSmall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/duration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/echoData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/echoQuery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/el-GR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/ender.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/errorWithJSON.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/errorWithText.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-MX.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/etag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/evalScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event-alias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/eventos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/events-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/events.json.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/exports.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/exports.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/fi-FI.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/find.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/fixed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/focusElem.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/fr-FR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/functions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/getters_setters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/grunt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/headers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/hovertest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/hr-HR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/selector/html5_selector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/if_modified_since.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/manipulation/iframe-denied.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/iframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/index-bs3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_after.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_before.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_moment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_same.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/is_valid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/it-IT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ja-JP.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/jquery-basis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery-migrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery-migrate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/jslitmus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/json.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/json_obj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/jsonp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ko-KR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/langs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/langs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/leapyear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/localfile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/longLoadScript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/manipulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/mapa_feicobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/sitio/mapa_feicobol_normal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/md5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/minify-lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/minify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/moment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/moment.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/month-day.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/month.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/mutable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/name.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/networkerror.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/nl-NL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/no-NO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/nocontent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/noticias.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/noticias.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/tecnobit/noticias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/objects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/offset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/params_html.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/pl-PL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/preparse_postformat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/promiseReady.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/pt-BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/readywait.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/readywaitasset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/readywaitloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/relative.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/build/release-notes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/build/release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ro-RO.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/ru-RU.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/vendor/runner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/scroll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/shrinkWrapBlocks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/size.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle-jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/selector/sizzle_cache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/sl-SL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/speed/slice.vs.concat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/sod_eod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/speed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/static.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/statusText.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/sv-SE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/event/syncReady.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/offset/table.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/test3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/support/testElementCrash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/testinit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/testrunner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/testsuite.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/tr-TR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/traversing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/tzm-la.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/tzm-la.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/tzm-la.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/tzm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/tzm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/tzm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/ua.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/docs/underscore.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/underscore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/ajax/unreleasedXHR.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/utc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/underscore/test/utility.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/web.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/week-days.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/week.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/moment/weeks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/with_fries.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/data/with_fries_over_jsonp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/unit/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/test/xhtml.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/year-month.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/year.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/zh-CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/lang/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/min/lang/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/test/lang/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/zone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/bower_components/moment/tasks/zones.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/load.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/var/nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/var/rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/attr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/classes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/prop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes/val.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/access.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/ready.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/swap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/Data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/accepts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/var/data_priv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data/var/data_user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects/Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects/animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event/alias.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/exports/amd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/exports/global.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/queue/delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/sizzle/dist/sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing/findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/arr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/push.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/strundefined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/var/toString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/extending.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/usage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Normalizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Iconv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Intl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Mbstring.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Normalizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/Xml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.big5.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp037.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp1006.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp1026.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp424.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp437.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp500.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp737.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp775.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp850.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp852.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp855.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp856.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp857.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp860.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp861.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp862.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp863.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp864.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp865.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp866.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp869.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp874.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp875.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp932.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp936.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp949.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.cp950.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.gsm0338.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-1.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-10.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-11.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-13.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-14.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-15.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-16.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-2.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-3.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-4.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-5.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-6.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-7.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-8.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.iso-8859-9.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.koi8-r.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.koi8-u.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.mazovia.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.nextstep.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.stdenc.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.symbol.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.turkish.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.us-ascii-quotes.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.us-ascii.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1250.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1251.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1252.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1253.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1254.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1255.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1256.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1257.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.windows-1258.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-ce.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-cyrillic.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-greek.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-icelandic.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.x-mac-roman.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/from.zdingbat.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.gsm0338.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.mazovia.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.stdenc.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.symbol.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/to.zdingbat.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/charset/translit.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/canonicalComposition.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/canonicalDecomposition.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/combiningClass.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/compatibilityDecomposition.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/lowerCase.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/PHP/Shim/unidata/upperCase.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/TurkishUtf8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/BestFit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/iconv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/intl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/mbstring.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/Bootup/utf8_encode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/WindowsStreamWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/caseFolding_full.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1250.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1251.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1252.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1253.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1254.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1255.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1256.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1257.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit1258.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit874.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit932.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit936.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit949.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/to.bestfit950.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/class/Patchwork/Utf8/data/translit_extra.ser" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/expositores.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/mapa.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/noticias.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/.travis.yml" afterPath="$PROJECT_DIR$/vendor/patchwork/utf8/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/AbstractEventDispatcherTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/AbstractEventDispatcherTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AutenticacionController.php" afterPath="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/BrowserConsoleHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/patchwork/utf8/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/CHANGELOG.mdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/CubeHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/ErrorHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/Tests/EventTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Filesystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTestCase.php" afterPath="$PROJECT_DIR$/vendor/symfony/filesystem/Tests/FilesystemTestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/FlowdockHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/LogglyHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/MIT-LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/MandrillHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryPeakUsageProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/MemoryUsageProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Formatter/NormalizerFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Formatter/NormalizerFormatterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/PHPConsoleHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/PHPConsoleHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/README.mdown" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/README.mdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/StreamHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/StreamHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Processor/TagProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Processor/TagProcessorTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Processor/TagProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/TestHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/TestHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/tests/Monolog/Handler/TestHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/patchwork/utf8/composer.json" afterPath="$PROJECT_DIR$/vendor/patchwork/utf8/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/dashboard.js" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/dimensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/views/env_details.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/expositores.js" afterPath="$PROJECT_DIR$/public/js/sitio/expositores.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/jsonp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/manipulation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/queue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/serialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/monolog/monolog/doc/sockets.md" afterPath="$PROJECT_DIR$/vendor/monolog/monolog/doc/sockets.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sms/usuarios.js" afterPath="$PROJECT_DIR$/public/js/sms/usuarios.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/css/whoops.base.css" afterPath="$PROJECT_DIR$/vendor/filp/whoops/src/Whoops/Resources/css/whoops.base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/public/lib/bower_components/jquery/src/ajax/xhr.js" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,34 +702,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smsfb/index.php">
+      <file leaf-file-name="expositores.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.2083335" vertical-offset="1021" max-vertical-offset="3480">
-              <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
-              <folding>
-                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="funciones.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/smsfb/js/funciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="472">
-              <caret line="0" column="17356" selection-start-line="0" selection-start-column="17356" selection-end-line="0" selection-end-column="17356" />
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2625">
+              <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="funciones_normal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smsfb/js/funciones_normal.js">
+      <file leaf-file-name="expositores.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="5130">
-              <caret line="187" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6367521" vertical-offset="903" max-vertical-offset="1650">
+              <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticias.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-41.25" vertical-offset="270" max-vertical-offset="3225">
+              <caret line="84" column="18" selection-start-line="78" selection-start-column="11" selection-end-line="84" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticias.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5388" max-vertical-offset="7440">
+              <caret line="396" column="6" selection-start-line="372" selection-start-column="3" selection-end-line="396" selection-end-column="6" />
+              <folding>
+                <marker date="1441236910000" expanded="true" signature="15195:15206" placeholder="..." />
+                <marker date="1441236910000" expanded="true" signature="15282:15301" placeholder="..." />
+                <marker date="1441236910000" expanded="true" signature="15450:15461" placeholder="..." />
+                <marker date="1441236910000" expanded="true" signature="15547:15566" placeholder="..." />
+                <marker date="1441236910000" expanded="true" signature="17876:17887" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.333333" vertical-offset="130" max-vertical-offset="3450">
+              <caret line="22" column="55" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.444445" vertical-offset="3735" max-vertical-offset="7800">
+              <caret line="266" column="3" selection-start-line="266" selection-start-column="3" selection-end-line="266" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -77,48 +776,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
-        <option value="$PROJECT_DIR$/public/js/sitio/mapa_normal.js" />
-        <option value="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/AsignacionMenusController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/noticias.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/restapi.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/expositores.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/feicobol/mapa.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/admin/perfiles.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/admin/usuarios.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/database.php" />
-        <option value="$PROJECT_DIR$/app/models/SmsBanco.php" />
-        <option value="$PROJECT_DIR$/app/templates/scaffolding/model.txt" />
-        <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/models/SmsMensaje.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/sms/config.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/bootstrap-datepicker.js" />
-        <option value="$PROJECT_DIR$/app/models/SmsConfiguracion.php" />
-        <option value="$PROJECT_DIR$/public/js/sms/config.js" />
-        <option value="$PROJECT_DIR$/public/js/sitio/login_normal.js" />
-        <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/sms/SmsConfiguracionsController.php" />
-        <option value="$PROJECT_DIR$/app/models/SmsUsuario.php" />
-        <option value="$PROJECT_DIR$/app/models/SmsAcceso.php" />
-        <option value="$PROJECT_DIR$/app/controllers/sms/SmsAccesosController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/sms/usuarios.js" />
-        <option value="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/sms/SmsBancosController.php" />
-        <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap/bower.json" />
-        <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-typehead/bower.json" />
-        <option value="$PROJECT_DIR$/app/filters.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/master/excel.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/sms/reportes.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsReportesController.php" />
         <option value="$PROJECT_DIR$/public/js/sms/reportes.js" />
@@ -128,6 +785,48 @@
         <option value="$PROJECT_DIR$/smsfb/js/funciones_normal.js" />
         <option value="$PROJECT_DIR$/smsfb/index.php" />
         <option value="$PROJECT_DIR$/smsfb/js/funciones.js" />
+        <option value="$PROJECT_DIR$/public/js/sms/usuarios.js" />
+        <option value="$PROJECT_DIR$/public/js/md5.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/Catalogo.php" />
+        <option value="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" />
+        <option value="$PROJECT_DIR$/public/css/noticias.css" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/noticias.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/tecnobit/noticias.js" />
+        <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/fipaz/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/fipaz/mapa.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/fipaz/expositores.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/fipaz/noticias.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/fipaz/publicidad.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/fipaz/restapi.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/Tipossistemas.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/public/js/sitio/dashboard.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php" />
+        <option value="$PROJECT_DIR$/public/lib/bower_components/underscore/underscore-min.js" />
+        <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js" />
+        <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.js" />
+        <option value="$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css" />
+        <option value="$PROJECT_DIR$/public/js/sitio/eventos.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/sitio/expositores.js" />
       </list>
     </option>
   </component>
@@ -136,10 +835,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="735" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -164,6 +861,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,7 +890,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="smsfb" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -206,7 +904,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="smsfb" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -224,13 +962,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tecnobit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,19 +1101,20 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="js.buildTools.gulp.node_interpreter" value="/usr/local/bin/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="/usr/local/lib/node_modules/gulp" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/js/sms" />
-      <recent name="$PROJECT_DIR$/app/views/sitio/sms" />
-      <recent name="$PROJECT_DIR$/app/views/sitio/admin" />
       <recent name="$PROJECT_DIR$/public/js/sitio" />
-      <recent name="$PROJECT_DIR$/app/views/sitio/feicobol" />
+      <recent name="$PROJECT_DIR$/app/views/sitio/ferias" />
+      <recent name="$PROJECT_DIR$/app/models" />
+      <recent name="$PROJECT_DIR$/app/views/sitio" />
+      <recent name="$PROJECT_DIR$/app/views/sitio/tecnobit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/controllers/sms" />
@@ -328,18 +1190,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Expositores Pipe y restapi 1.1">
-      <created>1428082086988</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1428082086988</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Expositores Pipe y restapi 1.2">
-      <created>1428082297645</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1428082297645</updated>
     </task>
     <task id="LOCAL-00008" summary="Expositores Pipe y restapi 1.3">
       <created>1428126182096</created>
@@ -623,7 +1473,19 @@
       <option name="project" value="LOCAL" />
       <updated>1435210044620</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Reporte sms Web 1.6&#10;">
+      <created>1435210602549</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1435210602549</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Usuarios Bug... editar&#10;">
+      <created>1436127144833</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1436127144833</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -647,31 +1509,54 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1280" height="735" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29644588" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25444266" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26655897" sideWeight="0.50094163" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22239502" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22550544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281493" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281493" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26655897" sideWeight="0.50094163" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22550544" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.315832" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -688,8 +1573,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Mapas alpha 1.1 iconos" />
-    <MESSAGE value="Mapa fin ofuscado" />
     <MESSAGE value="Mapa fin ofuscado. Orden Publicidad" />
     <MESSAGE value="Mapa fin ofuscado. Orden Publicidad 1.1" />
     <MESSAGE value="Mapa fin ofuscado. Orden Publicidad 1.2" />
@@ -713,390 +1596,421 @@
     <MESSAGE value="Reporte sms Web 1.3&#10;" />
     <MESSAGE value="Reporte sms Web 1.4&#10;" />
     <MESSAGE value="Reporte sms Web 1.5&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reporte sms Web 1.5&#10;" />
+    <MESSAGE value="Reporte sms Web 1.6&#10;" />
+    <MESSAGE value="Usuarios Bug... editar&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Usuarios Bug... editar&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
+    <entry file="file://$PROJECT_DIR$/app/models/Paises.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4473161" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SmsMensaje.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Perfiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PerfilesController.php">
+    <entry file="file://$PROJECT_DIR$/app/models/Catalogo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4697286" vertical-offset="825" max-vertical-offset="2160">
-          <caret line="70" column="96" selection-start-line="70" selection-start-column="96" selection-end-line="70" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="540">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40501043" vertical-offset="1456" max-vertical-offset="3945">
-          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="113" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="3270">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/bootstrap-datepicker.js">
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.481482" vertical-offset="2864" max-vertical-offset="25155">
-          <caret line="208" column="88" selection-start-line="208" selection-start-column="80" selection-end-line="208" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.50735295" vertical-offset="0" max-vertical-offset="3810">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/jquery/dist/jquery.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3710692" vertical-offset="635" max-vertical-offset="137985">
-          <caret line="74" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SmsConfiguracion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sms/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="6315">
-          <caret line="211" column="42" selection-start-line="211" selection-start-column="42" selection-end-line="211" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MapasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.54071" vertical-offset="0" max-vertical-offset="3045">
-          <caret line="145" column="47" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/LikesExpositoresController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="1635" max-vertical-offset="2805">
-          <caret line="136" column="13" selection-start-line="124" selection-start-column="12" selection-end-line="136" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21383648" vertical-offset="708" max-vertical-offset="1185">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/login_normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32934132" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MapaTagsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4088051" vertical-offset="1149" max-vertical-offset="1650">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.25" vertical-offset="3798" max-vertical-offset="4530">
-          <caret line="260" column="8" selection-start-line="260" selection-start-column="8" selection-end-line="260" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SmsAcceso.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50104386" vertical-offset="0" max-vertical-offset="479">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SmsUsuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5031447" vertical-offset="0" max-vertical-offset="477">
-          <caret line="16" column="139" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/publicidad.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.163522" vertical-offset="5433" max-vertical-offset="9135">
-          <caret line="39" column="136" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/feicobol/noticias.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5597484" vertical-offset="2688" max-vertical-offset="3225">
-          <caret line="197" column="10" selection-start-line="143" selection-start-column="3" selection-end-line="197" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.5514706" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="17824" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="5655">
-          <caret line="85" column="11" selection-start-line="47" selection-start-column="8" selection-end-line="85" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5655">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2445">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/config.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30142567" vertical-offset="2192" max-vertical-offset="3930">
-          <caret line="156" column="36" selection-start-line="156" selection-start-column="36" selection-end-line="159" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsAccesosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1710">
-          <caret line="13" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-typehead/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14478764" vertical-offset="0" max-vertical-offset="518">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="542">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="542">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6402214" vertical-offset="1153" max-vertical-offset="3075">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/usuarios.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17374517" vertical-offset="360" max-vertical-offset="3270">
-          <caret line="30" column="27" selection-start-line="25" selection-start-column="17" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sms/usuarios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24907748" vertical-offset="3120" max-vertical-offset="4245">
-          <caret line="217" column="12" selection-start-line="217" selection-start-column="12" selection-end-line="217" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsBancosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2432432" vertical-offset="0" max-vertical-offset="1905">
-          <caret line="112" column="51" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AutenticacionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31853282" vertical-offset="1440" max-vertical-offset="2520">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.458333" vertical-offset="1477" max-vertical-offset="2145">
-          <caret line="121" column="29" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="690">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.13970588" vertical-offset="205" max-vertical-offset="885">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.333333" vertical-offset="2497" max-vertical-offset="3015">
+        <state vertical-scroll-proportion="4.2132354" vertical-offset="0" max-vertical-offset="3045">
           <caret line="191" column="53" selection-start-line="191" selection-start-column="53" selection-end-line="191" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2535" max-vertical-offset="4530">
+          <caret line="170" column="30" selection-start-line="170" selection-start-column="30" selection-end-line="170" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/excel.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad_normal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/reportes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1193" max-vertical-offset="1815">
-          <caret line="96" column="57" selection-start-line="96" selection-start-column="51" selection-end-line="96" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.64204544" vertical-offset="2188" max-vertical-offset="5445">
+          <caret line="176" column="7" selection-start-line="27" selection-start-column="4" selection-end-line="176" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8822394" vertical-offset="3142" max-vertical-offset="3660">
-          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+        <state vertical-scroll-proportion="8.125" vertical-offset="195" max-vertical-offset="4605">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/noticias.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4305" max-vertical-offset="5790">
-          <caret line="310" column="24" selection-start-line="310" selection-start-column="24" selection-end-line="310" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2860" max-vertical-offset="3720">
+          <caret line="223" column="42" selection-start-line="223" selection-start-column="42" selection-end-line="223" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsReportesController.php">
+    <entry file="file://$PROJECT_DIR$/public/css/noticias.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1912" max-vertical-offset="3810">
-          <caret line="160" column="51" selection-start-line="160" selection-start-column="51" selection-end-line="160" selection-end-column="51" />
-          <folding>
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..SmsUsuario..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..SmsMensaje..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sms/reportes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0833333" vertical-offset="0" max-vertical-offset="2700">
-          <caret line="75" column="52" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="2970">
-          <caret line="186" column="23" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsConfiguracionsController.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.5" vertical-offset="0" max-vertical-offset="3180">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="69" />
-          <folding>
-            <marker date="1431277054000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(M..SmsMensaje..." />
-            <marker date="1431277054000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(M..SmsMensaje..." />
-          </folding>
+        <state vertical-scroll-proportion="-13.333333" vertical-offset="2230" max-vertical-offset="3045">
+          <caret line="170" column="12" selection-start-line="170" selection-start-column="12" selection-end-line="170" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/models/Tipossistemas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.109375" vertical-offset="375" max-vertical-offset="1725">
-          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="360">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Perfiles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AutenticacionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.958333" vertical-offset="1450" max-vertical-offset="2865">
+          <caret line="111" column="44" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24264705" vertical-offset="0" max-vertical-offset="3285">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LikesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68235296" vertical-offset="946" max-vertical-offset="1650">
+          <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1985294" vertical-offset="0" max-vertical-offset="9135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9044118" vertical-offset="2790" max-vertical-offset="9135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.235294" vertical-offset="8455" max-vertical-offset="9135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1176472" vertical-offset="750" max-vertical-offset="9135">
+          <caret line="146" column="30" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2723215" vertical-offset="285" max-vertical-offset="5295">
-          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smsfb/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2083335" vertical-offset="1021" max-vertical-offset="3480">
-          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smsfb/js/funciones_normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="5130">
-          <caret line="187" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+        <state vertical-scroll-proportion="-53.125" vertical-offset="525" max-vertical-offset="5820">
+          <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smsfb/js/funciones.js">
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="472">
-          <caret line="0" column="17356" selection-start-line="0" selection-start-column="17356" selection-end-line="0" selection-end-column="17356" />
+        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="660">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_feicobol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_feicobol_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06392045" vertical-offset="0" max-vertical-offset="3075">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa_feicobol_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11415">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa_feicobol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3539823" vertical-offset="0" max-vertical-offset="795">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/month.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/underscore/underscore-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10683761" vertical-offset="0" max-vertical-offset="702">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/tmpls/day.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42735043" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35897437" vertical-offset="123" max-vertical-offset="1155">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/js/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="18720">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/bootstrap-calendar/css/calendar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.444445" vertical-offset="3735" max-vertical-offset="7800">
+          <caret line="266" column="3" selection-start-line="266" selection-start-column="3" selection-end-line="266" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11061947" vertical-offset="0" max-vertical-offset="2445">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sms/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6315">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/config.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9262673" vertical-offset="3279" max-vertical-offset="3930">
+          <caret line="135" column="66" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/eventos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5982906" vertical-offset="0" max-vertical-offset="2610">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.875" vertical-offset="90" max-vertical-offset="1305">
+          <caret line="41" column="63" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333" vertical-offset="130" max-vertical-offset="3450">
+          <caret line="22" column="55" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.375" vertical-offset="1557" max-vertical-offset="2430">
+          <caret line="138" column="41" selection-start-line="136" selection-start-column="32" selection-end-line="138" selection-end-column="41" />
+          <folding>
+            <element signature="e#2451#2472#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.25" vertical-offset="270" max-vertical-offset="3225">
+          <caret line="84" column="18" selection-start-line="78" selection-start-column="11" selection-end-line="84" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5388" max-vertical-offset="7440">
+          <caret line="396" column="6" selection-start-line="372" selection-start-column="3" selection-end-line="396" selection-end-column="6" />
+          <folding>
+            <marker date="1441236910000" expanded="true" signature="15195:15206" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="15282:15301" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="15450:15461" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="15547:15566" placeholder="..." />
+            <marker date="1441236910000" expanded="true" signature="17876:17887" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2625">
+          <caret line="15" column="83" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6367521" vertical-offset="903" max-vertical-offset="1650">
+          <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
           <folding />
         </state>
       </provider>

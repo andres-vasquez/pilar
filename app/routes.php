@@ -103,28 +103,65 @@ Route::group(array('before' => 'session'), function () {
         });
     });
 
-    //************** Feicobol **********************
-    Route::group(array('prefix' => 'feicobol'), function () {
+    //************** Ferias **********************
+    Route::group(array('prefix' => 'ferias'), function () {
         Route::get('/', function () {
-            return View::make('sitio.feicobol.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.ferias.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/noticias', function () {
-            return View::make('sitio.feicobol.noticias')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.ferias.noticias')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/eventos', function () {
+            return View::make('sitio.ferias.eventos')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/mapa', function () {
-            return View::make('sitio.feicobol.mapa')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.ferias.mapa')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/publicidad', function () {
-            return View::make('sitio.feicobol.publicidad')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.ferias.publicidad')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/expositores', function () {
-            return View::make('sitio.feicobol.expositores')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.ferias.expositores')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/restapi', function () {
-            return View::make('sitio.feicobol.restapi')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.ferias.restapi')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
-
+        Route::get('/ofertas', function () {
+            return View::make('sitio.ferias.ofertas')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
     });
+
+    //************** Tecnobit **********************
+    Route::group(array('prefix' => 'tecnobit'), function () {
+        Route::get('/', function () {
+            return View::make('sitio.tecnobit.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/noticias', function () {
+            return View::make('sitio.tecnobit.noticias')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/publicidad', function () {
+            return View::make('sitio.tecnobit.publicidad')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/notificaciones', function () {
+            return View::make('sitio.tecnobit.notificaciones')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/revista', function () {
+            return View::make('sitio.tecnobit.revista')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/imagenes', function () {
+            return View::make('sitio.tecnobit.imagenes')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/portada', function () {
+            return View::make('sitio.tecnobit.portada')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/usuarios', function () {
+            return View::make('sitio.tecnobit.usuarios')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/restapi', function () {
+            return View::make('sitio.tecnobit.restapi')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+    });
+
     //*************** GENERAL *******************
 
     Route::get('/logout', function () {
@@ -196,15 +233,14 @@ Route::post('/ws/expositores', 'ExpositoresController@store');
 Route::post('/ws/expositores/{id}', array('as' => 'show', 'uses' => 'ExpositoresController@update'));
 Route::post('/ws/expositores/eliminar/{id}', array('as' => 'show', 'uses' => 'ExpositoresController@destroy'));
 
-
 //WS Publicidad Imagenes
 Route::get('/ws/publicidad_imagenes/{id}', array('as' => 'show', 'uses' => 'PublicidadImagensController@show'));
 Route::post('/ws/publicidad_imagenes', 'PublicidadImagensController@store');
 Route::post('/ws/publicidad_imagenes/{id}', array('as' => 'show', 'uses' => 'PublicidadImagensController@update'));
 Route::post('/ws/publicidad_imagenes/eliminar/{id}', array('as' => 'show', 'uses' => 'PublicidadImagensController@destroy'));
 
-//TODO: Hacer ruta feicobol dinamica
-Route::get('feicobol/public/uploads/feicobol/{archivo}', array('as' => 'show', 'uses' => 'PublicidadImagensController@mostrarImagen'));
+//TODO: Hacer ruta ferias dinamica
+Route::get('ferias/public/uploads/ferias/{archivo}', array('as' => 'show', 'uses' => 'PublicidadImagensController@mostrarImagen'));
 
 //WS Mapas
 Route::get('/ws/mapa', 'MapasController@index');
@@ -266,12 +302,20 @@ Route::group(array('prefix' => 'api/v1'), function () {
     Route::group(array('prefix' => '/mapas'), function () {
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'MapasController@apitodas')); // Todas
     });
+
+    //Catalogos Api
+    Route::get('/catalogos/{sistema}/{agrupador}', 'CatalogosController@index');
 });
 
 
+//********************** REST API S3 ********************
+Route::post('/aws_upload', 'PublicidadImagensController@subirAWS');
+
+
+
+
+
 //***************************** SMS ************************************************
-
-
 //WS Mensajes
 Route::get('/ws/SmsMensaje', 'SmsMensajesController@index');
 Route::post('/ws/SmsMensaje', 'SmsMensajesController@store');

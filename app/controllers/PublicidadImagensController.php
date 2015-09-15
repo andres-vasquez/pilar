@@ -146,7 +146,7 @@ class PublicidadImagensController extends \BaseController {
 
     public function mostrarImagen($nombre_archivo)
     {
-        $file="public/uploads/feicobol/".$nombre_archivo;
+        $file="public/uploads/ferias/".$nombre_archivo;
 
         $response = Response::make(File::get($file));
         $response->header('Content-Type', 'image/jpeg');
@@ -154,4 +154,44 @@ class PublicidadImagensController extends \BaseController {
         return $response;
     }
 
+    public function subirAWS()
+    {
+        $app=Session::get('credencial');
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+
+
+        $imagen=Input::file('imagen');
+        $nombre_imagen=time()."_".TratarNombre($imagen->getClientOriginalName());
+        $upload=$imagen->move('public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen);
+        if($upload)
+        {
+            $data = Input::all();
+            $data["ruta"]=$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            $data["aud_usuario_id"]=Session::get('id_usuario');
+            
+            $s3 = AWS::get('s3');
+            $s3->putObject(array(
+                'Bucket'     => $sistemas[0]["nombre"],
+                'Key'        => $nombre_imagen,
+                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen,
+            ));
+        }
+        else
+        {
+            $errores="Error al subir imagen";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function TratarNombre($string)
+    {
+        $string = trim($string); $string = str_replace( array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'), array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'), $string );
+        $string = str_replace( array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'), array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'), $string );
+        $string = str_replace( array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'), array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'), $string );
+        $string = str_replace( array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'), array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'), $string );
+        $string = str_replace( array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'), array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'), $string );
+        $string = str_replace( array('ñ', 'Ñ', 'ç', 'Ç'), array('n', 'N', 'c', 'C',), $string );
+        $string = str_replace( array("\\", "¨", "º", "-", "~", "#", "@", "|", "!", "\"", "·", "$", "%", "&", "/", "(", ")", "?", "'", "¡", "¿", "[", "^", "`", "]", "+", "}", "{", "¨", "´", ">“, “< ", ";", ",", ":", " "), '', $string );
+        return $string;
+    }
 }

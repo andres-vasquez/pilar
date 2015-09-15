@@ -37,38 +37,68 @@ $(document).ready(function () {
                 console.log(XMLHttpRequest + " " + textStatus);
             }
         });
+    });
+
+
+    mensaje = function (tipo) {
+        $("#mensaje").html('');
+        $("#mensaje").addClass("alert");
+        var html = '';
+        if (tipo == "ok") {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Expositores importados!</strong>';
+        }
+        else if (tipo == "editada") {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Expositor editado!</strong>';
+        }
+        else if (tipo == "eliminada") {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Expositor eliminado!</strong>';
+        }
+        else {
+            $("#mensaje").removeClass("alert-success");
+            $("#mensaje").addClass("alert-danger");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Error!</strong> ' + tipo;
+        }
+        $("#mensaje").html(html);
+    };
+
+    llenarAreasFeria = function(agrupador)
+    {
+        var credencial=$("#credencial").val();
+        var html='';
+        var url="../api/v1/catalogos/"+credencial+"/"+agrupador;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1)
+                {
+                    var arrCatalogos=result.resultado.catalogos;
+                    for(var i=0;i<arrCatalogos.length;i++)
+                        html+='<option value="'+arrCatalogos[i].value+'">'+arrCatalogos[i].label+'</option>';
+                    $("#cmbArea").html(html);
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+            }
+        });
+    };
+
+    //FIPAZ
+    if($("#nombre_sistema").val()=="fipaz")
+     llenarAreasFeria("areas_fipaz")
+
 });
-
-
-mensaje = function (tipo) {
-    $("#mensaje").html('');
-    $("#mensaje").addClass("alert");
-    var html = '';
-    if (tipo == "ok") {
-        $("#mensaje").removeClass("alert-danger");
-        $("#mensaje").addClass("alert-success");
-        html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-        html += '<strong>¡Expositores importados!</strong>';
-    }
-    else if (tipo == "editada") {
-        $("#mensaje").removeClass("alert-danger");
-        $("#mensaje").addClass("alert-success");
-        html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-        html += '<strong>¡Expositor editado!</strong>';
-    }
-    else if (tipo == "eliminada") {
-        $("#mensaje").removeClass("alert-danger");
-        $("#mensaje").addClass("alert-success");
-        html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-        html += '<strong>¡Expositor eliminado!</strong>';
-    }
-    else {
-        $("#mensaje").removeClass("alert-success");
-        $("#mensaje").addClass("alert-danger");
-        html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-        html += '<strong>¡Error!</strong> ' + tipo;
-    }
-    $("#mensaje").html(html);
-};
-})
-;

@@ -59,6 +59,7 @@ return array(
     'MapasController' => $baseDir . '/app/controllers/MapasController.php',
     'Menu' => $baseDir . '/app/models/Menu.php',
     'MenusController' => $baseDir . '/app/controllers/MenusController.php',
+    'Normalizer' => $vendorDir . '/patchwork/utf8/src/Normalizer.php',
     'Noticia' => $baseDir . '/app/models/Noticia.php',
     'NoticiasController' => $baseDir . '/app/controllers/NoticiasController.php',
     'Paises' => $baseDir . '/app/models/Paises.php',

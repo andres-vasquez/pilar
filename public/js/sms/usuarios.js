@@ -146,7 +146,8 @@ function operateFormatter(value, row, index) {
     ].join('');
 }
 
-window.operateEvents = {
+window.operateEvents =
+{
     'click .edit': function (e, value, row, index) {
         var id = row.id;
         idEditando = id;

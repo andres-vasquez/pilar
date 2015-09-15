@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
         'Maatwebsite\Excel\ExcelServiceProvider',
+        'Aws\Laravel\AwsServiceProvider',
 	),
 
 	/*
@@ -190,6 +191,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'AWS' => 'Aws\Laravel\AwsFacade',
 	),
 
 );
