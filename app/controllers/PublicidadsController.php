@@ -58,6 +58,7 @@ class PublicidadsController extends \BaseController
         $aux["descripcion"] = $publicidades_q["descripcion"];
         $aux["link"] = $publicidades_q["link"];
         $aux["prioridad"] = $publicidades_q["prioridad"];
+        $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
         $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
         $aux["imagenes"] = array();
@@ -139,6 +140,7 @@ class PublicidadsController extends \BaseController
                     $aux["descripcion"] = $publicidades_q["descripcion"];
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
+                    $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
                     array_push($publicidad, $aux);
                 }
@@ -164,6 +166,7 @@ class PublicidadsController extends \BaseController
                     $aux["descripcion"] = $publicidades_q["descripcion"];
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
+                    $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
                     $aux["imagenes"] = array();
@@ -198,13 +201,13 @@ class PublicidadsController extends \BaseController
         }
     }
 
-    public function apitipotamano($app, $tipo, $sizex, $sizey)
+    public function apitipotamano($app, $tipo_publicidad, $tipo, $sizex, $sizey)
     {
         $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? ORDER BY prioridad', array($id_sistema))->get();
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND tipo_publicidad=? ORDER BY prioridad', array($id_sistema,$tipo_publicidad))->get();
             if (sizeof($publicidades_query) > 0) {
                 $publicidad = array();
                 foreach ($publicidades_query as $publicidades_q) {
@@ -214,6 +217,7 @@ class PublicidadsController extends \BaseController
                     $aux["descripcion"] = $publicidades_q["descripcion"];
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
+                    $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
                     $aux["imagenes"] = array();
@@ -246,14 +250,14 @@ class PublicidadsController extends \BaseController
         }
     }
 
-    public function apitipotamanoq($app, $tipo, $sizex, $sizey, $cantidad)
+    public function apitipotamanoq($app, $tipo_publicidad, $tipo, $sizex, $sizey, $cantidad)
     {
         $contador = 0;
         $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? ORDER BY prioridad DESC', array($id_sistema))->get();
+            $publicidades_query = Publicidad::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND tipo_publicidad=? ORDER BY prioridad DESC', array($id_sistema,$tipo_publicidad))->get();
             if (sizeof($publicidades_query) > 0) {
                 $publicidad = array();
                 foreach ($publicidades_query as $publicidades_q) {
@@ -263,6 +267,7 @@ class PublicidadsController extends \BaseController
                     $aux["descripcion"] = $publicidades_q["descripcion"];
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
+                    $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
                     $aux["imagenes"] = array();

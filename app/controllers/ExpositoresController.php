@@ -219,6 +219,11 @@ class ExpositoresController extends \BaseController
                     $aux["website"] = $expositor["website"];
                     $aux["fanpage"] = $expositor["fanpage"];
                     $aux["email"] = $expositor["email"];
+
+                    $aux["rubro_id"] = $expositor["rubro_id"];
+                    $aux["rubro"] = $expositor["rubro"];
+                    $aux["descripcion"] = $expositor["descripcion"];
+
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
                     array_push($expositores, $aux);
                 }
@@ -249,6 +254,11 @@ class ExpositoresController extends \BaseController
                     $aux["stand"] = $expositor["stand"];
                     $aux["website"] = $expositor["website"];
                     $aux["fanpage"] = $expositor["fanpage"];
+
+                    $aux["rubro_id"] = $expositor["rubro_id"];
+                    $aux["rubro"] = $expositor["rubro"];
+                    $aux["descripcion"] = $expositor["descripcion"];
+
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
                     array_push($expositores, $aux);
                 }

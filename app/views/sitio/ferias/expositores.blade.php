@@ -86,16 +86,34 @@
                                 <input type="text" id="txtNombre" name="nombre" class="form-control" required/>
                             </div>
 
-                            <div class="col-md-5 col-lg-offset-1 form-group">
-                                <label>Dirección</label>
-                                <input type="text" id="txtDireccion" name="direccion" class="form-control" required/>
-                            </div>
+                            <!-- Feicobol-->
+                            @if (Session::get("nombre_sistema") === "feicobol")
+                                <div class="col-md-5 col-lg-offset-1 form-group">
+                                    <label>Dirección</label>
+                                    <input type="text" id="txtDireccion" name="direccion" class="form-control" required/>
+                                </div>
+                            @else
+                                <div class="col-md-5 form-group">
+                                    <label>Rubro</label>
+                                    <input type="hidden" name="rubro_id" id="hdnRubro"/>
+                                    <select id="cmbRubro" name="rubro" class="form-control" required></select>
+                                </div>
+                            @endif
 
-                            <div class="col-md-5 form-group">
-                                <label>Área</label>
-                                <select class="form-control" name="pabellon" id="cmbArea">
-                                </select>
-                            </div>
+
+                            @if (Session::get("nombre_sistema") === "feicobol")
+                                <div class="col-md-5 form-group">
+                                    <label>Área</label>
+                                    <input class="form-control" name="pabellon" id="txtArea" required/>
+                                </div>
+                            @else
+                                <div class="col-md-5 form-group">
+                                    <label>Área</label>
+                                    <select class="form-control" name="pabellon" id="cmbArea">
+                                    </select>
+                                </div>
+                            @endif
+
                             <div class="col-md-5 col-lg-offset-1 form-group">
                                 <label>Stand</label>
                                 <input type="text" id="txtStand" name="stand" size="5" class="form-control" required/>
@@ -110,20 +128,27 @@
                                 <input type="text" id="txtFacebook" name="fanpage" class="form-control" required/>
                             </div>
 
-                            <div class="col-md-5 form-group">
-                                <label>Teléfono</label>
-                                <input type="text" id="txtTelefono" name="telefono" class="form-control" required/>
-                            </div>
-                            <div class="col-md-5 col-lg-offset-1 form-group">
-                                <label>Fax</label>
-                                <input type="text" id="txtFax" name="fax" class="form-control" required/>
-                            </div>
+                            <!-- Feicobol-->
+                            @if (Session::get("nombre_sistema") === "feicobol")
+                                <div class="col-md-5 form-group">
+                                    <label>Teléfono</label>
+                                    <input type="text" id="txtTelefono" name="telefono" class="form-control" required/>
+                                </div>
+                                <div class="col-md-5 col-lg-offset-1 form-group">
+                                    <label>Fax</label>
+                                    <input type="text" id="txtFax" name="fax" class="form-control" required/>
+                                </div>
+                            @endif
 
                             <div class="col-md-5 form-group">
                                 <label>Email</label>
                                 <input type="text" id="txtEmail" name="email" class="form-control" required/>
                             </div>
 
+                            <div class="col-md-5 form-group">
+                                <label>Descripcion</label>
+                                <textarea id="txtDescripcion" name="descripcion" maxlength="200" class="form-control"></textarea>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -153,11 +178,19 @@
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
                         <th data-field="nombre" data-sortable="true">Nombre</th>
-                        <th data-field="direccion" data-sortable="true">Dirección</th>
+                        <!-- Feicobol-->
+                        @if (Session::get("nombre_sistema") === "feicobol")
+                            <th data-field="direccion" data-sortable="true">Dirección</th>
+                        @else
+                            <th data-field="rubro" data-sortable="true">Rubro</th>
+                        @endif
                         <th data-field="pabellon" data-sortable="true">Pabellón</th>
                         <th data-field="stand" data-sortable="true">Stand</th>
                         <!--<th data-field="website" data-sortable="true">Website</th>-->
                         <th data-field="fanpage" data-sortable="true">fanpage</th>
+                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
+                            data-events="operateEvents">Acciones
+                        </th>
                     </tr>
                     </thead>
                 </table>

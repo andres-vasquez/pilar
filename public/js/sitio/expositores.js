@@ -3,12 +3,13 @@
  */
 $(document).ready(function () {
     var idInsertada = 0;
+    var lstRubros;
 
     $("form").submit(function (event) {
         var id = $(this).attr("id");
         event.preventDefault();
 
-        if(id=="formNuevoExpositor")
+        if(id=="formNuevoExpositor")//Nuevo expositor
         {
             var url = "../ws/expositores";
             var formData = new FormData($(this)[0]);
@@ -76,6 +77,11 @@ $(document).ready(function () {
     });
 
 
+    $("#cmbRubro").change(function(event){
+        for(var i=0;i<lstRubros.length;i++)
+         if(lstRubros[i].label==$("#cmbRubro").val())
+          $("#hdnRubro").val(lstRubros[i].value);
+    });
 
 
     mensaje = function (tipo) {
@@ -115,10 +121,10 @@ $(document).ready(function () {
         $("#mensaje").html(html);
     };
 
-    llenarAreasFeria = function(agrupador)
+    llenarCatalogos = function(agrupador,cmbId)
     {
         var credencial=$("#credencial").val();
-        var html='';
+        var html='<option value="0"></option>';
         var url="../api/v1/catalogos/"+credencial+"/"+agrupador;
         $.ajax({
             type: "GET",
@@ -130,9 +136,12 @@ $(document).ready(function () {
                 if(parseInt(result.intCodigo)==1)
                 {
                     var arrCatalogos=result.resultado.catalogos;
+                    if(agrupador=="rubros_fipaz")
+                        lstRubros=result.resultado.catalogos;
+
                     for(var i=0;i<arrCatalogos.length;i++)
                         html+='<option value="'+arrCatalogos[i].label+'">'+arrCatalogos[i].label+'</option>';
-                    $("#cmbArea").html(html);
+                    $("#"+cmbId).html(html);
                 }
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -141,8 +150,13 @@ $(document).ready(function () {
         });
     };
 
+
     //FIPAZ
+
     if($("#nombre_sistema").val()=="fipaz")
-     llenarAreasFeria("areas_fipaz")
+    {
+        llenarCatalogos("areas_fipaz","cmbArea");
+        llenarCatalogos("rubros_fipaz","cmbRubro");
+    }
 
 });

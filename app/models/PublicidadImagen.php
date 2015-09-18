@@ -14,5 +14,5 @@ class PublicidadImagen extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array('publicidad_id','tipo','sizex','sizey','ruta','aud_usuario_id','estado','baja_logica');
+	protected $fillable = array('publicidad_id','tipo','sizex','sizey','ruta','aud_usuario_id','estado','baja_logica','ruta_aws');
 }

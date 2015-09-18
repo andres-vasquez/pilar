@@ -1,4 +1,415 @@
 /**
  * Created by andresvasquez on 3/18/15.
  */
-var _0x19bd=["\x73\x69\x7A\x65","\x66\x69\x6C\x65\x73","\x54\x61\x6D\x61\xF1\x6F\x20\x6D\xE1\x78\x69\x6D\x6F\x20\x70\x65\x72\x6D\x69\x74\x69\x64\x6F\x20\x64\x65\x20\x32\x4D\x42\x20\x72\x65\x64\x75\x7A\x63\x61\x20\x73\x75\x20\x69\x6D\x61\x67\x65\x6E\x20\x70\x6F\x72\x20\x66\x61\x76\x6F\x72","","\x76\x61\x6C","\x6A\x70\x65\x67","\x6A\x70\x67","\x70\x6E\x67","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x70\x6F\x70","\x2E","\x73\x70\x6C\x69\x74","\x69\x6E\x41\x72\x72\x61\x79","\x46\x6F\x72\x6D\x61\x74\x6F\x20\x69\x6E\x63\x6F\x72\x72\x65\x63\x74\x6F\x2E\x20\x4C\x61\x73\x20\x69\x6D\xE1\x67\x65\x6E\x65\x73\x20\x64\x65\x62\x65\x6E\x20\x65\x73\x74\x61\x72\x20\x65\x6E\x20\x66\x6F\x72\x6D\x61\x74\x6F\x20\x6A\x70\x65\x67\x20\x6F\x20\x70\x6E\x67\x2E","\x63\x68\x61\x6E\x67\x65","\x2E\x69\x6D\x61\x67\x65\x6E","\x65\x64\x69\x74\x61\x72","\x68\x61\x73\x43\x6C\x61\x73\x73","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x2E\x6A\x70\x67","\x2E\x6A\x70\x65\x67","\x2E\x70\x6E\x67","\x69\x64","\x61\x74\x74\x72","\x23","\x20\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x74\x69\x70\x6F\x5D","\x20\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x73\x69\x7A\x65\x78\x5D","\x20\x69\x6E\x70\x75\x74\x5B\x6E\x61\x6D\x65\x3D\x73\x69\x7A\x65\x79\x5D","\x6C\x65\x6E\x67\x74\x68","\x74\x69\x70\x6F","\x73\x69\x7A\x65\x78","\x73\x69\x7A\x65\x79","\x2E\x2E\x2F\x77\x73\x2F\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64\x5F\x69\x6D\x61\x67\x65\x6E\x65\x73\x2F","\x50\x4F\x53\x54","\x70\x61\x72\x73\x65","\x69\x6E\x74\x43\x6F\x64\x69\x67\x6F","\x72\x75\x74\x61","\x63\x61\x72\x67\x61","\x72\x65\x73\x75\x6C\x74\x61\x64\x6F","\x55\x52\x49\x20\x69\x6D\x61\x67\x65\x6E\x3A","\x6C\x6F\x67","\x73\x72\x63","\x5F\x65\x64\x69\x74\x61\x72","\x68\x74\x6D\x6C","\x23\x64\x69\x76\x4E\x6F\x74\x69\x63\x69\x61\x73","\x20","\x61\x6A\x61\x78","\x2E\x2E\x2F\x77\x73\x2F\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64\x5F\x69\x6D\x61\x67\x65\x6E\x65\x73","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x66\x6F\x72\x6D\x4E\x75\x65\x76\x6F\x41\x6E\x75\x6E\x63\x69\x6F","\x23\x74\x78\x74\x4E\x6F\x6D\x62\x72\x65","\x23\x74\x78\x74\x44\x65\x73\x63\x72\x69\x70\x63\x69\x6F\x6E","\x23\x74\x78\x74\x55\x72\x6C\x41\x6E\x75\x6E\x63\x69\x6F","\x23\x63\x6D\x62\x50\x72\x69\x6F\x72\x69\x64\x61\x64","\x64\x69\x73\x61\x62\x6C\x65\x64","\x23\x62\x74\x6E\x45\x6E\x76\x69\x61\x72","\x61\x63\x74\x69\x6F\x6E","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E\x3B\x20\x63\x68\x61\x72\x73\x65\x74\x3D\x75\x74\x66\x2D\x38","\x6A\x73\x6F\x6E","\x6F\x6B","\x72\x65\x6D\x6F\x76\x65\x41\x74\x74\x72","\x2E\x69\x64\x5F\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64","\x68\x69\x64\x64\x65\x6E","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x23\x64\x69\x76\x49\x6D\x61\x67\x65\x6E\x65\x73","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x65\x72\x72\x6F\x72\x65\x73","\x65\x72\x72\x6F\x72","\x73\x75\x62\x6D\x69\x74","\x66\x6F\x72\x6D","\x61\x64\x64\x43\x6C\x61\x73\x73","\x23\x62\x74\x6E\x43\x61\x6E\x63\x65\x6C\x61\x72","\x33","\x23\x6D\x65\x6E\x73\x61\x6A\x65","\x61\x6C\x65\x72\x74","\x61\x6C\x65\x72\x74\x2D\x64\x61\x6E\x67\x65\x72","\x61\x6C\x65\x72\x74\x2D\x73\x75\x63\x63\x65\x73\x73","\x3C\x62\x75\x74\x74\x6F\x6E\x20\x74\x79\x70\x65\x3D\x22\x62\x75\x74\x74\x6F\x6E\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6C\x6F\x73\x65\x22\x20\x64\x61\x74\x61\x2D\x64\x69\x73\x6D\x69\x73\x73\x3D\x22\x61\x6C\x65\x72\x74\x22\x3E\x26\x74\x69\x6D\x65\x73\x3B\x3C\x2F\x62\x75\x74\x74\x6F\x6E\x3E","\x3C\x73\x74\x72\x6F\x6E\x67\x3E\xA1\x41\x6E\x75\x6E\x63\x69\x6F\x20\x61\x67\x72\x65\x67\x61\x64\x6F\x21\x3C\x2F\x73\x74\x72\x6F\x6E\x67\x3E","\x65\x64\x69\x74\x61\x64\x61","\x3C\x73\x74\x72\x6F\x6E\x67\x3E\xA1\x41\x6E\x75\x6E\x63\x69\x6F\x20\x65\x64\x69\x74\x61\x64\x6F\x21\x3C\x2F\x73\x74\x72\x6F\x6E\x67\x3E","\x65\x6C\x69\x6D\x69\x6E\x61\x64\x61","\x3C\x73\x74\x72\x6F\x6E\x67\x3E\xA1\x41\x6E\x75\x6E\x63\x69\x6F\x20\x65\x6C\x69\x6D\x69\x6E\x61\x64\x6F\x21\x3C\x2F\x73\x74\x72\x6F\x6E\x67\x3E","\x3C\x73\x74\x72\x6F\x6E\x67\x3E\xA1\x45\x72\x72\x6F\x72\x21\x3C\x2F\x73\x74\x72\x6F\x6E\x67\x3E\x20","\x23\x74\x78\x74\x4E\x6F\x6D\x62\x72\x65\x5F\x65\x64\x69\x74\x61\x72","\x23\x74\x78\x74\x44\x65\x73\x63\x72\x69\x70\x63\x69\x6F\x6E\x5F\x65\x64\x69\x74\x61\x72","\x23\x74\x78\x74\x55\x72\x6C\x41\x6E\x75\x6E\x63\x69\x6F\x5F\x65\x64\x69\x74\x61\x72","\x23\x63\x6D\x62\x50\x72\x69\x6F\x72\x69\x64\x61\x64\x5F\x65\x64\x69\x74\x61\x72","\x2E\x2E\x2F\x77\x73\x2F\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64\x2F","\x23\x62\x74\x6E\x45\x64\x69\x74\x61\x72\x4E\x6F\x74\x69\x63\x69\x61","\x72\x65\x66\x72\x65\x73\x68","\x2E\x2E\x2F\x61\x70\x69\x2F\x76\x31\x2F\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64\x2F","\x23\x63\x72\x65\x64\x65\x6E\x63\x69\x61\x6C","\x2F\x73\x69\x6E\x66\x6F\x72\x6D\x61\x74\x6F","\x62\x6F\x6F\x74\x73\x74\x72\x61\x70\x54\x61\x62\x6C\x65","\x23\x74\x62\x6C\x50\x75\x62\x6C\x69\x63\x69\x64\x61\x64","\x68\x69\x64\x65","\x6D\x6F\x64\x61\x6C","\x23\x65\x64\x69\x74\x61\x72\x4D\x6F\x64\x61\x6C","\x63\x6C\x69\x63\x6B","\x23\x62\x74\x6E\x45\x64\x69\x74\x61\x72\x50\x75\x62\x6C\x69\x63\x69\x64\x61\x64","\x72\x65\x61\x64\x79","\x6A\x6F\x69\x6E","\x3C\x61\x20\x63\x6C\x61\x73\x73\x3D\x22\x65\x64\x69\x74\x20\x6D\x6C\x31\x30\x22\x20\x68\x72\x65\x66\x3D\x22\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x45\x64\x69\x74\x61\x72\x22\x3E","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x67\x6C\x79\x70\x68\x69\x63\x6F\x6E\x20\x67\x6C\x79\x70\x68\x69\x63\x6F\x6E\x2D\x70\x65\x6E\x63\x69\x6C\x22\x3E\x3C\x2F\x69\x3E","\x3C\x2F\x61\x3E\x20","\x3C\x61\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x65\x6D\x6F\x76\x65\x20\x6D\x6C\x31\x30\x22\x20\x68\x72\x65\x66\x3D\x22\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x3A\x76\x6F\x69\x64\x28\x30\x29\x22\x20\x74\x69\x74\x6C\x65\x3D\x22\x45\x6C\x69\x6D\x69\x6E\x61\x72\x22\x3E","\x3C\x69\x20\x63\x6C\x61\x73\x73\x3D\x22\x67\x6C\x79\x70\x68\x69\x63\x6F\x6E\x20\x67\x6C\x79\x70\x68\x69\x63\x6F\x6E\x2D\x72\x65\x6D\x6F\x76\x65\x22\x3E\x3C\x2F\x69\x3E","\x3C\x2F\x61\x3E","\x6F\x70\x65\x72\x61\x74\x65\x45\x76\x65\x6E\x74\x73","\x73\x68\x6F\x77","\x47\x45\x54","\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64","\x6E\x6F\x6D\x62\x72\x65","\x64\x65\x73\x63\x72\x69\x70\x63\x69\x6F\x6E","\x6C\x69\x6E\x6B","\x73\x65\x6C\x65\x63\x74\x65\x64","\x23\x63\x6D\x62\x50\x72\x69\x6F\x72\x69\x64\x61\x64\x5F\x65\x64\x69\x74\x61\x72\x20\x6F\x70\x74\x69\x6F\x6E\x5B\x76\x61\x6C\x75\x65\x3D\x22","\x70\x72\x69\x6F\x72\x69\x64\x61\x64","\x22\x5D","\x68\x74\x74\x70\x3A\x2F\x2F\x70\x6C\x61\x63\x65\x68\x6F\x6C\x64\x2E\x69\x74\x2F\x33\x32\x30\x78\x34\x37\x26\x74\x65\x78\x74\x3D\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64","\x69\x6D\x67","\x69\x6D\x61\x67\x65\x6E\x65\x73","\x5F","\x78","\x23\x65\x6C\x69\x6D\x69\x6E\x61\x72\x4D\x6F\x64\x61\x6C","\x23\x62\x74\x6E\x45\x6C\x69\x6D\x69\x6E\x61\x72\x50\x75\x62\x6C\x69\x63\x69\x64\x61\x64","\x2E\x2E\x2F\x77\x73\x2F\x70\x75\x62\x6C\x69\x63\x69\x64\x61\x64\x2F\x65\x6C\x69\x6D\x69\x6E\x61\x72\x2F"];var idEditando=0;var lstImagenesEdit=[];$(document)[_0x19bd[102]](function(){var _0xbc48x3=0;$(_0x19bd[15])[_0x19bd[14]](function(_0xbc48x4){var _0xbc48x5=this[_0x19bd[1]][0][_0x19bd[0]];if(parseInt(_0xbc48x5)>2000000){alert(_0x19bd[2]);$(this)[_0x19bd[4]](_0x19bd[3]);}else {var _0xbc48x6=[_0x19bd[5],_0x19bd[6],_0x19bd[7]];if($[_0x19bd[12]]($(this)[_0x19bd[4]]()[_0x19bd[11]](_0x19bd[10])[_0x19bd[9]]()[_0x19bd[8]](),_0xbc48x6)== -1){alert(_0x19bd[13]);$(this)[_0x19bd[4]](_0x19bd[3]);};};});$(_0x19bd[70])[_0x19bd[69]](function(_0xbc48x7){if($(this)[_0x19bd[17]](_0x19bd[16])){_0xbc48x7[_0x19bd[18]]();var _0xbc48x8=[_0x19bd[19],_0x19bd[20],_0x19bd[21]];var _0xbc48x9=0;var _0xbc48xa=$(this)[_0x19bd[23]](_0x19bd[22]);var _0xbc48xb=$(_0x19bd[24]+_0xbc48xa+_0x19bd[25])[_0x19bd[4]]();var _0xbc48xc=$(_0x19bd[24]+_0xbc48xa+_0x19bd[26])[_0x19bd[4]]();var _0xbc48xd=$(_0x19bd[24]+_0xbc48xa+_0x19bd[27])[_0x19bd[4]]();for(var _0xbc48xe=0;_0xbc48xe<lstImagenesEdit[_0x19bd[28]];_0xbc48xe++){if(lstImagenesEdit[_0xbc48xe][_0x19bd[29]]==_0xbc48xb){if(lstImagenesEdit[_0xbc48xe][_0x19bd[30]]==_0xbc48xc&&lstImagenesEdit[_0xbc48xe][_0x19bd[31]]==_0xbc48xd){_0xbc48x9=lstImagenesEdit[_0xbc48xe][_0x19bd[22]]}}};var _0xbc48xf= new FormData($(this)[0]);if(_0xbc48x9!=0){var _0xbc48x10=_0x19bd[32]+_0xbc48x9;$[_0x19bd[46]]({type:_0x19bd[33],url:_0xbc48x10,data:_0xbc48xf,processData:false,contentType:false,success:function(_0xbc48x11){_0xbc48x11=JSON[_0x19bd[34]](_0xbc48x11);if(parseInt(_0xbc48x11[_0x19bd[35]])==1){var _0xbc48x12=_0xbc48x11[_0x19bd[38]][_0x19bd[37]][_0x19bd[36]];var _0xbc48x13=_0xbc48x11[_0x19bd[38]][_0x19bd[37]][_0x19bd[22]];console[_0x19bd[40]](_0x19bd[39]+_0xbc48x13);$(_0x19bd[24]+_0xbc48x13+_0x19bd[42])[_0x19bd[23]](_0x19bd[41],_0xbc48x12);};},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){$(_0x19bd[44])[_0x19bd[43]](_0x19bd[3]);console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);}});}else {var _0xbc48x10=_0x19bd[47];$[_0x19bd[46]]({type:_0x19bd[33],url:_0xbc48x10,data:_0xbc48xf,processData:false,contentType:false,success:function(_0xbc48x11){_0xbc48x11=JSON[_0x19bd[34]](_0xbc48x11);console[_0x19bd[40]](JSON[_0x19bd[48]](_0xbc48x11));if(parseInt(_0xbc48x11[_0x19bd[35]])==1){var _0xbc48x12=_0xbc48x11[_0x19bd[38]][_0x19bd[37]][_0x19bd[36]];var _0xbc48x13=_0xbc48x11[_0x19bd[38]][_0x19bd[37]][_0x19bd[22]];console[_0x19bd[40]](_0x19bd[39]+_0xbc48x13);$(_0x19bd[24]+_0xbc48x13+_0x19bd[42])[_0x19bd[23]](_0x19bd[41],_0xbc48x12);};},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){$(_0x19bd[44])[_0x19bd[43]](_0x19bd[3]);console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);}});};}else {var _0xbc48x17=$(this)[_0x19bd[23]](_0x19bd[22]);if(_0xbc48x17==_0x19bd[49]){_0xbc48x7[_0x19bd[18]]();var _0xbc48x18={"\x6E\x6F\x6D\x62\x72\x65":$(_0x19bd[50])[_0x19bd[4]](),"\x64\x65\x73\x63\x72\x69\x70\x63\x69\x6F\x6E":$(_0x19bd[51])[_0x19bd[4]](),"\x6C\x69\x6E\x6B":$(_0x19bd[52])[_0x19bd[4]](),"\x70\x72\x69\x6F\x72\x69\x64\x61\x64":$(_0x19bd[53])[_0x19bd[4]]()};$(_0x19bd[55])[_0x19bd[23]](_0x19bd[54],_0x19bd[54]);$[_0x19bd[46]]({type:_0x19bd[33],url:$(this)[_0x19bd[23]](_0x19bd[56]),data:JSON[_0x19bd[48]](_0xbc48x18),contentType:_0x19bd[57],dataType:_0x19bd[58],success:function(_0xbc48x11){if(parseInt(_0xbc48x11[_0x19bd[35]])==1){_0xbc48x3=_0xbc48x11[_0x19bd[38]][_0x19bd[22]];mensaje(_0x19bd[59]);$(_0x19bd[55])[_0x19bd[60]](_0x19bd[54]);$(_0x19bd[61])[_0x19bd[4]](_0xbc48x3);bloquearCampos();$(_0x19bd[64])[_0x19bd[63]](_0x19bd[62]);window[_0x19bd[66]][_0x19bd[65]]=_0x19bd[64];}else {mensaje(_0xbc48x11[_0x19bd[38]][_0x19bd[67]]);window[_0x19bd[66]][_0x19bd[65]]=_0x19bd[24];$(_0x19bd[55])[_0x19bd[60]](_0x19bd[54]);}},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);mensaje(_0x19bd[68]);}});}else {_0xbc48x7[_0x19bd[18]]();var _0xbc48x8=[_0x19bd[19],_0x19bd[20],_0x19bd[21]];var _0xbc48x10=_0x19bd[47];var _0xbc48xf= new FormData($(this)[0]);$[_0x19bd[46]]({type:_0x19bd[33],url:_0xbc48x10,data:_0xbc48xf,processData:false,contentType:false,success:function(_0xbc48x11){_0xbc48x11=JSON[_0x19bd[34]](_0xbc48x11);console[_0x19bd[40]](JSON[_0x19bd[48]](_0xbc48x11));if(parseInt(_0xbc48x11[_0x19bd[35]])==1){var _0xbc48x12=_0xbc48x11[_0x19bd[38]][_0x19bd[37]][_0x19bd[36]];var _0xbc48x13=_0xbc48x11[_0x19bd[38]][_0x19bd[37]][_0x19bd[22]];console[_0x19bd[40]](_0x19bd[39]+_0xbc48x13);$(_0x19bd[24]+_0xbc48x13)[_0x19bd[23]](_0x19bd[41],_0xbc48x12);};},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){$(_0x19bd[44])[_0x19bd[43]](_0x19bd[3]);console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);}});};}});bloquearCampos=function(){$(_0x19bd[50])[_0x19bd[71]](_0x19bd[54]);$(_0x19bd[51])[_0x19bd[71]](_0x19bd[54]);$(_0x19bd[52])[_0x19bd[71]](_0x19bd[54]);$(_0x19bd[53])[_0x19bd[71]](_0x19bd[54]);$(_0x19bd[55])[_0x19bd[71]](_0x19bd[54]);$(_0x19bd[72])[_0x19bd[71]](_0x19bd[54]);};limpiarCampos=function(){$(_0x19bd[50])[_0x19bd[4]](_0x19bd[3]);$(_0x19bd[51])[_0x19bd[4]](_0x19bd[3]);$(_0x19bd[52])[_0x19bd[4]](_0x19bd[3]);$(_0x19bd[53])[_0x19bd[4]](_0x19bd[73]);};mensaje=function(_0xbc48xb){$(_0x19bd[74])[_0x19bd[43]](_0x19bd[3]);$(_0x19bd[74])[_0x19bd[71]](_0x19bd[75]);var _0xbc48x19=_0x19bd[3];if(_0xbc48xb==_0x19bd[59]){$(_0x19bd[74])[_0x19bd[63]](_0x19bd[76]);$(_0x19bd[74])[_0x19bd[71]](_0x19bd[77]);_0xbc48x19+=_0x19bd[78];_0xbc48x19+=_0x19bd[79];}else {if(_0xbc48xb==_0x19bd[80]){$(_0x19bd[74])[_0x19bd[63]](_0x19bd[76]);$(_0x19bd[74])[_0x19bd[71]](_0x19bd[77]);_0xbc48x19+=_0x19bd[78];_0xbc48x19+=_0x19bd[81];}else {if(_0xbc48xb==_0x19bd[82]){$(_0x19bd[74])[_0x19bd[63]](_0x19bd[76]);$(_0x19bd[74])[_0x19bd[71]](_0x19bd[77]);_0xbc48x19+=_0x19bd[78];_0xbc48x19+=_0x19bd[83];}else {$(_0x19bd[74])[_0x19bd[63]](_0x19bd[77]);$(_0x19bd[74])[_0x19bd[71]](_0x19bd[76]);_0xbc48x19+=_0x19bd[78];_0xbc48x19+=_0x19bd[84]+_0xbc48xb;}}};$(_0x19bd[74])[_0x19bd[43]](_0xbc48x19);};$(_0x19bd[101])[_0x19bd[100]](function(_0xbc48x7){_0xbc48x7[_0x19bd[18]]();var _0xbc48x18={"\x6E\x6F\x6D\x62\x72\x65":$(_0x19bd[85])[_0x19bd[4]](),"\x64\x65\x73\x63\x72\x69\x70\x63\x69\x6F\x6E":$(_0x19bd[86])[_0x19bd[4]](),"\x6C\x69\x6E\x6B":$(_0x19bd[87])[_0x19bd[4]](),"\x70\x72\x69\x6F\x72\x69\x64\x61\x64":$(_0x19bd[88])[_0x19bd[4]]()};var _0xbc48x10=_0x19bd[89]+idEditando;$(_0x19bd[90])[_0x19bd[23]](_0x19bd[54],_0x19bd[54]);$[_0x19bd[46]]({type:_0x19bd[33],url:_0xbc48x10,data:JSON[_0x19bd[48]](_0xbc48x18),contentType:_0x19bd[57],dataType:_0x19bd[58],success:function(_0xbc48x11){if(parseInt(_0xbc48x11[_0x19bd[35]])==1){mensaje(_0x19bd[80]);$(_0x19bd[90])[_0x19bd[60]](_0x19bd[54]);$table=$(_0x19bd[96])[_0x19bd[95]](_0x19bd[91],{url:_0x19bd[92]+$(_0x19bd[93])[_0x19bd[4]]()+_0x19bd[94]});}else {mensaje(_0xbc48x11[_0x19bd[38]][_0x19bd[67]]);$(_0x19bd[90])[_0x19bd[60]](_0x19bd[54]);};$(_0x19bd[99])[_0x19bd[98]](_0x19bd[97]);},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);mensaje(_0x19bd[68]);$(_0x19bd[90])[_0x19bd[60]](_0x19bd[54]);$(_0x19bd[99])[_0x19bd[98]](_0x19bd[97]);}});});});function operateFormatter(_0xbc48x1b,_0xbc48x1c,_0xbc48x1d){return [_0x19bd[104],_0x19bd[105],_0x19bd[106],_0x19bd[107],_0x19bd[108],_0x19bd[109]][_0x19bd[103]](_0x19bd[3])}window[_0x19bd[110]]={"\x63\x6C\x69\x63\x6B\x20\x2E\x65\x64\x69\x74":function(_0xbc48x4,_0xbc48x1b,_0xbc48x1c,_0xbc48x1d){var _0xbc48x17=_0xbc48x1c[_0x19bd[22]];idEditando=_0xbc48x17;$(_0x19bd[99])[_0x19bd[98]](_0x19bd[111]);var _0xbc48x10=_0x19bd[89]+_0xbc48x17;$[_0x19bd[46]]({type:_0x19bd[112],url:_0xbc48x10,contentType:_0x19bd[57],dataType:_0x19bd[58],success:function(_0xbc48x11){if(parseInt(_0xbc48x11[_0x19bd[35]])==1){var _0xbc48x1e=_0xbc48x11[_0x19bd[38]][_0x19bd[113]][0];$(_0x19bd[85])[_0x19bd[4]](_0xbc48x1e[_0x19bd[114]]);$(_0x19bd[86])[_0x19bd[4]](_0xbc48x1e[_0x19bd[115]]);$(_0x19bd[87])[_0x19bd[4]](_0xbc48x1e[_0x19bd[116]]);$(_0x19bd[118]+_0xbc48x1e[_0x19bd[119]]+_0x19bd[120])[_0x19bd[23]](_0x19bd[117],_0x19bd[117]);$(_0x19bd[61])[_0x19bd[4]](_0xbc48x1e[_0x19bd[22]]);$(_0x19bd[122])[_0x19bd[23]](_0x19bd[41],_0x19bd[121]);var _0xbc48x1f=_0xbc48x1e[_0x19bd[123]];lstImagenesEdit=_0xbc48x1f;for(var _0xbc48xe=0;_0xbc48xe<_0xbc48x1f[_0x19bd[28]];_0xbc48xe++){var _0xbc48x20=_0xbc48x1f[_0xbc48xe];var _0xbc48x21=_0xbc48x20[_0x19bd[29]]+_0x19bd[124]+_0xbc48x20[_0x19bd[30]]+_0x19bd[125]+_0xbc48x20[_0x19bd[31]]+_0x19bd[42];var _0xbc48x12=_0xbc48x20[_0x19bd[36]];$(_0x19bd[24]+_0xbc48x21)[_0x19bd[23]](_0x19bd[41],_0xbc48x12);};}},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){$(_0x19bd[126])[_0x19bd[98]](_0x19bd[97]);$(_0x19bd[127])[_0x19bd[60]](_0x19bd[54]);console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);$(_0x19bd[99])[_0x19bd[98]](_0x19bd[97]);}});},"\x63\x6C\x69\x63\x6B\x20\x2E\x72\x65\x6D\x6F\x76\x65":function(_0xbc48x4,_0xbc48x1b,_0xbc48x1c,_0xbc48x1d){var _0xbc48x17=_0xbc48x1c[_0x19bd[22]];$(_0x19bd[126])[_0x19bd[98]](_0x19bd[111]);$(_0x19bd[127])[_0x19bd[100]](function(){$(_0x19bd[127])[_0x19bd[23]](_0x19bd[54],_0x19bd[54]);var _0xbc48x10=_0x19bd[128]+_0xbc48x17;$[_0x19bd[46]]({type:_0x19bd[33],url:_0xbc48x10,contentType:_0x19bd[57],dataType:_0x19bd[58],success:function(_0xbc48x11){$(_0x19bd[126])[_0x19bd[98]](_0x19bd[97]);$(_0x19bd[127])[_0x19bd[60]](_0x19bd[54]);if(parseInt(_0xbc48x11[_0x19bd[35]])==1){mensaje(_0x19bd[82]);$table=$(_0x19bd[96])[_0x19bd[95]](_0x19bd[91],{url:_0x19bd[92]+$(_0x19bd[93])[_0x19bd[4]]()+_0x19bd[94]});}else {mensaje(_0xbc48x11[_0x19bd[38]][_0x19bd[67]])};},error:function(_0xbc48x14,_0xbc48x15,_0xbc48x16){$(_0x19bd[126])[_0x19bd[98]](_0x19bd[97]);$(_0x19bd[127])[_0x19bd[60]](_0x19bd[54]);console[_0x19bd[40]](_0xbc48x14+_0x19bd[45]+_0xbc48x15);mensaje(_0x19bd[68]);}});});}};
+var idEditando = 0;
+var lstImagenesEdit = [];
+$(document).ready(function ()
+{
+    var idInsertada = 0;
+    //Verifica el tamanio de la imagen y el formato
+    $(".imagen").change(function (e) {
+
+        var tamano = this.files[0].size;
+        if (parseInt(tamano) > 1000000) //1 MB
+        {
+            alert("Tamaño máximo permitido de 1MB reduzca su imagen por favor");
+            $(this).val("");
+        }
+        else {
+            var fileExtension = ['jpeg', 'jpg', 'png'];
+            if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+                alert("Formato incorrecto. Las imágenes deben estar en formato jpeg o png.");
+                $(this).val("");
+            }
+        }
+    });
+
+
+    $("form").submit(function (event)
+    {
+        //Edita las imagenes
+        if ($(this).hasClass("editar"))
+        {
+            event.preventDefault();
+
+            var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+
+            var id_imagen=0;
+
+            var id_form=$(this).attr("id");
+            var tipo=$("#"+id_form+" input[name=tipo]").val();
+            var sizex=$("#"+id_form+" input[name=sizex]").val();
+            var sizey=$("#"+id_form+" input[name=sizey]").val();
+
+            for(var i=0;i<lstImagenesEdit.length;i++)
+                if(lstImagenesEdit[i].tipo==tipo)
+                    if(lstImagenesEdit[i].sizex==sizex && lstImagenesEdit[i].sizey==sizey)
+                        id_imagen=lstImagenesEdit[i].id;
+
+
+            var formData = new FormData($(this)[0]);
+            if(id_imagen!=0) {
+                var url = "../ws/publicidad_imagenes/" + id_imagen;
+
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (result) {
+                        result = JSON.parse(result);
+                        if (parseInt(result.intCodigo) == 1) {
+                            var ruta = result.resultado.carga.ruta;
+                            var imagen = result.resultado.carga.id;
+                            console.log("URI imagen:" + imagen);
+                            $("#" + imagen + "_editar").attr("src", ruta);
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        $("#divNoticias").html("");
+                        console.log(XMLHttpRequest + " " + textStatus);
+                    }
+                });
+            }
+            else //Nuevas imagenes
+            {
+                var url = "../ws/publicidad_imagenes";
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (result) {
+                        result = JSON.parse(result);
+                        console.log(JSON.stringify(result));
+                        if (parseInt(result.intCodigo) == 1) {
+                            var ruta = result.resultado.carga.ruta;
+                            var imagen = result.resultado.carga.id;
+                            console.log("URI imagen:" + imagen);
+                            $("#" + imagen+"_editar").attr("src", ruta);
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        $("#divNoticias").html("");
+                        console.log(XMLHttpRequest + " " + textStatus);
+                    }
+                });
+            }
+
+        }
+        else //Nuevo anuncio
+        {
+            var id = $(this).attr("id");
+            //Formulario base de anuncio
+            if (id == "formNuevoAnuncio")
+            {
+                event.preventDefault();
+
+                var datos = {
+                    "nombre": $("#txtNombre").val(),
+                    "descripcion": $("#txtDescripcion").val(),
+                    "link": $("#txtUrlAnuncio").val(),
+                    "prioridad": $("#cmbPrioridad").val(),
+                    "tipo_publicidad": $("#cmbTipoPublicidad").val()
+                };
+
+                $("#btnEnviar").attr('disabled', 'disabled');
+                $.ajax({
+                    type: "POST",
+                    url: $(this).attr("action"),
+                    data: JSON.stringify(datos),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (result) {
+                        if (parseInt(result.intCodigo) == 1)
+                        {
+                            idInsertada = result.resultado.id;
+
+                            mensaje("ok");
+                            $("#btnEnviar").removeAttr('disabled');
+                            $('.id_publicidad').val(idInsertada);
+
+                            //$("#collapsePublicidad").trigger("click");
+                            bloquearCampos();
+                            $("#divImagenes").removeClass("hidden");
+
+                            //Muestra oculta segun el tipo de publicidad
+                            var tipo_publicidad=$("#cmbTipoPublicidad").val();
+                            if(tipo_publicidad=="slider")
+                            {
+                                $(".banner").hide();
+                                $(".slider").show();
+                            }
+                            else
+                            {
+                                $(".slider").hide();
+                                $(".banner").show();
+                            }
+
+                            window.location.href = "#divImagenes";
+                            //limpiarCampos();
+                        }
+                        else {
+                            mensaje(result.resultado.errores);
+                            window.location.href = "#";
+                            $("#btnEnviar").removeAttr('disabled');
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        console.log(XMLHttpRequest + " " + textStatus);
+                        mensaje("error");
+                    }
+                });
+
+            }
+            else //Formulario de las imagenes
+            {
+                event.preventDefault();
+                var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+
+
+                var url = "../ws/publicidad_imagenes";
+                var formData = new FormData($(this)[0]);
+
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (result) {
+                        result = JSON.parse(result);
+                        console.log(JSON.stringify(result));
+                        if (parseInt(result.intCodigo) == 1) {
+                            var ruta = result.resultado.carga.ruta;
+                            var imagen = result.resultado.carga.id;
+                            console.log("URI imagen:" + imagen);
+                            $("#" + imagen).attr("src", "../"+ruta);
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        $("#divNoticias").html("");
+                        console.log(XMLHttpRequest + " " + textStatus);
+                    }
+                });
+            }
+        }
+    });
+
+    $("#cmbTipoPublicidad_editar").change(function(event){
+        var tipo_publidad=$(this).val();
+        if(tipo_publicidad=="slider")
+        {
+            $(".banner").hide();
+            $(".slider").show();
+        }
+        else
+        {
+            $(".slider").hide();
+            $(".banner").show();
+        }
+    });
+
+    bloquearCampos = function () {
+        $("#txtNombre").addClass("disabled");
+        $("#txtDescripcion").addClass("disabled");
+        $("#txtUrlAnuncio").addClass("disabled");
+        $("#cmbPrioridad").addClass("disabled");
+        $("#cmbTipoPublicidad").addClass("disabled");
+        $("#btnEnviar").addClass("disabled");
+        $("#btnCancelar").addClass("disabled");
+    };
+
+    limpiarCampos = function () {
+        $("#txtNombre").val("");
+        $("#txtDescripcion").val("");
+        $("#txtUrlAnuncio").val("");
+        $("#cmbPrioridad").val("3");
+        $("#cmbTipoPublicidad").val("slider");
+    };
+
+    mensaje = function (tipo) {
+        $("#mensaje").html('');
+        $("#mensaje").addClass("alert");
+        var html = '';
+        if (tipo == "ok") {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Anuncio agregado!</strong>';
+        }
+        else if (tipo == "editada") {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Anuncio editado!</strong>';
+        }
+        else if (tipo == "eliminada") {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Anuncio eliminado!</strong>';
+        }
+        else {
+            $("#mensaje").removeClass("alert-success");
+            $("#mensaje").addClass("alert-danger");
+            html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html += '<strong>¡Error!</strong> ' + tipo;
+        }
+        $("#mensaje").html(html);
+    };
+
+
+    //Guardar editar datos
+    $("#btnEditarPublicidad").click(function (event) {
+        event.preventDefault();
+        var datos = {
+            "nombre": $("#txtNombre_editar").val(),
+            "descripcion": $("#txtDescripcion_editar").val(),
+            "link": $("#txtUrlAnuncio_editar").val(),
+            "prioridad": $("#cmbPrioridad_editar").val(),
+            "tipo_publicidad": $("#cmbTipoPublicidad_editar").val()
+        };
+
+        var url = "../ws/publicidad/" + idEditando;
+        $("#btnEditarNoticia").attr('disabled', 'disabled');
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                if (parseInt(result.intCodigo) == 1) {
+                    mensaje("editada");
+                    $("#btnEditarNoticia").removeAttr('disabled');
+                    $table = $('#tblPublicidad').bootstrapTable('refresh', {
+                        url: '../api/v1/publicidad/' + $("#credencial").val() + '/sinformato'
+                    });
+                }
+                else {
+                    mensaje(result.resultado.errores);
+                    $("#btnEditarNoticia").removeAttr('disabled');
+                }
+                $('#editarModal').modal('hide');
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " " + textStatus);
+                mensaje("error");
+                $("#btnEditarNoticia").removeAttr('disabled');
+                $('#editarModal').modal('hide');
+            }
+        });
+    });
+
+    $("#btnVolverCargar").click(function(event){
+        location.reload();
+    });
+});
+
+function operateFormatter(value, row, index) {
+    return [
+        '<a class="edit ml10" href="javascript:void(0)" title="Editar">',
+        '<i class="glyphicon glyphicon-pencil"></i>',
+        '</a> ',
+        '<a class="remove ml10" href="javascript:void(0)" title="Eliminar">',
+        '<i class="glyphicon glyphicon-remove"></i>',
+        '</a>'
+    ].join('');
+}
+
+window.operateEvents = {
+    'click .edit': function (e, value, row, index) {
+        var id = row.id;
+        idEditando = id;
+        $('#editarModal').modal('show');
+        var url = "../ws/publicidad/" + id;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    var objPublicidad = result.resultado.publicidad[0];
+                    $("#txtNombre_editar").val(objPublicidad.nombre);
+                    $("#txtDescripcion_editar").val(objPublicidad.descripcion);
+                    $("#txtUrlAnuncio_editar").val(objPublicidad.link);
+                    $('#cmbPrioridad_editar option[value="' + objPublicidad.prioridad + '"]').attr("selected", "selected");
+                    $('#cmbTipoPublicidad_editar option[value="' + objPublicidad.tipo_publicidad + '"]').attr("selected", "selected");
+                    $(".id_publicidad").val(objPublicidad.id);
+
+                    $("img").attr("src", "http://placehold.it/320x47&text=publicidad");
+
+                    var tipo_publicidad=objPublicidad.tipo_publicidad;
+                    if(tipo_publicidad=="slider")
+                    {
+                        $(".banner").hide();
+                        $(".slider").show();
+                    }
+                    else
+                    {
+                        $(".slider").hide();
+                        $(".banner").show();
+                    }
+
+                    console.log(JSON.stringify(objPublicidad));
+
+                    var objListaImagenes = objPublicidad.imagenes;
+                    lstImagenesEdit = objListaImagenes;
+                    for (var i = 0; i < objListaImagenes.length; i++) {
+                        var obj = objListaImagenes[i];
+                        var id_imagen_dinamico = obj.tipo + "_" + obj.sizex + "x" + obj.sizey + "_editar";
+                        var ruta = obj.ruta;
+                        $("#" + id_imagen_dinamico).attr("src", "../"+ruta);
+                    }
+
+
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#eliminarModal').modal('hide');
+                $("#btnEliminarPublicidad").removeAttr('disabled');
+                console.log(XMLHttpRequest + " " + textStatus);
+                $('#editarModal').modal('hide');
+            }
+        });
+
+    },
+    'click .remove': function (e, value, row, index) {
+        var id = row.id;
+        $('#eliminarModal').modal('show');
+        $("#btnEliminarPublicidad").click(function () {
+            $("#btnEliminarPublicidad").attr('disabled', 'disabled');
+            var url = "../ws/publicidad/eliminar/" + id;
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    $('#eliminarModal').modal('hide');
+                    $("#btnEliminarPublicidad").removeAttr('disabled');
+                    if (parseInt(result.intCodigo) == 1) {
+                        mensaje("eliminada");
+                        $table = $('#tblPublicidad').bootstrapTable('refresh', {
+                            url: '../api/v1/publicidad/' + $("#credencial").val() + '/sinformato'
+                        });
+                    }
+                    else {
+                        mensaje(result.resultado.errores);
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    $('#eliminarModal').modal('hide');
+                    $("#btnEliminarPublicidad").removeAttr('disabled');
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    mensaje("error");
+                }
+            });
+        });
+    }
+};

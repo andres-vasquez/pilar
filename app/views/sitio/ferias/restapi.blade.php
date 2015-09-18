@@ -97,21 +97,25 @@
                         </small>
 
                         <br/><br/>
-                        <h4>Obtener anuncios específicos para dispositivo. SO - Tamaño x - Tamaño y</h4>
-                        <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo/sizex/sizey</code>
+                        <h4>Obtener anuncios específicos para dispositivo. Tipo de publicidad - SO - Tamaño x - Tamaño y</h4>
+
+                        <p>Tipo publicidad: <span class="text-success"><b>slider, banner</b></span></p>
+                        <p>Sistema operativo (SO): <span class="text-success"><b>android, ios</b></span></p>
+
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo_publicidad/tipo/sizex/sizey</code>
                         <br/>
                         <small>Ej anuncios para android con tamaño 240x48: <a
-                                    href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48"
-                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48</a>
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48</a>
                         </small>
 
                         <br/><br/>
-                        <h4>Obtener anuncios específicos para dispositivo. SO - Tamaño x - Tamaño y - Cantidad</h4>
-                        <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo/sizex/sizey/cantidad</code>
+                        <h4>Obtener anuncios específicos para dispositivo. Tipo de publicidad - SO - Tamaño x - Tamaño y - Cantidad</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo_publicidad/tipo_publicidad/tipo/sizex/sizey/cantidad</code>
                         <br/>
                         <small>Ej 3 anuncios para android con tamaño 240x48 (son obtenidos según la variable prioridad):
-                            <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48/3"
-                               target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48/3</a>
+                            <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48/3"
+                               target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48/3</a>
                         </small>
                         <br/><br/><br/><br/>
                     </div>

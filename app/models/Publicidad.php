@@ -14,5 +14,5 @@ class Publicidad extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array('sistema_id','nombre','descripcion','link','prioridad','clicks','estado','baja_logica','aud_usuario_id');
+	protected $fillable = array('sistema_id','nombre','descripcion','link','prioridad','clicks','estado','baja_logica','aud_usuario_id','tipo_publicidad');
 }

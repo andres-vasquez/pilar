@@ -281,8 +281,8 @@ Route::group(array('prefix' => 'api/v1'), function () {
     Route::group(array('prefix' => '/publicidad'), function () {
         Route::get('/{sistema}/sinformato', array('as' => 'show', 'uses' => 'PublicidadsController@apitodassinformato')); //
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'PublicidadsController@apitodas')); // Todas
-        Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamano'));
-        Route::get('/{sistema}/{tipo}/{tamanox}/{tamanoy}/{cantidad}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamanoq'));
+        Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamano'));
+        Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}/{cantidad}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamanoq'));
     });
 
     //REST Api publicidad

@@ -88,6 +88,18 @@
                                 </div>
                             </div>
 
+
+                            <div class="form-group">
+                                <label for="cmbTipoPublicidad" class="col-sm-4 control-label">Tipo de publicidad</label>
+
+                                <div class="col-sm-8">
+                                    <select id="cmbTipoPublicidad" class="form-control">
+                                        <option value="slider">Slider</option>
+                                        <option value="banner">Banner</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <br/>
 
                             <div class="form-group">
@@ -124,7 +136,10 @@
                         -->
 
                         <div class="row">
-                            <div class="col-sm-6" style="padding: 20px">
+
+                            <!-- Slider -->
+
+                            <div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">240 x 48</h5>
                                 <img id="android_240x48" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -142,7 +157,7 @@
                                 </form>
 
                             </div>
-                            <div class="col-sm-6" style="padding: 20px">
+                            <div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">320 x 71</h5>
                                 <img id="android_320x71" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -160,10 +175,53 @@
                                 </form>
 
                             </div>
+
+                            <!--  Banner -->
+
+                            <div class="col-sm-6 banner" style="padding: 20px">
+                                <h5 class="text-center">240 x 24</h5>
+                                <img id="android_240x24" src="http://placehold.it/320x47&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="240"/>
+                                        <input type="hidden" name="sizey" value="24"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="col-sm-6 banner" style="padding: 20px">
+                                <h5 class="text-center">320 x 36</h5>
+                                <img id="android_320x36" src="http://placehold.it/320x47&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="320"/>
+                                        <input type="hidden" name="sizey" value="36"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-6" style="padding: 20px">
+
+                            <!-- Slider -->
+
+                            <div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">720 x 144</h5>
                                 <img id="android_720x144" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -181,7 +239,7 @@
                                 </form>
 
                             </div>
-                            <div class="col-sm-6" style="padding: 20px">
+                            <div class="col-sm-6 slider"  style="padding: 20px">
                                 <h5 class="text-center">1440 x 288</h5>
                                 <img id="android_1440x288" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -199,8 +257,47 @@
                                 </form>
 
                             </div>
-                        </div>
 
+                            <!-- Banner -->
+
+                            <div class="col-sm-6 banner" style="padding: 20px">
+                                <h5 class="text-center">720 x 72</h5>
+                                <img id="android_720x72" src="http://placehold.it/320x47&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="720"/>
+                                        <input type="hidden" name="sizey" value="72"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="col-sm-6 banner"  style="padding: 20px">
+                                <h5 class="text-center">1440 x 144</h5>
+                                <img id="android_1440x144" src="http://placehold.it/320x47&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="android"/>
+                                        <input type="hidden" name="sizex" value="1440"/>
+                                        <input type="hidden" name="sizey" value="144"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -214,8 +311,11 @@
                             2x con 640x360
                             3x con 960x540
                         -->
+
+                        <!-- Slider -->
+
                         <div class="row">
-                            <div class="col-sm-6" style="padding: 20px">
+                            <div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">320 x 180</h5>
                                 <img id="ios_320x180" src="http://placehold.it/320x180&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -233,7 +333,7 @@
                                 </form>
 
                             </div>
-                            <div class="col-sm-6" style="padding: 20px">
+                            <div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">640 x 360</h5>
                                 <img id="ios_640x360" src="http://placehold.it/320x180&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -254,7 +354,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3" style="padding: 20px">
+                            <div class="col-sm-6 col-sm-offset-3 slider" style="padding: 20px">
                                 <h5 class="text-center">960 x 540</h5>
                                 <img id="ios_960x540" src="http://placehold.it/320x180&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -273,8 +373,15 @@
                             </div>
                         </div>
 
+                        <!-- Banner -->
+
+                        <!-- TODO segun las dimensiones poner el Banner de iOS -->
+
+
                     </div>
                 </div>
+
+                <button class="btn btn-success" id="btnVolverCargar">Volver a cargar la página</button>
 
             </div>
         </div>
@@ -365,6 +472,17 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="cmbTipoPublicidad_editar" class="col-sm-4 control-label">Tipo de publicidad</label>
+
+                        <div class="col-sm-8">
+                            <select id="cmbTipoPublicidad_editar" class="form-control">
+                                <option value="slider">Slider</option>
+                                <option value="banner">Banner</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div id="divImagenes">
                         <div class="row">
 
@@ -373,15 +491,25 @@
                             </div>
 
                             <div class="col-sm-10 col-sm-offset-1">
-                                <!--
+                                <!-- Slider
                                     240x48
                                     320x71
                                     720x144
                                     1440x288
                                 -->
 
+                                <!-- Banner
+                                    240x24
+                                    320x36
+                                    720x72
+                                    1440x144
+                                -->
+
                                 <div class="row">
-                                    <div class="col-sm-6" style="padding: 20px">
+
+                                    <!-- Slider -->
+
+                                    <div class="col-sm-6 slider" style="padding: 20px">
                                         <h5 class="text-center">240 x 48</h5>
                                         <img id="android_240x48_editar" src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
@@ -400,9 +528,9 @@
                                                 </button>
                                             </div>
                                         </form>
-
                                     </div>
-                                    <div class="col-sm-6" style="padding: 20px">
+
+                                    <div class="col-sm-6 slider" style="padding: 20px">
                                         <h5 class="text-center">320 x 71</h5>
                                         <img id="android_320x71_editar" src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
@@ -421,19 +549,67 @@
                                                 </button>
                                             </div>
                                         </form>
+                                    </div>
+
+                                    <!-- Banner -->
+
+                                    <div class="col-sm-6 banner" style="padding: 20px">
+                                        <h5 class="text-center">240 x 24</h5>
+                                        <img id="android_240x24_editar" src="http://placehold.it/320x47&text=publicidad"
+                                             class="img-responsive center-block"/>
+                                        <br/>
+
+                                        <form id="f3" class="editar" enctype="multipart/form-data">
+                                            <div class="form-group form-inline">
+                                                <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                       value=""/>
+                                                <input type="hidden" name="id_imagen" value="android"/>
+                                                <input type="hidden" name="tipo" value="android"/>
+                                                <input type="hidden" name="sizex" value="240"/>
+                                                <input type="hidden" name="sizey" value="24"/>
+                                                <input type="file" name="imagen" class="form-control imagen" required/>
+                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                </button>
+                                            </div>
+                                        </form>
 
                                     </div>
+                                    <div class="col-sm-6 banner" style="padding: 20px">
+                                        <h5 class="text-center">320 x 36</h5>
+                                        <img id="android_320x36_editar" src="http://placehold.it/320x47&text=publicidad"
+                                             class="img-responsive center-block"/>
+                                        <br/>
+
+                                        <form id="f4" class="editar" enctype="multipart/form-data">
+                                            <div class="form-group form-inline">
+                                                <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                       value=""/>
+                                                <input type="hidden" name="id_imagen" value="android"/>
+                                                <input type="hidden" name="tipo" value="android"/>
+                                                <input type="hidden" name="sizex" value="320"/>
+                                                <input type="hidden" name="sizey" value="36"/>
+                                                <input type="file" name="imagen" class="form-control imagen" required/>
+                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-6" style="padding: 20px">
+
+                                    <!-- Slider -->
+
+                                    <div class="col-sm-6 slider" style="padding: 20px">
                                         <h5 class="text-center">720 x 144</h5>
                                         <img id="android_720x144_editar"
                                              src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
-                                        <form id="f3" class="editar" enctype="multipart/form-data">
+                                        <form id="f5" class="editar" enctype="multipart/form-data">
                                             <div class="form-group form-inline">
                                                 <input type="hidden" class="id_publicidad" name="publicidad_id"
                                                        value=""/>
@@ -448,14 +624,14 @@
                                         </form>
 
                                     </div>
-                                    <div class="col-sm-6" style="padding: 20px">
+                                    <div class="col-sm-6 slider" style="padding: 20px">
                                         <h5 class="text-center">1440 x 288</h5>
                                         <img id="android_1440x288_editar"
                                              src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
-                                        <form id="f4" class="editar" enctype="multipart/form-data">
+                                        <form id="f6" class="editar" enctype="multipart/form-data">
                                             <div class="form-group form-inline">
                                                 <input type="hidden" class="id_publicidad" name="publicidad_id"
                                                        value=""/>
@@ -468,72 +644,14 @@
                                                 </button>
                                             </div>
                                         </form>
-
                                     </div>
-                                </div>
 
+                                    <!-- Banner -->
 
-                            </div>
-
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
-                            </div>
-
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <!--
-                                    1x con 320x180
-                                    2x con 640x360
-                                    3x con 960x540
-                                -->
-                                <div class="row">
-                                    <div class="col-sm-6" style="padding: 20px">
-                                        <h5 class="text-center">320 x 180</h5>
-                                        <img id="ios_320x180_editar" src="http://placehold.it/320x180&text=publicidad"
-                                             class="img-responsive center-block"/>
-                                        <br/>
-
-                                        <form id="f5" class="editar" enctype="multipart/form-data">
-                                            <div class="form-group form-inline">
-                                                <input type="hidden" class="id_publicidad" name="publicidad_id"
-                                                       value=""/>
-                                                <input type="hidden" name="id_imagen" value="android"/>
-                                                <input type="hidden" name="tipo" value="ios"/>
-                                                <input type="hidden" name="sizex" value="320"/>
-                                                <input type="hidden" name="sizey" value="180"/>
-                                                <input type="file" name="imagen" class="form-control imagen" required/>
-                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
-                                                </button>
-                                            </div>
-                                        </form>
-
-                                    </div>
-                                    <div class="col-sm-6" style="padding: 20px">
-                                        <h5 class="text-center">640 x 360</h5>
-                                        <img id="ios_640x360_editar" src="http://placehold.it/320x180&text=publicidad"
-                                             class="img-responsive center-block"/>
-                                        <br/>
-
-                                        <form id="f6" class="editar" enctype="multipart/form-data">
-                                            <div class="form-group form-inline">
-                                                <input type="hidden" class="id_publicidad" name="publicidad_id"
-                                                       value=""/>
-                                                <input type="hidden" name="id_imagen" value="android"/>
-                                                <input type="hidden" name="tipo" value="ios"/>
-                                                <input type="hidden" name="sizex" value="640"/>
-                                                <input type="hidden" name="sizey" value="360"/>
-                                                <input type="file" name="imagen" class="form-control imagen" required/>
-                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
-                                                </button>
-                                            </div>
-                                        </form>
-
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-sm-6 col-sm-offset-3" style="padding: 20px">
-                                        <h5 class="text-center">960 x 540</h5>
-                                        <img id="ios_960x540_editar" src="http://placehold.it/320x180&text=publicidad"
+                                    <div class="col-sm-6 banner" style="padding: 20px">
+                                        <h5 class="text-center">720 x 72</h5>
+                                        <img id="android_720x72_editar"
+                                             src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
@@ -542,27 +660,144 @@
                                                 <input type="hidden" class="id_publicidad" name="publicidad_id"
                                                        value=""/>
                                                 <input type="hidden" name="id_imagen" value="android"/>
-                                                <input type="hidden" name="tipo" value="ios"/>
-                                                <input type="hidden" name="sizex" value="960"/>
-                                                <input type="hidden" name="sizey" value="540"/>
+                                                <input type="hidden" name="tipo" value="android"/>
+                                                <input type="hidden" name="sizex" value="720"/>
+                                                <input type="hidden" name="sizey" value="72"/>
+                                                <input type="file" name="imagen" class="form-control imagen" required/>
+                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div class="col-sm-6 banner" style="padding: 20px">
+                                        <h5 class="text-center">1440 x 144</h5>
+                                        <img id="android_1440x144_editar"
+                                             src="http://placehold.it/320x47&text=publicidad"
+                                             class="img-responsive center-block"/>
+                                        <br/>
+
+                                        <form id="f8" class="editar" enctype="multipart/form-data">
+                                            <div class="form-group form-inline">
+                                                <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                       value=""/>
+                                                <input type="hidden" name="id_imagen" value="android"/>
+                                                <input type="hidden" name="tipo" value="android"/>
+                                                <input type="hidden" name="sizex" value="1440"/>
+                                                <input type="hidden" name="sizey" value="144"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
                                             </div>
                                         </form>
                                     </div>
+
                                 </div>
 
-                            </div>
-                        </div>
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
+                                </div>
 
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <!--
+                                        1x con 320x180
+                                        2x con 640x360
+                                        3x con 960x540
+                                    -->
+                                    <div class="row">
+
+                                        <!-- Slider -->
+
+                                        <div class="col-sm-6 slider" style="padding: 20px">
+                                            <h5 class="text-center">320 x 180</h5>
+                                            <img id="ios_320x180_editar" src="http://placehold.it/320x180&text=publicidad"
+                                                 class="img-responsive center-block"/>
+                                            <br/>
+
+                                            <form id="f9" class="editar" enctype="multipart/form-data">
+                                                <div class="form-group form-inline">
+                                                    <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                           value=""/>
+                                                    <input type="hidden" name="id_imagen" value="android"/>
+                                                    <input type="hidden" name="tipo" value="ios"/>
+                                                    <input type="hidden" name="sizex" value="320"/>
+                                                    <input type="hidden" name="sizey" value="180"/>
+                                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div class="col-sm-6 slider" style="padding: 20px">
+                                            <h5 class="text-center">640 x 360</h5>
+                                            <img id="ios_640x360_editar" src="http://placehold.it/320x180&text=publicidad"
+                                                 class="img-responsive center-block"/>
+                                            <br/>
+
+                                            <form id="f10" class="editar" enctype="multipart/form-data">
+                                                <div class="form-group form-inline">
+                                                    <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                           value=""/>
+                                                    <input type="hidden" name="id_imagen" value="android"/>
+                                                    <input type="hidden" name="tipo" value="ios"/>
+                                                    <input type="hidden" name="sizex" value="640"/>
+                                                    <input type="hidden" name="sizey" value="360"/>
+                                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                        <!-- Banner -->
+
+                                        <!-- TODO segun las dimensiones poner el Banner de iOS -->
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <!-- Slider-->
+
+                                        <div class="col-sm-6 col-sm-offset-3 slider" style="padding: 20px">
+                                            <h5 class="text-center">960 x 540</h5>
+                                            <img id="ios_960x540_editar" src="http://placehold.it/320x180&text=publicidad"
+                                                 class="img-responsive center-block"/>
+                                            <br/>
+
+                                            <form id="f12" class="editar" enctype="multipart/form-data">
+                                                <div class="form-group form-inline">
+                                                    <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                           value=""/>
+                                                    <input type="hidden" name="id_imagen" value="android"/>
+                                                    <input type="hidden" name="tipo" value="ios"/>
+                                                    <input type="hidden" name="sizex" value="960"/>
+                                                    <input type="hidden" name="sizey" value="540"/>
+                                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <!-- Banner-->
+
+                                        <!-- TODO segun las dimensiones poner el Banner de iOS -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarPublicidad">Guardar
-                        cambios
-                    </button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarPublicidad">Guardar
+                            cambios
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -586,6 +821,7 @@
                         <th data-field="nombre" data-sortable="true">Nombre anuncio</th>
                         <th data-field="link" data-sortable="true">Link</th>
                         <th data-field="prioridad" data-halign="center" data-sortable="true">Prioridad</th>
+                        <th data-field="tipo_publicidad" data-halign="center" data-sortable="true">Tipo</th>
                         <th data-field="fecha_creacion" data-sortable="true">Fecha</th>
                         <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
                             data-events="operateEvents">Acciones
