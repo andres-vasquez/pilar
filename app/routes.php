@@ -310,6 +310,16 @@ Route::group(array('prefix' => 'api/v1'), function () {
 
 //********************** REST API S3 ********************
 Route::post('/aws_upload', 'PublicidadImagensController@subirAWS');
+Route::get('/amazon', function()
+{
+    $s3 = AWS::get('s3');
+    $s3->putObject(array(
+        'Bucket'     => 'fipaz',
+        'Key'        => '1442602836publicidad240x48_green.png',
+        'SourceFile' => 'public/uploads/fipaz/1442602836publicidad240x48_green.png'
+    ));
+    echo "Hola mundo";
+});
 
 
 

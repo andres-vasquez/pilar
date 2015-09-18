@@ -71,6 +71,7 @@ class PublicidadsController extends \BaseController
                 $aux_img["sizex"] = $imagenes_q["sizex"];
                 $aux_img["sizey"] = $imagenes_q["sizey"];
                 $aux_img["ruta"] = $imagenes_q["ruta"];
+                $aux_img["ruta_aws"] = $imagenes_q["ruta_aws"];
                 $aux_img["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
 
                 array_push($aux["imagenes"], $aux_img);
@@ -179,6 +180,7 @@ class PublicidadsController extends \BaseController
                             $aux_img["sizex"] = $imagenes_q["sizex"];
                             $aux_img["sizey"] = $imagenes_q["sizey"];
                             $aux_img["ruta"] = $imagenes_q["ruta"];
+                            $aux_img["ruta_aws"] = $imagenes_q["ruta_aws"];
                             $aux_img["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
 
                             array_push($aux["imagenes"], $aux_img);
@@ -230,6 +232,7 @@ class PublicidadsController extends \BaseController
                             $aux_img["sizex"] = $imagenes_q["sizex"];
                             $aux_img["sizey"] = $imagenes_q["sizey"];
                             $aux_img["ruta"] = $imagenes_q["ruta"];
+                            $aux_img["ruta_aws"] = $imagenes_q["ruta_aws"];
                             $aux_img["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
 
                             array_push($aux["imagenes"], $aux_img);
@@ -280,6 +283,7 @@ class PublicidadsController extends \BaseController
                             $aux_img["sizex"] = $imagenes_q["sizex"];
                             $aux_img["sizey"] = $imagenes_q["sizey"];
                             $aux_img["ruta"] = $imagenes_q["ruta"];
+                            $aux_img["ruta_aws"] = $imagenes_q["ruta_aws"];
                             $aux_img["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($imagenes_q["created_at"]));
 
                             array_push($aux["imagenes"], $aux_img);

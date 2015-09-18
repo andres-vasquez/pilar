@@ -36,11 +36,11 @@ class PublicidadImagensController extends \BaseController {
 
             $s3 = AWS::get('s3');
             $s3->putObject(array(
-                'Bucket'     => 'tecnobit',//$sistemas[0]["nombre"]
+                'Bucket'     => $sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
-                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen,
+                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
             ));
-            $data["ruta_aws"]='https://s3.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            $data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
 
             $validator = Validator::make($data, Publicidadimagen::$rules);
             if ($validator->fails())
@@ -103,6 +103,14 @@ class PublicidadImagensController extends \BaseController {
             $data = Input::all();
             $data["ruta"]='public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             $data["aud_usuario_mod_id"]=Session::get('id_usuario');
+
+            $s3 = AWS::get('s3');
+            $s3->putObject(array(
+                'Bucket'     => $sistemas[0]["nombre"],
+                'Key'        => $nombre_imagen,
+                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
+            ));
+            $data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
 
             if($publicidadimagen->update($data))
             {
@@ -176,11 +184,18 @@ class PublicidadImagensController extends \BaseController {
             $data["ruta"]=$sistemas[0]["nombre"].'/'.$nombre_imagen;
             $data["aud_usuario_id"]=Session::get('id_usuario');
             
-            $s3 = AWS::get('s3');
+            /*$s3 = AWS::get('s3');
             $s3->putObject(array(
                 'Bucket'     => $sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
                 'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen,
+            ));*/
+
+            $s3 = AWS::get('s3');
+            $s3->putObject(array(
+                'Bucket'     => $sistemas[0]["nombre"],
+                'Key'        => $nombre_imagen,
+                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
             ));
         }
         else
