@@ -32,8 +32,10 @@
                             <span class="glyphicon glyphicon-user"></span> Expositores</a></li>
                     <li><a href="#tab4" data-toggle="tab">
                             <span class="glyphicon glyphicon-globe"></span> Mapas</a></li>
+                    @if (Session::get("nombre_sistema") === "feicobol")
                     <li><a href="#tab5" data-toggle="tab">
                             <span class="glyphicon glyphicon-thumbs-up"></span> Likes</a></li>
+                        @endif
                 </ul>
 
                 <div class="tab-content">
@@ -52,8 +54,8 @@
                         <h4>Obtener todas las noticias</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/credencial</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o"
-                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o</a>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%></a>
                         </small>
 
                         <br/><br/>
@@ -61,8 +63,8 @@
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/credencial/inicio/fin</code>
                         <br/>
                         <small>Ej Las 5 primeras noticias: <a
-                                    href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5"
-                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5</a>
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>/1/5"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>/1/5</a>
                         </small>
 
                         <br/><br/>
@@ -70,8 +72,8 @@
                         <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/credencial/inicio/fin/orden</code>
                         <br/>
                         <small>Ej Las 5 primeras noticias la más antigua adelante: <a
-                                    href="http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5/ASC"
-                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/o0wXYg03Y8KEM7o/1/5/ASC</a>
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>/1/5/ASC"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>/1/5/ASC</a>
                         </small>
                         <br/><br/><br/><br/>
                     </div>
@@ -90,8 +92,8 @@
                         <h4>Obtener todos los anuncios</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o"
-                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o</a>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%></a>
                         </small>
 
                         <br/><br/>
@@ -99,8 +101,8 @@
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo/sizex/sizey</code>
                         <br/>
                         <small>Ej anuncios para android con tamaño 240x48: <a
-                                    href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48"
-                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48</a>
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48</a>
                         </small>
 
                         <br/><br/>
@@ -108,8 +110,8 @@
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo/sizex/sizey/cantidad</code>
                         <br/>
                         <small>Ej 3 anuncios para android con tamaño 240x48 (son obtenidos según la variable prioridad):
-                            <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48/3"
-                               target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/o0wXYg03Y8KEM7o/android/240/48/3</a>
+                            <a href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48/3"
+                               target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/android/240/48/3</a>
                         </small>
                         <br/><br/><br/><br/>
                     </div>
@@ -127,8 +129,8 @@
                         <h4>Obtener todos los expositores</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/expositores/credencial</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o"
-                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/expositores/o0wXYg03Y8KEM7o</a>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/expositores/<% Session::get('credencial')%>"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/expositores/<% Session::get('credencial')%></a>
                         </small>
                         <br/><br/><br/><br/>
                     </div>
@@ -144,8 +146,8 @@
                         <code>http://pilar.cloudapp.net/pilar/api/v1/mapas/credencial</code>
 
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/mapas/o0wXYg03Y8KEM7o"
-                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/mapas/o0wXYg03Y8KEM7o</a>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/mapas/<% Session::get('credencial')%>"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/mapas/<% Session::get('credencial')%></a>
                         </small>
 
                         <small>

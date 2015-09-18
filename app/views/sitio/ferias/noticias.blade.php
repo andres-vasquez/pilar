@@ -60,7 +60,7 @@
 
                                 <div class="form-group">
                                     <label>Descripción corta</label>
-                                    <textarea id="txtDescripcion" class="form-control" required></textarea>
+                                    <textarea id="txtDescripcion" class="form-control" maxlength="100" required></textarea>
                                 </div>
                             </div>
                         </div>
