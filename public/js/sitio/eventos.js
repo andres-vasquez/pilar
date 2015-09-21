@@ -27,6 +27,65 @@ $(document).ready(function () {
         $('#txtFechaInicio').datepicker('setEndDate', FromEndDate);
     });
 
+    $('#htmlEvento').wysihtml5({
+        toolbar: {
+            "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
+            "emphasis": true, //Italics, bold, etc. Default true
+            "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+            "html": false, //Button which allows you to edit the generated HTML. Default false
+            "link": false, //Button to insert a link. Default true
+            "image": false, //Button to insert an image. Default true,
+            "color": false, //Button to change color of font
+            "blockquote": true //Blockquote
+        },
+        locale: "es-ES"
+    });
+
+    $("#btnAgregar").click(function(event)
+    {
+        event.preventDefault();
+        var datos= {
+            "nombre":$("#txtTitular").val(),
+            "url_imagen":$("#txtUrlImagen").val(),
+            "url_imagen":$("#txtUrlImagen").val(),
+            "descripcion":$("#txtDescripcion").val(),
+            "html":$("#htmlNoticia").val()
+        };
+
+        $("#btnEnviar").attr('disabled', 'disabled');
+        $.ajax({
+            type: "POST",
+            url: $(this).attr("action"),
+            data:  JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1)
+                {
+                    mensaje("ok");
+                    $("#btnEnviar").removeAttr('disabled');
+                    $("#collapseNoticia").trigger("click");
+                    window.location.href="#";
+                    llenarNoticias(1,noticiasPorPagina);
+                    limpiarCampos();
+                }
+                else
+                {
+                    mensaje(result.resultado.errores);
+                    window.location.href="#";
+                    $("#btnEnviar").removeAttr('disabled');
+                }
+                $("#imgNoticia").attr("src",urlBase);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+                mensaje("error");
+                $("#imgNoticia").attr("src",urlBase);
+            }
+        });
+    });
+
     llenarHorasMinutos = function()
     {
         var htmlHoras='';

@@ -2,6 +2,7 @@
 
 @section('header')
     @parent
+    <% HTML::style('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css'); %>
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
     <% HTML::style('public/lib/bower_components/bootstrap-calendar/css/calendar.css'); %>
     <style>
@@ -128,6 +129,11 @@
                                                     <label>Descripción corta</label>
                                                     <textarea id="txtDescripcion" class="form-control" maxlength="100" required></textarea>
                                                 </div>
+
+                                                <div class="form-group">
+                                                    <label>Contenido</label>
+                                                    <textarea id="htmlEvento" class="form-control" required></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -152,5 +158,9 @@
     <% HTML::script('public/lib/bower_components/bootstrap-calendar/js/calendar.js'); %>
     <% HTML::script('public/lib/bower_components/underscore/underscore-min.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js'); %>
+    <% HTML::script('public/lib/bower_components/wysihtml5x/dist/wysihtml5x-toolbar.js'); %>
+    <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
     <% HTML::script('public/js/sitio/eventos.js'); %>
 @stop
