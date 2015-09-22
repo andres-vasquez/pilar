@@ -155,8 +155,8 @@ $(document).ready(function () {
 
     if($("#nombre_sistema").val()=="fipaz")
     {
-        llenarCatalogos("areas_fipaz","cmbArea");
-        llenarCatalogos("rubros_fipaz","cmbRubro");
+        llenarCatalogos("fipaz_areas","cmbArea");
+        llenarCatalogos("fipaz_rubros","cmbRubro");
     }
 
 });

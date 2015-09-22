@@ -90,12 +90,23 @@
 
 
                             <div class="form-group">
+                                <label for="cmbPlan" class="col-sm-4 control-label">Plan contratado</label>
+
+                                <div class="col-sm-8">
+                                    <select id="cmbPlan" class="form-control">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="cmbTipoPublicidad" class="col-sm-4 control-label">Tipo de publicidad</label>
 
                                 <div class="col-sm-8">
                                     <select id="cmbTipoPublicidad" class="form-control">
+                                        <option value="0"></option>
                                         <option value="slider">Slider</option>
                                         <option value="banner">Banner</option>
+                                        <option value="ambos">Banner y Slider</option>
                                     </select>
                                 </div>
                             </div>
@@ -473,12 +484,23 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="cmbPlan_editar" class="col-sm-4 control-label">Plan contratado</label>
+
+                        <div class="col-sm-8">
+                            <select id="cmbPlan_editar" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <label for="cmbTipoPublicidad_editar" class="col-sm-4 control-label">Tipo de publicidad</label>
 
                         <div class="col-sm-8">
                             <select id="cmbTipoPublicidad_editar" class="form-control">
+                                <option value="0"></option>
                                 <option value="slider">Slider</option>
                                 <option value="banner">Banner</option>
+                                <option value="ambos">Banner y Slider</option>
                             </select>
                         </div>
                     </div>
@@ -820,7 +842,7 @@
                         <th data-field="id" data-sortable="true">ID</th>
                         <th data-field="nombre" data-sortable="true">Nombre anuncio</th>
                         <th data-field="link" data-sortable="true">Link</th>
-                        <th data-field="prioridad" data-halign="center" data-sortable="true">Prioridad</th>
+                        <th data-field="plan" data-halign="center" data-sortable="true">Plan</th>
                         <th data-field="tipo_publicidad" data-halign="center" data-sortable="true">Tipo</th>
                         <th data-field="fecha_creacion" data-sortable="true">Fecha</th>
                         <th data-field="operate" data-halign="center" data-formatter="operateFormatter"

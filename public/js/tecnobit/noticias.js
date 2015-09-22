@@ -374,7 +374,7 @@ $(document).ready(function()
     {
         var credencial=$("#credencial").val();
         var html='';
-        var url="../api/v1/catalogos/"+credencial+"/secciones_tecnobit";
+        var url="../api/v1/catalogos/"+credencial+"/tecnobit_secciones";
         $.ajax({
             type: "GET",
             url: url,

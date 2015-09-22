@@ -3,6 +3,12 @@
  */
 var idEditando = 0;
 var lstImagenesEdit = [];
+
+var plan1="PREMIUM";
+var plan2="PLUS";
+var plan3="BASICO";
+var plan4="ECONOMICO";
+
 $(document).ready(function ()
 {
     var idInsertada = 0;
@@ -112,8 +118,46 @@ $(document).ready(function ()
                     "descripcion": $("#txtDescripcion").val(),
                     "link": $("#txtUrlAnuncio").val(),
                     "prioridad": $("#cmbPrioridad").val(),
-                    "tipo_publicidad": $("#cmbTipoPublicidad").val()
+                    "tipo_publicidad": $("#cmbTipoPublicidad").val(),
+                    "plan": $("#cmbPlan").val()
                 };
+
+                //Validaciones
+
+                var plan=$("#cmbPlan").val();
+                if(plan=="0")
+                {
+                    alert("Seleccione un plan");
+                    return false;
+                }
+
+                var tipo_publicidad=$("#cmbTipoPublicidad").val();
+                if(tipo_publicidad=="0")
+                {
+                    alert("Seleccione un tipo de publicidad");
+                    return false;
+                }
+
+                if(tipo_publicidad=="slider")
+                {
+                    if(plan==plan3 || plan==plan4) //Planes basico y economico SIN Slider
+                    {
+                        alert("El plan seleccionado no permite agregar Sliders");
+                        return false;
+                    }
+                }
+                else if(tipo_publicidad=="banner")
+                {
+
+                }
+                else
+                {
+                    if(plan==plan3 || plan==plan4) //Planes basico y economico SIN Slider
+                    {
+                        alert("El plan seleccionado no permite agregar Sliders");
+                        return false;
+                    }
+                }
 
                 $("#btnEnviar").attr('disabled', 'disabled');
                 $.ajax({
@@ -142,12 +186,16 @@ $(document).ready(function ()
                                 $(".banner").hide();
                                 $(".slider").show();
                             }
-                            else
+                            else if(tipo_publicidad=="banner")
                             {
                                 $(".slider").hide();
                                 $(".banner").show();
                             }
-
+                            else
+                            {
+                                $(".slider").show();
+                                $(".banner").show();
+                            }
                             window.location.href = "#divImagenes";
                             //limpiarCampos();
                         }
@@ -199,15 +247,38 @@ $(document).ready(function ()
     });
 
     $("#cmbTipoPublicidad_editar").change(function(event){
-        var tipo_publidad=$(this).val();
+        var tipo_publicidad=$(this).val();
+        var plan=$("#cmbPlan_editar").val();
+
+        if(plan=="0")
+        {
+            alert("Seleccione un plan antes de tipo de publicidad");
+            return;
+        }
+
         if(tipo_publicidad=="slider")
         {
+            if(plan==plan3 || plan==plan4) //Planes basico y economico SIN Slider
+            {
+                alert("El plan seleccionado no permite agregar Sliders");
+                return;
+            }
             $(".banner").hide();
             $(".slider").show();
         }
-        else
+        else if(tipo_publicidad=="banner")
         {
             $(".slider").hide();
+            $(".banner").show();
+        }
+        else
+        {
+            if(plan==plan3 || plan==plan4) //Planes basico y economico SIN Slider
+            {
+                alert("El plan seleccionado no permite agregar Sliders");
+                return;
+            }
+            $(".slider").show();
             $(".banner").show();
         }
     });
@@ -270,7 +341,8 @@ $(document).ready(function ()
             "descripcion": $("#txtDescripcion_editar").val(),
             "link": $("#txtUrlAnuncio_editar").val(),
             "prioridad": $("#cmbPrioridad_editar").val(),
-            "tipo_publicidad": $("#cmbTipoPublicidad_editar").val()
+            "tipo_publicidad": $("#cmbTipoPublicidad_editar").val(),
+            "plan": $("#cmbPlan_editar").val()
         };
 
         var url = "../ws/publicidad/" + idEditando;
@@ -307,6 +379,38 @@ $(document).ready(function ()
     $("#btnVolverCargar").click(function(event){
         location.reload();
     });
+
+
+    llenarCatalogos = function(agrupador,cmbId)
+    {
+        var credencial=$("#credencial").val();
+        var html='<option value="0"></option>';
+        var url="../api/v1/catalogos/"+credencial+"/"+agrupador;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1)
+                {
+                    var arrCatalogos=result.resultado.catalogos;
+                    if(agrupador=="rubros_fipaz")
+                        lstRubros=result.resultado.catalogos;
+
+                    for(var i=0;i<arrCatalogos.length;i++)
+                        html+='<option value="'+arrCatalogos[i].label+'">'+arrCatalogos[i].label+'</option>';
+                    $("#"+cmbId).html(html);
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+            }
+        });
+    };
+    llenarCatalogos("fipaz_planes","cmbPlan");
+    llenarCatalogos("fipaz_planes","cmbPlan_editar");
 });
 
 function operateFormatter(value, row, index) {
@@ -340,6 +444,7 @@ window.operateEvents = {
                     $("#txtUrlAnuncio_editar").val(objPublicidad.link);
                     $('#cmbPrioridad_editar option[value="' + objPublicidad.prioridad + '"]').attr("selected", "selected");
                     $('#cmbTipoPublicidad_editar option[value="' + objPublicidad.tipo_publicidad + '"]').attr("selected", "selected");
+                    $('#cmbPlan_editar option[value="' + objPublicidad.plan + '"]').attr("selected", "selected");
                     $(".id_publicidad").val(objPublicidad.id);
 
                     $("img").attr("src", "http://placehold.it/320x47&text=publicidad");
@@ -350,9 +455,14 @@ window.operateEvents = {
                         $(".banner").hide();
                         $(".slider").show();
                     }
-                    else
+                    else if(tipo_publicidad=="banner")
                     {
                         $(".slider").hide();
+                        $(".banner").show();
+                    }
+                    else
+                    {
+                        $(".slider").show();
                         $(".banner").show();
                     }
 

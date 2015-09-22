@@ -59,6 +59,7 @@ class PublicidadsController extends \BaseController
         $aux["link"] = $publicidades_q["link"];
         $aux["prioridad"] = $publicidades_q["prioridad"];
         $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
+        $aux["plan"] = $publicidades_q["plan"];
         $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
         $aux["imagenes"] = array();
@@ -142,6 +143,7 @@ class PublicidadsController extends \BaseController
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
                     $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
+                    $aux["plan"] = $publicidades_q["plan"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
                     array_push($publicidad, $aux);
                 }
@@ -168,6 +170,7 @@ class PublicidadsController extends \BaseController
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
                     $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
+                    $aux["plan"] = $publicidades_q["plan"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
                     $aux["imagenes"] = array();
@@ -220,6 +223,7 @@ class PublicidadsController extends \BaseController
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
                     $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
+                    $aux["plan"] = $publicidades_q["plan"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
                     $aux["imagenes"] = array();
@@ -271,6 +275,7 @@ class PublicidadsController extends \BaseController
                     $aux["link"] = $publicidades_q["link"];
                     $aux["prioridad"] = $publicidades_q["prioridad"];
                     $aux["tipo_publicidad"] = $publicidades_q["tipo_publicidad"];
+                    $aux["plan"] = $publicidades_q["plan"];
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($publicidades_q["created_at"]));
 
                     $aux["imagenes"] = array();
