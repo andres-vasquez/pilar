@@ -239,6 +239,17 @@ Route::post('/ws/publicidad_imagenes', 'PublicidadImagensController@store');
 Route::post('/ws/publicidad_imagenes/{id}', array('as' => 'show', 'uses' => 'PublicidadImagensController@update'));
 Route::post('/ws/publicidad_imagenes/eliminar/{id}', array('as' => 'show', 'uses' => 'PublicidadImagensController@destroy'));
 
+
+//WS Eventos
+Route::get('/ws/evento/{id}', array('as' => 'show', 'uses' => 'EventosController@show'))->where(array('id' => '[0-9]+', 'fin' => '[0-9]+'));
+Route::post('/ws/evento', 'EventosController@store');
+Route::get('/ws/eventos/sinformato', 'EventosController@sinformato');
+Route::post('/ws/evento/{id}', array('as' => 'show', 'uses' => 'EventosController@update'))->where(array('id' => '[0-9]+', 'fin' => '[0-9]+'));
+Route::post('/ws/evento/eliminar/{id}', array('as' => 'show', 'uses' => 'EventosController@destroy'));
+Route::post('/ws/evento/subirimagen', array('as' => 'show', 'uses' => 'EventosController@subirImagenEvento'));
+
+
+
 //TODO: Hacer ruta ferias dinamica
 Route::get('ferias/public/uploads/ferias/{archivo}', array('as' => 'show', 'uses' => 'PublicidadImagensController@mostrarImagen'));
 

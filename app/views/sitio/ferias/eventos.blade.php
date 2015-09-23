@@ -89,10 +89,14 @@
                                                     <input type="text" id="txtNombre" class="form-control" required/>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <label>Imagen</label>
-                                                    <input id="txtImagen" type="file" class="form-control" required/>
-                                                </div>
+                                                <form id="f1" enctype="multipart/form-data">
+                                                    <div class="form-group form-inline">
+                                                        <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                        </button>
+                                                    </div>
+                                                </form>
 
                                                 <div class="form-group">
                                                     <label>Lugar</label>
@@ -118,7 +122,7 @@
                                                             <select class="horas" id="cmbHoraFin">
                                                             </select>
                                                             :
-                                                            <select class="minutos" id="cmMinutoFin">
+                                                            <select class="minutos" id="cmbMinutoFin">
                                                             </select>
                                                         </td>
                                                     </tr>

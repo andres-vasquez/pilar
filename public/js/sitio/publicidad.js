@@ -215,8 +215,16 @@ $(document).ready(function ()
             else //Formulario de las imagenes
             {
                 event.preventDefault();
+
+                var btnSubmit = $(this).find(':submit');
+                var htmlCargando='<i class="fa fa-spinner fa-spin"></i> Cargando';
+                var htmlCargado='<i class="fa fa-check"></i> Cargado';
+                var htmlError='<i class="fa fa-close"></i> Error';
+
                 var _validFileExtensions = [".jpg", ".jpeg", ".png"];
 
+                btnSubmit.html(htmlCargando);
+                btnSubmit.attr('disabled', 'disabled');
 
                 var url = "../ws/publicidad_imagenes";
                 var formData = new FormData($(this)[0]);
@@ -227,19 +235,29 @@ $(document).ready(function ()
                     data: formData,
                     processData: false,
                     contentType: false,
-                    success: function (result) {
+                    success: function (result)
+                    {
+                        btnSubmit.removeAttr('disabled');
+
                         result = JSON.parse(result);
                         console.log(JSON.stringify(result));
-                        if (parseInt(result.intCodigo) == 1) {
+                        if (parseInt(result.intCodigo) == 1)
+                        {
                             var ruta = result.resultado.carga.ruta;
                             var imagen = result.resultado.carga.id;
                             console.log("URI imagen:" + imagen);
                             $("#" + imagen).attr("src", "../"+ruta);
+                            btnSubmit.html(htmlCargado);
+                        }
+                        else
+                        {
+                            btnSubmit.html(htmlError);
                         }
                     },
                     error: function (XMLHttpRequest, textStatus, errorThrown) {
                         $("#divNoticias").html("");
                         console.log(XMLHttpRequest + " " + textStatus);
+                        btnSubmit.html(htmlError);
                     }
                 });
             }

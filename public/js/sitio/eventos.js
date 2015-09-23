@@ -9,6 +9,9 @@ $.fn.datepicker.dates['es'] = {
     monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
 };
 
+
+var rutaImagen="";
+
 $(document).ready(function () {
     $("#txtFechaInicio,#txtFechaFin").datepicker({
         format: 'dd-mm-yyyy',
@@ -41,50 +44,167 @@ $(document).ready(function () {
         locale: "es-ES"
     });
 
+
+    //Verifica el tamanio de la imagen y el formato
+    $(".imagen").change(function (e) {
+
+        var tamano = this.files[0].size;
+        if (parseInt(tamano) > 1000000) //1 MB
+        {
+            alert("Tamaño máximo permitido de 1MB reduzca su imagen por favor");
+            $(this).val("");
+        }
+        else {
+            var fileExtension = ['jpeg', 'jpg', 'png'];
+            if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+                alert("Formato incorrecto. Las imágenes deben estar en formato jpeg o png.");
+                $(this).val("");
+            }
+        }
+    });
+
+
+    //Envio de la fotografia
+    $("form").submit(function (event)
+    {
+        event.preventDefault();
+        event.stopPropagation();
+
+        var btnSubmit = $(this).find(':submit');
+        var htmlCargando='<i class="fa fa-spinner fa-spin"></i> Cargando';
+        var htmlCargado='<i class="fa fa-check"></i> Cargado';
+        var htmlError='<i class="fa fa-close"></i> Error';
+
+        var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+        var formData = new FormData($(this)[0]);
+
+        btnSubmit.html(htmlCargando);
+        btnSubmit.attr('disabled', 'disabled');
+
+        var url = "../ws/evento/subirimagen";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result)
+            {
+                btnSubmit.removeAttr('disabled');
+                result = JSON.parse(result);
+                if (parseInt(result.intCodigo) == 1)
+                {
+
+                    var data=result.resultado.data;
+                    var ruta=data.ruta_aws;
+                    $("#hdnRutaImagen").val(ruta);
+                    $("#imgEvento").attr("src", ruta);
+                    rutaImagen=ruta;
+
+                    btnSubmit.html(htmlCargado);
+                }
+                else
+                {
+                    alert("Error al subir la imagen del evento");
+                    btnSubmit.html(htmlError);
+                }
+
+                //console.log(JSON.stringify(result));
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                btnSubmit.removeAttr('disabled');
+                console.log(XMLHttpRequest + " " + textStatus);
+                btnSubmit.html(htmlError);
+            }
+        });
+    });
+
+
     $("#btnAgregar").click(function(event)
     {
         event.preventDefault();
-        var datos= {
-            "nombre":$("#txtTitular").val(),
-            "url_imagen":$("#txtUrlImagen").val(),
-            "url_imagen":$("#txtUrlImagen").val(),
-            "descripcion":$("#txtDescripcion").val(),
-            "html":$("#htmlNoticia").val()
-        };
 
-        $("#btnEnviar").attr('disabled', 'disabled');
+        var horaInicio = $("#cmbHoraInicio").val();
+        var horaFin = $("#cmbMinutoInicio").val();
+        var minInicio = $("#cmbHoraFin").val();
+        var minFin = $("#cmbMinutoFin").val();
+
+        var datos= {
+            "nombre":$("#txtNombre").val(),
+            "lugar":$("#txtLugar").val(),
+            "imagen_aws":$("#hdnRutaImagen").val(),
+            "fecha_inicio":$("#txtFechaInicio").val()+" "+horaInicio+":"+minInicio+":00",
+            "fecha_fin":$("#txtFechaFin").val()+" "+horaFin+":"+minFin+":00",
+            "descripcion":$("#txtDescripcion").val(),
+            "html":$("#htmlEvento").val()
+        };
+        console.log(JSON.stringify(datos));
+
+        var url = "../ws/evento";
+        $("#btnAgregar").attr('disabled', 'disabled');
         $.ajax({
             type: "POST",
-            url: $(this).attr("action"),
+            url: url,
             data:  JSON.stringify(datos),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(result)
             {
+                $("#agregar-modal").modal("hide");
+                $("#btnAgregar").removeAttr('disabled');
                 if(parseInt(result.intCodigo)==1)
                 {
                     mensaje("ok");
-                    $("#btnEnviar").removeAttr('disabled');
-                    $("#collapseNoticia").trigger("click");
                     window.location.href="#";
-                    llenarNoticias(1,noticiasPorPagina);
                     limpiarCampos();
                 }
                 else
                 {
                     mensaje(result.resultado.errores);
                     window.location.href="#";
-                    $("#btnEnviar").removeAttr('disabled');
                 }
-                $("#imgNoticia").attr("src",urlBase);
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest + " "+textStatus);
-                mensaje("error");
-                $("#imgNoticia").attr("src",urlBase);
+                $("#btnAgregar").removeAttr('disabled');
             }
         });
     });
+
+    mensaje=function(tipo) {
+        $("#mensaje").html('');
+        $("#mensaje").addClass("alert");
+        var html='';
+        if(tipo=="ok")
+        {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html+='<strong>¡Evento agregado!</strong>';
+        }
+        else if(tipo=="editada")
+        {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html+='<strong>¡Evento editado!</strong>';
+        }
+        else if(tipo=="eliminada")
+        {
+            $("#mensaje").removeClass("alert-danger");
+            $("#mensaje").addClass("alert-success");
+            html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html+='<strong>¡Evento eliminado!</strong>';
+        }
+        else
+        {
+            $("#mensaje").removeClass("alert-success");
+            $("#mensaje").addClass("alert-danger");
+            html+='<button type="button" class="close" data-dismiss="alert">&times;</button>';
+            html+='<strong>¡Error!</strong> '+tipo;
+        }
+        $("#mensaje").html(html);
+    };
 
     llenarHorasMinutos = function()
     {
@@ -92,10 +212,10 @@ $(document).ready(function () {
         var htmlMinutos='';
 
         for(var i=10;i<24;i++)
-           htmlHoras+='<option value="">'+padLeft(i,2)+'</option>';
+            htmlHoras+='<option value="'+padLeft(i,2)+'">'+padLeft(i,2)+'</option>';
 
         for(var i=0;i<60;i=i+5)
-            htmlMinutos+='<option value="">'+padLeft(i,2)+'</option>';
+            htmlMinutos+='<option value="'+padLeft(i,2)+'">'+padLeft(i,2)+'</option>';
 
         $(".horas").html(htmlHoras);
         $(".minutos").html(htmlMinutos);
@@ -105,7 +225,26 @@ $(document).ready(function () {
         return Array(n-String(nr).length+1).join(str||'0')+nr;
     };
 
+
+    limpiarCampos=function()
+    {
+        $("#txtTitular").val("");
+        $("txtLugar").val("");
+        $("#hdnRutaImagen").val("");
+        $("#txtFechaInicio").val();
+        $("#txtFechaFin").val("");
+        $("#txtDescripcion").val("");
+        $("#htmlNoticia").val("");
+        llenarHorasMinutos();
+    };
+
     llenarHorasMinutos();
+
+    $("#btnAgregarModal").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $("#agregar-modal").modal("show");
+    });
 });
 
 (function($) {
@@ -206,23 +345,6 @@ $(document).ready(function () {
             calendar.view($this.data('calendar-view'));
         });
     });
-
-
-    $("#btnAgregarModal").click(function(event){
-        event.preventDefault();
-        event.stopPropagation();
-        $("#agregar-modal").modal("show");
-    });
-
-    $("#btnAgregar").click(function(event){
-        event.preventDefault();
-        event.stopPropagation();
-
-        $("#agregar-modal").modal("close");
-    });
-
-
-
 
 }(jQuery));
 
