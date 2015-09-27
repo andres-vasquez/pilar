@@ -182,10 +182,23 @@ class EventosController extends \BaseController {
 
                 array_push($resultado["result"], $aux);
             }
+
+            if(sizeof($resultado!=0))
+                return json_encode($resultado);
+            else
+            {
+                $resultado = array();
+                $resultado["success"]="0";
+                $resultado["result"]=array();
+                return json_encode($resultado);
+            }
+        }
+        else
+        {
+            $resultado = array();
+            $resultado["success"]="0";
+            $resultado["result"]=array();
             return json_encode($resultado);
-        } else {
-            $errores = "Error al obtener registro";
-            return View::make('ws.json_errores', array("errores" => compact('errores')));
         }
     }
 
