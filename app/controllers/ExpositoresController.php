@@ -229,8 +229,17 @@ class ExpositoresController extends \BaseController
                 }
                 return View::make('ws.json', array("resultado" => compact('expositores')));
             }
+            else
+            {
+                $errores = "Error al obtener datos";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
         }
-
+        else
+        {
+            $errores = "Error credencial invalida";
+            return View::make('ws.json_errores', array("errores" => compact('errores')));
+        }
     }
 
     public function apitodassinformato($app)
@@ -265,7 +274,49 @@ class ExpositoresController extends \BaseController
                 return json_encode($expositores);
                 return View::make('ws.json', array("resultado" => compact('expositores')));
             }
+            else
+            {
+                $errores = "Error al obtener datos";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
         }
-
+        else
+        {
+            $errores = "Error credencial invalida";
+            return View::make('ws.json_errores', array("errores" => compact('errores')));
+        }
     }
+
+
+    public function apiporrubro($app,$rubro_id)
+    {
+        $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
+        if (sizeof($sistemas) > 0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $expositores_query = Expositore::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? and rubro_id=?', array($id_sistema,$rubro_id))->get();
+            if (sizeof($expositores_query) > 0) {
+                $expositores = array();
+                foreach ($expositores_query as $expositor) {
+                    $aux = array();
+                    $aux["id"] = $expositor["id"];
+                    $aux["nombre"] = $expositor["nombre"];
+                    $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
+                    array_push($expositores, $aux);
+                }
+                return View::make('ws.json', array("resultado" => compact('expositores')));
+            }
+            else
+            {
+                $errores = "Error al obtener datos";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
+        }
+        else
+        {
+            $errores = "Error credencial invalida";
+            return View::make('ws.json_errores', array("errores" => compact('errores')));
+        }
+    }
+
 }

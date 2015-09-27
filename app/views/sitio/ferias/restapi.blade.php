@@ -258,7 +258,32 @@
                                 <!-- Ofertas !Feicobol-->
                             @if (!Session::get("nombre_sistema") !== "feicobol")
                                 <div class="tab-pane fade" id="tab7">
+                                    <h3>Ofertas</h3>
 
+                                    <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
+
+                                    <p>La API de ofertas despliega información en formato JSON referente a las ofertas de la feria</p>
+                                    <br/>
+                                    <h4>URL base</h4>
+                                    <code>http://pilar.cloudapp.net/pilar/api/v1/ofertas</code>
+
+                                    <br/><br/>
+                                    <h4>Obtener todos los rubros con ofertas</h4>
+                                    <code>http://pilar.cloudapp.net/pilar/api/v1/ofertas/credencial/rubros</code>
+                                    <br/>
+                                    <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/ofertas/<% Session::get('credencial')%>/rubros"
+                                                  target="_blank">http://pilar.cloudapp.net/pilar/api/v1/ofertas/<% Session::get('credencial')%>/rubros</a>
+                                    </small>
+                                    <br/><br/>
+                                    <h4>Obtener los expositores con ofertas a partir de un rubro específico</h4>
+                                    <code>http://pilar.cloudapp.net/pilar/api/v1/ofertas/credencial/rubro/id_rubro</code>
+                                    <br/><br/>
+                                    <p>Variable id_rubro: <span class="text-success"><b>Obtenida del anterior método (estructura árbol)</b></span></p>
+
+                                    <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/ofertas/<% Session::get('credencial')%>/rubro/1"
+                                                  target="_blank">http://pilar.cloudapp.net/pilar/api/v1/ofertas/<% Session::get('credencial')%>/rubro/1</a>
+                                    </small>
+                                    <br/><br/><br/><br/>
                                 </div>
                             @endif
                 </div>

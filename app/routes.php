@@ -255,6 +255,12 @@ Route::post('/ws/notificacion', 'NotificacionesController@store');
 Route::post('/ws/notificacion/{id}', array('as' => 'show', 'uses' => 'NotificacionesController@update'))->where(array('id' => '[0-9]+'));
 Route::post('/ws/notificacion/eliminar/{id}', array('as' => 'show', 'uses' => 'NotificacionesController@destroy'));
 
+//WS Ofertas
+Route::get('/ws/ofertas', array('as' => 'show', 'uses' => 'OfertasController@index'));
+Route::get('/ws/oferta/{id}', array('as' => 'show', 'uses' => 'OfertasController@show'))->where(array('id' => '[0-9]+'));
+Route::post('/ws/oferta', 'OfertasController@store');
+Route::post('/ws/oferta/{id}', array('as' => 'show', 'uses' => 'OfertasController@update'))->where(array('id' => '[0-9]+'));
+Route::post('/ws/oferta/eliminar/{id}', array('as' => 'show', 'uses' => 'OfertasController@destroy'));
 
 
 Route::get('ferias/public/uploads/ferias/{archivo}', array('as' => 'show', 'uses' => 'PublicidadImagensController@mostrarImagen'));
@@ -304,7 +310,18 @@ Route::group(array('prefix' => 'api/v1'), function () {
     //REST Api expositores
     Route::group(array('prefix' => '/expositores'), function () {
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'ExpositoresController@apitodas')); // Todas
+        Route::get('/{sistema}/rubro/{rubro_id}', array('as' => 'show', 'uses' => 'ExpositoresController@apiporrubro'))->where(array('rubro_id' => '[0-9]+', 'fin' => '[0-9]+')); // Todas
         Route::get('/{sistema}/sinformato', array('as' => 'show', 'uses' => 'ExpositoresController@apitodassinformato')); // Todas
+    });
+
+    //REST Api Ofertas
+    Route::group(array('prefix' => '/ofertas'), function () {
+        Route::get('/{sistema}', array('as' => 'show', 'uses' => 'OfertasController@apitodas')); // Todas
+        Route::get('/{sistema}/sinformato', array('as' => 'show', 'uses' => 'OfertasController@apitodassinformato')); // Todas
+        Route::get('/{sistema}/{id_oferta}/{metodo}', array('as' => 'show', 'uses' => 'OfertasController@web'))->where(array('id_oferta' => '[0-9]+', 'metodo' => '[a-z]+'));
+
+        Route::get('/{sistema}/rubros', array('as' => 'show', 'uses' => 'OfertasController@rubrosconoferta'));
+        Route::get('/{sistema}/rubros/{id_rubro}', array('as' => 'show', 'uses' => 'OfertasController@expositoresporrubro'))->where(array('id_rubro' => '[0-9]+'));
     });
 
     //REST Api likes

@@ -4,6 +4,7 @@
     @parent
     <% HTML::style('public/css/bootstrap-table.css'); %>
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -13,6 +14,7 @@
 @section('barra_navegacion')
     <li class="active">Ofertas</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>
+    <input type="hidden" id="nombre_sistema" value="<% Session::get("nombre_sistema")%>"/>
 @stop
 
 @@section('titulo')
@@ -35,40 +37,21 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <br/>
                     <div class="col-md-5 form-group">
-                        <label>Nombre</label>
-                        <input type="text" id="txtNombre" name="nombre" class="form-control" required/>
+                        <label>Rubro</label>
+                        <input type="hidden" name="rubro" id="hdnRubro"/>
+                        <select id="cmbRubro" name="rubro_id" class="form-control" required></select>
+                    </div>
+                    <div class="col-md-5 form-group">
+                        <label>Expositor</label>
+                        <input type="hidden" name="expositor" id="hdnExpositor"/>
+                        <select id="cmbExpositor" name="expositor_id" class="form-control" required></select>
                     </div>
 
-                    <!-- Feicobol-->
-                    @if (Session::get("nombre_sistema") === "feicobol")
-                        <div class="col-md-5 col-lg-offset-1 form-group">
-                            <label>Dirección</label>
-                            <input type="text" id="txtDireccion" name="direccion" class="form-control" required/>
-                        </div>
-                    @else
-                        <div class="col-md-5 form-group">
-                            <label>Rubro</label>
-                            <input type="hidden" name="rubro_id" id="hdnRubro"/>
-                            <select id="cmbRubro" name="rubro" class="form-control" required></select>
-                        </div>
-                    @endif
-
-
-                    @if (Session::get("nombre_sistema") === "feicobol")
-                        <div class="col-md-5 form-group">
-                            <label>Área</label>
-                            <input class="form-control" name="pabellon" id="txtArea" required/>
-                        </div>
-                    @else
-                        <div class="col-md-5 form-group">
-                            <label>Área</label>
-                            <select class="form-control" name="pabellon" id="cmbArea">
-                            </select>
-                        </div>
-                    @endif
-
+                    <div class="col-md-10">
+                        <label>Descripción ofertas</label>
+                        <textarea id="htmlOferta" name="html" class="form-control" required></textarea>
+                    </div>
                 </div>
             </div>
             <div class="panel-footer">
@@ -94,7 +77,7 @@
                     <thead>
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
-                        <th data-field="empresa" data-sortable="true">Empresa</th>
+                        <th data-field="expositor" data-sortable="true">Empresa</th>
                         <th data-field="rubro" data-sortable="true">Rubro</th>
                         <th data-field="fecha" data-sortable="true">Fecha de publicación</th>
                         <th data-field="link" data-sortable="true">Link</th>
@@ -109,6 +92,10 @@
     </div>
 @stop
 @section('pie')
+    <% HTML::script('public/lib/bower_components/wysihtml5x/dist/wysihtml5x-toolbar.js'); %>
+    <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
     <% HTML::script('public/js/bootstrap-table.js'); %>
-    <% HTML::script('public/js/sitio/expositores.js'); %>
+    <% HTML::script('public/js/sitio/ofertas.js'); %>
 @stop
