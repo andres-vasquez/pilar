@@ -51,21 +51,86 @@
                 </div>
 
                 <div id="calendario"></div>
+
+                <!-- Popup modal Edit Event-->
                 <div class="modal fade" id="events-modal">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h3>Event</h3>
+                                <h3 id="txtTituloDetalleEvento">Evento</h3>
                             </div>
-                            <div class="modal-body" style="height: 400px">
+                            <div class="modal-body" style="height: auto">
+                                <div class="chat-body clearfix row">
+                                    <div class="col-md-9">
+                                        <img id="imgImagenEvento_editar" alt="Foto evento"
+                                             width="180px" height="180px" class="img-responsive"/>
+
+                                        <div class="form-group">
+                                            <label>Nombre del evento</label>
+                                            <input type="text" id="txtNombre_editar" class="form-control" required/>
+                                        </div>
+
+                                        <form id="formEdicion" enctype="multipart/form-data" style="display:none">
+                                            <div class="form-group form-inline">
+                                                <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                                                <input type="file" name="imagen" class="form-control imagen" required/>
+                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                        <div class="form-group">
+                                            <label>Lugar</label>
+                                            <input type="text" id="txtLugar_editar" class="form-control" required/>
+                                        </div>
+
+                                        <table>
+                                            <tr>
+                                                <td colspan="2"><label>Inicio de evento</label></td>
+                                                <td><label>Fin de evento</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" id="txtFechaInicio_editar" size="10"/>
+                                                    <select class="horas" id="cmbHoraInicio_editar">
+                                                    </select>
+                                                    :
+                                                    <select class="minutos" id="cmbMinutoInicio_editar">
+                                                    </select>
+                                                </td>
+                                                <td>&nbsp;&nbsp;&nbsp;</td>
+                                                <td><input type="text" id="txtFechaFin_editar" size="10"/>
+                                                    <select class="horas" id="cmbHoraFin_editar">
+                                                    </select>
+                                                    :
+                                                    <select class="minutos" id="cmbMinutoFin_editar">
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br/><br/>
+
+                                        <div class="form-group">
+                                            <label>Descripción corta</label>
+                                            <textarea id="txtDescripcion_editar" class="form-control" maxlength="100" required></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Contenido</label>
+                                            <textarea id="htmlEvento_editar" class="form-control" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <a href="#" data-dismiss="modal" class="btn">Close</a>
+                                <a href="#" id="btnEditarEvento" class="btn btn-info">Editar</a>
+                                <a href="#" data-dismiss="modal" class="btn">Cerrar</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="modal fade" id="agregar-modal">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">

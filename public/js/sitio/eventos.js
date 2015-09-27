@@ -13,12 +13,14 @@ $.fn.datepicker.dates['es'] = {
 var rutaImagen="";
 
 $(document).ready(function () {
-    $("#txtFechaInicio,#txtFechaFin").datepicker({
+
+    $("#txtFechaInicio,#txtFechaFin,#txtFechaInicio_editar,#txtFechaFin_editar").datepicker({
         format: 'dd-mm-yyyy',
         language: 'es',
         autoclose: true
     });
 
+    //Fechas nuevo
     $('#txtFechaInicio').datepicker().on('changeDate', function (selected) {
         startDate = new Date(selected.date.valueOf());
         startDate.setDate(startDate.getDate(new Date(selected.date.valueOf())));
@@ -30,7 +32,19 @@ $(document).ready(function () {
         $('#txtFechaInicio').datepicker('setEndDate', FromEndDate);
     });
 
-    $('#htmlEvento').wysihtml5({
+    //Fechas editar
+    $('#txtFechaInicio_editar').datepicker().on('changeDate', function (selected) {
+        startDate = new Date(selected.date.valueOf());
+        startDate.setDate(startDate.getDate(new Date(selected.date.valueOf())));
+        $('#txtFechaFin_editar').datepicker('setStartDate', startDate);
+    });
+    $('#txtFechaFin_editar').datepicker().on('changeDate', function (selected) {
+        FromEndDate = new Date(selected.date.valueOf());
+        FromEndDate.setDate(FromEndDate.getDate(new Date(selected.date.valueOf())));
+        $('#txtFechaInicio_editar').datepicker('setEndDate', FromEndDate);
+    });
+
+    $('#htmlEvento,#htmlEvento_editar').wysihtml5({
         toolbar: {
             "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
             "emphasis": true, //Italics, bold, etc. Default true
@@ -267,36 +281,7 @@ $(document).ready(function () {
         time_end: '23:30',
         time_split: '30',
         tmpl_path: "../public/lib/bower_components/bootstrap-calendar/tmpls/",
-        events_source: function () {
-            return [
-                {
-                    "id": 293,
-                    "title": "Event 1",
-                    //"url": "http://example.com",
-                    "class": "event-important",
-                    "start": parseInt(ayer), // Milliseconds
-                    "end": parseInt(hoy) // Milliseconds
-                },
-                {
-                    "id": 294,
-                    "title": "Event 2",
-                    //"url": "http://example.com",
-                    "class": "event-warning",
-                    "start": parseInt(ayer), // Milliseconds
-                    "end": parseInt(hoy) // Milliseconds
-                }
-            ];
-        },
-        /*events_source: [
-         {
-         "id": 293,
-         "title": "Event 1",
-         "url": "http://example.com",
-         "class": "event-important",
-         "start": ayer, // Milliseconds
-         "end": hoy // Milliseconds
-         }
-         ],*/
+        events_source:'../ws/eventos/sinformato', //REF: https://github.com/Serhioromano/bootstrap-calendar
         onAfterEventsLoad: function(events) {
             if(!events) {
                 return;
@@ -304,14 +289,14 @@ $(document).ready(function () {
             var list = $('#eventlist');
             list.html('');
 
-            $.each(events, function(key, val)
-            {
+            $.each(events, function(key, val){
                 $(document.createElement('li'))
                     .html('<a href="' + val.url + '">' + val.title + '</a>')
                     .appendTo(list);
             });
         },
-        onAfterViewLoad: function(view) {
+        onAfterViewLoad: function(view)
+        {
             $('.page-header h3').text(this.getTitle());
             $('.btn-group button').removeClass('active');
             $('button[data-calendar-view="' + view + '"]').addClass('active');
@@ -323,7 +308,41 @@ $(document).ready(function () {
         },
         modal : "#events-modal",
         modal_type : "ajax",
-        modal_title : function (e) { return e.title }
+        modal_title : function (e)
+        {
+            var objEvento=e;
+            var url='../ws/evento/'+objEvento.id;
+            $.ajax({
+                type: "GET",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(result)
+                {
+                    /*if(parseInt(result.intCodigo)==1)
+                    {
+                        //imgImagenEvento_editar;
+                        mensaje("ok");
+                        $("#btnEnviar").removeAttr('disabled');
+                        $("#collapseNoticia").trigger("click");
+                        window.location.href="#";
+                        llenarNoticias(1,noticiasPorPagina);
+                        limpiarCampos();
+                    }
+                    else
+                    {
+                        mensaje(result.resultado.errores);
+                        window.location.href="#";
+                        $("#btnEnviar").removeAttr('disabled');
+                    }
+                    $("#imgNoticia").attr("src",urlBase);*/
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    console.log(XMLHttpRequest + " "+textStatus);
+                }
+            });
+            return e.title
+        }
     };
 
     var calendar = $('#calendario').calendar(options);

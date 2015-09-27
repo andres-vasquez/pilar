@@ -72,7 +72,7 @@
 
 
         <div id="divNuevoExpositor" class="panel panel-collapse chat collapse">
-            <% Form::open(array('url' => '/ws/expositores', 'id' => 'formNuevoExpositor', 'class' => 'form-horizontal')) %>
+            <% Form::open(array('url' => '/ws/expositores', 'id' => 'formNuevoExpositor', 'class' => '')) %>
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-user"></span> Agregar
                 expositor
             </div>
@@ -114,7 +114,7 @@
                                 </div>
                             @endif
 
-                            <div class="col-md-5 col-lg-offset-1 form-group">
+                            <div class="col-md-5 form-group">
                                 <label>Stand</label>
                                 <input type="text" id="txtStand" name="stand" size="5" class="form-control" required/>
                             </div>
@@ -123,7 +123,7 @@
                                 <label>Página web</label>
                                 <input type="text" id="txtWebsite" name="website" class="form-control" required/>
                             </div>
-                            <div class="col-md-5 col-lg-offset-1 form-group">
+                            <div class="col-md-5 form-group">
                                 <label>Fanpage (facebook)</label>
                                 <input type="text" id="txtFacebook" name="fanpage" class="form-control" required/>
                             </div>
@@ -134,7 +134,7 @@
                                     <label>Teléfono</label>
                                     <input type="text" id="txtTelefono" name="telefono" class="form-control" required/>
                                 </div>
-                                <div class="col-md-5 col-lg-offset-1 form-group">
+                                <div class="col-md-5 form-group">
                                     <label>Fax</label>
                                     <input type="text" id="txtFax" name="fax" class="form-control" required/>
                                 </div>

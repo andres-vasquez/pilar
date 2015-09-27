@@ -32,9 +32,20 @@ class EventosController extends \BaseController {
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
 
-        if(Eventos::create($data))
+        if($insert=Eventos::create($data))
         {
-            return View::make('ws.json', array("resultado"=>compact('Evento')));
+            $id=$insert->id;
+            $evento_nuevo = Eventos::findOrFail($id);
+            $datos = array();
+            $datos["link"]="pilar/api/v1/eventos/".Session::get('credencial')."/".$id."/web";
+
+            if($evento_nuevo->update($datos))
+                return View::make('ws.json', array("resultado"=>compact('Noticia')));
+            else
+            {
+                $errores="Error al crear registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
         }
         else
         {
@@ -156,22 +167,137 @@ class EventosController extends \BaseController {
         if (sizeof($eventos_query) > 0)
         {
             $resultado = array();
+            $resultado["success"]="1";
+            $resultado["result"]=array();
+
             foreach ($eventos_query as $eventos_q)
             {
                 $aux = array();
                 $aux["id"] = $eventos_q["id"];
                 $aux["title"] = $eventos_q["nombre"];
-                $aux["url"] = $eventos_q["lugar"];
-                //$aux["class"] = $eventos_q["link"];
-                $aux["start"] = $eventos_q["fecha_inicio"];
-                $aux["end"] = $eventos_q["fecha_fin"];
+                //$aux["url"] = $eventos_q["lugar"];
+                $aux["class"] = "event-important";
+                $aux["start"] = strtotime($eventos_q["fecha_inicio"])."000";
+                $aux["end"] = strtotime($eventos_q["fecha_fin"])."000";
 
-                array_push($resultado, $aux);
+                array_push($resultado["result"], $aux);
             }
             return json_encode($resultado);
         } else {
             $errores = "Error al obtener registro";
             return View::make('ws.json_errores', array("errores" => compact('errores')));
+        }
+    }
+
+    /**
+     * @param $app
+     * @param $id_noticia
+     * @param Vista web de las noticas segun metodo
+     */
+    public function web($app,$id_evento,$metodo)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $eventos_query = Eventos::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND id=?',array($id_sistema,$id_evento))->get();
+            if(sizeof($eventos_query)>0)
+            {
+                if($metodo=="web")
+                {
+                    $datos=$eventos_query[0];
+                    return View::make('sitio.master.evento_web', array("resultado"=>compact('datos')));
+                }
+                else
+                {
+                    return $eventos_query[0]["html"];
+                }
+            }
+            else
+            {
+                $errores="Error al obtener registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+    }
+
+
+    /*
+     * Devuelve todos los eventos
+     */
+    public function apieventos($app)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $eventos_query = Eventos::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            if (sizeof($eventos_query) > 0) {
+                $resultado = array();
+
+                foreach ($eventos_query as $eventos_q) {
+                    $aux = array();
+                    $aux["id"] = $eventos_q["id"];
+                    $aux["nombre"] = $eventos_q["nombre"];
+                    $aux["lugar"] = $eventos_q["lugar"];
+                    $aux["fecha_inicio"] = $eventos_q["fecha_inicio"];
+                    $aux["fecha_fin"] = $eventos_q["fecha_fin"];
+                    $aux["descripcion"] = $eventos_q["descripcion"];
+                    $aux["link"] = $eventos_q["link"];
+                    $aux["imagen_aws"] = $eventos_q["imagen_aws"];
+                    array_push($resultado, $aux);
+                }
+                return View::make('ws.json', array("resultado"=>compact('resultado')));
+            } else {
+                $errores = "Error al obtener registro";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Error al obtener registro credencial invalida";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    /*
+     *  Devuelve los eventos a partir de la fecha indicada
+     */
+    public function apiporfecha($app,$fecha)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $eventos_query = Eventos::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=?', array($id_sistema))->get();
+            if (sizeof($eventos_query) > 0) {
+                $resultado = array();
+
+                foreach ($eventos_query as $eventos_q)
+                {
+                    if(strtotime($fecha)<=strtotime($eventos_q["fecha_inicio"])) {
+                        $aux = array();
+                        $aux["id"] = $eventos_q["id"];
+                        $aux["nombre"] = $eventos_q["nombre"];
+                        $aux["lugar"] = $eventos_q["lugar"];
+                        $aux["fecha_inicio"] = $eventos_q["fecha_inicio"];
+                        $aux["fecha_fin"] = $eventos_q["fecha_fin"];
+                        $aux["descripcion"] = $eventos_q["descripcion"];
+                        $aux["link"] = $eventos_q["link"];
+                        $aux["imagen_aws"] = $eventos_q["imagen_aws"];
+                        array_push($resultado, $aux);
+                    }
+                }
+                return View::make('ws.json', array("resultado"=>compact('resultado')));
+            } else {
+                $errores = "Error al obtener registro";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Error al obtener registro credencial invalida";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
     }
 }

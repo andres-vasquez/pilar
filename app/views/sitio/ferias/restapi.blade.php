@@ -32,10 +32,24 @@
                             <span class="glyphicon glyphicon-user"></span> Expositores</a></li>
                     <li><a href="#tab4" data-toggle="tab">
                             <span class="glyphicon glyphicon-globe"></span> Mapas</a></li>
+
                     @if (Session::get("nombre_sistema") === "feicobol")
-                    <li><a href="#tab5" data-toggle="tab">
-                            <span class="glyphicon glyphicon-thumbs-up"></span> Likes</a></li>
+                        <li><a href="#tab5" data-toggle="tab">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> Likes</a></li>
                         @endif
+
+                                <!-- Eventos -->
+                        @if (Session::get("nombre_sistema") !== "feicobol")
+                            <li><a href="#tab6" data-toggle="tab">
+                                    <span class="glyphicon glyphicon-calendar"></span> Eventos</a></li>
+                        @endif
+
+                        <!-- Ofertas -->
+                        @if (Session::get("nombre_sistema") !== "feicobol")
+                            <li><a href="#tab7" data-toggle="tab">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Ofertas</a></li>
+                        @endif
+
                 </ul>
 
                 <div class="tab-content">
@@ -207,7 +221,46 @@
                             </small>
 
                         </div>
-                    @endif
+                        @endif
+
+                                <!-- Eventos !Feicobol-->
+                        @if (!Session::get("nombre_sistema") !== "feicobol")
+                            <div class="tab-pane fade" id="tab6">
+                                <h3>Eventos</h3>
+
+                                <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
+
+                                <p>La API de eventos despliega información en formato JSON referente a los eventos de la feria</p>
+                                <br/>
+                                <h4>URL base</h4>
+                                <code>http://pilar.cloudapp.net/pilar/api/v1/eventos</code>
+
+                                <br/><br/>
+                                <h4>Obtener todos los eventos</h4>
+                                <code>http://pilar.cloudapp.net/pilar/api/v1/eventos/credencial</code>
+                                <br/>
+                                <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%>"
+                                              target="_blank">http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%></a>
+                                </small>
+                                <br/><br/>
+                                <h4>Obtener los eventos a partir de un día específico</h4>
+                                <code>http://pilar.cloudapp.net/pilar/api/v1/eventos/credencial/fecha</code>
+                                <br/><br/>
+                                <p>Fecha: (dd-MM-yyyy)<span class="text-success"><b>08-10-2015</b></span></p>
+
+                                <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%>/08-10-2015"
+                                              target="_blank">http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%>/08-10-2015</a>
+                                </small>
+                                <br/><br/><br/><br/>
+                            </div>
+                        @endif
+
+                                <!-- Ofertas !Feicobol-->
+                            @if (!Session::get("nombre_sistema") !== "feicobol")
+                                <div class="tab-pane fade" id="tab7">
+
+                                </div>
+                            @endif
                 </div>
             </div>
         </div>

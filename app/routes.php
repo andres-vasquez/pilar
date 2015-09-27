@@ -248,14 +248,19 @@ Route::post('/ws/evento/{id}', array('as' => 'show', 'uses' => 'EventosControlle
 Route::post('/ws/evento/eliminar/{id}', array('as' => 'show', 'uses' => 'EventosController@destroy'));
 Route::post('/ws/evento/subirimagen', array('as' => 'show', 'uses' => 'EventosController@subirImagenEvento'));
 
+//WS Notificaciones
+Route::get('/ws/notificaciones', array('as' => 'show', 'uses' => 'NotificacionesController@index'));
+Route::get('/ws/notificacion/{id}', array('as' => 'show', 'uses' => 'NotificacionesController@show'))->where(array('id' => '[0-9]+'));
+Route::post('/ws/notificacion', 'NotificacionesController@store');
+Route::post('/ws/notificacion/{id}', array('as' => 'show', 'uses' => 'NotificacionesController@update'))->where(array('id' => '[0-9]+'));
+Route::post('/ws/notificacion/eliminar/{id}', array('as' => 'show', 'uses' => 'NotificacionesController@destroy'));
 
 
-//TODO: Hacer ruta ferias dinamica
+
 Route::get('ferias/public/uploads/ferias/{archivo}', array('as' => 'show', 'uses' => 'PublicidadImagensController@mostrarImagen'));
 
 //WS Mapas
 Route::get('/ws/mapa', 'MapasController@index');
-//TODO: Mapas por sistemas
 Route::get('/ws/mapa/{id}', array('as' => 'show', 'uses' => 'MapasController@show'));
 Route::post('/ws/mapa', 'MapasController@store');
 Route::post('/ws/mapa/{id}', array('as' => 'show', 'uses' => 'MapasController@update'));
@@ -296,7 +301,7 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}/{cantidad}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamanoq'));
     });
 
-    //REST Api publicidad
+    //REST Api expositores
     Route::group(array('prefix' => '/expositores'), function () {
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'ExpositoresController@apitodas')); // Todas
         Route::get('/{sistema}/sinformato', array('as' => 'show', 'uses' => 'ExpositoresController@apitodassinformato')); // Todas
@@ -307,6 +312,13 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::post('/', 'LikesExpositoresController@store');
         Route::get('/{sistema}/reporte', array('as' => 'show', 'uses' => 'LikesExpositoresController@apitodas')); // Todas
         Route::get('/{sistema}/conteo', array('as' => 'show', 'uses' => 'LikesExpositoresController@apiconteo'));
+    });
+
+    //REST Api evento
+    Route::group(array('prefix' => '/eventos'), function () {
+        Route::get('/{sistema}', array('as' => 'show', 'uses' => 'EventosController@apieventos'));
+        Route::get('/{sistema}/{fecha}', array('as' => 'show', 'uses' => 'EventosController@apiporfecha'));
+        Route::get('/{sistema}/{id_evento}/{metodo}', array('as' => 'show', 'uses' => 'EventosController@web'))->where(array('id_evento' => '[0-9]+', 'metodo' => '[a-z]+'));;
     });
 
     //MAPA Api
