@@ -208,7 +208,7 @@ class ExpositoresController extends \BaseController
                 $expositores = array();
                 foreach ($expositores_query as $expositor) {
                     $aux = array();
-                    $aux["id"] = $expositor["id_csv"];
+                    $aux["id"] = $expositor["id"];
                     $aux["id_csv"] = $expositor["id_csv"];
                     $aux["nombre"] = $expositor["nombre"];
                     $aux["direccion"] = $expositor["direccion"];
