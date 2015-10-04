@@ -22,14 +22,16 @@
         </div>
     </div>
 </nav>-->
-<div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
+<div class="col-sm-12 col-lg-12 col-md-12 main">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-sm-12 col-lg-12 col-md-12">
+            <img class="img-responsive" src="<% $resultado["datos"]["url_imagen"]%>" style="padding: 15px"/>
+        </div>
+        <div class="col-sm-10 col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
             <ol class="breadcrumb">
                 <h2><% $resultado["datos"]["titular"]%></h2>
             </ol>
             <br/>
-            <img class="img-responsive" src="<% $resultado["datos"]["url_imagen"]%>" style="padding: 15px"/>
             <br/><br/>
             <% $resultado["datos"]["html"]; %>
             <br/>
