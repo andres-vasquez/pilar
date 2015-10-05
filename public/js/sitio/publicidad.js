@@ -69,7 +69,7 @@ $(document).ready(function ()
                             var ruta = result.resultado.carga.ruta;
                             var imagen = result.resultado.carga.id;
                             console.log("URI imagen:" + imagen);
-                            $("#" + imagen + "_editar").attr("src", ruta);
+                            $("#" + imagen + "_editar").attr("src", "../"+ruta);
                         }
                     },
                     error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -94,7 +94,7 @@ $(document).ready(function ()
                             var ruta = result.resultado.carga.ruta;
                             var imagen = result.resultado.carga.id;
                             console.log("URI imagen:" + imagen);
-                            $("#" + imagen+"_editar").attr("src", ruta);
+                            $("#" + imagen+"_editar").attr("src", "../"+ruta);
                         }
                     },
                     error: function (XMLHttpRequest, textStatus, errorThrown) {
