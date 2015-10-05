@@ -312,13 +312,11 @@
 
                     </div>
 
-                    <!--
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
-                    </div>
-                    -->
-
                     <!--<div class="col-sm-10 col-sm-offset-1">
+                        <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
+                    </div>-->
+
+                    <div class="col-sm-10 col-sm-offset-1">
                         <!--
                             1x con 320x180
                             2x con 640x360
@@ -328,8 +326,7 @@
                         <!-- Slider -->
 
                         <div class="row">
-                            <!--
-                            <div class="col-sm-6 slider" style="padding: 20px">
+                            <!--<div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">320 x 180</h5>
                                 <img id="ios_320x180" src="http://placehold.it/320x180&text=publicidad"
                                      class="img-responsive center-block"/>
@@ -364,8 +361,7 @@
                                     </div>
                                 </form>
 
-                            </div>
-                            -->
+                            </div>-->
                         </div>
 
                         <div class="row">
@@ -736,9 +732,7 @@
 
                                         <!-- Slider -->
 
-                                        <!--
-
-                                        <div class="col-sm-6 slider" style="padding: 20px">
+                                        <!--<div class="col-sm-6 slider" style="padding: 20px">
                                             <h5 class="text-center">320 x 180</h5>
                                             <img id="ios_320x180_editar" src="http://placehold.it/320x180&text=publicidad"
                                                  class="img-responsive center-block"/>
@@ -779,8 +773,7 @@
                                                 </div>
                                             </form>
 
-                                        </div>
-                                        -->
+                                        </div>-->
 
                                         <!-- Banner -->
 
@@ -791,8 +784,8 @@
                                     <div class="row">
 
                                         <!-- Slider-->
-                                        <!--
-                                        <div class="col-sm-6 col-sm-offset-3 slider" style="padding: 20px">
+
+                                        <!--<div class="col-sm-6 col-sm-offset-3 slider" style="padding: 20px">
                                             <h5 class="text-center">960 x 540</h5>
                                             <img id="ios_960x540_editar" src="http://placehold.it/320x180&text=publicidad"
                                                  class="img-responsive center-block"/>
@@ -811,8 +804,7 @@
                                                     </button>
                                                 </div>
                                             </form>
-                                        </div>
-                                        -->
+                                        </div>-->
 
                                         <!-- Banner-->
 

@@ -22,6 +22,7 @@
         </div>
     </div>
 </nav>-->
+<img class="img-responsive" src="<% $resultado["datos"]["imagen_aws"]%>" style="width: 100%"/>
 <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
     <div class="row">
         <div class="col-lg-12">
@@ -29,7 +30,6 @@
                 <h2><% $resultado["datos"]["nombre"]%></h2>
             </ol>
             <br/>
-            <img class="img-responsive" src="<% $resultado["datos"]["imagen_aws"]%>" style="padding: 15px"/>
             <br/><br/>
             <% $resultado["datos"]["html"]; %>
             <br/>
