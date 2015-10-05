@@ -25,7 +25,7 @@
 <div class="col-sm-12 col-lg-12 col-md-12 main">
     <div class="row">
         <div class="col-sm-12 col-lg-12 col-md-12">
-            <img class="img-responsive" src="<% $resultado["datos"]["url_imagen"]%>" style="padding: 15px"/>
+            <img class="img-responsive" src="<% $resultado["datos"]["url_imagen"]%>" style="width: 100%"/>
         </div>
         <div class="col-sm-10 col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
             <ol class="breadcrumb">

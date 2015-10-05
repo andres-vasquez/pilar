@@ -9,7 +9,7 @@ class PublicidadImagensController extends \BaseController {
 	 */
 	public function index()
 	{
-		$publicidadimagens = Publicidadimagen::all();
+		$publicidadimagens = PublicidadImagen::all();
 
 		return View::make('ws.json', array("resultado"=>compact('publicidadimagens')));
 	}
@@ -42,14 +42,14 @@ class PublicidadImagensController extends \BaseController {
             ));
             $data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
 
-            $validator = Validator::make($data, Publicidadimagen::$rules);
+            $validator = Validator::make($data, PublicidadImagen::$rules);
             if ($validator->fails())
             {
                 $errores=$validator->messages()->first();
                 return View::make('ws.json_errores', array("errores"=>compact('errores')));
             }
 
-            if(Publicidadimagen::create($data))
+            if(PublicidadImagen::create($data))
             {
                 $carga=array();
                 $carga["ruta"]=$data["ruta"];
@@ -78,7 +78,7 @@ class PublicidadImagensController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$publicidadimagen = Publicidadimagen::findOrFail($id);
+		$publicidadimagen = PublicidadImagen::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('publicidadimagen')));
 	}
 
@@ -99,7 +99,7 @@ class PublicidadImagensController extends \BaseController {
         $upload=$imagen->move('public/uploads/'.$sistemas[0]["nombre"].'/',$nombre_imagen);
         if($upload)
         {
-            $publicidadimagen = Publicidadimagen::findOrFail($id);
+            $publicidadimagen = PublicidadImagen::findOrFail($id);
             $data = Input::all();
             $data["ruta"]='public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             $data["aud_usuario_mod_id"]=Session::get('id_usuario');
