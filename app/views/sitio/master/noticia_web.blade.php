@@ -14,7 +14,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="padding-top: 0px">
 <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
