@@ -45,7 +45,14 @@
                     <div class="col-md-5 form-group">
                         <label>Expositor</label>
                         <input type="hidden" name="expositor" id="hdnExpositor"/>
-                        <select id="cmbExpositor" name="expositor_id" class="form-control" required></select>
+                        <select id="cmbExpositor" name="expositor_id" class="form-control"></select>
+                    </div>
+
+                    <div class="col-md-5 form-group">
+                        <label class="checkbox-inline no_indent">
+                            <input type="checkbox" id="chkNoExpositor"> No es expositor
+                        </label>
+                        <input type="text" id="txtNombreEmpresa" name="empresa" class="form-control disabled" disabled/>
                     </div>
 
                     <div class="col-md-10">

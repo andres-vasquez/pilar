@@ -62,12 +62,28 @@ $(document).ready(function () {
 
 
     $("#cmbRubro").change(function(event){
+        $("#cmbExpositor").html("");
         $("#hdnRubro").val($("#cmbRubro option:selected").text());
         llenarExpositores($(this).val());
     });
 
     $("#cmbExpositor").change(function(event){
         $("#hdnExpositor").val($("#cmbExpositor option:selected").text());
+    });
+
+    $("#chkNoExpositor").click(function(event){
+        if($("#chkNoExpositor").is(':checked'))
+        {
+            $("#cmbExpositor").html("").attr("disabled","true").addClass("disabled");
+            $("#txtNombreEmpresa").removeAttr("disabled").removeClass("disabled");
+        }
+        else
+        {
+            $("#cmbExpositor").removeAttr("disabled").removeClass("disabled");
+            $("#txtNombreEmpresa").attr("disabled","true").addClass("disabled");
+            $("#hdnRubro").val($("#cmbRubro option:selected").text());
+            llenarExpositores($(this).val());
+        }
     });
 
 

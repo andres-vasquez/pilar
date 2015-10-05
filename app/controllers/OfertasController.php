@@ -133,6 +133,7 @@ class OfertasController extends \BaseController {
                 $formato_ofertas["rubro"] =$oferta["rubro"];
                 $formato_ofertas["expositor_id"] =$oferta["expositor_id"];
                 $formato_ofertas["expositor"] =$oferta["expositor"];
+                $formato_ofertas["empresa"] =$oferta["empresa"];
                 $formato_ofertas["link"] =$oferta["link"];
                 $formato_ofertas["fecha"]= date('d-m-Y H:i:s', strtotime($oferta["created_at"]));
                 array_push($ofertas,$formato_ofertas);
@@ -211,7 +212,7 @@ class OfertasController extends \BaseController {
         if(sizeof($sistemas)>0)
         {
             $id_sistema = $sistemas[0]["id"];
-            $query = DB::connection('Pilar')->select("SELECT rubro_id, rubro, expositor_id, expositor, link  FROM Ofertas WHERE sistema_id=".$id_sistema." GROUP BY expositor_id ORDER BY expositor");
+            $query = DB::connection('Pilar')->select("SELECT rubro_id, rubro, expositor_id, expositor, link, empresa  FROM Ofertas WHERE sistema_id=".$id_sistema." GROUP BY expositor_id ORDER BY expositor");
             if (sizeof($query))
             {
                 $resultado=array();
@@ -219,6 +220,7 @@ class OfertasController extends \BaseController {
                     $datos = array();
                     $datos["id_expositor"] = $data->expositor_id;
                     $datos["expositor"] = $data->expositor;
+                    $datos["empresa"] = $data->empresa;
                     $datos["id_rubro"] = $data->rubro_id;
                     $datos["rubro"] = $data->rubro;
                     $datos["link"] = $data->link;
