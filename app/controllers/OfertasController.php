@@ -133,6 +133,13 @@ class OfertasController extends \BaseController {
                 $formato_ofertas["rubro"] =$oferta["rubro"];
                 $formato_ofertas["expositor_id"] =$oferta["expositor_id"];
                 $formato_ofertas["expositor"] =$oferta["expositor"];
+
+                if($oferta["expositor"]=="")
+                    $formato_ofertas["empresa"] =$oferta["empresa"];
+                else
+                    $formato_ofertas["empresa"] =$oferta["expositor"];
+
+
                 $formato_ofertas["empresa"] =$oferta["empresa"];
                 $formato_ofertas["link"] =$oferta["link"];
                 $formato_ofertas["fecha"]= date('d-m-Y H:i:s', strtotime($oferta["created_at"]));

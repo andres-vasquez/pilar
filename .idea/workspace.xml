@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventosController.php" afterPath="$PROJECT_DIR$/app/controllers/EventosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" afterPath="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/eventos.js" afterPath="$PROJECT_DIR$/public/js/sitio/eventos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/noticias.js" afterPath="$PROJECT_DIR$/public/js/sitio/noticias.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OfertasController.php" afterPath="$PROJECT_DIR$/app/controllers/OfertasController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/ofertas.js" afterPath="$PROJECT_DIR$/public/js/sitio/ofertas.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,66 +36,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.875" vertical-offset="1752" max-vertical-offset="5040">
-              <caret line="147" column="41" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="eventos.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6666665" vertical-offset="1754" max-vertical-offset="4005">
-              <caret line="126" column="71" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="71" />
+            <state vertical-scroll-proportion="-24.416666" vertical-offset="1754" max-vertical-offset="4005">
+              <caret line="156" column="22" selection-start-line="136" selection-start-column="15" selection-end-line="156" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ofertas.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38053098" vertical-offset="1467" max-vertical-offset="2145">
+              <caret line="115" column="47" selection-start-line="115" selection-start-column="47" selection-end-line="115" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ofertas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/sitio/ofertas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825">
+              <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OfertasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.5" vertical-offset="1737" max-vertical-offset="3840">
+              <caret line="139" column="67" selection-start-line="139" selection-start-column="67" selection-end-line="139" selection-end-column="67" />
               <folding>
-                <element signature="e#2643#2663#0#HTML" expanded="true" />
+                <marker date="1444342748000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..Ofertas..." />
+                <marker date="1444342748000" expanded="true" signature="6788:6938" placeholder="SELECT rubro..Ofertas..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventos.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eventos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/eventos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.508547" vertical-offset="3813" max-vertical-offset="7770">
-              <caret line="280" column="36" selection-start-line="280" selection-start-column="36" selection-end-line="280" selection-end-column="36" />
+            <state vertical-scroll-proportion="-7.7777777" vertical-offset="6870" max-vertical-offset="7770">
+              <caret line="474" column="24" selection-start-line="474" selection-start-column="24" selection-end-line="475" selection-end-column="65" />
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noticias.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.254902" vertical-offset="1328" max-vertical-offset="3225">
-              <caret line="103" column="3" selection-start-line="103" selection-start-column="3" selection-end-line="124" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noticias.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4350" max-vertical-offset="5655">
-              <caret line="297" column="41" selection-start-line="296" selection-start-column="12" selection-end-line="297" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="publicidad.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.444445" vertical-offset="6675" max-vertical-offset="8235">
-              <caret line="462" column="123" selection-start-line="462" selection-start-column="20" selection-end-line="462" selection-end-column="123" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,15 +141,15 @@
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Ofertas.php" />
-        <option value="$PROJECT_DIR$/app/controllers/OfertasController.php" />
-        <option value="$PROJECT_DIR$/public/js/sitio/ofertas.js" />
         <option value="$PROJECT_DIR$/public/js/sitio/noticias.js" />
         <option value="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" />
         <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/eventos.js" />
+        <option value="$PROJECT_DIR$/public/js/sitio/ofertas.js" />
+        <option value="$PROJECT_DIR$/app/controllers/OfertasController.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
       </list>
     </option>
   </component>
@@ -367,6 +355,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -467,12 +473,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Mapa fin ofuscado. Orden Publicidad 1.1">
-      <created>1429641136051</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1429641136051</updated>
     </task>
     <task id="LOCAL-00030" summary="Mapa fin ofuscado. Orden Publicidad 1.2">
       <created>1429658899912</created>
@@ -762,7 +762,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444078043629</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Eventos CRUD">
+      <created>1444339483087</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1444339483087</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -850,7 +856,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Reporte sms Web 1.4&#10;" />
     <MESSAGE value="Reporte sms Web 1.5&#10;" />
     <MESSAGE value="Reporte sms Web 1.6&#10;" />
     <MESSAGE value="Usuarios Bug... editar&#10;" />
@@ -875,7 +880,8 @@
     <MESSAGE value="Eventos y noticias sin margen  1.0" />
     <MESSAGE value="Eventos y noticias sin margen  1.1" />
     <MESSAGE value="Ofertas sin expositor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ofertas sin expositor" />
+    <MESSAGE value="Eventos CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eventos CRUD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1127,17 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.9557524" vertical-offset="0" max-vertical-offset="3735">
-          <caret line="224" column="51" selection-start-line="224" selection-start-column="51" selection-end-line="224" selection-end-column="51" />
-          <folding>
-            <marker date="1444078001000" expanded="true" signature="-1:-1" placeholder="SELECT rubro..Ofertas..." />
-            <marker date="1444078001000" expanded="true" signature="-1:-1" placeholder="SELECT rubro..Ofertas..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Ofertas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3539823" vertical-offset="0" max-vertical-offset="678">
@@ -1186,14 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.32743362" vertical-offset="1032" max-vertical-offset="1710">
-          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50884956" vertical-offset="0" max-vertical-offset="930">
@@ -1206,22 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.044247787" vertical-offset="0" max-vertical-offset="678">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.875" vertical-offset="1752" max-vertical-offset="5040">
-          <caret line="147" column="41" selection-start-line="147" selection-start-column="41" selection-end-line="147" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/ofertas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2880">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1250,23 +1221,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.75" vertical-offset="1482" max-vertical-offset="5040">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665" vertical-offset="1754" max-vertical-offset="4005">
-          <caret line="126" column="71" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="71" />
-          <folding>
-            <element signature="e#2643#2663#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-24.416666" vertical-offset="1754" max-vertical-offset="4005">
+          <caret line="156" column="22" selection-start-line="136" selection-start-column="15" selection-end-line="156" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/eventos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.508547" vertical-offset="3813" max-vertical-offset="7770">
-          <caret line="280" column="36" selection-start-line="280" selection-start-column="36" selection-end-line="280" selection-end-column="36" />
+        <state vertical-scroll-proportion="-7.7777777" vertical-offset="6870" max-vertical-offset="7770">
+          <caret line="474" column="24" selection-start-line="474" selection-start-column="24" selection-end-line="475" selection-end-column="65" />
           <folding>
             <element signature="e#0#47#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/ofertas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825">
+          <caret line="22" column="95" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.5" vertical-offset="1737" max-vertical-offset="3840">
+          <caret line="139" column="67" selection-start-line="139" selection-start-column="67" selection-end-line="139" selection-end-column="67" />
+          <folding>
+            <marker date="1444342748000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..Ofertas..." />
+            <marker date="1444342748000" expanded="true" signature="6788:6938" placeholder="SELECT rubro..Ofertas..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38053098" vertical-offset="1467" max-vertical-offset="2145">
+          <caret line="115" column="47" selection-start-line="115" selection-start-column="47" selection-end-line="115" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

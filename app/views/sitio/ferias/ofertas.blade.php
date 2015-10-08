@@ -71,6 +71,35 @@
             <% Form::close() %>
         </div>
     </div>
+
+    <div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Adjuntar imagen</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formImagen" enctype="multipart/form-data">
+                        <div class="form-group form-inline">
+                            <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                            <input type="file" name="imagen" id="imgImagen" class="form-control imagen" required/>
+                            <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 @stop
 @section('contenido2')
     <!-- Contenido aca-->
@@ -84,7 +113,7 @@
                     <thead>
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
-                        <th data-field="expositor" data-sortable="true">Empresa</th>
+                        <th data-field="empresa" data-sortable="true">Empresa</th>
                         <th data-field="rubro" data-sortable="true">Rubro</th>
                         <th data-field="fecha" data-sortable="true">Fecha de publicación</th>
                         <th data-field="link" data-sortable="true">Link</th>

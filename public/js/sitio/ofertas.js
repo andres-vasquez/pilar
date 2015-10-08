@@ -16,6 +16,15 @@ $(document).ready(function () {
             "color": false, //Button to change color of font
             "blockquote": false //Blockquote
         },
+        customTemplates: {
+            image: function(locale) {
+                return '<li>' +
+                    "<div class='btn-group'>" +
+                    "<a class='btn btn-default' data-toggle='modal' data-target='#imagenModal'  title='Imagen'><span class='glyphicon glyphicon-picture'></span></a>" +
+                    "</div>" +
+                    "</li>";
+            }
+        },
         locale: "es-ES"
     });
 
@@ -51,6 +60,60 @@ $(document).ready(function () {
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     $("#divNoticias").html("");
                     console.log(XMLHttpRequest + " " + textStatus);
+                }
+            });
+        }
+        else if(id=="formImagen")
+        {
+            var btnSubmit = $(this).find(':submit');
+            var htmlCargando='<i class="fa fa-spinner fa-spin"></i> Cargando';
+            var htmlCargado='<i class="fa fa-check"></i> Cargado';
+            var htmlError='<i class="fa fa-close"></i> Error';
+
+            var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+            var formData = new FormData($(this)[0]);
+
+            btnSubmit.html(htmlCargando);
+            btnSubmit.attr('disabled', 'disabled');
+
+            var url = "../ws/evento/subirimagen";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result)
+                {
+                    btnSubmit.removeAttr('disabled');
+                    result = JSON.parse(result);
+                    if (parseInt(result.intCodigo) == 1)
+                    {
+
+                        var data=result.resultado.data;
+                        var ruta=data.ruta_aws;
+
+                        $("#hdnRutaImagen").val(ruta);
+                        $("#imgImagen").val("");
+                        $("#imagenModal").modal("hide");
+
+                        var htmlAnterior=$('#htmlOferta').val();
+                        var wysihtml5Editor = $('#htmlOferta').data("wysihtml5").editor;
+                        wysihtml5Editor.setValue(htmlAnterior+'<br/><img width="100%" src="'+ruta+'"/>');
+
+                        btnSubmit.html("Cargar");
+                    }
+                    else
+                    {
+                        alert("Error al subir la imagen");
+                        btnSubmit.html(htmlError);
+                    }
+                    //console.log(JSON.stringify(result));
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    btnSubmit.removeAttr('disabled');
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    btnSubmit.html(htmlError);
                 }
             });
         }
