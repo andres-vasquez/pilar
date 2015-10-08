@@ -11,6 +11,9 @@ $.fn.datepicker.dates['es'] = {
 
 
 var rutaImagen="";
+var calendar;
+var editando=false;
+var id_editando=0;
 
 $(document).ready(function () {
 
@@ -111,10 +114,19 @@ $(document).ready(function () {
 
                     var data=result.resultado.data;
                     var ruta=data.ruta_aws;
-                    $("#hdnRutaImagen").val(ruta);
-                    $("#imgEvento").attr("src", ruta);
-                    rutaImagen=ruta;
 
+                    if(!editando)
+                    {
+                        $("#hdnRutaImagen").val(ruta);
+                        $("#imgEvento").attr("src", ruta);
+                    }
+                    else
+                    {
+                        $("#hdnRutaImagen_editar").val(ruta);
+                        $("#imgImagenEvento_editar").attr("src", ruta);
+                    }
+
+                    rutaImagen=ruta;
                     btnSubmit.html(htmlCargado);
                 }
                 else
@@ -139,8 +151,8 @@ $(document).ready(function () {
         event.preventDefault();
 
         var horaInicio = $("#cmbHoraInicio").val();
-        var horaFin = $("#cmbMinutoInicio").val();
-        var minInicio = $("#cmbHoraFin").val();
+        var horaFin = $("#cmbHoraFin").val();
+        var minInicio = $("#cmbMinutoInicio").val();
         var minFin = $("#cmbMinutoFin").val();
 
         var datos= {
@@ -152,7 +164,7 @@ $(document).ready(function () {
             "descripcion":$("#txtDescripcion").val(),
             "html":$("#htmlEvento").val()
         };
-        console.log(JSON.stringify(datos));
+        //console.log(JSON.stringify(datos));
 
         var url = "../ws/evento";
         $("#btnAgregar").attr('disabled', 'disabled');
@@ -171,6 +183,7 @@ $(document).ready(function () {
                     mensaje("ok");
                     window.location.href="#";
                     limpiarCampos();
+                    calendar.view();
                 }
                 else
                 {
@@ -184,6 +197,102 @@ $(document).ready(function () {
             }
         });
     });
+
+    ///Boton para editar el Evento
+    $("#btnEditarEvento").click(function(event){
+        event.preventDefault();
+
+        var horaInicio = $("#cmbHoraInicio_editar").val();
+        var horaFin = $("#cmbHoraFin_editar").val();
+        var minInicio = $("#cmbMinutoInicio_editar").val();
+        var minFin = $("#cmbMinutoFin_editar").val();
+
+        var datos= {
+            "nombre":$("#txtNombre_editar").val(),
+            "lugar":$("#txtLugar_editar").val(),
+            "imagen_aws":$("#hdnRutaImagen_editar").val(),
+            "fecha_inicio":$("#txtFechaInicio_editar").val()+" "+horaInicio+":"+minInicio+":00",
+            "fecha_fin":$("#txtFechaFin_editar").val()+" "+horaFin+":"+minFin+":00",
+            "descripcion":$("#txtDescripcion_editar").val(),
+            "html":$("#htmlEvento_editar").val()
+        };
+        //console.log(JSON.stringify(datos));
+
+        var url = "../ws/evento/"+id_editando;
+        $("#btnEditarEvento").attr('disabled', 'disabled');
+        $.ajax({
+            type: "POST",
+            url: url,
+            data:  JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                $("#btnEditarEvento").removeAttr('disabled');
+                if(parseInt(result.intCodigo)==1)
+                {
+                    mensaje("editada");
+                    window.location.href="#";
+                    limpiarCamposEditar();
+                    calendar.view();
+                    $("#events-modal").modal("hide");
+                }
+                else
+                {
+                    mensaje(result.resultado.errores);
+                    window.location.href="#";
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+                $("#btnEditarEvento").removeAttr('disabled');
+            }
+        });
+    });
+
+    $("#btnMostrarModalEliminar").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $("#eliminarModal").modal("show");
+    });
+
+    //Eliminar Evento
+    $("#btnEliminarEvento").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        var url = "../ws/evento/eliminar/"+id_editando;
+
+        $("#btnEliminarEvento").attr("disabled","disabled");
+        $.ajax({
+            type: "POST",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                $("#btnEliminarEvento").removeAttr('disabled');
+                if(parseInt(result.intCodigo)==1)
+                {
+                    mensaje("eliminada");
+                    window.location.href="#";
+                    calendar.view();
+                    $("#eliminarModal").modal("hide");
+                    $("#events-modal").modal("hide");
+                }
+                else
+                {
+                    mensaje(result.resultado.errores);
+                    window.location.href="#";
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+                $("#btnEliminarEvento").removeAttr('disabled');
+            }
+        });
+    });
+
 
     mensaje=function(tipo) {
         $("#mensaje").html('');
@@ -252,11 +361,25 @@ $(document).ready(function () {
         llenarHorasMinutos();
     };
 
+    limpiarCamposEditar=function()
+    {
+        $("#txtTitular_editar").val("");
+        $("txtLugar_editar").val("");
+        $("#hdnRutaImagen_editar").val("");
+        $("#txtFechaInicio_editar").val();
+        $("#txtFechaFin_editar").val("");
+        $("#txtDescripcion_editar").val("");
+        $("#htmlNoticia_editar").val("");
+        llenarHorasMinutos();
+    };
+
     llenarHorasMinutos();
 
     $("#btnAgregarModal").click(function(event){
         event.preventDefault();
         event.stopPropagation();
+        editando=false;
+        id_editando=0;
         $("#agregar-modal").modal("show");
     });
 });
@@ -311,6 +434,7 @@ $(document).ready(function () {
         modal_title : function (e)
         {
             var objEvento=e;
+            id_editando=objEvento.id;
             var url='../ws/evento/'+objEvento.id;
             $.ajax({
                 type: "GET",
@@ -319,23 +443,43 @@ $(document).ready(function () {
                 dataType: "json",
                 success: function(result)
                 {
-                    /*if(parseInt(result.intCodigo)==1)
+                    console.log(JSON.stringify(result));
+                    if(parseInt(result.intCodigo)==1)
                     {
-                        //imgImagenEvento_editar;
-                        mensaje("ok");
-                        $("#btnEnviar").removeAttr('disabled');
-                        $("#collapseNoticia").trigger("click");
-                        window.location.href="#";
-                        llenarNoticias(1,noticiasPorPagina);
-                        limpiarCampos();
+                        var objEvento=result.resultado.evento;
+                        //$("#txtTituloDetalleEvento").html(objEvento.nombre);
+                        $("#imgImagenEvento_editar").attr("src",objEvento.imagen_aws);
+                        $("#txtNombre_editar").val(objEvento.nombre);
+                        $("#hdnRutaImagen_editar").val(objEvento.imagen_aws);
+                        $("#txtLugar_editar").val(objEvento.lugar);
+
+                        editando=true;
+
+                        var arr_fecha_inicio=objEvento.fecha_inicio.split(" ");
+                        var arr_fecha_fin=objEvento.fecha_fin.split(" ");
+
+                        $("#txtFechaInicio_editar").val(arr_fecha_inicio[0]);
+                        $("#txtFechaFin_editar").val(arr_fecha_fin[0]);
+
+                        var arr_hora_inicio=arr_fecha_inicio[1].split(":");
+                        var arr_hora_fin=arr_fecha_fin[1].split(":");
+
+                        $('#cmbHoraInicio_editar option[value="' + arr_hora_inicio[0] + '"]').attr("selected", "selected");
+                        $('#cmbMinutoInicio_editar option[value="' + arr_hora_inicio[1] + '"]').attr("selected", "selected");
+
+                        $('#cmbHoraFin_editar option[value="' + arr_hora_fin[0] + '"]').attr("selected", "selected");
+                        $('#cmbMinutoFin_editar option[value="' + arr_hora_fin[1] + '"]').attr("selected", "selected");
+
+                        $("#txtDescripcion_editar").val(objEvento.descripcion);
+
+                        var wysihtml5Editor = $('#htmlEvento_editar').data("wysihtml5").editor;
+                        wysihtml5Editor.setValue(objEvento.html);
+
                     }
                     else
                     {
-                        mensaje(result.resultado.errores);
-                        window.location.href="#";
-                        $("#btnEnviar").removeAttr('disabled');
+                        alert("Error al cargar evento");
                     }
-                    $("#imgNoticia").attr("src",urlBase);*/
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     console.log(XMLHttpRequest + " "+textStatus);
@@ -345,7 +489,7 @@ $(document).ready(function () {
         }
     };
 
-    var calendar = $('#calendario').calendar(options);
+    calendar = $('#calendario').calendar(options);
     calendar.setOptions({display_week_numbers: false});
     calendar.setOptions({weekbox: false});
     calendar.setLanguage('es-ES');

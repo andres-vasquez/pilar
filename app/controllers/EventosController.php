@@ -132,12 +132,20 @@ class EventosController extends \BaseController {
             $data["aud_usuario_id"]=Session::get('id_usuario');
 
             $s3 = AWS::get('s3');
-            $s3->putObject(array(
+            /* Mi cuenta de S3
+             * $s3->putObject(array(
                 'Bucket'     => $sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
                 'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
+            ));*/
+            $s3->putObject(array(
+                'Bucket'     => "sirius".$sistemas[0]["nombre"],
+                'Key'        => $nombre_imagen,
+                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
             ));
-            $data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+
+            //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen; MIO
+            $data["ruta_aws"]='https://s3.amazonaws.com/sirius'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             return View::make('ws.json', array("resultado"=>compact('data')));
         }
         else
@@ -258,6 +266,9 @@ class EventosController extends \BaseController {
                     $aux["descripcion"] = $eventos_q["descripcion"];
                     $aux["link"] = $eventos_q["link"];
                     $aux["imagen_aws"] = $eventos_q["imagen_aws"];
+
+                    $aux["fecha"] = date('d-m-Y',strtotime($eventos_q["fecha_inicio"]));
+                    $aux["hora_inicio"] = date('H:i',strtotime($eventos_q["fecha_inicio"]));
                     array_push($resultado, $aux);
                 }
                 return View::make('ws.json', array("resultado"=>compact('resultado')));
@@ -298,6 +309,9 @@ class EventosController extends \BaseController {
                         $aux["descripcion"] = $eventos_q["descripcion"];
                         $aux["link"] = $eventos_q["link"];
                         $aux["imagen_aws"] = $eventos_q["imagen_aws"];
+
+                        $aux["fecha"] = date('d-m-Y',strtotime($eventos_q["fecha_inicio"]));
+                        $aux["hora_inicio"] = date('H:i',strtotime($eventos_q["fecha_inicio"]));
                         array_push($resultado, $aux);
                     }
                 }

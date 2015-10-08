@@ -71,9 +71,9 @@
                                             <input type="text" id="txtNombre_editar" class="form-control" required/>
                                         </div>
 
-                                        <form id="formEdicion" enctype="multipart/form-data" style="display:none">
+                                        <form id="formEdicion" enctype="multipart/form-data">
                                             <div class="form-group form-inline">
-                                                <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                                                <input type="hidden" name="ruta" id="hdnRutaImagen_editar" class="form-control"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -124,12 +124,38 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
+                                <a href="#" id="btnMostrarModalEliminar" class="btn btn-danger">Eliminar</a>
                                 <a href="#" id="btnEditarEvento" class="btn btn-info">Editar</a>
                                 <a href="#" data-dismiss="modal" class="btn">Cerrar</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <!-- Modal eliminar -->
+                <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Eliminar evento</h4>
+                            </div>
+                            <div class="modal-body">
+                                Está seguro de eliminar el evento seleccionado?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarEvento">Si,
+                                    eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="modal fade" id="agregar-modal">
                     <div class="modal-dialog modal-lg">
