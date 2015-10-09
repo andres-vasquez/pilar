@@ -321,7 +321,7 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}/{id_oferta}/{metodo}', array('as' => 'show', 'uses' => 'OfertasController@web'))->where(array('id_oferta' => '[0-9]+', 'metodo' => '[a-z]+'));
 
         Route::get('/{sistema}/rubros', array('as' => 'show', 'uses' => 'OfertasController@rubrosconoferta'));
-        Route::get('/{sistema}/rubros/{id_rubro}', array('as' => 'show', 'uses' => 'OfertasController@expositoresporrubro'))->where(array('id_rubro' => '[0-9]+'));
+        Route::get('/{sistema}/rubro/{id_rubro}', array('as' => 'show', 'uses' => 'OfertasController@expositoresporrubro'))->where(array('id_rubro' => '[0-9]+'));
     });
 
     //REST Api likes
