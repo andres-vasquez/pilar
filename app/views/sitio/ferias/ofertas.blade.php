@@ -57,7 +57,7 @@
 
                     <div class="col-md-10">
                         <label>Descripción ofertas</label>
-                        <textarea id="htmlOferta" name="html" class="form-control" required></textarea>
+                        <textarea id="htmlOferta" name="html" class="form-control" style="height:400px" required></textarea>
                     </div>
                 </div>
             </div>
