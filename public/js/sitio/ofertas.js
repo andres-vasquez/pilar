@@ -1,11 +1,12 @@
 /**
  * Created by andresvasquez on 3/18/15.
  */
+var editando=false;
+var idEditando=0;
+
 $(document).ready(function () {
     var idInsertada = 0;
     var lstRubros;
-    var editando=false;
-    var idEditando=0;
 
     $('#htmlOferta,#htmlOferta_editar').wysihtml5({
         toolbar: {
@@ -369,6 +370,8 @@ window.operateEvents = {
         editando=true;
 
         $('#editarModal').modal('show');
+        $("#imagenModal").css("z-index", "1500");
+
         var url = "../ws/oferta/" + id;
         $.ajax({
             type: "GET",
