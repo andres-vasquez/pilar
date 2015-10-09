@@ -72,6 +72,7 @@
         </div>
     </div>
 
+    <!-- Modal de imagen -->
     <div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
         <div class="modal-dialog">
@@ -98,7 +99,77 @@
         </div>
     </div>
 
+    <!-- Modal eliminar -->
+    <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Eliminar oferta</h4>
+                </div>
+                <div class="modal-body">
+                    Está seguro de eliminar la oferta seleccionada?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarOferta">Si,
+                        eliminar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal Editar -->
+    <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <form method="POST" action="http://localhost:8888/pilar/ws/ofertas" accept-charset="UTF-8" id="formEditarOferta" class=""><input name="_token" type="hidden" value="c2fJc8w7hizABDFbxBHhXmYYhEVFy3yoljBMLybn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Editar oferta</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-md-5 form-group">
+                                <label>Rubro</label>
+                                <input type="hidden" name="rubro" id="hdnRubro_editar"/>
+                                <select id="cmbRubro_editar" name="rubro_id" class="form-control" required></select>
+                            </div>
+                            <div class="col-md-5 form-group">
+                                <label>Expositor</label>
+                                <input type="hidden" name="expositor" id="hdnExpositor_editar"/>
+                                <select id="cmbExpositor_editar" name="expositor_id" class="form-control"></select>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <label class="checkbox-inline no_indent">
+                                    <input type="checkbox" id="chkNoExpositor_editar"> No es expositor
+                                </label>
+                                <input type="text" id="txtNombreEmpresa_editar" name="empresa" class="form-control disabled" disabled/>
+                            </div>
+
+                            <div class="col-md-10">
+                                <label>Descripción ofertas</label>
+                                <textarea id="htmlOferta_editar" name="html" class="form-control" style="height:400px" required></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="btnGuardarEditar">Guardar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
 @stop
 @section('contenido2')

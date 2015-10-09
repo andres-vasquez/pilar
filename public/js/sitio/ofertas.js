@@ -4,8 +4,10 @@
 $(document).ready(function () {
     var idInsertada = 0;
     var lstRubros;
+    var editando=false;
+    var idEditando=0;
 
-    $('#htmlOferta').wysihtml5({
+    $('#htmlOferta,#htmlOferta_editar').wysihtml5({
         toolbar: {
             "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
             "emphasis": true, //Italics, bold, etc. Default true
@@ -93,14 +95,23 @@ $(document).ready(function () {
                         var data=result.resultado.data;
                         var ruta=data.ruta_aws;
 
-                        $("#hdnRutaImagen").val(ruta);
+                        if(!editando)
+                        {
+                            $("#hdnRutaImagen").val(ruta);
+                            var htmlAnterior=$('#htmlOferta').val();
+                            var wysihtml5Editor = $('#htmlOferta').data("wysihtml5").editor;
+                            wysihtml5Editor.setValue(htmlAnterior+'<br/><img width="100%" src="'+ruta+'"/>');
+                        }
+                        else
+                        {
+                            $("#hdnRutaImagen_editar").val(ruta);
+                            var htmlAnterior=$('#htmlOferta_editar').val();
+                            var wysihtml5Editor = $('#htmlOferta_editar').data("wysihtml5").editor;
+                            wysihtml5Editor.setValue(htmlAnterior+'<br/><img width="100%" src="'+ruta+'"/>');
+                        }
+
                         $("#imgImagen").val("");
                         $("#imagenModal").modal("hide");
-
-                        var htmlAnterior=$('#htmlOferta').val();
-                        var wysihtml5Editor = $('#htmlOferta').data("wysihtml5").editor;
-                        wysihtml5Editor.setValue(htmlAnterior+'<br/><img width="100%" src="'+ruta+'"/>');
-
                         btnSubmit.html("Cargar");
                     }
                     else
@@ -116,10 +127,6 @@ $(document).ready(function () {
                     btnSubmit.html(htmlError);
                 }
             });
-        }
-        else //Editar
-        {
-
         }
     });
 
@@ -148,6 +155,39 @@ $(document).ready(function () {
             llenarExpositores($(this).val());
         }
     });
+
+    $("#divNuevaOferta").click(function(event){
+        editando=false;
+        idEditando=0;
+    });
+
+    //Para la edicion
+    $("#cmbRubro_editar").change(function(event){
+        $("#cmbExpositor_editar").html("");
+        $("#hdnRubro_editar").val($("#cmbRubro_editar option:selected").text());
+        llenarExpositores($(this).val());
+    });
+
+    $("#cmbExpositor_editar").change(function(event){
+        $("#hdnExpositor_editar").val($("#cmbExpositor option:selected").text());
+    });
+
+    $("#chkNoExpositor_editar").click(function(event){
+        if($("#chkNoExpositor_editar").is(':checked'))
+        {
+            $("#cmbExpositor_editar").html("").attr("disabled","true").addClass("disabled");
+            $("#txtNombreEmpresa_editar").removeAttr("disabled").removeClass("disabled");
+        }
+        else
+        {
+            $("#cmbExpositor_editar").removeAttr("disabled").removeClass("disabled");
+            $("#txtNombreEmpresa_editar").attr("disabled","true").addClass("disabled");
+            $("#hdnRubro_editar").val($("#cmbRubro option:selected").text());
+            llenarExpositores($(this).val());
+        }
+    });
+
+
 
 
     mensaje = function (tipo) {
@@ -216,6 +256,38 @@ $(document).ready(function () {
         });
     };
 
+    llenarCatalogosCallback = function(agrupador,cmbId,rubro_id)
+    {
+        var credencial=$("#credencial").val();
+        var html='<option value="0"></option>';
+        var url="../api/v1/catalogos/"+credencial+"/"+agrupador;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1)
+                {
+                    var arrCatalogos=result.resultado.catalogos;
+                    if(agrupador=="rubros_fipaz")
+                        lstRubros=result.resultado.catalogos;
+
+                    for(var i=0;i<arrCatalogos.length;i++)
+                        html+='<option value="'+arrCatalogos[i].value+'">'+arrCatalogos[i].label+'</option>';
+                    $("#"+cmbId).html(html);
+
+                    $('#cmbRubro_editar option[value="' + rubro_id + '"]').attr("selected", "selected");
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+            }
+        });
+    };
+
+
     llenarExpositores = function(rubroId)
     {
         var credencial=$("#credencial").val();
@@ -242,8 +314,172 @@ $(document).ready(function () {
         });
     };
 
+
+    llenarExpositoresCallback = function(rubroId,expositor_id)
+    {
+        var credencial=$("#credencial").val();
+        var html='<option value="0"></option>';
+        var url="../api/v1/expositores/"+credencial+"/rubro/"+rubroId;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1)
+                {
+                    var arrExpositores=result.resultado.expositores;
+                    for(var i=0;i<arrExpositores.length;i++)
+                        html+='<option value="'+arrExpositores[i].id+'">'+arrExpositores[i].nombre+'</option>';
+                    $("#cmbExpositor").html(html);
+
+                    $('#cmbExpositor_editar option[value="' + expositor_id + '"]').attr("selected", "selected");
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+            }
+        });
+    };
+
     //FIPAZ
     if($("#nombre_sistema").val()=="fipaz"){
         llenarCatalogos("fipaz_rubros","cmbRubro");
     }
 });
+
+
+//Otro scope
+function operateFormatter(value, row, index) {
+    return [
+        '<a class="edit ml10" href="javascript:void(0)" title="Editar">',
+        '<i class="glyphicon glyphicon-pencil"></i>',
+        '</a> ',
+        '<a class="remove ml10" href="javascript:void(0)" title="Eliminar">',
+        '<i class="glyphicon glyphicon-remove"></i>',
+        '</a>'
+    ].join('');
+}
+
+window.operateEvents = {
+    'click .edit': function (e, value, row, index) {
+        var id = row.id;
+        idEditando = id;
+        editando=true;
+
+        $('#editarModal').modal('show');
+        var url = "../ws/oferta/" + id;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    var objOferta = result.resultado.oferta;
+                    llenarCatalogosCallback("fipaz_rubros","cmbRubro_editar",objOferta.rubro_id);
+                    $("#hdnRubro_editar").val(objOferta.rubro_id);
+
+                    if(objOferta.empresa=="")
+                    {
+                        $("#chkNoExpositor_editar").removeAttr("checked");
+                        $("#cmbExpositor_editar").removeAttr("disabled").removeClass("disabled");
+                        $("#txtNombreEmpresa_editar").attr("disabled","true").addClass("disabled");
+
+                        $("#hdnRubro_editar").val($("#cmbRubro_editar option:selected").text());
+                        llenarExpositoresCallback($("#cmbRubro_editar").val(),objOferta.expositor_id);
+                        $("#hdnExpositor_editar").val(objOferta.expositor_id);
+                    }
+                    else
+                    {
+                        $("#chkNoExpositor_editar").removeAttr("checked");
+                        $("#cmbExpositor_editar").attr("disabled","true").addClass("disabled");
+                        $("#txtNombreEmpresa_editar").removeAttr("disabled","true").removeClass("disabled");
+                        $("#txtNombreEmpresa_editar").val(objOferta.empresa);
+                    }
+
+                    var wysihtml5Editor = $('#htmlOferta_editar').data("wysihtml5").editor;
+                    wysihtml5Editor.setValue(objOferta.html);
+
+                    $("#btnGuardarEditar").click(function (event) {
+                        event.preventDefault();
+                        var url = "../ws/oferta/"+idEditando;
+                        var datos={
+                            "rubro":$("#hdnRubro_editar").val(),
+                            "rubro_id":$("#cmbRubro_editar").val(),
+                            "expositor":$("#hdnExpositor_editar").val(),
+                            "expositor_id":$("#cmbExpositor_editar").val(),
+                            "empresa":$("#txtNombreEmpresa_editar").val(),
+                            "html":$("#htmlOferta_editar").val()
+                        };
+
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data:  JSON.stringify(datos),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (result)
+                            {
+                                if (parseInt(result.intCodigo) == 1)
+                                {
+                                    mensaje("editada");
+                                    $("#editarModal").modal("hide");
+                                    $table = $('#tblOfertas').bootstrapTable('refresh', {
+                                        url: '../api/v1/ofertas/'+$("#credencial").val()+'/sinformato'
+                                    });
+                                }
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                console.log(XMLHttpRequest + " " + textStatus);
+                            }
+                        });
+                    });
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $('#eliminarModal').modal('hide');
+                $("#btnEliminarPublicidad").removeAttr('disabled');
+                console.log(XMLHttpRequest + " " + textStatus);
+                $('#editarModal').modal('hide');
+            }
+        });
+
+    },
+    'click .remove': function (e, value, row, index)
+    {
+        var id = row.id;
+        $('#eliminarModal').modal('show');
+        $("#btnEliminarOferta").click(function () {
+            $("#btnEliminarOferta").attr('disabled', 'disabled');
+            var url = "../ws/oferta/eliminar/" + id;
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    $('#eliminarModal').modal('hide');
+                    $("#btnEliminarOferta").removeAttr('disabled');
+                    if (parseInt(result.intCodigo) == 1) {
+                        mensaje("eliminada");
+                        $table = $('#tblOfertas').bootstrapTable('refresh', {
+                            url: '../api/v1/ofertas/' + $("#credencial").val() + '/sinformato'
+                        });
+                    }
+                    else {
+                        mensaje(result.resultado.errores);
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    $('#eliminarModal').modal('hide');
+                    $("#btnEliminarOferta").removeAttr('disabled');
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    mensaje("error");
+                }
+            });
+        });
+    }
+};
