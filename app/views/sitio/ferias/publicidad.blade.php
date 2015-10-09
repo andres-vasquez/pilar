@@ -140,10 +140,10 @@
 
                     <div class="col-sm-10 col-sm-offset-1">
                         <!--
-                            240x48
-                            320x71
-                            720x144
-                            1440x288
+                            240x80
+                            320x107
+                            720x1240
+                            1440x480
                         -->
 
                         <div class="row">
@@ -151,8 +151,8 @@
                             <!-- Slider -->
 
                             <div class="col-sm-6 slider" style="padding: 20px">
-                                <h5 class="text-center">240 x 48</h5>
-                                <img id="android_240x48" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Slider 240 x 80</h5>
+                                <img id="android_240x80" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -161,7 +161,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="240"/>
-                                        <input type="hidden" name="sizey" value="48"/>
+                                        <input type="hidden" name="sizey" value="80"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -169,8 +169,8 @@
 
                             </div>
                             <div class="col-sm-6 slider" style="padding: 20px">
-                                <h5 class="text-center">320 x 71</h5>
-                                <img id="android_320x71" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Slider 320 x 107</h5>
+                                <img id="android_320x107" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -179,7 +179,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="320"/>
-                                        <input type="hidden" name="sizey" value="71"/>
+                                        <input type="hidden" name="sizey" value="107"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -190,8 +190,8 @@
                             <!--  Banner -->
 
                             <div class="col-sm-6 banner" style="padding: 20px">
-                                <h5 class="text-center">240 x 24</h5>
-                                <img id="android_240x24" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Banner 240 x 30</h5>
+                                <img id="android_240x30" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -200,7 +200,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="240"/>
-                                        <input type="hidden" name="sizey" value="24"/>
+                                        <input type="hidden" name="sizey" value="30"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -208,8 +208,8 @@
 
                             </div>
                             <div class="col-sm-6 banner" style="padding: 20px">
-                                <h5 class="text-center">320 x 36</h5>
-                                <img id="android_320x36" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Banner 320 x 40</h5>
+                                <img id="android_320x40" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -218,7 +218,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="320"/>
-                                        <input type="hidden" name="sizey" value="36"/>
+                                        <input type="hidden" name="sizey" value="40"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -233,8 +233,8 @@
                             <!-- Slider -->
 
                             <div class="col-sm-6 slider" style="padding: 20px">
-                                <h5 class="text-center">720 x 144</h5>
-                                <img id="android_720x144" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Slider 720 x 240</h5>
+                                <img id="android_720x240" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -243,7 +243,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="720"/>
-                                        <input type="hidden" name="sizey" value="144"/>
+                                        <input type="hidden" name="sizey" value="240"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -251,8 +251,8 @@
 
                             </div>
                             <div class="col-sm-6 slider"  style="padding: 20px">
-                                <h5 class="text-center">1440 x 288</h5>
-                                <img id="android_1440x288" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Slider 1440 x 480</h5>
+                                <img id="android_1440x480" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -261,7 +261,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="1440"/>
-                                        <input type="hidden" name="sizey" value="288"/>
+                                        <input type="hidden" name="sizey" value="480"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -272,8 +272,8 @@
                             <!-- Banner -->
 
                             <div class="col-sm-6 banner" style="padding: 20px">
-                                <h5 class="text-center">720 x 72</h5>
-                                <img id="android_720x72" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Banner 720 x 90</h5>
+                                <img id="android_720x90" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -282,7 +282,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="720"/>
-                                        <input type="hidden" name="sizey" value="72"/>
+                                        <input type="hidden" name="sizey" value="90"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -290,8 +290,8 @@
 
                             </div>
                             <div class="col-sm-6 banner"  style="padding: 20px">
-                                <h5 class="text-center">1440 x 144</h5>
-                                <img id="android_1440x144" src="http://placehold.it/320x47&text=publicidad"
+                                <h5 class="text-center">Banner 1440 x 180</h5>
+                                <img id="android_1440x180" src="http://placehold.it/320x47&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -300,7 +300,7 @@
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="android"/>
                                         <input type="hidden" name="sizex" value="1440"/>
-                                        <input type="hidden" name="sizey" value="144"/>
+                                        <input type="hidden" name="sizey" value="180"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
@@ -312,9 +312,9 @@
 
                     </div>
 
-                    <!--<div class="col-sm-10 col-sm-offset-1">
+                    <div class="col-sm-10 col-sm-offset-1">
                         <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
-                    </div>-->
+                    </div>
 
                     <div class="col-sm-10 col-sm-offset-1">
                         <!--
@@ -326,9 +326,9 @@
                         <!-- Slider -->
 
                         <div class="row">
-                            <!--<div class="col-sm-6 slider" style="padding: 20px">
-                                <h5 class="text-center">320 x 180</h5>
-                                <img id="ios_320x180" src="http://placehold.it/320x180&text=publicidad"
+                            <div class="col-sm-6 slider" style="padding: 20px">
+                                <h5 class="text-center">Slider 1440 x 480</h5>
+                                <img id="ios_1440x480" src="http://placehold.it/320x180&text=publicidad"
                                      class="img-responsive center-block"/>
                                 <br/>
 
@@ -336,14 +336,15 @@
                                     <div class="form-group form-inline">
                                         <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
                                         <input type="hidden" name="tipo" value="ios"/>
-                                        <input type="hidden" name="sizex" value="320"/>
-                                        <input type="hidden" name="sizey" value="180"/>
+                                        <input type="hidden" name="sizex" value="1440"/>
+                                        <input type="hidden" name="sizey" value="480"/>
                                         <input type="file" name="imagen" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
                                 </form>
 
                             </div>
+                            <!--
                             <div class="col-sm-6 slider" style="padding: 20px">
                                 <h5 class="text-center">640 x 360</h5>
                                 <img id="ios_640x360" src="http://placehold.it/320x180&text=publicidad"
@@ -362,6 +363,27 @@
                                 </form>
 
                             </div>-->
+
+                            <!-- Banner -->
+
+                            <div class="col-sm-6 col-sm-offset-3 banner" style="padding: 20px">
+                                <h5 class="text-center">Banner 1440 x 180</h5>
+                                <img id="ios_1440x180" src="http://placehold.it/320x180&text=publicidad"
+                                     class="img-responsive center-block"/>
+                                <br/>
+
+                                <form enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" class="id_publicidad" name="publicidad_id" value=""/>
+                                        <input type="hidden" name="tipo" value="ios"/>
+                                        <input type="hidden" name="sizex" value="1440"/>
+                                        <input type="hidden" name="sizey" value="180"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+                            </div>
+
                         </div>
 
                         <div class="row">
@@ -384,9 +406,11 @@
                                 </form>
                             </div>
                             -->
+
+
                         </div>
 
-                        <!-- Banner -->
+
 
                         <!-- TODO segun las dimensiones poner el Banner de iOS -->
 
@@ -534,8 +558,8 @@
                                     <!-- Slider -->
 
                                     <div class="col-sm-6 slider" style="padding: 20px">
-                                        <h5 class="text-center">240 x 48</h5>
-                                        <img id="android_240x48_editar" src="http://placehold.it/320x47&text=publicidad"
+                                        <h5 class="text-center">Slider 240 x 80</h5>
+                                        <img id="android_240x80_editar" src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
@@ -546,7 +570,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="240"/>
-                                                <input type="hidden" name="sizey" value="48"/>
+                                                <input type="hidden" name="sizey" value="80"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -555,8 +579,8 @@
                                     </div>
 
                                     <div class="col-sm-6 slider" style="padding: 20px">
-                                        <h5 class="text-center">320 x 71</h5>
-                                        <img id="android_320x71_editar" src="http://placehold.it/320x47&text=publicidad"
+                                        <h5 class="text-center">Slider 320 x 107</h5>
+                                        <img id="android_320x107_editar" src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
@@ -567,7 +591,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="320"/>
-                                                <input type="hidden" name="sizey" value="71"/>
+                                                <input type="hidden" name="sizey" value="107"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -578,8 +602,8 @@
                                     <!-- Banner -->
 
                                     <div class="col-sm-6 banner" style="padding: 20px">
-                                        <h5 class="text-center">240 x 24</h5>
-                                        <img id="android_240x24_editar" src="http://placehold.it/320x47&text=publicidad"
+                                        <h5 class="text-center">Banner 240 x 30</h5>
+                                        <img id="android_240x30_editar" src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
@@ -590,7 +614,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="240"/>
-                                                <input type="hidden" name="sizey" value="24"/>
+                                                <input type="hidden" name="sizey" value="30"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -599,8 +623,8 @@
 
                                     </div>
                                     <div class="col-sm-6 banner" style="padding: 20px">
-                                        <h5 class="text-center">320 x 36</h5>
-                                        <img id="android_320x36_editar" src="http://placehold.it/320x47&text=publicidad"
+                                        <h5 class="text-center">Banner 320 x 40</h5>
+                                        <img id="android_320x40_editar" src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
 
@@ -611,7 +635,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="320"/>
-                                                <input type="hidden" name="sizey" value="36"/>
+                                                <input type="hidden" name="sizey" value="40"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -627,8 +651,8 @@
                                     <!-- Slider -->
 
                                     <div class="col-sm-6 slider" style="padding: 20px">
-                                        <h5 class="text-center">720 x 144</h5>
-                                        <img id="android_720x144_editar"
+                                        <h5 class="text-center">Slider 720 x 240</h5>
+                                        <img id="android_720x240_editar"
                                              src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
@@ -640,7 +664,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="720"/>
-                                                <input type="hidden" name="sizey" value="144"/>
+                                                <input type="hidden" name="sizey" value="240"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -649,8 +673,8 @@
 
                                     </div>
                                     <div class="col-sm-6 slider" style="padding: 20px">
-                                        <h5 class="text-center">1440 x 288</h5>
-                                        <img id="android_1440x288_editar"
+                                        <h5 class="text-center">Slider 1440 x 480</h5>
+                                        <img id="android_1440x480_editar"
                                              src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
@@ -662,7 +686,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="1440"/>
-                                                <input type="hidden" name="sizey" value="288"/>
+                                                <input type="hidden" name="sizey" value="480"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -673,8 +697,8 @@
                                     <!-- Banner -->
 
                                     <div class="col-sm-6 banner" style="padding: 20px">
-                                        <h5 class="text-center">720 x 72</h5>
-                                        <img id="android_720x72_editar"
+                                        <h5 class="text-center">Banner 720 x 90</h5>
+                                        <img id="android_720x90_editar"
                                              src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
@@ -686,7 +710,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="720"/>
-                                                <input type="hidden" name="sizey" value="72"/>
+                                                <input type="hidden" name="sizey" value="90"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -695,8 +719,8 @@
 
                                     </div>
                                     <div class="col-sm-6 banner" style="padding: 20px">
-                                        <h5 class="text-center">1440 x 144</h5>
-                                        <img id="android_1440x144_editar"
+                                        <h5 class="text-center">Banner 1440 x 180</h5>
+                                        <img id="android_1440x180_editar"
                                              src="http://placehold.it/320x47&text=publicidad"
                                              class="img-responsive center-block"/>
                                         <br/>
@@ -708,7 +732,7 @@
                                                 <input type="hidden" name="id_imagen" value="android"/>
                                                 <input type="hidden" name="tipo" value="android"/>
                                                 <input type="hidden" name="sizex" value="1440"/>
-                                                <input type="hidden" name="sizey" value="144"/>
+                                                <input type="hidden" name="sizey" value="180"/>
                                                 <input type="file" name="imagen" class="form-control imagen" required/>
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                 </button>
@@ -718,9 +742,9 @@
 
                                 </div>
 
-                                <!--<div class="col-sm-10 col-sm-offset-1">
+                                <div class="col-sm-10 col-sm-offset-1">
                                     <h4><i class="fa fa-apple"></i> Imágenes iOS</h4>
-                                </div>-->
+                                </div>
 
                                 <div class="col-sm-10 col-sm-offset-1">
                                     <!--
@@ -732,9 +756,9 @@
 
                                         <!-- Slider -->
 
-                                        <!--<div class="col-sm-6 slider" style="padding: 20px">
-                                            <h5 class="text-center">320 x 180</h5>
-                                            <img id="ios_320x180_editar" src="http://placehold.it/320x180&text=publicidad"
+                                        <div class="col-sm-6 slider" style="padding: 20px">
+                                            <h5 class="text-center">Slider 1440 x 480</h5>
+                                            <img id="ios_1440x480_editar" src="http://placehold.it/320x180&text=publicidad"
                                                  class="img-responsive center-block"/>
                                             <br/>
 
@@ -744,8 +768,8 @@
                                                            value=""/>
                                                     <input type="hidden" name="id_imagen" value="android"/>
                                                     <input type="hidden" name="tipo" value="ios"/>
-                                                    <input type="hidden" name="sizex" value="320"/>
-                                                    <input type="hidden" name="sizey" value="180"/>
+                                                    <input type="hidden" name="sizex" value="1440"/>
+                                                    <input type="hidden" name="sizey" value="480"/>
                                                     <input type="file" name="imagen" class="form-control imagen" required/>
                                                     <button type="submit" class="btn btn-sm btn-info form-control">Cargar
                                                     </button>
@@ -753,6 +777,7 @@
                                             </form>
 
                                         </div>
+                                        <!--
                                         <div class="col-sm-6 slider" style="padding: 20px">
                                             <h5 class="text-center">640 x 360</h5>
                                             <img id="ios_640x360_editar" src="http://placehold.it/320x180&text=publicidad"
@@ -776,6 +801,29 @@
                                         </div>-->
 
                                         <!-- Banner -->
+
+                                        <div class="col-sm-6 banner" style="padding: 20px">
+                                            <h5 class="text-center">Banner 1440 x 180</h5>
+                                            <img id="ios_1440x180_editar" src="http://placehold.it/320x180&text=publicidad"
+                                                 class="img-responsive center-block"/>
+                                            <br/>
+
+                                            <form id="f9" class="editar" enctype="multipart/form-data">
+                                                <div class="form-group form-inline">
+                                                    <input type="hidden" class="id_publicidad" name="publicidad_id"
+                                                           value=""/>
+                                                    <input type="hidden" name="id_imagen" value="android"/>
+                                                    <input type="hidden" name="tipo" value="ios"/>
+                                                    <input type="hidden" name="sizex" value="1440"/>
+                                                    <input type="hidden" name="sizey" value="180"/>
+                                                    <input type="file" name="imagen" class="form-control imagen" required/>
+                                                    <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                                    </button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
 
                                         <!-- TODO segun las dimensiones poner el Banner de iOS -->
 
