@@ -21,10 +21,10 @@
         </div>
     </div>
 </nav>-->
+<% $resultado["datos"]["html"]; %>
 <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
     <div class="row">
         <div class="col-lg-12">
-            <% $resultado["datos"]["html"]; %>
             <br/><br/>
             <br/><br/>
             <br/><br/>
