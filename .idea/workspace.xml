@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OfertasController.php" afterPath="$PROJECT_DIR$/app/controllers/OfertasController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5147493" vertical-offset="4361" max-vertical-offset="6570">
+            <state vertical-scroll-proportion="-14.541667" vertical-offset="4361" max-vertical-offset="6570">
               <caret line="323" column="36" selection-start-line="323" selection-start-column="36" selection-end-line="323" selection-end-column="36" />
               <folding />
             </state>
@@ -74,14 +74,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfertasController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OfertasController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-138.125" vertical-offset="0" max-vertical-offset="3840">
-              <caret line="221" column="130" selection-start-line="221" selection-start-column="130" selection-end-line="221" selection-end-column="130" />
+            <state vertical-scroll-proportion="0.6017699" vertical-offset="2907" max-vertical-offset="3840">
+              <caret line="221" column="164" selection-start-line="221" selection-start-column="164" selection-end-line="221" selection-end-column="164" />
               <folding>
-                <marker date="1444359601000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..ofertas..." />
-                <marker date="1444359601000" expanded="true" signature="6788:6938" placeholder="SELECT rubro..ofertas..." />
+                <marker date="1444360245000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..ofertas..." />
+                <marker date="1444360245000" expanded="true" signature="6788:6916" placeholder="SELECT rubro..ofertas..." />
               </folding>
             </state>
           </provider>
@@ -174,10 +174,10 @@
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/eventos.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/eventos.js" />
         <option value="$PROJECT_DIR$/public/js/sitio/ofertas.js" />
-        <option value="$PROJECT_DIR$/app/controllers/OfertasController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/OfertasController.php" />
       </list>
     </option>
   </component>
@@ -520,12 +520,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00032" summary="Sms y estructura 2intento">
-      <created>1430798021226</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1430798021226</updated>
-    </task>
     <task id="LOCAL-00033" summary="Sms y estructura 3intento">
       <created>1430799292565</created>
       <option name="number" value="00033" />
@@ -814,7 +808,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444359732458</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Ofertas Insert 1.1">
+      <created>1444360035583</created>
+      <option name="number" value="00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1444360035583</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -902,7 +902,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Usuarios Bug... editar&#10;" />
     <MESSAGE value="Backend Tecnobit primer paso y Fipaz: Noticias, expositores, eventos primera parte &#10;" />
     <MESSAGE value="Eventos funcional" />
     <MESSAGE value="Backend mapa y expo" />
@@ -927,7 +926,8 @@
     <MESSAGE value="Eventos CRUD" />
     <MESSAGE value="Ofertas Insert" />
     <MESSAGE value="Ofertas Insert 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ofertas Insert 1.0" />
+    <MESSAGE value="Ofertas Insert 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ofertas Insert 1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1285,17 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-138.125" vertical-offset="0" max-vertical-offset="3840">
-          <caret line="221" column="130" selection-start-line="221" selection-start-column="130" selection-end-line="221" selection-end-column="130" />
-          <folding>
-            <marker date="1444359601000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..ofertas..." />
-            <marker date="1444359601000" expanded="true" signature="6788:6938" placeholder="SELECT rubro..ofertas..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.375" vertical-offset="492" max-vertical-offset="2145">
@@ -1314,9 +1303,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5147493" vertical-offset="4361" max-vertical-offset="6570">
+        <state vertical-scroll-proportion="-14.541667" vertical-offset="4361" max-vertical-offset="6570">
           <caret line="323" column="36" selection-start-line="323" selection-start-column="36" selection-end-line="323" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6017699" vertical-offset="2907" max-vertical-offset="3840">
+          <caret line="221" column="164" selection-start-line="221" selection-start-column="164" selection-end-line="221" selection-end-column="164" />
+          <folding>
+            <marker date="1444360245000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..ofertas..." />
+            <marker date="1444360245000" expanded="true" signature="6788:6916" placeholder="SELECT rubro..ofertas..." />
+          </folding>
         </state>
       </provider>
     </entry>

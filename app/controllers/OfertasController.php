@@ -219,7 +219,7 @@ class OfertasController extends \BaseController {
         if(sizeof($sistemas)>0)
         {
             $id_sistema = $sistemas[0]["id"];
-            $query = DB::connection('Pilar')->select("SELECT rubro_id, rubro, expositor_id, expositor, link, empresa  FROM ofertas WHERE sistema_id=".$id_sistema." GROUP BY expositor_id ORDER BY expositor");
+            $query = DB::connection('Pilar')->select("SELECT rubro_id, rubro, expositor_id, expositor, link, empresa  FROM ofertas WHERE sistema_id=".$id_sistema." ORDER BY expositor");
             if (sizeof($query))
             {
                 $resultado=array();
