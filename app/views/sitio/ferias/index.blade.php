@@ -161,8 +161,6 @@
             </div>
         </div>
 
-
-
     @endif
 
 
@@ -207,6 +205,51 @@
 
                 </div>
             </div>
+        </div>
+        @else
+        <br/><br/>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="panel">
+                    <div class="panel-heading panel-blue">
+                        Notificaciones
+                        <div class="pull-right">
+                            <span class="glyphicon glyphicon-envelope acciones"></span>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <textarea class="form-control" id="txtMensaje" rows="3"></textarea>
+                        <br/>
+                        <button class="btn btn-info pull-right">Enviar</button>
+                    </div>
+
+                    <div class="panel-footer text-right" id="valido_mensaje">
+                    </div>
+                </div>
+            </div><!--/.col-->
+
+            <div class="col-xs-12 col-md-6 col-lg-4 col-lg-offset-3">
+                <div class="panel">
+                    <div class="panel-heading panel-teal">
+                        Concurso!
+                        <div class="pull-right">
+                            <span class="glyphicon glyphicon-ok-sign acciones"></span>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <br/>
+                        Cantidad de participantes: <b><small id="txtParticipantes" class="text-success">0</small></b>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <button class="btn btn-default pull-right"><span class="glyphicon glyphicon-cloud-download"></span> Descargar Excel</button>
+                    </div>
+
+                    <div class="panel-footer text-right" id="valido_mensaje">
+                    </div>
+                </div>
+            </div><!--/.col-->
+
         </div>
     @endif
 @stop

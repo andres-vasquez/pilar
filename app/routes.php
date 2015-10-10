@@ -343,6 +343,17 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'MapasController@apitodas')); // Todas
     });
 
+    //GCM Api
+    Route::group(array('prefix' => '/gcm'), function () {
+        Route::post('/', 'RegistroGCMsController@store');
+    });
+
+    //Participantes Api
+    Route::group(array('prefix' => '/participantes'), function () {
+        Route::post('/', 'RegistroParticipantesController@store');
+    });
+
+
     //Catalogos Api
     Route::get('/catalogos/{sistema}/{agrupador}', 'CatalogosController@index');
 });

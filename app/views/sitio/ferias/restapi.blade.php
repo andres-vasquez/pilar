@@ -42,13 +42,25 @@
                         @if (Session::get("nombre_sistema") !== "feicobol")
                             <li><a href="#tab6" data-toggle="tab">
                                     <span class="glyphicon glyphicon-calendar"></span> Eventos</a></li>
-                        @endif
+                            @endif
 
-                        <!-- Ofertas -->
-                        @if (Session::get("nombre_sistema") !== "feicobol")
-                            <li><a href="#tab7" data-toggle="tab">
-                                    <span class="glyphicon glyphicon-shopping-cart"></span> Ofertas</a></li>
-                        @endif
+                                    <!-- Ofertas -->
+                            @if (Session::get("nombre_sistema") !== "feicobol")
+                                <li><a href="#tab7" data-toggle="tab">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span> Ofertas</a></li>
+                                @endif
+
+                                        <!-- Notificaciones -->
+                                @if (Session::get("nombre_sistema") !== "feicobol")
+                                    <li><a href="#tab8" data-toggle="tab">
+                                            <span class="glyphicon glyphicon-envelope"></span> Notificaciones</a></li>
+                                    @endif
+
+                                            <!-- Concurso -->
+                                    @if (Session::get("nombre_sistema") !== "feicobol")
+                                        <li><a href="#tab9" data-toggle="tab">
+                                                <span class="glyphicon glyphicon-ok-sign"></span> Concurso</a></li>
+                                    @endif
 
                 </ul>
 
@@ -253,9 +265,9 @@
                                 </small>
                                 <br/><br/><br/><br/>
                             </div>
-                        @endif
+                            @endif
 
-                                <!-- Ofertas !Feicobol-->
+                                    <!-- Ofertas !Feicobol-->
                             @if (!Session::get("nombre_sistema") !== "feicobol")
                                 <div class="tab-pane fade" id="tab7">
                                     <h3>Ofertas</h3>
@@ -285,7 +297,94 @@
                                     </small>
                                     <br/><br/><br/><br/>
                                 </div>
-                            @endif
+                                @endif
+
+                                        <!-- Notificaciones !Feicobol-->
+                                @if (!Session::get("nombre_sistema") !== "feicobol")
+                                    <div class="tab-pane fade" id="tab8">
+                                        <h3>Notificaciones</h3>
+
+                                        <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
+
+                                        <p>La API de Notificaciones habilita a los usuarios de la App para envío de notificaciones</p>
+                                        <br/>
+                                        <h4>URL base</h4>
+                                        <code>http://pilar.cloudapp.net/pilar/api/v1/gcm</code>
+
+                                        <br/><br/>
+                                        <h4>Enviar Token de Google</h4>
+                                        <code>http://pilar.cloudapp.net/pilar/api/v1/gcm</code>
+
+                                        <p>Método: <span class="text-success"><b>POST</b></span></p>
+                                        <p>Content-type: <span class="text-success"><b>application/json</b></span></p>
+                                        <p>Paramétro: <span class="text-warning"><b>credencial</b></span></p>
+                                        <p>Paramétro: <span class="text-warning"><b>token</b></span></p>
+
+                                        <small>Ej de uso:
+                                            <ul>
+                                                <li>credencial : <b><% Session::get('credencial')%></b></li>
+                                                <li>token : <b>APA91bHun4MxP5egoKMwt2KZFBaFUH-1RYqx...</b></li> <small><a href="https://developers.google.com/cloud-messaging/downstream" target="_blank">https://developers.google.com/cloud-messaging/downstream</a></small>
+                                            </ul>
+                                        </small>
+                                        <br/>
+                                        <small>Resultado:
+                                            {"intCodigo":"1","resultado":{}}
+                                        </small>
+                                        <br/><br/>
+                                        <small class="text-success">Nota: Solo mandar una vez, no admite repetidos</small>
+                                        <br/><br/>
+                                    </div>
+                                    @endif
+
+                                            <!-- Concurso !Feicobol-->
+                                    @if (!Session::get("nombre_sistema") !== "feicobol")
+                                        <div class="tab-pane fade" id="tab9">
+                                            <h3>Concurso</h3>
+
+                                            <p>Credencial: <span class="text-success"><b><% Session::get('credencial')%></b></span></p>
+
+                                            <p>La API de Concurso habilita registra a los usuarios de la App para el concurso</p>
+                                            <br/>
+                                            <h4>URL base</h4>
+                                            <code>http://pilar.cloudapp.net/pilar/api/v1/participantes</code>
+
+                                            <br/><br/>
+                                            <h4>Enviar registro</h4>
+                                            <code>http://pilar.cloudapp.net/pilar/api/v1/participantes</code>
+
+                                            <p>Método: <span class="text-success"><b>POST</b></span></p>
+                                            <p>Content-type: <span class="text-success"><b>application/json</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>credencial</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>nombre</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>apellido</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>ci</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>telefono</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>email</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>numero_entrada</b></span></p>
+                                            <p>Paramétro: <span class="text-warning"><b>empresa</b></span></p>
+
+                                            <small>Ej de uso:
+                                                <ul>
+                                                    <li>credencial : <b><% Session::get('credencial')%></b></li>
+                                                    <li>nombre : <b>Juan</b></li>
+                                                    <li>apellido : <b>Perez</b></li>
+                                                    <li>ci : <b>123455LP</b></li>
+                                                    <li>telefono : <b>60512245</b></li>
+                                                    <li>email : <b>juan@yopmail.com</b></li>
+                                                    <li>numero_entrada : <b>1232</b></li>
+                                                    <li>empresa : <b>Imcruz</b></li>
+                                                </ul>
+                                            </small>
+                                            <br/>
+                                            <small>Resultado:
+                                                {"intCodigo":"1","resultado":{}}
+                                            </small>
+                                            <br/><br/>
+                                            <small class="text-success">Nota: Solo mandar una vez, no admite repetidos en el campo numero_entrada</small><br/><br/>
+                                        </div>
+                                    @endif
+
+
                 </div>
             </div>
         </div>
