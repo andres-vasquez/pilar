@@ -224,6 +224,9 @@ class ExpositoresController extends \BaseController
                     $aux["rubro"] = $expositor["rubro"];
                     $aux["descripcion"] = $expositor["descripcion"];
 
+                    $aux["rubro_especifico"] = $expositor["rubro_especifico"];
+                    $aux["ruta_imagen"] = $expositor["ruta_aws"];
+
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($expositor["created_at"]));
                     array_push($expositores, $aux);
                 }

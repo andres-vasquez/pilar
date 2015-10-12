@@ -286,6 +286,9 @@ Route::post('/ws/likesExpositores', 'LikesExpositoresController@store');
 Route::post('/ws/likesExpositores/{id}', array('as' => 'show', 'uses' => 'LikesExpositoresController@update'));
 Route::post('/ws/likesExpositores/eliminar/{id}', array('as' => 'show', 'uses' => 'LikesExpositoresController@destroy'));
 
+//Funciones globales
+Route::post('/ws/funciones/subirArchivoAWS', array('as' => 'show', 'uses' => 'BaseController@subirArchivoAWS'));
+
 
 //*************** REST API GENERAL ***************************
 Route::group(array('prefix' => 'api/v1'), function () {

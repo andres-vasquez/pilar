@@ -72,13 +72,32 @@
 
 
         <div id="divNuevoExpositor" class="panel panel-collapse chat collapse">
-            <% Form::open(array('url' => '/ws/expositores', 'id' => 'formNuevoExpositor', 'class' => '')) %>
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-user"></span> Agregar
                 expositor
             </div>
             <div class="panel-body">
                 <ul id="ulFormulario">
                     <li class="left clearfix">
+                        <div class="row">
+                            <div class="col-md-5 form-group">
+                                <img id="imgExpositor" alt="Foto expositor"
+                                     src="http://placehold.it/150x80/30a5ff/fff" class="img-responsive" width="180px"/>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <p>Subir logo del expositor (opcional)</p>
+
+                                <form id="formImagen" enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" name="ruta_aws" id="hdnRutaImagen" class="form-control"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                        </button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
                         <div class="row">
                             <br/>
                             <div class="col-md-5 form-group">
@@ -113,6 +132,11 @@
                                     </select>
                                 </div>
                             @endif
+
+                            <div class="col-md-5 form-group">
+                                <label>Rubro especiífico</label>
+                                <input type="text" name="rubro_especifico" id="txtRubroEspecifico" class="form-control"/>
+                            </div>
 
                             <div class="col-md-5 form-group">
                                 <label>Stand</label>
@@ -155,14 +179,36 @@
             </div>
             <div class="panel-footer">
                 <div class="input-group">
-                    <button type="submit" class="btn btn-success btn-md" id="btnEnviar">Guardar</button>
+                    <button type="button" class="btn btn-success btn-md" id="btnNuevoExpositor">Guardar</button>
                     &nbsp;&nbsp;
-                    <button type="reset" class="btn btn-danger btn-md">Cancelar</button>
+                    <button type="button" class="btn btn-danger btn-md">Cancelar</button>
                 </div>
             </div>
-            <% Form::close() %>
         </div>
 
+    </div>
+
+    <!-- Modal eliminar -->
+    <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Eliminar expositor</h4>
+                </div>
+                <div class="modal-body">
+                    Está seguro de eliminar el expositor seleccionado?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarExpositor">Si,
+                        eliminar
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
 @stop
