@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -37,18 +38,18 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="3180" max-vertical-offset="6780">
-              <caret line="229" column="27" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="27" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="3135" max-vertical-offset="6780">
+              <caret line="237" column="36" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ofertas.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php">
+      <file leaf-file-name="noticias.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.208334" vertical-offset="1975" max-vertical-offset="3210">
-              <caret line="172" column="0" selection-start-line="124" selection-start-column="3" selection-end-line="172" selection-end-column="0" />
+            <state vertical-scroll-proportion="-23.875" vertical-offset="2547" max-vertical-offset="3225">
+              <caret line="208" column="45" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -67,8 +68,18 @@
       <file leaf-file-name="PublicidadImagensController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6902655" vertical-offset="2487" max-vertical-offset="3375">
-              <caret line="197" column="60" selection-start-line="197" selection-start-column="60" selection-end-line="197" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.53539824" vertical-offset="2592" max-vertical-offset="3375">
+              <caret line="197" column="50" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.125" vertical-offset="3387" max-vertical-offset="4065">
+              <caret line="250" column="30" selection-start-line="250" selection-start-column="30" selection-end-line="250" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -99,16 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="3255" max-vertical-offset="8235">
               <caret line="257" column="24" selection-start-line="257" selection-start-column="24" selection-end-line="257" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExpositoresController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ExpositoresController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="42.375" vertical-offset="4287" max-vertical-offset="4965">
-              <caret line="218" column="60" selection-start-line="218" selection-start-column="60" selection-end-line="218" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -159,7 +160,6 @@
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/ofertas.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
         <option value="$PROJECT_DIR$/app/models/RegistroParticipante.php" />
         <option value="$PROJECT_DIR$/app/models/RegistroGCM.php" />
         <option value="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
@@ -172,6 +172,7 @@
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Expositore.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/expositores.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
       </list>
     </option>
@@ -491,12 +492,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00041" summary="Autenticacion e ingreso editar usuario emial acceso log1.">
-      <created>1431740663802</created>
-      <option name="number" value="00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1431740663802</updated>
-    </task>
     <task id="LOCAL-00042" summary="Autenticacion e ingreso.. Solo CODIGO">
       <created>1431905013029</created>
       <option name="number" value="00042" />
@@ -785,7 +780,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444655547622</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Ajuste publicidad">
+      <created>1444683139294</created>
+      <option name="number" value="00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1444683139294</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -873,7 +874,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Pilar Expositores + Publicidad Amazon prueba AWS2" />
     <MESSAGE value="Publicidad Final" />
     <MESSAGE value="Publicidad + Planes" />
     <MESSAGE value="Eventos + apisinformato" />
@@ -898,41 +898,14 @@
     <MESSAGE value="Restapi notificaciones + registro 2.0" />
     <MESSAGE value="Expositores ajuste 1" />
     <MESSAGE value="Expositores ajuste 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expositores ajuste 2" />
+    <MESSAGE value="Ajuste publicidad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste publicidad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad_normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2188" max-vertical-offset="5445">
-          <caret line="167" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/mapa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5707965" vertical-offset="642" max-vertical-offset="1320">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.986726" vertical-offset="8457" max-vertical-offset="9135">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="897" max-vertical-offset="3270">
-          <caret line="87" column="103" selection-start-line="87" selection-start-column="103" selection-end-line="87" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/uploads/fipaz/1442602836publicidad240x48_green.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1043,13 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.254902" vertical-offset="1328" max-vertical-offset="3225">
-          <caret line="103" column="3" selection-start-line="103" selection-start-column="3" selection-end-line="124" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Ofertas.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="345">
@@ -1091,14 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.125" vertical-offset="2787" max-vertical-offset="3930">
           <caret line="218" column="22" selection-start-line="174" selection-start-column="3" selection-end-line="218" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.70353985" vertical-offset="792" max-vertical-offset="4095">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1233,14 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="3180" max-vertical-offset="6780">
-          <caret line="229" column="27" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/ofertas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9358974" vertical-offset="993" max-vertical-offset="7395">
@@ -1297,10 +1247,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.125" vertical-offset="3387" max-vertical-offset="4065">
+          <caret line="250" column="30" selection-start-line="250" selection-start-column="30" selection-end-line="250" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa_feicobol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/mapa_feicobol_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.7478633" vertical-offset="0" max-vertical-offset="11415">
+          <caret line="269" column="45" selection-start-line="269" selection-start-column="35" selection-end-line="269" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/login_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/noticias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.875" vertical-offset="2547" max-vertical-offset="3225">
+          <caret line="208" column="45" selection-start-line="208" selection-start-column="37" selection-end-line="208" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="3135" max-vertical-offset="6780">
+          <caret line="237" column="36" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6902655" vertical-offset="2487" max-vertical-offset="3375">
-          <caret line="197" column="60" selection-start-line="197" selection-start-column="60" selection-end-line="197" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.53539824" vertical-offset="2592" max-vertical-offset="3375">
+          <caret line="197" column="50" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
           <folding />
         </state>
       </provider>

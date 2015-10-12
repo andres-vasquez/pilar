@@ -207,8 +207,8 @@
             </div>
         </div>
         @else
-        <br/><br/>
-        <div class="row">
+        <br/>
+        <br/>
             <div class="col-xs-12 col-md-6 col-lg-4">
                 <div class="panel">
                     <div class="panel-heading panel-blue">
@@ -249,8 +249,6 @@
                     </div>
                 </div>
             </div><!--/.col-->
-
-        </div>
     @endif
 @stop
 @section('pie')
