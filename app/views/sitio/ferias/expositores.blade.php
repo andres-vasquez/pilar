@@ -211,6 +211,96 @@
         </div>
     </div>
 
+    <!-- Modal Editar -->
+    <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Editar expositor</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 form-group">
+                                <img id="imgExpositor_editar" alt="Foto expositor"
+                                     src="http://placehold.it/150x80/30a5ff/fff" class="img-responsive" width="180px"/>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <p>Subir logo del expositor (opcional)</p>
+
+                                <form id="formImagen" enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="hidden" name="ruta_aws" id="hdnRutaImagen_editar" class="form-control"/>
+                                        <input type="file" name="imagen" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                        </button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br/>
+                            <div class="col-md-5 form-group">
+                                <label>Nombre</label>
+                                <input type="text" id="txtNombre_editar" name="nombre" class="form-control" required/>
+                            </div>
+
+                                <div class="col-md-5 form-group">
+                                    <label>Rubro</label>
+                                    <input type="hidden" name="rubro_id" id="hdnRubro_editar"/>
+                                    <select id="cmbRubro_editar" name="rubro" class="form-control" required></select>
+                                </div>
+
+                                <div class="col-md-5 form-group">
+                                    <label>Área</label>
+                                    <select class="form-control" name="pabellon" id="cmbArea_editar">
+                                    </select>
+                                </div>
+
+                            <div class="col-md-5 form-group">
+                                <label>Rubro especiífico</label>
+                                <input type="text" name="rubro_especifico" id="txtRubroEspecifico_editar" class="form-control"/>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <label>Stand</label>
+                                <input type="text" id="txtStand_editar" name="stand" size="5" class="form-control" required/>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <label>Página web</label>
+                                <input type="text" id="txtWebsite_editar" name="website" class="form-control" required/>
+                            </div>
+                            <div class="col-md-5 form-group">
+                                <label>Fanpage (facebook)</label>
+                                <input type="text" id="txtFacebook_editar" name="fanpage" class="form-control" required/>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <label>Email</label>
+                                <input type="text" id="txtEmail_editar" name="email" class="form-control" required/>
+                            </div>
+
+                            <div class="col-md-5 form-group">
+                                <label>Descripcion</label>
+                                <textarea id="txtDescripcion_editar" name="descripcion" maxlength="200" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnGuardarEditar">Guardar
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
 @stop
 @section('contenido2')
     <div class="col-lg-12">

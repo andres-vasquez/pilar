@@ -164,6 +164,12 @@ $(document).ready(function () {
           $("#hdnRubro").val(lstRubros[i].value);
     });
 
+    $("#cmbRubro_editar").change(function(event){
+        for(var i=0;i<lstRubros.length;i++)
+            if(lstRubros[i].label==$("#cmbRubro_editar").val())
+                $("#hdnRubro_editar").val(lstRubros[i].value);
+    });
+
     $("#btnNuevoExpositor").click(function(event){
         event.preventDefault();
 
@@ -286,7 +292,6 @@ $(document).ready(function () {
         });
     };
 
-
     //FIPAZ
 
     if($("#nombre_sistema").val()=="fipaz")
@@ -297,6 +302,49 @@ $(document).ready(function () {
 
 });
 
+
+llenarCatalogosCallback = function(agrupador,cmbId,campo_id)
+{
+    var credencial=$("#credencial").val();
+    var html='<option value="0"></option>';
+    var url="../api/v1/catalogos/"+credencial+"/"+agrupador;
+    $.ajax({
+        type: "GET",
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(result)
+        {
+            if(parseInt(result.intCodigo)==1)
+            {
+                var arrCatalogos=result.resultado.catalogos;
+                if(agrupador=="rubros_fipaz")
+                    lstRubros=result.resultado.catalogos;
+
+
+                var valorSeleccionado;
+
+                for(var i=0;i<arrCatalogos.length;i++)
+                {
+                    html+='<option value="'+arrCatalogos[i].label+'">'+arrCatalogos[i].label+'</option>';
+                    if(arrCatalogos[i].label==campo_id)
+                    valorSeleccionado=arrCatalogos[i].label;
+                }
+
+                $("#"+cmbId).html(html);
+
+
+                if(agrupador=="fipaz_rubros")
+                    $('#cmbRubro_editar option[value="' + valorSeleccionado + '"]').attr("selected", "selected");
+                else if(agrupador=="fipaz_areas")
+                    $('#cmbArea_editar option[value="' + valorSeleccionado + '"]').attr("selected", "selected");
+            }
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest + " "+textStatus);
+        }
+    });
+};
 
 //Otro scope
 function operateFormatter(value, row, index) {
@@ -316,12 +364,9 @@ window.operateEvents = {
         idEditando = id;
         editando=true;
 
-        alert("En desarrollo");
+        $('#editarModal').modal('show');
 
-        /*$('#editarModal').modal('show');
-        $("#imagenModal").css("z-index", "1500");
-
-        var url = "../ws/oferta/" + id;
+        var url = "../ws/expositores/" + id;
         $.ajax({
             type: "GET",
             url: url,
@@ -330,41 +375,44 @@ window.operateEvents = {
             success: function (result) {
                 if (parseInt(result.intCodigo) == 1)
                 {
-                    var objOferta = result.resultado.oferta;
-                    llenarCatalogosCallback("fipaz_rubros","cmbRubro_editar",objOferta.rubro_id);
-                    $("#hdnRubro_editar").val(objOferta.rubro_id);
+                    console.log(JSON.stringify(result));
 
-                    if(objOferta.empresa=="")
-                    {
-                        $("#chkNoExpositor_editar").removeAttr("checked");
-                        $("#cmbExpositor_editar").removeAttr("disabled").removeClass("disabled");
-                        $("#txtNombreEmpresa_editar").attr("disabled","true").addClass("disabled");
+                    var objExpositor = result.resultado.expositore;
+                    llenarCatalogosCallback("fipaz_areas","cmbArea_editar",objExpositor.pabellon);
+                    llenarCatalogosCallback("fipaz_rubros","cmbRubro_editar",objExpositor.rubro);
 
-                        $("#hdnRubro_editar").val($("#cmbRubro_editar option:selected").text());
-                        llenarExpositoresCallback($("#cmbRubro_editar").val(),objOferta.expositor_id);
-                        $("#hdnExpositor_editar").val(objOferta.expositor_id);
-                    }
-                    else
-                    {
-                        $("#chkNoExpositor_editar").removeAttr("checked");
-                        $("#cmbExpositor_editar").attr("disabled","true").addClass("disabled");
-                        $("#txtNombreEmpresa_editar").removeAttr("disabled","true").removeClass("disabled");
-                        $("#txtNombreEmpresa_editar").val(objOferta.empresa);
-                    }
+                    $("#hdnRubro_editar").val(objExpositor.rubro_id);
+                    $("#imgExpositor_editar").attr("src",objExpositor.ruta_aws);
+                    $("#hdnRutaImagen_editar").val(objExpositor.ruta_aws);
 
-                    var wysihtml5Editor = $('#htmlOferta_editar').data("wysihtml5").editor;
-                    wysihtml5Editor.setValue(objOferta.html);
+                    $("#txtNombre_editar").val(objExpositor.nombre);
+                    $("#txtRubroEspecifico_editar").val(objExpositor.rubro_especifico);
+                    $("#txtWebsite_editar").val(objExpositor.website);
+                    $("#txtFacebook_editar").val(objExpositor.fanpage);
+                    $("#txtEmail_editar").val(objExpositor.email);
+                    $("#txtDescripcion_editar").val(objExpositor.descripcion);
+                    $("#txtStand_editar").val(objExpositor.stand);
+
+
 
                     $("#btnGuardarEditar").click(function (event) {
                         event.preventDefault();
-                        var url = "../ws/oferta/"+idEditando;
-                        var datos={
-                            "rubro":$("#hdnRubro_editar").val(),
-                            "rubro_id":$("#cmbRubro_editar").val(),
-                            "expositor":$("#hdnExpositor_editar").val(),
-                            "expositor_id":$("#cmbExpositor_editar").val(),
-                            "empresa":$("#txtNombreEmpresa_editar").val(),
-                            "html":$("#htmlOferta_editar").val()
+                        var url = "../ws/expositores/"+idEditando;
+                        var datos= {
+                            "nombre":$("#txtNombre_editar").val(),
+                            "direccion":$("#txtDireccion_editar").val(),
+                            "pabellon":$("#cmbArea_editar").val(),
+                            "stand":$("#txtStand_editar").val(),
+                            "website":$("#txtWebsite_editar").val(),
+                            "fanpage":$("#txtFacebook_editar").val(),
+                            "telefono":$("#txtTelefono_editar").val(),
+                            "fax":$("#txtFax_editar").val(),
+                            "email":$("#txtEmail_editar").val(),
+                            "rubro_id":$("#hdnRubro_editar").val(),
+                            "rubro":$("#cmbRubro_editar").val(),
+                            "descripcion":$("#txtDescripcion_editar").val(),
+                            "rubro_especifico":$("#txtRubroEspecifico_editar").val(),
+                            "ruta_aws":$("#hdnRutaImagen_editar").val()
                         };
 
                         $.ajax({
@@ -379,8 +427,8 @@ window.operateEvents = {
                                 {
                                     mensaje("editada");
                                     $("#editarModal").modal("hide");
-                                    $table = $('#tblOfertas').bootstrapTable('refresh', {
-                                        url: '../api/v1/ofertas/'+$("#credencial").val()+'/sinformato'
+                                    $table = $('#tblExpositores').bootstrapTable('refresh', {
+                                        url: '../api/v1/expositores/'+$("#credencial").val()+'/sinformato'
                                     });
                                 }
                             },
@@ -397,7 +445,7 @@ window.operateEvents = {
                 console.log(XMLHttpRequest + " " + textStatus);
                 $('#editarModal').modal('hide');
             }
-        });*/
+        });
 
     },
     'click .remove': function (e, value, row, index)
