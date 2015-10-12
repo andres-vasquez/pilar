@@ -193,9 +193,9 @@ class PublicidadImagensController extends \BaseController {
 
             $s3 = AWS::get('s3');
             $s3->putObject(array(
-                'Bucket'     => $sistemas[0]["nombre"],
+                'Bucket'     => 'sirius'.$sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
-                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
+                'SourceFile' => 'public/uploads/'. "sirius".$sistemas[0]["nombre"].'/'.$nombre_imagen
             ));
         }
         else

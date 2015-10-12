@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Expositore.php" afterPath="$PROJECT_DIR$/app/models/Expositore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/expositores.js" afterPath="$PROJECT_DIR$/public/js/sitio/expositores.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -59,8 +57,18 @@
       <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.125" vertical-offset="1707" max-vertical-offset="5040">
-              <caret line="154" column="9" selection-start-line="121" selection-start-column="7" selection-end-line="154" selection-end-column="9" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="1707" max-vertical-offset="5040">
+              <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicidadImagensController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6902655" vertical-offset="2487" max-vertical-offset="3375">
+              <caret line="197" column="60" selection-start-line="197" selection-start-column="60" selection-end-line="197" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -76,11 +84,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expositores.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="expositores.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61538464" vertical-offset="5343" max-vertical-offset="7350">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5268" max-vertical-offset="7350">
               <caret line="385" column="74" selection-start-line="385" selection-start-column="74" selection-end-line="385" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publicidad.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3255" max-vertical-offset="8235">
+              <caret line="257" column="24" selection-start-line="257" selection-start-column="24" selection-end-line="257" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -127,7 +145,6 @@
         <option value="$PROJECT_DIR$/app/models/Ofertum.php" />
         <option value="$PROJECT_DIR$/app/models/Notificacione.php" />
         <option value="$PROJECT_DIR$/app/models/Eventos.php" />
-        <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php" />
@@ -155,6 +172,7 @@
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Expositore.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/expositores.js" />
+        <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
       </list>
     </option>
   </component>
@@ -237,28 +255,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,12 +490,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Autenticacion e ingreso editar usuario emial acceso log">
-      <created>1431739853086</created>
-      <option name="number" value="00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1431739853086</updated>
     </task>
     <task id="LOCAL-00041" summary="Autenticacion e ingreso editar usuario emial acceso log1.">
       <created>1431740663802</created>
@@ -789,7 +779,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444616008900</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Expositores ajuste 2">
+      <created>1444655547622</created>
+      <option name="number" value="00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1444655547622</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -877,7 +873,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Pilar Expositores + Publicidad Amazon prueba AWS1" />
     <MESSAGE value="Pilar Expositores + Publicidad Amazon prueba AWS2" />
     <MESSAGE value="Publicidad Final" />
     <MESSAGE value="Publicidad + Planes" />
@@ -902,7 +897,8 @@
     <MESSAGE value="Restapi notificaciones + registro" />
     <MESSAGE value="Restapi notificaciones + registro 2.0" />
     <MESSAGE value="Expositores ajuste 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expositores ajuste 1" />
+    <MESSAGE value="Expositores ajuste 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expositores ajuste 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1019,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1152" max-vertical-offset="3375">
-          <caret line="101" column="48" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19911504" vertical-offset="195" max-vertical-offset="1080">
@@ -1051,14 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50884956" vertical-offset="0" max-vertical-offset="930">
           <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.444445" vertical-offset="6675" max-vertical-offset="8235">
-          <caret line="462" column="123" selection-start-line="462" selection-start-column="20" selection-end-line="462" selection-end-column="123" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,14 +1249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.125" vertical-offset="1707" max-vertical-offset="5040">
-          <caret line="154" column="9" selection-start-line="121" selection-start-column="7" selection-end-line="154" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36182335" vertical-offset="4456" max-vertical-offset="5655">
@@ -1302,8 +1275,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/expositores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61538464" vertical-offset="5343" max-vertical-offset="7350">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5268" max-vertical-offset="7350">
           <caret line="385" column="74" selection-start-line="385" selection-start-column="74" selection-end-line="385" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/publicidad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3255" max-vertical-offset="8235">
+          <caret line="257" column="24" selection-start-line="257" selection-start-column="24" selection-end-line="257" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0" vertical-offset="1707" max-vertical-offset="5040">
+          <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6902655" vertical-offset="2487" max-vertical-offset="3375">
+          <caret line="197" column="60" selection-start-line="197" selection-start-column="60" selection-end-line="197" selection-end-column="60" />
           <folding />
         </state>
       </provider>
