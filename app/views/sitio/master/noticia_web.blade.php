@@ -29,9 +29,10 @@
             <ol class="breadcrumb">
                 <h2><% $resultado["datos"]["titular"]%></h2>
             </ol>
-            <br/>
             <br/><br/>
+            <div style="width: 90%">
             <% $resultado["datos"]["html"]; %>
+            </div>
             <br/>
             <small>Noticia publicada: <cite title="Fecha de noticia"><% date('d-m-Y',strtotime($resultado["datos"]["created_at"]));%></cite></small>
             <br/><br/>
