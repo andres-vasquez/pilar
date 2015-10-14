@@ -307,7 +307,8 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}/sinformato', array('as' => 'show', 'uses' => 'PublicidadsController@apitodassinformato')); //
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'PublicidadsController@apitodas')); // Todas
         Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamano'));
-        Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}/{cantidad}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamanoq'));
+        Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}/{plan}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamanoplan'))->where(array('plan' => '[A-Z]+'));
+        Route::get('/{sistema}/{tipo_publicidad}/{tipo}/{tamanox}/{tamanoy}/{cantidad}', array('as' => 'show', 'uses' => 'PublicidadsController@apitipotamanoq'))->where(array('cantidad' => '[0-9]+'));
     });
 
     //REST Api expositores

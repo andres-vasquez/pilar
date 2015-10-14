@@ -135,6 +135,22 @@
                                     target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48</a>
                         </small>
 
+
+                        <br/><br/>
+                        <h4>Obtener anuncios específicos para dispositivo. Tipo de publicidad - SO - Tamaño x - Tamaño y - Plan</h4>
+
+                        <p>Tipo publicidad: <span class="text-success"><b>slider, banner</b></span></p>
+                        <p>Sistema operativo (SO): <span class="text-success"><b>android, ios</b></span></p>
+                        <p>Plan (Mayuúsculas): <span class="text-success"><b>PREMIUM, PLUS, ECONOMICO</b></span></p>
+
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo_publicidad/tipo/sizex/sizey/plan</code>
+                        <br/>
+                        <small>Ej anuncios para android con tamaño 240x48: <a
+                                    href="http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48/PREMIUM"
+                                    target="_blank">http://pilar.cloudapp.net/pilar/api/v1/publicidad/<% Session::get('credencial')%>/slider/android/240/48/PREMIUM</a>
+                        </small>
+
+
                         <br/><br/>
                         <h4>Obtener anuncios específicos para dispositivo. Tipo de publicidad - SO - Tamaño x - Tamaño y - Cantidad</h4>
                         <code>http://pilar.cloudapp.net/pilar/api/v1/publicidad/credencial/tipo_publicidad/tipo_publicidad/tipo/sizex/sizey/cantidad</code>
