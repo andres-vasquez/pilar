@@ -119,6 +119,7 @@
                 </div>
             </div>
         </div>
+        @if(Session::get("id_usuario") !== "16")
         <div class="col-xs-12 col-md-6 col-lg-3">
             <div class="panel panel-red panel-widget">
                 <div class="row no-padding">
@@ -132,7 +133,9 @@
                 </div>
             </div>
         </div>
+        @endif
 
+        @if(Session::get("id_usuario") !== "16")
         <!-- Segunda fila -->
         <div class="col-xs-12 col-md-6 col-lg-3">
             <div class="panel panel-red panel-widget">
@@ -160,7 +163,7 @@
                 </div>
             </div>
         </div>
-
+        @endif
     @endif
 
 
@@ -206,7 +209,7 @@
                 </div>
             </div>
         </div>
-        @else
+        @elseif(Session::get("id_usuario") !== "16")
         <br/>
         <br/>
             <div class="col-xs-12 col-md-6 col-lg-4">
