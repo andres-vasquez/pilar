@@ -37,7 +37,7 @@ class RegistroGCMsController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 
-        $unico= Registrogcm::whereRaw('sistema_id=? AND token=?',array($data["sistema_id"],$data["token"]))->get();
+        $unico= RegistroGCM::whereRaw('sistema_id=? AND token=?',array($data["sistema_id"],$data["token"]))->get();
         if(sizeof($unico)==0) {
             if(Registrogcm::create($data))
             {

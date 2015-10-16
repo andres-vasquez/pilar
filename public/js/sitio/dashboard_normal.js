@@ -191,6 +191,12 @@ $(document).ready(function()
         });
     };
 
+    $("#btnParticipantes").click(function(event){
+        event.preventDefault();
+
+
+    });
+
     //Funcion al inicializar
     llenarLikes();
     llenarNoticias();

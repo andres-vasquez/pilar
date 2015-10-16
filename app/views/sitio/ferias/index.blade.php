@@ -245,7 +245,7 @@
                         <br/>
                         <br/>
                         <br/>
-                        <button class="btn btn-default pull-right"><span class="glyphicon glyphicon-cloud-download"></span> Descargar Excel</button>
+                        <button class="btn btn-default pull-right" id="btnParticipantes"><span class="glyphicon glyphicon-cloud-download"></span> Descargar Excel</button>
                     </div>
 
                     <div class="panel-footer text-right" id="valido_mensaje">
