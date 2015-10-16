@@ -9,7 +9,7 @@ class RegistroParticipantesController extends \BaseController {
      */
     public function index()
     {
-        $registroparticipantes = Registroparticipante::all();
+        $registroparticipantes = RegistroParticipante::all();
 
         return View::make('ws.json', array("resultado"=>compact('registroparticipantes')));
     }
@@ -31,19 +31,19 @@ class RegistroParticipantesController extends \BaseController {
         }
 
 
-        $validator = Validator::make($data, Registroparticipante::$rules);
+        $validator = Validator::make($data, RegistroParticipante::$rules);
         if ($validator->fails())
         {
             $errores=$validator->messages()->first();
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
 
-        $unico= Registroparticipante::whereRaw('sistema_id=? AND numero_entrada=?',array($data["sistema_id"],$data["numero_entrada"]))->get();
+        $unico= RegistroParticipante::whereRaw('sistema_id=? AND numero_entrada=?',array($data["sistema_id"],$data["numero_entrada"]))->get();
         if(sizeof($unico)==0)
         {
-            if(Registroparticipante::create($data))
+            if(RegistroParticipante::create($data))
             {
-                return View::make('ws.json', array("resultado"=>compact('Registroparticipante')));
+                return View::make('ws.json', array("resultado"=>compact('RegistroParticipante')));
             }
             else
             {
@@ -66,7 +66,7 @@ class RegistroParticipantesController extends \BaseController {
      */
     public function show($id)
     {
-        $registroparticipante = Registroparticipante::findOrFail($id);
+        $registroparticipante = RegistroParticipante::findOrFail($id);
         return View::make('ws.json', array("resultado"=>compact('registroparticipante')));
     }
 
@@ -79,7 +79,7 @@ class RegistroParticipantesController extends \BaseController {
      */
     public function update($id)
     {
-        $registroparticipante = Registroparticipante::findOrFail($id);
+        $registroparticipante = RegistroParticipante::findOrFail($id);
         $data = Input::all();
 
         if($registroparticipante->update($data))
@@ -101,14 +101,14 @@ class RegistroParticipantesController extends \BaseController {
      */
     public function destroy($id)
     {
-        $registroparticipante = Registroparticipante::findOrFail($id);
+        $registroparticipante = RegistroParticipante::findOrFail($id);
         $data = array();
 
         $data["baja_logica"] = "0";
         $data["estado"] = "0";
         if($registroparticipante->update($data))
         {
-            $registroparticipante = Registroparticipante::findOrFail($id);
+            $registroparticipante = RegistroParticipante::findOrFail($id);
             return View::make('ws.json', array("resultado"=>compact('registroparticipante')));
         }
         else

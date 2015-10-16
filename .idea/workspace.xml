@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noticia_web.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="noticia_web.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6606852" vertical-offset="0" max-vertical-offset="1080">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state vertical-scroll-proportion="-8.041667" vertical-offset="467" max-vertical-offset="1080">
+              <caret line="44" column="6" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -76,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evento_web.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php">
+      <file leaf-file-name="RegistroParticipantesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1080">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="31" />
+            <state vertical-scroll-proportion="2.4681892" vertical-offset="137" max-vertical-offset="1905">
+              <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistroParticipante.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/RegistroParticipante.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="360">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -130,7 +140,6 @@
         <option value="$PROJECT_DIR$/app/models/RegistroParticipante.php" />
         <option value="$PROJECT_DIR$/app/models/RegistroGCM.php" />
         <option value="$PROJECT_DIR$/app/controllers/SistemasDesarrolladosController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
         <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ExpositoresController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
@@ -145,6 +154,7 @@
         <option value="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
       </list>
     </option>
   </component>
@@ -281,15 +291,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,12 +411,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Reporte sms Web">
-      <created>1435201610946</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1435201610946</updated>
     </task>
     <task id="LOCAL-00049" summary="Reporte sms Web 1.0">
       <created>1435202376285</created>
@@ -704,7 +700,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444968247100</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Cambios noticias&#10;">
+      <created>1444968670385</created>
+      <option name="number" value="00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1444968670385</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -792,7 +794,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Noticias corregido" />
     <MESSAGE value="Publicidad Imagen corregigo" />
     <MESSAGE value="Eventos y noticias sin margen" />
     <MESSAGE value="Eventos y noticias sin margen  1.0" />
@@ -817,7 +818,8 @@
     <MESSAGE value="Notificaciones" />
     <MESSAGE value="Notificaciones1&#10;" />
     <MESSAGE value="Notificaciones funcionando&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Notificaciones funcionando&#10;" />
+    <MESSAGE value="Cambios noticias&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios noticias&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -969,22 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46460176" vertical-offset="15" max-vertical-offset="1635">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/RegistroParticipante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11061947" vertical-offset="0" max-vertical-offset="678">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3539823" vertical-offset="570" max-vertical-offset="1905">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1233,11 +1219,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6606852" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state vertical-scroll-proportion="-8.041667" vertical-offset="467" max-vertical-offset="1080">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/RegistroParticipante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="360">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4681892" vertical-offset="137" max-vertical-offset="1905">
+          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
