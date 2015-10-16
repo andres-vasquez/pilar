@@ -350,6 +350,7 @@ Route::group(array('prefix' => 'api/v1'), function () {
     //GCM Api
     Route::group(array('prefix' => '/gcm'), function () {
         Route::post('/', 'RegistroGCMsController@store');
+        Route::post('/envio', 'RegistroGCMsController@envio');
     });
 
     //Participantes Api

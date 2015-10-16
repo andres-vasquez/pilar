@@ -223,7 +223,7 @@
                     <div class="panel-body">
                         <textarea class="form-control" id="txtMensaje" rows="3"></textarea>
                         <br/>
-                        <button class="btn btn-info pull-right">Enviar</button>
+                        <button class="btn btn-info pull-right" id="btnNotificaciones">Enviar</button>
                     </div>
 
                     <div class="panel-footer text-right" id="valido_mensaje">
@@ -259,7 +259,7 @@
     @if (Session::get("nombre_sistema") === "feicobol")
         <% HTML::script('public/js/sitio/dashboard_feicobol.js'); %>
     @else
-        <% HTML::script('public/js/sitio/dashboard.js'); %>
+        <% HTML::script('public/js/sitio/dashboard_normal.js'); %>
     @endif
 
     <% HTML::script('public/js/chart.min.js'); %>

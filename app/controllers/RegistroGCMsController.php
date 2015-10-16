@@ -116,4 +116,59 @@ class RegistroGCMsController extends \BaseController {
 		}
 	}
 
+    public function envio()
+    {
+        $data = Input::all();
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($data["credencial"]))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+            $gcmUsers= RegistroGCM::whereRaw('sistema_id=?',array($id_sistema))->get();
+            if(sizeof($gcmUsers)>0) {
+                $ids=array();
+                foreach ($gcmUsers as $usuarioGcm) {
+                    $token=$usuarioGcm["token"];
+                    array_push($ids,$token);
+                }
+
+                $msg = array
+                (
+                    'message' 	=> $data["mensaje"]
+                );
+                $fields = array
+                (
+                    'registration_ids' 	=> $ids,
+                    'data'			=> $msg
+                );
+
+                $headers = array
+                (
+                    'Authorization: key=' . "AIzaSyC_pHrUG7J8xt8iksz_QNVRD2ub6pOmZd8",
+                    'Content-Type: application/json'
+                );
+
+                $ch = curl_init();
+                curl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
+                curl_setopt( $ch,CURLOPT_POST, true );
+                curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
+                curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
+                curl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );
+                curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );
+                $result = curl_exec($ch );
+                curl_close( $ch );
+                echo json_encode($result);
+            }
+            else
+            {
+                $errores="Error al obtener datos";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Error al acceder";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+
 }

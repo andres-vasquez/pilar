@@ -9,15 +9,15 @@ var arrayColores=[
     },
     {
         color: "#ffb53e",
-        highlight: "#fac878",
+        highlight: "#fac878"
     },
     {
         color: "#1ebfae",
-        highlight: "#3cdfce",
+        highlight: "#3cdfce"
     },
     {
         color: "#f9243f",
-        highlight: "#f6495f",
+        highlight: "#f6495f"
     },
     {
         color:"#9C27B0",
@@ -194,10 +194,57 @@ $(document).ready(function()
     $("#btnParticipantes").click(function(event){
         event.preventDefault();
 
+    });
+
+    $("#btnNotificaciones").click(function(event){
+        event.preventDefault();
+
+        $("#btnNotificaciones").attr("disabled","disabled");
+        $("#btnNotificaciones").addClass("disabled");
+
+        if($("#txtMensaje").val()!="")
+        {
+            var datos={
+                "mensaje":$("#txtMensaje").val(),
+                "credencial":$("#credencial").val()
+            };
+
+            var url="../pilar/api/v1/gcm/envio";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(datos),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(result)
+                {
+                    result=JSON.parse(result);
+                    $("#btnNotificaciones").removeAttr("disabled");
+                    $("#btnNotificaciones").removeClass("disabled");
+
+                    if(result.success==1)
+                    {
+                        $("#txtMensaje").val("")
+                        alert("Notificación enviada")
+                    }
+                    else
+                        alert("Notificación no enviada")
+
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    $("#btnNotificaciones").removeAttr("disabled");
+                    $("#btnNotificaciones").removeClass("disabled");
+                    alert("Notificación no enviada")
+                }
+            });
+        }
+        else
+            alert("Ingrese su mensaje para enviar como notificación");
 
     });
 
-    //Funcion al inicializar
+
+//Funcion al inicializar
     llenarLikes();
     llenarNoticias();
     llenarAnuncios();
