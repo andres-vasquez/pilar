@@ -30,7 +30,7 @@ class RegistroGCMsController extends \BaseController {
             $data["aud_usuario_id"]="100";
         }
 
-		$validator = Validator::make($data, Registrogcm::$rules);
+		$validator = Validator::make($data, RegistroGCM::$rules);
 		if ($validator->fails())
 		{
 			$errores=$validator->messages()->first();

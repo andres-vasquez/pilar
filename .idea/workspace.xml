@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -119,8 +117,8 @@
       <file leaf-file-name="RegistroGCMsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53833604" vertical-offset="255" max-vertical-offset="1875">
-              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.3670473" vertical-offset="255" max-vertical-offset="1875">
+              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -470,12 +468,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00045" summary="Autenticacion e ingreso.. Gestion USUARIOS">
-      <created>1432177331947</created>
-      <option name="number" value="00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1432177331947</updated>
-    </task>
     <task id="LOCAL-00046" summary="Autenticacion e ingreso.. Gestion USUARIOS">
       <created>1434847491939</created>
       <option name="number" value="00046" />
@@ -764,7 +756,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444936047309</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Notificaciones">
+      <created>1444965119015</created>
+      <option name="number" value="00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1444965119015</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -852,7 +850,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Ofertas" />
     <MESSAGE value="Evento corregido" />
     <MESSAGE value="Expositores id corregido&#10;" />
     <MESSAGE value="Noticias corregido" />
@@ -877,7 +874,8 @@
     <MESSAGE value="Ajuste publicidad 2.0" />
     <MESSAGE value="Modificacion Restapi Publicidad" />
     <MESSAGE value="Dashboard prensa Fipaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dashboard prensa Fipaz" />
+    <MESSAGE value="Notificaciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notificaciones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1293,8 +1291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53833604" vertical-offset="255" max-vertical-offset="1875">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.3670473" vertical-offset="255" max-vertical-offset="1875">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
           <folding />
         </state>
       </provider>
