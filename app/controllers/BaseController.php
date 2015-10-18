@@ -2,18 +2,18 @@
 
 class BaseController extends Controller {
 
-	/**
-	 * Setup the layout used by the controller.
-	 *
-	 * @return void
-	 */
-	protected function setupLayout()
-	{
-		if ( ! is_null($this->layout))
-		{
-			$this->layout = View::make($this->layout);
-		}
-	}
+    /**
+     * Setup the layout used by the controller.
+     *
+     * @return void
+     */
+    protected function setupLayout()
+    {
+        if ( ! is_null($this->layout))
+        {
+            $this->layout = View::make($this->layout);
+        }
+    }
 
 
     public function subirArchivoAWS()
@@ -50,6 +50,47 @@ class BaseController extends Controller {
         else
         {
             $errores="Error al subir imagen";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function cantidad($app,$modulo,$agrupador)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0)
+        {
+            $id_sistema=$sistemas[0]["id"];
+            switch($modulo)
+            {
+                case "noticias":
+                    $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM Noticias WHERE estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema));
+                    break;
+                case "eventos":
+                    $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM eventos WHERE estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema));
+                    break;
+                case "publicidad":
+                    $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM Publicidad WHERE estado=1 AND baja_logica=1 AND tipo_publicidad=? AND sistema_id=?',array($agrupador,$id_sistema));
+                    break;
+                case "expositores":
+                    $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM expositores WHERE estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema));
+                    break;
+                case "ofertas":
+                    $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM ofertas WHERE estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema));
+                    break;
+                default:
+                    $errores="Error al obtener modulo";
+                    return View::make('ws.json_errores', array("errores"=>compact('errores')));
+                    break;
+            }
+
+            foreach ($query as $dato) {
+                $total = $dato->cantidad;
+                return View::make('ws.json', array("resultado" => compact('total')));
+            }
+        }
+        else
+        {
+            $errores="Error al obtener cantidades";
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
     }

@@ -53,64 +53,12 @@ $(document).ready(function()
     var totalLikes=0;
     var totalExpositores=0;
 
-    llenarLikes= function(){
-        $("#numLikes").html("");
-        $("#numLikes").append('<i class="fa fa-spinner fa-spin fa-1x"></i>');
-        var credencial=$("#credencial").val();
-
-        var url="../pilar/api/v1/expositoreslikes/"+credencial+"/reporte";
-        $.ajax({
-            type: "GET",
-            url: url,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function(result)
-            {
-                $("#numLikes").html("");
-                if(parseInt(result.intCodigo)==1)
-                {
-                    totalLikes=parseInt(result.resultado.resultado.total);
-                    $("#numLikes").append(totalLikes);
-
-                    var lstVotos=result.resultado.resultado.resultado;
-                    var pieData=[];
-
-                    for(var i=0;i<10;i++)
-                    {
-                        var objColor=arrayColores[i];
-                        var objVoto=lstVotos[i];
-
-                        var obj={
-                            value: parseInt(objVoto.conteo),
-                            color:objColor.color,
-                            highlight: objColor.highlight,
-                            label: objVoto.expositor_nombre
-                        };
-                        pieData.push(obj);
-                    }
-
-                    var chart4 = document.getElementById("pie-chart").getContext("2d");
-                    window.myPie = new Chart(chart4).Pie(pieData, {
-                        responsive : true
-                    });
-                }
-                else
-                    $("#numLikes").html("0");
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                console.log(XMLHttpRequest + " "+textStatus);
-                $("#numLikes").html("0");
-            }
-        });
-    };
-
     //Funcion para desplegar noticias
-    llenarNoticias = function(){
-        $("#numNoticias").html("");
-        $("#numNoticias").append('<i class="fa fa-spinner fa-spin fa-1x"></i>');
+    llenarContadores = function(elemento,metodo,agrupador){
+        $("#"+elemento).html("");
+        $("#"+elemento).append('<i class="fa fa-spinner fa-spin fa-1x"></i>');
         var credencial=$("#credencial").val();
-
-        var url="pilar/api/v1/noticias/"+credencial+"/";
+        var url="../pilar/api/v1/"+credencial+"/cantidad/"+metodo+"/"+agrupador;
         $.ajax({
             type: "GET",
             url: url,
@@ -118,82 +66,24 @@ $(document).ready(function()
             dataType: "json",
             success: function(result)
             {
-                $("#numNoticias").html("");
-                if(parseInt(result.intCodigo)==1)
-                {
-                    totalNoticias=parseInt(result.resultado.total);
-                    $("#numNoticias").append(totalNoticias);
+                $("#"+elemento).html("");
+                if (parseInt(result.intCodigo) == 1) {
+                    var total = parseInt(result.resultado.total);
+                    $("#"+elemento).append(total);
                 }
                 else
-                    $("#numNoticias").html("0");
+                    $("#"+elemento).html("0");
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
-                $("#numNoticias").html("0");
+                $("#"+elemento).html("0");
             }
         });
     };
 
-    llenarAnuncios = function(){
-        $("#numAnuncios").html("");
-        $("#numAnuncios").append('<i class="fa fa-spinner fa-spin fa-1x"></i>');
-        var credencial=$("#credencial").val();
-
-        var url="../pilar/api/v1/publicidad/"+credencial+"/sinformato";
-        $.ajax({
-            type: "GET",
-            url: url,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function(result)
-            {
-                $("#numAnuncios").html("");
-                try
-                {
-                    totalAnuncios=result.length;
-                    $("#numAnuncios").append(totalAnuncios);
-                }
-                catch(e){
-                    $("#numAnuncios").html("0");
-                }
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                $("#numAnuncios").html("0");
-            }
-        });
-    };
-
-    llenarExpositores = function(){
-        $("#numExpositores").html("");
-        $("#numExpositores").append('<i class="fa fa-spinner fa-spin fa-1x"></i>');
-        var credencial=$("#credencial").val();
-
-        var url="../pilar/api/v1/expositores/"+credencial+"/sinformato";
-        $.ajax({
-            type: "GET",
-            url: url,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function(result)
-            {
-                $("#numExpositores").html("");
-                try
-                {
-                    totalExpositores=result.length;
-                    $("#numExpositores").append(totalExpositores);
-                }
-                catch(e){
-                    $("#numExpositores").html("0");
-                }
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                $("#numExpositores").html("0");
-            }
-        });
-    };
 
     $("#btnParticipantes").click(function(event){
         event.preventDefault();
-
+        window.open('ferias/participantes','_blank');
     });
 
     $("#btnNotificaciones").click(function(event){
@@ -244,9 +134,12 @@ $(document).ready(function()
     });
 
 
+
 //Funcion al inicializar
-    llenarLikes();
-    llenarNoticias();
-    llenarAnuncios();
-    llenarExpositores();
+    llenarContadores("numNoticias","noticias","vacio");
+    llenarContadores("numEventos","eventos","vacio");
+    llenarContadores("numExpositores","expositores","vacio");
+    llenarContadores("numOfertas","ofertas","vacio");
+    llenarContadores("numPublicidad","publicidad","slider");
+    llenarContadores("numBanner","publicidad","banner");
 });

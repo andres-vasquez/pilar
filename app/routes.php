@@ -10,7 +10,10 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
+App::missing(function($exception)
+{
+    return Response::view('error', array(), 404);
+});
 
 //Login
 Route::get('/login', function () {
@@ -129,6 +132,7 @@ Route::group(array('before' => 'session'), function () {
         Route::get('/ofertas', function () {
             return View::make('sitio.ferias.ofertas')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
+        Route::get('/participantes', 'RegistroParticipantesController@index');
     });
 
     //************** Tecnobit **********************
@@ -292,6 +296,9 @@ Route::post('/ws/funciones/subirArchivoAWS', array('as' => 'show', 'uses' => 'Ba
 
 //*************** REST API GENERAL ***************************
 Route::group(array('prefix' => 'api/v1'), function () {
+
+    //Cantidades del dashboard
+    Route::get('/{sistema}/cantidad/{modulo}/{agrupador}', array('as' => 'show', 'uses' => 'BaseController@cantidad'))->where(array('modulo' => '[a-z]+','agrupador' => '[a-z]+'));
 
     //REST Api noticias
     Route::group(array('prefix' => '/noticias'), function () {

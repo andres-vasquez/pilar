@@ -145,7 +145,7 @@
                     </div>
                     <div class="col-sm-9 col-lg-7 widget-right">
                         <div class="large" id="numPublicidad">0</div>
-                        <div class="text-muted">Publicidad</div>
+                        <div class="text-muted">Sliders</div>
                     </div>
                 </div>
             </div>
