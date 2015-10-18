@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/error.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BaseController.php" afterPath="$PROJECT_DIR$/app/controllers/BaseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -42,48 +38,39 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="81.17647" vertical-offset="4320" max-vertical-offset="7050">
+            <state vertical-scroll-proportion="82.35294" vertical-offset="4380" max-vertical-offset="7050">
               <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.25" vertical-offset="747" max-vertical-offset="1545">
-              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.42477876" vertical-offset="912" max-vertical-offset="1590">
+              <caret line="80" column="117" selection-start-line="80" selection-start-column="117" selection-end-line="80" selection-end-column="117" />
               <folding>
-                <marker date="1445201998000" expanded="true" signature="2305:2396" placeholder="SELECT count..Noticias..." />
-                <marker date="1445201998000" expanded="true" signature="2540:2613" placeholder="SELECT count..eventos..." />
-                <marker date="1445201998000" expanded="true" signature="2540:2630" placeholder="SELECT count..eventos..." />
-                <marker date="1445201998000" expanded="true" signature="2777:2874" placeholder="SELECT count..Publicidad..." />
-                <marker date="1445201998000" expanded="true" signature="2777:2892" placeholder="SELECT count..Publicidad..." />
-                <marker date="1445201998000" expanded="true" signature="2777:2894" placeholder="SELECT count..Publicidad..." />
-                <marker date="1445201998000" expanded="true" signature="2777:2923" placeholder="SELECT count..Publicidad..." />
-                <marker date="1445201998000" expanded="true" signature="3051:3145" placeholder="SELECT count..expositores..." />
-                <marker date="1445201998000" expanded="true" signature="3289:3379" placeholder="SELECT count..ofertas..." />
+                <marker date="1445203372000" expanded="true" signature="2305:2396" placeholder="SELECT count..Noticias..." />
+                <marker date="1445203372000" expanded="true" signature="2540:2613" placeholder="SELECT count..eventos..." />
+                <marker date="1445203372000" expanded="true" signature="2540:2630" placeholder="SELECT count..eventos..." />
+                <marker date="1445203372000" expanded="true" signature="2777:2874" placeholder="SELECT count..Publicidad..." />
+                <marker date="1445203372000" expanded="true" signature="2777:2892" placeholder="SELECT count..Publicidad..." />
+                <marker date="1445203372000" expanded="true" signature="2777:2894" placeholder="SELECT count..Publicidad..." />
+                <marker date="1445203372000" expanded="true" signature="2777:2923" placeholder="SELECT count..Publicidad..." />
+                <marker date="1445203372000" expanded="true" signature="3051:3145" placeholder="SELECT count..expositores..." />
+                <marker date="1445203372000" expanded="true" signature="3289:3379" placeholder="SELECT count..ofertas..." />
+                <marker date="1445203372000" expanded="true" signature="3524:3629" placeholder="SELECT count..participantes_concurso..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CatalogosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="1950">
-              <caret line="33" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard_normal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboard_normal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_normal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23076923" vertical-offset="1548" max-vertical-offset="2265">
-              <caret line="114" column="41" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2295">
+              <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -92,8 +79,8 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.875" vertical-offset="1860" max-vertical-offset="4110">
-              <caret line="159" column="56" selection-start-line="159" selection-start-column="47" selection-end-line="159" selection-end-column="56" />
+            <state vertical-scroll-proportion="-10.125" vertical-offset="3402" max-vertical-offset="4110">
+              <caret line="243" column="81" selection-start-line="243" selection-start-column="65" selection-end-line="243" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -153,11 +140,11 @@
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/app/views/error.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
+        <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
       </list>
     </option>
   </component>
@@ -462,12 +449,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00050" summary="Reporte sms Web 1.1&#10;">
-      <created>1435203167970</created>
-      <option name="number" value="00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1435203167974</updated>
-    </task>
     <task id="LOCAL-00051" summary="Reporte sms Web 1.1&#10;">
       <created>1435203208902</created>
       <option name="number" value="00051" />
@@ -756,7 +737,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445014341937</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Dashboard completo">
+      <created>1445203192416</created>
+      <option name="number" value="00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1445203192416</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -790,7 +777,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27059773" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27059773" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26655897" sideWeight="0.50094163" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -844,7 +831,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Eventos y noticias sin margen" />
     <MESSAGE value="Eventos y noticias sin margen  1.0" />
     <MESSAGE value="Eventos y noticias sin margen  1.1" />
     <MESSAGE value="Ofertas sin expositor" />
@@ -869,7 +855,8 @@
     <MESSAGE value="Notificaciones funcionando&#10;" />
     <MESSAGE value="Cambios noticias&#10;" />
     <MESSAGE value="Cambios registro participante" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios registro participante" />
+    <MESSAGE value="Dashboard completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dashboard completo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1256,24 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.25" vertical-offset="747" max-vertical-offset="1545">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
-          <folding>
-            <marker date="1445201998000" expanded="true" signature="2305:2396" placeholder="SELECT count..Noticias..." />
-            <marker date="1445201998000" expanded="true" signature="2540:2613" placeholder="SELECT count..eventos..." />
-            <marker date="1445201998000" expanded="true" signature="2540:2630" placeholder="SELECT count..eventos..." />
-            <marker date="1445201998000" expanded="true" signature="2777:2874" placeholder="SELECT count..Publicidad..." />
-            <marker date="1445201998000" expanded="true" signature="2777:2892" placeholder="SELECT count..Publicidad..." />
-            <marker date="1445201998000" expanded="true" signature="2777:2894" placeholder="SELECT count..Publicidad..." />
-            <marker date="1445201998000" expanded="true" signature="2777:2923" placeholder="SELECT count..Publicidad..." />
-            <marker date="1445201998000" expanded="true" signature="3051:3145" placeholder="SELECT count..expositores..." />
-            <marker date="1445201998000" expanded="true" signature="3289:3379" placeholder="SELECT count..ofertas..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8185841" vertical-offset="15" max-vertical-offset="720">
@@ -1290,14 +1259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="81.17647" vertical-offset="4320" max-vertical-offset="7050">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5769231" vertical-offset="765" max-vertical-offset="2970">
@@ -1306,19 +1267,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="82.35294" vertical-offset="4380" max-vertical-offset="7050">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875" vertical-offset="1860" max-vertical-offset="4110">
-          <caret line="159" column="56" selection-start-line="159" selection-start-column="47" selection-end-line="159" selection-end-column="56" />
+        <state vertical-scroll-proportion="-10.125" vertical-offset="3402" max-vertical-offset="4110">
+          <caret line="243" column="81" selection-start-line="243" selection-start-column="65" selection-end-line="243" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_normal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23076923" vertical-offset="1548" max-vertical-offset="2265">
-          <caret line="114" column="41" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1548" max-vertical-offset="2295">
+          <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42477876" vertical-offset="912" max-vertical-offset="1590">
+          <caret line="80" column="117" selection-start-line="80" selection-start-column="117" selection-end-line="80" selection-end-column="117" />
+          <folding>
+            <marker date="1445203372000" expanded="true" signature="2305:2396" placeholder="SELECT count..Noticias..." />
+            <marker date="1445203372000" expanded="true" signature="2540:2613" placeholder="SELECT count..eventos..." />
+            <marker date="1445203372000" expanded="true" signature="2540:2630" placeholder="SELECT count..eventos..." />
+            <marker date="1445203372000" expanded="true" signature="2777:2874" placeholder="SELECT count..Publicidad..." />
+            <marker date="1445203372000" expanded="true" signature="2777:2892" placeholder="SELECT count..Publicidad..." />
+            <marker date="1445203372000" expanded="true" signature="2777:2894" placeholder="SELECT count..Publicidad..." />
+            <marker date="1445203372000" expanded="true" signature="2777:2923" placeholder="SELECT count..Publicidad..." />
+            <marker date="1445203372000" expanded="true" signature="3051:3145" placeholder="SELECT count..expositores..." />
+            <marker date="1445203372000" expanded="true" signature="3289:3379" placeholder="SELECT count..ofertas..." />
+            <marker date="1445203372000" expanded="true" signature="3524:3629" placeholder="SELECT count..participantes_concurso..." />
+          </folding>
         </state>
       </provider>
     </entry>

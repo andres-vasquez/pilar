@@ -142,4 +142,6 @@ $(document).ready(function()
     llenarContadores("numOfertas","ofertas","vacio");
     llenarContadores("numPublicidad","publicidad","slider");
     llenarContadores("numBanner","publicidad","banner");
+    llenarContadores("txtParticipantes","concurso","banner");
+
 });

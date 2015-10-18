@@ -77,6 +77,9 @@ class BaseController extends Controller {
                 case "ofertas":
                     $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM ofertas WHERE estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema));
                     break;
+                case "concurso":
+                    $query = DB::connection('Pilar')->select('SELECT count(1) AS cantidad FROM participantes_concurso WHERE estado=1 AND baja_logica=1 AND sistema_id=?',array($id_sistema));
+                    break;
                 default:
                     $errores="Error al obtener modulo";
                     return View::make('ws.json_errores', array("errores"=>compact('errores')));
