@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OfertasController.php" afterPath="$PROJECT_DIR$/app/controllers/OfertasController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -74,15 +74,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfertasController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OfertasController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4380531" vertical-offset="3018" max-vertical-offset="3840">
+            <state vertical-scroll-proportion="-11.75" vertical-offset="3033" max-vertical-offset="3840">
               <caret line="221" column="12" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
               <folding>
                 <marker date="1445213224000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..ofertas..." />
                 <marker date="1445213224000" expanded="true" signature="6788:6974" placeholder="SELECT rubro..ofertas..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistroGCMsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4380531" vertical-offset="1563" max-vertical-offset="2700">
+              <caret line="124" column="89" selection-start-line="124" selection-start-column="89" selection-end-line="124" selection-end-column="89" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,7 +146,6 @@
         <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
@@ -146,6 +155,7 @@
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
         <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/app/controllers/OfertasController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
       </list>
     </option>
   </component>
@@ -361,12 +371,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Reporte sms Web 1.3&#10;">
-      <created>1435209286623</created>
-      <option name="number" value="00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1435209286623</updated>
     </task>
     <task id="LOCAL-00053" summary="Reporte sms Web 1.4&#10;">
       <created>1435209572331</created>
@@ -656,7 +660,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445203396979</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Ofertas arbol modificado">
+      <created>1445213241893</created>
+      <option name="number" value="00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1445213241894</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -744,7 +754,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Eventos y noticias sin margen  1.1" />
     <MESSAGE value="Ofertas sin expositor" />
     <MESSAGE value="Eventos CRUD" />
     <MESSAGE value="Ofertas Insert" />
@@ -769,7 +778,8 @@
     <MESSAGE value="Cambios registro participante" />
     <MESSAGE value="Dashboard completo" />
     <MESSAGE value="Dashboard completo 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dashboard completo 2.0" />
+    <MESSAGE value="Ofertas arbol modificado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ofertas arbol modificado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1017,14 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.10114192" vertical-offset="2087" max-vertical-offset="2700">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1080">
@@ -1204,12 +1206,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4380531" vertical-offset="3018" max-vertical-offset="3840">
+        <state vertical-scroll-proportion="-11.75" vertical-offset="3033" max-vertical-offset="3840">
           <caret line="221" column="12" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
           <folding>
             <marker date="1445213224000" expanded="true" signature="5569:5686" placeholder="SELECT rubro..ofertas..." />
             <marker date="1445213224000" expanded="true" signature="6788:6974" placeholder="SELECT rubro..ofertas..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4380531" vertical-offset="1563" max-vertical-offset="2700">
+          <caret line="124" column="89" selection-start-line="124" selection-start-column="89" selection-end-line="124" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>

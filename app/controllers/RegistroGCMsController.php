@@ -122,7 +122,7 @@ class RegistroGCMsController extends \BaseController {
         $sistemas= SistemasDesarrollados::whereRaw('app=?',array($data["credencial"]))->get();
         if(sizeof($sistemas)>0) {
             $id_sistema = $sistemas[0]["id"];
-            $gcmUsers= RegistroGCM::whereRaw('sistema_id=?',array($id_sistema))->get();
+            $gcmUsers= RegistroGCM::whereRaw('sistema_id=? AND estado=1 AND baja_logica=1',array($id_sistema))->get();
             if(sizeof($gcmUsers)>0) {
                 $ids=array();
                 foreach ($gcmUsers as $usuarioGcm) {
