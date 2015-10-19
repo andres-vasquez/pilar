@@ -13,7 +13,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="padding: 25px">
 <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
