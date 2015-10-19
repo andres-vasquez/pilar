@@ -112,16 +112,9 @@ $(document).ready(function()
                     $("#btnNotificaciones").removeAttr("disabled");
                     $("#btnNotificaciones").removeClass("disabled");
 
-                    if(result.success==1)
-                    {
-                        $("#txtMensaje").val("")
-                        alert("Notificación enviada")
-                    }
-                    else
-                    {
-                        alert("Notificación no enviada")
-                        console.log(JSON.stringify(result));
-                    }
+
+                    console.log(JSON.stringify(result));
+                    alert("Se enviaron "+result.success+" fallaron "+result.failure);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     $("#btnNotificaciones").removeAttr("disabled");
