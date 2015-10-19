@@ -118,8 +118,10 @@ $(document).ready(function()
                         alert("Notificación enviada")
                     }
                     else
+                    {
                         alert("Notificación no enviada")
-
+                        console.log(JSON.stringify(result));
+                    }
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     $("#btnNotificaciones").removeAttr("disabled");
