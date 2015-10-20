@@ -188,7 +188,7 @@ class OfertasController extends \BaseController {
         if(sizeof($sistemas)>0)
         {
             $id_sistema = $sistemas[0]["id"];
-            $query = DB::connection('Pilar')->select("SELECT rubro_id AS id, rubro AS nombre FROM ofertas WHERE sistema_id=".$id_sistema." GROUP BY rubro_id ORDER BY rubro");
+            $query = DB::connection('Pilar')->select("SELECT rubro_id AS id, rubro AS nombre FROM ofertas WHERE sistema_id=".$id_sistema." AND estado=1 AND baja_logica=1 GROUP BY rubro_id ORDER BY rubro");
             if (sizeof($query))
             {
                 $resultado=array();
