@@ -123,7 +123,9 @@ class RegistroGCMsController extends \BaseController {
         if(sizeof($sistemas)>0) {
             $id_sistema = $sistemas[0]["id"];
             $gcmUsers= RegistroGCM::whereRaw('sistema_id=? AND estado=1 AND baja_logica=1',array($id_sistema))->get();
-            if(sizeof($gcmUsers)>0) {
+            if(sizeof($gcmUsers)>0)
+            {
+                $resultado=array();
                 $ids=array();
                 foreach ($gcmUsers as $usuarioGcm) {
                     $token=$usuarioGcm["token"];
@@ -155,7 +157,35 @@ class RegistroGCMsController extends \BaseController {
                 curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );
                 $result = curl_exec($ch );
                 curl_close( $ch );
-                echo json_encode($result);
+                $resultado["android"]=$result;
+
+                $msg = array
+                (
+                    'message' 	=> $data["mensaje"]
+                );
+                $fields = array
+                (
+                    'registration_ids' 	=> $ids,
+                    'data'			=> $msg
+                );
+
+                $headers = array
+                (
+                    'Authorization: key=' . "AIzaSyAlU5501mQtnGfyEQhKs8bI3KBZIFau7pg",
+                    'Content-Type: application/json'
+                );
+
+                $nuevo = curl_init();
+                curl_setopt( $nuevo,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
+                curl_setopt( $nuevo,CURLOPT_POST, true );
+                curl_setopt( $nuevo,CURLOPT_HTTPHEADER, $headers );
+                curl_setopt( $nuevo,CURLOPT_RETURNTRANSFER, true );
+                curl_setopt( $nuevo,CURLOPT_SSL_VERIFYPEER, false );
+                curl_setopt( $nuevo,CURLOPT_POSTFIELDS, json_encode( $fields ) );
+                $result = curl_exec($nuevo );
+                curl_close( $nuevo );
+                $resultado["ios"]=$result;
+                echo json_encode($resultado);
             }
             else
             {

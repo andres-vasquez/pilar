@@ -108,13 +108,12 @@ $(document).ready(function()
                 dataType: "json",
                 success: function(result)
                 {
-                    result=JSON.parse(result);
+                    var android=JSON.parse(result.android);
+                    var ios=JSON.parse(result.ios);
+
                     $("#btnNotificaciones").removeAttr("disabled");
                     $("#btnNotificaciones").removeClass("disabled");
-
-
-                    console.log(JSON.stringify(result));
-                    alert("Se enviaron "+result.success+" fallaron "+result.failure);
+                    alert("Se enviaron notificaciones Android:"+android.success+" iOS:"+ios.success);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     $("#btnNotificaciones").removeAttr("disabled");
