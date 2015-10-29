@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" afterPath="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" afterPath="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PublicidadsController.php" afterPath="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -45,16 +45,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard_normal.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_normal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73344105" vertical-offset="1286" max-vertical-offset="2205">
-              <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,8 +58,18 @@
       <file leaf-file-name="publicidad.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-67.375" vertical-offset="10308" max-vertical-offset="13755">
+            <state vertical-scroll-proportion="-168.625" vertical-offset="7878" max-vertical-offset="13755">
               <caret line="795" column="27" selection-start-line="795" selection-start-column="27" selection-end-line="795" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicidadsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.3274336" vertical-offset="1632" max-vertical-offset="5595">
+              <caret line="214" column="137" selection-start-line="214" selection-start-column="137" selection-end-line="214" selection-end-column="137" />
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
       <file leaf-file-name="RegistroGCMsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.041667" vertical-offset="2330" max-vertical-offset="3150">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2330" max-vertical-offset="3150">
               <caret line="173" column="84" selection-start-line="173" selection-start-column="84" selection-end-line="173" selection-end-column="84" />
               <folding />
             </state>
@@ -130,12 +130,10 @@
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/expositores.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Expositore.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/expositores.js" />
-        <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/RegistroParticipantesController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
         <option value="$PROJECT_DIR$/app/views/error.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/index.blade.php" />
@@ -144,6 +142,8 @@
         <option value="$PROJECT_DIR$/app/controllers/OfertasController.php" />
         <option value="$PROJECT_DIR$/app/controllers/RegistroGCMsController.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/dashboard_normal.js" />
+        <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
       </list>
     </option>
   </component>
@@ -152,9 +152,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="737" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -197,6 +196,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -209,7 +240,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="js.buildTools.gulp.node_interpreter" value="/usr/local/bin/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="/usr/local/lib/node_modules/gulp" />
@@ -314,12 +345,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Eventos funcional">
-      <created>1442345115055</created>
-      <option name="number" value="00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1442345115056</updated>
     </task>
     <task id="LOCAL-00059" summary="Backend mapa y expo">
       <created>1442345844943</created>
@@ -609,7 +634,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445362468169</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Notificaciones iOS">
+      <created>1445700134970</created>
+      <option name="number" value="00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1445700134970</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -633,7 +664,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="737" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -642,20 +673,20 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786753" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28271407" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26655897" sideWeight="0.50094163" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -676,9 +707,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.315832" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -697,7 +728,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Ofertas Insert 1.2" />
     <MESSAGE value="Ofertas Insert 1.3" />
     <MESSAGE value="Ofertas Insert 1.4 Corregido" />
     <MESSAGE value="Cambio de tamaños publicidad" />
@@ -722,7 +752,8 @@
     <MESSAGE value="Mensaje GCM" />
     <MESSAGE value="Html cambio ofertas" />
     <MESSAGE value="Ofertas cambio bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ofertas cambio bug" />
+    <MESSAGE value="Notificaciones iOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notificaciones iOS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -740,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="345">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.125" vertical-offset="2352" max-vertical-offset="3375">
-          <caret line="197" column="50" selection-start-line="197" selection-start-column="50" selection-end-line="197" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
@@ -996,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.25" vertical-offset="4917" max-vertical-offset="5595">
-          <caret line="365" column="5" selection-start-line="365" selection-start-column="5" selection-end-line="365" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.5442479" vertical-offset="1080" max-vertical-offset="3660">
@@ -1046,6 +1062,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/solo_html.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="945">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.045378152" vertical-offset="2658" max-vertical-offset="3840">
+          <caret line="179" column="91" selection-start-line="179" selection-start-column="91" selection-end-line="179" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2330" max-vertical-offset="3150">
+          <caret line="173" column="84" selection-start-line="173" selection-start-column="84" selection-end-line="173" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7358185" vertical-offset="1286" max-vertical-offset="2205">
+          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="175.0" vertical-offset="4380" max-vertical-offset="7050">
@@ -1054,45 +1100,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/solo_html.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="945">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.045378152" vertical-offset="2658" max-vertical-offset="3840">
-          <caret line="179" column="91" selection-start-line="179" selection-start-column="91" selection-end-line="179" selection-end-column="91" />
-          <folding>
-            <marker date="1445362439000" expanded="true" signature="-1:-1" placeholder="SELECT rubro..ofertas..." />
-            <marker date="1445362439000" expanded="true" signature="-1:-1" placeholder="SELECT rubro..ofertas..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/publicidad.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-67.375" vertical-offset="10308" max-vertical-offset="13755">
+        <state vertical-scroll-proportion="-168.625" vertical-offset="7878" max-vertical-offset="13755">
           <caret line="795" column="27" selection-start-line="795" selection-start-column="27" selection-end-line="795" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/RegistroGCMsController.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadImagensController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.041667" vertical-offset="2330" max-vertical-offset="3150">
-          <caret line="173" column="84" selection-start-line="173" selection-start-column="84" selection-end-line="173" selection-end-column="84" />
+        <state vertical-scroll-proportion="-1.5" vertical-offset="2697" max-vertical-offset="3375">
+          <caret line="112" column="72" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/dashboard_normal.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/PublicidadsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73344105" vertical-offset="1286" max-vertical-offset="2205">
-          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state vertical-scroll-proportion="2.3274336" vertical-offset="1632" max-vertical-offset="5595">
+          <caret line="214" column="137" selection-start-line="214" selection-start-column="137" selection-end-line="214" selection-end-column="137" />
           <folding />
         </state>
       </provider>
