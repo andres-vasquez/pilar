@@ -292,6 +292,7 @@ Route::post('/ws/likesExpositores/eliminar/{id}', array('as' => 'show', 'uses' =
 
 //Funciones globales
 Route::post('/ws/funciones/subirArchivoAWS', array('as' => 'show', 'uses' => 'BaseController@subirArchivoAWS'));
+Route::post('/ws/funciones/subirAdjuntoAWS', array('as' => 'show', 'uses' => 'BaseController@subirAdjuntoAWS'));
 
 
 //*************** REST API GENERAL ***************************
@@ -385,7 +386,32 @@ Route::get('/amazon', function()
 });
 
 
+//*************************** TECNOBIT ************************************
 
+//Usuarios
+Route::get('/ws/tecnobit/acceso/{usuario_id}/{tipo}', array('as' => 'show', 'uses' => 'TecnobitaccesosController@store'));
+Route::get('/ws/tecnobit/usuarios/sin_formato', 'TecnobitusuariosController@sinformato');
+
+//Adjuntos
+Route::post('/ws/tecnobit/adjuntos', 'AdjuntosController@store');
+Route::get('/ws/tecnobit/adjuntos/{agrupador}/{credencial}', array('as' => 'show', 'uses' => 'AdjuntosController@sin_formato'));
+
+
+//REST Api Tecnobit
+Route::group(array('prefix' => 'apitecnobit/v1'), function () {
+
+    //REST Api usuarios
+    Route::group(array('before'=>'credencial','prefix' => '/usuarios'), function () {
+        Route::post('/registrar', 'TecnobitusuariosController@store');
+        Route::post('/auth', 'TecnobitusuariosController@autenticacion');
+    });
+
+    //REST Api usuarios
+    Route::group(array('prefix' => '/contenido'), function () {
+        Route::get('/{credencial}/{agrupador}', array('as' => 'show', 'uses' => 'AdjuntosController@apiadjuntos'));
+    });
+
+});
 
 
 //***************************** SMS ************************************************
