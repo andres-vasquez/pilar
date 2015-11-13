@@ -1,6 +1,9 @@
 /**
  * Created by andresvasquez on 3/18/15.
  */
+var editando=false;
+var idEditando=0;
+
 $(document).ready(function()
 {
     var urlBase="http://placehold.it/150/30a5ff/fff";
@@ -10,56 +13,64 @@ $(document).ready(function()
     var indice=1;
     var lstNoticias=[];
 
-    $('#htmlNoticia').wysihtml5({
+    $('#htmlNoticia,#htmlNoticia_editar').wysihtml5({
         toolbar: {
             "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
             "emphasis": true, //Italics, bold, etc. Default true
             "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
             "html": false, //Button which allows you to edit the generated HTML. Default false
-            "link": false, //Button to insert a link. Default true
+            "link": true, //Button to insert a link. Default true
             "image": true, //Button to insert an image. Default true,
             "color": false, //Button to change color of font
-            "blockquote": true //Blockquote
+            "blockquote": false //Blockquote
         },
-        locale: "es-ES"
-    });
-    $('#htmlNoticia_editar').wysihtml5({
-        toolbar: {
-            "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
-            "emphasis": true, //Italics, bold, etc. Default true
-            "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
-            "html": false, //Button which allows you to edit the generated HTML. Default false
-            "link": false, //Button to insert a link. Default true
-            "image": true, //Button to insert an image. Default true,
-            "color": false, //Button to change color of font
-            "blockquote": true //Blockquote
+        customTemplates: {
+            image: function(locale) {
+                return '<li>' +
+                    "<div class='btn-group'>" +
+                    "<a class='btn btn-default' data-toggle='modal' data-target='#imagenModal'  title='Imagen'><span class='glyphicon glyphicon-picture'></span></a>" +
+                    "</div>" +
+                    "</li>";
+            }
         },
         locale: "es-ES"
     });
 
-    $("#txtUrlImagen").change(function(){
-        $("#imgNoticia").attr("src",$(this).val());
-    });
+
+
 
     $("#collapseNoticia").click(function(){
         $(".chosen-select").chosen();
         $(".chosen-container").css("width","100%");
     });
 
-    $("#formNuevaNoticia").submit(function(event)
+
+    $("#btnEnviar").click(function(event)
     {
         event.preventDefault();
+        var tags="";
+        try
+        {
+            var cmbEtiquetas=$("#cmbEtiquetas").val();
+            for(var i=0;i<cmbEtiquetas.length;i++)
+                tags+=cmbEtiquetas[i]+",";
+        }catch (ex){}
+
+        tags=tags.substring(0,tags.length-1);
         var datos= {
             "titular":$("#txtTitular").val(),
             "url_imagen":$("#txtUrlImagen").val(),
             "descripcion":$("#txtDescripcion").val(),
+            "tags":tags,
             "html":$("#htmlNoticia").val()
         };
 
         $("#btnEnviar").attr('disabled', 'disabled');
+
+        var url = "../ws/noticias";
         $.ajax({
             type: "POST",
-            url: $(this).attr("action"),
+            url: url,
             data:  JSON.stringify(datos),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -88,6 +99,127 @@ $(document).ready(function()
                 $("#imgNoticia").attr("src",urlBase);
             }
         });
+    });
+
+
+    $("form").submit(function (event) {
+        var id = $(this).attr("id");
+        event.preventDefault();
+
+        var btnSubmit = $(this).find(':submit');
+        var htmlCargando='<i class="fa fa-spinner fa-spin"></i> Cargando';
+        var htmlCargado='<i class="fa fa-check"></i> Cargado';
+        var htmlError='<i class="fa fa-close"></i> Error';
+
+        var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+
+        if(id=="formImagenMiniatura")//Nuevo oferta
+        {
+            var formData = new FormData($(this)[0]);
+
+            btnSubmit.html(htmlCargando);
+            btnSubmit.attr('disabled', 'disabled');
+
+            var url = "../ws/funciones/subirArchivoAWS";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result)
+                {
+                    btnSubmit.removeAttr('disabled');
+                    result = JSON.parse(result);
+                    if (parseInt(result.intCodigo) == 1)
+                    {
+                        var data=result.resultado.data;
+                        var ruta=data.ruta_aws.replace("s3.amazonaws.com/siriustecnobit","siriustecnobit.s3.amazonaws.com");
+
+                        if(!editando)
+                        {
+                            $("#txtUrlImagen").val(ruta);
+                            $("#imgNoticia").attr("src",ruta);
+                        }
+                        else
+                        {
+                            $("#txtUrlImagen_editar").val(ruta);
+                        }
+
+                        $("#imgImagenMiniatura").val("");
+                        btnSubmit.html(htmlCargado);
+                    }
+                    else
+                    {
+                        alert("Error al subir la imagen");
+                        btnSubmit.html(htmlError);
+                    }
+                    //console.log(JSON.stringify(result));
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    btnSubmit.removeAttr('disabled');
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    btnSubmit.html(htmlError);
+                }
+            });
+        }
+        else if(id=="formImagen")
+        {
+            var formData = new FormData($(this)[0]);
+
+            btnSubmit.html(htmlCargando);
+            btnSubmit.attr('disabled', 'disabled');
+
+            var url = "../ws/funciones/subirArchivoAWS";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result)
+                {
+                    btnSubmit.removeAttr('disabled');
+                    result = JSON.parse(result);
+                    if (parseInt(result.intCodigo) == 1)
+                    {
+
+                        var data=result.resultado.data;
+                        var ruta=data.ruta_aws.replace("s3.amazonaws.com/siriustecnobit","siriustecnobit.s3.amazonaws.com");
+
+                        if(!editando)
+                        {
+                            $("#hdnRutaImagen").val(ruta);
+                            var htmlAnterior=$('#htmlNoticia').val();
+                            var wysihtml5Editor = $('#htmlNoticia').data("wysihtml5").editor;
+                            wysihtml5Editor.setValue(htmlAnterior+'<br/><img width="100%" src="'+ruta+'"/>');
+                        }
+                        else
+                        {
+                            $("#hdnRutaImagen_editar").val(ruta);
+                            var htmlAnterior=$('#htmlNoticia_editar').val();
+                            var wysihtml5Editor = $('#htmlNoticia_editar').data("wysihtml5").editor;
+                            wysihtml5Editor.setValue(htmlAnterior+'<br/><img width="100%" src="'+ruta+'"/>');
+                        }
+
+                        $("#imgImagen").val("");
+                        $("#imagenModal").modal("hide");
+                        btnSubmit.html("Cargar");
+                    }
+                    else
+                    {
+                        alert("Error al subir la imagen");
+                        btnSubmit.html(htmlError);
+                    }
+                    //console.log(JSON.stringify(result));
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    btnSubmit.removeAttr('disabled');
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    btnSubmit.html(htmlError);
+                }
+            });
+        }
     });
 
     limpiarCampos=function(){
@@ -429,38 +561,6 @@ $(document).ready(function()
                     $(this).val("");
                 }
             }
-        });
-
-        $("form").submit(function (event)
-        {
-            var id = $(this).attr("id");
-            event.preventDefault();
-            var _validFileExtensions = [".jpg", ".jpeg", ".png"];
-
-            var url = "../aws_upload";
-            var formData = new FormData($(this)[0]);
-
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function (result) {
-                    result = JSON.parse(result);
-                    console.log(JSON.stringify(result));
-                    if (parseInt(result.intCodigo) == 1) {
-                        var ruta = result.resultado.carga.ruta;
-                        var imagen = result.resultado.carga.id;
-                        console.log("URI imagen:" + imagen);
-                        $("#" + imagen).attr("src", ruta);
-                    }
-                },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    $("#divNoticias").html("");
-                    console.log(XMLHttpRequest + " " + textStatus);
-                }
-            });
         });
 
         //Portada

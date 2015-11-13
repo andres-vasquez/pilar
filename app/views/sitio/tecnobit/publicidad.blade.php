@@ -89,11 +89,12 @@
                             </div>
 
 
-                            <div class="form-group">
+                            <div class="form-group hidden">
                                 <label for="cmbPlan" class="col-sm-4 control-label">Plan contratado</label>
 
                                 <div class="col-sm-8">
                                     <select id="cmbPlan" class="form-control">
+                                        <option value=""></option>
                                     </select>
                                 </div>
                             </div>
@@ -509,11 +510,12 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group hidden">
                         <label for="cmbPlan_editar" class="col-sm-4 control-label">Plan contratado</label>
 
                         <div class="col-sm-8">
                             <select id="cmbPlan_editar" class="form-control">
+                                <option value=""></option>
                             </select>
                         </div>
                     </div>
@@ -908,5 +910,5 @@
 @stop
 @section('pie')
     <% HTML::script('public/js/bootstrap-table.js'); %>
-    <% HTML::script('public/js/sitio/publicidad.js'); %>
+    <% HTML::script('public/js/tecnobit/publicidad.js'); %>
 @stop

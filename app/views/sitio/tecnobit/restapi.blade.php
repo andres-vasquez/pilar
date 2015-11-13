@@ -94,10 +94,10 @@
 
                         <br/><br/>
                         <h4>Obtener las secciones</h4>
-                        <code>http://pilar.cloudapp.net/pilar/api/v1/catalogos/credencial/secciones_tecnobit</code>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/catalogos/credencial/tecnobit_secciones</code>
                         <br/>
-                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/catalogos/<% Session::get('credencial')%>/secciones_tecnobit"
-                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/catalogos/<% Session::get('credencial')%>/secciones_tecnobit</a>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/catalogos/<% Session::get('credencial')%>/tecnobit_secciones"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/catalogos/<% Session::get('credencial')%>/tecnobit_secciones</a>
                         </small>
 
                         <br/><br/><br/><br/>

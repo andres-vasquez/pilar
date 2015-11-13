@@ -14,5 +14,5 @@ class Noticia extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array("titular","descripcion","url_imagen","html","link",'estado','baja_logica','sistema_id','aud_usuario_id');
+	protected $fillable = array("titular","descripcion","url_imagen","html","link",'estado','baja_logica','sistema_id','aud_usuario_id',"tags");
 }

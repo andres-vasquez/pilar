@@ -22,9 +22,6 @@
 @stop
 
 @section('contenido1')
-
-@stop
-@section('contenido2')
     <div class="col-lg-12">
         <span class="clearfix">
 
@@ -35,16 +32,15 @@
                     noticia</b></button>
         </span>
 
-        <div id="divNuevaNoticia" class="panel panel-collapse chat">
-            <% Form::open(array('url' => '/ws/noticias', 'id' => 'formNuevaNoticia')) %>
+        <div id="divNuevaNoticia" class="panel panel-collapse chat collapse">
             <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-th-list"></span> Nueva noticia
             </div>
             <div class="panel-body">
                 <ul>
                     <li class="left clearfix">
-						<span class="chat-img pull-left" style="width: 180px">
-                            <div id="divBloqueFotos" class="row">
-                            </div>
+						<span class="chat-img pull-left">
+                            <img id="imgNoticia" src="http://placehold.it/150/30a5ff/fff" alt="Foto noticia"
+                                 width="180px" height="180px" class="img-responsive"/>
 						</span>
 
                         <div class="chat-body clearfix row">
@@ -56,14 +52,26 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label>Imagen </label>
+                                    <input id="txtUrlImagen" class="form-control" type="hidden" required/>
+                                    <form id="formImagenMiniatura" enctype="multipart/form-data">
+                                        <div class="form-group form-inline">
+                                            <input type="file" name="imagen" id="imgImagenMiniatura" class="form-control imagen" required/>
+                                            <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="form-group">
                                     <label>Etiquetas</label>
-                                    <select data-placeholder="Etiquetas de la noticia..." class="chosen-select" multiple style="width:350px;" tabindex="4">
+                                    <select id="cmbEtiquetas" data-placeholder="Etiquetas de la noticia..." class="chosen-select" multiple style="width:350px;" tabindex="4">
                                     </select>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Descripción corta</label>
-                                    <textarea id="txtDescripcion" class="form-control" required></textarea>
+                                    <textarea id="txtDescripcion" class="form-control" maxlength="100" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +94,6 @@
                     <button type="reset" class="btn btn-danger btn-md">Cancelar</button>
                 </div>
             </div>
-            <% Form::close() %>
         </div>
 
 
@@ -200,26 +207,25 @@
         </div>
     </div>
 
-    <!-- Modal fotos -->
-    <div class="modal modal fade" id="fotosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <!-- Modal de imagen -->
+    <div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Cargar imagen/fotografía</h4>
+                    <h4 class="modal-title" id="myModalLabel">Adjuntar imagen</h4>
                 </div>
                 <div class="modal-body">
-
-                    <form enctype="multipart/form-data">
+                    <form id="formImagen" enctype="multipart/form-data">
                         <div class="form-group form-inline">
-                            <input type="hidden" class="id_foto" name="foto_id" value=""/>
-                            <input type="file" name="imagen" class="form-control imagen" required/>
-                            <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                            <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                            <input type="file" name="imagen" id="imgImagen" class="form-control imagen" required/>
+                            <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                            </button>
                         </div>
                     </form>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -228,9 +234,10 @@
         </div>
     </div>
 
-    </div>
-    </div>
     </div><!--/.col-->
+@stop
+@section('contenido2')
+
 @stop
 
 @section('pie')

@@ -41,7 +41,7 @@ $(document).ready(function () {
 
                         var data=result.resultado.data;
                         var ruta=data.ruta;
-                        var ruta_aws=data.ruta_aws;
+                        var ruta_aws=data.ruta_aws.replace("s3.amazonaws.com/siriustecnobit","siriustecnobit.s3.amazonaws.com");
 
                         if(!editando)
                         {
@@ -95,7 +95,7 @@ $(document).ready(function () {
                     {
 
                         var data=result.resultado.data;
-                        var ruta_aws=data.ruta_aws;
+                        var ruta_aws=data.ruta_aws.replace("s3.amazonaws.com/siriustecnobit","siriustecnobit.s3.amazonaws.com");
 
                         if(!editando)
                         {
