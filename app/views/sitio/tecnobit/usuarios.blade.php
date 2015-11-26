@@ -23,8 +23,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">Usuarios registrados</div>
             <div class="panel-body">
-                    <br/>
-                </div>
+
                 <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/tecnobit/usuarios/sin_formato'%>"
                        data-show-refresh="true" data-search="true"
                        data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
@@ -43,6 +42,7 @@
                     </tr>
                     </thead>
                 </table>
+                <br/>
             </div>
         </div>
 

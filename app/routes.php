@@ -308,6 +308,12 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'NoticiasController@apirangos'))->where(array('inicio' => '[0-9]+', 'fin' => '[0-9]+'));
         Route::get('/{sistema}/{inicio}/{fin}/{orden}', array('as' => 'show', 'uses' => 'NoticiasController@apiorden'));
         Route::get('/{sistema}/{id_noticia}/{metodo}', array('as' => 'show', 'uses' => 'NoticiasController@web'))->where(array('id_noticia' => '[0-9]+', 'metodo' => '[a-z]+'));;
+
+        //Noticias por secciones
+        Route::get('/{id_seccion}/{sistema}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapitodas'));
+        Route::get('/{id_seccion}/{sistema}/{inicio}', array('as' => 'show', 'uses' => 'NoticiasController@error'))->where('inicio', '[0-9]+');
+        Route::get('/{id_seccion}/{sistema}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapirangos'))->where(array('inicio' => '[0-9]+', 'fin' => '[0-9]+'));
+        Route::get('/{id_seccion}/{sistema}/{inicio}/{fin}/{orden}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapiorden'));
     });
 
     //REST Api publicidad
@@ -395,7 +401,9 @@ Route::get('/ws/tecnobit/usuarios/sin_formato', 'TecnobitusuariosController@sinf
 //Adjuntos
 Route::post('/ws/tecnobit/adjuntos', 'AdjuntosController@store');
 Route::get('/ws/tecnobit/adjuntos/{agrupador}/{credencial}', array('as' => 'show', 'uses' => 'AdjuntosController@sin_formato'));
-
+Route::get('/ws/tecnobit/adjuntos/{agrupador}/{id}', array('as' => 'show', 'uses' => 'AdjuntosController@show'));
+Route::post('/ws/tecnobit/adjuntos/{id}', array('as' => 'show', 'uses' => 'AdjuntosController@update'));
+Route::post('/ws/tecnobit/adjuntos/eliminar/{id}', array('as' => 'show', 'uses' => 'AdjuntosController@destroy'));
 
 //REST Api Tecnobit
 Route::group(array('prefix' => 'apitecnobit/v1'), function () {

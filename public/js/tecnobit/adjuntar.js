@@ -105,8 +105,8 @@ $(document).ready(function () {
                         else
                         {
                             /*$("#ruta_editar").val(ruta);
-                            $("#ruta_aws_editar").val(ruta_aws);
-                            $("#inputAdjunto_editar").val("");*/
+                             $("#ruta_aws_editar").val(ruta_aws);
+                             $("#inputAdjunto_editar").val("");*/
                         }
 
                         btnSubmit.html(htmlCargado);
@@ -196,6 +196,11 @@ $(document).ready(function () {
 
     });
 
+    $("#busquedaNoticia").click(function(event) {
+        event.preventDefault();
+
+        $("#buscarModal").modal("show");
+    });
 
 
     $("#collapseNuevo").click(function(event){
@@ -261,14 +266,14 @@ function operateFormatter(value, row, index) {
 window.operateEvents = {
     'click .edit': function (e, value, row, index)
     {
+        var page_header=$(".page-header").html();
         var id = row.id;
         idEditando = id;
         editando=true;
-
         $('#editarModal').modal('show');
         $("#imagenModal").css("z-index", "1500");
 
-        var url = "../ws/oferta/" + id;
+        var url = "../ws/tecnobit/adjuntos/" + id;
         $.ajax({
             type: "GET",
             url: url,
@@ -349,11 +354,12 @@ window.operateEvents = {
     },
     'click .remove': function (e, value, row, index)
     {
+        var page_header=$(".page-header").html();
         var id = row.id;
         $('#eliminarModal').modal('show');
-        $("#btnEliminarOferta").click(function () {
-            $("#btnEliminarOferta").attr('disabled', 'disabled');
-            var url = "../ws/oferta/eliminar/" + id;
+        $("#btnEliminarImagen").click(function () {
+            $("#btnEliminarImagen").attr('disabled', 'disabled');
+            var url = "../ws/tecnobit/adjuntos/eliminar/" + id;
             $.ajax({
                 type: "POST",
                 url: url,
@@ -361,12 +367,27 @@ window.operateEvents = {
                 dataType: "json",
                 success: function (result) {
                     $('#eliminarModal').modal('hide');
-                    $("#btnEliminarOferta").removeAttr('disabled');
+                    $("#btnEliminarImagen").removeAttr('disabled');
                     if (parseInt(result.intCodigo) == 1) {
                         mensaje("eliminada");
-                        $table = $('#tblOfertas').bootstrapTable('refresh', {
-                            url: '../api/v1/ofertas/' + $("#credencial").val() + '/sinformato'
-                        });
+
+                        switch(page_header)
+                        {
+                            case "Revista Digital":
+
+                                $table = $('#tblRevistas').bootstrapTable('refresh', {
+                                    url: '../ws/tecnobit/adjuntos/' + $("#credencial").val() + '/tecnobit_revista'
+                                });
+
+                                break;
+                            case "Slide de Imágenes":
+
+                                $table = $('#tblImagenes').bootstrapTable('refresh', {
+                                    url: '../ws/tecnobit/adjuntos/' + $("#credencial").val() + '/tecnobit_slider'
+                                });
+
+                                break;
+                        }
                     }
                     else {
                         mensaje(result.resultado.errores);
@@ -374,11 +395,12 @@ window.operateEvents = {
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     $('#eliminarModal').modal('hide');
-                    $("#btnEliminarOferta").removeAttr('disabled');
+                    $("#btnEliminarImagen").removeAttr('disabled');
                     console.log(XMLHttpRequest + " " + textStatus);
                     mensaje("error");
                 }
             });
         });
+
     }
 };

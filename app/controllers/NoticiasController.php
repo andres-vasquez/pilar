@@ -148,6 +148,7 @@ class NoticiasController extends \BaseController {
                 $formato_noticias["descripcion"] =$noticia["descripcion"];
                 $formato_noticias["url_imagen"] =$noticia["url_imagen"];
                 $formato_noticias["link"] =$noticia["link"];
+                $formato_noticias["tags"] =$noticia["tags"];
                 $formato_noticias["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($noticia["created_at"]));
                 array_push($noticias["noticias"],$formato_noticias);
             }
@@ -187,6 +188,7 @@ class NoticiasController extends \BaseController {
                 $formato_noticias["descripcion"] =$noticia["descripcion"];
                 $formato_noticias["url_imagen"] =$noticia["url_imagen"];
                 $formato_noticias["link"] =$noticia["link"];
+                $formato_noticias["tags"] =$noticia["tags"];
                 $formato_noticias["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($noticia["created_at"]));
                 array_push($noticias["noticias"],$formato_noticias);
             }
@@ -232,6 +234,7 @@ class NoticiasController extends \BaseController {
                     $formato_noticias["descripcion"] =$noticia["descripcion"];
                     $formato_noticias["url_imagen"] =$noticia["url_imagen"];
                     $formato_noticias["link"] =$noticia["link"];
+                    $formato_noticias["tags"] =$noticia["tags"];
                     $formato_noticias["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($noticia["created_at"]));
                     array_push($noticias["noticias"],$formato_noticias);
                 }
@@ -293,4 +296,117 @@ class NoticiasController extends \BaseController {
         $errores="No ingreso la direccion correcta";
         return View::make('ws.json_errores', array("errores"=>compact('errores')));
     }
+
+
+    public function seccionapitodas($id_seccion,$app)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0)
+        {
+            $id_sistema=$sistemas[0]["id"];
+            $noticias=array();
+            $noticias_todas = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC',array($id_sistema,$id_seccion))->get();
+            $noticias["total"]=count($noticias_todas);
+
+            $noticias["noticias"]=array();
+            foreach ($noticias_todas as $noticia) {
+                $formato_noticias = array();
+                $formato_noticias["id"] =$noticia["id"];
+                $formato_noticias["titular"] =$noticia["titular"];
+                $formato_noticias["descripcion"] =$noticia["descripcion"];
+                $formato_noticias["url_imagen"] =$noticia["url_imagen"];
+                $formato_noticias["link"] =$noticia["link"];
+                $formato_noticias["tags"] =$noticia["tags"];
+                $formato_noticias["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($noticia["created_at"]));
+                array_push($noticias["noticias"],$formato_noticias);
+            }
+            return View::make('ws.jsonNoticias', array("resultado"=>compact('noticias')));
+        }
+        else
+        {
+            $errores="Error al obtener noticias";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function seccionapirangos($id_seccion,$app,$inicio,$fin)
+    {
+        $rango=$fin-$inicio+1;
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0)
+        {
+            $id_sistema=$sistemas[0]["id"];
+            $noticias=array();
+            $noticias_todas = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC',array($id_sistema,$id_seccion))->get();
+            $noticias["total"]=count($noticias_todas);
+
+            $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT ? OFFSET ? ',array($id_sistema,$rango,$inicio-1,$id_seccion))->get();
+
+            $noticias["noticias"]=array();
+            foreach ($noticias_filtro as $noticia) {
+                $formato_noticias = array();
+                $formato_noticias["id"] =$noticia["id"];
+                $formato_noticias["titular"] =$noticia["titular"];
+                $formato_noticias["descripcion"] =$noticia["descripcion"];
+                $formato_noticias["url_imagen"] =$noticia["url_imagen"];
+                $formato_noticias["link"] =$noticia["link"];
+                $formato_noticias["tags"] =$noticia["tags"];
+                $formato_noticias["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($noticia["created_at"]));
+                array_push($noticias["noticias"],$formato_noticias);
+            }
+            return View::make('ws.jsonNoticias', array("resultado"=>compact('noticias')));
+        }
+        else
+        {
+            $errores="Error al obtener noticias";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function seccionapiorden($id_seccion,$app,$inicio,$fin,$orden)
+    {
+        if($orden=="ASC" || $orden=="DESC")
+        {
+            $rango=$fin-$inicio+1;
+            $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+            if(sizeof($sistemas)>0)
+            {
+                $id_sistema=$sistemas[0]["id"];
+                $noticias=array();
+                $noticias_todas = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC',array($id_sistema,$id_seccion))->get();
+                $noticias["total"]=count($noticias_todas);
+
+                if($orden=="DESC")
+                    $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT ? OFFSET ? ',array($id_sistema,$rango,$inicio-1,$id_seccion))->get();
+                else
+                    $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags)ORDER BY created_at ASC LIMIT ? OFFSET ? ',array($id_sistema,$rango,$inicio-1,$id_seccion))->get();
+
+                $noticias["noticias"]=array();
+                foreach ($noticias_filtro as $noticia) {
+                    $formato_noticias = array();
+                    $formato_noticias["id"] =$noticia["id"];
+                    $formato_noticias["titular"] =$noticia["titular"];
+                    $formato_noticias["descripcion"] =$noticia["descripcion"];
+                    $formato_noticias["url_imagen"] =$noticia["url_imagen"];
+                    $formato_noticias["link"] =$noticia["link"];
+                    $formato_noticias["tags"] =$noticia["tags"];
+                    $formato_noticias["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($noticia["created_at"]));
+                    array_push($noticias["noticias"],$formato_noticias);
+                }
+                return View::make('ws.jsonNoticias', array("resultado"=>compact('noticias')));
+            }
+            else
+            {
+                $errores="Error al obtener noticias";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Instruccion orden erronea";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+
+    }
 }
+

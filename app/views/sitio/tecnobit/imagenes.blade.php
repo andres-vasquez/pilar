@@ -56,6 +56,14 @@
                             </div>
                         </div>
 
+                        ﻿ <div class="form-group">
+                            <label for="txtLink" class="col-sm-4 control-label">Link</label>
+                            <div class="col-sm-6 input-group" style="padding-left: 12px">
+                                <input id="txtLink" class="form-control"/>
+                                <span class="input-group-addon"><a href="#" id="busquedaNoticia"><i class="fa fa-search"></i></a></span>
+                            </div>
+                        </div>
+
                         <input type="hidden" id="thumbnail" value=""/>
                         <input type="hidden" id="ruta" value=""/>
                         <input type="hidden" id="ruta_aws" value=""/>
@@ -75,6 +83,121 @@
             </div>
         </div>
 
+        <!-- Modal noticias -->
+        <div class="modal fade" id="buscarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Buscar noticias</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <table id="tblRevistas" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_slider'%>"
+                               data-show-refresh="true" data-search="true"
+                               data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
+                               data-sort-name="name" data-sort-order="desc">
+                            <thead>
+                            <tr>
+                                <th data-field="id" data-sortable="true">ID</th>
+                                <th data-field="nombre" data-sortable="true">Titulo</th>
+                                <th data-field="ruta_aws" data-sortable="false">Link</th>
+                                <th data-field="fecha_creacion" data-halign="center" data-sortable="true">Fecha publicación</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal editar -->
+        <div class="modal modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Editar slide de Imagénes</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="txtTitulo_editar" class="col-sm-4 control-label">Nombre imagen</label>
+
+                                <div class="col-sm-6">
+                                    <input id="txtTitulo_editar" class="form-control" required/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtNombre_editar" class="col-sm-4 control-label">Adjuntar Imagen</label>
+
+                                <div class="col-sm-6">
+                                    <form id="adjunto" enctype="multipart/form-data">
+                                        <div class="form-group form-inline">
+                                            <input type="file" id="inputAdjunto_editar" name="adjunto" class="form-control imagen" required/>
+                                            <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            ﻿ <div class="form-group">
+                                <label for="txtLink_editar" class="col-sm-4 control-label">Link</label>
+                                <div class="col-sm-6 input-group" style="padding-left: 12px">
+                                    <input id="txtLink_editar" class="form-control"/>
+                                    <span class="input-group-addon"><a href="#" id="busquedaNoticia_editar"><i class="fa fa-search"></i></a></span>
+                                </div>
+                            </div>
+
+                            <input type="hidden" id="thumbnail_editar" value=""/>
+                            <input type="hidden" id="ruta_editar" value=""/>
+                            <input type="hidden" id="ruta_aws_editar" value=""/>
+                            <input type="hidden" id="sistema_id_editar" name="sistema_id" value="<% Session::get("id_sistema")%>"/>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarUsuario">Guardar
+                            cambios
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal eliminar -->
+        <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Eliminar imagen</h4>
+                    </div>
+                    <div class="modal-body">
+                        Está seguro de eliminar la imagen seleccionada?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarImagen">Si,
+                            eliminar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div><!-- col-->
 @stop
 @section('contenido2')
@@ -82,24 +205,25 @@
         <div class="panel panel-default">
             <div class="panel-heading">Imaágenes de Slider</div>
             <div class="panel-body">
+
+                <table id="tblImagenes" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_slider'%>"
+                       data-show-refresh="true" data-search="true"
+                       data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
+                       data-sort-name="name" data-sort-order="desc">
+                    <thead>
+                    <tr>
+                        <th data-field="id" data-sortable="true">ID</th>
+                        <th data-field="nombre" data-sortable="true">Titulo</th>
+                        <th data-field="ruta_aws" data-sortable="false">Link</th>
+                        <th data-field="fecha_creacion" data-halign="center" data-sortable="true">Fecha publicación</th>
+                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
+                            data-events="operateEvents">Acciones
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
                 <br/>
             </div>
-            <table id="tblRevistas" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_slider'%>"
-                   data-show-refresh="true" data-search="true"
-                   data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
-                   data-sort-name="name" data-sort-order="desc">
-                <thead>
-                <tr>
-                    <th data-field="id" data-sortable="true">ID</th>
-                    <th data-field="nombre" data-sortable="true">Titulo</th>
-                    <th data-field="ruta_aws" data-sortable="false">Link</th>
-                    <th data-field="fecha_creacion" data-halign="center" data-sortable="true">Fecha publicación</th>
-                    <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
-                        data-events="operateEvents">Acciones
-                    </th>
-                </tr>
-                </thead>
-            </table>
         </div>
     </div>
 @stop

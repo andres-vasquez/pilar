@@ -82,8 +82,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">Imagen de Portada</div>
             <div class="panel-body">
-                <br/>
-            </div>
+
             <table id="tblRevistas" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_portada'%>"
                    data-show-refresh="true" data-search="true"
                    data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
@@ -100,6 +99,8 @@
                 </tr>
                 </thead>
             </table>
+                <br/>
+            </div>
         </div>
     </div>
 @stop

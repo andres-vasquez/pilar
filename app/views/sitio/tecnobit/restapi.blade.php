@@ -79,6 +79,14 @@
                                     href="http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>/1/5/ASC"
                                     target="_blank">http://pilar.cloudapp.net/pilar/api/v1/noticias/<% Session::get('credencial')%>/1/5/ASC</a>
                         </small>
+
+                        <br/><br/>
+                        <h4>Filtrar por sección</h4>
+                        <small>En cualquiera de los WS anteriores agregar el ID_SECCION antes de la credencial</small>
+                        <br/>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/ID_SECCION/credencial</code>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/ID_SECCION/credencial/inicio/fin</code>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/noticias/ID_SECCION/credencial/inicio/fin/orden</code>
                         <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab2">

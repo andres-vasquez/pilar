@@ -96,10 +96,10 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Eliminar usuario</h4>
+                        <h4 class="modal-title" id="myModalLabel">Eliminar revista</h4>
                     </div>
                     <div class="modal-body">
-                        Está seguro de dar de baja el usuario seleccionado?
+                        Está seguro de eliminar la revista seleccionada?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
@@ -119,7 +119,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Editar usuario</h4>
+                        <h4 class="modal-title" id="myModalLabel">Editar revista</h4>
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal">
@@ -143,13 +143,25 @@
                                         </div>
                                     </form>
                                 </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Thumbnail</label>
+                                    <div class="col-sm-6">
+                                        <form id="formThumbnail_editar" enctype="multipart/form-data">
+                                            <div class="form-group form-inline">
+                                                <input type="file" id="inputAdjuntoThumbnail_editar" name="adjunto" class="form-control imagen" required/>
+                                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" id="agrupador_editar" name="agrupador" value="revista"/>
+                                <input type="hidden" id="ruta_editar" value=""/>
+                                <input type="hidden" id="ruta_aws_editar" value=""/>
+                                <input type="hidden" id="sistema_id_editar" name="sistema_id" value="<% Session::get("id_sistema")%>"/>
                             </div>
-
-                            <input type="hidden" id="agrupador_editar" name="agrupador" value="revista"/>
-                            <input type="hidden" id="ruta_editar" value=""/>
-                            <input type="hidden" id="ruta_aws_editar" value=""/>
-                            <input type="hidden" id="sistema_id_editar" name="sistema_id" value="<% Session::get("id_sistema")%>"/>
-
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success btn-md col-sm-offset-4" id="btnEnviar">
                                     Guardar
@@ -180,24 +192,25 @@
         <div class="panel panel-default">
             <div class="panel-heading">Revistas cargadas</div>
             <div class="panel-body">
+
+                <table id="tblRevistas" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_revista'%>"
+                       data-show-refresh="true" data-search="true"
+                       data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
+                       data-sort-name="name" data-sort-order="desc">
+                    <thead>
+                    <tr>
+                        <th data-field="id" data-sortable="true">ID</th>
+                        <th data-field="nombre" data-sortable="true">Titulo</th>
+                        <th data-field="ruta_aws" data-sortable="false">Link</th>
+                        <th data-field="fecha_creacion" data-halign="center" data-sortable="true">Fecha publicación</th>
+                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
+                            data-events="operateEvents">Acciones
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
                 <br/>
             </div>
-            <table id="tblRevistas" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_revista'%>"
-                   data-show-refresh="true" data-search="true"
-                   data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
-                   data-sort-name="name" data-sort-order="desc">
-                <thead>
-                <tr>
-                    <th data-field="id" data-sortable="true">ID</th>
-                    <th data-field="nombre" data-sortable="true">Titulo</th>
-                    <th data-field="ruta_aws" data-sortable="false">Link</th>
-                    <th data-field="fecha_creacion" data-halign="center" data-sortable="true">Fecha publicación</th>
-                    <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
-                        data-events="operateEvents">Acciones
-                    </th>
-                </tr>
-                </thead>
-            </table>
         </div>
     </div>
 @stop
