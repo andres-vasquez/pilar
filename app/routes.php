@@ -12,6 +12,7 @@
 */
 App::missing(function($exception)
 {
+    //echo "Nop";
     return Response::view('error', array(), 404);
 });
 
@@ -306,14 +307,14 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'NoticiasController@apitodas'));
         Route::get('/{sistema}/{inicio}', array('as' => 'show', 'uses' => 'NoticiasController@error'))->where('inicio', '[0-9]+');
         Route::get('/{sistema}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'NoticiasController@apirangos'))->where(array('inicio' => '[0-9]+', 'fin' => '[0-9]+'));
-        Route::get('/{sistema}/{inicio}/{fin}/{orden}', array('as' => 'show', 'uses' => 'NoticiasController@apiorden'));
-        Route::get('/{sistema}/{id_noticia}/{metodo}', array('as' => 'show', 'uses' => 'NoticiasController@web'))->where(array('id_noticia' => '[0-9]+', 'metodo' => '[a-z]+'));;
+        Route::get('/{sistema}/{inicio}/{fin}/{orden}', array('as' => 'show', 'uses' => 'NoticiasController@apiorden'))->where(array('orden' => '[A-Z]+'));
+        Route::get('/{sistema}/{id_noticia}/{metodo}', array('as' => 'show', 'uses' => 'NoticiasController@web'))->where(array('id_noticia' => '[0-9]+', 'metodo' => '[a-z]+'));
 
         //Noticias por secciones
-        Route::get('/{id_seccion}/{sistema}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapitodas'));
-        Route::get('/{id_seccion}/{sistema}/{inicio}', array('as' => 'show', 'uses' => 'NoticiasController@error'))->where('inicio', '[0-9]+');
-        Route::get('/{id_seccion}/{sistema}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapirangos'))->where(array('inicio' => '[0-9]+', 'fin' => '[0-9]+'));
-        Route::get('/{id_seccion}/{sistema}/{inicio}/{fin}/{orden}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapiorden'));
+        Route::get('/{id_seccion}/{sistema}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapitodas'))->where('id_seccion', '[0-9]+');
+        Route::get('/{id_seccion}/{sistema}/{inicio}', array('as' => 'show', 'uses' => 'NoticiasController@error'))->where(array('inicio'=> '[0-9]+'));
+        Route::get('/{id_seccion}/{sistema}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapirangos'))->where(array('id_seccion' => '[0-9]+', 'inicio' => '[0-9]+', 'fin' => '[0-9]+'));
+        Route::get('/{id_seccion}/{sistema}/{inicio}/{fin}/{orden}', array('as' => 'show', 'uses' => 'NoticiasController@seccionapiorden'))->where(array('id_seccion' => '[0-9]+', 'inicio' => '[0-9]+', 'fin' => '[0-9]+','orden' => '[A-Z]+'));
     });
 
     //REST Api publicidad

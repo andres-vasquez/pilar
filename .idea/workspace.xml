@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/NoticiasController.php" afterPath="$PROJECT_DIR$/app/controllers/NoticiasController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/tecnobit/adjuntar.js" afterPath="$PROJECT_DIR$/public/js/tecnobit/adjuntar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -42,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="4335" max-vertical-offset="7560">
-              <caret line="312" column="105" selection-start-line="312" selection-start-column="105" selection-end-line="312" selection-end-column="105" />
+            <state vertical-scroll-proportion="0.3539823" vertical-offset="4395" max-vertical-offset="7575">
+              <caret line="309" column="149" selection-start-line="309" selection-start-column="149" selection-end-line="309" selection-end-column="149" />
               <folding />
             </state>
           </provider>
@@ -72,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restapi.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="restapi.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9411764" vertical-offset="0" max-vertical-offset="5415">
+            <state vertical-scroll-proportion="-55.0" vertical-offset="0" max-vertical-offset="5415">
               <caret line="88" column="89" selection-start-line="88" selection-start-column="89" selection-end-line="88" selection-end-column="89" />
               <folding />
             </state>
@@ -138,9 +131,9 @@
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
         <option value="$PROJECT_DIR$/public/js/tecnobit/adjuntar.js" />
         <option value="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/NoticiasController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
       </list>
     </option>
   </component>
@@ -261,6 +254,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -378,12 +389,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Pilar Restapi FIPAZ errores">
-      <created>1442588020492</created>
-      <option name="number" value="00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1442588020492</updated>
     </task>
     <task id="LOCAL-00064" summary="Pilar Expositores + Publicidad Amazon prueba AWS1">
       <created>1442607344030</created>
@@ -673,7 +678,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447456435565</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Filtro noticias y algunos eliminar">
+      <created>1448558163052</created>
+      <option name="number" value="00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1448558163053</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -700,6 +711,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -715,7 +727,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -761,7 +772,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Restapi notificaciones + registro 2.0" />
     <MESSAGE value="Expositores ajuste 1" />
     <MESSAGE value="Expositores ajuste 2" />
     <MESSAGE value="Ajuste publicidad" />
@@ -786,7 +796,8 @@
     <MESSAGE value="Tecnobit avance en adjuntos y usuarios" />
     <MESSAGE value="Fipaz 1000 notificaciones" />
     <MESSAGE value="Noticias Tecnobit y publiciad" />
-    <option name="LAST_COMMIT_MESSAGE" value="Noticias Tecnobit y publiciad" />
+    <MESSAGE value="Filtro noticias y algunos eliminar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filtro noticias y algunos eliminar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -923,13 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="680">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NotificacionesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.0" vertical-offset="192" max-vertical-offset="1650">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1141,22 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="4335" max-vertical-offset="7560">
-          <caret line="312" column="105" selection-start-line="312" selection-start-column="105" selection-end-line="312" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.529412" vertical-offset="595" max-vertical-offset="6270">
-          <caret line="381" column="215" selection-start-line="381" selection-start-column="215" selection-end-line="381" selection-end-column="215" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sms/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40482953" vertical-offset="0" max-vertical-offset="6315">
@@ -1175,8 +1163,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9411764" vertical-offset="0" max-vertical-offset="5415">
+        <state vertical-scroll-proportion="-55.0" vertical-offset="0" max-vertical-offset="5415">
           <caret line="88" column="89" selection-start-line="88" selection-start-column="89" selection-end-line="88" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/NotificacionesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28318584" vertical-offset="192" max-vertical-offset="1650">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38053098" vertical-offset="4887" max-vertical-offset="6270">
+          <caret line="343" column="0" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3539823" vertical-offset="4395" max-vertical-offset="7575">
+          <caret line="309" column="149" selection-start-line="309" selection-start-column="149" selection-end-line="309" selection-end-column="149" />
           <folding />
         </state>
       </provider>

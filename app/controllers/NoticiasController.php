@@ -340,7 +340,7 @@ class NoticiasController extends \BaseController {
             $noticias_todas = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC',array($id_sistema,$id_seccion))->get();
             $noticias["total"]=count($noticias_todas);
 
-            $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT ? OFFSET ? ',array($id_sistema,$rango,$inicio-1,$id_seccion))->get();
+            $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT ? OFFSET ? ',array($id_sistema,$id_seccion,$rango,$inicio-1))->get();
 
             $noticias["noticias"]=array();
             foreach ($noticias_filtro as $noticia) {
@@ -377,9 +377,9 @@ class NoticiasController extends \BaseController {
                 $noticias["total"]=count($noticias_todas);
 
                 if($orden=="DESC")
-                    $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT ? OFFSET ? ',array($id_sistema,$rango,$inicio-1,$id_seccion))->get();
+                    $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT ? OFFSET ? ',array($id_sistema,$id_seccion,$rango,$inicio-1))->get();
                 else
-                    $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags)ORDER BY created_at ASC LIMIT ? OFFSET ? ',array($id_sistema,$rango,$inicio-1,$id_seccion))->get();
+                    $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at ASC LIMIT ? OFFSET ? ',array($id_sistema,$id_seccion,$rango,$inicio-1))->get();
 
                 $noticias["noticias"]=array();
                 foreach ($noticias_filtro as $noticia) {
@@ -403,7 +403,7 @@ class NoticiasController extends \BaseController {
         }
         else
         {
-            $errores="Instruccion orden erronea";
+            $errores="Instruccion orden erronea filtro";
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
 
