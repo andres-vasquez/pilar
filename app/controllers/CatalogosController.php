@@ -14,7 +14,7 @@ class CatalogosController extends \BaseController {
         {
             $id_sistema=$sistemas[0]["id"];
             $catalogos=array();
-            $catalogos_todos = Catalogo::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=?',array($id_sistema,$agrupador))->get();
+            $catalogos_todos = Catalogo::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=? ORDER BY CONVERT(value, UNSIGNED INTEGER)',array($id_sistema,$agrupador))->get();
             foreach ($catalogos_todos as $catalogo)
             {
                 $formato_catalogos = array();
