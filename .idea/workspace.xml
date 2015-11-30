@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="AWS Endpoint&#10;">
+    <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CatalogosController.php" afterPath="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -36,8 +38,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4395" max-vertical-offset="7575">
-              <caret line="309" column="149" selection-start-line="309" selection-start-column="149" selection-end-line="309" selection-end-column="149" />
+            <state vertical-scroll-proportion="-11.416667" vertical-offset="5396" max-vertical-offset="7590">
+              <caret line="378" column="91" selection-start-line="378" selection-start-column="82" selection-end-line="378" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -46,8 +48,8 @@
       <file leaf-file-name="CatalogosController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3529412" vertical-offset="60" max-vertical-offset="1950">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.6460177" vertical-offset="387" max-vertical-offset="2430">
+              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -56,8 +58,18 @@
       <file leaf-file-name="AdjuntosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2535">
+            <state vertical-scroll-proportion="-47.625" vertical-offset="1002" max-vertical-offset="2535">
               <caret line="143" column="66" selection-start-line="143" selection-start-column="66" selection-end-line="143" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoticiasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.25" vertical-offset="5397" max-vertical-offset="6270">
+              <caret line="389" column="53" selection-start-line="389" selection-start-column="53" selection-end-line="389" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -165,9 +177,9 @@
         <option value="$PROJECT_DIR$/public/js/tecnobit/adjuntar.js" />
         <option value="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/NoticiasController.php" />
         <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
       </list>
     </option>
@@ -384,12 +396,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Publicidad + Planes">
-      <created>1442953118848</created>
-      <option name="number" value="00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1442953118848</updated>
     </task>
     <task id="LOCAL-00068" summary="Eventos + apisinformato">
       <created>1442980367442</created>
@@ -679,7 +685,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448681937210</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Catalogos Thumbnail&#10;">
+      <created>1448915223445</created>
+      <option name="number" value="00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1448915223446</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -767,7 +779,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Ajuste publicidad 2.0" />
     <MESSAGE value="Modificacion Restapi Publicidad" />
     <MESSAGE value="Dashboard prensa Fipaz" />
     <MESSAGE value="Notificaciones" />
@@ -792,7 +803,8 @@
     <MESSAGE value="Filtro noticias arreglado" />
     <MESSAGE value="Secciones ordenadas" />
     <MESSAGE value="AWS Endpoint&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="AWS Endpoint&#10;" />
+    <MESSAGE value="Catalogos Thumbnail&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Catalogos Thumbnail&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1091,6 +1103,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="16" column="141" selection-start-line="16" selection-start-column="137" selection-end-line="16" selection-end-column="141" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,30 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38053098" vertical-offset="4887" max-vertical-offset="6270">
-          <caret line="343" column="0" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4395" max-vertical-offset="7575">
-          <caret line="309" column="149" selection-start-line="309" selection-start-column="149" selection-end-line="309" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2535">
-          <caret line="143" column="66" selection-start-line="143" selection-start-column="66" selection-end-line="143" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.7083335" vertical-offset="1489" max-vertical-offset="2190">
@@ -1163,10 +1152,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.416667" vertical-offset="5396" max-vertical-offset="7590">
+          <caret line="378" column="91" selection-start-line="378" selection-start-column="82" selection-end-line="378" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-47.625" vertical-offset="1002" max-vertical-offset="2535">
+          <caret line="143" column="66" selection-start-line="143" selection-start-column="66" selection-end-line="143" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.25" vertical-offset="5397" max-vertical-offset="6270">
+          <caret line="389" column="53" selection-start-line="389" selection-start-column="53" selection-end-line="389" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CatalogosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3529412" vertical-offset="60" max-vertical-offset="1950">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.6460177" vertical-offset="387" max-vertical-offset="2430">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
           <folding />
         </state>
       </provider>

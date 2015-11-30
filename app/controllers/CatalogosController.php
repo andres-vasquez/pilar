@@ -34,6 +34,38 @@ class CatalogosController extends \BaseController {
         }
 	}
 
+    public function thumbnail($app,$agrupador)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0)
+        {
+            $id_sistema=$sistemas[0]["id"];
+            $catalogos=array();
+            $catalogos_todos = Catalogo::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=? ORDER BY CONVERT(value, UNSIGNED INTEGER)',array($id_sistema,$agrupador))->get();
+            foreach ($catalogos_todos as $catalogo)
+            {
+                $formato_catalogos = array();
+                $formato_catalogos["id"] =$catalogo["id"];
+                $formato_catalogos["label"] =$catalogo["label"];
+                $formato_catalogos["value"] =$catalogo["value"];
+
+                $imagen="";
+                $noticias_filtro = Noticia::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND FIND_IN_SET(?, tags) ORDER BY created_at DESC LIMIT 1',array($id_sistema,$catalogo["value"]))->get();
+                if(sizeof($noticias_filtro)>0)
+                foreach ($noticias_filtro as $noticia)
+                    $imagen=$noticia["url_imagen"];
+
+                $formato_catalogos["thumbnail"] =$imagen;
+                array_push($catalogos,$formato_catalogos);
+            }
+            return View::make('ws.json', array("resultado"=>compact('catalogos')));
+        }
+        else
+        {
+            $errores="Error al obtener catalogos";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
 
 	/**
 	 * Creara un registro con los datos ingresados

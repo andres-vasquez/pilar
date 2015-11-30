@@ -376,6 +376,7 @@ Route::group(array('prefix' => 'api/v1'), function () {
 
     //Catalogos Api
     Route::get('/catalogos/{sistema}/{agrupador}', 'CatalogosController@index');
+    Route::get('/catalogos/thumbnail/{sistema}/{agrupador}', 'CatalogosController@thumbnail');
 });
 
 
