@@ -108,6 +108,14 @@
                                       target="_blank">http://pilar.cloudapp.net/pilar/api/v1/catalogos/<% Session::get('credencial')%>/tecnobit_secciones</a>
                         </small>
 
+                        <br/><br/>
+                        <h4>Obtener las secciones con imagen de última noticia</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/catalogos/thumbnail/credencial/tecnobit_secciones</code>
+                        <br/>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/catalogos/thumbnail/<% Session::get('credencial')%>/tecnobit_secciones"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/catalogos/thumbnail/<% Session::get('credencial')%>/tecnobit_secciones</a>
+                        </small>
+
                         <br/><br/><br/><br/>
                     </div>
                     <div class="tab-pane fade" id="tab3">
