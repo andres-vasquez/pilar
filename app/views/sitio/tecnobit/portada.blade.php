@@ -4,6 +4,7 @@
     @parent
     <% HTML::style('public/css/bootstrap-table.css'); %>
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -75,6 +76,29 @@
             </div>
         </div>
 
+        <!-- Modal eliminar -->
+        <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Eliminar imagen de portada</h4>
+                    </div>
+                    <div class="modal-body">
+                        Está seguro de eliminar la imagen de portada seleccionada?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarImagen">Si,
+                            eliminar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div><!-- col-->
 @stop
 @section('contenido2')
@@ -83,7 +107,7 @@
             <div class="panel-heading">Imagen de Portada</div>
             <div class="panel-body">
 
-            <table id="tblRevistas" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_portada'%>"
+            <table id="tblPortada" data-toggle="table" data-url="<% '../ws/tecnobit/adjuntos/'.Session::get("credencial").'/tecnobit_portada'%>"
                    data-show-refresh="true" data-search="true"
                    data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
                    data-sort-name="name" data-sort-order="desc">
@@ -106,5 +130,9 @@
 @stop
 @section('pie')
     <% HTML::script('public/js/bootstrap-table.js'); %>
+    <% HTML::script('public/lib/bower_components/wysihtml5x/dist/wysihtml5x-toolbar.js'); %>
+    <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
     <% HTML::script('public/js/tecnobit/adjuntar.js'); %>
 @stop

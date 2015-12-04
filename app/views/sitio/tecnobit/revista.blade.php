@@ -3,6 +3,7 @@
 @section('header')
     @parent
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -67,6 +68,13 @@
                             </div>
                         </div>
 
+                        <div class="row container">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <textarea id="htmlRevista" class="form-control" required></textarea>
+                                </div>
+                            </div>
+                        </div>
 
                         <input type="hidden" id="ruta" value=""/>
                         <input type="hidden" id="ruta_aws" value=""/>
@@ -88,6 +96,33 @@
         </div>
 
 
+        <!-- Modal de imagen -->
+        <div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Adjuntar imagen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formImagen" enctype="multipart/form-data">
+                            <div class="form-group form-inline">
+                                <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                                <input type="file" name="imagen" id="imgImagen" class="form-control imagen" required/>
+                                <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Modal eliminar -->
         <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
              aria-hidden="true">
@@ -103,7 +138,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarUsuario">Si,
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarImagen">Si,
                             eliminar
                         </button>
                     </div>
@@ -154,6 +189,14 @@
                                                 <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                             </div>
                                         </form>
+                                    </div>
+                                </div>
+
+                                <div class="row container">
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <textarea id="htmlRevista_editar" class="form-control" required></textarea>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -215,6 +258,10 @@
     </div>
 @stop
 @section('pie')
+    <% HTML::script('public/lib/bower_components/wysihtml5x/dist/wysihtml5x-toolbar.js'); %>
+    <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
     <% HTML::script('public/js/bootstrap-table.js'); %>
     <% HTML::script('public/js/tecnobit/adjuntar.js'); %>
 @stop

@@ -2,103 +2,103 @@
 
 class AdjuntosController extends \BaseController {
 
-	/**
-	 * Muestra todas los registros
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		$adjuntos = Adjunto::all();
+    /**
+     * Muestra todas los registros
+     *
+     * @return Response
+     */
+    public function index()
+    {
+        $adjuntos = Adjunto::all();
 
-		return View::make('ws.json', array("resultado"=>compact('adjuntos')));
-	}
-
-
-	/**
-	 * Creara un registro con los datos ingresados
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		$validator = Validator::make($data = Input::all(), Adjunto::$rules);
-		if ($validator->fails())
-		{
-			$errores=$validator->messages()->first();
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
-
-		if(Adjunto::create($data))
-		{
-			return View::make('ws.json', array("resultado"=>compact('Adjunto')));
-		}
-		else
-		{
-			$errores="Error al crear registro";
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
-	}
-
-	/**
-	 * Muestra el registro segun el ID ingresado.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		$adjunto = Adjunto::findOrFail($id);
-		return View::make('ws.json', array("resultado"=>compact('adjunto')));
-	}
+        return View::make('ws.json', array("resultado"=>compact('adjuntos')));
+    }
 
 
-	/**
-	 * Actualiza el registro segun el id ingresado
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		$adjunto = Adjunto::findOrFail($id);
-		$data = Input::all();
+    /**
+     * Creara un registro con los datos ingresados
+     *
+     * @return Response
+     */
+    public function store()
+    {
+        $validator = Validator::make($data = Input::all(), Adjunto::$rules);
+        if ($validator->fails())
+        {
+            $errores=$validator->messages()->first();
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
 
-		if($adjunto->update($data))
-		{
-			return View::make('ws.json', array("resultado"=>compact('adjunto')));
-		}
-		else
-		{
-			$errores="Error al actualizar registro";
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
-	}
+        if(Adjunto::create($data))
+        {
+            return View::make('ws.json', array("resultado"=>compact('Adjunto')));
+        }
+        else
+        {
+            $errores="Error al crear registro";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
 
-	/**
-	 * Define baja logica a l registro indicado
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		$adjunto = Adjunto::findOrFail($id);
-		$data = array();
+    /**
+     * Muestra el registro segun el ID ingresado.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        $adjunto = Adjunto::findOrFail($id);
+        return View::make('ws.json', array("resultado"=>compact('adjunto')));
+    }
 
-		$data["baja_logica"] = "0";
-		$data["estado"] = "0";
-		if($adjunto->update($data))
-		{
-			$adjunto = Adjunto::findOrFail($id);
-			return View::make('ws.json', array("resultado"=>compact('adjunto')));
-		}
-		else
-		{
-			$errores="Error al eliminar registro";
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
-	}
+
+    /**
+     * Actualiza el registro segun el id ingresado
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function update($id)
+    {
+        $adjunto = Adjunto::findOrFail($id);
+        $data = Input::all();
+
+        if($adjunto->update($data))
+        {
+            return View::make('ws.json', array("resultado"=>compact('adjunto')));
+        }
+        else
+        {
+            $errores="Error al actualizar registro";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    /**
+     * Define baja logica a l registro indicado
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function destroy($id)
+    {
+        $adjunto = Adjunto::findOrFail($id);
+        $data = array();
+
+        $data["baja_logica"] = "0";
+        $data["estado"] = "0";
+        if($adjunto->update($data))
+        {
+            $adjunto = Adjunto::findOrFail($id);
+            return View::make('ws.json', array("resultado"=>compact('adjunto')));
+        }
+        else
+        {
+            $errores="Error al eliminar registro";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
 
     public function sin_formato($app,$agrupador)
     {
@@ -129,7 +129,11 @@ class AdjuntosController extends \BaseController {
         if (sizeof($sistemas) > 0) {
             $id_sistema = $sistemas[0]["id"];
 
-            $adjuntos_query = Adjunto::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=?', array($id_sistema,$agrupador))->get();
+            if($agrupador=="tecnobit_portada")
+                $adjuntos_query = Adjunto::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=? ORDER BY id DESC LIMIT 1', array($id_sistema,$agrupador))->get();
+            else
+                $adjuntos_query = Adjunto::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=?', array($id_sistema,$agrupador))->get();
+
             if (sizeof($adjuntos_query) > 0) {
 
                 $adjuntos = array();

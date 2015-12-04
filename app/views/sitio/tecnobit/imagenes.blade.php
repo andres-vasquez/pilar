@@ -4,6 +4,7 @@
     @parent
     <% HTML::style('public/css/bootstrap-table.css'); %>
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -229,5 +230,9 @@
 @stop
 @section('pie')
     <% HTML::script('public/js/bootstrap-table.js'); %>
+    <% HTML::script('public/lib/bower_components/wysihtml5x/dist/wysihtml5x-toolbar.js'); %>
+    <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
     <% HTML::script('public/js/tecnobit/adjuntar.js'); %>
 @stop

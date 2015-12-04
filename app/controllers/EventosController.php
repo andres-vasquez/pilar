@@ -145,7 +145,8 @@ class EventosController extends \BaseController {
             ));
 
             //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen; MIO
-            $data["ruta_aws"]='https://s3.amazonaws.com/sirius'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            //$data["ruta_aws"]='https://s3.amazonaws.com/sirius'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            $data["ruta_aws"]='https://sirius'.$sistemas[0]["nombre"].'.s3.amazonaws.com/'.$nombre_imagen;
             return View::make('ws.json', array("resultado"=>compact('data')));
         }
         else
