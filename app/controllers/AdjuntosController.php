@@ -126,7 +126,8 @@ class AdjuntosController extends \BaseController {
     public function apiadjuntos($agrupador,$app)
     {
         $sistemas = SistemasDesarrollados::whereRaw('app=?', array($app))->get();
-        if (sizeof($sistemas) > 0) {
+        if (sizeof($sistemas) > 0)
+        {
             $id_sistema = $sistemas[0]["id"];
 
             if($agrupador=="tecnobit_portada")
@@ -145,7 +146,15 @@ class AdjuntosController extends \BaseController {
                     $aux["ruta_aws"] = $adjuntos_q["ruta_aws"];
 
                     if($agrupador=="tecnobit_revista")
+                    {
                         $aux["thumbnail"] = $adjuntos_q["thumbnail"];
+                        $aux["link"] = "pilar/apitecnobit/v1/revista/".$app."/".$adjuntos_q["id"]."";
+                    }
+                    else if($agrupador=="tecnobit_slider")
+                    {
+                        $aux["link"] = $adjuntos_q["link"];
+                    }
+
 
                     $aux["fecha_creacion"] = date('d-m-Y H:i:s', strtotime($adjuntos_q["created_at"]));
                     array_push($adjuntos, $aux);
@@ -162,6 +171,27 @@ class AdjuntosController extends \BaseController {
         {
             $errores="Credencial invaálida";
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
+    public function web($app,$id_revista)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $revista = Adjunto::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND id=?',array($id_sistema,$id_revista))->get();
+            if(sizeof($revista)>0)
+            {
+                $datos=$revista[0];
+                return View::make('sitio.master.solo_html', array("resultado"=>compact('datos')));
+
+            }
+            else
+            {
+                $errores="Error al obtener registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
         }
     }
 }

@@ -421,6 +421,8 @@ Route::group(array('prefix' => 'apitecnobit/v1'), function () {
         Route::get('/{credencial}/{agrupador}', array('as' => 'show', 'uses' => 'AdjuntosController@apiadjuntos'));
     });
 
+    Route::get('/revista/{sistema}/{id_revista}', array('as' => 'show', 'uses' => 'AdjuntosController@web'))->where(array('id_revista' => '[0-9]+'));
+
 });
 
 
