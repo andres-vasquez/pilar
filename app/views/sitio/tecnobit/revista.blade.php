@@ -44,12 +44,24 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="txtNombre" class="col-sm-4 control-label">Adjuntar Pdf</label>
+                            <label for="txtNombre" class="col-sm-4 control-label">Adjuntar Pdf (Baja resolucioón)</label>
 
                             <div class="col-sm-6">
                                 <form id="adjunto" enctype="multipart/form-data">
                                     <div class="form-group form-inline">
                                         <input type="file" id="inputAdjunto" name="adjunto" class="form-control imagen" required/>
+                                        <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtNombre" class="col-sm-4 control-label">Adjuntar Pdf (Alta resolucioón)</label>
+                            <div class="col-sm-6">
+                                <form id="adjuntoAlta" enctype="multipart/form-data">
+                                    <div class="form-group form-inline">
+                                        <input type="file" id="inputAdjunto2" name="adjunto" class="form-control imagen" required/>
                                         <button type="submit" class="btn btn-sm btn-info form-control">Cargar</button>
                                     </div>
                                 </form>
@@ -78,6 +90,10 @@
 
                         <input type="hidden" id="ruta" value=""/>
                         <input type="hidden" id="ruta_aws" value=""/>
+
+                        <input type="hidden" id="ruta2" value=""/>
+                        <input type="hidden" id="ruta_aws2" value=""/>
+
                         <input type="hidden" id="thumbnail" value=""/>
                         <input type="hidden" id="sistema_id" name="sistema_id" value="<% Session::get("id_sistema")%>"/>
 

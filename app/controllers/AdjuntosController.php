@@ -147,6 +147,7 @@ class AdjuntosController extends \BaseController {
 
                     if($agrupador=="tecnobit_revista")
                     {
+                        $aux["ruta_aws_2"] = $adjuntos_q["ruta_aws_2"];
                         $aux["thumbnail"] = $adjuntos_q["thumbnail"];
                         $aux["link"] = "pilar/apitecnobit/v1/revista/".$app."/".$adjuntos_q["id"]."";
                     }

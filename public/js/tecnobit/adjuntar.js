@@ -153,6 +153,61 @@ $(document).ready(function () {
                 }
             });
         }
+        else if(id=="adjuntoAlta")
+        {
+            var _validFileExtensions = [".jpg", ".jpeg", ".png"];
+            var formData = new FormData($(this)[0]);
+
+            btnSubmit.html(htmlCargando);
+            btnSubmit.attr('disabled', 'disabled');
+
+            var url = "../ws/funciones/subirAdjuntoAWS";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result)
+                {
+                    btnSubmit.removeAttr('disabled');
+                    result = JSON.parse(result);
+                    if (parseInt(result.intCodigo) == 1)
+                    {
+
+                        var data=result.resultado.data;
+                        var ruta=data.ruta;
+                        var ruta_aws=data.ruta_aws.replace("s3.amazonaws.com/siriustecnobit","siriustecnobit.s3.amazonaws.com");
+
+                        if(!editando)
+                        {
+                            $("#ruta2").val(ruta);
+                            $("#ruta_aws2").val(ruta_aws);
+                            $("#inputAdjunto2").val("");
+                        }
+                        else
+                        {
+                            $("#ruta2_editar").val(ruta);
+                            $("#ruta_aws2_editar").val(ruta_aws);
+                            $("#inputAdjunto2_editar").val("");
+                        }
+
+                        btnSubmit.html(htmlCargado);
+                    }
+                    else
+                    {
+                        alert("Error al subir la imagen");
+                        btnSubmit.html(htmlError);
+                    }
+                    //console.log(JSON.stringify(result));
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    btnSubmit.removeAttr('disabled');
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    btnSubmit.html(htmlError);
+                }
+            });
+        }
         else if(id=="formImagen")
         {
             var btnSubmit = $(this).find(':submit');
@@ -249,6 +304,7 @@ $(document).ready(function () {
             "agrupador":$("#agrupador").val(),
             "ruta":$("#ruta").val(),
             "ruta_aws":$("#ruta_aws").val(),
+            "ruta_aws_2":$("#ruta_aws2").val(),
             "thumbnail":$("#thumbnail").val(),
             "html":$("#htmlRevista").val()
         };
@@ -425,6 +481,7 @@ window.operateEvents = {
                             "agrupador":$("#agrupador_editar").val(),
                             "ruta":$("#ruta_editar").val(),
                             "ruta_aws":$("#ruta_aws_editar").val(),
+                            "ruta_aws_2":$("#ruta_aws2_editar").val(),
                             "thumbnail":$("#thumbnail_editar").val(),
                             "html":$("#htmlRevista_editar").val()
                         };
