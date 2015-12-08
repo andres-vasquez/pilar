@@ -104,8 +104,8 @@
 
                                 <div class="col-sm-8">
                                     <select id="cmbTipoPublicidad" class="form-control">
-                                        <!--<option value="0"></option>
-                                        <option value="slider">Slider</option>-->
+                                        <option value="0"></option>
+                                        <option value="slider">Slider</option>
                                         <option value="banner">Banner</option>
                                         <!--<option value="ambos">Banner y Slider</option>-->
                                     </select>
@@ -525,8 +525,8 @@
 
                         <div class="col-sm-8">
                             <select id="cmbTipoPublicidad_editar" class="form-control">
-                                <!--<option value="0"></option>
-                                <option value="slider">Slider</option>-->
+                                <option value="0"></option>
+                                <option value="slider">Slider</option>
                                 <option value="banner">Banner</option>
                                 <!--<option value="ambos">Banner y Slider</option>-->
                             </select>

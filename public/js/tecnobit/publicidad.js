@@ -235,7 +235,7 @@ $(document).ready(function ()
         }
     });
 
-    $("#cmbTipoPublicidad_editar").change(function(event){
+    $("#cmbTipoPublicidad").change(function(event){
         var tipo_publicidad=$(this).val();
         //var plan=$("#cmbPlan_editar").val();
 
@@ -250,9 +250,21 @@ $(document).ready(function ()
             $(".slider").hide();
             $(".banner").show();
         }
-        else
+    });
+
+    $("#cmbTipoPublicidad_editar").change(function(event){
+        var tipo_publicidad=$(this).val();
+        //var plan=$("#cmbPlan_editar").val();
+
+
+        if(tipo_publicidad=="slider")
         {
+            $(".banner").hide();
             $(".slider").show();
+        }
+        else if(tipo_publicidad=="banner")
+        {
+            $(".slider").hide();
             $(".banner").show();
         }
     });
