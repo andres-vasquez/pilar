@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/tecnobit/publicidad.js" afterPath="$PROJECT_DIR$/public/js/tecnobit/publicidad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BaseController.php" afterPath="$PROJECT_DIR$/app/controllers/BaseController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -35,32 +34,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdjuntosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
+      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-94.375" vertical-offset="0" max-vertical-offset="3060">
-              <caret line="151" column="101" selection-start-line="151" selection-start-column="101" selection-end-line="151" selection-end-column="101" />
+            <state vertical-scroll-proportion="-92.5" vertical-offset="0" max-vertical-offset="5055">
+              <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publicidad.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.5" vertical-offset="7500" max-vertical-offset="13800">
-              <caret line="528" column="70" selection-start-line="528" selection-start-column="70" selection-end-line="528" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="publicidad.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="publicidad.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/tecnobit/publicidad.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5940171" vertical-offset="3378" max-vertical-offset="7755">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3185" max-vertical-offset="7755">
               <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticias.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="8940">
+              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+              <folding>
+                <marker date="1447455454000" expanded="true" signature="19961:19972" placeholder="..." />
+                <marker date="1447455454000" expanded="true" signature="20048:20067" placeholder="..." />
+                <marker date="1447455454000" expanded="true" signature="20216:20227" placeholder="..." />
+                <marker date="1447455454000" expanded="true" signature="20313:20332" placeholder="..." />
+                <marker date="1447455454000" expanded="true" signature="21434:21445" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7467533" vertical-offset="1490" max-vertical-offset="2190">
+              <caret line="130" column="72" selection-start-line="130" selection-start-column="72" selection-end-line="130" selection-end-column="72" />
+              <folding>
+                <marker date="1449593635000" expanded="true" signature="2413:2504" placeholder="SELECT count..Noticias..." />
+                <marker date="1449593635000" expanded="true" signature="2648:2738" placeholder="SELECT count..eventos..." />
+                <marker date="1449593635000" expanded="true" signature="2885:3000" placeholder="SELECT count..Publicidad..." />
+                <marker date="1449593635000" expanded="true" signature="3159:3253" placeholder="SELECT count..expositores..." />
+                <marker date="1449593635000" expanded="true" signature="3397:3487" placeholder="SELECT count..ofertas..." />
+                <marker date="1449593635000" expanded="true" signature="3632:3737" placeholder="SELECT count..participantes_concurso..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +131,6 @@
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/notificaciones.blade.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/publicidad.js" />
         <option value="$PROJECT_DIR$/app/controllers/NoticiasController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
@@ -124,6 +145,7 @@
         <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
         <option value="$PROJECT_DIR$/public/js/tecnobit/publicidad.js" />
+        <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
       </list>
     </option>
   </component>
@@ -132,8 +154,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -200,46 +223,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tecnobit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -276,11 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,7 +275,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="js.buildTools.gulp.node_interpreter" value="/usr/local/bin/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="/usr/local/lib/node_modules/gulp" />
@@ -401,12 +380,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Eventos y noticias sin margen">
-      <created>1444016982252</created>
-      <option name="number" value="00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1444016982252</updated>
     </task>
     <task id="LOCAL-00075" summary="Eventos y noticias sin margen  1.0">
       <created>1444017523698</created>
@@ -696,7 +669,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449274378012</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Publicidad Slider+banner">
+      <created>1449589903349</created>
+      <option name="number" value="00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1449589903350</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -720,9 +699,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="738" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -738,7 +718,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -784,7 +763,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Notificaciones funcionando&#10;" />
     <MESSAGE value="Cambios noticias&#10;" />
     <MESSAGE value="Cambios registro participante" />
     <MESSAGE value="Dashboard completo" />
@@ -809,7 +787,8 @@
     <MESSAGE value="Arreglos backend + revistas y portada solo uno" />
     <MESSAGE value="Detalle revista solo html" />
     <MESSAGE value="Revista dos calidades" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revista dos calidades" />
+    <MESSAGE value="Publicidad Slider+banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Publicidad Slider+banner" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -876,13 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4005">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="8940">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -964,17 +936,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4336283" vertical-offset="0" max-vertical-offset="2190">
-          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/sitio/eventos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8846154" vertical-offset="5550" max-vertical-offset="7800">
           <caret line="1" column="27" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,13 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.363636" vertical-offset="915" max-vertical-offset="3210">
           <caret line="99" column="10" selection-start-line="73" selection-start-column="0" selection-end-line="99" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13716814" vertical-offset="2127" max-vertical-offset="5055">
-          <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1160,27 +1119,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61946905" vertical-offset="7500" max-vertical-offset="13800">
+          <caret line="528" column="70" selection-start-line="528" selection-start-column="70" selection-end-line="528" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-94.375" vertical-offset="0" max-vertical-offset="3060">
+        <state vertical-scroll-proportion="3.340708" vertical-offset="0" max-vertical-offset="3060">
           <caret line="151" column="101" selection-start-line="151" selection-start-column="101" selection-end-line="151" selection-end-column="101" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5" vertical-offset="7500" max-vertical-offset="13800">
-          <caret line="528" column="70" selection-start-line="528" selection-start-column="70" selection-end-line="528" selection-end-column="70" />
+        <state vertical-scroll-proportion="-92.5" vertical-offset="0" max-vertical-offset="5055">
+          <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/tecnobit/publicidad.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5940171" vertical-offset="3378" max-vertical-offset="7755">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3185" max-vertical-offset="7755">
           <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="8940">
+          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <marker date="1447455454000" expanded="true" signature="19961:19972" placeholder="..." />
+            <marker date="1447455454000" expanded="true" signature="20048:20067" placeholder="..." />
+            <marker date="1447455454000" expanded="true" signature="20216:20227" placeholder="..." />
+            <marker date="1447455454000" expanded="true" signature="20313:20332" placeholder="..." />
+            <marker date="1447455454000" expanded="true" signature="21434:21445" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7467533" vertical-offset="1490" max-vertical-offset="2190">
+          <caret line="130" column="72" selection-start-line="130" selection-start-column="72" selection-end-line="130" selection-end-column="72" />
+          <folding>
+            <marker date="1449593635000" expanded="true" signature="2413:2504" placeholder="SELECT count..Noticias..." />
+            <marker date="1449593635000" expanded="true" signature="2648:2738" placeholder="SELECT count..eventos..." />
+            <marker date="1449593635000" expanded="true" signature="2885:3000" placeholder="SELECT count..Publicidad..." />
+            <marker date="1449593635000" expanded="true" signature="3159:3253" placeholder="SELECT count..expositores..." />
+            <marker date="1449593635000" expanded="true" signature="3397:3487" placeholder="SELECT count..ofertas..." />
+            <marker date="1449593635000" expanded="true" signature="3632:3737" placeholder="SELECT count..participantes_concurso..." />
+          </folding>
         </state>
       </provider>
     </entry>
