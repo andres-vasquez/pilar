@@ -167,6 +167,27 @@ Route::group(array('before' => 'session'), function () {
         });
     });
 
+
+    //************* DR CLIPPING ******************
+    Route::group(array('prefix' => 'monitoreo'), function () {
+        Route::get('/', function () {
+            return View::make('sitio.monitoreo.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/inbox', function () {
+            return View::make('sitio.monitoreo.inbox')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/usuarios', function () {
+            return View::make('sitio.monitoreo.usuarios')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/catalogos', function () {
+            return View::make('sitio.monitoreo.catalogos')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/reportes', function () {
+            return View::make('sitio.monitoreo.reportes')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+    });
+
+
     //*************** GENERAL *******************
 
     Route::get('/logout', function () {
