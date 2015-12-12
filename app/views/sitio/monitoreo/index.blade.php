@@ -6,7 +6,7 @@
 @stop
 
 @section('titulo_plataforma')
-    TecnoBit
+    Dr. Clipping
 @stop
 
 @section('barra_navegacion')
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
                     <div class="large" id="numLikes">0</div>
-                    <div class="text-muted">Revistas</div>
+                    <div class="text-muted">Anuncios en Revistas</div>
                 </div>
             </div>
         </div>
@@ -37,11 +37,11 @@
         <div class="panel panel-orange panel-widget">
             <div class="row no-padding">
                 <div class="col-sm-3 col-lg-5 widget-left">
-                    <em class="glyphicon glyphicon-comment glyphicon-l"></em>
+                    <em class="glyphicon glyphicon-align-left glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
                     <div class="large" id="numNoticias">0</div>
-                    <div class="text-muted">Noticias</div>
+                    <div class="text-muted">Anuncios en Periódicos</div>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
                     <div class="large" id="numAnuncios">0</div>
-                    <div class="text-muted">Anuncios</div>
+                    <div class="text-muted">Anuncios en total</div>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
     </div>-->
 @stop
 @section('pie')
-    <% HTML::script('public/js/sitio/dashboard.js'); %>
+    <% HTML::script('public/js/monitoreo/dashboard.js'); %>
     <% HTML::script('public/js/chart.min.js'); %>
     <% HTML::script('public/js/easypiechart.js'); %>
     <% HTML::script('public/js/easypiechart-data.js'); %>

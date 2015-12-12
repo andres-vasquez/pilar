@@ -82,6 +82,16 @@ return array(
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
         ),
+        'DrClipping' => array(
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'drclipping',
+            'username'  => 'root',
+            'password'  => 'Adnap0211**',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',

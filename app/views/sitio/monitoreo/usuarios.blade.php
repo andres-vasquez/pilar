@@ -6,7 +6,7 @@
 @stop
 
 @section('titulo_plataforma')
-    TecnoBit
+    Dr. Clipping
 @stop
 
 @section('barra_navegacion')
@@ -20,29 +20,80 @@
 
 @section('contenido1')
     <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">Usuarios registrados</div>
+
+         <span class="clearfix">
+            <div id="mensaje">
+            </div>
+            <button id="collapse" class="btn btn-success pull-right" data-toggle="collapse"
+                    data-target="#divNuevoUsuario"><b>+ Nuevo
+                    usuario</b></button>
+        </span>
+
+        <div id="divNuevoUsuario" class="panel panel-collapse chat collapse">
+            <div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-tag"></span> Nuevo anuncio
+            </div>
             <div class="panel-body">
 
-                <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/tecnobit/usuarios/sin_formato'%>"
-                       data-show-refresh="true" data-search="true"
-                       data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
-                       data-sort-name="name" data-sort-order="desc">
-                    <thead>
-                    <tr>
-                        <th data-field="id" data-sortable="true">ID</th>
-                        <th data-field="nombre" data-sortable="true">Nombre</th>
-                        <th data-field="email" data-sortable="true">Email</th>
-                        <th data-field="acceso" data-sortable="true">Tipo acceso</th>
-                        <th data-field="dispositivo" data-sortable="true">Dispositivo</th>
-                        <th data-field="ultimo_acceso" data-halign="center" data-sortable="true">Último acceso</th>
-                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
-                            data-events="operateEvents">Acciones
-                        </th>
-                    </tr>
-                    </thead>
-                </table>
-                <br/>
+                <form id="formNuevoUsuario" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="txtNombre" class="col-sm-4 control-label">Nombre Completo</label>
+
+                        <div class="col-sm-8">
+                            <input id="txtNombre" class="form-control" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtEmail" type="number" class="col-sm-4 control-label">Email</label>
+
+                        <div class="col-sm-4">
+                            <input id="txtEmail" class="form-control" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtPassword" class="col-sm-4 control-label">Contraseña</label>
+
+                        <div class="col-sm-6">
+                            <input id="txtPassword" type="password" class="form-control" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtPassword2" class="col-sm-4 control-label">Repetir Contraseña</label>
+
+                        <div class="col-sm-6">
+                            <input id="txtPassword2" type="password" class="form-control" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtCelular" type="number" class="col-sm-4 control-label">Celular</label>
+
+                        <div class="col-sm-4">
+                            <input id="txtCelular" class="form-control" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtImei" class="col-sm-4 control-label">IMEI (*#06#)</label>
+
+                        <div class="col-sm-4">
+                            <input id="txtImei" class="form-control" required/>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-md col-sm-offset-4" id="btnEnviar">
+                        Crear
+                    </button>
+                    &nbsp;&nbsp;
+                    <button type="reset" class="btn btn-danger btn-md" id="btnCancelar">Cancelar</button>
+                </div>
+
+                </form>
             </div>
         </div>
 
@@ -73,8 +124,36 @@
     </div><!-- col-->
 @stop
 @section('contenido2')
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Usuarios registrados</div>
+            <div class="panel-body">
+
+                <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/drclipling/usuarios_sinformato'%>"
+                       data-show-refresh="true" data-search="true"
+                       data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
+                       data-sort-name="name" data-sort-order="desc">
+                    <thead>
+                    <tr>
+                        <th data-field="id" data-sortable="true">ID</th>
+                        <th data-field="nombre_completo" data-sortable="true">Nombre Completo</th>
+                        <th data-field="email" data-sortable="true">Email</th>
+                        <th data-field="celular" data-sortable="true">Celular</th>
+                        <th data-field="imei" data-sortable="true">IMEI</th>
+                        <th data-field="ultimo_acceso" data-halign="center" data-sortable="true">Último acceso</th>
+                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
+                            data-events="operateEvents">Acciones
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
+                <br/>
+            </div>
+        </div>
+    </div>
 @stop
 
 @section('pie')
-    <% HTML::script('public/js/sms/usuarios.js'); %>
+    <% HTML::script('public/js/md5.js'); %>
+    <% HTML::script('public/js/monitoreo/usuarios.js'); %>
 @stop

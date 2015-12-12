@@ -22,6 +22,15 @@ class CatalogosController extends \BaseController {
                 $formato_catalogos["label"] =$catalogo["label"];
                 $formato_catalogos["value"] =$catalogo["value"];
                 $formato_catalogos["value2"] =$catalogo["value2"];
+
+                if($id_sistema==8 && $catalogo["idpadre"]!="0")
+                {
+                    $formato_catalogos["idPadre"] =$catalogo["idpadre"];
+                    $catalogoPadre = Catalogo::findOrFail($catalogo["idpadre"]);
+                    $formato_catalogos["padre"] =$catalogoPadre["label"];
+                }
+
+
                 $formato_catalogos["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($catalogo["created_at"]));
                 array_push($catalogos,$formato_catalogos);
             }
@@ -153,4 +162,35 @@ class CatalogosController extends \BaseController {
 		}
 	}
 
+    public function listarCatalogos($app)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0)
+        {
+            $id_sistema=$sistemas[0]["id"];
+            $catalogos=array();
+            $catalogos_todos = Catalogo::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? GROUP BY agrupador',array($id_sistema))->get();
+            foreach ($catalogos_todos as $catalogo)
+            {
+                $formato_catalogos = array();
+                $formato_catalogos["agrupador"] =$catalogo["agrupador"];
+
+                $request = Request::create('/api/v1/catalogos/'.$app.'/'.$catalogo["agrupador"], 'GET', array());
+                $datos=array();
+                $datos= json_decode(Route::dispatch($request)->getContent(),true);
+                if($datos["intCodigo"]==1)
+                {
+                    $formato_catalogos["datos"]=$datos["resultado"]["catalogos"];
+                }
+
+                array_push($catalogos,$formato_catalogos);
+            }
+            return View::make('ws.json', array("resultado"=>compact('catalogos')));
+        }
+        else
+        {
+            $errores="Error al obtener catalogos";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
 }

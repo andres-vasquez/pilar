@@ -10,7 +10,7 @@
 @stop
 
 @section('titulo_plataforma')
-    ADMINISTRADOR Sm$
+    Dr. Clipping
 @stop
 
 @section('barra_navegacion')
@@ -33,9 +33,9 @@
                 <h4>Seleccione el tipo de reporte</h4>
                 <select id="cmbTipoReporte" class="form-control">
                     <option value="0">Seleccione</option>
-                    <option value="1">Mensajes por usuario</option>
-                    <option value="2">Mensajes por email</option>
-                    <option value="3">Mensajes por banco</option>
+                    <option value="1">Publicaciones por Researcher</option>
+                    <option value="2">Tareas por Analyst</option>
+                    <option value="3">Reporte por ciudad</option>
                     <option value="4">Usuarios</option>
                 </select>
             </div>
@@ -112,5 +112,5 @@
 
 @section('pie')
     <% HTML::script('public/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js'); %>
-    <% HTML::script('public/js/sms/reportes.js'); %>
+    <% HTML::script('public/js/monitoreo/reportes.js'); %>
 @stop
