@@ -9,7 +9,7 @@ class DrClippingUsuariosController extends \BaseController {
 	 */
 	public function index()
 	{
-		$drclippingusuarios = Drclippingusuario::all();
+		$drclippingusuarios = DrClippingUsuario::all();
 
 		return View::make('ws.json', array("resultado"=>compact('drclippingusuarios')));
 	}
@@ -22,7 +22,7 @@ class DrClippingUsuariosController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Drclippingusuario::$rules);
+		$validator = Validator::make($data = Input::all(), DrClippingUsuario::$rules);
 
 		if ($validator->fails())
 		{
@@ -30,10 +30,10 @@ class DrClippingUsuariosController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 
-        $existe = Drclippingusuario::whereRaw('email=?', array($data["email"]))->get();
+        $existe = DrClippingUsuario::whereRaw('email=?', array($data["email"]))->get();
         if (sizeof($existe) == 0)
         {
-            if (Drclippingusuario::create($data)) {
+            if (DrClippingUsuario::create($data)) {
                 return View::make('ws.json', array("resultado" => compact('Drclippingusuario')));
             } else {
                 $errores = "Error al crear registro";
@@ -54,7 +54,7 @@ class DrClippingUsuariosController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$drclippingusuario = Drclippingusuario::findOrFail($id);
+		$drclippingusuario = DrClippingUsuario::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('drclippingusuario')));
 	}
 
@@ -67,7 +67,7 @@ class DrClippingUsuariosController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$drclippingusuario = Drclippingusuario::findOrFail($id);
+		$drclippingusuario = DrClippingUsuario::findOrFail($id);
 		$data = Input::all();
 
 		if($drclippingusuario->update($data))
@@ -89,14 +89,14 @@ class DrClippingUsuariosController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$drclippingusuario = Drclippingusuario::findOrFail($id);
+		$drclippingusuario = DrClippingUsuario::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($drclippingusuario->update($data))
 		{
-			$drclippingusuario = Drclippingusuario::findOrFail($id);
+			$drclippingusuario = DrClippingUsuario::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('drclippingusuario')));
 		}
 		else
