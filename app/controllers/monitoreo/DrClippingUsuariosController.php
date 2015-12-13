@@ -176,6 +176,7 @@ class DrClippingUsuariosController extends \BaseController {
                             $datos["nombre_completo"]=$usuario[0]["nombre_completo"];
                             $datos["email"]=$usuario[0]["email"];
                             $datos["id_usuario"]=$usuario[0]["id"];
+                            $datos["fecha_servidor"]=date('d-m-y H:i:s');
                             return View::make('ws.json', array("resultado"=>compact('datos')));
                         }
                         else
