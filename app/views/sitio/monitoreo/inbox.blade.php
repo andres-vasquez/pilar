@@ -7,6 +7,17 @@
 
 @section('titulo_plataforma')
     Dr. Clipping
+    <style type="text/css">
+        html, body,div[class^="container"], .main, .contenido1, .lateral, .lista{
+            height: 100%;
+        }
+
+        .lista{
+            overflow-y: scroll;
+        }
+
+
+    </style>
 @stop
 
 @section('barra_navegacion')
@@ -19,11 +30,83 @@
 @stop
 
 @section('contenido1')
-    <div class="col-xs-12 col-md-6 col-lg-3">
 
+
+    <div class="col-xs-12 col-md-6 col-lg-3 lateral">
+
+        <select class="form-control">
+            <option value="1">Tareas pendientes</option>
+            <option value="1">Tareas realizadas</option>
+            <option value="1">Tareas rechazada</option>
+        </select>
+        <br/>
+        <div id="lstTareas" class="list-group lista">
+            <!--<a href="#" class="list-group-item active">
+                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
+                <p class="list-group-item-text">...</p>
+            </a>-->
+        </div>
+
+        <p class="text-center hidden"><i class="fa fa-spinner fa-spin"></i> Cargando</p>
+        <p class="text-center hidden"><b>Ya no se encontraron más tareas</b></p>
     </div>
 
     <div class="col-xs-12 col-md-6 col-lg-9">
+        <div class="panel panel-info">
+            <div class="panel-heading">Publicación</div>
+            <div class="panel-body">
+
+                <h3 id="cargandoTarea" class="text-center hidden"><i class="fa fa-spinner fa-spin"></i> Cargando</h3>
+
+                <br/>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <img src="" class="img-responsive" width="90%"/>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <img src="" class="img-responsive" width="90%"/>
+                    </div>
+                </div>
+
+                <br/>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>Id</td>
+                        <td>Ciudad</td>
+                        <td>Tipo de Medio</td>
+                        <td>Medio</td>
+                        <td>Ubicación</td>
+                        <td>Pág.</td>
+                        <td>Empresa.</td>
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Id</td>
+                        <td>Ciudad</td>
+                        <td>Tipo de Medio</td>
+                        <td>Medio</td>
+                        <td>Ubicación</td>
+                        <td>Pág.</td>
+                        <td>Empresa.</td>
+                        <td>Fecha</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
     </div>
 

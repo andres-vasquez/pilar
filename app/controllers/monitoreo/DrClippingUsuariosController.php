@@ -129,4 +129,79 @@ class DrClippingUsuariosController extends \BaseController {
 
         return json_encode($resultado);
     }
+
+    public function autenticacion()
+    {
+        $data = Input::all();
+        if(isset($data["email"]) && isset($data["pass"]))
+        {
+            if(isset($data["imei"]))
+            {
+                $email=$data["email"];
+                $password=$data["pass"];
+
+                $usuario=DrClippingUsuario::whereRaw('email=? AND password=?',array($email,$password))->get();
+                if(sizeof($usuario)>0)
+                {
+                    if($usuario[0]["estado"]!="1")
+                    {
+                        $errores="Usuario deshabilitado";
+                        return View::make('ws.json_errores', array("errores"=>compact('errores')));
+                    }
+                    else if($usuario[0]["baja_logica"]=="0")
+                    {
+                        $errores="Usuario eliminado";
+                        return View::make('ws.json_errores', array("errores"=>compact('errores')));
+                    }
+                    else
+                    {
+                        $imei=md5($usuario[0]["imei"]);
+                        if($imei==$data["imei"])
+                        {
+                            Input::all()["usuario_id"]=$usuario[0]["id"];
+
+                            $request = Request::create('/ws/drclipling/acceso', 'POST', array(
+                                'usuario_id'=>$usuario[0]["id"],
+                                'imei'=>$usuario[0]["imei"],
+                                'fecha_telefono'=>$data["fecha_telefono"],
+                                'version_apk'=>$data["version_apk"],
+                                'datos_telefono'=>$data["datos_telefono"],
+                                'aud_usuario_id'=>1
+                            ));
+
+                            $datos=array();
+                            Request::replace($request->input());
+                            json_decode(Route::dispatch($request)->getContent(),true);
+
+                            $datos["nombre_completo"]=$usuario[0]["nombre_completo"];
+                            $datos["email"]=$usuario[0]["email"];
+                            $datos["id_usuario"]=$usuario[0]["id"];
+                            return View::make('ws.json', array("resultado"=>compact('datos')));
+                        }
+                        else
+                        {
+                            $errores="Dispositivo no permitido. Registre el IMEI de su dispositivo";
+                            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+                        }
+                    }
+                }
+                else
+                {
+                    $errores="Email o contraseña incorrectos";
+                    return View::make('ws.json_errores', array("errores"=>compact('errores')));
+                }
+            }
+            else
+            {
+                $errores="Error al decodificar Imei";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Ingrese Email y Contraseña";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+
+    }
 }

@@ -144,3 +144,30 @@ Route::filter('credencial', function()
         }
     }
 });
+
+Route::filter('credencialclipp', function()
+{
+    $data = Input::all();
+    if (!isset($data["credencial"]))
+    {
+        $errores="El acceso al sistema es por credencial";
+        return View::make('ws.json_errores', array("errores"=>compact('errores')));
+    }
+    else
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($data["credencial"]))->get();
+        if(sizeof($sistemas)==0)
+        {
+            $errores="Acceso no autorizado al sistema";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+        else
+        {
+            if($sistema=$sistemas[0]["id"]!=8)
+            {
+                $errores="Credencial inválida";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+    }
+});

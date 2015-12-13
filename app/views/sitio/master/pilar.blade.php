@@ -71,6 +71,7 @@
 <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
     <ul class="nav menu">
         <li role="presentation" class="divider"></li>
+
         @if (count($data["menus"])>0)
             @for ($i = 0; $i < count($data["menus"]); $i++)
                 @if($data["menus"][$i]["estado"]=="1" && $data["menus"][$i]["baja_logica"]!="0")
@@ -114,7 +115,7 @@
     </div>
     <!--/.row-->
 
-    <div class="row">
+    <div class="row contenido1">
         @section('contenido1')
         @show
     </div>

@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
 class DrClippingAccesosController extends \BaseController {
 
 	/**
@@ -9,7 +12,7 @@ class DrClippingAccesosController extends \BaseController {
 	 */
 	public function index()
 	{
-		$drclippingaccesos = Drclippingacceso::all();
+		$drclippingaccesos = DrClippingAcceso::all();
 
 		return View::make('ws.json', array("resultado"=>compact('drclippingaccesos')));
 	}
@@ -22,7 +25,7 @@ class DrClippingAccesosController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Drclippingacceso::$rules);
+		$validator = Validator::make($data = Input::all(), DrClippingAcceso::$rules);
 
 		if ($validator->fails())
 		{
@@ -30,7 +33,7 @@ class DrClippingAccesosController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 
-		if(Drclippingacceso::create($data))
+		if(DrClippingAcceso::create($data))
 		{
 			return View::make('ws.json', array("resultado"=>compact('Drclippingacceso')));
 		}
@@ -49,7 +52,7 @@ class DrClippingAccesosController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$drclippingacceso = Drclippingacceso::findOrFail($id);
+		$drclippingacceso = DrClippingAcceso::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('drclippingacceso')));
 	}
 
@@ -62,7 +65,7 @@ class DrClippingAccesosController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$drclippingacceso = Drclippingacceso::findOrFail($id);
+		$drclippingacceso = DrClippingAcceso::findOrFail($id);
 		$data = Input::all();
 
 		if($drclippingacceso->update($data))
@@ -84,14 +87,14 @@ class DrClippingAccesosController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$drclippingacceso = Drclippingacceso::findOrFail($id);
+		$drclippingacceso = DrClippingAcceso::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($drclippingacceso->update($data))
 		{
-			$drclippingacceso = Drclippingacceso::findOrFail($id);
+			$drclippingacceso = DrClippingAcceso::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('drclippingacceso')));
 		}
 		else

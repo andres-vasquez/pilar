@@ -101,4 +101,9 @@ class DrClippingPublicacionsController extends \BaseController {
 		}
 	}
 
+    public function publicacion()
+    {
+
+    }
+
 }
