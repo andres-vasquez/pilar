@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/DrClippingPublicacion.php" afterPath="$PROJECT_DIR$/app/models/DrClippingPublicacion.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -56,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrClippingPublicacionsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DrClippingPublicacionsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53097343" vertical-offset="285" max-vertical-offset="1920">
+            <state vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="1920">
               <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrClippingPublicacion.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/DrClippingPublicacion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42035398" vertical-offset="0" max-vertical-offset="678">
+              <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -125,7 +135,6 @@
         <option value="$PROJECT_DIR$/public/js/monitoreo/catalogos.js" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/models/DrclippingTarifa.php" />
-        <option value="$PROJECT_DIR$/app/models/DrClippingPublicacion.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingAnalisi.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingUsuario.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingAcceso.php" />
@@ -145,6 +154,7 @@
         <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
+        <option value="$PROJECT_DIR$/app/models/DrClippingPublicacion.php" />
       </list>
     </option>
   </component>
@@ -552,12 +562,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00084" summary="Ofertas Insert 1.4 Corregido">
-      <created>1444422720053</created>
-      <option name="number" value="00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1444422720053</updated>
-    </task>
     <task id="LOCAL-00085" summary="Cambio de tamaños publicidad">
       <created>1444424056530</created>
       <option name="number" value="00085" />
@@ -846,7 +850,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450123389041</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Publicacion con Obj, fixed">
+      <created>1450127074133</created>
+      <option name="number" value="00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1450127074133</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -934,7 +944,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Ofertas cambio bug" />
     <MESSAGE value="Notificaciones iOS" />
     <MESSAGE value="Publicidades Random" />
     <MESSAGE value="Tecnobit avance en adjuntos y usuarios" />
@@ -959,7 +968,8 @@
     <MESSAGE value="WS Autenticacion y publicacion con fecha servidor" />
     <MESSAGE value="Fecha en detalle noticia&#10;" />
     <MESSAGE value="Publicacion con Obj" />
-    <option name="LAST_COMMIT_MESSAGE" value="Publicacion con Obj" />
+    <MESSAGE value="Publicacion con Obj, fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Publicacion con Obj, fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1342,14 +1352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/DrClippingPublicacion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044247787" vertical-offset="0" max-vertical-offset="678">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAccesosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.54867256" vertical-offset="1017" max-vertical-offset="1695">
@@ -1386,8 +1388,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53097343" vertical-offset="285" max-vertical-offset="1920">
+        <state vertical-scroll-proportion="-26.875" vertical-offset="0" max-vertical-offset="1920">
           <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/DrClippingPublicacion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42035398" vertical-offset="0" max-vertical-offset="678">
+          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
           <folding />
         </state>
       </provider>
