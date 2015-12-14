@@ -9,7 +9,7 @@ class DrClippingAnalisesController extends \BaseController {
 	 */
 	public function index()
 	{
-		$drclippinganalises = Drclippinganalise::all();
+		$drclippinganalises = DrClippingAnalisi::all();
 
 		return View::make('ws.json', array("resultado"=>compact('drclippinganalises')));
 	}
@@ -22,7 +22,7 @@ class DrClippingAnalisesController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Drclippinganalise::$rules);
+		$validator = Validator::make($data = Input::all(), DrClippingAnalisi::$rules);
 
 		if ($validator->fails())
 		{
@@ -30,7 +30,7 @@ class DrClippingAnalisesController extends \BaseController {
 			return View::make('ws.json_errores', array("errores"=>compact('errores')));
 		}
 
-		if(Drclippinganalise::create($data))
+		if(DrClippingAnalisi::create($data))
 		{
 			return View::make('ws.json', array("resultado"=>compact('Drclippinganalise')));
 		}
@@ -49,7 +49,7 @@ class DrClippingAnalisesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$drclippinganalise = Drclippinganalise::findOrFail($id);
+		$drclippinganalise = DrClippingAnalisi::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('drclippinganalise')));
 	}
 
@@ -62,7 +62,7 @@ class DrClippingAnalisesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$drclippinganalise = Drclippinganalise::findOrFail($id);
+		$drclippinganalise = DrClippingAnalisi::findOrFail($id);
 		$data = Input::all();
 
 		if($drclippinganalise->update($data))
@@ -84,14 +84,14 @@ class DrClippingAnalisesController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$drclippinganalise = Drclippinganalise::findOrFail($id);
+		$drclippinganalise = DrClippingAnalisi::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($drclippinganalise->update($data))
 		{
-			$drclippinganalise = Drclippinganalise::findOrFail($id);
+			$drclippinganalise = DrClippingAnalisi::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('drclippinganalise')));
 		}
 		else

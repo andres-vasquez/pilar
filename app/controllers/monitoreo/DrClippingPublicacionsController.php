@@ -9,7 +9,7 @@ class DrClippingPublicacionsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$drclippingpublicacions = Drclippingpublicacion::all();
+		$drclippingpublicacions = DrClippingPublicacion::all();
 
 		return View::make('ws.json', array("resultado"=>compact('drclippingpublicacions')));
 	}
@@ -22,23 +22,35 @@ class DrClippingPublicacionsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Drclippingpublicacion::$rules);
+        $data = Input::all();
+        if(isset($data["objPublicacion"]))
+        {
+            $datos=json_decode($data["objPublicacion"]);
+            $validator = Validator::make($datos, DrClippingPublicacion::$rules);
 
-		if ($validator->fails())
-		{
-			$errores=$validator->messages()->first();
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
+            if ($validator->fails())
+            {
+                $errores=$validator->messages()->first();
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
 
-		if(Drclippingpublicacion::create($data))
-		{
-			return View::make('ws.json', array("resultado"=>compact('Drclippingpublicacion')));
-		}
-		else
-		{
-			$errores="Error al crear registro";
-			return View::make('ws.json_errores', array("errores"=>compact('errores')));
-		}
+            $insert = DrClippingPublicacion::create($datos);
+            $id = $insert->id;
+            if($id>0)
+            {
+                return View::make('ws.json', array("resultado"=>compact('id')));
+            }
+            else
+            {
+                $errores="Error al crear registro";
+                return View::make('ws.json_errores', array("errores"=>compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Faltan parámetros de entrada";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
 	}
 
 	/**
@@ -49,7 +61,7 @@ class DrClippingPublicacionsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$drclippingpublicacion = Drclippingpublicacion::findOrFail($id);
+		$drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
 		return View::make('ws.json', array("resultado"=>compact('drclippingpublicacion')));
 	}
 
@@ -62,7 +74,7 @@ class DrClippingPublicacionsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$drclippingpublicacion = Drclippingpublicacion::findOrFail($id);
+		$drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
 		$data = Input::all();
 
 		if($drclippingpublicacion->update($data))
@@ -84,14 +96,14 @@ class DrClippingPublicacionsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$drclippingpublicacion = Drclippingpublicacion::findOrFail($id);
+		$drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
 		$data = array();
 
 		$data["baja_logica"] = "0";
 		$data["estado"] = "0";
 		if($drclippingpublicacion->update($data))
 		{
-			$drclippingpublicacion = Drclippingpublicacion::findOrFail($id);
+			$drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
 			return View::make('ws.json', array("resultado"=>compact('drclippingpublicacion')));
 		}
 		else
