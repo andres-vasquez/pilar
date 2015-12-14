@@ -25,9 +25,10 @@ class DrClippingPublicacionsController extends \BaseController {
         $data = Input::all();
         if(isset($data["objPublicacion"]))
         {
-            $datos=json_decode($data["objPublicacion"]);
-            $validator = Validator::make($datos, DrClippingPublicacion::$rules);
+            $datos=json_decode($data["objPublicacion"],true);
 
+
+            $validator = Validator::make($datos, DrClippingPublicacion::$rules);
             if ($validator->fails())
             {
                 $errores=$validator->messages()->first();
