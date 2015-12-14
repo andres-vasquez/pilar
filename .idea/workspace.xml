@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -88,14 +88,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrClippingUsuariosController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DrClippingUsuariosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5575221" vertical-offset="2292" max-vertical-offset="3210">
+            <state vertical-scroll-proportion="-72.625" vertical-offset="927" max-vertical-offset="3210">
               <caret line="178" column="70" selection-start-line="178" selection-start-column="70" selection-end-line="178" selection-end-column="70" />
               <folding>
                 <marker date="1450047739000" expanded="true" signature="3267:3351" placeholder="SELECT creat..t_acceso..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticia_web.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26548672" vertical-offset="285" max-vertical-offset="1095">
+              <caret line="31" column="98" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/PublicidadImagensController.php" />
         <option value="$PROJECT_DIR$/app/controllers/PublicidadsController.php" />
         <option value="$PROJECT_DIR$/public/js/sitio/eventos.js" />
         <option value="$PROJECT_DIR$/app/models/Tecnobitusuario.php" />
@@ -179,6 +188,7 @@
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAccesosController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" />
+        <option value="$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php" />
       </list>
     </option>
   </component>
@@ -336,7 +346,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
+              <option name="myItemId" value="ws" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,10 +369,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sitio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoreo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -549,12 +555,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Ofertas Insert 1.1">
-      <created>1444360035583</created>
-      <option name="number" value="00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1444360035583</updated>
     </task>
     <task id="LOCAL-00082" summary="Ofertas Insert 1.2">
       <created>1444360306640</created>
@@ -844,7 +844,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449984552871</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="WS Autenticacion y publicacion con fecha servidor">
+      <created>1450048400599</created>
+      <option name="number" value="00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1450048400599</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -932,7 +938,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="GCM cambios console" />
     <MESSAGE value="Mensaje GCM" />
     <MESSAGE value="Html cambio ofertas" />
     <MESSAGE value="Ofertas cambio bug" />
@@ -957,29 +962,14 @@
     <MESSAGE value="Primera parte interfaz web" />
     <MESSAGE value="Primera parte interfaz web 1.0" />
     <MESSAGE value="WS Autenticacion y publicacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="WS Autenticacion y publicacion" />
+    <MESSAGE value="WS Autenticacion y publicacion con fecha servidor" />
+    <option name="LAST_COMMIT_MESSAGE" value="WS Autenticacion y publicacion con fecha servidor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8141593" vertical-offset="2175" max-vertical-offset="4335">
-          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61946905" vertical-offset="7500" max-vertical-offset="13800">
-          <caret line="528" column="70" selection-start-line="528" selection-start-column="70" selection-end-line="528" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.340708" vertical-offset="0" max-vertical-offset="3060">
@@ -1380,13 +1370,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ws/json_errores.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5575221" vertical-offset="2292" max-vertical-offset="3210">
+        <state vertical-scroll-proportion="-72.625" vertical-offset="927" max-vertical-offset="3210">
           <caret line="178" column="70" selection-start-line="178" selection-start-column="70" selection-end-line="178" selection-end-column="70" />
           <folding>
             <marker date="1450047739000" expanded="true" signature="3267:3351" placeholder="SELECT creat..t_acceso..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26548672" vertical-offset="285" max-vertical-offset="1095">
+          <caret line="31" column="98" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
