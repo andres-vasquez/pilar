@@ -74,11 +74,11 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-6">
-                        <img src="" class="img-responsive" width="90%"/>
+                        <img id="imgFoto1" src="" class="img-responsive" width="90%"/>
                     </div>
 
                     <div class="col-xs-12 col-md-6 col-lg-6">
-                        <img src="" class="img-responsive" width="90%"/>
+                        <img id="imgFoto2" src="" class="img-responsive" width="90%"/>
                     </div>
                 </div>
 
@@ -95,17 +95,23 @@
                         <td>Fecha</td>
                     </tr>
                     <tr>
-                        <td>Id</td>
-                        <td>Ciudad</td>
-                        <td>Tipo de Medio</td>
-                        <td>Medio</td>
-                        <td>Ubicación</td>
-                        <td>Pág.</td>
-                        <td>Empresa.</td>
-                        <td>Fecha</td>
+                        <td id="tdId">Id</td>
+                        <td id="tdCiudad">Ciudad</td>
+                        <td id="tdTipoMedio">Tipo de Medio</td>
+                        <td id="tdMedio">Medio</td>
+                        <td id="tdUbicacion">Ubicación</td>
+                        <td id="tdPagina">Pág.</td>
+                        <td id="tdEmpresa">Empresa.</td>
+                        <td id="tdFecha">Fecha</td>
                     </tr>
                 </table>
+
+                <br/>
+                <br/>
+                <button class="btn btn-success right">Formulario de análisis</button>
+
             </div>
+
         </div>
 
     </div>

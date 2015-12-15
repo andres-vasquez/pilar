@@ -553,6 +553,7 @@ Route::post('/ws/drclipling/analisis/eliminar/{id}', array('as' => 'show', 'uses
 //Ws Publicacion
 Route::get('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@show'))->where(array('id' => '[0-9]+'));
 Route::post('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@update'));
+Route::get('/ws/drclipling/publicacion/{estado}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@publicaciones'));
 
 //REST Api Drclipping
 Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), function () {
@@ -565,6 +566,7 @@ Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), fu
     //REST Api usuarios
     Route::group(array('prefix' => '/publicacion'), function () {
         Route::post('/', 'DrClippingPublicacionsController@store');
+        Route::get('/{estado}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@publicaciones'));
     });
 });
 
