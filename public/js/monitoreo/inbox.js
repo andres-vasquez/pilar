@@ -55,7 +55,7 @@ $(document).ready(function()
 
                         html+='<a href="#" id="'+lstPublicaciones[i].id+'" class="list-group-item item-lista '+activo+'">';
                         html+='<h5 class="list-group-item-heading">'+lstPublicaciones[i].empresa+'</h5>';
-                        html+='<p class="list-group-item-text">'+lstPublicaciones[i].ubicacion+' Paágina: '+lstPublicaciones[i].pagina+'</p>';
+                        html+='<p class="list-group-item-text">'+lstPublicaciones[i].ubicacion+' Página: '+lstPublicaciones[i].pagina+'</p>';
                         html+='<p class="list-group-item-text">'+lstPublicaciones[i].fecha_publicacion+'</p>';
                         html+='</a>';
 

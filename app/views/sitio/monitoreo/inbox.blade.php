@@ -108,7 +108,73 @@
 
                 <br/>
                 <br/>
-                <button class="btn btn-success right">Formulario de análisis</button>
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="txtNombrePublicacion" class="col-sm-3 control-label">Nombre de la publicación</label>
+                        <div class="col-sm-8">
+                            <input id="txtNombrePublicacion" class="form-control"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cmbColor" class="col-sm-3 control-label">Color</label>
+                        <div class="col-sm-6">
+                            <select id="cmbColor" class="form-control"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtTamanio" class="col-sm-3 control-label">Tamaño</label>
+                        <div class="col-sm-6">
+                            <input id="txtTamanio" class="form-control"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cmbCuerpo" class="col-sm-3 control-label">Cuerpo</label>
+                        <div class="col-sm-6">
+                            <select id="cmbCuerpo" class="form-control"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtDia" class="col-sm-3 control-label">Día</label>
+                        <div class="col-sm-4">
+                            <input id="txtDia" class="form-control" readonly/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cmbTarifa" class="col-sm-3 control-label">Tarifa</label>
+                        <div class="col-sm-4">
+                            <select id="cmbTarifa" class="form-control"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cmbValoracion" class="col-sm-3 control-label">Valoración Cualitativa</label>
+                        <div class="col-sm-6">
+                            <select id="cmbValoracion" class="form-control"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtObservaciones" class="col-sm-3 control-label">Observaciones</label>
+                        <div class="col-sm-8">
+                            <textarea id="txtObservaciones" class="form-control" rows="7"></textarea>
+                        </div>
+                    </div>
+
+                    <br/>
+                    <div class="form-group">
+                        <label for="btnEnviarAnalisis" class="col-sm-4 control-label"></label>
+                        <div class="col-sm-8">
+                            <input type="submit" id="btnEnviarAnalisis" class="btn btn-success right" value="Enviar formulario de análisis"/>
+                        </div>
+                    </div>
+
+                </form>
 
             </div>
 
