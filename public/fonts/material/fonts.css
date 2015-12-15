@@ -1,0 +1,15 @@
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('RobotoTTF/Roboto-Black.ttf');
+}
+
+@font-face
+{
+    font-family: 'Noto Serif';
+    src: url('NotoSerif-unhinted/NotoSerif-Regular.ttf');
+}
+
+h2 {
+    font-family: 'Roboto';
+}

@@ -8,10 +8,13 @@
 
     <% HTML::style('public/css/bootstrap.min.css'); %>
     <% HTML::style('public/css/styles.css'); %>
+
     <!--[if lt IE 9]>
     <% HTML::script('public/js/html5shiv.js'); %>
     <% HTML::script('public/js/respond.min.js'); %>
     <![endif]-->
+
+    <% HTML::style('public/fonts/material/fonts.css'); %>
 </head>
 
 <body style="padding-top: 0px">
@@ -26,12 +29,10 @@
 <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
     <div class="row">
         <div class="col-lg-12">
-            <ol class="breadcrumb">
                 <h2><% $resultado["datos"]["titular"]%></h2>
-            </ol>
-            <cite title=""><% date('d/m/Y',strtotime($resultado["datos"]["created_at"]));%></cite>
+            <cite style="font-family: 'Noto Serif" title=""><% date('d/m/Y',strtotime($resultado["datos"]["created_at"]));%></cite>
             <br/><br/>
-            <div style="width: 90%">
+            <div style="width: 90%; font-family: 'Noto Serif">
             <% $resultado["datos"]["html"]; %>
             </div>
             <br/>
@@ -46,8 +47,6 @@
 <% HTML::script('public/js/jquery-1.11.1.min.js'); %>
 <% HTML::script('public/js/bootstrap.min.js'); %>
 <script>
-    $('#calendar').datepicker({});
-
     !function ($) {
         $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
             $(this).find('em:first').toggleClass("glyphicon-minus");
