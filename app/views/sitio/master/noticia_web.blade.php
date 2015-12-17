@@ -78,6 +78,7 @@
     })
 
     $(document).ready(function() {
+        $("#esquina").hide();
         $('#imagen').each(function() {
             $(this).on('load', function(){
                 var altura=parseInt($(this).height()/10);
@@ -86,7 +87,7 @@
                 //console.log("MARgen "+margen);
                 $(".ribon-white-top").css('top','-'+altura+'px')
                 $("#esquina").height(altura);
-
+                $("#esquina").show();
             });
             //tmpImg.src = $(this).attr('src') ;
         }) ;

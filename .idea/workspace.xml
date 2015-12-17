@@ -67,8 +67,8 @@
       <file leaf-file-name="noticia_web.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2699115" vertical-offset="387" max-vertical-offset="1545">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.6902655" vertical-offset="867" max-vertical-offset="1560">
+              <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -534,12 +534,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00091" summary="Ajuste publicidad 2.0">
-      <created>1444690708963</created>
-      <option name="number" value="00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1444690708963</updated>
-    </task>
     <task id="LOCAL-00092" summary="Modificacion Restapi Publicidad">
       <created>1444840726457</created>
       <option name="number" value="00092" />
@@ -828,7 +822,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450381044824</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Noticias fixed">
+      <created>1450381162899</created>
+      <option name="number" value="00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1450381162899</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -916,7 +916,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Filtro noticias arreglado" />
     <MESSAGE value="Secciones ordenadas" />
     <MESSAGE value="AWS Endpoint&#10;" />
     <MESSAGE value="Catalogos Thumbnail&#10;" />
@@ -941,7 +940,8 @@
     <MESSAGE value="Noticias con Fonts" />
     <MESSAGE value="Noticias con triangulo blanco inferior" />
     <MESSAGE value="Catalogos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Catalogos" />
+    <MESSAGE value="Noticias fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Noticias fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1363,8 +1363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2699115" vertical-offset="387" max-vertical-offset="1545">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.6902655" vertical-offset="867" max-vertical-offset="1560">
+          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
           <folding />
         </state>
       </provider>
