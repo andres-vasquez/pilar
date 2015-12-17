@@ -36,7 +36,7 @@
 </nav>-->
 <img id="imagen" class="img-responsive" src="<% $resultado["datos"]["url_imagen"]%>" style="width: 100%"/>
 
-@if ($resultado["datos"]["sistema_id"] === 6)
+@if ($resultado["datos"]["sistema_id"] == 6)
 <svg id="esquina" class="ribon-white-top" xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
     <path class="rib" d="M0 100 L100 100 L0 0 Z" stroke-width="0"/>
 </svg>
