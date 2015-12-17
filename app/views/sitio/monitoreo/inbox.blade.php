@@ -93,6 +93,7 @@
                         <td>Pág.</td>
                         <td>Empresa.</td>
                         <td>Fecha</td>
+                        <td class="text-center">Acciones</td>
                     </tr>
                     <tr>
                         <td id="tdId">Id</td>
@@ -103,6 +104,11 @@
                         <td id="tdPagina">Pág.</td>
                         <td id="tdEmpresa">Empresa.</td>
                         <td id="tdFecha">Fecha</td>
+                        <td class="text-center">
+                            <a class="edit ml10" href="#" title="Editar">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </a>
+                        </td>
                     </tr>
                 </table>
 
@@ -168,9 +174,10 @@
 
                     <br/>
                     <div class="form-group">
-                        <label for="btnEnviarAnalisis" class="col-sm-4 control-label"></label>
-                        <div class="col-sm-8">
+                        <label for="btnEnviarAnalisis" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-10">
                             <input type="submit" id="btnEnviarAnalisis" class="btn btn-success right" value="Enviar formulario de análisis"/>
+                            <input type="button" id="btnEnviarNegativa" class="btn btn-danger right" value="Enviar como Rechazada"/>
                         </div>
                     </div>
 

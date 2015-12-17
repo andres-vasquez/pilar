@@ -78,8 +78,8 @@ $(document).ready(function()
     cargarDetalleNoticia=function(objPublicacion){
         $("#cargandoTarea").addClass("hidden");
 
-        $("#imgFoto1").attr("src",objPublicacion.url_foto1);
-        $("#imgFoto2").attr("src",objPublicacion.url_foto2);
+        //$("#imgFoto1").attr("src",objPublicacion.url_foto1);
+        //$("#imgFoto2").attr("src",objPublicacion.url_foto2);
 
         $("#tdId").html(objPublicacion.id);
         $("#tdCiudad").html(objPublicacion.ciudad);
@@ -91,6 +91,36 @@ $(document).ready(function()
         $("#tdFecha").html(objPublicacion.fecha_publicacion);
     };
 
+    llenarCatalogos=function(campo,agrupador,idPadre)
+    {
+        var credencial=$("#credencial").val();
+        var html='<option value="0">Seleccione</option>';
+
+        var url="../api/v1/catalogos/"+credencial+"/"+agrupador+"/"+idPadre;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1)
+                {
+                    var arrCatalogos=result.resultado.catalogos;
+                    for(var i=0;i<arrCatalogos.length;i++)
+                        html+='<option value="'+arrCatalogos[i].value+'">'+arrCatalogos[i].label+'</option>';
+                    $("#"+campo).html(html);
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+            }
+        });
+    };
+
     llenarLista(0,1,15);
+    llenarCatalogos('cmbColor',"Color",0);
+    llenarCatalogos('cmbCuerpo',"Ubicacion",0);
+    llenarCatalogos('cmbValoracion',"Valoracion",0);
 });
 

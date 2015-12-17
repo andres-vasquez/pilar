@@ -193,4 +193,37 @@ class CatalogosController extends \BaseController {
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
     }
+
+    public function recursivo($app,$agrupador,$idPadre){
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0)
+        {
+            $id_sistema=$sistemas[0]["id"];
+            $catalogos=array();
+
+            if($idPadre=="0")
+                $catalogos_todos = Catalogo::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=?',array($id_sistema,$agrupador))->get();
+            else
+                $catalogos_todos = Catalogo::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND agrupador=? AND idpadre=?',array($id_sistema,$agrupador,$idPadre))->get();
+
+
+            foreach ($catalogos_todos as $catalogo)
+            {
+                $formato_catalogos = array();
+                $formato_catalogos["id"] =$catalogo["id"];
+                $formato_catalogos["label"] =$catalogo["label"];
+                $formato_catalogos["value"] =$catalogo["value"];
+                $formato_catalogos["value2"] =$catalogo["value2"];
+                $formato_catalogos["idPadre"] =$catalogo["idpadre"];
+                $formato_catalogos["fecha_creacion"]= date('d-m-Y H:i:s', strtotime($catalogo["created_at"]));
+                array_push($catalogos,$formato_catalogos);
+            }
+            return View::make('ws.json', array("resultado"=>compact('catalogos')));
+        }
+        else
+        {
+            $errores="Error al obtener catalogos";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
 }
