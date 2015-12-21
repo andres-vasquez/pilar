@@ -16,7 +16,12 @@
             overflow-y: scroll;
         }
 
-
+        .zoomContainer{
+            z-index: 9999;
+        }
+        .zoomWindow{
+            z-index: 9999;
+        }
     </style>
 @stop
 
@@ -74,11 +79,11 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-6">
-                        <img id="imgFoto1" src="" class="img-responsive" width="90%"/>
+                        <img id="imgFoto1" src="" class="img-responsive foto" width="90%" style="cursor: pointer"/>
                     </div>
 
                     <div class="col-xs-12 col-md-6 col-lg-6">
-                        <img id="imgFoto2" src="" class="img-responsive" width="90%"/>
+                        <img id="imgFoto2" src="" class="img-responsive foto" width="90%" style="cursor: pointer"/>
                     </div>
                 </div>
 
@@ -274,6 +279,27 @@
         </div>
     </div>
 
+    <!-- Modal Zoom -->
+    <div class="modal fade" id="zoomModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="imgPreview" class="img-responsive" width="90%" src=""/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal Editar -->
     <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
@@ -389,5 +415,6 @@
     </div>-->
 @stop
 @section('pie')
+    <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>
     <% HTML::script('public/js/monitoreo/inbox.js'); %>
 @stop

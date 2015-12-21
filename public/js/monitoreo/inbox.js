@@ -80,6 +80,22 @@ $(document).ready(function()
 
     });
 
+    $(".foto").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        var src=$(this).attr("src");
+        $("#imgPreview").attr("src",src);;
+        $("#zoomModal").modal("show");
+    });
+
+    $('#zoomModal').on('shown.bs.modal', function() {
+        $('#imgPreview').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair"
+        });
+    })
+
     cargarDetalleNoticia=function(objPublicacion){
         $("#cargandoTarea").addClass("hidden");
 
