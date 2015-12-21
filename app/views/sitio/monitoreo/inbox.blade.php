@@ -36,8 +36,8 @@
 
         <select class="form-control">
             <option value="1">Tareas pendientes</option>
-            <option value="1">Tareas realizadas</option>
-            <option value="1">Tareas rechazada</option>
+            <option value="2">Tareas realizadas</option>
+            <option value="3">Tareas rechazada</option>
         </select>
         <br/>
         <div id="lstTareas" class="list-group lista">
@@ -152,9 +152,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="cmbTarifa" class="col-sm-3 control-label">Tarifa</label>
+                        <label for="txtTarifa" class="col-sm-3 control-label">Tarifa</label>
+
                         <div class="col-sm-4">
-                            <select id="cmbTarifa" class="form-control"></select>
+
+                            <div class="input-group">
+                                <input id="txtTarifa"  type="number" class="form-control">
+                                <span id="btnBuscarTarifa" class="input-group-addon" style="cursor: pointer"><i class="glyphicon glyphicon-search"></i></span>
+                            </div>
+
                         </div>
                     </div>
 
@@ -187,6 +193,158 @@
 
         </div>
 
+    </div>
+
+    <!-- Modal Seleccionar Tarifa -->
+    <div class="modal fade" id="tarifaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Seleccionar Tarifa</h4>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="col-lg-2 text-center">Departamento</th>
+                            <th class="col-lg-3 text-center">Tipo de Medio</th>
+                            <th class="col-lg-5 text-center">Medio</th>
+                            <th class="col-lg-2 text-center">Acción</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><select id="cmbCiudad_popup" class="form-control"></select></td>
+                            <td><select id="cmbTipoMedio_popup" class="form-control"></select></td>
+                            <td><select id="cmbMedio_popup" class="form-control"></select></td>
+                            <td><button id="btnVerTarifas" class="btn btn-success form-control">Buscar</button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <br/>
+                    <table id="tblTarifario" data-toggle="table" data-url=""
+                           data-show-refresh="true" data-search="true"
+                           data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
+                           data-sort-name="name" data-sort-order="desc">
+                        <thead>
+                        <tr>
+                            <th data-field="id" data-sortable="true">ID</th>
+                            <th data-field="dia" data-sortable="true">Días</th>
+                            <th data-field="ubicacion" data-sortable="true">Cuerpo</th>
+                            <th data-field="color" data-sortable="true">Color</th>
+                            <th data-field="tarifa" data-sortable="true">Tarifa</th>
+                            <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
+                                data-events="operateEvents">Acciones
+                            </th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rechazada -->
+    <div class="modal fade" id="rechazarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Rechazar la publicación</h4>
+                </div>
+                <div class="modal-body">
+                    Está seguro de rechazar la publicación recibida?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" id="btnRechazar">Si, rechazar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar -->
+    <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Edición de Publicación</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="cmbCiudad" class="col-sm-3 control-label">Ciudad</label>
+                            <div class="col-sm-8">
+                                <select id="cmbCiudad" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cmbTipoMedio" class="col-sm-3 control-label">Tipo de Medio</label>
+                            <div class="col-sm-8">
+                                <select id="cmbTipoMedio" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cmbMedio" class="col-sm-3 control-label">Medio</label>
+                            <div class="col-sm-8">
+                                <select id="cmbMedio" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cmbUbicacion" class="col-sm-3 control-label">Ubicación</label>
+                            <div class="col-sm-8">
+                                <select id="cmbUbicacion" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtPagina" class="col-sm-3 control-label">Ubicación</label>
+                            <div class="col-sm-8">
+                                <input id="txtPagina" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtEmpresa" class="col-sm-3 control-label">Empresa</label>
+                            <div class="col-sm-8">
+                                <input id="txtEmpresa" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtFecha" class="col-sm-3 control-label">Fecha</label>
+                            <div class="col-sm-8">
+                                <input id="txtFecha" class="form-control"/>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarImagen">Guardar cambios
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
 @stop

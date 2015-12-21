@@ -16,6 +16,6 @@ class DrclippingTarifa extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array('aud_usuario_id','aud_usuario_mod_id','estado','baja_logica','medio_id','color_id'
-    ,'dia','cuerpo','tarifa');
+	protected $fillable = array('aud_usuario_id','aud_usuario_mod_id','estado','baja_logica','medio_id','color_id','color'
+    ,'dia','ubicacion','ubicacion_id','tarifa');
 }
