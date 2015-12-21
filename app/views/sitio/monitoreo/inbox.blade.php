@@ -290,7 +290,7 @@
                     <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía</h4>
                 </div>
                 <div class="modal-body">
-                    <img id="imgPreview" class="img-responsive" width="90%" src=""/>
+                    <img id="imgPreview" class="img-responsive" width="100%" src=""/>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>

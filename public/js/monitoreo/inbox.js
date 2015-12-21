@@ -94,7 +94,13 @@ $(document).ready(function()
             zoomType: "inner",
             cursor: "crosshair"
         });
-    })
+    });
+
+    jQuery('#zoomModal').on('hidden.bs.modal', function (e) {
+
+        jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
+        jQuery('.zoomContainer').remove();// remove zoom container from DOM
+    });
 
     cargarDetalleNoticia=function(objPublicacion){
         $("#cargandoTarea").addClass("hidden");
