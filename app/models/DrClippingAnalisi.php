@@ -17,5 +17,5 @@ class DrClippingAnalisi extends \Eloquent {
 	// Campos a incluirse en insert y update
 	protected $fillable = array('aud_usuario_id','aud_usuario_mod_id','estado','baja_logica','usuario_id','publicacion_id',
         'tipo_noticia_id','tipo_noticia','nombre_publicacion','color_id','color','tamanio','cuerpo_id','cuerpo','dia',
-        'tarifa_id','tarifa','valoracion_id','valoracion','comentario');
+        'tarifa_id','tarifa','valoracion_id','valoracion','comentario','args');
 }

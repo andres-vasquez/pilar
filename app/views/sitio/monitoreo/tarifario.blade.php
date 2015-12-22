@@ -157,28 +157,28 @@
                         </form>
                     </div>
                 </div>
-            </div>
 
-            <table id="tblTarifario" data-toggle="table" data-url=""
-                   data-show-refresh="true" data-search="true"
-                   data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
-                   data-sort-name="name" data-sort-order="desc">
-                <thead>
-                <tr>
-                    <th data-field="id" data-sortable="true">ID</th>
-                    <th data-field="dia" data-sortable="true">Días</th>
-                    <th data-field="ubicacion" data-sortable="true">Cuerpo</th>
-                    <th data-field="color" data-sortable="true">Color</th>
-                    <th data-field="tarifa" data-sortable="true">Tarifa</th>
-                    <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
-                        data-events="operateEvents">Acciones
-                    </th>
-                </tr>
-                </thead>
-            </table>
-            <br/>
+
+                <table id="tblTarifario" data-toggle="table" data-url=""
+                       data-show-refresh="true" data-search="true"
+                       data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
+                       data-sort-name="name" data-sort-order="desc">
+                    <thead>
+                    <tr>
+                        <th data-field="id" data-sortable="true">ID</th>
+                        <th data-field="dia" data-sortable="true">Días</th>
+                        <th data-field="ubicacion" data-sortable="true">Cuerpo</th>
+                        <th data-field="color" data-sortable="true">Color</th>
+                        <th data-field="tarifa" data-sortable="true">Tarifa</th>
+                        <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
+                            data-events="operateEvents">Acciones
+                        </th>
+                    </tr>
+                    </thead>
+                </table>
+                <br/>
+            </div>
         </div>
-    </div>
     </div>
 @stop
 

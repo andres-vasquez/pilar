@@ -106,9 +106,6 @@
 
 @stop
 @section('contenido2')
-    <div class="col-lg-12">
-        <h3>Tarifario</h3>
-    </div>
 @stop
 @section('pie')
     <% HTML::script('public/js/monitoreo/catalogos.js'); %>

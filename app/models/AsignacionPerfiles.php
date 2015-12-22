@@ -13,5 +13,5 @@ class AsignacionPerfiles extends \Eloquent {
 	];
 	
 	// Campos a incluirse en insert y update
-	protected $fillable = array('estado','baja_logica');
+	protected $fillable = array('estado','baja_logica','args','usuario_id','perfil_id');
 }
