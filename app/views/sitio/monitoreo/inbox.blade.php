@@ -3,6 +3,7 @@
 @section('header')
     @parent
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/lib/chosen/chosen.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -28,6 +29,7 @@
 @section('barra_navegacion')
     <li class="active">Inbox</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>
+    <input type="hidden" id="usuario_id" value="<% Session::get("id_usuario")%>"/>
 @stop
 
 @section('titulo')
@@ -39,10 +41,10 @@
 
     <div class="col-xs-12 col-md-6 col-lg-3 lateral">
 
-        <select class="form-control">
-            <option value="1">Tareas pendientes</option>
-            <option value="2">Tareas realizadas</option>
-            <option value="3">Tareas rechazada</option>
+        <select id="cmbFiltroEstados" class="form-control">
+            <option value="0">Tareas pendientes</option>
+            <option value="1">Tareas realizadas</option>
+            <option value="2">Tareas rechazada</option>
         </select>
         <br/>
         <div id="lstTareas" class="list-group lista">
@@ -69,6 +71,8 @@
     </div>
 
     <div class="col-xs-12 col-md-6 col-lg-9">
+        <div id="mensaje">
+        </div>
         <div class="panel panel-info">
             <div class="panel-heading">Publicación</div>
             <div class="panel-body">
@@ -79,10 +83,12 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-6">
+                        <h4 class="text-center">Fotografía Página Completa</h4>
                         <img id="imgFoto1" src="" class="img-responsive foto" width="90%" style="cursor: pointer"/>
                     </div>
 
                     <div class="col-xs-12 col-md-6 col-lg-6">
+                        <h4 class="text-center">Fotografía Artículo</h4>
                         <img id="imgFoto2" src="" class="img-responsive foto" width="90%" style="cursor: pointer"/>
                     </div>
                 </div>
@@ -119,7 +125,14 @@
 
                 <br/>
                 <br/>
-                <form class="form-horizontal">
+                <form id="formAnalisis" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="cmbTags" class="col-sm-3 control-label">Tags</label>
+                        <div class="col-sm-8">
+                            <select id="cmbTags" class="form-control" data-placeholder="Seleccione tags..." class="chosen-select" multiple tabindex="4"></select>
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <label for="txtNombrePublicacion" class="col-sm-3 control-label">Nombre de la publicación</label>
@@ -416,5 +429,6 @@
 @stop
 @section('pie')
     <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>
+    <% HTML::script('public/lib/chosen/chosen.jquery.js'); %>
     <% HTML::script('public/js/monitoreo/inbox.js'); %>
 @stop

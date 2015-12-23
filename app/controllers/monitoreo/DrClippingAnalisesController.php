@@ -32,6 +32,11 @@ class DrClippingAnalisesController extends \BaseController {
 
 		if(DrClippingAnalisi::create($data))
 		{
+            $drclippingpublicacion = DrClippingPublicacion::findOrFail($data["publicacion_id"]);
+            $datos = array();
+            $datos["estado_tarea"] = "1";
+            $drclippingpublicacion->update($datos);
+
 			return View::make('ws.json', array("resultado"=>compact('Drclippinganalise')));
 		}
 		else

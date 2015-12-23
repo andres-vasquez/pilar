@@ -26,6 +26,8 @@ return array(
     'DrClippingAnalisi' => $baseDir . '/app/models/DrClippingAnalisi.php',
     'DrClippingPublicacion' => $baseDir . '/app/models/DrClippingPublicacion.php',
     'DrClippingPublicacionsController' => $baseDir . '/app/controllers/monitoreo/DrClippingPublicacionsController.php',
+    'DrClippingTag' => $baseDir . '/app/models/DrClippingTag.php',
+    'DrClippingTagsController' => $baseDir . '/app/controllers/monitoreo/DrClippingTagsController.php',
     'DrClippingUsuario' => $baseDir . '/app/models/DrClippingUsuario.php',
     'DrClippingUsuariosController' => $baseDir . '/app/controllers/monitoreo/DrClippingUsuariosController.php',
     'DrclippingTarifa' => $baseDir . '/app/models/DrclippingTarifa.php',

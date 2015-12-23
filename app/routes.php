@@ -558,6 +558,10 @@ Route::get('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'D
 Route::post('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@update'));
 Route::get('/ws/drclipling/publicacion/{estado}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@publicaciones'));
 
+//Ws Tags
+Route::get('/ws/drclipling/tags', 'DrClippingTagsController@index');
+Route::post('/ws/drclipling/tags', 'DrClippingTagsController@store');
+
 
 //REST Api Drclipping
 Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), function () {
