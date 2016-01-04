@@ -4,6 +4,7 @@
     @parent
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
     <% HTML::style('public/lib/chosen/chosen.css'); %>
+    <% HTML::style('public/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -23,6 +24,19 @@
         .zoomWindow{
             z-index: 9999;
         }
+
+        .rotateLeft {
+            transform: rotate(-90deg);
+            /*transform: rotate(180deg);*/
+            transition: .3s;
+        }
+
+        .rotateRight {
+            transform: rotate(90deg);
+            /*transform: rotate(180deg);*/
+            transition: .3s;
+        }
+
     </style>
 @stop
 
@@ -307,9 +321,14 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía</h4>
+                    <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía
+                        <div class=" pull-right" style="margin-right: 12px">
+                            <button id="btnGirarIzquierda" class="btn btn-default"><i class="fa fa-undo"></i></button>
+                            <button id="btnGirarDerecha" class="btn btn-default"><i class="fa fa-repeat"></i></button>
+                        </div>
+                    </h4>
                 </div>
-                <div class="modal-body">
+                <div id="modalBody" class="modal-body">
                     <img id="imgPreview" class="img-responsive" width="100%" src=""/>
                 </div>
                 <div class="modal-footer">
@@ -362,9 +381,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="txtPagina" class="col-sm-3 control-label">Ubicación</label>
+                            <label for="txtPagina" class="col-sm-3 control-label">Página</label>
                             <div class="col-sm-8">
-                                <input id="txtPagina" class="form-control"/>
+                                <input id="txtPagina" class="form-control" type="number"/>
                             </div>
                         </div>
 
@@ -376,9 +395,16 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="cmbTipoNoticia" class="col-sm-3 control-label">Tipo de noticia</label>
+                            <div class="col-sm-8">
+                                <select id="cmbTipoNoticia" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <label for="txtFecha" class="col-sm-3 control-label">Fecha</label>
                             <div class="col-sm-8">
-                                <input id="txtFecha" class="form-control"/>
+                                <input id="txtFecha" class="form-control" readonly/>
                             </div>
                         </div>
                     </form>
@@ -386,7 +412,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEliminarImagen">Guardar cambios
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarPublicacion">Guardar cambios
                     </button>
                 </div>
             </div>
@@ -437,5 +463,7 @@
 @section('pie')
     <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>
     <% HTML::script('public/lib/chosen/chosen.jquery.js'); %>
+    <% HTML::script('public/lib/rotate/jquery.rotate.1-1.js'); %>
+    <% HTML::script('public/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js'); %>
     <% HTML::script('public/js/monitoreo/inbox.js'); %>
 @stop

@@ -1,3 +1,22 @@
+$.datepicker.regional['es'] = {
+    closeText: 'Cerrar',
+    prevText: '<Ant',
+    nextText: 'Sig>',
+    currentText: 'Hoy',
+    monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+    dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+    dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+    dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+    weekHeader: 'Sm',
+    dateFormat: 'dd/mm/yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['es']);
+
 /**
  * Created by andresvasquez on 11/12/15.
  */
@@ -7,6 +26,11 @@ var objPublicacionGlobal=null;
 
 $(document).ready(function()
 {
+    $("#txtFecha" ).datepicker({
+        format: 'dd/mm/yyyy'
+    });
+
+
     $("body").on("click", ".item-lista", function(event){
         event.preventDefault();
         event.stopPropagation();
@@ -143,6 +167,26 @@ $(document).ready(function()
         });
     });
 
+    $("#btnGirarDerecha").click(function(event){
+       event.preventDefault();
+        event.stopPropagation();
+
+        jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
+        jQuery('.zoomContainer').remove();// remove zoom container from DOM
+        $('#imgPreview').rotateRight();
+        $('#imgPreview').addClass("img-responsive").width("100%");
+    });
+
+    $("#btnGirarIzquierda").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
+        jQuery('.zoomContainer').remove();// remove zoom container from DOM
+        $('#imgPreview').rotateLeft();
+        $('#imgPreview').addClass("img-responsive").width("100%");
+    });
+
     jQuery('#zoomModal').on('hidden.bs.modal', function (e) {
 
         jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
@@ -191,6 +235,11 @@ $(document).ready(function()
             llenarCatalogosSeleccionado('cmbCiudad',"Departamentos",0,objPublicacionGlobal.ciudad_id);
             llenarCatalogosSeleccionado('cmbTipoMedio',"Tipo de medio",0,objPublicacionGlobal.tipo_medio_id);
             llenarCatalogosSeleccionado('cmbUbicacion',"Ubicacion",0,objPublicacionGlobal.ubicacion_id);
+            llenarCatalogosSeleccionado('cmbTipoNoticia',"Tipo de noticia",0,objPublicacionGlobal.tipo_noticia_id);
+
+            //Tarigas Modal
+            llenarCatalogosSeleccionado('cmbCiudad_popup',"Departamentos",0,objPublicacionGlobal.ciudad_id);
+            llenarCatalogosSeleccionado('cmbTipoMedio_popup',"Tipo de medio",0,objPublicacionGlobal.tipo_medio_id);
         }
         else
         {
@@ -243,6 +292,126 @@ $(document).ready(function()
             case 6:$("#txtDia").val("Sábado");break;
         }
     };
+
+    $("#btnEditarPublicacion").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        if($("#cmbCiudad").val()=="0")
+        {
+            alert("Seleccione la ciudad");
+            return;
+        }
+
+        if($("#cmbTipoMedio").val()=="0")
+        {
+            alert("Seleccione el tipo de medio");
+            return;
+        }
+
+        if($("#cmbMedio").val()=="0")
+        {
+            alert("Seleccione el medio");
+            return;
+        }
+
+        if($("#cmbUbicacion").val()=="0")
+        {
+            alert("Seleccione la Ubicacioón");
+            return;
+        }
+
+        if($("#txtPagina").val()=="")
+        {
+            alert("Ingrese el número de página");
+            return;
+        }
+
+        if($("#txtEmpresa").val()=="")
+        {
+            alert("Ingrese la Empresa");
+            return;
+        }
+
+        if($("#cmbTipoNoticia").val()=="")
+        {
+            alert("Ingrese el tipo de noticia");
+            return;
+        }
+
+        if($("#txtFecha").val()=="0")
+        {
+            alert("Ingrese la fecha de la publicación");
+            return;
+        }
+
+        var datos={
+            "ciudad_id":$("#cmbCiudad").val(),
+            "ciudad":$("#cmbCiudad option:selected").text(),
+            "tipo_medio_id":$("#cmbTipoMedio").val(),
+            "tipo_medio":$("#cmbTipoMedio option:selected").text(),
+            "medio_id":$("#cmbMedio").val(),
+            "medio":$("#cmbMedio option:selected").text(),
+            "fecha_publicacion":$("#txtFecha").val(),
+            "ubicacion_id":$("#cmbUbicacion").val(),
+            "ubicacion":$("#cmbUbicacion option:selected").text(),
+            "pagina":$("#txtPagina").val(),
+            "empresa":$("#txtEmpresa").val(),
+            "tipo_noticia_id":$("#cmbTipoNoticia").val(),
+            "tipo_noticia":$("#cmbTipoNoticia option:selected").text()
+        };
+
+        $("#btnEditarPublicacion").attr('disabled',true);
+        $.ajax({
+            type: "POST",
+            url: "../ws/drclipling/publicacion/"+objPublicacionGlobal.id,
+            data:JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    mensaje("editada");
+                    $("#btnEditarPublicacion").removeAttr('disabled');
+
+                    //Actualiza los datos de campos
+                    $("#tdCiudad").html($("#cmbCiudad option:selected").text());
+                    $("#tdTipoMedio").html($("#cmbTipoMedio option:selected").text());
+                    $("#tdMedio").html($("#cmbMedio option:selected").text());
+                    $("#tdUbicacion").html($("#cmbUbicacion option:selected").text());
+                    $("#tdPagina").html($("#txtPagina").val());
+                    $("#tdEmpresa").html($("#txtEmpresa").val());
+                    $("#tdFecha").html($("#txtFecha").val());
+
+                    var arrFecha=$("#txtFecha").val().split("/");
+                    var fecha=new Date(arrFecha[2],arrFecha[1]-1,arrFecha[0]);
+
+                    switch (fecha.getDay())
+                    {
+                        case 0:$("#txtDia").val("Domingo");break;
+                        case 1:$("#txtDia").val("Lunes");break;
+                        case 2:$("#txtDia").val("Martes");break;
+                        case 3:$("#txtDia").val("Miércoles");break;
+                        case 4:$("#txtDia").val("Jueves");break;
+                        case 5:$("#txtDia").val("Viernes");break;
+                        case 6:$("#txtDia").val("Sábado");break;
+                    }
+                }
+                else
+                {
+                    mensaje(result.resultado.errores);
+                    $("#btnEditarPublicacion").removeAttr('disabled');
+                }
+                $("#editarModal").modal("hide");
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " " + textStatus);
+                mensaje("error");
+                $("#btnEditarPublicacion").removeAttr('disabled');
+            }
+        });
+    });
 
     llenarCatalogos=function(campo,agrupador,idPadre)
     {
@@ -347,6 +516,7 @@ $(document).ready(function()
         event.preventDefault();
         event.stopPropagation();
 
+        $('#cmbCiudad_popup').trigger('change');
         $("#tarifaModal").modal("show");
     });
 
@@ -362,7 +532,7 @@ $(document).ready(function()
             else
                 agrupador="Revistas por dpto";
 
-            llenarCatalogos('cmbMedio_popup',agrupador,idCiudad);
+            llenarCatalogosSeleccionado('cmbMedio_popup',agrupador,idCiudad,objPublicacionGlobal.medio_id);
         }
     });
 
@@ -628,11 +798,6 @@ $(document).ready(function()
     llenarCatalogos('cmbCuerpo',"Ubicacion",0);
     llenarCatalogos('cmbValoracion',"Valoracion",0);
     llenarTags();
-
-    //PopupTarifas
-    llenarCatalogos('cmbCiudad_popup',"Departamentos",0);
-    llenarCatalogos('cmbTipoMedio_popup',"Tipo de medio",0);
-
 
     llenarLista(0,1,15);
 });
