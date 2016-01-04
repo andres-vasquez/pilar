@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/rotate/jquery.rotate.1-1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,63 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.125" vertical-offset="8052" max-vertical-offset="8865">
+            <state vertical-scroll-proportion="0.53539824" vertical-offset="8052" max-vertical-offset="8865">
               <caret line="561" column="17" selection-start-line="561" selection-start-column="17" selection-end-line="561" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrClippingPublicacionsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="1407" max-vertical-offset="2325">
-              <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inbox.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.54902" vertical-offset="3668" max-vertical-offset="7125">
-              <caret line="260" column="62" selection-start-line="260" selection-start-column="44" selection-end-line="260" selection-end-column="62" />
-              <folding>
-                <element signature="e#14045#14071#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inbox.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inbox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.288889" vertical-offset="0" max-vertical-offset="12435">
-              <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tarifario.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/tarifario.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.166666" vertical-offset="1763" max-vertical-offset="2895">
-              <caret line="145" column="0" selection-start-line="138" selection-start-column="28" selection-end-line="145" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reportes.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/reportes.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.25" vertical-offset="1137" max-vertical-offset="1815">
-              <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="78" />
+            <state vertical-scroll-proportion="-62.77778" vertical-offset="0" max-vertical-offset="12945">
+              <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -150,12 +108,12 @@
         <option value="$PROJECT_DIR$/public/js/monitoreo/catalogos.js" />
         <option value="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" />
         <option value="$PROJECT_DIR$/public/lib/rotate/jquery.rotate.1-1.js" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/reportes.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
       </list>
     </option>
@@ -371,11 +329,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -512,12 +484,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Dashboard completo 2.0">
-      <created>1445203396979</created>
-      <option name="number" value="00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1445203396979</updated>
     </task>
     <task id="LOCAL-00101" summary="Ofertas arbol modificado">
       <created>1445213241893</created>
@@ -807,7 +773,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451931183159</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="Modificaciones Pop ups">
+      <created>1451941514093</created>
+      <option name="number" value="00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1451941514093</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -895,7 +867,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Publicidad Slider+banner" />
     <MESSAGE value="Fotos arreglado" />
     <MESSAGE value="Fotos arreglado1" />
     <MESSAGE value="Dr clipping menus" />
@@ -920,7 +891,8 @@
     <MESSAGE value="Proceso inbox + Tags" />
     <MESSAGE value="Catalogos" />
     <MESSAGE value="Select Menu Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select Menu Fixed" />
+    <MESSAGE value="Modificaciones Pop ups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificaciones Pop ups" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1284,14 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="1407" max-vertical-offset="2325">
-          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6858407" vertical-offset="690" max-vertical-offset="2460">
@@ -1304,14 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="1065">
           <caret line="54" column="10" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.125" vertical-offset="8052" max-vertical-offset="8865">
-          <caret line="561" column="17" selection-start-line="561" selection-start-column="17" selection-end-line="561" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1340,20 +1296,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.54902" vertical-offset="3668" max-vertical-offset="7125">
-          <caret line="260" column="62" selection-start-line="260" selection-start-column="44" selection-end-line="260" selection-end-column="62" />
-          <folding>
-            <element signature="e#14045#14071#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="3.141593" vertical-offset="0" max-vertical-offset="2325">
+          <caret line="142" column="134" selection-start-line="142" selection-start-column="134" selection-end-line="142" selection-end-column="134" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.288889" vertical-offset="0" max-vertical-offset="12435">
-          <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+        <state vertical-scroll-proportion="-62.77778" vertical-offset="0" max-vertical-offset="12945">
+          <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9907834" vertical-offset="0" max-vertical-offset="6750">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="51" />
+          <folding>
+            <element signature="e#12987#13013#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53539824" vertical-offset="8052" max-vertical-offset="8865">
+          <caret line="561" column="17" selection-start-line="561" selection-start-column="17" selection-end-line="561" selection-end-column="44" />
           <folding />
         </state>
       </provider>

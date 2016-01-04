@@ -23,6 +23,12 @@ $.datepicker.setDefaults($.datepicker.regional['es']);
 var lstTags=[];
 var lstTareas=[];
 var objPublicacionGlobal=null;
+var loading=false;
+var total=0;
+
+var inicio=1;
+var fin=15;
+var cursor=fin+1;
 
 $(document).ready(function()
 {
@@ -30,6 +36,11 @@ $(document).ready(function()
         format: 'dd/mm/yyyy'
     });
 
+    sizeContent=function()
+    {
+        var newHeight = $("#divLleno").height();
+        $(".lista").css("height", newHeight);
+    };
 
     $("body").on("click", ".item-lista", function(event){
         event.preventDefault();
@@ -64,8 +75,10 @@ $(document).ready(function()
                 {
                     var objResultado=result.resultado.publicaciones;
 
-                    var total=objResultado.total;
+                    total=objResultado.total;
                     var lstPublicaciones=objResultado.publicacion;
+
+                    $("#cargando").addClass("hidden");
 
                     if(lstPublicaciones.length>0)
                     {
@@ -104,6 +117,11 @@ $(document).ready(function()
                             html+='</a>';
 
                             lstTareas.push(lstPublicaciones[i]);
+
+                            if(lstTareas.length>=total)
+                            {
+                                $("#btnCargarMas").html("No hay más publicaciones").removeClass("active");
+                            }
                         }
                     }
                     else
@@ -128,9 +146,24 @@ $(document).ready(function()
         });
     };
 
+    $("#btnCargarMas").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        if(lstTareas.length>=total)
+        {
+            $("#btnCargarMas").html("No hay más publicaciones").removeClass("active");
+        }
+        else
+        {
+            $("#cargando").removeClass("hidden");
+            llenarLista($("#cmbFiltroEstados").val(),cursor,cursor+fin);
+            cursor=cursor+fin+1;
+        }
+    });
 
     $("#cmbFiltroEstados").change(function(){
-        llenarLista($(this).val(),1,15);
+        llenarLista($(this).val(),inicio,fin);
     });
 
     $(".edit").click(function(event){
@@ -168,7 +201,7 @@ $(document).ready(function()
     });
 
     $("#btnGirarDerecha").click(function(event){
-       event.preventDefault();
+        event.preventDefault();
         event.stopPropagation();
 
         jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
@@ -196,6 +229,7 @@ $(document).ready(function()
 
     //FUNCION PRINCIPAL ********************************************
     cargarDetallePublicacion=function(objPublicacion){
+        sizeContent();
         limpiarCampos();
         llenarTags();
 
@@ -585,7 +619,7 @@ $(document).ready(function()
                     if (parseInt(result.intCodigo) == 1)
                     {
                         mensaje("ok");
-                        llenarLista(0,1,15);
+                        llenarLista(0,inicio,fin);
                         $("#btnRechazar").removeAttr('disabled');
                     }
                     else
@@ -775,7 +809,7 @@ $(document).ready(function()
 
                 if (parseInt(result.intCodigo) == 1) {
                     mensaje("ok");
-                    llenarLista(0,1,15);
+                    llenarLista(0,inicio,fin);
                     $("#btnEnviarAnalisis").removeAttr('disabled');
                 }
                 else
@@ -799,7 +833,7 @@ $(document).ready(function()
     llenarCatalogos('cmbValoracion',"Valoracion",0);
     llenarTags();
 
-    llenarLista(0,1,15);
+    llenarLista(0,inicio,fin);
 });
 
 function operateFormatter(value, row, index) {

@@ -15,6 +15,7 @@
         }
 
         .lista{
+            height: 100%;
             overflow-y: scroll;
         }
 
@@ -24,19 +25,6 @@
         .zoomWindow{
             z-index: 9999;
         }
-
-        .rotateLeft {
-            transform: rotate(-90deg);
-            /*transform: rotate(180deg);*/
-            transition: .3s;
-        }
-
-        .rotateRight {
-            transform: rotate(90deg);
-            /*transform: rotate(180deg);*/
-            transition: .3s;
-        }
-
     </style>
 @stop
 
@@ -62,26 +50,13 @@
         </select>
         <br/>
         <div id="lstTareas" class="list-group lista">
-            <!--<a href="#" class="list-group-item active">
-                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
-                <p class="list-group-item-text">...</p>
-            </a>
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Título del elemento de la lista</h4>
-                <p class="list-group-item-text">...</p>
-            </a>-->
         </div>
 
-        <p class="text-center hidden"><i class="fa fa-spinner fa-spin"></i> Cargando</p>
-        <p class="text-center hidden"><b>Ya no se encontraron más tareas</b></p>
+        <div class="list-group">
+            <a href="#" id="btnCargarMas" class="list-group-item active text-center">
+                <i id="cargando" class="fa fa-spinner fa-spin"></i>
+                Cargar más</a>
+        </div>
     </div>
 
     <div class="col-xs-12 col-md-6 col-lg-9">
