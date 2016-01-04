@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AutenticacionController.php" afterPath="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Catalogo.php" afterPath="$PROJECT_DIR$/app/models/Catalogo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/CatalogosController.php" afterPath="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/catalogos.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/catalogos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/catalogos.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/catalogos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -76,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inbox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51111114" vertical-offset="1530" max-vertical-offset="9960">
+            <state vertical-scroll-proportion="-12.777778" vertical-offset="1530" max-vertical-offset="9960">
               <caret line="125" column="73" selection-start-line="125" selection-start-column="73" selection-end-line="125" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pilar.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44247788" vertical-offset="855" max-vertical-offset="2460">
+              <caret line="77" column="118" selection-start-line="77" selection-start-column="118" selection-end-line="77" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -116,7 +114,6 @@
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/reportes.blade.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/reportes.js" />
-        <option value="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAccesosController.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingPublicacion.php" />
@@ -145,6 +142,7 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" />
       </list>
     </option>
   </component>
@@ -349,47 +347,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="monitoreo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoreo" />
+              <option name="myItemId" value="master" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,12 +469,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Cambios registro participante">
-      <created>1445014341936</created>
-      <option name="number" value="00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1445014341937</updated>
     </task>
     <task id="LOCAL-00099" summary="Dashboard completo">
       <created>1445203192416</created>
@@ -806,7 +758,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450912740823</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="Catalogos">
+      <created>1451930522944</created>
+      <option name="number" value="00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1451930522944</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -911,7 +869,6 @@
     <MESSAGE value="Mostrar publicaciones, con formulario" />
     <MESSAGE value="Noticias con Fonts" />
     <MESSAGE value="Noticias con triangulo blanco inferior" />
-    <MESSAGE value="Catalogos" />
     <MESSAGE value="Noticias fixed" />
     <MESSAGE value="Noticias fixed1" />
     <MESSAGE value="Fotitos" />
@@ -919,20 +876,14 @@
     <MESSAGE value="Control zoom v.1.1" />
     <MESSAGE value="Correcion estilo Tarifario" />
     <MESSAGE value="Proceso inbox + Tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proceso inbox + Tags" />
+    <MESSAGE value="Catalogos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Catalogos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="1065" max-vertical-offset="5790">
-          <caret line="93" column="62" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/fonts/material/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2991453" vertical-offset="0" max-vertical-offset="702">
@@ -1345,8 +1296,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51111114" vertical-offset="1530" max-vertical-offset="9960">
+        <state vertical-scroll-proportion="-12.777778" vertical-offset="1530" max-vertical-offset="9960">
           <caret line="125" column="73" selection-start-line="125" selection-start-column="73" selection-end-line="125" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44247788" vertical-offset="855" max-vertical-offset="2460">
+          <caret line="77" column="118" selection-start-line="77" selection-start-column="118" selection-end-line="77" selection-end-column="118" />
           <folding />
         </state>
       </provider>

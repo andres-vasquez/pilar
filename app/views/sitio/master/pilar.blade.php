@@ -75,7 +75,7 @@
         @if (count($data["menus"])>0)
             @for ($i = 0; $i < count($data["menus"]); $i++)
                 @if($data["menus"][$i]["estado"]=="1" && $data["menus"][$i]["baja_logica"]!="0")
-                    @if('/'.Request::path()==$data["menus"][$i]["link"])
+                    @if('/'.Request::path()==$data["menus"][$i]["link"] || Request::path()==$data["menus"][$i]["link"])
                         <li class="active">
                     @else
                         <li>
