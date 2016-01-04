@@ -46,6 +46,47 @@ class DrClippingUsuariosController extends \BaseController {
         }
 	}
 
+    public function storePilar()
+    {
+        $data = Input::all();
+        $validator = Validator::make($data, Usuario::$rules);
+
+        if ($validator->fails())
+        {
+            $errores=$validator->messages()->first();
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+
+        $existe = Usuario::whereRaw('email=?', array($data["email"]))->get();
+        if (sizeof($existe) == 0)
+        {
+            $user=Usuario::create($data);
+            if ($user)
+            {
+                $id=$user->id;
+                $datos=array();
+                $datos["usuario_id"]=$id;
+                $datos["perfil_id"]=$data["perfil_id"];
+                $datos["args"]=$data["args"];
+
+                if(Asignacionperfiles::create($datos)) {
+                    return View::make('ws.json', array("resultado" => compact('user')));
+                }
+                else {
+                    $errores = "Error al asignar perfil";
+                    return View::make('ws.json_errores', array("errores" => compact('errores')));
+                }
+            } else {
+                $errores = "Error al crear registro";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
+        }
+        else {
+            $errores = "El email está vinculado a otra cuenta.";
+            return View::make('ws.json_errores', array("errores" => compact('errores')));
+        }
+    }
+
 	/**
 	 * Muestra el registro segun el ID ingresado.
 	 *
@@ -113,6 +154,7 @@ class DrClippingUsuariosController extends \BaseController {
         foreach ($smsusuarios as $usuario) {
             $aux = array();
             $aux["id"] = $usuario["id"];
+            $aux["perfil"] = "Researcher";
             $aux["email"] = $usuario["email"];
             $aux["nombre_completo"] = $usuario["nombre_completo"];
             $aux["celular"] = $usuario["celular"];
@@ -123,10 +165,22 @@ class DrClippingUsuariosController extends \BaseController {
             foreach ($acceso as $fecha) {
                 $aux["ultimo_acceso"]=$fecha->created_at;
             }
-
             array_push($resultado, $aux);
         }
 
+        $usuarios = DB::connection('mysql')->select('SELECT u.id as id, p.nombre as perfil, u.nombre,u.email,u.password FROM usuarios u, asignacion_perfiles a, perfiles p where u.estado=1 AND u.baja_logica=1 AND u.id=a.usuario_id AND a.perfil_id=p.id AND a.perfil_id IN (15,16,17) and a.usuario_id!=13',array());
+        foreach ($usuarios as $usuario) {
+            $aux = array();
+            $aux["id"] = $usuario->id;
+            $aux["perfil"] = $usuario->perfil;
+            $aux["email"] = $usuario->email;
+            $aux["nombre_completo"] = $usuario->nombre;
+            $aux["celular"] = "";
+            $aux["imei"] = "";
+
+            $aux["ultimo_acceso"]="";
+            array_push($resultado, $aux);
+        }
         return json_encode($resultado);
     }
 

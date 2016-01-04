@@ -58,6 +58,11 @@ class DrClippingAnalisesController extends \BaseController {
 		return View::make('ws.json', array("resultado"=>compact('drclippinganalise')));
 	}
 
+    public function porpublicacion($publicacion_id)
+    {
+        $analisis = DrClippingAnalisi::whereRaw('estado=1 AND baja_logica=1 AND publicacion_id=? ORDER BY created_at DESC LIMIT 1',array($publicacion_id))->get();
+        return View::make('ws.json', array("resultado"=>compact('analisis')));
+    }
 
 	/**
 	 * Actualiza el registro segun el id ingresado

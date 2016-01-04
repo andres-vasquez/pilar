@@ -83,8 +83,24 @@ class CatalogosController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Catalogo::$rules);
+        $data = Input::all();
 
+        $value=0;
+        if($data["idpadre"]=="0")
+            $query = DB::connection('mysql')->select('SELECT MAX(CONVERT(value,UNSIGNED INTEGER)) AS num FROM catalogos WHERE sistema_id='.$data["sistema_id"].' AND agrupador="'.$data["agrupador"].'"');
+        else
+            $query = DB::connection('mysql')->select('SELECT MAX(CONVERT(value,UNSIGNED INTEGER)) AS num FROM catalogos WHERE sistema_id='.$data["sistema_id"].' AND agrupador="'.$data["agrupador"].'" AND idpadre='.$data["idpadre"]);
+
+        if (sizeof($query))
+        {
+            foreach ($query as $max) {
+                $value=$max->num;
+            }
+        }
+
+        $data["value"]=$value+1;
+
+        $validator = Validator::make($data, Catalogo::$rules);
 		if ($validator->fails())
 		{
 			$errores=$validator->messages()->first();

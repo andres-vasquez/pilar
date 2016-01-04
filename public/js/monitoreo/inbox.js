@@ -43,24 +43,49 @@ $(document).ready(function()
                     var total=objResultado.total;
                     var lstPublicaciones=objResultado.publicacion;
 
-                    //console.log(JSON.stringify(lstPublicaciones));
-
-                    for(var i=0;i<lstPublicaciones.length;i++)
+                    if(lstPublicaciones.length>0)
                     {
-                        var activo = "";
-                        if (inicio == 1 && i == 0)
+                        $("#divVacio").addClass("hidden");
+                        $("#divLleno").removeClass("hidden");
+
+                        switch(parseInt(estado))
                         {
-                            activo = "active";
-                            cargarDetallePublicacion(lstPublicaciones[i]);
+                            case 0:
+                                $("#btnEnviarAnalisis, #btnEnviarNegativa")
+                                    .removeClass("hidden")
+                                break;
+                            case 1:
+                                $("#btnEnviarAnalisis, #btnEnviarNegativa")
+                                    .addClass("hidden")
+                                break;
+                            case 2:
+                                $("#btnEnviarAnalisis, #btnEnviarNegativa")
+                                    .addClass("hidden")
+                                break;
                         }
 
-                        html+='<a href="#" id="'+lstPublicaciones[i].id+'" class="list-group-item item-lista '+activo+'">';
-                        html+='<h5 class="list-group-item-heading">'+lstPublicaciones[i].empresa+'</h5>';
-                        html+='<p class="list-group-item-text">'+lstPublicaciones[i].ubicacion+' Página: '+lstPublicaciones[i].pagina+'</p>';
-                        html+='<p class="list-group-item-text">'+lstPublicaciones[i].fecha_publicacion+'</p>';
-                        html+='</a>';
+                        for(var i=0;i<lstPublicaciones.length;i++)
+                        {
+                            var activo = "";
+                            if (inicio == 1 && i == 0)
+                            {
+                                activo = "active";
+                                cargarDetallePublicacion(lstPublicaciones[i]);
+                            }
 
-                        lstTareas.push(lstPublicaciones[i]);
+                            html+='<a href="#" id="'+lstPublicaciones[i].id+'" class="list-group-item item-lista '+activo+'">';
+                            html+='<h5 class="list-group-item-heading">'+lstPublicaciones[i].empresa+'</h5>';
+                            html+='<p class="list-group-item-text">'+lstPublicaciones[i].ubicacion+' Página: '+lstPublicaciones[i].pagina+'</p>';
+                            html+='<p class="list-group-item-text">'+lstPublicaciones[i].fecha_publicacion+'</p>';
+                            html+='</a>';
+
+                            lstTareas.push(lstPublicaciones[i]);
+                        }
+                    }
+                    else
+                    {
+                        $("#divVacio").removeClass("hidden");
+                        $("#divLleno").addClass("hidden");
                     }
                 }
                 else
@@ -85,9 +110,21 @@ $(document).ready(function()
     });
 
     $(".edit").click(function(event){
+        $("#cmbTipoMedio").trigger('change');
         $("#editarModal").modal("show");
+    });
 
+    $("#cmbTipoMedio,#cmbCiudad").change(function(event){
+        var idTipoMedio=$("#cmbTipoMedio").val();
+        var idCiudad=$("#cmbCiudad").val();
 
+        if(idTipoMedio!="0" && idCiudad!="0")
+        {
+            if($("#cmbTipoMedio option:selected").text()=="Periódico")
+                llenarCatalogosSeleccionado('cmbMedio',"Periodicos por dpto",0,objPublicacionGlobal.medio_id);
+            else
+                llenarCatalogosSeleccionado('cmbMedio',"Revistas por dpto",0,objPublicacionGlobal.medio_id);
+        }
     });
 
     $(".foto").click(function(event){
@@ -134,6 +171,64 @@ $(document).ready(function()
         $("#tdEmpresa").html(objPublicacion.empresa);
         $("#tdFecha").html(objPublicacion.fecha_publicacion);
 
+        if(parseInt(objPublicacion.estado_tarea)==0)
+        {
+            $("#tdAcciones,#tdAccionesTitulo").removeClass("hidden");
+            $("#cmbTags").removeClass("disabled").removeAttr("disabled").removeProp('disabled').trigger("chosen:updated");
+            $("#txtNombrePublicacion").removeClass("disabled").removeAttr("disabled");
+            $("#cmbColor").removeClass("disabled").removeAttr("disabled");
+            $("#txtTamanio").removeClass("disabled").removeAttr("disabled");
+            $("#cmbCuerpo").removeClass("disabled").removeAttr("disabled");
+            $("#txtTarifa").removeClass("disabled").removeAttr("disabled");
+            $("#cmbValoracion").removeClass("disabled").removeAttr("disabled");
+            $("#txtObservaciones").removeClass("disabled").removeAttr("disabled");
+
+            $("#txtPagina").val(objPublicacion.pagina);
+            $("#txtEmpresa").val(objPublicacion.empresa);
+            $("#txtFecha").val(objPublicacion.fecha_publicacion);
+
+            //Editar Modal
+            llenarCatalogosSeleccionado('cmbCiudad',"Departamentos",0,objPublicacionGlobal.ciudad_id);
+            llenarCatalogosSeleccionado('cmbTipoMedio',"Tipo de medio",0,objPublicacionGlobal.tipo_medio_id);
+            llenarCatalogosSeleccionado('cmbUbicacion',"Ubicacion",0,objPublicacionGlobal.ubicacion_id);
+        }
+        else
+        {
+            //TAREAS REALIZADAS
+            $("#tdAcciones,#tdAccionesTitulo").addClass("hidden");
+            $("#cmbTags").addClass("disabled").attr("disabled", true).prop('disabled', true).trigger("chosen:updated");
+            $("#txtNombrePublicacion").addClass("disabled").attr("disabled", true);
+            $("#cmbColor").addClass("disabled").attr("disabled", true);
+            $("#txtTamanio").addClass("disabled").attr("disabled", true);
+            $("#cmbCuerpo").addClass("disabled").attr("disabled", true);
+            $("#txtTarifa").addClass("disabled").attr("disabled", true);
+            $("#cmbValoracion").addClass("disabled").attr("disabled", true);
+            $("#txtObservaciones").addClass("disabled").attr("disabled", true);
+
+            $.ajax({
+                type: "GET",
+                url: "../ws/drclipling/analisisporpublicacion/" + objPublicacion.id,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    if (parseInt(result.intCodigo) == 1) {
+                        var objResultado = result.resultado.analisis[0];
+                        $("#txtNombrePublicacion").val(objResultado.nombre_publicacion);
+                        $("#txtTamanio").val(objResultado.tamanio);
+                        $("#txtDia").val(objResultado.dia);
+                        $("#txtTarifa").val(objResultado.tarifa);
+                        $("#txtObservaciones").val(objResultado.comentario);
+                        $('#cmbColor option[value="'+objResultado.color_id+'"]').attr('selected', 'selected');
+                        $('#cmbCuerpo option[value="'+objResultado.cuerpo_id+'"]').attr('selected', 'selected');
+                        $('#cmbValoracion option[value="'+objResultado.valoracion_id+'"]').attr('selected', 'selected');
+
+                        var arrTags=objResultado.args.split(",");
+                        for(var i=0;i<arrTags.length;i++)
+                            $('#cmbTags option[value="'+arrTags[i]+'"]').attr('selected', 'selected').trigger("chosen:updated");
+                    }
+                }
+            });
+        }
         var arrFecha=objPublicacion.fecha_publicacion.split("/");
         var fecha=new Date(arrFecha[2],arrFecha[1]-1,arrFecha[0]);
 
@@ -195,6 +290,8 @@ $(document).ready(function()
                     for(var i=0;i<arrCatalogos.length;i++)
                         html+='<option value="'+arrCatalogos[i].id+'">'+arrCatalogos[i].label+'</option>';
                     $("#"+campo).html(html);
+
+                    $('#'+campo+' option[value="'+idSeleccionado+'"]').attr('selected', 'selected');
                 }
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -297,6 +394,49 @@ $(document).ready(function()
 
         window.location.href = "#tblTarifario";
     });
+
+    $("#btnEnviarNegativa").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $("#rechazarModal").modal("show");
+
+        $("#btnRechazar").click(function(event){
+            event.preventDefault();
+            event.stopPropagation();
+
+            $("#btnRechazar").attr('disabled',true);
+            $.ajax({
+                type: "POST",
+                url: "../ws/drclipling/publicacion/rechazar/"+objPublicacionGlobal.id,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+
+                    if (parseInt(result.intCodigo) == 1)
+                    {
+                        mensaje("ok");
+                        llenarLista(0,1,15);
+                        $("#btnRechazar").removeAttr('disabled');
+                    }
+                    else
+                    {
+                        mensaje(result.resultado.errores);
+                        $("#btnRechazar").removeAttr('disabled');
+                    }
+                    $("#rechazarModal").modal("hide");
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    mensaje("error");
+                    $("#btnRechazar").removeAttr('disabled');
+                }
+            });
+
+
+
+        });
+    });
+
 
     mensaje = function (tipo) {
         $("#mensaje").html('');
@@ -482,15 +622,19 @@ $(document).ready(function()
         });
     };
 
-    llenarLista(0,1,15);
+
+    //Form Anaylis
     llenarCatalogos('cmbColor',"Color",0);
     llenarCatalogos('cmbCuerpo',"Ubicacion",0);
     llenarCatalogos('cmbValoracion',"Valoracion",0);
-
     llenarTags();
 
+    //PopupTarifas
     llenarCatalogos('cmbCiudad_popup',"Departamentos",0);
     llenarCatalogos('cmbTipoMedio_popup',"Tipo de medio",0);
+
+
+    llenarLista(0,1,15);
 });
 
 function operateFormatter(value, row, index) {

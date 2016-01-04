@@ -73,7 +73,14 @@
     <div class="col-xs-12 col-md-6 col-lg-9">
         <div id="mensaje">
         </div>
-        <div class="panel panel-info">
+        <div id="divVacio" class="panel panel-info">
+            <div class="panel-heading">Publicación</div>
+            <div class="panel-body">
+                <h4>Seleccione una tarea</h4>
+            </div>
+        </div>
+
+        <div id="divLleno" class="panel panel-info hidden">
             <div class="panel-heading">Publicación</div>
             <div class="panel-body">
 
@@ -104,7 +111,7 @@
                         <td>Pág.</td>
                         <td>Empresa.</td>
                         <td>Fecha</td>
-                        <td class="text-center">Acciones</td>
+                        <td id="tdAccionesTitulo" class="text-center">Acciones</td>
                     </tr>
                     <tr>
                         <td id="tdId">Id</td>
@@ -115,7 +122,7 @@
                         <td id="tdPagina">Pág.</td>
                         <td id="tdEmpresa">Empresa.</td>
                         <td id="tdFecha">Fecha</td>
-                        <td class="text-center">
+                        <td id="tdAcciones" class="text-center">
                             <a class="edit ml10" href="#" title="Editar">
                                 <i class="glyphicon glyphicon-pencil"></i>
                             </a>
@@ -200,8 +207,8 @@
                     <div class="form-group">
                         <label for="btnEnviarAnalisis" class="col-sm-2 control-label"></label>
                         <div class="col-sm-10">
-                            <input type="submit" id="btnEnviarAnalisis" class="btn btn-success right" value="Enviar formulario de análisis"/>
-                            <input type="button" id="btnEnviarNegativa" class="btn btn-danger right" value="Enviar como Rechazada"/>
+                            <button type="submit" id="btnEnviarAnalisis" class="btn btn-success right">Enviar formulario de análisis</button>
+                            <button type="button" id="btnEnviarNegativa" class="btn btn-danger right">Enviar como Rechazada</button>
                         </div>
                     </div>
 

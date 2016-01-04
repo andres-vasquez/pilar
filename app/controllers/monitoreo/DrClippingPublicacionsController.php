@@ -114,6 +114,24 @@ class DrClippingPublicacionsController extends \BaseController {
         }
     }
 
+    public function rechazar($id)
+    {
+        $drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
+        $data = array();
+
+        $data["estado_tarea"] = "2";
+        if($drclippingpublicacion->update($data))
+        {
+            $drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
+            return View::make('ws.json', array("resultado"=>compact('drclippingpublicacion')));
+        }
+        else
+        {
+            $errores="Error al eliminar registro";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
     public function publicaciones($estado,$inicio,$fin)
     {
         $rango=$fin-$inicio+1;

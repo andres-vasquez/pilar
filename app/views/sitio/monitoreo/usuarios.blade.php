@@ -3,6 +3,7 @@
 @section('header')
     @parent
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/lib/chosen/chosen.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -69,29 +70,49 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="cmbPerfil" class="col-sm-4 control-label">Perfil</label>
+
+                        <div class="col-sm-6">
+                            <select id="cmbPerfil" class="form-control">
+                                <option value="0">Seleccione</option>
+                                <option value="1">Researcher (App móvil)</option>
+                                <option value="2">Analyst</option>
+                                <option value="3">Cliente</option>
+                                <option value="4">Administrador</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="divCelular" class="form-group hidden">
                         <label for="txtCelular" type="number" class="col-sm-4 control-label">Celular</label>
 
                         <div class="col-sm-4">
-                            <input id="txtCelular" class="form-control" required/>
+                            <input id="txtCelular" class="form-control"/>
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div  id="divImei" class="form-group hidden" >
                         <label for="txtImei" class="col-sm-4 control-label">IMEI (*#06#)</label>
 
                         <div class="col-sm-4">
-                            <input id="txtImei" class="form-control" required/>
+                            <input id="txtImei" class="form-control"/>
                         </div>
                     </div>
 
+                    <div  id="divTags" class="form-group hidden">
+                        <label for="cmbTags" class="col-sm-4 control-label">Qué Tags verá el cliente?</label>
+                        <div class="col-sm-8">
+                            <select id="cmbTags" class="form-control" data-placeholder="Seleccione tags..." class="chosen-select" multiple tabindex="4"></select>
+                        </div>
+                    </div>
 
                     <div class="form-group">
-                    <button type="submit" class="btn btn-success btn-md col-sm-offset-4" id="btnEnviar">
-                        Crear
-                    </button>
-                    &nbsp;&nbsp;
-                    <button type="reset" class="btn btn-danger btn-md" id="btnCancelar">Cancelar</button>
-                </div>
+                        <button type="submit" class="btn btn-success btn-md col-sm-offset-4" id="btnEnviar">
+                            Crear
+                        </button>
+                        &nbsp;&nbsp;
+                        <button type="reset" class="btn btn-danger btn-md" id="btnCancelar">Cancelar</button>
+                    </div>
 
                 </form>
             </div>
@@ -136,6 +157,7 @@
                     <thead>
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
+                        <th data-field="perfil" data-sortable="true">Perfil</th>
                         <th data-field="nombre_completo" data-sortable="true">Nombre Completo</th>
                         <th data-field="email" data-sortable="true">Email</th>
                         <th data-field="celular" data-sortable="true">Celular</th>
@@ -155,5 +177,6 @@
 
 @section('pie')
     <% HTML::script('public/js/md5.js'); %>
+    <% HTML::script('public/lib/chosen/chosen.jquery.js'); %>
     <% HTML::script('public/js/monitoreo/usuarios.js'); %>
 @stop

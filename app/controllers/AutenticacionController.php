@@ -40,6 +40,9 @@ class AutenticacionController extends \BaseController
 
                         Session::put('id_usuario',$usuario[0]["id"]);
                         Session::put('accesos',$datos);
+
+
+
                         return View::make('ws.json', array("resultado"=>compact('datos')));
                     }
                 }

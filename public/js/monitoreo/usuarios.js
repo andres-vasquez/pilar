@@ -15,45 +15,132 @@ $(document).ready(function()
             return;
         }
 
-        var datos = {
-            "nombre_completo": $("#txtNombre").val(),
-            "email": $("#txtEmail").val(),
-            "password": encriptar($("#txtPassword").val()),
-            "celular": $("#txtCelular").val(),
-            "imei": $("#txtImei").val()
-        };
+        if($("#cmbPerfil").val()=="0")
+        {
+            alert("Seleccione un perfil");
+            return;
+        }
 
-        $("#btnEnviar").attr('disabled', 'disabled');
-        $.ajax({
-            type: "POST",
-            url: "../ws/drclipling/usuarios",
-            data: JSON.stringify(datos),
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (result) {
-                console.log(JSON.stringify(result));
-                if (parseInt(result.intCodigo) == 1) {
-                    mensaje("ok");
-                    $("#btnEnviar").removeAttr('disabled');
-                    $("#collapse").trigger("click");
-                    window.location.href = "#";
-                    limpiarCampos();
-                    $table = $('#tblUsuarios').bootstrapTable('refresh', {
-                        url: '../ws/drclipling/usuarios_sinformato'
-                    });
+        if($("#cmbPerfil").val()=="1")//Usuarios de la App movil
+        {
+            var datos = {
+                "nombre_completo": $("#txtNombre").val(),
+                "email": $("#txtEmail").val(),
+                "password": encriptar($("#txtPassword").val()),
+                "celular": $("#txtCelular").val(),
+                "imei": $("#txtImei").val()
+            };
+
+            $("#btnEnviar").attr('disabled', 'disabled');
+            $.ajax({
+                type: "POST",
+                url: "../ws/drclipling/usuarios",
+                data: JSON.stringify(datos),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    console.log(JSON.stringify(result));
+                    if (parseInt(result.intCodigo) == 1) {
+                        mensaje("ok");
+                        $("#btnEnviar").removeAttr('disabled');
+                        $("#collapse").trigger("click");
+                        window.location.href = "#";
+                        limpiarCampos();
+                        $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                            url: '../ws/drclipling/usuarios_sinformato'
+                        });
+                    }
+                    else {
+                        mensaje(result.resultado.errores);
+                        window.location.href = "#";
+                        $("#btnEnviar").removeAttr('disabled');
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    mensaje("error");
                 }
-                else {
-                    mensaje(result.resultado.errores);
-                    window.location.href = "#";
-                    $("#btnEnviar").removeAttr('disabled');
-                }
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                console.log(XMLHttpRequest + " " + textStatus);
-                mensaje("error");
+            });
+        }
+        else//Usuario de pilar
+        {
+            var tags="";
+            try
+            {
+                var cmbEtiquetas=$("#cmbDia").val();
+                for(var i=0;i<lstTagsSeleccionados.length;i++)
+                    tags+=lstTagsSeleccionados[i]+",";
+            }catch (ex){}
+            tags=tags.substring(0,tags.length-1);
+
+
+            var perfil_id=0;
+            switch (parseInt($("#cmbPerfil").val()))
+            {
+                case 2: perfil_id=15; break;
+                case 3: perfil_id=16; break;
+                case 4: perfil_id=17; break;
             }
-        });
 
+            var datos = {
+                "nombre": $("#txtNombre").val(),
+                "email": $("#txtEmail").val(),
+                "password": encriptar($("#txtPassword").val()),
+                "perfil_id":perfil_id,
+                "args":tags
+            };
+
+            $("#btnEnviar").attr('disabled', 'disabled');
+            $.ajax({
+                type: "POST",
+                url: "../ws/pilar/drclipling/usuarios",
+                data: JSON.stringify(datos),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (result) {
+                    console.log(JSON.stringify(result));
+                    if (parseInt(result.intCodigo) == 1) {
+                        mensaje("ok");
+                        $("#btnEnviar").removeAttr('disabled');
+                        $("#collapse").trigger("click");
+                        window.location.href = "#";
+                        limpiarCampos();
+                        $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                            url: '../ws/drclipling/usuarios_sinformato'
+                        });
+                    }
+                    else {
+                        mensaje(result.resultado.errores);
+                        window.location.href = "#";
+                        $("#btnEnviar").removeAttr('disabled');
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    console.log(XMLHttpRequest + " " + textStatus);
+                    mensaje("error");
+                }
+            });
+        }
+    });
+
+    $("#cmbPerfil").change(function(){
+        if($(this).val()=="0")
+        {
+            $("#divCelular,#divImei").addClass("hidden");
+            $("#divTags").addClass("hidden");
+        }
+        else if($(this).val()=="1")//Researcher
+        {
+            $("#divCelular,#divImei").removeClass("hidden");
+            $("#divTags").addClass("hidden");
+        }
+        else if($(this).val()=="3")//Cliente
+        {
+            $("#divCelular,#divImei").addClass("hidden");
+            $("#divTags").removeClass("hidden");
+            $(".chosen-select").chosen();
+            $(".chosen-container").css("width", "100%");
+        }
     });
 
     limpiarCampos=function(){
@@ -100,6 +187,51 @@ $(document).ready(function()
         }
         $("#mensaje").html(html);
     };
+
+
+    llenarTags=function()
+    {
+        var html='';
+        var url="../ws/drclipling/tags";
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if(parseInt(result.intCodigo)==1) {
+
+                    var objTags = result.resultado.drclippingtags;
+                    for(var i=0;i<objTags.length;i++)
+                        html+='<option value="'+objTags[i].id+'">'+objTags[i].nombre+'</option>';
+
+
+                    $(".chosen-select").chosen();
+                    $(".chosen-container").css("width", "100%");
+                    $("#cmbTags").html(html).chosen({
+                        create_option_text:"Agregar tag:",
+                        no_results_text:"No se encontraron resultados",
+                        create_option: function(term) {
+                            var chosen = this;
+                            chosen.append_option({
+                                value: 'nuevo_' + term,
+                                text: term
+                            });
+                        }
+                    });
+
+
+                }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " "+textStatus);
+            }
+        });
+
+    };
+
+    llenarTags();
 });
 
 function operateFormatter(value, row, index) {
