@@ -77,9 +77,9 @@ $(document).ready(function()
             var perfil_id=0;
             switch (parseInt($("#cmbPerfil").val()))
             {
-                case 2: perfil_id=15; break;
-                case 3: perfil_id=16; break;
-                case 4: perfil_id=17; break;
+                case 2: perfil_id=18; break;
+                case 3: perfil_id=19; break;
+                case 4: perfil_id=20; break;
             }
 
             var datos = {

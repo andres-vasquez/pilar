@@ -168,7 +168,7 @@ class DrClippingUsuariosController extends \BaseController {
             array_push($resultado, $aux);
         }
 
-        $usuarios = DB::connection('mysql')->select('SELECT u.id as id, p.nombre as perfil, u.nombre,u.email,u.password FROM usuarios u, asignacion_perfiles a, perfiles p where u.estado=1 AND u.baja_logica=1 AND u.id=a.usuario_id AND a.perfil_id=p.id AND a.perfil_id IN (15,16,17) and a.usuario_id!=13',array());
+        $usuarios = DB::connection('mysql')->select('SELECT u.id as id, p.nombre as perfil, u.nombre,u.email,u.password FROM usuarios u, asignacion_perfiles a, perfiles p where u.estado=1 AND u.baja_logica=1 AND u.id=a.usuario_id AND a.perfil_id=p.id AND a.perfil_id IN (18,19,20) and a.usuario_id!=13',array());
         foreach ($usuarios as $usuario) {
             $aux = array();
             $aux["id"] = $usuario->id;
