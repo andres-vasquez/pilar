@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inbox.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="18.88889" vertical-offset="2205" max-vertical-offset="12945">
-              <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
+            <state vertical-scroll-proportion="-9.843137" vertical-offset="2618" max-vertical-offset="8865">
+              <caret line="208" column="34" selection-start-line="208" selection-start-column="13" selection-end-line="208" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -48,11 +48,11 @@
       <file leaf-file-name="DrClippingUsuariosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0" vertical-offset="2166" max-vertical-offset="4020">
-              <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+            <state vertical-scroll-proportion="-8.125" vertical-offset="2160" max-vertical-offset="4035">
+              <caret line="157" column="40" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="40" />
               <folding>
-                <marker date="1452011123000" expanded="true" signature="4788:4872" placeholder="SELECT creat..t_acceso..." />
-                <marker date="1452011123000" expanded="true" signature="5118:5366" placeholder="SELECT u.id ..usuarios..." />
+                <marker date="1452012047000" expanded="true" signature="4796:4880" placeholder="SELECT creat..t_acceso..." />
+                <marker date="1452012047000" expanded="true" signature="5126:5374" placeholder="SELECT u.id ..usuarios..." />
               </folding>
             </state>
           </provider>
@@ -61,8 +61,8 @@
       <file leaf-file-name="usuarios.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-68.125" vertical-offset="750" max-vertical-offset="2805">
-              <caret line="159" column="46" selection-start-line="159" selection-start-column="46" selection-end-line="159" selection-end-column="46" />
+            <state vertical-scroll-proportion="-9.5" vertical-offset="1812" max-vertical-offset="2805">
+              <caret line="136" column="113" selection-start-line="136" selection-start-column="95" selection-end-line="136" selection-end-column="113" />
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
       <file leaf-file-name="usuarios.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/monitoreo/usuarios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7307693" vertical-offset="0" max-vertical-offset="4005">
-              <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+            <state vertical-scroll-proportion="6.1965814" vertical-offset="0" max-vertical-offset="4875">
+              <caret line="290" column="28" selection-start-line="290" selection-start-column="28" selection-end-line="290" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -246,28 +246,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoreo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,12 +520,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00102" summary="GCM cambios">
-      <created>1445215139470</created>
-      <option name="number" value="00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1445215139470</updated>
     </task>
     <task id="LOCAL-00103" summary="GCM cambios console">
       <created>1445215199829</created>
@@ -837,7 +809,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451945518335</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="Fix Usuarios">
+      <created>1452011806236</created>
+      <option name="number" value="00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1452011806236</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -925,7 +903,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fotos arreglado1" />
     <MESSAGE value="Dr clipping menus" />
     <MESSAGE value="Primera parte interfaz web" />
     <MESSAGE value="Primera parte interfaz web 1.0" />
@@ -950,28 +927,14 @@
     <MESSAGE value="Select Menu Fixed" />
     <MESSAGE value="Modificaciones Pop ups" />
     <MESSAGE value="Endless Scroller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Endless Scroller" />
+    <MESSAGE value="Fix Usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ferias/restapi.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="300" max-vertical-offset="6330">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/noticia_web.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9690266" vertical-offset="0" max-vertical-offset="1560">
-          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.375" vertical-offset="900" max-vertical-offset="2160">
@@ -1219,14 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ws/json.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Catalogo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
@@ -1335,14 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33628318" vertical-offset="8187" max-vertical-offset="8865">
-          <caret line="561" column="17" selection-start-line="561" selection-start-column="17" selection-end-line="561" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.625" vertical-offset="435" max-vertical-offset="6750">
@@ -1351,37 +1298,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
+    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/adjuntar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.88889" vertical-offset="2205" max-vertical-offset="12945">
-          <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
+        <state vertical-scroll-proportion="-0.5982906" vertical-offset="1095" max-vertical-offset="8760">
+          <caret line="45" column="58" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0" vertical-offset="2166" max-vertical-offset="4020">
-          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+        <state vertical-scroll-proportion="-8.125" vertical-offset="2160" max-vertical-offset="4035">
+          <caret line="157" column="40" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="40" />
           <folding>
-            <marker date="1452011123000" expanded="true" signature="4788:4872" placeholder="SELECT creat..t_acceso..." />
-            <marker date="1452011123000" expanded="true" signature="5118:5366" placeholder="SELECT u.id ..usuarios..." />
+            <marker date="1452012047000" expanded="true" signature="4796:4880" placeholder="SELECT creat..t_acceso..." />
+            <marker date="1452012047000" expanded="true" signature="5126:5374" placeholder="SELECT u.id ..usuarios..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ws/json.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ws/json_errores.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.75555557" vertical-offset="2205" max-vertical-offset="12945">
+          <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-68.125" vertical-offset="750" max-vertical-offset="2805">
-          <caret line="159" column="46" selection-start-line="159" selection-start-column="46" selection-end-line="159" selection-end-column="46" />
+        <state vertical-scroll-proportion="-9.5" vertical-offset="1812" max-vertical-offset="2805">
+          <caret line="136" column="113" selection-start-line="136" selection-start-column="95" selection-end-line="136" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.843137" vertical-offset="2618" max-vertical-offset="8865">
+          <caret line="208" column="34" selection-start-line="208" selection-start-column="13" selection-end-line="208" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/usuarios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7307693" vertical-offset="0" max-vertical-offset="4005">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+        <state vertical-scroll-proportion="6.1965814" vertical-offset="0" max-vertical-offset="4875">
+          <caret line="290" column="28" selection-start-line="290" selection-start-column="28" selection-end-line="290" selection-end-column="28" />
           <folding />
         </state>
       </provider>

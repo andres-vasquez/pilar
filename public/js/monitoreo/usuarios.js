@@ -252,9 +252,67 @@ window.operateEvents = {
     },
     'click .remove': function (e, value, row, index) {
         var id = row.id;
+        var perfil=row.perfil;
+
         $('#eliminarModal').modal('show');
-        $("#btnEliminarPublicidad").click(function () {
-            alert("Disponible en la una siguiente versión");
+        $("#btnEliminarUsuario").click(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if(perfil=="Researcher")
+            {
+                var url="../ws/drclipling/usuarios/eliminar/"+id;
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(result)
+                    {
+                        if(parseInt(result.intCodigo)==1) {
+                            mensaje("eliminada");
+                            $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                                url: '../ws/drclipling/usuarios_sinformato'
+                            });
+                        }
+                        else
+                        {
+                            mensaje("Error al eliminar usuario");
+                        }
+                        $('#eliminarModal').modal('hide');
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        console.log(XMLHttpRequest + " "+textStatus);
+                    }
+                });
+            }
+            else
+            {
+                var url="../ws/usuario/eliminar/"+id;
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(result)
+                    {
+                        if(parseInt(result.intCodigo)==1) {
+                            mensaje("eliminada");
+                            $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                                url: '../ws/drclipling/usuarios_sinformato'
+                            });
+                        }
+                        else
+                        {
+                            mensaje("Error al eliminar usuario");
+                        }
+                        $('#eliminarModal').modal('hide');
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        console.log(XMLHttpRequest + " "+textStatus);
+                    }
+                });
+            }
         });
     }
 };

@@ -40,7 +40,8 @@ class DrClippingUsuariosController extends \BaseController {
                 return View::make('ws.json_errores', array("errores" => compact('errores')));
             }
         }
-        else {
+        else
+        {
             $errores = "El email está vinculado a otra cuenta.";
             return View::make('ws.json_errores', array("errores" => compact('errores')));
         }
