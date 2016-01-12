@@ -23,6 +23,9 @@ $.datepicker.setDefaults($.datepicker.regional['es']);
 var lstTags=[];
 var lstTareas=[];
 var objPublicacionGlobal=null;
+var foto="";
+var url_foto="";
+
 var loading=false;
 var total=0;
 
@@ -188,42 +191,137 @@ $(document).ready(function()
         event.preventDefault();
         event.stopPropagation();
 
+        if($(this).hasClass("foto1"))
+            foto="foto1";
+        else
+            foto="foto2";
+
         var src=$(this).attr("src");
-        $("#imgPreview").attr("src",src);;
+        var arrSrc=src.split("?");
+        url_foto=arrSrc[0];
+        var num = Math.random();
+        $("#imgPreview").attr("src",src+"?v="+num);
         $("#zoomModal").modal("show");
     });
 
     $('#zoomModal').on('shown.bs.modal', function() {
-        $('#imgPreview').elevateZoom({
-            zoomType: "inner",
-            cursor: "crosshair"
-        });
+        $("#btnGuardarImagen").html("Guardar cambios");
     });
+
+    $("#btnEditarImagen").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $("#btnGirarDerecha,#btnGirarIzquierda,#btnGuardarImagen,#btnZoomOut,#btnZoomIn").removeClass("hidden");
+        $(this).addClass("hidden");
+        $('#imgPreview').cropper();
+    });
+
 
     $("#btnGirarDerecha").click(function(event){
         event.preventDefault();
         event.stopPropagation();
 
-        jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
-        jQuery('.zoomContainer').remove();// remove zoom container from DOM
-        $('#imgPreview').rotateRight();
-        $('#imgPreview').addClass("img-responsive").width("100%");
+        $('#imgPreview').cropper('rotate', 90);
+        /*jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
+         jQuery('.zoomContainer').remove();// remove zoom container from DOM
+         $('#imgPreview').rotateRight();
+         $('#imgPreview').addClass("img-responsive").width("100%");*/
     });
 
     $("#btnGirarIzquierda").click(function(event){
         event.preventDefault();
         event.stopPropagation();
 
-        jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
-        jQuery('.zoomContainer').remove();// remove zoom container from DOM
-        $('#imgPreview').rotateLeft();
-        $('#imgPreview').addClass("img-responsive").width("100%");
+        $('#imgPreview').cropper('rotate', -90);
+
+        /*jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
+         jQuery('.zoomContainer').remove();// remove zoom container from DOM
+         $('#imgPreview').rotateLeft();
+         $('#imgPreview').addClass("img-responsive").width("100%");*/
+    });
+
+    $("#btnZoomIn").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $('#imgPreview').cropper('zoom', 0.1);
+    });
+
+    $("#btnZoomOut").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $('#imgPreview').cropper('zoom', -0.1);
+    });
+
+    $("#btnGuardarImagen").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        var btnSubmit = $(this);
+        var htmlCargando='<i class="fa fa-spinner fa-spin"></i> Cargando';
+        var htmlCargado='<i class="fa fa-check"></i> Cargado';
+        var htmlError='<i class="fa fa-close"></i> Error';
+
+
+        btnSubmit.html(htmlCargando);
+        btnSubmit.attr('disabled', 'disabled');
+
+        var canvas = $("#imgPreview").cropper('getCroppedCanvas');
+        var blob = canvas.toDataURL("image/png");
+
+        var formData = new FormData();
+        formData.append('imagen', blob);
+        formData.append('publicacion_id', objPublicacionGlobal.id);
+        formData.append('url', url_foto);
+        formData.append('foto', foto);
+
+        var url = "../ws/drclipling/fotos";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result)
+            {
+                btnSubmit.removeAttr('disabled');
+                btnSubmit.html(htmlCargado);
+
+                var result=JSON.parse(result);
+
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    var fotoTomada=result.resultado.resultado;
+
+                    var num = Math.random();
+                    if(foto=="foto1")
+                        $("#imgFoto1").attr("src",fotoTomada+"?v="+num);
+                    else
+                        $("#imgFoto2").attr("src",fotoTomada+"?v="+num);
+                }
+                else
+                {
+                    alert("Error al guardar la imagen");
+                    btnSubmit.html(htmlError);
+                }
+                $("#zoomModal").modal("hide");
+            },
+            error: function () {
+                btnSubmit.removeAttr('disabled');
+                alert("Error al guardar la imagen");
+                btnSubmit.html(htmlError);
+                console.log('Upload error');
+            }
+        });
     });
 
     jQuery('#zoomModal').on('hidden.bs.modal', function (e) {
 
-        jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
-        jQuery('.zoomContainer').remove();// remove zoom container from DOM
+        $("#btnGirarDerecha,#btnGirarIzquierda,#btnGuardarImagen,#btnZoomOut,#btnZoomIn").addClass("hidden");
+        $("#btnEditarImagen").removeClass("hidden");
+        /*jQuery.removeData(jQuery('#imgPreview'), 'elevateZoom');//remove zoom instance from image
+         jQuery('.zoomContainer').remove();// remove zoom container from DOM
+         */
+        $("#imgPreview").cropper('clear');
     });
 
 
@@ -237,8 +335,9 @@ $(document).ready(function()
 
         objPublicacionGlobal=objPublicacion;
 
-        $("#imgFoto1").attr("src",objPublicacion.url_foto1);
-        $("#imgFoto2").attr("src",objPublicacion.url_foto2);
+        var num = Math.random();
+        $("#imgFoto1").attr("src",objPublicacion.url_foto1+"?v="+num);
+        $("#imgFoto2").attr("src",objPublicacion.url_foto2+"?v="+num);
 
         $("#tdId").html(objPublicacion.id);
         $("#tdCiudad").html(objPublicacion.ciudad);

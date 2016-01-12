@@ -4,6 +4,7 @@
     @parent
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
     <% HTML::style('public/lib/chosen/chosen.css'); %>
+    <% HTML::style('public/lib/cropper/dist/cropper.min.css'); %>
     <% HTML::style('public/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css'); %>
 @stop
 
@@ -80,12 +81,12 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-6">
                         <h4 class="text-center">Fotografía Página Completa</h4>
-                        <img id="imgFoto1" src="" class="img-responsive foto" width="90%" style="cursor: pointer"/>
+                        <img id="imgFoto1" src="" class="img-responsive foto foto1" width="90%" style="cursor: pointer"/>
                     </div>
 
                     <div class="col-xs-12 col-md-6 col-lg-6">
                         <h4 class="text-center">Fotografía Artículo</h4>
-                        <img id="imgFoto2" src="" class="img-responsive foto" width="90%" style="cursor: pointer"/>
+                        <img id="imgFoto2" src="" class="img-responsive foto foto2" width="90%" style="cursor: pointer"/>
                     </div>
                 </div>
 
@@ -298,16 +299,23 @@
                                 aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía
                         <div class=" pull-right" style="margin-right: 12px">
-                            <button id="btnGirarIzquierda" class="btn btn-default"><i class="fa fa-undo"></i></button>
-                            <button id="btnGirarDerecha" class="btn btn-default"><i class="fa fa-repeat"></i></button>
+                            <button id="btnEditarImagen" class="btn btn-default"><i class="fa fa-pencil"></i>&nbsp;Editar imagen</button>
+
+                            <button id="btnZoomOut" class="btn btn-default hidden"><i class="glyphicon glyphicon-zoom-out"></i></button>
+                            <button id="btnZoomIn" class="btn btn-default hidden"><i class="glyphicon glyphicon-zoom-in"></i></button>
+
+                            <button id="btnGirarIzquierda" class="btn btn-default hidden"><i class="fa fa-undo"></i></button>
+                            <button id="btnGirarDerecha" class="btn btn-default hidden"><i class="fa fa-repeat"></i></button>
                         </div>
                     </h4>
                 </div>
                 <div id="modalBody" class="modal-body">
-                    <img id="imgPreview" class="img-responsive" width="100%" src=""/>
+                    <img id="imgPreview" class="img-responsive" width="100%" src="" crossorigin/>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </button>
+                    <button type="button" class="btn btn-success hidden" id="btnGuardarImagen">Guardar cambios</button>
                     </button>
                 </div>
             </div>
@@ -436,9 +444,10 @@
     </div>-->
 @stop
 @section('pie')
-    <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>
+    <!-- <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>-->
     <% HTML::script('public/lib/chosen/chosen.jquery.js'); %>
-    <% HTML::script('public/lib/rotate/jquery.rotate.1-1.js'); %>
+    <!-- <% HTML::script('public/lib/rotate/jquery.rotate.1-1.js'); %> -->
+    <% HTML::script('public/lib/cropper/dist/cropper.min.js'); %>
     <% HTML::script('public/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js'); %>
     <% HTML::script('public/js/monitoreo/inbox.js'); %>
 @stop

@@ -2,7 +2,161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/docs/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/img/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/img/data.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/docs/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/img/layers.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/img/picture-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/img/picture-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/img/picture.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/img/picture.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/FAQ.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/scss/_main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/scss/_utilities.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/a-range-of-aspect-ratio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/aspectRatio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/autoCrop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/background.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/built.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/center.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/change.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/checkCrossOrigin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/checkOrientation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/clear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-a-round-image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-on-canvas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/crop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/crop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/crop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/cropBoxMovable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/cropBoxResizable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/cropend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/cropmove.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/cropper-in-modal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/dist/cropper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/dist/cropper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/cropper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/dist/cropper.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/dist/cropper.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/scss/cropper.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/cropstart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/customize-preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/defaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/destroy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/disable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/dragMode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/enable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/fixed-crop-box.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/full-crop-box.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/getCanvasData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/getContainerData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/getCropBoxData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/getCroppedCanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/getData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/getImageData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/guides.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/handlers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/intro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/demo/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/docs/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/demo/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/docs/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/crop-avatar/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/minCanvasHeight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/minCanvasWidth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/minContainerHeight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/minContainerWidth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/minCropBoxHeight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/minCropBoxWidth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/movable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/move.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/moveTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/multiple-croppers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/outro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/preview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/css/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/assets/js/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/render.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/replace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/reset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/examples/responsive-container.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/rotatable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/rotate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/rotateTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/scalable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/scale.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/scaleX.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/scaleY.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/setAspectRatio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/setCanvasData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/setCropBoxData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/setData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/setDragMode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/toggleDragModeOnDblclick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/utilities.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/src/js/variables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/viewMode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/events/zoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/zoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/zoomOnTouch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/zoomOnWheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/methods/zoomTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/cropper/test/options/zoomable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" afterPath="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/dashboard.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,54 +189,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.843137" vertical-offset="2618" max-vertical-offset="8865">
-              <caret line="208" column="34" selection-start-line="208" selection-start-column="13" selection-end-line="208" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrClippingUsuariosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="2160" max-vertical-offset="4035">
-              <caret line="157" column="40" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="40" />
+            <state vertical-scroll-proportion="-32.5" vertical-offset="0" max-vertical-offset="2190">
+              <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="53" selection-end-column="87" />
               <folding>
-                <marker date="1452012047000" expanded="true" signature="4796:4880" placeholder="SELECT creat..t_acceso..." />
-                <marker date="1452012047000" expanded="true" signature="5126:5374" placeholder="SELECT u.id ..usuarios..." />
+                <marker date="1449593777000" expanded="true" signature="2414:2505" placeholder="SELECT count..Noticias..." />
+                <marker date="1449593777000" expanded="true" signature="2649:2739" placeholder="SELECT count..eventos..." />
+                <marker date="1449593777000" expanded="true" signature="2886:3001" placeholder="SELECT count..Publicidad..." />
+                <marker date="1449593777000" expanded="true" signature="3160:3254" placeholder="SELECT count..expositores..." />
+                <marker date="1449593777000" expanded="true" signature="3398:3488" placeholder="SELECT count..ofertas..." />
+                <marker date="1449593777000" expanded="true" signature="3633:3738" placeholder="SELECT count..participantes_concurso..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuarios.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php">
+      <file leaf-file-name="DrClippingAnalisesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="1812" max-vertical-offset="2805">
-              <caret line="136" column="113" selection-start-line="136" selection-start-column="95" selection-end-line="136" selection-end-column="113" />
+            <state vertical-scroll-proportion="-25.125" vertical-offset="2052" max-vertical-offset="2970">
+              <caret line="177" column="128" selection-start-line="177" selection-start-column="128" selection-end-line="177" selection-end-column="128" />
+              <folding>
+                <marker date="1452630014000" expanded="true" signature="4842:4990" placeholder="SELECT count..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/monitoreo/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42735043" vertical-offset="360" max-vertical-offset="1650">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuarios.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/monitoreo/usuarios.js">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.1965814" vertical-offset="0" max-vertical-offset="4875">
-              <caret line="290" column="28" selection-start-line="290" selection-start-column="28" selection-end-line="290" selection-end-column="28" />
+            <state vertical-scroll-proportion="-4.254902" vertical-offset="6818" max-vertical-offset="8910">
+              <caret line="469" column="31" selection-start-line="469" selection-start-column="27" selection-end-line="469" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
+      <file leaf-file-name="SmsMensajesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625" vertical-offset="435" max-vertical-offset="6750">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="47" />
+            <state vertical-scroll-proportion="-6.901961" vertical-offset="2873" max-vertical-offset="3660">
+              <caret line="215" column="39" selection-start-line="200" selection-start-column="37" selection-end-line="215" selection-end-column="39" />
+              <folding>
+                <marker date="1431276777000" expanded="true" signature="5993:6069" placeholder="SELECT count..SmsMensaje..." />
+                <marker date="1431276777000" expanded="true" signature="6384:6497" placeholder="SELECT count..SmsMensaje..." />
+                <marker date="1431276777000" expanded="true" signature="6849:6974" placeholder="SELECT count..." />
+                <marker date="1431276777000" expanded="true" signature="7594:7683" placeholder="SELECT count..SmsMensaje..." />
+                <marker date="1431276777000" expanded="true" signature="7969:8095" placeholder="SELECT count..SmsMensaje..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2208" max-vertical-offset="2970">
+              <caret line="190" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="190" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -96,15 +272,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/NoticiasController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/restapi.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/ferias/ofertas.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/imagenes.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/revista.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Adjunto.php" />
-        <option value="$PROJECT_DIR$/public/js/tecnobit/adjuntar.js" />
         <option value="$PROJECT_DIR$/app/controllers/AdjuntosController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/tecnobit/publicidad.blade.php" />
         <option value="$PROJECT_DIR$/public/js/tecnobit/publicidad.js" />
@@ -114,7 +287,6 @@
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingUsuario.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingAcceso.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/reportes.blade.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAccesosController.php" />
@@ -131,22 +303,26 @@
         <option value="$PROJECT_DIR$/public/lib/chosen/chosen.jquery.js" />
         <option value="$PROJECT_DIR$/app/models/DrClippingTag.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingTagsController.php" />
-        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/AutenticacionController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/catalogos.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Catalogo.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/catalogos.js" />
         <option value="$PROJECT_DIR$/app/controllers/CatalogosController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/pilar.blade.php" />
         <option value="$PROJECT_DIR$/public/lib/rotate/jquery.rotate.1-1.js" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/reportes.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" />
+        <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" />
+        <option value="$PROJECT_DIR$/public/js/tecnobit/adjuntar.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
-        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php" />
-        <option value="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" />
+        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
+        <option value="$PROJECT_DIR$/public/js/monitoreo/dashboard.js" />
       </list>
     </option>
   </component>
@@ -209,6 +385,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -228,6 +418,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cropper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cropper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,6 +501,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitoreo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,28 +578,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ws" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,32 +617,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sitio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoreo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,7 +639,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="monitoreo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,12 +812,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00103" summary="GCM cambios console">
-      <created>1445215199829</created>
-      <option name="number" value="00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1445215199830</updated>
     </task>
     <task id="LOCAL-00104" summary="Mensaje GCM">
       <created>1445216366228</created>
@@ -815,7 +1101,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452011806236</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="Eliminar usuarios">
+      <created>1452284874855</created>
+      <option name="number" value="00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1452284874855</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -844,22 +1136,22 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2746365" sideWeight="0.10547945" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2746365" sideWeight="0.8945205" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28271407" sideWeight="0.87945205" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28271407" sideWeight="0.12054794" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49915966" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1815029" sideWeight="0.49969155" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -903,7 +1195,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Dr clipping menus" />
     <MESSAGE value="Primera parte interfaz web" />
     <MESSAGE value="Primera parte interfaz web 1.0" />
     <MESSAGE value="WS Autenticacion y publicacion" />
@@ -928,131 +1219,18 @@
     <MESSAGE value="Modificaciones Pop ups" />
     <MESSAGE value="Endless Scroller" />
     <MESSAGE value="Fix Usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Usuarios" />
+    <MESSAGE value="Eliminar usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eliminar usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/portada.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375" vertical-offset="900" max-vertical-offset="2160">
-          <caret line="99" column="14" selection-start-line="78" selection-start-column="7" selection-end-line="99" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/OfertasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5973451" vertical-offset="1485" max-vertical-offset="3840">
-          <caret line="126" column="91" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/noticias.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.254902" vertical-offset="788" max-vertical-offset="3825">
-          <caret line="67" column="172" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="172" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/tecnobit/usuarios.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/noticias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.153846" vertical-offset="7998" max-vertical-offset="8940">
-          <caret line="58" column="45" selection-start-line="50" selection-start-column="7" selection-end-line="58" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/sitio/ofertas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8076923" vertical-offset="6693" max-vertical-offset="7395">
-          <caret line="484" column="15" selection-start-line="459" selection-start-column="12" selection-end-line="484" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrclippingTarifasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1647" max-vertical-offset="2400">
-          <caret line="144" column="69" selection-start-line="144" selection-start-column="69" selection-end-line="144" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/elevatezoom-master/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22123894" vertical-offset="0" max-vertical-offset="678">
-          <caret line="10" column="60" selection-start-line="9" selection-start-column="27" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/bower_components/elevatezoom-master/jquery.elevatezoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18135" max-vertical-offset="26925">
-          <caret line="1224" column="50" selection-start-line="1224" selection-start-column="45" selection-end-line="1224" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NoticiasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.291667" vertical-offset="4814" max-vertical-offset="6270">
-          <caret line="339" column="97" selection-start-line="339" selection-start-column="97" selection-end-line="339" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/DrclippingTarifa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="678">
-          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/DrClippingAnalisi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42035398" vertical-offset="0" max-vertical-offset="678">
-          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/AsignacionPerfiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3318584" vertical-offset="0" max-vertical-offset="678">
-          <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/chosen/chosen.jquery.old.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18795">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/chosen/chosen.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2888889" vertical-offset="8565" max-vertical-offset="20085">
           <caret line="584" column="45" selection-start-line="584" selection-start-column="23" selection-end-line="584" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,7 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.95132744" vertical-offset="645" max-vertical-offset="3375">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7079646" vertical-offset="60" max-vertical-offset="5595">
           <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="678">
           <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="405">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,7 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125" vertical-offset="180" max-vertical-offset="1650">
           <caret line="33" column="9" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3045">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,7 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2265">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,7 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9292035" vertical-offset="0" max-vertical-offset="1680">
           <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,7 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.079646" vertical-offset="1590" max-vertical-offset="2910">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,7 +1309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375" vertical-offset="420" max-vertical-offset="2160">
           <caret line="51" column="45" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,7 +1316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.25" vertical-offset="1932" max-vertical-offset="2715">
           <caret line="150" column="61" selection-start-line="150" selection-start-column="61" selection-end-line="150" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,29 +1323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="23.0" vertical-offset="552" max-vertical-offset="1905">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsReportesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="240" max-vertical-offset="3810">
-          <caret line="34" column="47" selection-start-line="32" selection-start-column="16" selection-end-line="34" selection-end-column="47" />
-          <folding>
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..SmsUsuario..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434847198000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..SmsMensaje..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="555" max-vertical-offset="2400">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="16" column="151" selection-start-line="16" selection-start-column="151" selection-end-line="16" selection-end-column="151" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,15 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5973451" vertical-offset="1095" max-vertical-offset="3765">
           <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
-          <folding>
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..SmsUsuario..." />
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(C..catalogos..." />
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(C..catalogos..." />
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(C..catalogos..." />
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(C..catalogos..." />
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(C..catalogos..." />
-            <marker date="1451757274000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(C..catalogos..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,9 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8504273" vertical-offset="2508" max-vertical-offset="4215">
           <caret line="209" column="41" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,9 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5555556" vertical-offset="2250" max-vertical-offset="4155">
           <caret line="178" column="10" selection-start-line="170" selection-start-column="7" selection-end-line="178" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,15 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="405">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3938053" vertical-offset="0" max-vertical-offset="1800">
-          <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,7 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6858407" vertical-offset="690" max-vertical-offset="2460">
           <caret line="77" column="118" selection-start-line="77" selection-start-column="118" selection-end-line="77" selection-end-column="118" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,7 +1372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="1065">
           <caret line="54" column="10" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,7 +1379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="24" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,7 +1386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.166666" vertical-offset="1763" max-vertical-offset="2895">
           <caret line="145" column="0" selection-start-line="138" selection-start-column="28" selection-end-line="145" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,42 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.25" vertical-offset="1137" max-vertical-offset="1815">
           <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.141593" vertical-offset="0" max-vertical-offset="2325">
-          <caret line="142" column="134" selection-start-line="142" selection-start-column="134" selection-end-line="142" selection-end-column="134" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="435" max-vertical-offset="6750">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/adjuntar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5982906" vertical-offset="1095" max-vertical-offset="8760">
-          <caret line="45" column="58" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="2160" max-vertical-offset="4035">
-          <caret line="157" column="40" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="40" />
-          <folding>
-            <marker date="1452012047000" expanded="true" signature="4796:4880" placeholder="SELECT creat..t_acceso..." />
-            <marker date="1452012047000" expanded="true" signature="5126:5374" placeholder="SELECT u.id ..usuarios..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,7 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,38 +1407,210 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
+    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/usuarios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.75555557" vertical-offset="2205" max-vertical-offset="12945">
-          <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
+        <state vertical-scroll-proportion="0.42222223" vertical-offset="3705" max-vertical-offset="5310">
+          <caret line="266" column="16" selection-start-line="266" selection-start-column="16" selection-end-line="266" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/usuarios.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="1812" max-vertical-offset="2805">
-          <caret line="136" column="113" selection-start-line="136" selection-start-column="95" selection-end-line="136" selection-end-column="113" />
+        <state vertical-scroll-proportion="-0.10619469" vertical-offset="3657" max-vertical-offset="4335">
+          <caret line="239" column="111" selection-start-line="239" selection-start-column="95" selection-end-line="239" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/cropper/dist/cropper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30591" max-vertical-offset="44505">
+          <caret line="2063" column="4" selection-start-line="2063" selection-start-column="4" selection-end-line="2063" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingUsuariosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.88053095" vertical-offset="3357" max-vertical-offset="4035">
+          <caret line="184" column="39" selection-start-line="184" selection-start-column="39" selection-end-line="184" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021367522" vertical-offset="0" max-vertical-offset="5655">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AdjuntosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.4159292" vertical-offset="282" max-vertical-offset="3060">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aws/aws-sdk-php-laravel/src/Aws/Laravel/AwsFacade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aws/aws-sdk-php-laravel/src/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.625" vertical-offset="207" max-vertical-offset="885">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aws/aws-sdk-php-laravel/src/Aws/Laravel/AwsServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/aws/aws-sdk-php-laravel/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="930">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/tecnobit/adjuntar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="8760">
+          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="91" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingPublicacionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.208334" vertical-offset="1621" max-vertical-offset="2325">
+          <caret line="142" column="122" selection-start-line="142" selection-start-column="122" selection-end-line="142" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7111111" vertical-offset="3315" max-vertical-offset="14430">
+          <caret line="298" column="60" selection-start-line="298" selection-start-column="60" selection-end-line="298" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18731563" vertical-offset="1118" max-vertical-offset="6885">
+          <caret line="83" column="82" selection-start-line="83" selection-start-column="77" selection-end-line="83" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.875" vertical-offset="867" max-vertical-offset="1650">
+          <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7079646" vertical-offset="1035" max-vertical-offset="1725">
+          <caret line="101" column="10" selection-start-line="81" selection-start-column="4" selection-end-line="101" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.5" vertical-offset="0" max-vertical-offset="2190">
+          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="53" selection-end-column="87" />
+          <folding>
+            <marker date="1449593777000" expanded="true" signature="2414:2505" placeholder="SELECT count..Noticias..." />
+            <marker date="1449593777000" expanded="true" signature="2649:2739" placeholder="SELECT count..eventos..." />
+            <marker date="1449593777000" expanded="true" signature="2886:3001" placeholder="SELECT count..Publicidad..." />
+            <marker date="1449593777000" expanded="true" signature="3160:3254" placeholder="SELECT count..expositores..." />
+            <marker date="1449593777000" expanded="true" signature="3398:3488" placeholder="SELECT count..ofertas..." />
+            <marker date="1449593777000" expanded="true" signature="3633:3738" placeholder="SELECT count..participantes_concurso..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/sms/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2208" max-vertical-offset="2970">
+          <caret line="190" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="190" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsReportesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5132743" vertical-offset="162" max-vertical-offset="3810">
+          <caret line="34" column="47" selection-start-line="32" selection-start-column="16" selection-end-line="34" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.843137" vertical-offset="2618" max-vertical-offset="8865">
-          <caret line="208" column="34" selection-start-line="208" selection-start-column="13" selection-end-line="208" selection-end-column="34" />
+        <state vertical-scroll-proportion="-4.254902" vertical-offset="6818" max-vertical-offset="8910">
+          <caret line="469" column="31" selection-start-line="469" selection-start-column="27" selection-end-line="469" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/usuarios.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.1965814" vertical-offset="0" max-vertical-offset="4875">
-          <caret line="290" column="28" selection-start-line="290" selection-start-column="28" selection-end-line="290" selection-end-column="28" />
+        <state vertical-scroll-proportion="-6.901961" vertical-offset="2873" max-vertical-offset="3660">
+          <caret line="215" column="39" selection-start-line="200" selection-start-column="37" selection-end-line="215" selection-end-column="39" />
+          <folding>
+            <marker date="1431276777000" expanded="true" signature="5993:6069" placeholder="SELECT count..SmsMensaje..." />
+            <marker date="1431276777000" expanded="true" signature="6384:6497" placeholder="SELECT count..SmsMensaje..." />
+            <marker date="1431276777000" expanded="true" signature="6849:6974" placeholder="SELECT count..." />
+            <marker date="1431276777000" expanded="true" signature="7594:7683" placeholder="SELECT count..SmsMensaje..." />
+            <marker date="1431276777000" expanded="true" signature="7969:8095" placeholder="SELECT count..SmsMensaje..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/local/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7079646" vertical-offset="780" max-vertical-offset="2400">
+          <caret line="84" column="19" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.125" vertical-offset="2052" max-vertical-offset="2970">
+          <caret line="177" column="128" selection-start-line="177" selection-start-column="128" selection-end-line="177" selection-end-column="128" />
+          <folding>
+            <marker date="1452630014000" expanded="true" signature="4842:4990" placeholder="SELECT count..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42735043" vertical-offset="360" max-vertical-offset="1650">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
           <folding />
         </state>
       </provider>

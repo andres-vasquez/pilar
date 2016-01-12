@@ -142,6 +142,108 @@
             </div>
         </div>
 
+        <!-- Editar usuario -->
+        <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formEditarUsuario" class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="txtNombre_editar" class="col-sm-4 control-label">Nombre Completo</label>
+
+                                <div class="col-sm-8">
+                                    <input id="txtNombre_editar" class="form-control" required/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtEmail_editar" type="number" class="col-sm-4 control-label">Email</label>
+
+                                <div class="col-sm-4">
+                                    <input id="txtEmail_editar" class="form-control" required readonly/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="chkRestablecer" class="col-sm-4 control-label">Restablecer Password</label>
+
+                                <div class="col-sm-4">
+                                    <input id="chkRestablecer" type="checkbox" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div id="editPassword" class="hidden">
+                                <div class="form-group">
+                                    <label for="txtPassword_editar" class="col-sm-4 control-label">Contraseña</label>
+
+                                    <div class="col-sm-6">
+                                        <input id="txtPassword_editar" type="password" class="form-control" required/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtPassword2_editar" class="col-sm-4 control-label">Repetir Contraseña</label>
+
+                                <div class="col-sm-6">
+                                    <input id="txtPassword2_editar" type="password" class="form-control" required/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cmbPerfil_editar" class="col-sm-4 control-label">Perfil</label>
+
+                                <div class="col-sm-6">
+                                    <select id="cmbPerfil_editar" class="form-control">
+                                        <option value="0">Seleccione</option>
+                                        <option value="1">Researcher (App móvil)</option>
+                                        <option value="2">Analyst</option>
+                                        <option value="3">Cliente</option>
+                                        <option value="4">Administrador</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div id="divCelular" class="form-group hidden">
+                                <label for="txtCelular_editar" type="number" class="col-sm-4 control-label">Celular</label>
+
+                                <div class="col-sm-4">
+                                    <input id="txtCelular_editar" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div  id="divImei" class="form-group hidden" >
+                                <label for="txtImei_editar" class="col-sm-4 control-label">IMEI (*#06#)</label>
+
+                                <div class="col-sm-4">
+                                    <input id="txtImei_editar" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <div  id="divTags_editar" class="form-group hidden">
+                                <label for="cmbTags" class="col-sm-4 control-label">Qué Tags verá el cliente?</label>
+                                <div class="col-sm-8">
+                                    <select id="cmbTags_editar" class="form-control" data-placeholder="Seleccione tags..." class="chosen-select" multiple tabindex="4"></select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarUsuario">Guardar cambios
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div><!-- col-->
 @stop
 @section('contenido2')

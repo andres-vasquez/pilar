@@ -556,6 +556,7 @@ Route::get('/ws/drclipling/analisisporpublicacion/{publicacion_id}', array('as' 
 Route::post('/ws/drclipling/analisis', 'DrClippingAnalisesController@store');
 Route::post('/ws/drclipling/analisis/{id}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@update'));
 Route::post('/ws/drclipling/analisis/eliminar/{id}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@destroy'));
+Route::post('/ws/drclipling/fotos', 'DrClippingAnalisesController@foto');
 
 //Ws Publicacion
 Route::get('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@show'))->where(array('id' => '[0-9]+'));
@@ -567,6 +568,8 @@ Route::get('/ws/drclipling/publicacion/{estado}/{inicio}/{fin}', array('as' => '
 Route::get('/ws/drclipling/tags', 'DrClippingTagsController@index');
 Route::post('/ws/drclipling/tags', 'DrClippingTagsController@store');
 
+//WS Reportes
+Route::get('/ws/drclipling/reportes/dashboard/{ano}/{mes}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@graficoDashboard'));
 
 //REST Api Drclipping
 Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), function () {

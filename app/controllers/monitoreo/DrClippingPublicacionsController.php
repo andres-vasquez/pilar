@@ -137,10 +137,10 @@ class DrClippingPublicacionsController extends \BaseController {
         $rango=$fin-$inicio+1;
 
         $publicaciones=array();
-        $publicaciones_todas = DrClippingPublicacion::whereRaw('estado=1 AND baja_logica=1 AND estado_tarea=? ORDER BY created_at ASC',array($estado))->get();
+        $publicaciones_todas = DrClippingPublicacion::whereRaw('estado=1 AND baja_logica=1 AND estado_tarea=? ORDER BY id ASC',array($estado))->get();
         $publicaciones["total"]=count($publicaciones_todas);
 
-        $publicaciones_filtro = DrClippingPublicacion::whereRaw('estado=1 AND baja_logica=1 AND estado_tarea=? ORDER BY created_at ASC LIMIT ? OFFSET ? ',array($estado,$rango,$inicio-1))->get();
+        $publicaciones_filtro = DrClippingPublicacion::whereRaw('estado=1 AND baja_logica=1 AND estado_tarea=? ORDER BY id ASC LIMIT ? OFFSET ? ',array($estado,$rango,$inicio-1))->get();
 
         $publicaciones["publicacion"]=$publicaciones_filtro;
         return View::make('ws.json', array("resultado"=>compact('publicaciones')));

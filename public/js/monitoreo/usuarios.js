@@ -123,16 +123,21 @@ $(document).ready(function()
         }
     });
 
-    $("#cmbPerfil").change(function(){
-        if($(this).val()=="0")
+    $("#cmbPerfil").change(function()
+    {
+        if($(this).val()=="0" || $(this).val()=="2" || $(this).val()=="4")
         {
             $("#divCelular,#divImei").addClass("hidden");
+            $("#txtCelular").val("");
+            $("#txtImei").val("");
             $("#divTags").addClass("hidden");
+            $("#cmbTags").html("").trigger("chosen:updated");
         }
         else if($(this).val()=="1")//Researcher
         {
             $("#divCelular,#divImei").removeClass("hidden");
             $("#divTags").addClass("hidden");
+            $("#cmbTags").html("").trigger("chosen:updated");
         }
         else if($(this).val()=="3")//Cliente
         {
@@ -140,6 +145,7 @@ $(document).ready(function()
             $("#divTags").removeClass("hidden");
             $(".chosen-select").chosen();
             $(".chosen-container").css("width", "100%");
+            llenarTags();
         }
     });
 
@@ -150,6 +156,7 @@ $(document).ready(function()
         $("#txtEmail").val("");
         $("#txtCelular").val("");
         $("#txtImei").val("");
+        $("#cmbTags").html("").trigger("chosen:updated");
     };
 
     encriptar=function(password){
@@ -230,8 +237,6 @@ $(document).ready(function()
         });
 
     };
-
-    llenarTags();
 });
 
 function operateFormatter(value, row, index) {
@@ -248,7 +253,31 @@ function operateFormatter(value, row, index) {
 window.operateEvents = {
     'click .edit': function (e, value, row, index) {
         var id = row.id;
-        alert("Disponible en la una siguiente versión");
+        var perfil=row.perfil;
+
+        $('#editarModal').modal('show');
+
+        $("#chkRestablecer").change(function(){
+            if($(this).is(':checked'))
+            {
+
+            }
+            else
+            {
+
+            }
+        });
+
+
+        $("#btnEditarUsuario").click(function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+
+
+        });
+
+
     },
     'click .remove': function (e, value, row, index) {
         var id = row.id;
