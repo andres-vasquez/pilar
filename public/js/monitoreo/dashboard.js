@@ -31,7 +31,7 @@ $(document).ready(function()
                     }
 
                     for (var i = 0; i < resultadoAnalisis.length; i++) {
-                        datos.push(resultadoAnalisis[i].cantidad);
+                        datos1.push(resultadoAnalisis[i].cantidad);
                     }
 
                     var lineChartData = {
