@@ -22,9 +22,16 @@ $(document).ready(function()
 
                     var datos1 = [];
 
-                    for (var i = 0; i < result.length; i++) {
-                        labels.push(result[i].fecha);
-                        datos.push(result[i].cantidad);
+                    var resultadoPublicaciones=result.publicaciones;
+                    var resultadoAnalisis=result.analisis;
+
+                    for (var i = 0; i < resultadoPublicaciones.length; i++) {
+                        labels.push(resultadoPublicaciones[i].fecha);
+                        datos.push(resultadoPublicaciones[i].cantidad);
+                    }
+
+                    for (var i = 0; i < resultadoAnalisis.length; i++) {
+                        datos.push(resultadoAnalisis[i].cantidad);
                     }
 
                     var lineChartData = {
@@ -39,15 +46,34 @@ $(document).ready(function()
                                 pointHighlightFill: "#fff",
                                 pointHighlightStroke: "rgba(48, 164, 255, 1)",
                                 data: datos
+                            },
+                            {
+                                label: "Estadisticas publicaciones",
+                                fillColor: "rgba(249, 36, 63, 0.1)",
+                                strokeColor: "rgba(249, 36, 63, 1)",
+                                pointColor: "rgba(249, 36, 63, 1)",
+                                pointStrokeColor: "#fff",
+                                pointHighlightFill: "#fff",
+                                pointHighlightStroke: "rgba(249, 36, 63, 1)",
+                                data: datos1
                             }
                         ]
                     };
+
+                    var lineChartData1 = {
+                        labels: labels,
+                        datasets: [
+
+                        ]
+                    };
+
                     if(window.myLine){
                         window.myLine.destroy();
                     }
                     var chart1 = document.getElementById("line-chart").getContext("2d");
                     window.myLine = new Chart(chart1).Line(lineChartData, {
-                        responsive: true
+                        responsive: true,
+                        datasetFill : true
                     });
                 }
             },

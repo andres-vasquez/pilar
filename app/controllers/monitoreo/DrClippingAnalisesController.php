@@ -175,6 +175,8 @@ class DrClippingAnalisesController extends \BaseController {
     public function graficoDashboard($ano,$mes)
     {
         $resultado = array();
+        $resultado["publicaciones"]=array();
+        $resultado["analisis"]=array();
         $query = DB::connection('DrClipping')->select('SELECT count(1) AS cantidad, DATE(created_at) as fecha FROM t_publicacion WHERE MONTH(created_at)=? AND YEAR(created_at)=? GROUP BY DATE(created_at)', array($mes,$ano));
         if (sizeof($query) > 0) {
             foreach ($query as $dato)
@@ -182,11 +184,23 @@ class DrClippingAnalisesController extends \BaseController {
                 $aux = array();
                 $aux["cantidad"] = $dato->cantidad;
                 $aux["fecha"] = date('d-m-Y',strtotime($dato->fecha));
-                array_push($resultado, $aux);
+                array_push($resultado["publicaciones"], $aux);
             }
-            DB::disconnect('Sms');
-            return json_encode($resultado);
+            DB::disconnect('DrClipping');
         }
+
+        $query = DB::connection('DrClipping')->select('SELECT count(1) AS cantidad, DATE(created_at) as fecha FROM t_analisis WHERE MONTH(created_at)=? AND YEAR(created_at)=? GROUP BY DATE(created_at)', array($mes,$ano));
+        if (sizeof($query) > 0) {
+            foreach ($query as $dato)
+            {
+                $aux = array();
+                $aux["cantidad"] = $dato->cantidad;
+                $aux["fecha"] = date('d-m-Y',strtotime($dato->fecha));
+                array_push($resultado["analisis"], $aux);
+            }
+            DB::disconnect('DrClipping');
+        }
+
         return json_encode($resultado);
     }
 }
