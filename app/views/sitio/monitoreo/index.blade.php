@@ -3,6 +3,21 @@
 @section('header')
     @parent
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <style>
+        .azul{
+            border:solid 9px rgba(48, 164, 255, 1);
+            width:8px;
+            height:8px;
+            margin-right: 5px;
+        }
+        .rojo{
+            border:solid 9px rgba(249, 36, 63, 1);
+            width:8px;
+            height:8px;
+            margin-right: 5px;
+            margin-left: 20px;
+        }
+    </style>
 @stop
 
 @section('titulo_plataforma')
@@ -75,6 +90,8 @@
 @stop
 @section('contenido2')
     <div class="col-lg-12">
+        <span><img class="azul"/>Publicaciones Recibidas</span>
+        <span><img class="rojo"/>Publicaciones Analizadas</span>
         <div class="btn-group pull-right">
             <div class="btn-group">
                 <button id="btnSelecciondo" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">

@@ -205,6 +205,7 @@ $(document).ready(function()
     });
 
     $('#zoomModal').on('shown.bs.modal', function() {
+        $('#imgPreview').width("100%");
         $("#btnGuardarImagen").html("Guardar cambios");
     });
 
@@ -292,6 +293,17 @@ $(document).ready(function()
                 {
                     var fotoTomada=result.resultado.resultado;
 
+                    for(var i=0;i<lstTareas.length;i++)
+                        if(lstTareas[i].id==objPublicacionGlobal.id)
+                        {
+                            var num = Math.random();
+                            if(foto=="foto1")
+                                lstTareas[i].url_foto1=fotoTomada+"?v="+num;
+                            else
+                                lstTareas[i].url_foto2=fotoTomada+"?v="+num;
+                        }
+
+
                     var num = Math.random();
                     if(foto=="foto1")
                         $("#imgFoto1").attr("src",fotoTomada+"?v="+num);
@@ -322,6 +334,7 @@ $(document).ready(function()
          jQuery('.zoomContainer').remove();// remove zoom container from DOM
          */
         $("#imgPreview").cropper('clear');
+        $("#imgPreview").cropper('destroy');
     });
 
 
@@ -925,7 +938,30 @@ $(document).ready(function()
         });
     };
 
+    llenarCantidadPendientes=function() {
+        var html='';
+        $.ajax({
+            type: "GET",
+            url: "../ws/drclipling/reportes/conteoInbox",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                for(var i=0;i<result.length;i++)
+                    switch (parseInt(result[i].estado_tarea))
+                    {
+                        case 0: html+='<option value="0">Tareas pendientes ('+result[i].cantidad+')</option>'; break;
+                        case 1: html+='<option value="1">Tareas realizadas ('+result[i].cantidad+')</option>'; break;
+                        case 2: html+='<option value="2">Tareas rechazada ('+result[i].cantidad+')</option>'; break;
+                    }
+                $("#cmbFiltroEstados").html(html);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " " + textStatus);
+            }
+        });
+    };
 
+    llenarCantidadPendientes();
     //Form Anaylis
     llenarCatalogos('cmbColor',"Color",0);
     llenarCatalogos('cmbCuerpo',"Ubicacion",0);

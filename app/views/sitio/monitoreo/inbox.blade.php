@@ -45,9 +45,9 @@
     <div class="col-xs-12 col-md-6 col-lg-3 lateral">
 
         <select id="cmbFiltroEstados" class="form-control">
-            <option value="0">Tareas pendientes</option>
-            <option value="1">Tareas realizadas</option>
-            <option value="2">Tareas rechazada</option>
+            <option value="0">Tareas pendientes (0)</option>
+            <option value="1">Tareas realizadas (0)</option>
+            <option value="2">Tareas rechazada (0)</option>
         </select>
         <br/>
         <div id="lstTareas" class="list-group lista">

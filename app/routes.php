@@ -60,9 +60,9 @@ Route::group(array('before' => 'session'), function () {
         Route::get('/output/excel', function () {
             $nombreReporte="Reporte_".date('YmdHis');
             Excel::create($nombreReporte, function($excel) {
-                $excel->setTitle('Reporte del sistema SMS');
-                $excel->setCreator('Bolivia onTouch Robot')->setCompany('Bolivia onTouch');
-                $excel->setDescription('A demonstration to change the file properties');
+                $excel->setTitle('Reporte del sistema');
+                $excel->setCreator('DAPP')->setCompany('Bolivia onTouch');
+                $excel->setDescription('Reporte de datos del Sistema');
 
                 $excel->sheet('Hoja 1', function($sheet) {
                     $sheet->loadView("sitio.master.excel");
@@ -570,6 +570,9 @@ Route::post('/ws/drclipling/tags', 'DrClippingTagsController@store');
 
 //WS Reportes
 Route::get('/ws/drclipling/reportes/dashboard/{ano}/{mes}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@graficoDashboard'));
+Route::get('/ws/drclipling/reportes/conteoInbox', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@conteoEstado'));
+Route::get('/ws/drclipling/reportes/variablesReporte/{criterio}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@variablesReporte'));
+Route::post('/ws/drclipling/reportes', 'DrClippingAnalisesController@generarReporte');
 
 //REST Api Drclipping
 Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), function () {

@@ -36,7 +36,6 @@
                     <option value="1">Publicaciones por Researcher</option>
                     <option value="2">Tareas por Analyst</option>
                     <option value="3">Reporte por ciudad</option>
-                    <option value="4">Usuarios</option>
                 </select>
             </div>
         </div>
@@ -69,20 +68,25 @@
                 Paso 3
             </div>
             <div class="panel-body">
-                <h4>Criterio de búsqueda</h4>
-
+                <h4>Variables</h4>
                 <div class="input-group add-on">
-                    <input id="txtBusqueda" type="text" class="form-control" placeholder="Búsqueda" name="srch-term" id="srch-term">
-
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <small class="pull-right">Se autocompletará por <span id="criterio"></span></small>
-                <div id="divTodos" class="hidden">
-                    <input type="checkbox" id="chkTodos" value="">
-                    Todos
+                    ﻿<table id="tblCriterio"
+                            data-show-refresh="false"
+                            data-search="false"
+                            data-show-columns="false"
+                            data-select-item-name="toolbar1"
+                            data-pagination="true"
+                            data-sort-name="name"
+                            data-sort-order="desc">
+                        <thead>
+                        <tr>
+                            <th data-field="state" data-checkbox="true"
+                                data-formatter="stateFormatter"></th>
+                            <th data-field="id" data-sortable="true">ID</th>
+                            <th data-field="nombre" data-sortable="true">Nombre</th>
+                        </tr>
+                        </thead>
+                    </table>
                 </div>
                 <br/>
                 <br/>
@@ -97,7 +101,7 @@
     <div id="divResultadoReporte" class="col-lg-12 hidden">
         <h2>Reporte generado</h2>
         <span class="clearfix">
-                    <button id="btnExportar" class="btn btn-primary pull-right hidden">
+                    <button id="btnExportar" class="btn btn-success pull-right hidden">
                         <i class="fa fa-file-excel-o"></i> Exportar a excel
                     </button>
                     </span>

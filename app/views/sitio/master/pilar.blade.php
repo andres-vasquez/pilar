@@ -8,7 +8,7 @@
     <% HTML::style('public/css/bootstrap.min.css'); %>
     <% HTML::style('public/css/datepicker3.css'); %>
     <% HTML::style('public/css/styles.css'); %>
-
+    <% HTML::style('public/css/bootstrap-table.css'); %>
     <!--[if lt IE 9]>
     <% HTML::script('public/js/html5shiv.js'); %>
     <% HTML::script('public/js/respond.min.js'); %>

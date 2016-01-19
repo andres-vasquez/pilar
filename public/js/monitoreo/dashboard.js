@@ -60,13 +60,6 @@ $(document).ready(function()
                         ]
                     };
 
-                    var lineChartData1 = {
-                        labels: labels,
-                        datasets: [
-
-                        ]
-                    };
-
                     if(window.myLine){
                         window.myLine.destroy();
                     }
@@ -86,8 +79,10 @@ $(document).ready(function()
     $('body').on('click',".mes",function (event) {
         event.preventDefault();
         event.stopPropagation();
+
         var target = $(this).attr("target");
         var ano = d.getFullYear();
+
         llenarGrafico(ano,parseInt(target));
         $("#btnSelecciondo").html("Seleccionado: " + $(this).html());
         return false;
@@ -99,7 +94,9 @@ $(document).ready(function()
         var mes = d.getMonth()+1;
         $("#btnSelecciondo").html("Seleccionado: " + literalMeses(mes));
         for(var i=mes;i>mes-5;i--)
+        {
             $("#ulMeses").append('<li><a href="#" class="mes" target="'+i+'">'+literalMeses(i)+'</a></li>');
+        }
     };
 
     literalMeses=function(idMes)
@@ -119,6 +116,13 @@ $(document).ready(function()
             case 11: return "Noviembre";
             case 12: return "Diciembre";
         }
+    };
+
+    existeEnArray = function (array, item) {
+        for (var i = 0; i < array.length; i++)
+            if (array[i] == item)
+                return true;
+        return false;
     };
 
     var d = new Date();

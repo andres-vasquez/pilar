@@ -52,7 +52,7 @@
 <% HTML::script('public/js/jquery-1.11.1.min.js'); %>
 <% HTML::script('public/js/bootstrap.min.js'); %>
 <% HTML::script('public/js/md5.js'); %>
-<% HTML::script('public/js/sitio/login.js'); %>
+<% HTML::script('public/js/sitio/login_normal.js'); %>
 <script>
     !function ($) {
         $(document).on("click","ul.nav li.parent > a > span.icon", function(){
