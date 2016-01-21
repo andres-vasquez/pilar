@@ -72,7 +72,6 @@ $(document).ready(function()
                     for (var i = 0; i < lstCatalogos.length; i++) {
 
                         var agrupador=lstCatalogos[i].agrupador.replace(/ /g,"");
-                        console.log(agrupador);
 
                         var html = '';
                         html += '<div class="panel">';
@@ -85,7 +84,7 @@ $(document).ready(function()
                         html += '<div id="collapse' + agrupador + '" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">';
                         html+='<br/><div class="row"><div class="col-lg-6 col-lg-offset-1"> ';
                         html+='<button id="agregar_'+lstCatalogos[i].agrupador+'" class="btn btn-success btn-sm pull-right agregar">+ Agregar item</button>';
-                        html += '<table class="table table-bordered text-center"><thead><tr><th class="col-lg-2 text-center"><small>Id</small></th><th class="col-lg-4 text-center"><small>Nombre</small></th><th class="col-lg-4 text-center"><small>Dependencia</small></th><th class="col-lg-2 text-center"><small>Acciones</small></th></tr></thead>';
+                        html += '<table class="table table-bordered text-center"><thead><tr><th class="col-lg-2 text-center"><small>Id</small></th><th class="col-lg-4 text-center"><small>Nombre</small></th><th class="col-lg-4 text-center"><small>Dependencia</small></th><th class="col-lg-2 text-center" colspan="2"><small>Acciones</small></th></tr></thead>';
 
                         html+='<tbody>';
 
@@ -98,6 +97,7 @@ $(document).ready(function()
                                 html+='<td><small>'+lstCatalogos[i].datos[j].padre+'</small></td>';
                             else
                                 html+='<td><small></small></td>';
+                            html+='<td><button id="editar_'+lstCatalogos[i].datos[j].id+'" class="btn btn-sm btn-info editar"><i class="fa fa-pencil"></i></button></td>';
                             html+='<td><button id="eliminar_'+lstCatalogos[i].datos[j].id+'" class="btn btn-sm btn-danger eliminar"><i class="fa fa-times"></i></button></td>';
                             html+='</tr>';
                         }
@@ -137,7 +137,7 @@ $(document).ready(function()
                     if (parseInt(result.intCodigo) == 1) {
                         var lstCatalogos = result.resultado.catalogos;
                         for(var i=0;i<lstCatalogos.length;i++)
-                          html+='<option value="'+lstCatalogos[i].id+'">'+lstCatalogos[i].label+'</option>';
+                            html+='<option value="'+lstCatalogos[i].id+'">'+lstCatalogos[i].label+'</option>';
 
                         $("#cmbDependencia").html(html);
                         $("#agregarModal").modal("show");
@@ -239,6 +239,108 @@ $(document).ready(function()
             });
         });
     });
+
+    $('body').on('click', '.editar', function()
+    {
+        var id=$(this).attr("id").replace("editar_","");
+        var url="../api/v1/catalogos_lista/"+id;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(result)
+            {
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    var objCatalogo=result.resultado.catalogo;
+                    $("#txtNombreItemCatalogo_editar").val(objCatalogo.label);
+                    if(objCatalogo.agrupador.indexOf("dpto")>-1)
+                    {
+                        var credencial=$("#credencial").val();
+                        var html='<option value="0">Seleccione</option>';
+                        var url="../api/v1/catalogos/"+credencial+"/Departamentos";
+                        $.ajax({
+                            type: "GET",
+                            url: url,
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function(result) {
+                                if (parseInt(result.intCodigo) == 1) {
+                                    var lstCatalogos = result.resultado.catalogos;
+                                    for(var i=0;i<lstCatalogos.length;i++)
+                                            html+='<option value="'+lstCatalogos[i].id+'">'+lstCatalogos[i].label+'</option>';
+                                    $("#cmbDependencia_editar").html(html);
+                                    $('#cmbDependencia_editar option[value="'+objCatalogo.idpadre+'"]').attr('selected', 'selected');
+                                    $("#editarModal").modal("show");
+                                }
+                                else
+                                    mensaje(result.mensaje);
+                            }
+                        });
+                    }
+                    else
+                    {
+                        $("#cmbDependencia_editar").html('<option value="0">Ninguna</option>');
+                        $("#editarModal").modal("show");
+                    }
+
+                    $("#btnEditarItem").click(function(event){
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        if($("#cmbDependencia_editar").val()=="0")
+                        {
+                            if($("#cmbDependencia_editar option:selected").text()!="Ninguna")
+                            {
+                                alert("Seleccione la dependencia");
+                                return;
+                            }
+                        }
+
+                        if($("#txtNombreItemCatalogo_editar").val()=="")
+                        {
+                            alert("Ingrese el nombre del item del catálogo");
+                            return;
+                        }
+
+                        var datos = {
+                            "sistema_id": "8",
+                            "agrupador": objCatalogo.agrupador,
+                            "label": $("#txtNombreItemCatalogo_editar").val(),
+                            "value": objCatalogo.value,
+                            "value2": "drclipping",
+                            "idpadre": $("#cmbDependencia_editar").val()
+                        };
+
+                        var url="../api/v1/catalogos/editar/"+id;
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data:JSON.stringify(datos),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function(result)
+                            {
+                                if(parseInt(result.intCodigo)==1)
+                                {
+                                    $("#editarModal").modal("hide");
+                                    mensaje("editada");
+                                    llenarListaCatalogos();
+                                }
+                            },
+                            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                                console.log(XMLHttpRequest + " "+textStatus);
+                            }
+                        });
+                    });
+                }
+                else
+                    mensaje(result.mensaje);
+            }
+        });
+    });
+
 
 
     mensaje = function (tipo) {

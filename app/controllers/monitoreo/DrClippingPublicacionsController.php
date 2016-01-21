@@ -116,10 +116,12 @@ class DrClippingPublicacionsController extends \BaseController {
 
     public function rechazar($id)
     {
+        $recibido=Input::All();
         $drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
-        $data = array();
 
+        $data = array();
         $data["estado_tarea"] = "2";
+        $data["observaciones"] = $recibido["observaciones"];
         if($drclippingpublicacion->update($data))
         {
             $drclippingpublicacion = DrClippingPublicacion::findOrFail($id);
@@ -137,13 +139,63 @@ class DrClippingPublicacionsController extends \BaseController {
         $rango=$fin-$inicio+1;
 
         $publicaciones=array();
-        $publicaciones_todas = DrClippingPublicacion::whereRaw('estado=1 AND baja_logica=1 AND estado_tarea=? ORDER BY id ASC',array($estado))->get();
-        $publicaciones["total"]=count($publicaciones_todas);
-
+        $query = DB::connection('DrClipping')->select('SELECT count(0) as cantidad FROM t_publicacion WHERE estado=1 AND baja_logica=1 AND estado_tarea=?', array($estado));
+        if (sizeof($query) > 0) {
+            foreach ($query as $dato) {
+                $publicaciones["total"] = $dato->cantidad;
+            }
+        }
         $publicaciones_filtro = DrClippingPublicacion::whereRaw('estado=1 AND baja_logica=1 AND estado_tarea=? ORDER BY id ASC LIMIT ? OFFSET ? ',array($estado,$rango,$inicio-1))->get();
 
         $publicaciones["publicacion"]=$publicaciones_filtro;
         return View::make('ws.json', array("resultado"=>compact('publicaciones')));
     }
 
+
+
+    public function publicacionesFiltro($estado,$inicio,$fin,$filtro,$valor)
+    {
+        $rango=$fin-$inicio+1;
+
+        $publicaciones=array();
+        switch($filtro)
+        {
+            case "empresa":
+                $query = DB::connection('DrClipping')->select("SELECT count(0) as cantidad FROM t_publicacion WHERE empresa LIKE '%".$valor."%' AND estado=1 AND baja_logica=1 AND estado_tarea=?", array($estado));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato) {
+                        $publicaciones["total"] = $dato->cantidad;
+                    }
+                }
+
+                $publicaciones_filtro = DrClippingPublicacion::whereRaw("estado=1 AND baja_logica=1 AND estado_tarea=?  AND empresa LIKE '%".$valor."%' ORDER BY id ASC LIMIT ? OFFSET ? ",array($estado,$rango,$inicio-1))->get();
+                $publicaciones["publicacion"]=$publicaciones_filtro;
+                break;
+            case "fecha":
+                $fecha=date('d/m/Y',strtotime($valor));
+                $query = DB::connection('DrClipping')->select("SELECT count(0) as cantidad FROM t_publicacion WHERE fecha_publicacion=? AND estado=1 AND baja_logica=1 AND estado_tarea=?", array($fecha,$estado));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato) {
+                        $publicaciones["total"] = $dato->cantidad;
+                    }
+                }
+
+                $publicaciones_filtro = DrClippingPublicacion::whereRaw("estado=1 AND baja_logica=1 AND estado_tarea=?  AND fecha_publicacion=? ORDER BY id ASC LIMIT ? OFFSET ? ",array($estado,$fecha,$rango,$inicio-1))->get();
+                $publicaciones["publicacion"]=$publicaciones_filtro;
+
+                break;
+            case "medio":
+                $query = DB::connection('DrClipping')->select("SELECT count(0) as cantidad FROM t_publicacion WHERE medio_id=? AND estado=1 AND baja_logica=1 AND estado_tarea=?", array($valor,$estado));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato) {
+                        $publicaciones["total"] = $dato->cantidad;
+                    }
+                }
+
+                $publicaciones_filtro = DrClippingPublicacion::whereRaw("estado=1 AND baja_logica=1 AND estado_tarea=?  AND medio_id=? ORDER BY id ASC LIMIT ? OFFSET ? ",array($estado,$valor,$rango,$inicio-1))->get();
+                $publicaciones["publicacion"]=$publicaciones_filtro;
+                break;
+        }
+        return View::make('ws.json', array("resultado"=>compact('publicaciones')));
+    }
 }

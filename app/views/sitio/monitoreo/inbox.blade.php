@@ -20,12 +20,8 @@
             overflow-y: scroll;
         }
 
-        .zoomContainer{
-            z-index: 9999;
-        }
-        .zoomWindow{
-            z-index: 9999;
-        }
+        .zoomContainer{ z-index: 9999;}
+        .zoomWindow{ z-index: 9999;}
     </style>
 @stop
 
@@ -33,6 +29,8 @@
     <li class="active">Inbox</li>
     <input type="hidden" id="credencial" value="<% Session::get("credencial")%>"/>
     <input type="hidden" id="usuario_id" value="<% Session::get("id_usuario")%>"/>
+    <input type="hidden" id="perfil_admin" value="<% $data["perfil_admin"]%>"/>
+
 @stop
 
 @section('titulo')
@@ -41,6 +39,45 @@
 
 @section('contenido1')
 
+    <div class="col-xs-12 col-md-12 col-lg-12 filtros">
+        <button id="btnAplicarFiltros" class="btn btn-sm btn-default"><i class="fa fa-filter"></i> Filtros</button>
+
+        <button id="btnFiltroActivo" class="btn btn-sm btn-warning hidden"><strong><i class="fa fa-filter"></i> Filtro activo!</strong></button>
+        <div id="panelFiltros" class="form-horizontal alert alert-warning hidden">
+            <div class="row">
+
+                <div id="panelFiltro1" class="col-lg-3">
+                    <select id="cmbFiltro1" class="form-control">
+                        <option value="0">Seleccione</option>
+                        <option value="1">Nombre Empresa</option>
+                        <option value="2">Fecha Publicación</option>
+                        <option value="3">Medio</option>
+                    </select>
+                </div>
+                <div id="panelFiltro2" class="col-lg-2 hidden">
+                    <select id="cmbFiltro2" class="form-control">
+                    </select>
+                </div>
+                <div id="panelFiltro3" class="col-lg-2 hidden">
+                    <select id="cmbFiltro3" class="form-control">
+                    </select>
+                </div>
+                <div id="panelFiltro4"  class="col-lg-3 hidden">
+                    <select id="cmbFiltro4" class="form-control">
+                    </select>
+                </div>
+                <div id="panelFiltro5" class=" col-lg-3 input-group hidden">
+                    <input id="txtFiltro" type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button id="btnBusquedaFiltro" class="btn btn-default" type="button">Buscar</button>
+                    </span>
+                </div>
+                <div id="panelFiltro6" class="col-lg-2 hidden">
+                    <button id="btnBusquedaFiltro1" class="btn btn-default" type="button">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="col-xs-12 col-md-6 col-lg-3 lateral">
 
@@ -197,8 +234,15 @@
                     <div class="form-group">
                         <label for="btnEnviarAnalisis" class="col-sm-2 control-label"></label>
                         <div class="col-sm-10">
+
+
                             <button type="submit" id="btnEnviarAnalisis" class="btn btn-success right">Enviar formulario de análisis</button>
                             <button type="button" id="btnEnviarNegativa" class="btn btn-danger right">Enviar como Rechazada</button>
+
+                            @if($data["perfil_admin"])
+                                <button type="button" id="btnHabilitarEdicion" class="btn btn-default right hidden">Editar Análisis</button>
+                                <button type="button" id="btnEditarAnalisis" class="btn btn-success right hidden">Guardar cambios</button>
+                            @endif
                         </div>
                     </div>
 
@@ -289,8 +333,8 @@
         </div>
     </div>
 
-    <!-- Modal Zoom -->
-    <div class="modal fade" id="zoomModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <!-- Modal Editar Imagen -->
+    <div class="modal fade" id="editarImagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -316,6 +360,29 @@
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                     </button>
                     <button type="button" class="btn btn-success hidden" id="btnGuardarImagen">Guardar cambios</button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Zoom Imagen -->
+    <div class="modal fade" id="zoomModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía
+                    </h4>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <img id="imgPreviewZoom" class="img-responsive" width="100%" src=""/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                     </button>
                 </div>
             </div>
@@ -444,7 +511,7 @@
     </div>-->
 @stop
 @section('pie')
-    <!-- <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>-->
+    <% HTML::script('public/lib/bower_components/elevatezoom-master/jquery.elevateZoom-3.0.8.min.js'); %>
     <% HTML::script('public/lib/chosen/chosen.jquery.js'); %>
     <!-- <% HTML::script('public/lib/rotate/jquery.rotate.1-1.js'); %> -->
     <% HTML::script('public/lib/cropper/dist/cropper.min.js'); %>

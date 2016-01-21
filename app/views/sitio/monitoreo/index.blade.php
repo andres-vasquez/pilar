@@ -41,7 +41,7 @@
                     <em class="glyphicon glyphicon-file glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large" id="numLikes">0</div>
+                    <div class="large" id="numRevistas">0</div>
                     <div class="text-muted">Anuncios en Revistas</div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <em class="glyphicon glyphicon-align-left glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large" id="numNoticias">0</div>
+                    <div class="large" id="numPeriodico">0</div>
                     <div class="text-muted">Anuncios en Periódicos</div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     <em class="glyphicon glyphicon-user glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large" id="numExpositores">0</div>
+                    <div class="large" id="numUsuarios">0</div>
                     <div class="text-muted">Usuarios</div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                     <em class="glyphicon glyphicon-tag glyphicon-l"></em>
                 </div>
                 <div class="col-sm-9 col-lg-7 widget-right">
-                    <div class="large" id="numAnuncios">0</div>
+                    <div class="large" id="numTotal">0</div>
                     <div class="text-muted">Anuncios en total</div>
                 </div>
             </div>

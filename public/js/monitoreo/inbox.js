@@ -23,6 +23,7 @@ $.datepicker.setDefaults($.datepicker.regional['es']);
 var lstTags=[];
 var lstTareas=[];
 var objPublicacionGlobal=null;
+var objAnalisisGlobal=null;
 var foto="";
 var url_foto="";
 
@@ -32,6 +33,10 @@ var total=0;
 var inicio=1;
 var fin=15;
 var cursor=fin+1;
+
+var filtro=false
+var tipo_filtro="";
+var valor="";
 
 $(document).ready(function()
 {
@@ -64,12 +69,122 @@ $(document).ready(function()
                 cargarDetallePublicacion(lstTareas[i]);
     });
 
+
+    //**************************** FILTROS ***********************
+    $("#btnAplicarFiltros").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        llenarCatalogos('cmbFiltro2',"Departamentos",0);
+        llenarCatalogos('cmbFiltro3',"Tipo de medio",0);
+
+        if($("#panelFiltros").hasClass("hidden"))
+            $("#panelFiltros").removeClass("hidden");
+        else
+            $("#panelFiltros").addClass("hidden");
+    });
+
+    $("#cmbFiltro1").change(function(){
+        $("#panelFiltro2,#panelFiltro3,#panelFiltro4,#panelFiltro5").addClass("hidden");
+        switch (parseInt($(this).val()))
+        {
+            case 1:
+                $("#panelFiltro5").removeClass("hidden");
+                $("#txtFiltro" ).datepicker( "destroy" );
+                $("#txtFiltro" ).removeClass("hasDatepicker").val("");
+                break;
+            case 2:
+                $("#panelFiltro5").removeClass("hidden");
+                $("#txtFiltro" ).datepicker({
+                    format: 'dd/mm/yyyy',
+                    maxDate: '0'
+                });
+                break;
+            case 3:
+                $("#panelFiltro2,#panelFiltro3,#panelFiltro4,#panelFiltro6").removeClass("hidden");
+                break;
+        }
+    });
+
+    $("#cmbFiltro2,#cmbFiltro3").change(function(event){
+        var idCiudad=$("#cmbFiltro2").val();
+        var idTipoMedio=$("#cmbFiltro3").val();
+
+        if(idTipoMedio!="0" && idCiudad!="0")
+        {
+            if($("#cmbFiltro3 option:selected").text()=="Periódico")
+                llenarCatalogos('cmbFiltro4',"Periodicos por dpto",idCiudad);
+            else
+                llenarCatalogos('cmbFiltro4',"Revistas por dpto",idCiudad);
+        }
+    });
+
+
+    $("#btnBusquedaFiltro").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        $("#cmbFiltro1,#cmbFiltro2,#cmbFiltro3,#cmbFiltro4,#txtFiltro,#btnBusquedaFiltro,#btnBusquedaFiltro1").attr("disabled",true);
+
+        filtro=true;
+
+        switch (parseInt($("#cmbFiltro1").val()))
+        {
+            case 1: tipo_filtro="empresa"; valor=$("#txtFiltro").val(); break;
+            case 2:
+                tipo_filtro="fecha";
+
+                var arrFecha=$("#txtFiltro").val().split("/");
+                valor=arrFecha[2]+"-"+arrFecha[1]+"-"+arrFecha[0];
+                alert(valor);
+                break;
+        }
+        $("#btnFiltroActivo").removeClass("hidden");
+        llenarLista(0,inicio,fin);
+        llenarCantidadPendientes();
+    });
+
+    $("#btnBusquedaFiltro1").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        $("#cmbFiltro1,#cmbFiltro2,#cmbFiltro3,#cmbFiltro4,#txtFiltro,#btnBusquedaFiltro,#btnBusquedaFiltro1").attr("disabled",true);
+
+        filtro=true;
+        tipo_filtro="medio"; valor=$("#cmbFiltro4").val();
+        $("#btnFiltroActivo").removeClass("hidden");
+        llenarLista(0,inicio,fin);
+        llenarCantidadPendientes();
+    });
+
+    $("#btnFiltroActivo").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        $("#cmbFiltro1,#cmbFiltro2,#cmbFiltro3,#cmbFiltro4,#txtFiltro,#btnBusquedaFiltro,#btnBusquedaFiltro1").removeAttr("disabled");
+        $("#btnFiltroActivo").addClass("hidden");
+
+        filtro=false;
+        tipo_filtro="";
+        valor="";
+        llenarLista(0,inicio,fin);
+        llenarCantidadPendientes();
+    });
+
+
     llenarLista=function(estado,inicio,fin)
     {
         var html='';
+
+        var url="";
+        if(!filtro)
+            url="../ws/drclipling/publicacion/"+estado+"/"+inicio+"/"+fin;
+        else
+            url="../ws/drclipling/publicacion/"+estado+"/"+inicio+"/"+fin+"/"+tipo_filtro+"/"+valor;
+
         $.ajax({
             type: "GET",
-            url: "../ws/drclipling/publicacion/"+estado+"/"+inicio+"/"+fin,
+            url: url,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (result) {
@@ -187,6 +302,8 @@ $(document).ready(function()
         }
     });
 
+
+    /******************************** FOTO ***************************/
     $(".foto").click(function(event){
         event.preventDefault();
         event.stopPropagation();
@@ -200,13 +317,46 @@ $(document).ready(function()
         var arrSrc=src.split("?");
         url_foto=arrSrc[0];
         var num = Math.random();
-        $("#imgPreview").attr("src",src+"?v="+num);
-        $("#zoomModal").modal("show");
+
+        if(parseInt($("#cmbFiltroEstados").val())==0)
+        {
+            $("#imgPreview").attr("src",src+"?v="+num);
+            $("#editarImagenModal").modal("show");
+        }
+        else
+        {
+            if(parseInt($("#cmbFiltroEstados").val())==1)
+            {
+                if(parseInt($("#perfil_admin").val())==1) // Perfil ADM
+                {
+                    $("#imgPreview").attr("src",src+"?v="+num);
+                    $("#editarImagenModal").modal("show");
+                }
+                else
+                {
+                    $("#imgPreviewZoom").attr("src",src+"?v="+num);
+                    $("#zoomModal").modal("show");
+                }
+            }
+            else // Rechazadas no se pueden editar
+            {
+                $("#imgPreviewZoom").attr("src",src+"?v="+num);
+                $("#zoomModal").modal("show");
+            }
+        }
     });
+
+    $('#editarImagenModal').on('shown.bs.modal', function() {
+        $('#imgPreview').width("100%");
+        $("#btnGuardarImagen").html("Guardar cambios");
+    });
+
 
     $('#zoomModal').on('shown.bs.modal', function() {
         $('#imgPreview').width("100%");
-        $("#btnGuardarImagen").html("Guardar cambios");
+        $('#imgPreviewZoom').elevateZoom({
+
+        });
     });
 
     $("#btnEditarImagen").click(function(event){
@@ -303,7 +453,6 @@ $(document).ready(function()
                                 lstTareas[i].url_foto2=fotoTomada+"?v="+num;
                         }
 
-
                     var num = Math.random();
                     if(foto=="foto1")
                         $("#imgFoto1").attr("src",fotoTomada+"?v="+num);
@@ -315,7 +464,7 @@ $(document).ready(function()
                     alert("Error al guardar la imagen");
                     btnSubmit.html(htmlError);
                 }
-                $("#zoomModal").modal("hide");
+                $("#editarImagenModal").modal("hide");
             },
             error: function () {
                 btnSubmit.removeAttr('disabled');
@@ -326,7 +475,7 @@ $(document).ready(function()
         });
     });
 
-    jQuery('#zoomModal').on('hidden.bs.modal', function (e) {
+    jQuery('#editarImagenModal').on('hidden.bs.modal', function (e) {
 
         $("#btnGirarDerecha,#btnGirarIzquierda,#btnGuardarImagen,#btnZoomOut,#btnZoomIn").addClass("hidden");
         $("#btnEditarImagen").removeClass("hidden");
@@ -337,6 +486,12 @@ $(document).ready(function()
         $("#imgPreview").cropper('destroy');
     });
 
+    jQuery('#zoomModal').on('hidden.bs.modal', function (e) {
+        jQuery.removeData(jQuery('#imgPreviewZoom'), 'elevateZoom');//remove zoom instance from image
+        jQuery('.zoomContainer').remove();// remove zoom container from DOM
+    });
+
+
 
     //FUNCION PRINCIPAL ********************************************
     cargarDetallePublicacion=function(objPublicacion){
@@ -344,8 +499,11 @@ $(document).ready(function()
         limpiarCampos();
         llenarTags();
 
-        $("#cargandoTarea").addClass("hidden");
+        $("#btnHabilitarEdicion").addClass("hidden");
+        $("#btnEditarAnalisis").addClass("hidden");
 
+
+        $("#cargandoTarea").addClass("hidden");
         objPublicacionGlobal=objPublicacion;
 
         var num = Math.random();
@@ -400,14 +558,30 @@ $(document).ready(function()
             $("#cmbValoracion").addClass("disabled").attr("disabled", true);
             $("#txtObservaciones").addClass("disabled").attr("disabled", true);
 
+            if($("#cmbFiltroEstados").val()==1)
+            {
+                $("#btnHabilitarEdicion").removeClass("hidden");
+                $("#btnEditarAnalisis").addClass("hidden");
+            }
+            else //Negativas no se pueden editar
+            {
+                $("#btnHabilitarEdicion").addClass("hidden");
+                $("#btnEditarAnalisis").addClass("hidden");
+            }
+
+
+
             $.ajax({
                 type: "GET",
                 url: "../ws/drclipling/analisisporpublicacion/" + objPublicacion.id,
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (result) {
-                    if (parseInt(result.intCodigo) == 1) {
+                    if (parseInt(result.intCodigo) == 1)
+                    {
                         var objResultado = result.resultado.analisis[0];
+                        objAnalisisGlobal=objResultado;
+
                         $("#txtNombrePublicacion").val(objResultado.nombre_publicacion);
                         $("#txtTamanio").val(objResultado.tamanio);
                         $("#txtDia").val(objResultado.dia);
@@ -714,15 +888,27 @@ $(document).ready(function()
     $("#btnEnviarNegativa").click(function(event){
         event.preventDefault();
         event.stopPropagation();
+
+        if($("#txtObservaciones").val()=="")
+        {
+            alert("Introduzca sus observaciones para rechazar esta publicación.");
+            return;
+        }
+
         $("#rechazarModal").modal("show");
 
         $("#btnRechazar").click(function(event){
             event.preventDefault();
             event.stopPropagation();
 
+            var data={
+              "observaciones":$("#txtObservaciones").val()
+            };
+
             $("#btnRechazar").attr('disabled',true);
             $.ajax({
                 type: "POST",
+                data: JSON.stringify(data),
                 url: "../ws/drclipling/publicacion/rechazar/"+objPublicacionGlobal.id,
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -747,11 +933,171 @@ $(document).ready(function()
                     $("#btnRechazar").removeAttr('disabled');
                 }
             });
-
-
-
         });
     });
+
+
+    /********************* CONTROLES DE EDICION ******************************/
+    $("#btnHabilitarEdicion").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        $(this).addClass("hidden");
+        $("#tdAcciones,#tdAccionesTitulo").removeClass("hidden");
+        $("#cmbTags").removeClass("disabled").removeAttr("disabled").removeProp('disabled').trigger("chosen:updated");
+        $("#txtNombrePublicacion").removeClass("disabled").removeAttr("disabled");
+        $("#cmbColor").removeClass("disabled").removeAttr("disabled");
+        $("#txtTamanio").removeClass("disabled").removeAttr("disabled");
+        $("#cmbCuerpo").removeClass("disabled").removeAttr("disabled");
+        $("#txtTarifa").removeClass("disabled").removeAttr("disabled");
+        $("#cmbValoracion").removeClass("disabled").removeAttr("disabled");
+        $("#txtObservaciones").removeClass("disabled").removeAttr("disabled");
+
+        var arrTags=objAnalisisGlobal.args.split(",");
+        for(var i=0;i<arrTags.length;i++)
+            $('#cmbTags option[value="'+arrTags[i]+'"]').attr('selected', 'selected').trigger("chosen:updated");
+
+        $("#btnEditarAnalisis").removeClass("hidden");
+    });
+
+
+    $("#btnEditarAnalisis").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        if($("#cmbTags").val()==null)
+        {
+            alert("Seleccione Tags para la publicación");
+            return;
+        }
+
+        if($("#txtNombrePublicacion").val()=="")
+        {
+            alert("Ingrese un nombre para la publicación");
+            return;
+        }
+
+        if($("#cmbColor").val()=="0")
+        {
+            alert("Seleccione el color");
+            return;
+        }
+
+        if($("#cmbCuerpo").val()=="0")
+        {
+            alert("Seleccione la ubicación (cuerpo)");
+            return;
+        }
+
+        if($("#txtTarifa").val()=="")
+        {
+            alert("Ingrese la tarifa");
+            return;
+        }
+
+        if($("#cmbValoracion").val()=="0")
+        {
+            alert("Seleccione la valoración");
+            return;
+        }
+
+
+        $("#btnEnviarAnalisis").attr('disabled', 'disabled');
+
+        //Nuevos Tags
+        var lstAntiguos=[];
+        var lstEnviar=[];
+        var lstTags=$("#cmbTags").val();
+        for(var i=0;i<lstTags.length;i++) {
+            if(""+lstTags[i].indexOf("nuevo_")!=-1)
+                lstEnviar.push({"nombre":lstTags[i].replace("nuevo_","")});
+            else
+                lstAntiguos.push(lstTags[i]);
+        }
+
+        if(lstEnviar.length>0)
+        {
+            var datos={"lstTags":JSON.stringify(lstEnviar)};
+            var url="../ws/drclipling/tags";
+            $.ajax({
+                type: "POST",
+                url: url,
+                data:JSON.stringify(datos),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(result)
+                {
+                    for(var j=0;j<result.length;j++)
+                        lstAntiguos.push(result[j].id);
+                    editarAnalisis(lstAntiguos,objAnalisisGlobal.id);
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    console.log(XMLHttpRequest + " "+textStatus);
+                }
+            });
+        }
+        else
+        {
+            editarAnalisis(lstTags,objAnalisisGlobal.id);
+        }
+    });
+
+    editarAnalisis=function(lstTagsSeleccionados,id)
+    {
+        var tags="";
+        try
+        {
+            for(var i=0;i<lstTagsSeleccionados.length;i++)
+                tags+=lstTagsSeleccionados[i]+",";
+        }catch (ex){}
+        tags=tags.substring(0,tags.length-1);
+
+        var datos = {
+            "usuario_id": $("#usuario_id").val(),
+            "publicacion_id": objPublicacionGlobal.id,
+            "tipo_noticia_id": objPublicacionGlobal.tipo_noticia_id,
+            "tipo_noticia": objPublicacionGlobal.tipo_noticia,
+            "nombre_publicacion": $("#txtNombrePublicacion").val(),
+            "color_id": $("#cmbColor").val(),
+            "color": $("#cmbColor option:selected").text(),
+            "tamanio": $("#txtTamanio").val(),
+            "cuerpo_id": $("#cmbCuerpo").val(),
+            "cuerpo": $("#cmbCuerpo option:selected").text(),
+            "dia": $("#txtDia").val(),
+            "tarifa_id": 0,
+            "tarifa": $("#txtTarifa").val(),
+            "valoracion_id": $("#cmbValoracion").val(),
+            "valoracion": $("#cmbValoracion option:selected").text(),
+            "args": tags,
+            "comentario": $("#txtObservaciones").val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "../ws/drclipling/analisis/"+id,
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                if (parseInt(result.intCodigo) == 1) {
+                    mensaje("editada");
+                    llenarLista(1,inicio,fin);
+                    $("#btnEnviarAnalisis").removeAttr('disabled');
+                }
+                else
+                {
+                    mensaje(result.resultado.errores);
+                    $("#btnEnviarAnalisis").removeAttr('disabled');
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " " + textStatus);
+                mensaje("error");
+                $("#btnEnviarAnalisis").removeAttr('disabled');
+            }
+        });
+    };
 
 
     mensaje = function (tipo) {
@@ -782,7 +1128,7 @@ $(document).ready(function()
             html += '<button type="button" class="close" data-dismiss="alert">&times;</button>';
             html += '<strong>¡Error!</strong> ' + tipo;
         }
-        $("#mensaje").html(html);
+        $("#mensaje").html(html).focus();
     };
 
     limpiarCampos=function()
@@ -885,7 +1231,6 @@ $(document).ready(function()
         var tags="";
         try
         {
-            var cmbEtiquetas=$("#cmbDia").val();
             for(var i=0;i<lstTagsSeleccionados.length;i++)
                 tags+=lstTagsSeleccionados[i]+",";
         }catch (ex){}
@@ -939,10 +1284,17 @@ $(document).ready(function()
     };
 
     llenarCantidadPendientes=function() {
+
+        var url="";
+        if(!filtro)
+            url="../ws/drclipling/reportes/conteoInbox";
+        else
+            url="../ws/drclipling/reportes/conteoInbox/"+tipo_filtro+"/"+valor;
+
         var html='';
         $.ajax({
             type: "GET",
-            url: "../ws/drclipling/reportes/conteoInbox",
+            url: url,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (result) {
@@ -953,7 +1305,7 @@ $(document).ready(function()
                         case 1: html+='<option value="1">Tareas realizadas ('+result[i].cantidad+')</option>'; break;
                         case 2: html+='<option value="2">Tareas rechazada ('+result[i].cantidad+')</option>'; break;
                     }
-                $("#cmbFiltroEstados").html(html);
+                $("#cmbFiltroEstados").html(html).trigger("change");
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest + " " + textStatus);

@@ -95,8 +95,40 @@ $(document).ready(function()
         $("#btnSelecciondo").html("Seleccionado: " + literalMeses(mes));
         for(var i=mes;i>mes-5;i--)
         {
-            $("#ulMeses").append('<li><a href="#" class="mes" target="'+i+'">'+literalMeses(i)+'</a></li>');
+            if(i>0)
+                $("#ulMeses").append('<li><a href="#" class="mes" target="'+i+'">'+literalMeses(i)+'</a></li>');
+            else
+            {
+                var cursor=12+i;
+                $("#ulMeses").append('<li><a href="#" class="mes" target="'+cursor+'">'+literalMeses(cursor)+'</a></li>');
+            }
         }
+    };
+
+    llenarContador=function(campo,criterio)
+    {
+        $("#"+campo).html("");
+        $("#"+campo).append('<i class="fa fa-spinner fa-spin fa-1x"></i>');
+
+        var url = "../pilar/ws/drclipling/reportes/dashboard/" + criterio;
+        $.ajax({
+            type: "GET",
+            url: url,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    var cantidad = parseInt(result.resultado.resultado.cantidad);
+                    $("#"+campo).html(cantidad);
+                }
+                else
+                    $("#"+campo).html("0");
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " " + textStatus);
+            }
+        });
     };
 
     literalMeses=function(idMes)
@@ -130,5 +162,10 @@ $(document).ready(function()
     var ano = d.getFullYear();
     llenarGrafico(ano, mes + 1);
     llenarLinksMeses();
+
+    llenarContador("numRevistas","revistas");
+    llenarContador("numPeriodico","periodico");
+    llenarContador("numUsuarios","usuarios");
+    llenarContador("numTotal","total");
 });
 

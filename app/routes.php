@@ -174,7 +174,13 @@ Route::group(array('before' => 'session'), function () {
             return View::make('sitio.monitoreo.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/inbox', function () {
-            return View::make('sitio.monitoreo.inbox')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+
+            $perfil_admin=false;
+            $lstPerfiles=Session::get('perfiles');
+            foreach($lstPerfiles as $perfil)
+                if($perfil["perfil_id"]==20)//Admin
+                    $perfil_admin=true;
+            return View::make('sitio.monitoreo.inbox')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus'), 'perfil_admin'=> $perfil_admin));
         });
         Route::get('/usuarios', function () {
             return View::make('sitio.monitoreo.usuarios')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
@@ -403,6 +409,9 @@ Route::group(array('prefix' => 'api/v1'), function () {
     Route::get('/catalogos/{sistema}/{agrupador}', 'CatalogosController@index');
     Route::get('/catalogos/{sistema}/{agrupador}/{idPadre}', array('as' => 'show', 'uses' => 'CatalogosController@recursivo'))->where(array('idPadre' => '[0-9]+'));
     Route::get('/catalogos/thumbnail/{sistema}/{agrupador}', 'CatalogosController@thumbnail');
+    Route::get('/catalogos_lista/{id}', array('as' => 'show', 'uses' => 'CatalogosController@show'))->where(array('id' => '[0-9]+'));
+
+    Route::post('/catalogos/editar/{id}', array('as' => 'show', 'uses' => 'CatalogosController@update'));
     Route::post('/catalogos/eliminar/{id}', array('as' => 'show', 'uses' => 'CatalogosController@destroy'));
     Route::post('/catalogos','CatalogosController@store');
 });
@@ -563,6 +572,8 @@ Route::get('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'D
 Route::post('/ws/drclipling/publicacion/{id}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@update'));
 Route::post('/ws/drclipling/publicacion/rechazar/{id}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@rechazar'));
 Route::get('/ws/drclipling/publicacion/{estado}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@publicaciones'));
+Route::get('/ws/drclipling/publicacion/{estado}/{inicio}/{fin}/{filtro}/{valor}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@publicacionesFiltro'));
+
 
 //Ws Tags
 Route::get('/ws/drclipling/tags', 'DrClippingTagsController@index');
@@ -570,7 +581,9 @@ Route::post('/ws/drclipling/tags', 'DrClippingTagsController@store');
 
 //WS Reportes
 Route::get('/ws/drclipling/reportes/dashboard/{ano}/{mes}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@graficoDashboard'));
+Route::get('/ws/drclipling/reportes/dashboard/{criterio}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@dashboardContadores'));
 Route::get('/ws/drclipling/reportes/conteoInbox', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@conteoEstado'));
+Route::get('/ws/drclipling/reportes/conteoInbox/{filtro}/{valor}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@conteoEstadoFiltro'));
 Route::get('/ws/drclipling/reportes/variablesReporte/{criterio}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@variablesReporte'));
 Route::post('/ws/drclipling/reportes', 'DrClippingAnalisesController@generarReporte');
 

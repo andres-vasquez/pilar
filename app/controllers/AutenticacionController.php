@@ -78,6 +78,7 @@ class AutenticacionController extends \BaseController
         $datos=array();
         $lstPerfilesAsignados = AsignacionPerfiles::whereRaw('usuario_id=? AND estado=1 AND baja_logica!=0', array($id_usuario))->get();
 
+        Session::put('perfiles',$lstPerfilesAsignados);
         foreach ($lstPerfilesAsignados as $Perfil)
         {
             //Obtenemos los datos del perfil

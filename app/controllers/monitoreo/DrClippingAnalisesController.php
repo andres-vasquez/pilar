@@ -221,6 +221,102 @@ class DrClippingAnalisesController extends \BaseController {
         return json_encode($resultado);
     }
 
+    public function conteoEstadoFiltro($filtro,$valor)
+    {
+        $resultado = array();
+
+        switch($filtro) {
+            case "empresa":
+                $query = DB::connection('DrClipping')->select("SELECT count(0) as cantidad, estado_tarea FROM t_publicacion WHERE empresa LIKE '%".$valor."%' GROUP BY estado_tarea ORDER BY estado_tarea ASC", array());
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato)
+                    {
+                        $aux = array();
+                        $aux["cantidad"] = $dato->cantidad;
+                        $aux["estado_tarea"] = $dato->estado_tarea;
+                        array_push($resultado, $aux);
+                    }
+                    DB::disconnect('DrClipping');
+                }
+                break;
+            case "fecha":
+                $fecha=date('d/m/Y',strtotime($valor));
+                $query = DB::connection('DrClipping')->select("SELECT count(0) as cantidad, estado_tarea FROM t_publicacion WHERE fecha_publicacion=? GROUP BY estado_tarea ORDER BY estado_tarea ASC", array($valor));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato)
+                    {
+                        $aux = array();
+                        $aux["cantidad"] = $dato->cantidad;
+                        $aux["estado_tarea"] = $dato->estado_tarea;
+                        array_push($resultado, $aux);
+                    }
+                    DB::disconnect('DrClipping');
+                }
+                break;
+            case "medio":
+                $query = DB::connection('DrClipping')->select("SELECT count(0) as cantidad, estado_tarea FROM t_publicacion WHERE medio_id=? GROUP BY estado_tarea ORDER BY estado_tarea ASC", array($valor));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato)
+                    {
+                        $aux = array();
+                        $aux["cantidad"] = $dato->cantidad;
+                        $aux["estado_tarea"] = $dato->estado_tarea;
+                        array_push($resultado, $aux);
+                    }
+                    DB::disconnect('DrClipping');
+                }
+                break;
+        }
+        return json_encode($resultado);
+    }
+
+
+    public function dashboardContadores($criterio)
+    {
+        $resultado = array();
+        $hoy=date('Y-m-d');
+        switch($criterio)
+        {
+            case "revistas":
+                $query = DB::connection('DrClipping')->select('SELECT count(0) as cantidad FROM t_publicacion WHERE tipo_medio_id=54 AND DATE(created_at)=?', array($hoy));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato) {
+                        $resultado["cantidad"] = $dato->cantidad;
+                    }
+                }
+                else
+                    $resultado["cantidad"] = 0;
+                break;
+            case "periodico":
+                $query = DB::connection('DrClipping')->select('SELECT count(0) as cantidad FROM t_publicacion WHERE tipo_medio_id!=54 AND DATE(created_at)=?', array($hoy));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato) {
+                        $resultado["cantidad"] = $dato->cantidad;
+                    }
+                }
+                else
+                    $resultado["cantidad"] = 0;
+                break;
+            case "usuarios":
+                $query = DB::connection('DrClipping')->select('SELECT DISTINCT usuario_id FROM t_publicacion WHERE DATE(created_at)=?', array($hoy));
+                $cantidad=0;
+                foreach ($query as $dato) {
+                    $cantidad++;
+                }
+                $resultado["cantidad"] = $cantidad;
+                break;
+            case "total":
+                $query = DB::connection('DrClipping')->select('SELECT count(0) as cantidad FROM t_publicacion WHERE DATE(created_at)=?', array($hoy));
+                if (sizeof($query) > 0) {
+                    foreach ($query as $dato) {
+                        $resultado["cantidad"] = $dato->cantidad;
+                    }
+                }
+                break;
+        }
+        return View::make('ws.json', array("resultado"=>compact('resultado')));
+    }
+
     public function variablesReporte($criterio)
     {
         $resultado = array();

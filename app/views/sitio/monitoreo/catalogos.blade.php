@@ -166,6 +166,45 @@
         </div>
     </div>
 
+    <!-- Modal editar -->
+    <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Editar item del catálogo <span id="txtNombreCatalogo"></span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+
+                        <div class="form-group">
+                            <label for="cmbDependencia_editar" class="col-sm-4 control-label">Dependencia</label>
+                            <div class="col-sm-8">
+                                <select id="cmbDependencia_editar" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtNombreItemCatalogo_editar" class="col-sm-4 control-label">Nombre</label>
+                            <div class="col-sm-8">
+                                <input id="txtNombreItemCatalogo_editar" class="form-control" required/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarItem">
+                        Guardar cambios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @stop
 @section('contenido2')
