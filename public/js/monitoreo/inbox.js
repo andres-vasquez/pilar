@@ -526,7 +526,7 @@ $(document).ready(function()
             $("#txtNombrePublicacion").removeClass("disabled").removeAttr("disabled");
             $("#cmbColor").removeClass("disabled").removeAttr("disabled");
             $("#txtTamanio").removeClass("disabled").removeAttr("disabled");
-            $("#cmbCuerpo").removeClass("disabled").removeAttr("disabled");
+            //$("#cmbCuerpo").removeClass("disabled").removeAttr("disabled");
             $("#txtTarifa").removeClass("disabled").removeAttr("disabled");
             $("#cmbValoracion").removeClass("disabled").removeAttr("disabled");
             $("#txtObservaciones").removeClass("disabled").removeAttr("disabled");
@@ -553,7 +553,7 @@ $(document).ready(function()
             $("#txtNombrePublicacion").addClass("disabled").attr("disabled", true);
             $("#cmbColor").addClass("disabled").attr("disabled", true);
             $("#txtTamanio").addClass("disabled").attr("disabled", true);
-            $("#cmbCuerpo").addClass("disabled").attr("disabled", true);
+            //$("#cmbCuerpo").addClass("disabled").attr("disabled", true);
             $("#txtTarifa").addClass("disabled").attr("disabled", true);
             $("#cmbValoracion").addClass("disabled").attr("disabled", true);
             $("#txtObservaciones").addClass("disabled").attr("disabled", true);
@@ -588,7 +588,7 @@ $(document).ready(function()
                         $("#txtTarifa").val(objResultado.tarifa);
                         $("#txtObservaciones").val(objResultado.comentario);
                         $('#cmbColor option[value="'+objResultado.color_id+'"]').attr('selected', 'selected');
-                        $('#cmbCuerpo option[value="'+objResultado.cuerpo_id+'"]').attr('selected', 'selected');
+                        //$('#cmbCuerpo option[value="'+objResultado.cuerpo_id+'"]').attr('selected', 'selected');
                         $('#cmbValoracion option[value="'+objResultado.valoracion_id+'"]').attr('selected', 'selected');
 
                         var arrTags=objResultado.args.split(",");
@@ -896,46 +896,45 @@ $(document).ready(function()
         }
 
         $("#rechazarModal").modal("show");
-
-        $("#btnRechazar").click(function(event){
-            event.preventDefault();
-            event.stopPropagation();
-
-            var data={
-              "observaciones":$("#txtObservaciones").val()
-            };
-
-            $("#btnRechazar").attr('disabled',true);
-            $.ajax({
-                type: "POST",
-                data: JSON.stringify(data),
-                url: "../ws/drclipling/publicacion/rechazar/"+objPublicacionGlobal.id,
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (result) {
-
-                    if (parseInt(result.intCodigo) == 1)
-                    {
-                        mensaje("ok");
-                        llenarLista(0,inicio,fin);
-                        $("#btnRechazar").removeAttr('disabled');
-                    }
-                    else
-                    {
-                        mensaje(result.resultado.errores);
-                        $("#btnRechazar").removeAttr('disabled');
-                    }
-                    $("#rechazarModal").modal("hide");
-                },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    console.log(XMLHttpRequest + " " + textStatus);
-                    mensaje("error");
-                    $("#btnRechazar").removeAttr('disabled');
-                }
-            });
-        });
     });
 
+    $("#btnRechazar").click(function(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        var data={
+            "observaciones":$("#txtObservaciones").val()
+        };
+
+        $("#btnRechazar").attr('disabled',true);
+        $.ajax({
+            type: "POST",
+            data: JSON.stringify(data),
+            url: "../ws/drclipling/publicacion/rechazar/"+objPublicacionGlobal.id,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+
+                if (parseInt(result.intCodigo) == 1)
+                {
+                    mensaje("ok");
+                    llenarLista(0,inicio,fin);
+                    $("#btnRechazar").removeAttr('disabled');
+                }
+                else
+                {
+                    mensaje(result.resultado.errores);
+                    $("#btnRechazar").removeAttr('disabled');
+                }
+                $("#rechazarModal").modal("hide");
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest + " " + textStatus);
+                mensaje("error");
+                $("#btnRechazar").removeAttr('disabled');
+            }
+        });
+    });
 
     /********************* CONTROLES DE EDICION ******************************/
     $("#btnHabilitarEdicion").click(function(event){
@@ -948,7 +947,7 @@ $(document).ready(function()
         $("#txtNombrePublicacion").removeClass("disabled").removeAttr("disabled");
         $("#cmbColor").removeClass("disabled").removeAttr("disabled");
         $("#txtTamanio").removeClass("disabled").removeAttr("disabled");
-        $("#cmbCuerpo").removeClass("disabled").removeAttr("disabled");
+        //$("#cmbCuerpo").removeClass("disabled").removeAttr("disabled");
         $("#txtTarifa").removeClass("disabled").removeAttr("disabled");
         $("#cmbValoracion").removeClass("disabled").removeAttr("disabled");
         $("#txtObservaciones").removeClass("disabled").removeAttr("disabled");
@@ -983,11 +982,11 @@ $(document).ready(function()
             return;
         }
 
-        if($("#cmbCuerpo").val()=="0")
+        /*if($("#cmbCuerpo").val()=="0")
         {
             alert("Seleccione la ubicación (cuerpo)");
             return;
-        }
+        }*/
 
         if($("#txtTarifa").val()=="")
         {
@@ -1061,8 +1060,10 @@ $(document).ready(function()
             "color_id": $("#cmbColor").val(),
             "color": $("#cmbColor option:selected").text(),
             "tamanio": $("#txtTamanio").val(),
-            "cuerpo_id": $("#cmbCuerpo").val(),
-            "cuerpo": $("#cmbCuerpo option:selected").text(),
+            //"cuerpo_id": $("#cmbCuerpo").val(),
+            //"cuerpo": $("#cmbCuerpo option:selected").text(),
+            "cuerpo_id": 0,
+            "cuerpo": "",
             "dia": $("#txtDia").val(),
             "tarifa_id": 0,
             "tarifa": $("#txtTarifa").val(),
@@ -1137,7 +1138,7 @@ $(document).ready(function()
         $("#txtNombrePublicacion").val("");
         $('#cmbColor option[value=0]').attr('selected', 'selected');
         $("#txtTamanio").val("");
-        $('#cmbCuerpo option[value=0]').attr('selected', 'selected');
+        //$('#cmbCuerpo option[value=0]').attr('selected', 'selected');
         $("#txtDia").val("");
         $("#txtTarifa").val("");
         $('#cmbValoracion option[value=0]').attr('selected', 'selected');
@@ -1166,11 +1167,11 @@ $(document).ready(function()
             return;
         }
 
-        if($("#cmbCuerpo").val()=="0")
+        /*if($("#cmbCuerpo").val()=="0")
         {
             alert("Seleccione la ubicación (cuerpo)");
             return;
-        }
+        }*/
 
         if($("#txtTarifa").val()=="")
         {
@@ -1245,8 +1246,10 @@ $(document).ready(function()
             "color_id": $("#cmbColor").val(),
             "color": $("#cmbColor option:selected").text(),
             "tamanio": $("#txtTamanio").val(),
-            "cuerpo_id": $("#cmbCuerpo").val(),
-            "cuerpo": $("#cmbCuerpo option:selected").text(),
+            //"cuerpo_id": $("#cmbCuerpo").val(),
+            //"cuerpo": $("#cmbCuerpo option:selected").text(),
+            "cuerpo_id": 0,
+            "cuerpo": "",
             "dia": $("#txtDia").val(),
             "tarifa_id": 0,
             "tarifa": $("#txtTarifa").val(),
@@ -1316,7 +1319,7 @@ $(document).ready(function()
     llenarCantidadPendientes();
     //Form Anaylis
     llenarCatalogos('cmbColor',"Color",0);
-    llenarCatalogos('cmbCuerpo',"Ubicacion",0);
+    //llenarCatalogos('cmbCuerpo',"Ubicacion",0);
     llenarCatalogos('cmbValoracion',"Valoracion",0);
     llenarTags();
 

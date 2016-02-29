@@ -189,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group hidden">
                         <label for="cmbCuerpo" class="col-sm-3 control-label">Cuerpo</label>
                         <div class="col-sm-6">
                             <select id="cmbCuerpo" class="form-control"></select>
@@ -343,6 +343,8 @@
                                 aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía
                         <div class=" pull-right" style="margin-right: 12px">
+                            <button type="button" class="btn btn-success hidden" id="btnGuardarImagen">Guardar cambios</button>
+                            </button>
                             <button id="btnEditarImagen" class="btn btn-default"><i class="fa fa-pencil"></i>&nbsp;Editar imagen</button>
 
                             <button id="btnZoomOut" class="btn btn-default hidden"><i class="glyphicon glyphicon-zoom-out"></i></button>
@@ -350,6 +352,8 @@
 
                             <button id="btnGirarIzquierda" class="btn btn-default hidden"><i class="fa fa-undo"></i></button>
                             <button id="btnGirarDerecha" class="btn btn-default hidden"><i class="fa fa-repeat"></i></button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </button>
                         </div>
                     </h4>
                 </div>
@@ -357,10 +361,6 @@
                     <img id="imgPreview" class="img-responsive" width="100%" src="" crossorigin/>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                    </button>
-                    <button type="button" class="btn btn-success hidden" id="btnGuardarImagen">Guardar cambios</button>
-                    </button>
                 </div>
             </div>
         </div>

@@ -171,8 +171,19 @@ Route::group(array('before' => 'session'), function () {
     //************* DR CLIPPING ******************
     Route::group(array('prefix' => 'monitoreo'), function () {
         Route::get('/', function () {
-            return View::make('sitio.monitoreo.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+
+            $perfil_cliente=false;
+            $lstPerfiles=Session::get('perfiles');
+            foreach($lstPerfiles as $perfil)
+                if($perfil["perfil_id"]==19)//cliente
+                    $perfil_cliente=true;
+
+            if(!$perfil_cliente)
+                return View::make('sitio.monitoreo.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            else
+                return Redirect::to('monitoreo/cliente');
         });
+
         Route::get('/inbox', function () {
 
             $perfil_admin=false;
@@ -194,8 +205,25 @@ Route::group(array('before' => 'session'), function () {
         Route::get('/tarifario', function () {
             return View::make('sitio.monitoreo.tarifario')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
+
+        //Interfaces cliente
+        Route::get('/cliente', function () {
+            return View::make('sitio.monitoreo.cliente.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
     });
 
+    //*************** RED NUEVA EMPRESA ***************8
+    Route::group(array('prefix' => 'ne'), function () {
+        Route::get('/', function () {
+            return View::make('sitio.ne.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/noticias', function () {
+            return View::make('sitio.ne.noticias')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/eventos', function () {
+            return View::make('sitio.ne.eventos')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+    });
 
     //*************** GENERAL *******************
 
@@ -448,7 +476,8 @@ Route::post('/ws/tecnobit/adjuntos/eliminar/{id}', array('as' => 'show', 'uses' 
 Route::group(array('prefix' => 'apitecnobit/v1'), function () {
 
     //REST Api usuarios
-    Route::group(array('before'=>'credencial','prefix' => '/usuarios'), function () {
+    Route::group(array('before'=>'credencial','prefix' => '/usuarios'), function ()
+    {
         Route::post('/registrar', 'TecnobitusuariosController@store');
         Route::post('/auth', 'TecnobitusuariosController@autenticacion');
     });
@@ -587,6 +616,7 @@ Route::get('/ws/drclipling/reportes/conteoInbox/{filtro}/{valor}', array('as' =>
 Route::get('/ws/drclipling/reportes/variablesReporte/{criterio}', array('as' => 'show', 'uses' => 'DrClippingAnalisesController@variablesReporte'));
 Route::post('/ws/drclipling/reportes', 'DrClippingAnalisesController@generarReporte');
 
+
 //REST Api Drclipping
 Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), function () {
 
@@ -599,6 +629,11 @@ Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), fu
     Route::group(array('prefix' => '/publicacion'), function () {
         Route::post('/', 'DrClippingPublicacionsController@store');
         Route::get('/{estado}/{inicio}/{fin}', array('as' => 'show', 'uses' => 'DrClippingPublicacionsController@publicaciones'));
+    });
+
+    //WS Reportes Clientes
+    Route::group(array('prefix' => '/reportes'), function () {
+        Route::post('/tipomediociudad', 'DrClippingClienteController@reporteTipoMedioCiudad');
     });
 });
 

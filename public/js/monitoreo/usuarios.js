@@ -67,7 +67,7 @@ $(document).ready(function()
             var tags="";
             try
             {
-                var cmbEtiquetas=$("#cmbDia").val();
+                var lstTagsSeleccionados=$("#cmbTags").val();
                 for(var i=0;i<lstTagsSeleccionados.length;i++)
                     tags+=lstTagsSeleccionados[i]+",";
             }catch (ex){}
