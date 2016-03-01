@@ -135,7 +135,6 @@
                     </div>
                 </div>
 
-
                 <!-- Modal eliminar -->
                 <div class="modal fade" id="eliminarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                      aria-hidden="true">
@@ -158,7 +157,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="modal fade" id="agregar-modal">
                     <div class="modal-dialog modal-lg">
@@ -202,7 +200,8 @@
 
                                                 <div class="form-group">
                                                     <label>Ubicación Georeferenciada</label>
-                                                    <input type="text" id="txtLugar" class="form-control" required/>
+                                                    <br/><button id="btnGeo" class="btn btn-sm btn-warning">Agregar</button>
+                                                    <input type="text" id="txtCoordenadas" class="form-control"/>
                                                 </div>
 
                                                 <table>
@@ -259,8 +258,30 @@
 @stop
 @section('contenido2')
     <!-- Contenido aca-->
+    <!-- Pop up MAPA-->
+    <div class="modal fade" id="divMapa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Seleccionar lugar de evento</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="mapa" style="width: 840px; height: 650px"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnSeleccionarPunto">Seleccionar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 @stop
 @section('pie')
+    <% HTML::script('https://maps.googleapis.com/maps/api/js?sensor=true'); %>
     <% HTML::script('public/lib/bower_components/bootstrap-calendar/js/calendar.js'); %>
     <% HTML::script('public/lib/bower_components/underscore/underscore-min.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap-calendar/js/language/es-ES.js'); %>
@@ -268,5 +289,6 @@
     <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
-    <% HTML::script('public/js/sitio/eventos.js'); %>
+    <% HTML::script('public/js/ne/mapa.js'); %>
+    <% HTML::script('public/js/ne/eventos.js'); %>
 @stop

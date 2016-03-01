@@ -2,411 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/bar-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/bar-alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/bar-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/bar-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/bar-pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/bar-pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/bar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/basicline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/basiclogaxis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/basiclogoptions.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/basicoptions.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/dualaxis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/map-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/map-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/map-pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/map-pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navdocs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navdocsover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navdownload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navdownloadover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navexamples.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navexamplesover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navhome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/navhomeover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/preview-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/preview-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/sample3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/images/samplesm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/images/ui-colorpicker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/images/ui-colorpicker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-icons_228ef1_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-icons_2e83ff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-icons_454545_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-icons_888888_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/images/ui-icons_ffffff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/styles/1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/styles/2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Classes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesA.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesG.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesH.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesJ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesL.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesS.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesSymbols.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesT.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/ClassesV.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingClienteController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Files.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FilesJ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Functions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsC.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsG.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsM.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsN.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsQ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsR.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsS.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/FunctionsZ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/General7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralA.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralB.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralC.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralE.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralF.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralG.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralH.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralJ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralL.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralM.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralN.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralO.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralP.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralQ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralR.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralS.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralSymbols.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralT.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralU.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralV.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralW.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralX.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralY.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/GeneralZ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Hooks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/HooksA.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/HooksE.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/HooksJ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/HooksP.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/KCPsample4.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/LGPL-LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/MIT-LICENSE-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/MIT-LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/NoResults.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Properties.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Properties2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Properties3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Properties4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Properties5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index/Properties6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesA.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesB.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesC.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesD.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesE.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesF.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesG.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesH.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesL.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesM.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesN.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesO.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesP.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesR.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesS.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesT.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesU.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesV.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesW.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesX.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesY.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/search/PropertiesZ.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/ages.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/area.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/axisLabelTests.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/axisLabelsRotatedText.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/axisScalingForceTickAt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/bandedLine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/bar-charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/barLineAnimated.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/barTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/bezierCurve.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/blockPlot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/bubble-plots.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/bubbleChart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/candlestick-charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/candlestick.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/canvas-overlay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/changes-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/changes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/copyright.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/cursor-highlighter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/customHighlighterCursorTrendline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/monitoreo/cliente/dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/dashboardWidget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ne/dashboard_normal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/dashedLines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/data-renderers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/date-axes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/dateAxisLogAxisZooming.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/dateAxisRenderer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/draw-rectangles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ne/eventos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/example.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/examples.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/examples.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/fillBetweenLines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/gpl-2-0-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/gpl-2.0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/hiddenPlotsInTabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/cliente/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ne/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqPlotCssStyling-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jqPlotCssStyling.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqPlotOptions-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jqPlotOptions.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-BezierCurveRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-axisLabelRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-axisTickRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-barRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-blockRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-bubbleRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-canvasAxisLabelRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-canvasAxisTickRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-canvasGridRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-canvasOverlay-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-categoryAxisRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-ciParser-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-core-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-cursor-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-dateAxisRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-divTitleRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-donutRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-dragable-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-enhancedLegendRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-funnelRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-highlighter-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-lineRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-linearAxisRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-logAxisRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-markerRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-mekkoAxisRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-mekkoRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-meterGaugeRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-ohlcRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-pieRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-pointLabels-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-pyramidAxisRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-pyramidGridRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-pyramidRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-shadowRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-shapeRenderer-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-themeEngine-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/jqplot-toImage-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/plugins/jqplot-trendline-js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.BezierCurveRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.BezierCurveRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.barRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.barRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.blockRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.blockRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.bubbleRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.bubbleRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasAxisLabelRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasAxisTickRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasOverlay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasOverlay.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasTextRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.canvasTextRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.categoryAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.categoryAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.ciParser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.ciParser.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.cursor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.cursor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.dateAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.dateAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.donutRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.donutRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.dragable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.dragable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.enhancedLegendRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.funnelRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.funnelRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.highlighter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.highlighter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.json2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.json2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.logAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.logAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.mekkoAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.mekkoAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.mekkoRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.mekkoRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.meterGaugeRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.meterGaugeRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.mobile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.mobile.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.ohlcRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.ohlcRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pieRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pieRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pointLabels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pointLabels.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pyramidAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pyramidAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pyramidGridRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pyramidGridRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pyramidRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.pyramidRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.trendline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/plugins/jqplot.trendline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/jquery-ui-1.9pre.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/jquery-ui-1.9pre.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/jquery-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/jquery-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/smoothness/jquery-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/css/ui-lightness/jquery-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/js/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/jquery.colorpicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/colorpicker/jquery.colorpicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/js/jquery.effects.blind.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jquery-ui/js/jquery.effects.core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jquery.jqplot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jquery.jqplot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jquery.jqplot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jquery.jqplot.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/jsondata.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp.print.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_area.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_area2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_cdf.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_engel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_lorenz.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_pdf.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_pyramid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_pyramid2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_pyramid_by_age.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_pyramid_by_age.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/kcp_quintiles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/line-charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/javascript/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/mekkoCharts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/meterGauge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/multipleBarColors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/nav.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ne/noticias.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ne/noticias_normal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/optionsTutorial-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/optionsTutorial.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/pie-donut-charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/pieTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/pieTest2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/pieTest4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/point-labels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/quintiles.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/resizablePlot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitio/ne/restapi.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/rotated-tick-labels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/rotatedTickLabelsZoom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/javascript/searchdata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/selectorSyntax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shAutoloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shAutoloader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shBrushJScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shBrushJScript.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shBrushXml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shBrushXml.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shCore.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shCore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shCore.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/scripts/shCore.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shCoreDefault.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shCoreDefault.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shThemeDefault.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shThemeDefault.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shThemejqPlot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/syntaxhighlighter/styles/shThemejqPlot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/smoothedLine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/theming.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/topbanner.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/docs/files/usage-txt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/usage.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/waterfall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/waterfall2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/yahooData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/yahooData.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/zoom1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/zoomOptions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/zoomProxy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jqplot/examples/zooming.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Eventos.php" afterPath="$PROJECT_DIR$/app/models/Eventos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ne/mapa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/ne/eventos.js" afterPath="$PROJECT_DIR$/public/js/ne/eventos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/usuarios.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pilar.iws" />
@@ -438,12 +38,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sitio/ne/index.blade.php">
+      <file leaf-file-name="eventos.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-45.0" vertical-offset="0" max-vertical-offset="1425">
-              <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
-              <folding />
+            <state vertical-scroll-proportion="-13.294118" vertical-offset="3567" max-vertical-offset="4500">
+              <caret line="283" column="78" selection-start-line="283" selection-start-column="78" selection-end-line="283" selection-end-column="78" />
+              <folding>
+                <element signature="e#15894#15929#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -451,10 +53,10 @@
       <file leaf-file-name="inbox.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9607842" vertical-offset="2663" max-vertical-offset="7890">
-              <caret line="191" column="49" selection-start-line="191" selection-start-column="49" selection-end-line="191" selection-end-column="49" />
+            <state vertical-scroll-proportion="-10.625" vertical-offset="4875" max-vertical-offset="7890">
+              <caret line="342" column="77" selection-start-line="342" selection-start-column="77" selection-end-line="342" selection-end-column="77" />
               <folding>
-                <element signature="e#15527#15553#0#HTML" expanded="true" />
+                <element signature="e#15579#15605#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -463,8 +65,8 @@
       <file leaf-file-name="inbox.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37777779" vertical-offset="19590" max-vertical-offset="20295">
-              <caret line="1323" column="17" selection-start-line="1323" selection-start-column="17" selection-end-line="1323" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.18020679" vertical-offset="4738" max-vertical-offset="20475">
+              <caret line="324" column="49" selection-start-line="324" selection-start-column="49" selection-end-line="324" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -478,8 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/js/tecnobit/publicidad.js" />
-        <option value="$PROJECT_DIR$/app/controllers/BaseController.php" />
         <option value="$PROJECT_DIR$/app/views/ws/json.blade.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/app/models/DrClippingUsuario.php" />
@@ -526,6 +126,8 @@
         <option value="$PROJECT_DIR$/public/js/ne/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ne/index.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/public/js/ne/mapa.js" />
+        <option value="$PROJECT_DIR$/public/js/ne/eventos.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
@@ -612,6 +214,32 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-ui-1.11.4.custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -650,6 +278,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="monitoreo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -704,6 +346,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sitio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pilar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sitio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ne" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -862,12 +530,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Tecnobit avance en adjuntos y usuarios">
-      <created>1446610654857</created>
-      <option name="number" value="00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1446610654860</updated>
     </task>
     <task id="LOCAL-00110" summary="Fipaz 1000 notificaciones">
       <created>1446681715911</created>
@@ -1157,7 +819,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453344076424</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Cambios inmediatos Kathya">
+      <created>1456782858980</created>
+      <option name="number" value="00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1456782858983</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1190,8 +858,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30613893" sideWeight="0.8739726" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30613893" sideWeight="0.12602739" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2536349" sideWeight="0.8729508" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2536349" sideWeight="0.12704918" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1224,9 +892,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.315832" sideWeight="0.49905837" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989071" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17729394" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1277,13 +945,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7079646" vertical-offset="1035" max-vertical-offset="1725">
-          <caret line="101" column="10" selection-start-line="81" selection-start-column="4" selection-end-line="101" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2873" max-vertical-offset="3660">
@@ -1487,13 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/ne/eventos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7800">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/ne/noticias_normal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5655">
@@ -1540,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3045">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1579,13 +1231,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="8940">
           <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
-          <folding>
-            <marker date="1447455454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1447455454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1447455454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1447455454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1447455454000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1593,7 +1239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7743363" vertical-offset="2820" max-vertical-offset="9675">
           <caret line="223" column="39" selection-start-line="223" selection-start-column="39" selection-end-line="223" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1601,16 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23746313" vertical-offset="319" max-vertical-offset="1020">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <marker date="1454286564000" expanded="true" signature="-1:-1" placeholder="SELECT ciuda..t_publicacion..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44247788" vertical-offset="2745" max-vertical-offset="4170">
-          <caret line="203" column="84" selection-start-line="203" selection-start-column="84" selection-end-line="203" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -1619,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13274336" vertical-offset="150" max-vertical-offset="3765">
           <caret line="16" column="192" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="192" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1627,32 +1261,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/ne/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-45.0" vertical-offset="0" max-vertical-offset="1425">
+        <state vertical-scroll-proportion="0.49264705" vertical-offset="745" max-vertical-offset="1425">
           <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ne/mapa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.294118" vertical-offset="3567" max-vertical-offset="4500">
+          <caret line="283" column="78" selection-start-line="283" selection-start-column="78" selection-end-line="283" selection-end-column="78" />
+          <folding>
+            <element signature="e#15894#15929#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ne/eventos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0681818" vertical-offset="2430" max-vertical-offset="8550">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9607842" vertical-offset="2663" max-vertical-offset="7890">
-          <caret line="191" column="49" selection-start-line="191" selection-start-column="49" selection-end-line="191" selection-end-column="49" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="4875" max-vertical-offset="7890">
+          <caret line="342" column="77" selection-start-line="342" selection-start-column="77" selection-end-line="342" selection-end-column="77" />
           <folding>
-            <element signature="e#15527#15553#0#HTML" expanded="true" />
+            <element signature="e#15579#15605#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37777779" vertical-offset="19590" max-vertical-offset="20295">
-          <caret line="1323" column="17" selection-start-line="1323" selection-start-column="17" selection-end-line="1323" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.18020679" vertical-offset="4738" max-vertical-offset="20475">
+          <caret line="324" column="49" selection-start-line="324" selection-start-column="49" selection-end-line="324" selection-end-column="49" />
           <folding />
         </state>
       </provider>

@@ -145,6 +145,56 @@ $(document).ready(function () {
         });
     });
 
+    /*********************** POPUP MAPA ************/
+    //Click en abrir el popup
+    $("#btnGeo").click(function(event){
+        event.stopPropagation();
+        event.preventDefault();
+
+        console.log("Mostrar");
+
+        $("#divMapa").modal("show");
+        /*
+        //Iniciamos el mapa
+        $("#divMapa").dialog({
+            open: function (event, ui)
+            {
+                iniciarMapa();
+                google.maps.event.addListenerOnce(map, 'resize', function ()
+                {
+                    iniciarMapa();
+                    var lat = $("#lat").val();
+                    var lon = $("#lon").val();
+                    //Si hay algo en la caja de texto lo mostramos en el mapa
+                    if (lat != "" && lon != "") {
+                        placeMarker(new google.maps.LatLng(parseFloat(lat), parseFloat(lon)));
+                    }
+                    //Deshabilitamos el botón seleccionar hasta que se haga alguna accion en el mapa
+                    $("#btnSeleccionarPunto").attr("disabled", "disabled").addClass("ui-state-disabled");
+                });
+                google.maps.event.trigger(map, "resize");
+            }
+        });*/
+    });
+
+    //BOTONES DEL POP UP
+    //Seleccionamos punto y cerramos el pop up
+    $("#btnSeleccionarPunto").click(function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        seleccionarPunto();
+        $("#divMapa").dialog("close");
+    });
+
+    //Cerramos el pop up
+    $(".cancelar").click(function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+        $("#divMapa").dialog("close");
+    });
+
+    /********************* FIN MAPA **********************/
+
 
     $("#btnAgregar").click(function(event)
     {

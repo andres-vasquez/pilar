@@ -335,12 +335,12 @@
 
     <!-- Modal Editar Imagen -->
     <div class="modal fade" id="editarImagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
+         aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>-->
                     <h4 class="modal-title" id="myModalLabel">Vista previa de Fotografía
                         <div class=" pull-right" style="margin-right: 12px">
                             <button type="button" class="btn btn-success hidden" id="btnGuardarImagen">Guardar cambios</button>
@@ -352,7 +352,7 @@
 
                             <button id="btnGirarIzquierda" class="btn btn-default hidden"><i class="fa fa-undo"></i></button>
                             <button id="btnGirarDerecha" class="btn btn-default hidden"><i class="fa fa-repeat"></i></button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            <button id="btnCerrarModalFoto" type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                             </button>
                         </div>
                     </h4>

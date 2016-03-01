@@ -320,7 +320,10 @@ $(document).ready(function()
 
         if(parseInt($("#cmbFiltroEstados").val())==0)
         {
-            $("#imgPreview").attr("src",src+"?v="+num);
+            $("#imgPreview").attr("src",src+"?v="+num).on('load', function(){
+                $("#imgPreview").cropper('destroy');
+                $(".cropper-container").remove();
+            });
             $("#editarImagenModal").modal("show");
         }
         else
@@ -329,7 +332,10 @@ $(document).ready(function()
             {
                 if(parseInt($("#perfil_admin").val())==1) // Perfil ADM
                 {
-                    $("#imgPreview").attr("src",src+"?v="+num);
+                    $("#imgPreview").attr("src",src+"?v="+num).on('load', function(){
+                        $("#imgPreview").cropper('destroy');
+                        $(".cropper-container").remove();
+                    });
                     $("#editarImagenModal").modal("show");
                 }
                 else
@@ -354,9 +360,15 @@ $(document).ready(function()
 
     $('#zoomModal').on('shown.bs.modal', function() {
         $('#imgPreview').width("100%");
-        $('#imgPreviewZoom').elevateZoom({
+        /*$('#imgPreviewZoom').elevateZoom({
+        });*/
+    });
 
-        });
+    $("#btnCerrarModalFoto").click(function(event){
+        //event.preventDefault();
+        //event.stopPropagation();
+        $("#imgPreview").cropper('clear');
+        $("#imgPreview").cropper('clear');
     });
 
     $("#btnEditarImagen").click(function(event){
