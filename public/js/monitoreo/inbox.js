@@ -355,7 +355,9 @@ $(document).ready(function()
     $('#editarImagenModal').on('shown.bs.modal', function() {
         $('#imgPreview').width("100%");
         $('.modal-content').css('height',$(window).height()*0.9);
-        $('.modal-content').css('overflowY', 'scroll');
+
+        $('.modal-body').css('height',$('.modal-content').height()*0.9);
+        $('.modal-body').css('overflowY', 'scroll');
 
         $("#btnGuardarImagen").html("Guardar cambios");
     });
