@@ -201,7 +201,8 @@
                                                 <div class="form-group">
                                                     <label>Ubicación Georeferenciada</label>
                                                     <br/><button id="btnGeo" class="btn btn-sm btn-warning">Agregar</button>
-                                                    <input type="text" id="txtCoordenadas" class="form-control"/>
+                                                    <input type="text" id="txtLat" class="form-control"/>
+                                                    <input type="text" id="txtLon" class="form-control"/>
                                                 </div>
 
                                                 <table>
@@ -269,7 +270,7 @@
                     <h4 class="modal-title" id="myModalLabel">Seleccionar lugar de evento</h4>
                 </div>
                 <div class="modal-body">
-                    <div id="mapa" style="width: 840px; height: 650px"></div>
+                    <div id="mapa" style="width: 550px; height: 550px"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -289,6 +290,5 @@
     <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
-    <% HTML::script('public/js/ne/mapa.js'); %>
     <% HTML::script('public/js/ne/eventos.js'); %>
 @stop

@@ -20,6 +20,10 @@
             overflow-y: scroll;
         }
 
+        .modal-open {
+            overflow-y: scroll;
+        }
+
         .zoomContainer{ z-index: 9999;}
         .zoomWindow{ z-index: 9999;}
     </style>
