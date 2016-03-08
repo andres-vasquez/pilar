@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" afterPath="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
     </list>
     <ignored path="pilar.iws" />
@@ -34,18 +35,8 @@
       <file leaf-file-name="inbox.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="123" column="79" selection-start-line="123" selection-start-column="79" selection-end-line="123" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reportes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/monitoreo/reportes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="7" selection-start-line="30" selection-start-column="4" selection-end-line="47" selection-end-column="7" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="130" column="45" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -55,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.33333334">
-              <caret line="354" column="61" selection-start-line="354" selection-start-column="61" selection-end-line="354" selection-end-column="61" />
+              <caret line="356" column="65" selection-start-line="356" selection-start-column="65" selection-end-line="356" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -527,12 +518,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00112" summary="Filtro noticias y algunos eliminar">
-      <created>1448558163052</created>
-      <option name="number" value="00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1448558163053</updated>
-    </task>
     <task id="LOCAL-00113" summary="Filtro noticias arreglado">
       <created>1448572373257</created>
       <option name="number" value="00113" />
@@ -821,7 +806,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457398046405</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="Scroll popup">
+      <created>1457398953087</created>
+      <option name="number" value="00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1457398953087</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -906,7 +897,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Publicacion con Obj, fixed fecha_publicacion" />
     <MESSAGE value="Mostrar publicaciones" />
     <MESSAGE value="Mostrar publicaciones, con formulario" />
     <MESSAGE value="Noticias con Fonts" />
@@ -931,7 +921,8 @@
     <MESSAGE value="Cambios inmediatos Kathya" />
     <MESSAGE value="Intento cambios imagen" />
     <MESSAGE value="Kathya cambios imagen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kathya cambios imagen" />
+    <MESSAGE value="Scroll popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scroll popup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1274,16 +1265,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/reportes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="7" selection-start-line="30" selection-start-column="4" selection-end-line="47" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.35897437">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/monitoreo/inbox.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="123" column="79" selection-start-line="123" selection-start-column="79" selection-end-line="123" selection-end-column="79" />
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="130" column="45" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1291,7 +1282,7 @@
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
-          <caret line="354" column="61" selection-start-line="354" selection-start-column="61" selection-end-line="354" selection-end-column="61" />
+          <caret line="356" column="65" selection-start-line="356" selection-start-column="65" selection-end-line="356" selection-end-column="65" />
           <folding />
         </state>
       </provider>

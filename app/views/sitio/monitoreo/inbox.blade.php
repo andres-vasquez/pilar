@@ -122,11 +122,13 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-6">
                         <h4 class="text-center">Fotografía Página Completa</h4>
+                        <p id="loadingFotoUno" class="text-center"><i class="fa fa-spinner fa-spin fa-2x"></i>  Cargando imagen</p>
                         <img id="imgFoto1" src="" class="img-responsive foto foto1" width="90%" style="cursor: pointer"/>
                     </div>
 
                     <div class="col-xs-12 col-md-6 col-lg-6">
                         <h4 class="text-center">Fotografía Artículo</h4>
+                        <p id="loadingFotoDos" class="text-center"><i class="fa fa-spinner fa-spin fa-2x"></i>  Cargando imagen</p>
                         <img id="imgFoto2" src="" class="img-responsive foto foto2" width="90%" style="cursor: pointer"/>
                     </div>
                 </div>

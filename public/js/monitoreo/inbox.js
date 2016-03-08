@@ -470,9 +470,15 @@ $(document).ready(function()
 
                     var num = Math.random();
                     if(foto=="foto1")
-                        $("#imgFoto1").attr("src",fotoTomada+"?v="+num);
+                    {
+                        $("#imgFoto1").attr("src",fotoTomada+"?v="+num).hide();
+                        $("#loadingFotoUno").show();
+                    }
                     else
-                        $("#imgFoto2").attr("src",fotoTomada+"?v="+num);
+                    {
+                        $("#imgFoto2").attr("src",fotoTomada+"?v="+num).hide();
+                        $("#loadingFotoDos").show();
+                    }
                 }
                 else
                 {
@@ -522,8 +528,10 @@ $(document).ready(function()
         objPublicacionGlobal=objPublicacion;
 
         var num = Math.random();
-        $("#imgFoto1").attr("src",objPublicacion.url_foto1+"?v="+num);
-        $("#imgFoto2").attr("src",objPublicacion.url_foto2+"?v="+num);
+        $("#imgFoto1").attr("src",objPublicacion.url_foto1+"?v="+num).hide();
+        $("#imgFoto2").attr("src",objPublicacion.url_foto2+"?v="+num).hide();
+        $("#loadingFotoUno,#loadingFotoDos").show();
+
 
         $("#tdId").html(objPublicacion.id);
         $("#tdCiudad").html(objPublicacion.ciudad);
@@ -1115,6 +1123,15 @@ $(document).ready(function()
         });
     };
 
+    //Control de carga fotos
+    $("#imgFoto1").load(function() {
+        $("#loadingFotoUno").hide();
+        $("#imgFoto1").show();
+    });
+    $("#imgFoto2").load(function() {
+        $("#loadingFotoDos").hide();
+        $("#imgFoto2").show();
+    });
 
     mensaje = function (tipo) {
         $("#mensaje").html('');
