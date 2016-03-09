@@ -308,11 +308,9 @@ class EventosController extends \BaseController {
             if (sizeof($eventos_query) > 0) {
                 $resultado = array();
 
-                $fecha=$fecha." 23:59:59";
-
                 foreach ($eventos_query as $eventos_q)
                 {
-                    if(strtotime($eventos_q["fecha_inicio"])<=strtotime($fecha) && strtotime($fecha)<=strtotime($eventos_q["fecha_fin"])) {
+                    if(strtotime($fecha)<=strtotime($eventos_q["fecha_inicio"])) {
                         $aux = array();
                         $aux["id"] = $eventos_q["id"];
                         $aux["nombre"] = $eventos_q["nombre"];

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/ne/eventos.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/nueva-empresa/eventos.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/ne/index.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/nueva-empresa/index.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/ne/noticias.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/nueva-empresa/noticias.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/sitio/ne/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/nueva-empresa/restapi.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/ne/dashboard_normal.js" afterPath="$PROJECT_DIR$/public/js/nueva-empresa/dashboard_normal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/ne/eventos.js" afterPath="$PROJECT_DIR$/public/js/nueva-empresa/eventos.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/ne/noticias_normal.js" afterPath="$PROJECT_DIR$/public/js/nueva-empresa/noticias_normal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventosController.php" afterPath="$PROJECT_DIR$/app/controllers/EventosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +54,8 @@
       <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31617647">
-              <caret line="319" column="54" selection-start-line="319" selection-start-column="54" selection-end-line="319" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.22861357">
+              <caret line="312" column="79" selection-start-line="312" selection-start-column="79" selection-end-line="312" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -431,12 +423,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00115" summary="AWS Endpoint&#10;">
-      <created>1448681937210</created>
-      <option name="number" value="00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1448681937210</updated>
-    </task>
     <task id="LOCAL-00116" summary="Catalogos Thumbnail&#10;">
       <created>1448915223445</created>
       <option name="number" value="00116" />
@@ -725,7 +711,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457400869832</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="Primer release Nueva Empresa web">
+      <created>1457560375822</created>
+      <option name="number" value="00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1457560375823</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -752,17 +744,17 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.85382515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.85342467" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.14617486" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.14657535" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -810,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Noticias con Fonts" />
     <MESSAGE value="Noticias con triangulo blanco inferior" />
     <MESSAGE value="Noticias fixed" />
     <MESSAGE value="Noticias fixed1" />
@@ -835,7 +826,8 @@
     <MESSAGE value="Scroll popup" />
     <MESSAGE value="Loading Fotos" />
     <MESSAGE value="Scroll cabecera fija" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scroll cabecera fija" />
+    <MESSAGE value="Primer release Nueva Empresa web" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer release Nueva Empresa web" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1200,8 +1192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31617647">
-          <caret line="319" column="54" selection-start-line="319" selection-start-column="54" selection-end-line="319" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.22861357">
+          <caret line="312" column="79" selection-start-line="312" selection-start-column="79" selection-end-line="312" selection-end-column="79" />
           <folding />
         </state>
       </provider>
