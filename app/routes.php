@@ -213,15 +213,15 @@ Route::group(array('before' => 'session'), function () {
     });
 
     //*************** RED NUEVA EMPRESA ***************8
-    Route::group(array('prefix' => 'ne'), function () {
+    Route::group(array('prefix' => 'nueva-empresa'), function () {
         Route::get('/', function () {
-            return View::make('sitio.ne.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.nueva-empresa.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/noticias', function () {
-            return View::make('sitio.ne.noticias')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.nueva-empresa.noticias')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
         Route::get('/eventos', function () {
-            return View::make('sitio.ne.eventos')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+            return View::make('sitio.nueva-empresa.eventos')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
         });
     });
 

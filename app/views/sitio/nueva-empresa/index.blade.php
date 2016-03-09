@@ -81,7 +81,7 @@
     </div>
 @stop
 @section('pie')
-    <% HTML::script('public/js/sitio/dashboard_normal.js'); %>
+    <% HTML::script('public/js/nueva-empresa/dashboard_normal.js'); %>
 
     <% HTML::script('public/js/chart.min.js'); %>
     <% HTML::script('public/js/easypiechart.js'); %>

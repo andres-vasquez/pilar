@@ -15,14 +15,14 @@ var calendar;
 var editando=false;
 var id_editando=0;
 
+var obj = []; // Aca se guarda el punto
+var map;
+
+var latitud = 0;
+var longitud = 0;
+var editando=false;
 
 $(document).ready(function () {
-
-    var obj = []; // Aca se guarda el punto
-    var map;
-
-    var latitud = 0;
-    var longitud = 0;
 
 
     $("#txtFechaInicio,#txtFechaFin,#txtFechaInicio_editar,#txtFechaFin_editar").datepicker({
@@ -155,27 +155,49 @@ $(document).ready(function () {
 
     /*********************** POPUP MAPA ************/
         //Click en abrir el popup
-    $("#btnGeo").click(function(event){
+    $("#btnGeo,#btnGeo_editar").click(function(event){
         event.stopPropagation();
         event.preventDefault();
 
-        $("#divMapa").modal("show")
-            .on('shown.bs.modal', function() {
-                iniciarMapa();
-                google.maps.event.addListenerOnce(map, 'resize', function ()
-                {
-                    iniciarMapa();
-                    var lat = $("#lat").val();
-                    var lon = $("#lon").val();
-                    //Si hay algo en la caja de texto lo mostramos en el mapa
-                    if (lat != "" && lon != "") {
-                        placeMarker(new google.maps.LatLng(parseFloat(lat), parseFloat(lon)));
-                    }
-                    //Deshabilitamos el botón seleccionar hasta que se haga alguna accion en el mapa
-                    $("#btnSeleccionarPunto").attr("disabled", "disabled");
-                });
-                google.maps.event.trigger(map, "resize");
-            });
+        $("#divMapa").modal("show");
+    });
+
+    $("#divMapa").on('shown.bs.modal', function() {
+        iniciarMapa();
+        google.maps.event.addListenerOnce(map, 'resize', function ()
+        {
+            iniciarMapa();
+            var lat = $("#lat").val();
+            var lon = $("#lon").val();
+            //Si hay algo en la caja de texto lo mostramos en el mapa
+            if (lat != "" && lon != "") {
+                placeMarker(new google.maps.LatLng(parseFloat(lat), parseFloat(lon)));
+            }
+            else
+            {
+                //Deshabilitamos el botón seleccionar hasta que se haga alguna accion en el mapa
+                $("#btnSeleccionarPunto").attr("disabled", "disabled");
+            }
+        });
+        google.maps.event.trigger(map, "resize");
+    });
+
+    $("#divMapa").on('hidden.bs.modal', function () {
+
+        if(id_editando==0) {
+            if ($("#lat").val() != "" && $("#lon").val() != "")
+                $("#btnGeo").removeClass("btn-warning").addClass("btn-success").html("Tiene ubicación Georeferenciada!");
+            else
+                $("#btnGeo").removeClass("btn-success").addClass("btn-warning").html("Agregar Ubicación Georeferenciada");
+        }
+        else
+        {
+            if ($("#lat").val() != "" && $("#lon").val() != "")
+                $("#btnGeo_editar").removeClass("btn-warning").addClass("btn-success").html("Tiene ubicación Georeferenciada!");
+            else
+                $("#btnGeo_editar").removeClass("btn-success").addClass("btn-warning").html("Agregar Ubicación Georeferenciada");
+        }
+        $("body").addClass("modal-open");
     });
 
     //BOTONES DEL POP UP
@@ -183,15 +205,16 @@ $(document).ready(function () {
     $("#btnSeleccionarPunto").click(function(event) {
         event.stopPropagation();
         event.preventDefault();
+
         seleccionarPunto();
-        $("#divMapa").modal("close");
+        $("#divMapa").modal("hide");
     });
 
     //Cerramos el pop up
     $(".cancelar").click(function(event) {
         event.stopPropagation();
         event.preventDefault();
-        $("#divMapa").modal("close");
+        $("#divMapa").modal("hide");
     });
 
     /********************* FIN MAPA **********************/
@@ -213,6 +236,9 @@ $(document).ready(function () {
             "fecha_inicio":$("#txtFechaInicio").val()+" "+horaInicio+":"+minInicio+":00",
             "fecha_fin":$("#txtFechaFin").val()+" "+horaFin+":"+minFin+":00",
             "descripcion":$("#txtDescripcion").val(),
+            "lat":$("#lat").val(),
+            "lon":$("#lon").val(),
+            "tipo_evento":$('input[name=tipo_evento]:checked').val(),
             "html":$("#htmlEvento").val()
         };
         //console.log(JSON.stringify(datos));
@@ -265,6 +291,9 @@ $(document).ready(function () {
             "fecha_inicio":$("#txtFechaInicio_editar").val()+" "+horaInicio+":"+minInicio+":00",
             "fecha_fin":$("#txtFechaFin_editar").val()+" "+horaFin+":"+minFin+":00",
             "descripcion":$("#txtDescripcion_editar").val(),
+            "lat":$("#lat").val(),
+            "lon":$("#lon").val(),
+            "tipo_evento":$('input[name=tipo_evento_editar]:checked').val(),
             "html":$("#htmlEvento_editar").val()
         };
         //console.log(JSON.stringify(datos));
@@ -409,18 +438,26 @@ $(document).ready(function () {
         $("#txtFechaFin").val("");
         $("#txtDescripcion").val("");
         $("#htmlNoticia").val("");
+
+        $("#lat").val("");
+        $("#lon").val("");
+
         llenarHorasMinutos();
     };
 
     limpiarCamposEditar=function()
     {
         $("#txtTitular_editar").val("");
-        $("txtLugar_editar").val("");
+        $("#txtLugar_editar").val("");
         $("#hdnRutaImagen_editar").val("");
         $("#txtFechaInicio_editar").val();
         $("#txtFechaFin_editar").val("");
         $("#txtDescripcion_editar").val("");
         $("#htmlNoticia_editar").val("");
+
+        $("#lat").val("");
+        $("#lon").val("");
+
         llenarHorasMinutos();
     };
 
@@ -456,6 +493,8 @@ $(document).ready(function () {
         for (var i = 0; i < obj.length; i++)
             obj[i].setMap(null);
 
+        console.log("PC1");
+
         var marker = new google.maps.Marker({
             position: location,
             map: map,
@@ -463,6 +502,7 @@ $(document).ready(function () {
             animation: google.maps.Animation.DROP
         });
         obj.push(marker); // Agrega el punto selccionado
+        console.log("PC2");
 
         //Evento cuando el mapa se mueve
         google.maps.event.addListener(marker, 'dragend', function(event) {
@@ -470,6 +510,7 @@ $(document).ready(function () {
             longitud = event.latLng.lng();
         });
 
+        console.log("PC3");
         //Centra el mapa
         map.setCenter(location);
         return marker;
@@ -560,6 +601,19 @@ $(document).ready(function () {
                         $("#hdnRutaImagen_editar").val(objEvento.imagen_aws);
                         $("#txtLugar_editar").val(objEvento.lugar);
 
+                        if(objEvento.lat!="0" && objEvento.lon!="0")
+                        {
+                            $("#lat").val(objEvento.lat);
+                            $("#lon").val(objEvento.lon);
+                            $("#btnGeo_editar").removeClass("btn-warning").addClass("btn-success").html("Tiene ubicación Georeferenciada!");
+                        }
+
+                        var tipo=objEvento.tipo_evento;
+                        if(tipo=="emprendimiento")
+                            $("#emprendimiento_editar").prop("checked", true);
+                        else
+                            $("#empresarial_editar").prop("checked", true);
+
                         editando=true;
 
                         var arr_fecha_inicio=objEvento.fecha_inicio.split(" ");
@@ -578,6 +632,8 @@ $(document).ready(function () {
                         $('#cmbMinutoFin_editar option[value="' + arr_hora_fin[1] + '"]').attr("selected", "selected");
 
                         $("#txtDescripcion_editar").val(objEvento.descripcion);
+
+
 
                         var wysihtml5Editor = $('#htmlEvento_editar').data("wysihtml5").editor;
                         wysihtml5Editor.setValue(objEvento.html);

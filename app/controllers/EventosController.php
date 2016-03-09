@@ -132,12 +132,14 @@ class EventosController extends \BaseController {
             $data["aud_usuario_id"]=Session::get('id_usuario');
 
             $s3 = AWS::get('s3');
-            /* Mi cuenta de S3
-             * $s3->putObject(array(
+            // Mi cuenta de S3
+            $s3->putObject(array(
                 'Bucket'     => $sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
                 'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
-            ));*/
+            ));
+
+            /*SIRIUS
             $s3->putObject(array(
                 'Bucket'     => "sirius".$sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
@@ -147,6 +149,10 @@ class EventosController extends \BaseController {
             //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen; MIO
             //$data["ruta_aws"]='https://s3.amazonaws.com/sirius'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             $data["ruta_aws"]='https://sirius'.$sistemas[0]["nombre"].'.s3.amazonaws.com/'.$nombre_imagen;
+            */
+
+            $data["ruta_aws"]='https://s3.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             return View::make('ws.json', array("resultado"=>compact('data')));
         }
         else
@@ -268,6 +274,10 @@ class EventosController extends \BaseController {
                     $aux["link"] = $eventos_q["link"];
                     $aux["imagen_aws"] = $eventos_q["imagen_aws"];
 
+                    $aux["lat"] = $eventos_q["lat"];
+                    $aux["lon"] = $eventos_q["lon"];
+                    $aux["tipo_evento"] = $eventos_q["tipo_evento"];
+
                     $aux["fecha"] = date('d-m-Y',strtotime($eventos_q["fecha_inicio"]));
                     $aux["hora_inicio"] = date('H:i',strtotime($eventos_q["fecha_inicio"]));
                     array_push($resultado, $aux);
@@ -298,9 +308,11 @@ class EventosController extends \BaseController {
             if (sizeof($eventos_query) > 0) {
                 $resultado = array();
 
+                $fecha=$fecha." 23:59:59";
+
                 foreach ($eventos_query as $eventos_q)
                 {
-                    if(strtotime($fecha)<=strtotime($eventos_q["fecha_inicio"])) {
+                    if(strtotime($eventos_q["fecha_inicio"])<=strtotime($fecha) && strtotime($fecha)<=strtotime($eventos_q["fecha_fin"])) {
                         $aux = array();
                         $aux["id"] = $eventos_q["id"];
                         $aux["nombre"] = $eventos_q["nombre"];
@@ -310,6 +322,10 @@ class EventosController extends \BaseController {
                         $aux["descripcion"] = $eventos_q["descripcion"];
                         $aux["link"] = $eventos_q["link"];
                         $aux["imagen_aws"] = $eventos_q["imagen_aws"];
+
+                        $aux["lat"] = $eventos_q["lat"];
+                        $aux["lon"] = $eventos_q["lon"];
+                        $aux["tipo_evento"] = $eventos_q["tipo_evento"];
 
                         $aux["fecha"] = date('d-m-Y',strtotime($eventos_q["fecha_inicio"]));
                         $aux["hora_inicio"] = date('H:i',strtotime($eventos_q["fecha_inicio"]));
