@@ -634,6 +634,7 @@ Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), fu
     //WS Reportes Clientes
     Route::group(array('prefix' => '/reportes'), function () {
         Route::post('/tipomediociudad', 'DrClippingClienteController@reporteTipoMedioCiudad');
+        Route::post('/reportePorCiudad', 'DrClippingClienteController@reportePorCiudad');
     });
 });
 

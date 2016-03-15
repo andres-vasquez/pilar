@@ -117,7 +117,11 @@ $(document).ready(function()
                         axes: {
                             xaxis: {
                                 renderer: $.jqplot.CategoryAxisRenderer,
-                                ticks: ticks
+                                ticks: ticks,
+                                label:'Cantidad de publicaciones'
+                            },
+                            yaxis:{
+                                label:'Departamento'
                             }
                         },
                         legend: {
