@@ -133,25 +133,25 @@ class EventosController extends \BaseController {
 
             $s3 = AWS::get('s3');
             // Mi cuenta de S3
-            /*$s3->putObject(array(
-                'Bucket'     => $sistemas[0]["nombre"],
-                'Key'        => $nombre_imagen,
-                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
-            ));*/
-
-            //SIRIUS
             $s3->putObject(array(
-                'Bucket'     => "sirius".$sistemas[0]["nombre"],
+                'Bucket'     => $sistemas[0]["nombre"],
                 'Key'        => $nombre_imagen,
                 'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
             ));
 
-            //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen; MIO
+            //SIRIUS
+            /*$s3->putObject(array(
+                'Bucket'     => "sirius".$sistemas[0]["nombre"],
+                'Key'        => $nombre_imagen,
+                'SourceFile' => 'public/uploads/'.$sistemas[0]["nombre"].'/'.$nombre_imagen
+            ));*/
+
+            //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             //$data["ruta_aws"]='https://s3.amazonaws.com/sirius'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
-            $data["ruta_aws"]='https://sirius'.$sistemas[0]["nombre"].'.s3.amazonaws.com/'.$nombre_imagen;
+            //$data["ruta_aws"]='https://sirius'.$sistemas[0]["nombre"].'.s3.amazonaws.com/'.$nombre_imagen;
 
 
-            //$data["ruta_aws"]='https://s3.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
+            $data["ruta_aws"]='https://s3.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             //$data["ruta_aws"]='https://s3-us-west-2.amazonaws.com/'.$sistemas[0]["nombre"].'/'.$nombre_imagen;
             return View::make('ws.json', array("resultado"=>compact('data')));
         }

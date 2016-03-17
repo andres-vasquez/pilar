@@ -78,7 +78,7 @@ h3, h4 {
 }
 
 .form-control {
-	border: 1px solid #eee;
+	border: 1px solid #B3B5B7;
 	box-shadow: none;
 }
 
@@ -160,8 +160,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-	background-color: #30a5ff;
-	border-color: #30a5ff;
+	background-color: #298EEA;
+	border-color: #298EEA;
 }
 
 .btn-success,
@@ -185,8 +185,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-	background-color: #8ad919;
-	border-color: #8ad919;
+	background-color: #15CD72;
+	border-color: #15CD72;
 }
 
 .btn-warning,
@@ -572,7 +572,7 @@ a.bg-danger:hover {
 .sidebar ul.nav .active > a:focus, .sidebar ul.nav li.parent a.active:focus {
 	color: #fff;
 	background-color: #30a5ff;
-}*/
+}
 
 .sidebar ul.nav ul,
 .sidebar ul.nav ul li {

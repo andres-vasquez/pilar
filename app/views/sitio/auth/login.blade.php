@@ -14,11 +14,19 @@
     <% HTML::script('public/js/respond.min.js'); %>
     <![endif]-->
 
+    <style>
+        body{
+            background: #298EEA;
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        <img class="img-responsive" src="<% 'public/img/logo_pilar_transparente.png' %>"/>
+    </div>
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
         <div class="login-panel panel panel-default">
 
@@ -29,6 +37,7 @@
             <div class="panel-body">
                 <% Form::open(array('url' => '/ws/autenticacion', 'id' => 'formLogin')) %>
                     <fieldset>
+                        <br/>
                         <div class="form-group">
                             <input class="form-control" placeholder="E-mail" id="email" name="email" type="email" autofocus="">
                         </div>
@@ -40,7 +49,8 @@
                                 <input name="remember" type="checkbox" value="Remember Me">Recordar
                             </label>
                         </div>-->
-                        <button  id="btnEnviar" class="btn btn-primary">Ingresar
+                        <br/> <br/>
+                        <button  id="btnEnviar" class="btn btn-success col-sm-12 btn-lg">Acceder
                         </button>
                     </fieldset>
                 <% Form::close() %>

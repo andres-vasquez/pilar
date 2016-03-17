@@ -4,6 +4,7 @@
     @parent
     <% HTML::style('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css'); %>
     <% HTML::style('public/lib/bower_components/components-font-awesome/css/font-awesome.min.css'); %>
+    <% HTML::style('public/css/noticias.css'); %>
 @stop
 
 @section('titulo_plataforma')
@@ -70,7 +71,7 @@
                 <div class="row container">
                     <div class="col-md-9">
                         <div class="form-group">
-                            <textarea id="htmlNoticia" class="form-control" required></textarea>
+                            <textarea id="htmlNoticia" class="form-control"  required></textarea>
                         </div>
                     </div>
                 </div>
@@ -183,28 +184,89 @@
                     </ul>
 
                     <div class="form-group">
-                        <textarea id="htmlNoticia_editar" class="form-control" required></textarea>
+                        <textarea id="htmlNoticia_editar" class="form-control" rows="50" style="height: auto" required></textarea>
                     </div>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarNoticia">Guardar
-                    cambios
-                </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarNoticia">Guardar
+                        cambios
+                    </button>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal de imagen -->
+    <div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Adjuntar imagen</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formImagen" enctype="multipart/form-data">
+                        <div class="form-group form-inline">
+                            <input type="hidden" name="ruta" id="hdnRutaImagen" class="form-control"/>
+                            <input type="file" name="imagen" id="imgImagen" class="form-control imagen" required/>
+                            <button type="submit" class="btn btn-sm btn-info form-control">Cargar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Vincular video</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="formVideo" enctype="multipart/form-data">
+                        <label>Link de youtube</label>
+                        <div class="form-group">
+                            <input type="text" name="video" id="txtUrlVido" class="form-control video" required/>
+                        </div>
+                        <button id="btnPreCargarVideo" type="button" class="btn btn-sm btn-info pull-right">Cargar</button>
+
+                        <iframe id="ytplayer" type="text/html" width="100%" height="320"
+                                src=""
+                                frameborder="0">
+                        </iframe>
+
+                        <br/>
+                        <button id="btnCargarVideo" type="submit" class="btn btn-sm btn-success form-control disabled" disabled>Incluir video</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    </div><!--/.col-->
 @stop
 
 @section('pie')
     <% HTML::script('public/lib/bower_components/wysihtml5x/dist/wysihtml5x-toolbar.js'); %>
     <% HTML::script('public/lib/bower_components/handlebars/handlebars.runtime.min.js'); %>
-    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js'); %>
+    <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.js'); %>
     <% HTML::script('public/lib/bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.es-ES.js'); %>
-    <% HTML::script('public/js/sitio/noticias.js'); %>
+    <% HTML::script('public/js/nueva-empresa/noticias_normal.js'); %>
 @stop
