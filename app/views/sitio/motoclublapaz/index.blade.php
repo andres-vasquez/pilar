@@ -6,7 +6,7 @@
 @stop
 
 @section('titulo_plataforma')
-    <% Session::get("nombre_sistema")%>
+    Moto Club La Paz
 @stop
 
 @section('barra_navegacion')

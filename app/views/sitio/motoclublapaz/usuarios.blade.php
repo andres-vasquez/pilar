@@ -7,7 +7,7 @@
 @stop
 
 @section('titulo_plataforma')
-    Dr. Clipping
+    Moto Club La Paz
 @stop
 
 @section('barra_navegacion')
