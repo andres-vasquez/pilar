@@ -225,6 +225,23 @@ Route::group(array('before' => 'session'), function () {
         });
     });
 
+
+    //*************** MOTO CLUB ***************8
+    Route::group(array('prefix' => 'motoclublapaz'), function () {
+        Route::get('/', function () {
+            return View::make('sitio.motoclublapaz.index')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/eventos', function () {
+            return View::make('sitio.motoclublapaz.eventos')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/usuarios', function () {
+            return View::make('sitio.motoclublapaz.usuarios')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+        Route::get('/restapi', function () {
+            return View::make('sitio.motoclublapaz.restapi')->with('data', array('sistemas' => Session::get('sistemas'), 'menus' => Session::get('menus')));
+        });
+    });
+
     //*************** GENERAL *******************
 
     Route::get('/logout', function () {
