@@ -241,7 +241,7 @@ $(document).ready(function()
 
 function operateFormatter(value, row, index) {
     return [
-        '<a class="edit ml10" href="javascript:void(0)" title="Editar">',
+        '<a class="show ml10" href="javascript:void(0)" title="Mostrar">',
         '<i class="glyphicon glyphicon-pencil"></i>',
         '</a> ',
         '<a class="remove ml10" href="javascript:void(0)" title="Eliminar">',
@@ -251,32 +251,10 @@ function operateFormatter(value, row, index) {
 }
 
 window.operateEvents = {
-    'click .edit': function (e, value, row, index) {
+    'click .show': function (e, value, row, index) {
         var id = row.id;
-        var perfil=row.perfil;
 
-        $('#editarModal').modal('show');
-
-        $("#chkRestablecer").change(function(){
-            if($(this).is(':checked'))
-            {
-
-            }
-            else
-            {
-
-            }
-        });
-
-
-        $("#btnEditarUsuario").click(function (event) {
-            event.preventDefault();
-            event.stopPropagation();
-
-
-
-        });
-
+        alert("Detalles de "+id);
 
     },
     'click .remove': function (e, value, row, index) {
@@ -288,60 +266,30 @@ window.operateEvents = {
             event.preventDefault();
             event.stopPropagation();
 
-            if(perfil=="Researcher")
-            {
-                var url="../ws/drclipling/usuarios/eliminar/"+id;
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    success: function(result)
-                    {
-                        if(parseInt(result.intCodigo)==1) {
-                            mensaje("eliminada");
-                            $table = $('#tblUsuarios').bootstrapTable('refresh', {
-                                url: '../ws/drclipling/usuarios_sinformato'
-                            });
-                        }
-                        else
-                        {
-                            mensaje("Error al eliminar usuario");
-                        }
-                        $('#eliminarModal').modal('hide');
-                    },
-                    error: function(XMLHttpRequest, textStatus, errorThrown) {
-                        console.log(XMLHttpRequest + " "+textStatus);
+            var url="../ws/usuario/eliminar/"+id;
+            $.ajax({
+                type: "POST",
+                url: url,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(result)
+                {
+                    if(parseInt(result.intCodigo)==1) {
+                        mensaje("eliminada");
+                        $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                            url: '../ws/drclipling/usuarios_sinformato'
+                        });
                     }
-                });
-            }
-            else
-            {
-                var url="../ws/usuario/eliminar/"+id;
-                $.ajax({
-                    type: "POST",
-                    url: url,
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    success: function(result)
+                    else
                     {
-                        if(parseInt(result.intCodigo)==1) {
-                            mensaje("eliminada");
-                            $table = $('#tblUsuarios').bootstrapTable('refresh', {
-                                url: '../ws/drclipling/usuarios_sinformato'
-                            });
-                        }
-                        else
-                        {
-                            mensaje("Error al eliminar usuario");
-                        }
-                        $('#eliminarModal').modal('hide');
-                    },
-                    error: function(XMLHttpRequest, textStatus, errorThrown) {
-                        console.log(XMLHttpRequest + " "+textStatus);
+                        mensaje("Error al eliminar usuario");
                     }
-                });
-            }
+                    $('#eliminarModal').modal('hide');
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    console.log(XMLHttpRequest + " "+textStatus);
+                }
+            });
         });
     }
 };

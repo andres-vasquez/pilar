@@ -195,19 +195,18 @@
             <div class="panel-heading">Usuarios registrados</div>
             <div class="panel-body">
 
-                <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/drclipling/usuarios_sinformato'%>"
+                <table id="tblUsuarios" data-toggle="table" data-url="<% '../ws/motoclublapaz/usuarios_sinformato'%>"
                        data-show-refresh="true" data-search="true"
                        data-show-columns="true" data-select-item-name="toolbar1" data-pagination="true"
                        data-sort-name="name" data-sort-order="desc">
                     <thead>
                     <tr>
                         <th data-field="id" data-sortable="true">ID</th>
-                        <th data-field="perfil" data-sortable="true">Perfil</th>
-                        <th data-field="nombre_completo" data-sortable="true">Nombre Completo</th>
+                        <th data-field="nombre" data-sortable="true">Nombre</th>
+                        <th data-field="apellido" data-sortable="true">Apellido</th>
                         <th data-field="email" data-sortable="true">Email</th>
                         <th data-field="celular" data-sortable="true">Celular</th>
-                        <th data-field="imei" data-sortable="true">IMEI</th>
-                        <th data-field="ultimo_acceso" data-halign="center" data-sortable="true">Último acceso</th>
+                        <th data-field="placa" data-sortable="true">Placa</th>
                         <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
                             data-events="operateEvents">Acciones
                         </th>

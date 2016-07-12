@@ -655,3 +655,6 @@ Route::group(array('before'=>'credencialclipp','prefix' => 'apiclippinh/v1'), fu
     });
 });
 
+//****************************** REST API motoclub La Paz **********
+Route::get('/ws/motoclublapaz/usuarios_sinformato', 'MotoclubUsuariosController@sinformato');
+
