@@ -4,160 +4,47 @@
 
 $(document).ready(function()
 {
-    $("#formNuevoUsuario").submit(function(event){
+    $("#formImportar").submit(function (event) {
         event.preventDefault();
-        event.stopPropagation();
+        var url = "../ws/motoclublapaz";
+        var formData = new FormData($(this)[0]);
 
+        $("#btnImportar").addClass("disabled");
+        $("#prgImportar").removeClass("hidden");
 
-        if($("#txtPassword").val()!=$("#txtPassword2").val())
-        {
-            alert("Las contraseñas ingresadas no coinciden");
-            return;
-        }
+        $("#divResultadoImportar").html("");
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result) {
+                $("#prgImportar").addClass("hidden");
+                $("#btnImportar").removeClass("disabled");
+                result = JSON.parse(result);
+                console.log(JSON.stringify(result));
+                if (parseInt(result.intCodigo) == 1) {
+                    var objResultado = result.resultado.objResultado;
+                    $("#fileCsv").val("");
+                    var html = '<br/><br/>';
+                    html += '<p><b>Resultado de importación</b></p>';
+                    html += '<p>Importados: <b>' + objResultado.insertados + '</b></p>';
+                    html += '<p>Error:  <b></b>' + objResultado.error + '</p>';
+                    $("#divResultadoImportar").html(html);
 
-        if($("#cmbPerfil").val()=="0")
-        {
-            alert("Seleccione un perfil");
-            return;
-        }
-
-        if($("#cmbPerfil").val()=="1")//Usuarios de la App movil
-        {
-            var datos = {
-                "nombre_completo": $("#txtNombre").val(),
-                "email": $("#txtEmail").val(),
-                "password": encriptar($("#txtPassword").val()),
-                "celular": $("#txtCelular").val(),
-                "imei": $("#txtImei").val()
-            };
-
-            $("#btnEnviar").attr('disabled', 'disabled');
-            $.ajax({
-                type: "POST",
-                url: "../ws/drclipling/usuarios",
-                data: JSON.stringify(datos),
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (result) {
-                    console.log(JSON.stringify(result));
-                    if (parseInt(result.intCodigo) == 1) {
-                        mensaje("ok");
-                        $("#btnEnviar").removeAttr('disabled');
-                        $("#collapse").trigger("click");
-                        window.location.href = "#";
-                        limpiarCampos();
-                        $table = $('#tblUsuarios').bootstrapTable('refresh', {
-                            url: '../ws/drclipling/usuarios_sinformato'
-                        });
-                    }
-                    else {
-                        mensaje(result.resultado.errores);
-                        window.location.href = "#";
-                        $("#btnEnviar").removeAttr('disabled');
-                    }
-                },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    console.log(XMLHttpRequest + " " + textStatus);
-                    mensaje("error");
+                    $table = $('#tblUsuarios').bootstrapTable('refresh', {
+                        url: '../ws/motoclublapaz/usuarios_sinformato'
+                    });
                 }
-            });
-        }
-        else//Usuario de pilar
-        {
-            var tags="";
-            try
-            {
-                var lstTagsSeleccionados=$("#cmbTags").val();
-                for(var i=0;i<lstTagsSeleccionados.length;i++)
-                    tags+=lstTagsSeleccionados[i]+",";
-            }catch (ex){}
-            tags=tags.substring(0,tags.length-1);
-
-
-            var perfil_id=0;
-            switch (parseInt($("#cmbPerfil").val()))
-            {
-                case 2: perfil_id=18; break;
-                case 3: perfil_id=19; break;
-                case 4: perfil_id=20; break;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("#btnImportar").removeClass("disabled");
+                $("#prgImportar").addClass("hidden");
+                console.log(XMLHttpRequest + " " + textStatus);
             }
-
-            var datos = {
-                "nombre": $("#txtNombre").val(),
-                "email": $("#txtEmail").val(),
-                "password": encriptar($("#txtPassword").val()),
-                "perfil_id":perfil_id,
-                "args":tags
-            };
-
-            $("#btnEnviar").attr('disabled', 'disabled');
-            $.ajax({
-                type: "POST",
-                url: "../ws/pilar/drclipling/usuarios",
-                data: JSON.stringify(datos),
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (result) {
-                    console.log(JSON.stringify(result));
-                    if (parseInt(result.intCodigo) == 1) {
-                        mensaje("ok");
-                        $("#btnEnviar").removeAttr('disabled');
-                        $("#collapse").trigger("click");
-                        window.location.href = "#";
-                        limpiarCampos();
-                        $table = $('#tblUsuarios').bootstrapTable('refresh', {
-                            url: '../ws/drclipling/usuarios_sinformato'
-                        });
-                    }
-                    else {
-                        mensaje(result.resultado.errores);
-                        window.location.href = "#";
-                        $("#btnEnviar").removeAttr('disabled');
-                    }
-                },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    console.log(XMLHttpRequest + " " + textStatus);
-                    mensaje("error");
-                }
-            });
-        }
+        });
     });
-
-    $("#cmbPerfil").change(function()
-    {
-        if($(this).val()=="0" || $(this).val()=="2" || $(this).val()=="4")
-        {
-            $("#divCelular,#divImei").addClass("hidden");
-            $("#txtCelular").val("");
-            $("#txtImei").val("");
-            $("#divTags").addClass("hidden");
-            $("#cmbTags").html("").trigger("chosen:updated");
-        }
-        else if($(this).val()=="1")//Researcher
-        {
-            $("#divCelular,#divImei").removeClass("hidden");
-            $("#divTags").addClass("hidden");
-            $("#cmbTags").html("").trigger("chosen:updated");
-        }
-        else if($(this).val()=="3")//Cliente
-        {
-            $("#divCelular,#divImei").addClass("hidden");
-            $("#divTags").removeClass("hidden");
-            $(".chosen-select").chosen();
-            $(".chosen-container").css("width", "100%");
-            llenarTags();
-        }
-    });
-
-    limpiarCampos=function(){
-        $("#txtNombre").val("");
-        $("#txtPassword").val("");
-        $("#txtPassword2").val("");
-        $("#txtEmail").val("");
-        $("#txtCelular").val("");
-        $("#txtImei").val("");
-        $("#cmbTags").html("").trigger("chosen:updated");
-    };
 
     encriptar=function(password){
         var hash = CryptoJS.MD5(password);
@@ -241,8 +128,8 @@ $(document).ready(function()
 
 function operateFormatter(value, row, index) {
     return [
-        '<a class="show ml10" href="javascript:void(0)" title="Mostrar">',
-        '<i class="glyphicon glyphicon-pencil"></i>',
+        '<a class="edit ml10" href="javascript:void(0)" title="Mostrar">',
+        '<i class="glyphicon glyphicon-search"></i>',
         '</a> ',
         '<a class="remove ml10" href="javascript:void(0)" title="Eliminar">',
         '<i class="glyphicon glyphicon-remove"></i>',
@@ -251,22 +138,75 @@ function operateFormatter(value, row, index) {
 }
 
 window.operateEvents = {
-    'click .show': function (e, value, row, index) {
+    'click .edit': function (e, value, row, index) {
         var id = row.id;
 
-        alert("Detalles de "+id);
+        $("#showModal").modal("show");
+
+        if(row.foto_piloto!=""){
+            $("#imgFotoPiloto").attr("src",row.foto_piloto);
+            $("#hrefFotoPiloto").attr("href",row.foto_piloto);
+        }
+        else{
+            $("#imgFotoPiloto").attr("src","");
+            $("#hrefFotoPiloto").attr("href","");
+        }
+
+        if(row.foto_moto!=""){
+            $("#imgFotoMoto").attr("src",row.foto_moto);
+            $("#hrefFotoMoto").attr("href",row.foto_moto);
+        }else{
+            $("#imgFotoMoto").attr("src","");
+            $("#hrefFotoMoto").attr("href","");
+        }
+
+        if(row.foto_pago!=""){
+            $("#imgFotoRecibo").attr("src",row.foto_pago);
+            $("#hrefFotoRecibo").attr("href",row.foto_pago);
+        }
+        else {
+            $("#imgFotoRecibo").attr("src","");
+            $("#hrefFotoRecibo").attr("href","");
+        }
+
+        var htmlEmergencia="";
+        var htmlRegistros="";
+
+        htmlRegistros+='<li class="list-group-item">Nombre: '+row.nombre+'</li>';
+        htmlRegistros+='<li class="list-group-item">Apellido: '+row.apellido+'</li>';
+        htmlRegistros+='<li class="list-group-item">Email: '+row.email+'</li>';
+        htmlRegistros+='<li class="list-group-item">Celular: '+row.celular+'</li>';
+        htmlRegistros+='<li class="list-group-item">Teléfono fijo: '+row.telefono_fijo+'</li>';
+        htmlRegistros+='<li class="list-group-item">CI: '+row.ci+'</li>';
+        htmlRegistros+='<li class="list-group-item">Tipo sangre: '+row.tipo_sangre+'</li>';
+        htmlRegistros+='<li class="list-group-item">Alergias: '+row.alergias+'</li>';
+        htmlRegistros+='<li class="list-group-item">Ocupación: '+row.ocupacion+'</li>';
+        htmlRegistros+='<li class="list-group-item">Nacionalidad: '+row.nacionalidad+'</li>';
+        htmlRegistros+='<li class="list-group-item">Placa: '+row.placa+'</li>';
+        htmlRegistros+='<li class="list-group-item">Marca: '+row.marca+'</li>';
+        htmlRegistros+='<li class="list-group-item">Modelo: '+row.modelo+'</li>';
+        htmlRegistros+='<li class="list-group-item">Año: '+row.anio+'</li>';
+        htmlRegistros+='<li class="list-group-item">Cilindrada: '+row.cilindrada+'</li>';
+        htmlRegistros+='<li class="list-group-item">Seguro: '+row.seguro+'</li>';
+
+
+        htmlEmergencia+='<li class="list-group-item">Nombre: '+row.nombre_contacto+'</li>';
+        htmlEmergencia+='<li class="list-group-item">Celular: '+row.celular_contacto+'</li>';
+        htmlEmergencia+='<li class="list-group-item">Teléfono fijo: '+row.telefono_fijo_contacto+'</li>';
+
+        $("#ulDatosEmergencia").html(htmlEmergencia);
+        $("#ulDatosRegistros").html(htmlRegistros);
 
     },
     'click .remove': function (e, value, row, index) {
         var id = row.id;
-        var perfil=row.perfil;
 
         $('#eliminarModal').modal('show');
         $("#btnEliminarUsuario").click(function (event) {
             event.preventDefault();
             event.stopPropagation();
 
-            var url="../ws/usuario/eliminar/"+id;
+            var url="../ws/motoclublapaz/eliminar/"+id;
             $.ajax({
                 type: "POST",
                 url: url,
@@ -277,7 +217,7 @@ window.operateEvents = {
                     if(parseInt(result.intCodigo)==1) {
                         mensaje("eliminada");
                         $table = $('#tblUsuarios').bootstrapTable('refresh', {
-                            url: '../ws/drclipling/usuarios_sinformato'
+                            url: '../ws/motoclublapaz/usuarios_sinformato'
                         });
                     }
                     else

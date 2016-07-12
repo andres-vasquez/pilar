@@ -39,7 +39,7 @@
 
                     <form id="formImportar" enctype="multipart/form-data">
                         <div class="form-group">
-                            <input type="file" id="fileCsv" name="mensajes" class="form-control" required/>
+                            <input type="file" id="fileCsv" name="usuarios" class="form-control" required/>
                         </div>
                         <div class="form-group col-xs-6 pull-right">
                             <button type="submit" id="btnImportar" class="btn btn-sm btn-warning form-control pull-right">
@@ -86,103 +86,81 @@
         </div>
 
         <!-- Editar usuario -->
-        <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        <div class="modal fade" id="showModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
              aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+                        <h4 class="modal-title" id="myModalLabel">Datos del usuario</h4>
                     </div>
+
                     <div class="modal-body">
-                        <form id="formEditarUsuario" class="form-horizontal">
 
-                            <div class="form-group">
-                                <label for="txtNombre_editar" class="col-sm-4 control-label">Nombre Completo</label>
-
-                                <div class="col-sm-8">
-                                    <input id="txtNombre_editar" class="form-control" required/>
+                        <div class="row">
+                            <div class="panel panel-default col-md-4">
+                                <div class="panel-heading">
+                                    <p class="panel-title">Foto del Piloto</p>
+                                </div>
+                                <div class="panel-body">
+                                    <a id="hrefFotoPiloto" href="" title="Foto Piloto" target="_blank">
+                                        <img id="imgFotoPiloto" class="img-responsive"/>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="txtEmail_editar" type="number" class="col-sm-4 control-label">Email</label>
-
-                                <div class="col-sm-4">
-                                    <input id="txtEmail_editar" class="form-control" required readonly/>
+                            <div class="panel panel-default col-md-4">
+                                <div class="panel-heading">
+                                    <p class="panel-title">Foto de la moto</p>
+                                </div>
+                                <div class="panel-body">
+                                    <a id="hrefFotoMoto" href="" title="Foto Moto" target="_blank">
+                                        <img id="imgFotoMoto" class="img-responsive"/>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="chkRestablecer" class="col-sm-4 control-label">Restablecer Password</label>
-
-                                <div class="col-sm-4">
-                                    <input id="chkRestablecer" type="checkbox" class="form-control"/>
+                            <div class="panel panel-default col-md-4">
+                                <div class="panel-heading">
+                                    <p class="panel-title">Foto del recibo</p>
+                                </div>
+                                <div class="panel-body">
+                                    <a id="hrefFotoRecibo" href="" title="Foto Recibo" target="_blank">
+                                        <img id="imgFotoRecibo" class="img-responsive"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="panel col-md-9 clearfix">
+                                <div class="panel-heading panel-blue">
+                                    <h3 class="panel-title">Datos del registro</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul id="ulDatosRegistros" class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                    </ul>
                                 </div>
                             </div>
 
-                            <div id="editPassword" class="hidden">
-                                <div class="form-group">
-                                    <label for="txtPassword_editar" class="col-sm-4 control-label">Contraseña</label>
+                            <br/>
 
-                                    <div class="col-sm-6">
-                                        <input id="txtPassword_editar" type="password" class="form-control" required/>
-                                    </div>
+                            <div class="panel col-md-9 clearfix">
+                                <div class="panel-heading panel-orange">
+                                    <h3 class="panel-title">Datos de emergencia</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul id="ulDatosEmergencia" class="list-group">
+                                    </ul>
                                 </div>
                             </div>
-
-                            <div class="form-group">
-                                <label for="txtPassword2_editar" class="col-sm-4 control-label">Repetir Contraseña</label>
-
-                                <div class="col-sm-6">
-                                    <input id="txtPassword2_editar" type="password" class="form-control" required/>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="cmbPerfil_editar" class="col-sm-4 control-label">Perfil</label>
-
-                                <div class="col-sm-6">
-                                    <select id="cmbPerfil_editar" class="form-control">
-                                        <option value="0">Seleccione</option>
-                                        <option value="1">Researcher (App móvil)</option>
-                                        <option value="2">Analyst</option>
-                                        <option value="3">Cliente</option>
-                                        <option value="4">Administrador</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div id="divCelular" class="form-group hidden">
-                                <label for="txtCelular_editar" type="number" class="col-sm-4 control-label">Celular</label>
-
-                                <div class="col-sm-4">
-                                    <input id="txtCelular_editar" class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div  id="divImei" class="form-group hidden" >
-                                <label for="txtImei_editar" class="col-sm-4 control-label">IMEI (*#06#)</label>
-
-                                <div class="col-sm-4">
-                                    <input id="txtImei_editar" class="form-control"/>
-                                </div>
-                            </div>
-
-                            <div  id="divTags_editar" class="form-group hidden">
-                                <label for="cmbTags" class="col-sm-4 control-label">Qué Tags verá el cliente?</label>
-                                <div class="col-sm-8">
-                                    <select id="cmbTags_editar" class="form-control" data-placeholder="Seleccione tags..." class="chosen-select" multiple tabindex="4"></select>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnEditarUsuario">Guardar cambios
-                        </button>
-                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -204,7 +182,7 @@
                         <th data-field="id" data-sortable="true">ID</th>
                         <th data-field="nombre" data-sortable="true">Nombre</th>
                         <th data-field="apellido" data-sortable="true">Apellido</th>
-                        <th data-field="email" data-sortable="true">Email</th>
+                        <th data-field="email" data-sortable="true">Email</th>-->
                         <th data-field="celular" data-sortable="true">Celular</th>
                         <th data-field="placa" data-sortable="true">Placa</th>
                         <th data-field="operate" data-halign="center" data-formatter="operateFormatter"
