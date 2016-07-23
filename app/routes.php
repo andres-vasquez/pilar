@@ -430,6 +430,7 @@ Route::group(array('prefix' => 'api/v1'), function () {
         Route::get('/{sistema}', array('as' => 'show', 'uses' => 'EventosController@apieventos'));
         Route::get('/{sistema}/{fecha}', array('as' => 'show', 'uses' => 'EventosController@apiporfecha'));
         Route::get('/{sistema}/{id_evento}/{metodo}', array('as' => 'show', 'uses' => 'EventosController@web'))->where(array('id_evento' => '[0-9]+', 'metodo' => '[a-z]+'));;
+        Route::post('/{sistema}/asistencia', 'EventosController@asistencia');
     });
 
     //MAPA Api
@@ -661,7 +662,6 @@ Route::post('/ws/motoclublapaz', 'MotoclubUsuariosController@store');
 Route::post('/ws/motoclublapaz/eliminar/{id}', array('as' => 'show', 'uses' => 'MotoclubUsuariosController@destroy'));
 //REST Api
 Route::group(array('before'=>'credencial','prefix' => 'apimotoclublapaz/v1'), function () {
-
     //REST Api usuarios
     Route::group(array('prefix' => '/usuarios'), function () {
         Route::post('/auth', 'MotoclubUsuariosController@auth');

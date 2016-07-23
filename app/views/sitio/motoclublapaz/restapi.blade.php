@@ -58,6 +58,34 @@
                                       target="_blank">http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%>/08-10-2015</a>
                         </small>
                         <br/><br/><br/><br/>
+
+                        <h4>Asistencia a eventos</h4>
+                        <code>http://pilar.cloudapp.net/pilar/api/v1/eventos/credencial/asistencia</code>
+
+                        <br/>
+                        <small>Ej: <a href="http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%>/asistencia"
+                                      target="_blank">http://pilar.cloudapp.net/pilar/api/v1/eventos/<% Session::get('credencial')%>/asistencia</a>
+                        </small>
+                        <br/><br/>
+
+                        <p>Método: <span class="text-success"><b>POST</b></span></p>
+                        <p>Content-type: <span class="text-success"><b>application/json</b></span></p>
+
+                        <br/>
+
+                        <p>Paramétro: <span class="text-warning"><b>id_evento</b></span></p>
+                        <p>Paramétro: <span class="text-warning"><b>id_usuario</b></span></p>
+                        <p>Paramétro: <span class="text-warning"><b>nombre_completo</b></span></p>
+                        <p>Paramétro: <span class="text-warning"><b>estado</b> <small>(1: asistire, 2: no asistire, 3: quizás asista, 4: todos los anteriores)</small></span></p>
+
+                        <br/>
+
+                        <br/>
+                        <small>Resultado Correcto:
+                            <code>{"intCodigo":"1","resultado":{"resultado":true}}</code>
+                        </small>
+                        <br/><br/><br/><br/>
+
                     </div>
                     <div class="tab-pane fade" id="tab2">
                         <h3>Usuarios</h3>

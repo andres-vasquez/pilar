@@ -342,4 +342,44 @@ class EventosController extends \BaseController {
             return View::make('ws.json_errores', array("errores"=>compact('errores')));
         }
     }
+
+    public function asistencia($app)
+    {
+        $sistemas= SistemasDesarrollados::whereRaw('app=?',array($app))->get();
+        if(sizeof($sistemas)>0) {
+            $id_sistema = $sistemas[0]["id"];
+
+            $data = Input::all();
+            if(isset($data["id_evento"]))
+            {
+                $id_evento=$data["id_evento"];
+                $eventos_query = Eventos::whereRaw('estado=1 AND baja_logica=1 AND sistema_id=? AND id=?', array($id_sistema,$id_evento))->get();
+                if (sizeof($eventos_query) > 0) {
+
+                    if(isset($data["id_usuario"]) && isset($data["estado"]) && isset($data["nombre_completo"])){
+                        $resultado=true;
+                        return View::make('ws.json', array("resultado"=>compact('resultado')));
+                    }
+                    else{
+                        $errores = "Error: Faltan datos para registrar";
+                        return View::make('ws.json_errores', array("errores" => compact('errores')));
+                    }
+                }
+                else {
+                    $errores = "Error: El evento no existe";
+                    return View::make('ws.json_errores', array("errores" => compact('errores')));
+                }
+            }
+            else{
+                $errores = "Error: debe enviar el id_evento";
+                return View::make('ws.json_errores', array("errores" => compact('errores')));
+            }
+        }
+        else
+        {
+            $errores="Error al obtener registro credencial invalida";
+            return View::make('ws.json_errores', array("errores"=>compact('errores')));
+        }
+    }
+
 }

@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/MotoclubUsuariosController.php" afterPath="$PROJECT_DIR$/app/controllers/MotoclubUsuariosController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventosController.php" afterPath="$PROJECT_DIR$/app/controllers/EventosController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/motoclublapaz/restapi.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/motoclublapaz/restapi.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/motoclublapaz/usuarios.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/motoclublapaz/usuarios.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/motoclublapaz/usuarios.js" afterPath="$PROJECT_DIR$/public/js/motoclublapaz/usuarios.js" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +36,18 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.0">
-              <caret line="667" column="69" selection-start-line="667" selection-start-column="61" selection-end-line="667" selection-end-column="69" />
+            <state vertical-scroll-proportion="-8.960784">
+              <caret line="432" column="63" selection-start-line="432" selection-start-column="46" selection-end-line="432" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.875">
+              <caret line="358" column="107" selection-start-line="358" selection-start-column="107" selection-end-line="358" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -48,7 +56,7 @@
       <file leaf-file-name="MotoclubUsuariosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/MotoclubUsuariosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="341" column="80" selection-start-line="341" selection-start-column="80" selection-end-line="341" selection-end-column="80" />
               <folding />
             </state>
@@ -58,8 +66,8 @@
       <file leaf-file-name="restapi.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/motoclublapaz/restapi.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.579646">
-              <caret line="82" column="99" selection-start-line="82" selection-start-column="99" selection-end-line="82" selection-end-column="99" />
+            <state vertical-scroll-proportion="0.3141593">
+              <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -68,7 +76,7 @@
       <file leaf-file-name="SmsUsuariosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="378" column="5" selection-start-line="266" selection-start-column="4" selection-end-line="378" selection-end-column="5" />
               <folding>
                 <marker date="1431904823000" expanded="true" signature="3515:3636" placeholder="UPDATE SmsUs... " />
@@ -94,7 +102,7 @@
       <file leaf-file-name="config.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/config.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="117" column="48" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="48" />
               <folding />
             </state>
@@ -124,21 +132,9 @@
       <file leaf-file-name="usuarios.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/motoclublapaz/usuarios.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.625">
+            <state vertical-scroll-proportion="0.0">
               <caret line="149" column="70" selection-start-line="149" selection-start-column="70" selection-end-line="149" selection-end-column="70" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noticias_normal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/sitio/noticias_normal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1427048018000" expanded="true" signature="6459:6473" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +178,6 @@
         <option value="$PROJECT_DIR$/public/js/tecnobit/noticias.js" />
         <option value="$PROJECT_DIR$/public/js/nueva-empresa/noticias_normal.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/nueva-empresa/noticias.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/inbox.js" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/reportes.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/auth/login.blade.php" />
@@ -199,8 +194,9 @@
         <option value="$PROJECT_DIR$/app/controllers/sms/SmsMensajesController.php" />
         <option value="$PROJECT_DIR$/public/js/motoclublapaz/usuarios.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/motoclublapaz/usuarios.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/MotoclubUsuariosController.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/motoclublapaz/restapi.blade.php" />
       </list>
     </option>
@@ -471,32 +467,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pilar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -629,12 +603,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00124" summary="Fotos arreglado">
-      <created>1449593654988</created>
-      <option name="number" value="00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1449593654988</updated>
     </task>
     <task id="LOCAL-00125" summary="Fotos arreglado1">
       <created>1449593796791</created>
@@ -924,7 +892,13 @@
       <option name="project" value="LOCAL" />
       <updated>1468282979385</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Motoclub La Paz Ws Usuarios">
+      <created>1468294706946</created>
+      <option name="number" value="00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1468294706946</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -951,17 +925,17 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30129242" sideWeight="0.7410959" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30613893" sideWeight="0.7328767" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30129242" sideWeight="0.2589041" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30613893" sideWeight="0.26712328" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1009,7 +983,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Correcion estilo Tarifario" />
     <MESSAGE value="Proceso inbox + Tags" />
     <MESSAGE value="Catalogos" />
     <MESSAGE value="Select Menu Fixed" />
@@ -1034,7 +1007,8 @@
     <MESSAGE value="Red Nueva empresa - Youtube" />
     <MESSAGE value="Motoclub La Paz estructura" />
     <MESSAGE value="Motoclub La Paz estructura - Lista usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Motoclub La Paz estructura - Lista usuarios" />
+    <MESSAGE value="Motoclub La Paz Ws Usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Motoclub La Paz Ws Usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1059,13 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6858407">
           <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2522123">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1164,9 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <marker date="1458247995000" expanded="true" signature="11608:11622" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,7 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,12 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1453336632000" expanded="true" signature="4093:4191" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336632000" expanded="true" signature="4982:5112" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336632000" expanded="true" signature="5795:5917" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336632000" expanded="true" signature="6551:6664" placeholder="SELECT count... t_publicacion" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6617647">
           <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.022058824">
           <caret line="28" column="74" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17699115">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,21 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.022123894">
           <caret line="584" column="71" selection-start-line="584" selection-start-column="71" selection-end-line="584" selection-end-column="71" />
-          <folding>
-            <marker date="1453336234000" expanded="true" signature="5356:5504" placeholder="SELECT count... " />
-            <marker date="1453336234000" expanded="true" signature="5952:6097" placeholder="SELECT count... " />
-            <marker date="1453336234000" expanded="true" signature="6658:6766" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="7377:7519" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="8122:8256" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="8809:8934" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="9699:9791" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="10189:10282" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="10679:10749" placeholder="SELECT DISTI... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="11054:11125" placeholder="SELECT count... t_publicacion" />
-            <marker date="1453336234000" expanded="true" signature="12442:12616" placeholder="SELECT u.id usuarios" />
-            <marker date="1453336234000" expanded="true" signature="12997:13092" placeholder="SELECT id, l... catalogos" />
-            <marker date="1453336234000" expanded="true" signature="20509:20565" placeholder="SELECT u.id usuarios" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29953918">
           <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.875">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1313,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07537688">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-122.0">
           <caret line="283" column="13" selection-start-line="253" selection-start-column="12" selection-end-line="283" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,13 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-66.25">
           <caret line="106" column="9" selection-start-line="25" selection-start-column="8" selection-end-line="106" selection-end-column="9" />
-          <folding>
-            <marker date="1431276777000" expanded="true" signature="5993:6069" placeholder="SELECT count... SmsMensaje" />
-            <marker date="1431276777000" expanded="true" signature="6384:6497" placeholder="SELECT count... SmsMensaje" />
-            <marker date="1431276777000" expanded="true" signature="6849:6974" placeholder="SELECT count... " />
-            <marker date="1431276777000" expanded="true" signature="7594:7683" placeholder="SELECT count... SmsMensaje" />
-            <marker date="1431276777000" expanded="true" signature="7969:8095" placeholder="SELECT count... SmsMensaje" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1343,10 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="104.25">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1431277054000" expanded="true" signature="237:375" placeholder="SELECT MAX(M... SmsMensaje" />
-            <marker date="1431277054000" expanded="true" signature="1750:1888" placeholder="SELECT MAX(M... SmsMensaje" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,7 +1271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1362,7 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="261" column="7" selection-start-line="224" selection-start-column="3" selection-end-line="261" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +1285,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5213675">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1378,7 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,7 +1323,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/sms/config.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="117" column="48" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="48" />
           <folding />
         </state>
@@ -1418,7 +1331,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/motoclublapaz/usuarios.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.625">
+        <state vertical-scroll-proportion="0.0">
           <caret line="149" column="70" selection-start-line="149" selection-start-column="70" selection-end-line="149" selection-end-column="70" />
           <folding />
         </state>
@@ -1434,7 +1347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sms/SmsUsuariosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="378" column="5" selection-start-line="266" selection-start-column="4" selection-end-line="378" selection-end-column="5" />
           <folding>
             <marker date="1431904823000" expanded="true" signature="3515:3636" placeholder="UPDATE SmsUs... " />
@@ -1446,26 +1359,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/MotoclubUsuariosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.0">
-          <caret line="667" column="69" selection-start-line="667" selection-start-column="61" selection-end-line="667" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="341" column="80" selection-start-line="341" selection-start-column="80" selection-end-line="341" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MotoclubUsuariosController.php">
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="341" column="80" selection-start-line="341" selection-start-column="80" selection-end-line="341" selection-end-column="80" />
+        <state vertical-scroll-proportion="-8.960784">
+          <caret line="432" column="63" selection-start-line="432" selection-start-column="46" selection-end-line="432" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.875">
+          <caret line="358" column="107" selection-start-line="358" selection-start-column="107" selection-end-line="358" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/motoclublapaz/restapi.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.579646">
-          <caret line="82" column="99" selection-start-line="82" selection-start-column="99" selection-end-line="82" selection-end-column="99" />
+        <state vertical-scroll-proportion="0.3141593">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
           <folding />
         </state>
       </provider>
