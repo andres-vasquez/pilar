@@ -252,7 +252,9 @@ class MotoclubUsuariosController extends \BaseController {
 					if (sizeof($usuarioGral)) {
 						$datos = array();
 						$datos["email"] = $usuarioGral[0]["email"];
-						$datos["id_usuario"] = $usuarioGral[0]["id_usuario"];
+						$datos["nombre"] = $usuarioGral[0]["nombre"];
+						$datos["apellido"] = $usuarioGral[0]["apellido"];
+						$datos["id_usuario"] = $usuarioGral[0]["id"];
 						$datos["foto_piloto"] = $usuarioGral[0]["foto_piloto"];
 						$datos["foto_moto"] = $usuarioGral[0]["foto_moto"];
 						$datos["fecha_nacimiento"] = $usuarioGral[0]["fecha_nacimiento"];
