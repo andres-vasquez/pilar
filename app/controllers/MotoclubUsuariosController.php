@@ -325,7 +325,6 @@ class MotoclubUsuariosController extends \BaseController {
 
 								$aux = array();
 								$aux["id"] = $usuario["id"];
-
 								$aux["nombre"] = $usuario["nombre"];
 								$aux["apellido"] = $usuario["apellido"];
 								$aux["email"] = $usuario["email"];
@@ -342,6 +341,17 @@ class MotoclubUsuariosController extends \BaseController {
 								$aux["modelo"] = $usuario["modelo"];
 								$aux["placa"] = $usuario["placa"];
 								$aux["nacionalidad"] = $usuario["nacionalidad"];
+								$aux["id_usuario"] = $usuario["id"];
+								$aux["apellido"] = $usuario["apellido"];
+								$aux["foto_piloto"] = $usuario["foto_piloto"];
+								$aux["foto_moto"] = $usuario["foto_moto"];
+								$aux["fecha_nacimiento"] = $usuario["fecha_nacimiento"];
+								$aux["telefono_fijo"] = $usuario["telefono_fijo"];
+								$aux["marca"] = $usuario["marca"];
+								$aux["modelo"] = $usuario["modelo"];
+								$aux["placa"] = $usuario["placa"];
+								$aux["anio"] = $usuario["anio"];
+								$aux["seguro"] = $usuario["seguro"];
 
 								$aux["fecha_creacion"] = date('d-m-Y', strtotime($usuario["created_at"]));
 								array_push($usuarios, $aux);
