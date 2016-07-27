@@ -667,6 +667,10 @@ Route::group(array('before'=>'credencial','prefix' => 'apimotoclublapaz/v1'), fu
         Route::post('/auth', 'MotoclubUsuariosController@auth');
         Route::post('/busqueda', 'MotoclubUsuariosController@busqueda');
     });
+
+    Route::get('/auspiciadores', function () {
+        return View::make('sitio.motoclublapaz.auspiciadores');
+    });
 });
 
 
