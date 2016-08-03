@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/4K.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/Amaszonas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/AraujoyForgues.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/DMAndino.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/DYM.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/DYM2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/EBOTV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/Factory.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/Imobilare_Salinas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/LaBolivianaCiacruz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/LiquiMoly.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/Nosiglia1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/Nosiglia2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/OCIS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/Paceña.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/TaylorRiders.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/TransGTI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/kaisha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/tigo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/auspiciadores/jakare.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/motoclublapaz/auspiciadores.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/motoclublapaz/auspiciadores.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/motoclublapaz/eventos.js" afterPath="$PROJECT_DIR$/public/js/motoclublapaz/eventos.js" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,8 +55,8 @@
       <file leaf-file-name="auspiciadores.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/motoclublapaz/auspiciadores.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20353982">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.30973452">
+              <caret line="160" column="46" selection-start-line="160" selection-start-column="46" selection-end-line="160" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -507,17 +488,17 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/controllers/monitoreo" />
-      <recent name="$PROJECT_DIR$/app/controllers/sms" />
-      <recent name="$PROJECT_DIR$/public/js/sitio" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img/auspiciadores" />
       <recent name="$PROJECT_DIR$/app/views/sitio/motoclublapaz" />
       <recent name="$PROJECT_DIR$/public/js/motoclub" />
       <recent name="$PROJECT_DIR$/app/views/sitio/motoclub" />
       <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/public/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers/monitoreo" />
+      <recent name="$PROJECT_DIR$/app/controllers/sms" />
+      <recent name="$PROJECT_DIR$/public/js/sitio" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.inbox.blade.php">
@@ -605,12 +586,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00130" summary="WS Autenticacion y publicacion con fecha servidor">
-      <created>1450048400599</created>
-      <option name="number" value="00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1450048400599</updated>
     </task>
     <task id="LOCAL-00131" summary="Fecha en detalle noticia&#10;">
       <created>1450120566471</created>
@@ -900,7 +875,13 @@
       <option name="project" value="LOCAL" />
       <updated>1469591091553</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="Motoclub La Paz Auspiciadores primero&#10;">
+      <created>1470194836243</created>
+      <option name="number" value="00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1470194836244</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -929,6 +910,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3352181" sideWeight="0.68630135" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -937,7 +919,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3352181" sideWeight="0.31369862" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -985,7 +966,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Endless Scroller" />
     <MESSAGE value="Fix Usuarios" />
     <MESSAGE value="Eliminar usuarios" />
     <MESSAGE value="Control zoom y primer dashboard" />
@@ -1010,7 +990,8 @@
     <MESSAGE value="Motoclub La Paz Nombre y apellido en auth" />
     <MESSAGE value="Motoclub La Paz Busqueda campos" />
     <MESSAGE value="Motoclub La Paz Auspiciadores&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Motoclub La Paz Auspiciadores&#10;" />
+    <MESSAGE value="Motoclub La Paz Auspiciadores primero&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Motoclub La Paz Auspiciadores primero&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1382,8 +1363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sitio/motoclublapaz/auspiciadores.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20353982">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.30973452">
+          <caret line="160" column="46" selection-start-line="160" selection-start-column="46" selection-end-line="160" selection-end-column="46" />
           <folding />
         </state>
       </provider>
