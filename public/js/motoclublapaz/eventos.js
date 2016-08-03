@@ -412,7 +412,7 @@ $(document).ready(function () {
         var htmlHoras='';
         var htmlMinutos='';
 
-        for(var i=10;i<24;i++)
+        for(var i=6;i<24;i++)
             htmlHoras+='<option value="'+padLeft(i,2)+'">'+padLeft(i,2)+'</option>';
 
         for(var i=0;i<60;i=i+5)

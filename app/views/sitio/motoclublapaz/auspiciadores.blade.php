@@ -22,13 +22,25 @@
         </div>
     </div>
 </nav>-->
-<div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
+<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-xs-12">
             <ol class="breadcrumb">
                 <h2>Auspiciadores</h2>
             </ol>
             <br/>
+
+            <div class="row">
+                <div class="col-xs-6 col-md-6 col-lg-3">
+                    <img src="<% URL::asset('public/img/auspiciadores/TaylorRiders.png');%>" class="img-responsive"/>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-3">
+                    <strong>TAILOR Riders</strong><br/>
+                    <b>Contacto:</b> Miguel Ángel Rocha<br/>
+                    Cel : 76566658
+                </div>
+            </div>
+
             <br/><br/>
             <a href="http://jakare.net">Jakare SRL.</a>
             <br/><br/>
