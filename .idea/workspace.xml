@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventosController.php" afterPath="$PROJECT_DIR$/app/controllers/EventosController.php" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -618,12 +617,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00133" summary="Publicacion con Obj, fixed">
-      <created>1450127074133</created>
-      <option name="number" value="00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1450127074133</updated>
-    </task>
     <task id="LOCAL-00134" summary="Publicacion con Obj, fixed fecha_publicacion">
       <created>1450127777719</created>
       <option name="number" value="00134" />
@@ -912,7 +905,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470331148379</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Motoclub La Paz Lista de asistentes&#10;">
+      <created>1470332592668</created>
+      <option name="number" value="00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1470332592669</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
