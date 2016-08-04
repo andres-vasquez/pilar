@@ -233,7 +233,15 @@ class EventosController extends \BaseController {
             {
                 if($metodo=="web")
                 {
-                    $datos=$eventos_query[0];
+                    $datos=array();
+                    $datos["cabecera"]=$eventos_query[0];
+
+                    if($id_sistema==10){
+                        $asistentes = Asistenciaevento::whereRaw('estado=1 AND baja_logica=1 AND evento_id=?',array($id_evento))->get();
+                        $datos["asistentes"]=$asistentes;
+                    }
+
+                    //$datos=$eventos_query[0];
                     return View::make('sitio.master.evento_web', array("resultado"=>compact('datos')));
                 }
                 else
@@ -357,8 +365,22 @@ class EventosController extends \BaseController {
                 if (sizeof($eventos_query) > 0) {
 
                     if(isset($data["id_usuario"]) && isset($data["estado"]) && isset($data["nombre_completo"])){
-                        $resultado=true;
-                        return View::make('ws.json', array("resultado"=>compact('resultado')));
+
+                        $datos=array();
+                        $datos["evento_id"]=$data["id_evento"];
+                        $datos["usuario_id"]=$data["id_usuario"];
+                        $datos["nombre_completo"]=$data["nombre_completo"];
+                        $datos["estado"]=$data["estado"];
+
+                        if($insert=Asistenciaevento::create($datos))
+                        {
+                            $resultado=true;
+                            return View::make('ws.json', array("resultado"=>compact('resultado')));
+                        }
+                        else{
+                            $errores = "Error al registrar datos";
+                            return View::make('ws.json_errores', array("errores" => compact('errores')));
+                        }
                     }
                     else{
                         $errores = "Error: Faltan datos para registrar";

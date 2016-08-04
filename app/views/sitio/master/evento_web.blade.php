@@ -22,22 +22,31 @@
         </div>
     </div>
 </nav>-->
-<img class="img-responsive" src="<% $resultado["datos"]["imagen_aws"]%>" style="width: 100%"/>
+<img class="img-responsive" src="<% $resultado["datos"]["cabecera"]["imagen_aws"]%>" style="width: 100%"/>
 <div class="col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 main">
     <div class="row">
         <div class="col-lg-12">
             <ol class="breadcrumb">
-                <h2><% $resultado["datos"]["nombre"]%></h2>
+                <h2><% $resultado["datos"]["cabecera"]["nombre"]%></h2>
             </ol>
             <br/>
             <br/><br/>
-            <% $resultado["datos"]["html"]; %>
+            <% $resultado["datos"]["cabecera"]["html"]; %>
             <br/>
-            <small>Lugar: <cite title="Lugar de evento"><% $resultado["datos"]["lugar"]%></cite></small>
+            <small>Lugar: <cite title="Lugar de evento"><% $resultado["datos"]["cabecera"]["lugar"]%></cite></small>
             <br/><br/>
-            <small>Fecha del evento: <cite title="Fecha de evento"><% date('d-m-Y H:i',strtotime($resultado["datos"]["fecha_inicio"]));%></cite></small>
+            <small>Fecha del evento: <cite title="Fecha de evento"><% date('d-m-Y H:i',strtotime($resultado["datos"]["cabecera"]["fecha_inicio"]));%></cite></small>
             <br/><br/>
         </div>
+        <div class="col-lg-12">
+            <br/><br/>
+            <h2>Asistentes</h2>
+            <ul class="list-group">
+                @foreach ($resultado["datos"]["asistentes"] as $asistente)
+                <li class="list-group-item"><% $asistente["nombre_completo"]%></li>
+                @endforeach
+            </ul>
+            </div>
     </div>
 </div>
 <!--/.main-->
