@@ -372,14 +372,30 @@ class EventosController extends \BaseController {
                         $datos["nombre_completo"]=$data["nombre_completo"];
                         $datos["estado"]=$data["estado"];
 
-                        if($insert=Asistenciaevento::create($datos))
-                        {
-                            $resultado=true;
-                            return View::make('ws.json', array("resultado"=>compact('resultado')));
+                        $asistentes = Asistenciaevento::whereRaw('usuario_id=? AND evento_id=?',array($data["id_usuario"],$id_evento))->get();
+                        if(sizeof($asistentes)==0){
+                            if($insert=Asistenciaevento::create($datos))
+                            {
+                                $resultado=true;
+                                return View::make('ws.json', array("resultado"=>compact('resultado')));
+                            }
+                            else{
+                                $errores = "Error al registrar datos";
+                                return View::make('ws.json_errores', array("errores" => compact('errores')));
+                            }
                         }
                         else{
-                            $errores = "Error al registrar datos";
-                            return View::make('ws.json_errores', array("errores" => compact('errores')));
+                            foreach($asistentes as $asistente){
+                                if($asistente->update($datos))
+                                {
+                                    $resultado=true;
+                                    return View::make('ws.json', array("resultado"=>compact('resultado')));
+                                }
+                                else{
+                                    $errores = "Error al registrar datos";
+                                    return View::make('ws.json_errores', array("errores" => compact('errores')));
+                                }
+                            }
                         }
                     }
                     else{

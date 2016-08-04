@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/AsistenciaeventosController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Asistenciaevento.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EventosController.php" afterPath="$PROJECT_DIR$/app/controllers/EventosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php" afterPath="$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evento_web.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="evento_web.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5575221">
+            <state vertical-scroll-proportion="-15.75">
               <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
               <folding />
             </state>
@@ -94,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5">
-              <caret line="240" column="42" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.24778761">
+              <caret line="387" column="63" selection-start-line="387" selection-start-column="63" selection-end-line="387" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -107,8 +104,8 @@
       <file leaf-file-name="AsistenciaeventosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/AsistenciaeventosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.25">
+              <caret line="86" column="62" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -191,8 +188,8 @@
         <option value="$PROJECT_DIR$/public/js/motoclublapaz/eventos.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/motoclublapaz/auspiciadores.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Asistenciaevento.php" />
-        <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
       </list>
     </option>
   </component>
@@ -621,12 +618,6 @@
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
     </task>
-    <task id="LOCAL-00132" summary="Publicacion con Obj">
-      <created>1450123389041</created>
-      <option name="number" value="00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1450123389041</updated>
-    </task>
     <task id="LOCAL-00133" summary="Publicacion con Obj, fixed">
       <created>1450127074133</created>
       <option name="number" value="00133" />
@@ -915,7 +906,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470196862870</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="Motoclub La Paz Lista de asistentes&#10;">
+      <created>1470331148379</created>
+      <option name="number" value="00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1470331148379</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -944,6 +941,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34087238" sideWeight="0.67945206" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -952,7 +950,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34087238" sideWeight="0.32054794" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1000,7 +997,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Eliminar usuarios" />
     <MESSAGE value="Control zoom y primer dashboard" />
     <MESSAGE value="Dashboard publicaciones vs analisis" />
     <MESSAGE value="Fotos y reporte Bitacora" />
@@ -1025,7 +1021,8 @@
     <MESSAGE value="Motoclub La Paz Auspiciadores&#10;" />
     <MESSAGE value="Motoclub La Paz Auspiciadores primero&#10;" />
     <MESSAGE value="Motoclub La Paz Auspiciadores segundo&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Motoclub La Paz Auspiciadores segundo&#10;" />
+    <MESSAGE value="Motoclub La Paz Lista de asistentes&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Motoclub La Paz Lista de asistentes&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1359,14 +1356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AsistenciaeventosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Expositore.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06637168">
@@ -1383,10 +1372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="240" column="42" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="42" />
+        <state vertical-scroll-proportion="-15.75">
+          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -1399,10 +1388,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/AsistenciaeventosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5575221">
-          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+        <state vertical-scroll-proportion="-13.25">
+          <caret line="86" column="62" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/EventosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24778761">
+          <caret line="387" column="63" selection-start-line="387" selection-start-column="63" selection-end-line="387" selection-end-column="63" />
           <folding />
         </state>
       </provider>
