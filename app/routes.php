@@ -673,4 +673,19 @@ Route::group(array('before'=>'credencial','prefix' => 'apimotoclublapaz/v1'), fu
     });
 });
 
+Route::get('/ws/vizix/image', function(){
+    //header("content-type: image/your_image_type");
+    $image="http://demo.riotplatform.com:8080/riot-core-services/thingImageServlet?id=15";
+    $ch = curl_init ($image);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_BINARYTRANSFER,1);
+    $raw=curl_exec($ch);
+    curl_close ($ch);
 
+    $result=array();
+    $result["image"]=base64_encode($raw);
+    header('Content-Type: image/png');
+    echo base64_decode($result["image"]);
+
+});
