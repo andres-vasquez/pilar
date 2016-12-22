@@ -1,0 +1,106 @@
+{
+  "intCodigo": "1",
+  "resultado": {
+    "resultado": [
+      {
+        "id": 1,
+        "nombre": "zona1",
+        "contorno": {
+          "tipo": "poligono",
+          "capa": {
+            "color": "#f9c368",
+            "punto": [
+              {
+                "lat": -17.422088798934,
+                "lon": -66.131061287597
+              },
+              {
+                "lat": -17.422063207306,
+                "lon": -66.130546303466
+              },
+              {
+                "lat": -17.422032497348,
+                "lon": -66.129913302138
+              },
+              {
+                "lat": -17.421628149085,
+                "lon": -66.129945488647
+              },
+              {
+                "lat": -17.421075367733,
+                "lon": -66.129972310737
+              },
+              {
+                "lat": -17.421080486086,
+                "lon": -66.130530210212
+              },
+              {
+                "lat": -17.421100959499,
+                "lon": -66.131093474105
+              },
+              {
+                "lat": -17.421100959499,
+                "lon": -66.131136389449
+              }
+            ]
+          }
+        },
+        "lstObjetosGps": [
+          {
+            "tipo": "marker",
+            "capa": {
+              "id": "1",
+              "nombre": "Tanque Alto Seguencoma",
+              "icono": "tanque",
+              "estado": 1,
+              "punto": {
+                "lat": -17.421674214122383,
+                "lon": -66.13085383549333
+              }
+            }
+          }
+        ],
+        "listaSubItems": [
+          {
+            "id": 1,
+            "nombre": "Alto Seguencoma",
+            "racionamiento": [
+              {
+                "fecha": "2016-12-22",
+                "horaInicio": "08:00",
+                "horaFin": "10:00"
+              },
+              {
+                "fecha": "2016-12-25",
+                "horaInicio": "08:00",
+                "horaFin": "10:00"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "nombre": "Obrajes",
+            "racionamiento": [
+              {
+                "fecha": "2016-12-22",
+                "horaInicio": "10:00",
+                "horaFin": "12:00"
+              },
+              {
+                "fecha": "2016-12-25",
+                "horaInicio": "10:00",
+                "horaFin": "12:00"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "zona2",
+        "objGps": [],
+        "lista": []
+      }
+    ]
+  }
+}
