@@ -5,7 +5,7 @@
       {
         "id": 1,
         "nombre": "zona1",
-        "icono":"icono1",
+        "icono": "icono1",
         "contorno": {
           "tipo": "poligono",
           "capa": {
@@ -99,27 +99,102 @@
       {
         "id": 2,
         "nombre": "zona2",
-        "icono":"icono2",
-        "objGps": [],
-        "lista": []
+        "icono": "icono2",
+        "contorno": {
+          "tipo": "poligono",
+          "capa": {
+            "color": "#6666cc",
+            "punto": [
+              {
+                "lat": -17.421075367733,
+                "lon": -66.130033121444
+              },
+              {
+                "lat": -17.421100959499,
+                "lon": -66.131116733886
+              },
+              {
+                "lat": -17.420691490809,
+                "lon": -66.131138191558
+              },
+              {
+                "lat": -17.420630070426,
+                "lon": -66.130092130043
+              },
+              {
+                "lat": -17.420627511243,
+                "lon": -66.130051896907
+              }
+            ]
+          }
+        },
+        "lstObjetosGps": [
+          {
+            "tipo": "marker",
+            "capa": {
+              "id": "2",
+              "nombre": "Tanque Algun lugar",
+              "icono": "tanque",
+              "estado": 1,
+              "punto": {
+                "lat": -17.421374214122383,
+                "lon": -66.13083383549333
+              }
+            }
+          }
+        ],
+        "listaSubItems": [
+          {
+            "id": 3,
+            "nombre": "Alto Obrajes",
+            "racionamiento": [
+              {
+                "fecha": "2016-12-23",
+                "horaInicio": "08:00",
+                "horaFin": "10:00"
+              },
+              {
+                "fecha": "2016-12-26",
+                "horaInicio": "08:00",
+                "horaFin": "10:00"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "nombre": "Irpavi",
+            "racionamiento": [
+              {
+                "fecha": "2016-12-23",
+                "horaInicio": "10:00",
+                "horaFin": "12:00"
+              },
+              {
+                "fecha": "2016-12-26",
+                "horaInicio": "10:00",
+                "horaFin": "12:00"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "informacion":[
+    "informacion": [
       {
-        "tipo":"whatsapp",
-        "valor":"60501231",
-        "icono":"whatsapp"
+        "tipo": "whatsapp",
+        "valor": "60501231",
+        "icono": "whatsapp"
       },
       {
-        "tipo":"llamada",
-        "valor":"60501231",
-        "icono":"telefono"
+        "tipo": "llamada",
+        "valor": "60501231",
+        "icono": "telefono"
       },
       {
-        "tipo":"email",
-        "valor":"info@jakare.net",
-        "icono":"sobre"
+        "tipo": "email",
+        "valor": "info@jakare.net",
+        "icono": "sobre"
       }
-      ]
+    ]
   }
 }

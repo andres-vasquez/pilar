@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75374d2b-e3a0-41c3-bf5b-71afb4b7a70e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/json/cuidaragua.json" afterPath="$PROJECT_DIR$/public/json/cuidaragua.json" />
     </list>
     <ignored path="pilar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,8 +99,18 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="679" column="29" selection-start-line="679" selection-start-column="21" selection-end-line="679" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="url.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/json/url.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,8 +119,8 @@
       <file leaf-file-name="cuidaragua.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/json/cuidaragua.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="4.3897057">
+              <caret line="199" column="1" selection-start-line="199" selection-start-column="1" selection-end-line="199" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -134,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/reportes.blade.php" />
         <option value="$PROJECT_DIR$/public/js/monitoreo/dashboard.js" />
         <option value="$PROJECT_DIR$/app/views/sitio/monitoreo/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/monitoreo/DrClippingAnalisesController.php" />
@@ -185,6 +194,7 @@
         <option value="$PROJECT_DIR$/app/views/sitio/master/evento_web.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/public/json/cuidaragua.json" />
       </list>
     </option>
   </component>
@@ -198,8 +208,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -226,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,7 +321,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -346,19 +356,19 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/json" />
+      <recent name="$PROJECT_DIR$/public/uploads" />
+      <recent name="$PROJECT_DIR$/public/img/auspiciadores" />
+      <recent name="$PROJECT_DIR$/app/views/sitio/motoclublapaz" />
+      <recent name="$PROJECT_DIR$/public/js/motoclub" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/uploads/json" />
       <recent name="$PROJECT_DIR$/app/controllers/monitoreo" />
       <recent name="$PROJECT_DIR$/app/controllers/sms" />
       <recent name="$PROJECT_DIR$/public/js/sitio" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/uploads" />
-      <recent name="$PROJECT_DIR$/public/img/auspiciadores" />
-      <recent name="$PROJECT_DIR$/app/views/sitio/motoclublapaz" />
-      <recent name="$PROJECT_DIR$/public/js/motoclub" />
-      <recent name="$PROJECT_DIR$/app/views/sitio/motoclub" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.inbox.blade.php">
@@ -446,18 +456,6 @@
       <created>1426561101542</created>
       <option name="number" value="Default" />
       <updated>1426561101542</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Mostrar publicaciones, con formulario">
-      <created>1450141836476</created>
-      <option name="number" value="00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1450141836476</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Noticias con Fonts">
-      <created>1450210920739</created>
-      <option name="number" value="00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1450210920739</updated>
     </task>
     <task id="LOCAL-00138" summary="Noticias con triangulo blanco inferior">
       <created>1450360213954</created>
@@ -741,7 +739,19 @@
       <option name="project" value="LOCAL" />
       <updated>1482366082436</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="Cuidar el agua&#10;">
+      <created>1482366157780</created>
+      <option name="number" value="00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1482366157780</updated>
+    </task>
+    <task id="LOCAL-00186" summary="Cuidar el agua LINK&#10;">
+      <created>1482373733210</created>
+      <option name="number" value="00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1482373733211</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -765,21 +775,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35897437" sideWeight="0.6112245" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48869145" sideWeight="0.5969945" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08717949" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080601096" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22540984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35897437" sideWeight="0.3887755" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48869145" sideWeight="0.40300545" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23172629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -827,7 +837,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dashboard publicaciones vs analisis" />
     <MESSAGE value="Fotos y reporte Bitacora" />
     <MESSAGE value="Lista de cambios de Kathya 6.5/7" />
     <MESSAGE value="Cambios inmediatos Kathya" />
@@ -852,7 +861,8 @@
     <MESSAGE value="Motoclub La Paz Auspiciadores segundo&#10;" />
     <MESSAGE value="Motoclub La Paz Lista de asistentes&#10;" />
     <MESSAGE value="Cuidar el agua&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cuidar el agua&#10;" />
+    <MESSAGE value="Cuidar el agua LINK&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cuidar el agua LINK&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -866,13 +876,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/monitoreo/inbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/monitoreo/reportes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1221,16 +1224,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="679" column="29" selection-start-line="679" selection-start-column="21" selection-end-line="679" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/json/url.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/json/cuidaragua.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="4.3897057">
+          <caret line="199" column="1" selection-start-line="199" selection-start-column="1" selection-end-line="199" selection-end-column="1" />
           <folding />
         </state>
       </provider>
