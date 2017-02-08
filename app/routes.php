@@ -683,9 +683,11 @@ Route::get('/ws/vizix/image', function(){
     $raw=curl_exec($ch);
     curl_close ($ch);
 
-    $result=array();
+    header('Content-Type: image/png');
+    echo $raw;
+
+    /*$result=array();
     $result["image"]=base64_encode($raw);
     header('Content-Type: image/png');
-    echo base64_decode($result["image"]);
-
+    echo base64_decode($result["image"]);*/
 });
